@@ -16,33 +16,33 @@ a {
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	background-color: $default-color;
+	background-color: $background-color;
 }
 
 /* log in screen background color */
 #body-login {
-	background: $background-color;
+	background: $default-color;
 }
 
 /* primary action button */
 .primary, input[type="submit"].primary, input[type="button"].primary, button.primary, .button.primary, 
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active {
 	border-color: $border-color;
-	background-color: $default-color;
+	background-color: $background-color;
 	color: $text-color;
 }
 .primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover, 
 .primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus {
 	color: $text-color;
 	border-color: $accent-color;
-	background-color: $default-color;
+	background-color: $background-color;
 
 }
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
 .primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
 .primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
 .primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-	background-color: $default-color;
+	background-color: $background-color;
 }
 
 input[type="text"], input[type="password"], input[type="search"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], 
@@ -78,7 +78,7 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
 }
 
 #app-settings-content {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 #app-settings-content, #app-settings-header {
@@ -86,7 +86,7 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
 }
 
 #app-navigation {
-	background-color: $background-color;
+	background-color: $default-color;
 	border-right: 1px solid $border-color;
 
 	li > a {
@@ -96,12 +96,12 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
 
 .nav-trashbin {
 	color: $text-color;
-	background-color: $background-color;
+	background-color: $default-color;
 	border-color: $border-color;
 }
 
 .settings-button {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
@@ -109,11 +109,11 @@ input[type="submit"], input[type="button"], button, .button, #quota, select, .pa
 }
 
 #app-content {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 #controls {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 table th, table td {
@@ -121,11 +121,11 @@ table th, table td {
 }
 
 table thead th {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 #filestable tbody tr {
-	background-color: $background-color;
+	background-color: $default-color;
 }
 
 #filestable tbody tr:hover, #filestable tbody tr:focus, #filestable tbody .name:focus, #filestable tbody tr:active, #filestable tbody tr.highlighted, 
@@ -142,13 +142,13 @@ span.modified.live-relative-timestamp {
 }
 
 #app-sidebar {
-	background-color: $background-color;
+	background-color: $default-color;
 	border-color: $border-color;
 }
 
 input[type="text"], input[type="password"], input[type="search"], input[type="number"], 
 input[type="email"], input[type="tel"], input[type="url"], input[type="time"], textarea {
-	background-color: $default-color;
+	background-color: $background-color;
 	color: $text-color;
 }
 
@@ -170,7 +170,7 @@ textarea:focus, textarea:active  {
 }
 
 .settings-button:hover, .settings-button:focus {
-	background-color: $default-color;
+	background-color: $background-color;
 	color: $text-color;
 }
 

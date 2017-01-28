@@ -8,30 +8,30 @@ a {
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-  background-color: #31363b; }
+  background-color: #232629; }
 
 /* log in screen background color */
 #body-login {
-  background: #232629; }
+  background: #31363b; }
 
 /* primary action button */
 .primary, input[type="submit"].primary, input[type="button"].primary, button.primary, .button.primary,
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active {
   border-color: #676b6f;
-  background-color: #31363b;
+  background-color: #232629;
   color: #eff0f1; }
 
 .primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover,
 .primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus {
   color: #eff0f1;
   border-color: #3cabe5;
-  background-color: #31363b; }
+  background-color: #232629; }
 
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
 .primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
 .primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
 .primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-  background-color: #31363b; }
+  background-color: #232629; }
 
 input[type="text"], input[type="password"], input[type="search"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"],
 input[type="time"], input[type="date"], textarea, select, button, .button, input[type="submit"], input[type="button"], #quota, .pager li a {
@@ -58,42 +58,42 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
   color: #eff0f1; }
 
 #app-settings-content {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 #app-settings-content, #app-settings-header {
   border-right: 1px solid #676b6f; }
 
 #app-navigation {
-  background-color: #232629;
+  background-color: #31363b;
   border-right: 1px solid #676b6f; }
   #app-navigation li > a {
     color: #eff0f1; }
 
 .nav-trashbin {
   color: #eff0f1;
-  background-color: #232629;
+  background-color: #31363b;
   border-color: #676b6f; }
 
 .settings-button {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
   color: #eff0f1; }
 
 #app-content {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 #controls {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 table th, table td {
   border-color: #676b6f; }
 
 table thead th {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 #filestable tbody tr {
-  background-color: #232629; }
+  background-color: #31363b; }
 
 #filestable tbody tr:hover, #filestable tbody tr:focus, #filestable tbody .name:focus, #filestable tbody tr:active, #filestable tbody tr.highlighted,
 #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult, table tr.mouseOver td {
@@ -106,12 +106,12 @@ span.modified.live-relative-timestamp {
   color: #eff0f1 !important; }
 
 #app-sidebar {
-  background-color: #232629;
+  background-color: #31363b;
   border-color: #676b6f; }
 
 input[type="text"], input[type="password"], input[type="search"], input[type="number"],
 input[type="email"], input[type="tel"], input[type="url"], input[type="time"], textarea {
-  background-color: #31363b;
+  background-color: #232629;
   color: #eff0f1; }
 
 input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active, input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active,
@@ -129,7 +129,7 @@ textarea:focus, textarea:active {
   border-color: #3cabe5; }
 
 .settings-button:hover, .settings-button:focus {
-  background-color: #31363b;
+  background-color: #232629;
   color: #eff0f1; }
 
 .button {
