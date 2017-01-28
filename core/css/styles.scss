@@ -68,7 +68,7 @@ input[type="time"], input[type="date"], textarea, select, button, .button, input
 input, input[type="text"], input[type="email"], input[type="password"],
 input:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover,
 input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, {
-	background-color: $default-color;
+	background-color: $dark-color;
 	color: $text-color;
 }
 
