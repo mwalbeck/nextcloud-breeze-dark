@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="120"
-   width="252"
-   viewBox="0 0 252.00001 120.00171"
+   height="32"
+   width="32"
+   viewBox="0 0 32 32"
    version="1.1"
-   id="svg4"
-   sodipodi:docname="logo-breeze.svg"
+   id="svg6"
+   sodipodi:docname="favicon-breeze.svg"
    inkscape:version="0.92.0 r">
   <metadata
-     id="metadata10">
+     id="metadata12">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs10" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -39,24 +39,28 @@
      inkscape:pageshadow="2"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
-     id="namedview6"
+     id="namedview8"
      showgrid="false"
-     inkscape:zoom="1.2460317"
-     inkscape:cx="37.719745"
-     inkscape:cy="60"
+     inkscape:zoom="7.375"
+     inkscape:cx="1.0847458"
+     inkscape:cy="16"
      inkscape:window-x="1680"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4487" />
-  </sodipodi:namedview>
+     inkscape:current-layer="svg6" />
+  <rect
+     rx="5"
+     ry="5"
+     height="32"
+     width="32"
+     fill="#0082c9"
+     id="rect2"
+     style="fill:#31363b;fill-opacity:1" />
   <path
      style="text-decoration-color:#000;isolation:auto;mix-blend-mode:normal;block-progression:tb;text-decoration-line:none;text-indent:0;text-transform:none;text-decoration-style:solid;fill:#3cabe5;fill-opacity:1"
+     d="M16.023 9.342c-3.126 0-5.75 2.14-6.552 5.02-.7-1.54-2.24-2.632-4.03-2.632-2.436 0-4.44 2.004-4.44 4.44 0 2.438 2.003 4.442 4.44 4.442 1.79 0 3.33-1.092 4.03-2.632.802 2.88 3.427 5.02 6.553 5.02 3.11 0 5.72-2.117 6.538-4.972.713 1.512 2.23 2.584 4 2.584 2.437 0 4.44-2.004 4.44-4.442 0-2.437-2.004-4.44-4.44-4.44-1.77 0-3.288 1.072-4 2.584-.818-2.855-3.428-4.972-6.537-4.972zm0 2.607a4.203 4.203 0 0 1 4.223 4.22 4.203 4.203 0 0 1-4.223 4.223A4.203 4.203 0 0 1 11.8 16.17a4.203 4.203 0 0 1 4.223-4.22zM5.44 14.336c1.028 0 1.834.805 1.834 1.834a1.815 1.815 0 0 1-1.834 1.835 1.815 1.815 0 0 1-1.834-1.834c0-1.028.806-1.833 1.834-1.833zm21.12 0c1.027 0 1.833.805 1.834 1.834 0 1.03-.806 1.835-1.835 1.835a1.815 1.815 0 0 1-1.835-1.834c0-1.028.806-1.833 1.834-1.833z"
      fill="#fff"
-     d="M126.19 3.19c-26.05.003-47.917 17.835-54.6 41.827C65.758 32.185 52.92 23.09 38.002 23.09c-20.305.002-37 16.697-37.002 37.002-.004 20.31 16.693 37.008 37.002 37.01 14.918-.002 27.748-9.1 33.58-21.935C78.262 99.162 100.14 117 126.19 117c25.904.003 47.668-17.64 54.486-41.43 5.927 12.597 18.568 21.53 33.314 21.532 20.313.004 37.013-16.697 37.01-37.01-.002-20.31-16.7-37.006-37.01-37.002-14.746.002-27.395 8.933-33.32 21.53C173.86 20.83 152.1 3.19 126.2 3.19zm0 21.72c19.56 0 35.186 15.62 35.188 35.182 0 19.563-15.625 35.19-35.188 35.188-19.56 0-35.182-15.627-35.18-35.188.002-19.56 15.62-35.18 35.18-35.18zm-88.188 19.9c8.57.002 15.28 6.713 15.28 15.282.002 8.57-6.71 15.288-15.28 15.29-8.57-.002-15.283-6.72-15.28-15.29 0-8.57 6.71-15.28 15.28-15.28zm175.99 0c8.57 0 15.288 6.71 15.29 15.282 0 8.573-6.717 15.29-15.29 15.29-8.57-.002-15.283-6.72-15.28-15.29 0-8.57 6.71-15.28 15.28-15.28z"
      color="#000"
      white-space="normal"
-     id="path2" />
+     id="path4" />
 </svg>

@@ -190,6 +190,7 @@ textarea:focus, textarea:active  {
 	-moz-filter: none;
 	-ms-filter: none;
 	filter: none;
+	border: 1px solid $border-color;
 }
 
 .popovermenu .menuitem {
@@ -197,5 +198,37 @@ textarea:focus, textarea:active  {
 }
 
 .bubble::after, #app-navigation .app-navigation-entry-menu::after {
-	border-bottom-color: $default-color;
+	border-bottom-color: $border-color;
+}
+
+#expanddiv {
+	background-color: $default-color;
+	border-color: $border-color;
+	box-shadow: none;
+}
+
+#expanddiv::after {
+	border-bottom-color: $border-color;
+}
+
+#expanddiv a {
+	color: $text-color;
+}
+
+#settings {
+	color: $text-color;
+}
+
+#navigation {
+	background-color: $default-color;
+	box-shadow: none;
+	border: 1px solid $border-color;
+}
+
+#navigation::after {
+	border-bottom-color: $border-color;
+}
+
+#navigation a span {
+	color: $text-color;
 }

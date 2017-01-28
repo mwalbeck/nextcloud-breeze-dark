@@ -145,12 +145,38 @@ textarea:focus, textarea:active {
   -webkit-filter: none;
   -moz-filter: none;
   -ms-filter: none;
-  filter: none; }
+  filter: none;
+  border: 1px solid #676b6f; }
 
 .popovermenu .menuitem {
   color: #eff0f1; }
 
 .bubble::after, #app-navigation .app-navigation-entry-menu::after {
-  border-bottom-color: #31363b; }
+  border-bottom-color: #676b6f; }
+
+#expanddiv {
+  background-color: #31363b;
+  border-color: #676b6f;
+  box-shadow: none; }
+
+#expanddiv::after {
+  border-bottom-color: #676b6f; }
+
+#expanddiv a {
+  color: #eff0f1; }
+
+#settings {
+  color: #eff0f1; }
+
+#navigation {
+  background-color: #31363b;
+  box-shadow: none;
+  border: 1px solid #676b6f; }
+
+#navigation::after {
+  border-bottom-color: #676b6f; }
+
+#navigation a span {
+  color: #eff0f1; }
 
 /*# sourceMappingURL=styles.css.map */
