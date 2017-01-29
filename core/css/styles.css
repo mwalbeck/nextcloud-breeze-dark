@@ -2,7 +2,7 @@ body {
   color: #eff0f1; }
 
 a {
-  color: #eff0f1; }
+  color: #3cabe5; }
 
 /* header color */
 #body-user #header,
@@ -78,7 +78,8 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
   background-color: #31363b; }
 
 input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
-  color: #eff0f1; }
+  color: #eff0f1;
+  background-color: #31363b; }
 
 #app-content {
   background-color: #31363b; }
@@ -178,5 +179,28 @@ textarea:focus, textarea:active {
 
 #navigation a span {
   color: #eff0f1; }
+
+.section {
+  color: #eff0f1; }
+
+.app-level span {
+  color: #eff0f1;
+  border: 1px solid #676b6f; }
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover,
+input[type="button"]:focus, button:hover, button:focus, .button:hover, .button:focus,
+.button a:focus, select:hover, select:focus, select:active {
+  color: #eff0f1;
+  background-color: #31363b;
+  border-color: #3cabe5; }
+
+#notification {
+  background-color: #31363b;
+  border: 1px solid #676b6f;
+  border-top: none;
+  opacity: 1; }
+
+#notification a {
+  color: #3cabe5; }
 
 /*# sourceMappingURL=styles.css.map */

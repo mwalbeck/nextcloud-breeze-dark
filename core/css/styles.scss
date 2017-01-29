@@ -9,7 +9,7 @@ body {
 }
 
 a {
-	color: $text-color;
+	color: $accent-color;
 }
 
  /* header color */
@@ -106,6 +106,7 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
 
 input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
 	color: $text-color;
+	background-color: $default-color;
 }
 
 #app-content {
@@ -231,4 +232,33 @@ textarea:focus, textarea:active  {
 
 #navigation a span {
 	color: $text-color;
+}
+
+.section {
+	color: $text-color;
+}
+
+.app-level span {
+	color: $text-color;
+	border: 1px solid $border-color;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, 
+input[type="button"]:focus, button:hover, button:focus, .button:hover, .button:focus, 
+.button a:focus, select:hover, select:focus, select:active {
+	color: $text-color;
+	background-color: $default-color;
+	border-color: $accent-color;
+}
+
+#notification {
+	background-color: $default-color;
+	border: 1px solid $border-color;
+	border-top: none;
+	opacity: 1;
+
+}
+
+#notification a {
+	color: $accent-color;
 }
