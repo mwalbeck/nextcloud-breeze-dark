@@ -1,11 +1,16 @@
  $text-color: #eff0f1;
  $dark-color: #232629;
  $default-color: #31363b;
- $accent-color: #3cabe5;
+ $accent-color: #3daee9;
  $border-color: #676b6f;
+ $active-color: #224e65;
+ //#1e92ff
+ //#2278c8
+
 
 body {
 	color: $text-color;
+	background-color: $default-color;
 }
 
 a {
@@ -90,7 +95,28 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
 	border-right: 1px solid $border-color;
 
 	li > a {
-		color: $text-color;
+		color: $text-color !important;
+	}
+
+	li > a:hover {
+		background-color: $accent-color;
+	}
+
+	.active, .active a {
+		background-color: $active-color;
+	}
+
+	.add-new button {
+		color: $text-color !important;
+		border-radius: 0;
+	}
+
+	.add-new .heading button:hover {
+		background-color: $accent-color;
+	}
+
+	.add-new .heading button:selected {
+		background-color: $active-color;
 	}
 }
 

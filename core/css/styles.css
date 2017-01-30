@@ -1,8 +1,9 @@
 body {
-  color: #eff0f1; }
+  color: #eff0f1;
+  background-color: #31363b; }
 
 a {
-  color: #3cabe5; }
+  color: #3daee9; }
 
 /* header color */
 #body-user #header,
@@ -24,7 +25,7 @@ a {
 .primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover,
 .primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus {
   color: #eff0f1;
-  border-color: #3cabe5;
+  border-color: #3daee9;
   background-color: #232629; }
 
 .primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
@@ -67,7 +68,18 @@ input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="pa
   background-color: #31363b;
   border-right: 1px solid #676b6f; }
   #app-navigation li > a {
-    color: #eff0f1; }
+    color: #eff0f1 !important; }
+  #app-navigation li > a:hover {
+    background-color: #3daee9; }
+  #app-navigation .active, #app-navigation .active a {
+    background-color: #224e65; }
+  #app-navigation .add-new button {
+    color: #eff0f1 !important;
+    border-radius: 0; }
+  #app-navigation .add-new .heading button:hover {
+    background-color: #3daee9; }
+  #app-navigation .add-new .heading button:selected {
+    background-color: #224e65; }
 
 .nav-trashbin {
   color: #eff0f1;
@@ -121,13 +133,13 @@ input[type="email"]:hover, input[type="email"]:focus, input[type="email"]:active
 input[type="url"]:hover, input[type="url"]:focus, input[type="url"]:active, input[type="time"]:hover, input[type="time"]:focus, input[type="time"]:active, textarea:hover,
 textarea:focus, textarea:active {
   color: #eff0f1;
-  border-color: #3cabe5; }
+  border-color: #3daee9; }
 
 .tabHeaders .tabHeader.selected, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover, .tabHeaders .tabHeader:hover a {
   color: #eff0f1; }
 
 .tabHeaders .tabHeader.selected, .tabHeaders .tabHeader:hover {
-  border-color: #3cabe5; }
+  border-color: #3daee9; }
 
 .settings-button:hover, .settings-button:focus {
   background-color: #232629;
@@ -138,7 +150,7 @@ textarea:focus, textarea:active {
 
 .button:hover, .button:focus {
   background-color: #31363b;
-  border-color: #3cabe5; }
+  border-color: #3daee9; }
 
 .bubble, #app-navigation .app-navigation-entry-menu {
   background-color: #31363b;
@@ -192,7 +204,7 @@ input[type="button"]:focus, button:hover, button:focus, .button:hover, .button:f
 .button a:focus, select:hover, select:focus, select:active {
   color: #eff0f1;
   background-color: #31363b;
-  border-color: #3cabe5; }
+  border-color: #3daee9; }
 
 #notification {
   background-color: #31363b;
@@ -201,6 +213,6 @@ input[type="button"]:focus, button:hover, button:focus, .button:hover, .button:f
   opacity: 1; }
 
 #notification a {
-  color: #3cabe5; }
+  color: #3daee9; }
 
 /*# sourceMappingURL=styles.css.map */
