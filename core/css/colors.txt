@@ -1,0 +1,55 @@
+[Colors:Default]
+BackgroundAlternate = #4D4D4D
+BackgroundNormal= #31363B
+DecorationFocus= #3DAEE9
+DecorationHover= #3DAEE9
+ForegroundActive= #3DAEE9
+ForegroundInactive= #BDC3C7
+ForegroundLink= #2980B9
+ForegroundNegative= #DA4453
+ForegroundNeutral= #F67400
+ForegroundNormal= #EFF0F1
+ForegroundPositive= #27AE60
+ForegroundVisited= #7F8C8D
+
+[Colors:Selection]
+BackgroundAlternate= #1D99F3
+BackgroundNormal= #3DAEE9
+DecorationFocus= #3DAEE9
+DecorationHover= #3DAEE9
+ForegroundActive= #FCFCFC
+ForegroundInactive= #EFF0F1
+ForegroundLink= #FDBC4B
+ForegroundNegative= #DA4453
+ForegroundNeutral= #F67400
+ForegroundNormal= #EFF0F1
+ForegroundPositive= #27AE60
+ForegroundVisited= #BDC3C7
+
+[Colors:View]
+BackgroundAlternate= #31363B
+BackgroundNormal= #232629
+DecorationFocus= #3DAEE9
+DecorationHover= #3DAEE9
+ForegroundActive= #3DAEE9
+ForegroundInactive= #BDC3C7
+ForegroundLink= #2980B9
+ForegroundNegative= #DA4453
+ForegroundNeutral= #F67400
+ForegroundNormal= #EFF0F1
+ForegroundPositive= #27AE60
+ForegroundVisited= #7F8C8D
+
+[Colors:Complementary]
+BackgroundAlternate= #3B4045
+BackgroundNormal= #31363B
+DecorationFocus= #1E92FF
+DecorationHover= #3DAEE6
+ForegroundActive= #F67400
+ForegroundInactive= #AFB0B3
+ForegroundLink= #3DAEE6
+ForegroundNegative= #ED1515
+ForegroundNeutral= #C9CE3B
+ForegroundNormal= #EFF0F1
+ForegroundPositive= #11D116
+ForegroundVisited= #3DAEE6

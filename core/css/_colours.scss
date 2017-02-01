@@ -1,0 +1,44 @@
+/* 
+ * 
+ * All the colours for the Nextcloud Breeze Dark Theme.
+ *
+*/
+
+/* Default Colors */
+$background-active: #3DAEE9;
+$background-active-alternate: #1D99F3;
+$background-active-hover: rgba(61, 174, 233, 0.25);
+$background-alternate: #4D4D4D;
+$background-dark: #232629;
+$background-normal: #31363B;
+
+$decoration-normal: #706F6E;
+$decoration-active: #3DAEE9;
+
+$foreground-active: #FCFCFC;
+$foreground-inactive: #BDC3C7;
+$foreground-link: #2980B9;
+$foreground-normal: #EFF0F1;
+
+$foreground-negative: #DA4453;
+$foreground-neutral: #F67400;
+$foreground-positive: #27AE60;
+$foreground-visited: #7F8C8D;
+
+
+/* Buttons*/
+$button-background-active: $background-active;
+$button-background-normal: $background-normal;
+$button-decoration-normal: $decoration-normal;
+$button-decoration-active: $decoration-active;
+$button-foreground-active: $foreground-active;
+$button-foreground-inactive: $foreground-inactive;
+$button-foreground-normal: $foreground-normal;
+
+/* Input */
+$input-background-normal: $background-dark;
+$input-decoration-normal: $decoration-normal;
+$input-decoration-active: $decoration-active;
+$input-foreground-normal: $foreground-normal;
+$input-foreground-active: $foreground-active;
+$input-foreground-inactive: $foreground-inactive;

@@ -1,58 +1,39 @@
- $text-color: #eff0f1;
- $dark-color: #232629;
- $default-color: #31363b;
- $accent-color: #3daee9;
- $border-color: #676b6f;
- $active-color: #224e65;
- //#1e92ff
- //#2278c8
-
+ 
+@import 'colours';
 
 body {
-	color: $text-color;
-	background-color: $default-color;
+	color: $foreground-normal;
+	background-color: $background-normal;
+}
+
+#body-user #header, #body-settings #header, #body-public #header {
+	background-color: $background-normal;
 }
 
 a {
-	color: $accent-color;
+	color: $foreground-link;
 }
 
- /* header color */
-#body-user #header,
-#body-settings #header,
-#body-public #header {
-	background-color: $dark-color;
+em {
+	opacity: 0.75;
 }
 
-/* log in screen background color */
+/* Login Screen Specific */
+
 #body-login {
-	background: $default-color;
+	background: none;
+	background-color: $background-normal;
 }
 
-/* primary action button */
-.primary, input[type="submit"].primary, input[type="button"].primary, button.primary, .button.primary, 
-.primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active {
-	border-color: $border-color;
-	background-color: $dark-color;
-	color: $text-color;
-}
-.primary:hover, input[type="submit"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover, 
-.primary:focus, input[type="submit"].primary:focus, input[type="button"].primary:focus, button.primary:focus, .button.primary:focus {
-	color: $text-color;
-	border-color: $accent-color;
-	background-color: $dark-color;
-
-}
-.primary:active, input[type="submit"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active,
-.primary:disabled, input[type="submit"].primary:disabled, input[type="button"].primary:disabled, button.primary:disabled, .button.primary:disabled,
-.primary:disabled:hover, input[type="submit"].primary:disabled:hover, input[type="button"].primary:disabled:hover, button.primary:disabled:hover, .button.primary:disabled:hover,
-.primary:disabled:focus, input[type="submit"].primary:disabled:focus, input[type="button"].primary:disabled:focus, button.primary:disabled:focus, .button.primary:disabled:focus {
-	background-color: $dark-color;
+#body-login form input[type="checkbox"] + label {
+	color: $foreground-inactive	;
 }
 
-input[type="text"], input[type="password"], input[type="search"], input[type="number"], input[type="email"], input[type="tel"], input[type="url"], 
-input[type="time"], input[type="date"], textarea, select, button, .button, input[type="submit"], input[type="button"], #quota, .pager li a {
-	border: 1px solid $border-color;
+#body-login #remember_login:hover+label,
+#body-login #remember_login:focus+label,
+#body-login #remember_login:checked+label {
+	opacity: 1;
+	color: $foreground-active;
 }
 
 /* use logos from theme */
@@ -70,221 +51,135 @@ input[type="time"], input[type="date"], textarea, select, button, .button, input
 	}
 }
 
-input, input[type="text"], input[type="email"], input[type="password"],
-input:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover,
-input:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, {
-	background-color: $dark-color;
-	color: $text-color;
+/* Input Fields */
+
+input[type="text"], input[type="password"], input[type="search"], 
+input[type="number"], input[type="email"], input[type="tel"], 
+input[type="url"], input[type="time"], textarea {
+	background-color: $input-background-normal;
+	color: $input-foreground-inactive;
+	border: 1px solid $input-decoration-normal;
+
+	&:hover, &:focus {
+		color: $input-foreground-active;
+		border-color: $input-decoration-active;
+	}
 }
 
-#body-login p.info, #body-login form fieldset legend, #body-login #datadirContent label, 
-#body-login form fieldset .warning-info, #body-login form input[type="checkbox"] + label {
-	color: $text-color;
+/* Buttons */
+
+input[type="submit"], input[type="button"], 
+button, .button, select {
+	background-color: $button-background-normal;
+	border: 1px solid $button-decoration-normal;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-normal;
+		color: $button-foreground-normal;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
 }
 
-#app-settings-content {
-	background-color: $default-color;
+.primary, input.primary[type="submit"], input.primary[type="button"], 
+button.primary, .button.primary {
+	border-color: $button-decoration-normal;
+	background-color: $button-background-normal;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-normal;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
 }
 
-#app-settings-content, #app-settings-header {
-	border-right: 1px solid $border-color;
-}
+/* App Navigation */
 
 #app-navigation {
-	background-color: $default-color;
-	border-right: 1px solid $border-color;
+	background-color: $background-normal;
+	border-color: $decoration-normal;
 
 	li > a {
-		color: $text-color !important;
+		color: $foreground-normal;
+		opacity: 1;
 	}
 
-	li > a:hover {
-		background-color: $accent-color;
+	li:hover > a {
+		background-color: $background-active-hover;
 	}
 
-	.active, .active a {
-		background-color: $active-color;
+	li:focus > a {
+		background-color: $background-active;
 	}
 
-	.add-new button {
-		color: $text-color !important;
-		border-radius: 0;
+	.active {
+		background-color: $background-active;
 	}
 
-	.add-new .heading button:hover {
-		background-color: $accent-color;
-	}
-
-	.add-new .heading button:selected {
-		background-color: $active-color;
+	.active a {
+		color: $foreground-active;
 	}
 }
 
 .nav-trashbin {
-	color: $text-color;
-	background-color: $default-color;
-	border-color: $border-color;
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+}
+
+// App Settings
+
+#app-settings-content, #app-settings-header {
+	border-color: $decoration-normal;
+}
+
+#app-settings-content {
+	background-color: $background-normal;
 }
 
 .settings-button {
-	background-color: $default-color;
+	background-color: $background-normal;
+
+	&:hover {
+		background-color: $background-active-hover;
+	}
+
+	&:focus, &:active {
+		background-color: $background-active;
+		color: $foreground-active;
+	}
 }
 
-input[type="submit"], input[type="button"], button, .button, #quota, select, .pager li a {
-	color: $text-color;
-	background-color: $default-color;
-}
-
-#app-content {
-	background-color: $default-color;
-}
+/* Files App */
 
 #controls {
-	background-color: $default-color;
-}
-
-table th, table td {
-	border-color: $border-color;
+	background-color: $background-normal;
 }
 
 table thead th {
-	background-color: $default-color;
+	background-color: $background-normal;
 }
 
 #filestable tbody tr {
-	background-color: $default-color;
-}
+	background-color: $background-normal;
 
-#filestable tbody tr:hover, #filestable tbody tr:focus, #filestable tbody .name:focus, #filestable tbody tr:active, #filestable tbody tr.highlighted, 
-#filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult, table tr.mouseOver td {
-	background-color: $default-color;
+	&:hover {
+		background-color: $background-normal;
+	}
 }
 
 tbody a {
-	color: $text-color;
-}
-
-span.modified.live-relative-timestamp {
-	color: $text-color !important;
-}
-
-#app-sidebar {
-	background-color: $default-color;
-	border-color: $border-color;
-}
-
-input[type="text"], input[type="password"], input[type="search"], input[type="number"], 
-input[type="email"], input[type="tel"], input[type="url"], input[type="time"], textarea {
-	background-color: $dark-color;
-	color: $text-color;
-}
-
-input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active, input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active, 
-input[type="number"]:hover, input[type="number"]:focus, input[type="number"]:active, input[type="search"]:hover, input[type="search"]:focus, input[type="search"]:active, 
-input[type="email"]:hover, input[type="email"]:focus, input[type="email"]:active, input[type="tel"]:hover, input[type="tel"]:focus, input[type="tel"]:active, 
-input[type="url"]:hover, input[type="url"]:focus, input[type="url"]:active, input[type="time"]:hover, input[type="time"]:focus, input[type="time"]:active, textarea:hover, 
-textarea:focus, textarea:active  {
-	color: $text-color;
-	border-color: $accent-color;
-}
-
-.tabHeaders .tabHeader.selected, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover, .tabHeaders .tabHeader:hover a {
-	color: $text-color;
-}
-
-.tabHeaders .tabHeader.selected, .tabHeaders .tabHeader:hover {
-	border-color: $accent-color;
-}
-
-.settings-button:hover, .settings-button:focus {
-	background-color: $dark-color;
-	color: $text-color;
-}
-
-.button {
-	background-color: $default-color;
-}
-
-.button:hover, .button:focus {
-	background-color: $default-color;
-	border-color: $accent-color;
-}
-
-.bubble, #app-navigation .app-navigation-entry-menu {
-	background-color: $default-color;
-	color: $text-color;
-	-webkit-filter: none;
-	-moz-filter: none;
-	-ms-filter: none;
-	filter: none;
-	border: 1px solid $border-color;
-}
-
-.popovermenu .menuitem {
-	color: $text-color;
-}
-
-.bubble::after, #app-navigation .app-navigation-entry-menu::after {
-	border-bottom-color: $border-color;
-}
-
-#expanddiv {
-	background-color: $default-color;
-	border-color: $border-color;
-	box-shadow: none;
-}
-
-#expanddiv::after {
-	border-bottom-color: $border-color;
-}
-
-#expanddiv a {
-	color: $text-color;
-}
-
-#settings {
-	color: $text-color;
-}
-
-#navigation {
-	background-color: $default-color;
-	box-shadow: none;
-	border: 1px solid $border-color;
-}
-
-#navigation::after {
-	border-bottom-color: $border-color;
-}
-
-#navigation a span {
-	color: $text-color;
-}
-
-.section {
-	color: $text-color;
-}
-
-.app-level span {
-	color: $text-color;
-	border: 1px solid $border-color;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, 
-input[type="button"]:focus, button:hover, button:focus, .button:hover, .button:focus, 
-.button a:focus, select:hover, select:focus, select:active {
-	color: $text-color;
-	background-color: $default-color;
-	border-color: $accent-color;
-}
-
-#notification {
-	background-color: $default-color;
-	border: 1px solid $border-color;
-	border-top: none;
-	opacity: 1;
-
-}
-
-#notification a {
-	color: $accent-color;
+	color: $foreground-normal;
 }
