@@ -131,6 +131,7 @@ button.primary, .button.primary {
 
 	.active a {
 		color: $foreground-active;
+		font-weight: 600;
 	}
 }
 
@@ -172,14 +173,57 @@ table thead th {
 	background-color: $background-normal;
 }
 
+tbody a {
+	color: $foreground-normal;
+}
+
 #filestable tbody tr {
 	background-color: $background-normal;
 
 	&:hover {
-		background-color: $background-normal;
+		background-color: $background-active-hover;
+	}
+
+	&.highlighted {
+		background-color: $background-active;
+		color: $foreground-active;
 	}
 }
 
-tbody a {
+.summary {
+	color: $foreground-inactive;
+	opacity: 1;
+}
+
+table td.filesize {
+	color: $foreground-inactive !important;
+}
+
+td.date > span {
+	color: $foreground-inactive !important;
+}
+
+span.extension {
+	color: $foreground-inactive;
+}
+
+// App Sidebar
+
+#app-sidebar {
+	background-color: $background-normal;
+	border: none;
+
+	.file-details {
+		color: $foreground-normal;
+	}
+}
+
+.tabHeaders .tabHeader, .tabHeaders .tabHeader a {
 	color: $foreground-normal;
+}
+
+.tabHeaders .tabHeader.selected a, 
+.tabHeaders .tabHeader:hover a {
+	color: $foreground-active;
+	border-bottom: 1px solid $decoration-active;
 }

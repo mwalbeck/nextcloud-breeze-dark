@@ -71,7 +71,7 @@ button, .button, select {
     border-color: #3DAEE9; }
   input[type="submit"]:focus, input[type="button"]:focus,
   button:focus, .button:focus, select:focus {
-    background-color: #3DAEE9;
+    background-color: #3daee9;
     color: #FCFCFC;
     border-color: #3DAEE9; }
 
@@ -87,7 +87,7 @@ button.primary, .button.primary {
     border-color: #3DAEE9; }
   .primary:focus, input.primary[type="submit"]:focus, input.primary[type="button"]:focus,
   button.primary:focus, .button.primary:focus {
-    background-color: #3DAEE9;
+    background-color: #3daee9;
     color: #FCFCFC;
     border-color: #3DAEE9; }
 
@@ -101,11 +101,12 @@ button.primary, .button.primary {
   #app-navigation li:hover > a {
     background-color: rgba(61, 174, 233, 0.25); }
   #app-navigation li:focus > a {
-    background-color: #3DAEE9; }
+    background-color: #3daee9; }
   #app-navigation .active {
-    background-color: #3DAEE9; }
+    background-color: #3daee9; }
   #app-navigation .active a {
-    color: #FCFCFC; }
+    color: #FCFCFC;
+    font-weight: 600; }
 
 .nav-trashbin {
   background-color: #31363B;
@@ -122,7 +123,7 @@ button.primary, .button.primary {
   .settings-button:hover {
     background-color: rgba(61, 174, 233, 0.25); }
   .settings-button:focus, .settings-button:active {
-    background-color: #3DAEE9;
+    background-color: #3daee9;
     color: #FCFCFC; }
 
 /* Files App */
@@ -132,12 +133,42 @@ button.primary, .button.primary {
 table thead th {
   background-color: #31363B; }
 
+tbody a {
+  color: #EFF0F1; }
+
 #filestable tbody tr {
   background-color: #31363B; }
   #filestable tbody tr:hover {
-    background-color: #31363B; }
+    background-color: rgba(61, 174, 233, 0.25); }
+  #filestable tbody tr.highlighted {
+    background-color: #3daee9;
+    color: #FCFCFC; }
 
-tbody a {
+.summary {
+  color: #BDC3C7;
+  opacity: 1; }
+
+table td.filesize {
+  color: #BDC3C7 !important; }
+
+td.date > span {
+  color: #BDC3C7 !important; }
+
+span.extension {
+  color: #BDC3C7; }
+
+#app-sidebar {
+  background-color: #31363B;
+  border: none; }
+  #app-sidebar .file-details {
+    color: #EFF0F1; }
+
+.tabHeaders .tabHeader, .tabHeaders .tabHeader a {
   color: #EFF0F1; }
+
+.tabHeaders .tabHeader.selected a,
+.tabHeaders .tabHeader:hover a {
+  color: #FCFCFC;
+  border-bottom: 1px solid #3DAEE9; }
 
 /*# sourceMappingURL=styles.css.map */
