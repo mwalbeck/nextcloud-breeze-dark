@@ -18,22 +18,91 @@ em {
 	opacity: 0.75;
 }
 
-/* Login Screen Specific */
+/* Tables */
 
-#body-login {
-	background: none;
+tbody {
+
+	tr:hover, tr:focus {
+		background-color: $background-active-hover;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+table {
+
+	thead th {
+		background-color: $background-normal;
+	}
+
+	th, td {
+		border-bottom: 1px solid $decoration-normal;
+	}
+}
+
+td.date, td.date > span {
+	color: $foreground-inactive !important;
+}
+
+#filestable {
+	background-color: $background-dark;
+}
+
+.section {
+	color: $foreground-normal;
+}
+
+/* oc-dialog */
+
+.oc-dialog {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+.oc-dialog-title {
 	background-color: $background-normal;
 }
 
-#body-login form input[type="checkbox"] + label {
-	color: $foreground-inactive	;
+.oc-dialog-buttonrow {
+	background-image: none;
+	background-color: $background-normal;
 }
 
-#body-login #remember_login:hover+label,
-#body-login #remember_login:focus+label,
-#body-login #remember_login:checked+label {
-	opacity: 1;
-	color: $foreground-active;
+#oc-dialog-filepicker-content .filelist {
+	background-color: $background-dark;
+}
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+	background-color: $background-active;
+
+	td {
+		font-weight: 600;
+	}
+
+	.filename {
+		color: $foreground-active;
+	}
+
+	&:hover {
+		background-color: $background-active;
+	}
+}
+
+/* Cropper */
+
+#cropper .inner-container {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	.jcrop-holder {
+		box-shadow: none;
+	}
 }
 
 /* use logos from theme */
@@ -80,7 +149,7 @@ button, .button, select {
 		border-color: $button-decoration-active;
 	}
 
-	&:focus {
+	&:focus, &:active {
 		background-color: $button-background-active;
 		color: $button-foreground-active;
 		border-color: $button-decoration-active;
@@ -90,27 +159,94 @@ button, .button, select {
 .primary, input.primary[type="submit"], input.primary[type="button"], 
 button.primary, .button.primary {
 	border-color: $button-decoration-normal;
-	background-color: $button-background-normal;
+	background-color: $button-background-dark;
 	color: $button-foreground-normal;
 
 	&:hover {
-		background-color: $button-background-normal;
-		color: $button-foreground-active;
+		background-color: $button-background-dark;
+		color: $button-foreground-normal;
 		border-color: $button-decoration-active;
 	}
 
-	&:focus {
+	&:focus, &:active {
 		background-color: $button-background-active;
 		color: $button-foreground-active;
 		border-color: $button-decoration-active;
 	}
 }
 
+.primary:disabled, input.primary[type="submit"]:disabled, 
+input.primary[type="button"]:disabled, button.primary:disabled, 
+.button.primary:disabled, .primary:disabled:hover, 
+input.primary[type="submit"]:disabled:hover, 
+input.primary[type="button"]:disabled:hover, button.primary:disabled:hover, 
+.button.primary:disabled:hover, .primary:disabled:focus, 
+input.primary[type="submit"]:disabled:focus, 
+input.primary[type="button"]:disabled:focus, button.primary:disabled:focus, 
+.button.primary:disabled:focus {
+	background-color: $background-alternate;
+	color: $foreground-inactive;
+	border-color: $decoration-normal;
+}
+
+/* Navigation */
+
+#navigation {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a span {
+		color: $foreground-normal;
+	}
+}
+
+#settings {
+	color: $foreground-normal;
+}
+
+#expanddiv {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+/* Settings */
+
+// Personal
+
+#quota {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+
+	div {
+		background-color: $background-dark
+	}
+}
+
+#sessions .token-list td, #apppasswords .token-list td {
+	border-color: $decoration-normal;
+	border-top: none;
+}
+
 /* App Navigation */
 
 #app-navigation {
 	background-color: $background-normal;
-	border-color: $decoration-normal;
+	border: none;
 
 	li > a {
 		color: $foreground-normal;
@@ -137,13 +273,32 @@ button.primary, .button.primary {
 
 .nav-trashbin {
 	background-color: $background-normal;
-	border-color: $decoration-normal;
+	border: none;
+}
+
+.bubble {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+.popovermenu .menuitem {
+	color: $foreground-normal;
 }
 
 // App Settings
 
 #app-settings-content, #app-settings-header {
-	border-color: $decoration-normal;
+	border: none;
 }
 
 #app-settings-content {
@@ -163,22 +318,37 @@ button.primary, .button.primary {
 	}
 }
 
+/* Login Screen Specific */
+
+#body-login {
+	background: none;
+	background-color: $background-normal;
+}
+
+#body-login form input[type="checkbox"] + label {
+	color: $foreground-inactive	;
+}
+
+#body-login #remember_login:hover+label,
+#body-login #remember_login:focus+label,
+#body-login #remember_login:checked+label {
+	opacity: 1;
+	color: $foreground-active;
+}
+
 /* Files App */
+
+#app-content-files #filestable {
+	background-color: $background-dark;
+	padding-bottom: 2em;
+}
 
 #controls {
 	background-color: $background-normal;
 }
 
-table thead th {
-	background-color: $background-normal;
-}
-
-tbody a {
-	color: $foreground-normal;
-}
-
 #filestable tbody tr {
-	background-color: $background-normal;
+	background-color: $background-dark;	
 
 	&:hover {
 		background-color: $background-active-hover;
@@ -196,10 +366,6 @@ tbody a {
 }
 
 table td.filesize {
-	color: $foreground-inactive !important;
-}
-
-td.date > span {
 	color: $foreground-inactive !important;
 }
 

@@ -19,19 +19,60 @@ a {
 em {
   opacity: 0.75; }
 
-/* Login Screen Specific */
-#body-login {
-  background: none;
+/* Tables */
+tbody tr:hover, tbody tr:focus {
+  background-color: rgba(61, 174, 233, 0.25); }
+tbody a {
+  color: #EFF0F1; }
+
+table thead th {
+  background-color: #31363B; }
+table th, table td {
+  border-bottom: 1px solid #706F6E; }
+
+td.date, td.date > span {
+  color: #BDC3C7 !important; }
+
+#filestable {
+  background-color: #232629; }
+
+.section {
+  color: #EFF0F1; }
+
+/* oc-dialog */
+.oc-dialog {
+  background-color: #31363B;
+  color: #EFF0F1;
+  box-shadow: none;
+  border: 1px solid #706F6E; }
+
+.oc-dialog-title {
   background-color: #31363B; }
 
-#body-login form input[type="checkbox"] + label {
-  color: #BDC3C7; }
+.oc-dialog-buttonrow {
+  background-image: none;
+  background-color: #31363B; }
 
-#body-login #remember_login:hover + label,
-#body-login #remember_login:focus + label,
-#body-login #remember_login:checked + label {
-  opacity: 1;
-  color: #FCFCFC; }
+#oc-dialog-filepicker-content .filelist {
+  background-color: #232629; }
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+  background-color: #3daee9; }
+  #oc-dialog-filepicker-content .filepicker_element_selected td {
+    font-weight: 600; }
+  #oc-dialog-filepicker-content .filepicker_element_selected .filename {
+    color: #FCFCFC; }
+  #oc-dialog-filepicker-content .filepicker_element_selected:hover {
+    background-color: #3daee9; }
+
+/* Cropper */
+#cropper .inner-container {
+  background-color: #31363B;
+  color: #EFF0F1;
+  box-shadow: none;
+  border: 1px solid #706F6E; }
+  #cropper .inner-container .jcrop-holder {
+    box-shadow: none; }
 
 /* use logos from theme */
 #header .logo {
@@ -69,8 +110,9 @@ button, .button, select {
     background-color: #31363B;
     color: #EFF0F1;
     border-color: #3DAEE9; }
-  input[type="submit"]:focus, input[type="button"]:focus,
-  button:focus, .button:focus, select:focus {
+  input[type="submit"]:focus, input[type="submit"]:active, input[type="button"]:focus, input[type="button"]:active,
+  button:focus,
+  button:active, .button:focus, .button:active, select:focus, select:active {
     background-color: #3daee9;
     color: #FCFCFC;
     border-color: #3DAEE9; }
@@ -78,23 +120,71 @@ button, .button, select {
 .primary, input.primary[type="submit"], input.primary[type="button"],
 button.primary, .button.primary {
   border-color: #706F6E;
-  background-color: #31363B;
+  background-color: #232629;
   color: #EFF0F1; }
   .primary:hover, input.primary[type="submit"]:hover, input.primary[type="button"]:hover,
   button.primary:hover, .button.primary:hover {
-    background-color: #31363B;
-    color: #FCFCFC;
+    background-color: #232629;
+    color: #EFF0F1;
     border-color: #3DAEE9; }
-  .primary:focus, input.primary[type="submit"]:focus, input.primary[type="button"]:focus,
-  button.primary:focus, .button.primary:focus {
+  .primary:focus, .primary:active, input.primary[type="submit"]:focus, input.primary[type="submit"]:active, input.primary[type="button"]:focus, input.primary[type="button"]:active,
+  button.primary:focus,
+  button.primary:active, .button.primary:focus, .button.primary:active {
     background-color: #3daee9;
     color: #FCFCFC;
     border-color: #3DAEE9; }
 
+.primary:disabled, input.primary[type="submit"]:disabled,
+input.primary[type="button"]:disabled, button.primary:disabled,
+.button.primary:disabled, .primary:disabled:hover,
+input.primary[type="submit"]:disabled:hover,
+input.primary[type="button"]:disabled:hover, button.primary:disabled:hover,
+.button.primary:disabled:hover, .primary:disabled:focus,
+input.primary[type="submit"]:disabled:focus,
+input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
+.button.primary:disabled:focus {
+  background-color: #4D4D4D;
+  color: #BDC3C7;
+  border-color: #706F6E; }
+
+/* Navigation */
+#navigation {
+  background-color: #31363B;
+  box-shadow: none;
+  border: 1px solid #706F6E; }
+  #navigation::after {
+    border-bottom-color: #706F6E; }
+  #navigation a span {
+    color: #EFF0F1; }
+
+#settings {
+  color: #EFF0F1; }
+
+#expanddiv {
+  background-color: #31363B;
+  border: 1px solid #706F6E;
+  box-shadow: none; }
+  #expanddiv::after {
+    border-bottom-color: #706F6E; }
+  #expanddiv a {
+    color: #EFF0F1; }
+
+/* Settings */
+#quota {
+  background-color: #232629;
+  color: #EFF0F1;
+  border: 1px solid #706F6E; }
+  #quota div {
+    background-color: #232629; }
+
+#sessions .token-list td, #apppasswords .token-list td {
+  border-color: #706F6E;
+  border-top: none; }
+
 /* App Navigation */
 #app-navigation {
   background-color: #31363B;
-  border-color: #706F6E; }
+  border: none; }
   #app-navigation li > a {
     color: #EFF0F1;
     opacity: 1; }
@@ -110,10 +200,25 @@ button.primary, .button.primary {
 
 .nav-trashbin {
   background-color: #31363B;
-  border-color: #706F6E; }
+  border: none; }
+
+.bubble {
+  background-color: #31363B;
+  color: #EFF0F1;
+  border: 1px solid #706F6E;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; }
+  .bubble::after {
+    border-bottom-color: #706F6E; }
+
+.popovermenu .menuitem {
+  color: #EFF0F1; }
 
 #app-settings-content, #app-settings-header {
-  border-color: #706F6E; }
+  border: none; }
 
 #app-settings-content {
   background-color: #31363B; }
@@ -126,18 +231,30 @@ button.primary, .button.primary {
     background-color: #3daee9;
     color: #FCFCFC; }
 
+/* Login Screen Specific */
+#body-login {
+  background: none;
+  background-color: #31363B; }
+
+#body-login form input[type="checkbox"] + label {
+  color: #BDC3C7; }
+
+#body-login #remember_login:hover + label,
+#body-login #remember_login:focus + label,
+#body-login #remember_login:checked + label {
+  opacity: 1;
+  color: #FCFCFC; }
+
 /* Files App */
+#app-content-files #filestable {
+  background-color: #232629;
+  padding-bottom: 2em; }
+
 #controls {
   background-color: #31363B; }
 
-table thead th {
-  background-color: #31363B; }
-
-tbody a {
-  color: #EFF0F1; }
-
 #filestable tbody tr {
-  background-color: #31363B; }
+  background-color: #232629; }
   #filestable tbody tr:hover {
     background-color: rgba(61, 174, 233, 0.25); }
   #filestable tbody tr.highlighted {
@@ -149,9 +266,6 @@ tbody a {
   opacity: 1; }
 
 table td.filesize {
-  color: #BDC3C7 !important; }
-
-td.date > span {
   color: #BDC3C7 !important; }
 
 span.extension {
