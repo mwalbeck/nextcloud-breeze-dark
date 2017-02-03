@@ -105,6 +105,51 @@ td.date, td.date > span {
 	}
 }
 
+// Info colours
+
+#postsetupchecks .errors, 
+#postsetupchecks .warnings, 
+#security-warning > ul {
+	color: $foreground-negative;
+}
+
+.success {
+	color: $foreground-positive;
+}
+
+span {
+
+	&.warnings {
+		background-color: $background-negative;
+	}
+
+	&.error {
+		background-color: $background-negative;
+	}
+
+	&.success {
+		background-color: $background-positive;
+	}
+}
+
+.msg {
+
+	&.warnings {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.error {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
 /* use logos from theme */
 #header {
 	.logo {
@@ -242,6 +287,77 @@ input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
 	border-top: none;
 }
 
+// Admin - Server Settings
+
+.followupsection {
+	color: $foreground-normal;
+}
+
+.select2-container-multi .select2-choices, 
+.select2-container-multi.select2-container-active 
+.select2-choices, .select2-container .select2-choice {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border-color: $decoration-normal;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice, 
+.select2-container-multi.select2-container-active .select2-choices .select2-search-choice, 
+.select2-container .select2-choice .select2-search-choice {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+	color: $foreground-normal;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+	color: $foreground-normal;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+	background-color: $background-dark !important;
+}
+
+#select2-drop {
+	background-color: $background-normal;
+	color: $foreground-normal;
+}
+
+#select2-drop.select2-drop-active {
+	border-color: $decoration-normal;
+}
+
+.select2-drop-active {
+	border-color: $decoration-normal;
+}
+
+#select2-drop .select2-results .select2-result.select2-selected {
+	background-color: $background-normal;
+}
+
+#select2-drop .select2-results .select2-result, 
+#select2-drop .select2-results .select2-no-results, 
+#select2-drop .select2-results .select2-searching {
+	background-color: $background-dark;
+	color: $foreground-normal;
+}
+
+#select2-drop .select2-results .select2-result.select2-highlighted {
+	background-color: $background-normal;
+	color: $foreground-normal;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice.select2-search-choice-focus, 
+.select2-container-multi .select2-choices .select2-search-choice:hover, 
+.select2-container-multi.select2-container-active .select2-choices .select2-search-choice.select2-search-choice-focus, 
+.select2-container-multi.select2-container-active .select2-choices .select2-search-choice:hover, 
+.select2-container .select2-choice .select2-search-choice.select2-search-choice-focus, 
+.select2-container .select2-choice .select2-search-choice:hover {
+	background-color: $background-normal;
+	border-color: $decoration-active;
+}
+
 /* App Navigation */
 
 #app-navigation {
@@ -347,16 +463,26 @@ input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
 	background-color: $background-normal;
 }
 
-#filestable tbody tr {
-	background-color: $background-dark;	
+#filestable tbody {
+	tr {
+		background-color: $background-dark;
 
-	&:hover {
-		background-color: $background-active-hover;
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+		}
 	}
 
-	&.highlighted {
-		background-color: $background-active;
-		color: $foreground-active;
+	.name:focus {
+		background-color: transparent;
 	}
 }
 
