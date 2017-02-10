@@ -150,6 +150,12 @@ span {
 	}
 }
 
+#body-user .warning {
+	color: $foreground-negative;
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+}
+
 /* use logos from theme */
 #header {
 	.logo {
@@ -385,6 +391,10 @@ ul.multiselectoptions {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
 	border-top: none;
+
+	a {
+		color: $foreground-link;
+	}
 }
 
 /* App Navigation */
@@ -394,7 +404,7 @@ ul.multiselectoptions {
 	border: none;
 
 	li > a {
-		color: $foreground-normal;
+		color: $foreground-normal !important;
 		opacity: 1;
 	}
 
@@ -413,6 +423,22 @@ ul.multiselectoptions {
 	.active a {
 		color: $foreground-active;
 		font-weight: 600;
+		background-color: inherit;
+	}
+
+	.add-new button {
+		color: $foreground-normal !important;
+	}
+
+	.add-new div.heading {
+		&:hover {
+			background-color: $background-active-hover;
+		}
+	}
+
+	.add-new-popup {
+		box-shadow: none;
+		border-color: $decoration-active;
 	}
 }
 
@@ -547,4 +573,10 @@ span.extension {
 .tabHeaders .tabHeader:hover a {
 	color: $foreground-active;
 	border-bottom: 1px solid $decoration-active;
+}
+
+/* News App */
+
+#explore .category {
+	background-color: $background-active;
 }

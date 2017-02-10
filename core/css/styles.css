@@ -99,6 +99,11 @@ span.success {
   color: #FCFCFC;
   background-color: #27AE60; }
 
+#body-user .warning {
+  color: #DA4453;
+  background-color: #31363B;
+  border: 1px solid #706F6E; }
+
 /* use logos from theme */
 #header .logo {
   background-image: url("../img/logo.svg");
@@ -282,13 +287,15 @@ ul.multiselectoptions {
   background-color: #31363B;
   border: 1px solid #706F6E;
   border-top: none; }
+  #notification a {
+    color: #2980B9; }
 
 /* App Navigation */
 #app-navigation {
   background-color: #31363B;
   border: none; }
   #app-navigation li > a {
-    color: #EFF0F1;
+    color: #EFF0F1 !important;
     opacity: 1; }
   #app-navigation li:hover > a {
     background-color: rgba(61, 174, 233, 0.25); }
@@ -298,7 +305,15 @@ ul.multiselectoptions {
     background-color: #3daee9; }
   #app-navigation .active a {
     color: #FCFCFC;
-    font-weight: 600; }
+    font-weight: 600;
+    background-color: inherit; }
+  #app-navigation .add-new button {
+    color: #EFF0F1 !important; }
+  #app-navigation .add-new div.heading:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  #app-navigation .add-new-popup {
+    box-shadow: none;
+    border-color: #3DAEE9; }
 
 .nav-trashbin {
   background-color: #31363B;
@@ -390,5 +405,9 @@ span.extension {
 .tabHeaders .tabHeader:hover a {
   color: #FCFCFC;
   border-bottom: 1px solid #3DAEE9; }
+
+/* News App */
+#explore .category {
+  background-color: #3daee9; }
 
 /*# sourceMappingURL=styles.css.map */
