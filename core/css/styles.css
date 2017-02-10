@@ -147,6 +147,24 @@ button, .button, select {
     color: #FCFCFC;
     border-color: #3DAEE9; }
 
+input:disabled, input:disabled:hover, input:disabled:focus,
+button:disabled, button:disabled:hover, button:disabled:focus,
+.button:disabled, .button:disabled:hover, .button:disabled:focus,
+a.disabled, a.disabled:hover, a.disabled:focus, textarea:disabled {
+  background-color: #4D4D4D; }
+  input:disabled:hover, input:disabled:focus, input:disabled:active, input:disabled:hover:hover, input:disabled:hover:focus, input:disabled:hover:active, input:disabled:focus:hover, input:disabled:focus:focus, input:disabled:focus:active,
+  button:disabled:hover,
+  button:disabled:focus,
+  button:disabled:active, button:disabled:hover:hover, button:disabled:hover:focus, button:disabled:hover:active, button:disabled:focus:hover, button:disabled:focus:focus, button:disabled:focus:active,
+  .button:disabled:hover,
+  .button:disabled:focus,
+  .button:disabled:active, .button:disabled:hover:hover, .button:disabled:hover:focus, .button:disabled:hover:active, .button:disabled:focus:hover, .button:disabled:focus:focus, .button:disabled:focus:active,
+  a.disabled:hover,
+  a.disabled:focus,
+  a.disabled:active, a.disabled:hover:hover, a.disabled:hover:focus, a.disabled:hover:active, a.disabled:focus:hover, a.disabled:focus:focus, a.disabled:focus:active, textarea:disabled:hover, textarea:disabled:focus, textarea:disabled:active {
+    background-color: #4D4D4D;
+    border-color: #706F6E; }
+
 .primary, input.primary[type="submit"], input.primary[type="button"],
 button.primary, .button.primary {
   border-color: #706F6E;
@@ -334,11 +352,16 @@ ul.multiselectoptions {
 .popovermenu .menuitem {
   color: #EFF0F1; }
 
+#app-settings .import-export button {
+  margin: 3px 0; }
+
 #app-settings-content, #app-settings-header {
   border: none; }
 
 #app-settings-content {
   background-color: #31363B; }
+  #app-settings-content a {
+    color: #2980B9; }
 
 .settings-button {
   background-color: #31363B; }

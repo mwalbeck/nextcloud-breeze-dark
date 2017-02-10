@@ -207,6 +207,18 @@ button, .button, select {
 	}
 }
 
+input:disabled, input:disabled:hover, input:disabled:focus, 
+button:disabled, button:disabled:hover, button:disabled:focus, 
+.button:disabled, .button:disabled:hover, .button:disabled:focus, 
+a.disabled, a.disabled:hover, a.disabled:focus, textarea:disabled {
+	background-color: $background-alternate;
+
+	&:hover, &:focus, &:active {
+		background-color: $background-alternate;
+		border-color: $decoration-normal;
+	}
+}
+
 .primary, input.primary[type="submit"], input.primary[type="button"], 
 button.primary, .button.primary {
 	border-color: $button-decoration-normal;
@@ -468,12 +480,22 @@ ul.multiselectoptions {
 
 // App Settings
 
+#app-settings {
+	.import-export button {
+		margin: 3px 0;
+	}
+}
+
 #app-settings-content, #app-settings-header {
 	border: none;
 }
 
 #app-settings-content {
 	background-color: $background-normal;
+
+	a {
+		color: $foreground-link;
+	}
 }
 
 .settings-button {
