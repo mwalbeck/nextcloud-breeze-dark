@@ -263,6 +263,26 @@ input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
   background-color: #31363B;
   border-color: #3DAEE9; }
 
+#userlist th.name {
+  color: #EFF0F1; }
+
+div.multiselect.active {
+  background-color: #31363B; }
+
+ul.multiselectoptions {
+  background-color: #31363B;
+  border-color: #706F6E; }
+  ul.multiselectoptions.down {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+/* Notifications */
+#notification {
+  background-color: #31363B;
+  border: 1px solid #706F6E;
+  border-top: none; }
+
 /* App Navigation */
 #app-navigation {
   background-color: #31363B;

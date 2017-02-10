@@ -358,6 +358,35 @@ input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
 	border-color: $decoration-active;
 }
 
+// Users
+
+#userlist th.name {
+	color: $foreground-normal;
+}
+
+div.multiselect.active {
+	background-color: $background-normal;
+}
+
+ul.multiselectoptions {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Notifications */
+
+#notification {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	border-top: none;
+}
+
 /* App Navigation */
 
 #app-navigation {
