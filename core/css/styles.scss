@@ -184,6 +184,14 @@ input[type="url"], input[type="time"], textarea {
 		color: $input-foreground-active;
 		border-color: $input-decoration-active;
 	}
+
+	&:disabled {
+		background-color: $background-alternate;
+
+		&:hover, &:focus, &:active {
+			border-color: $decoration-normal;
+		}
+	}
 }
 
 /* Buttons */
@@ -205,17 +213,14 @@ button, .button, select {
 		color: $button-foreground-active;
 		border-color: $button-decoration-active;
 	}
-}
 
-input:disabled, input:disabled:hover, input:disabled:focus, 
-button:disabled, button:disabled:hover, button:disabled:focus, 
-.button:disabled, .button:disabled:hover, .button:disabled:focus, 
-a.disabled, a.disabled:hover, a.disabled:focus, textarea:disabled {
-	background-color: $background-alternate;
-
-	&:hover, &:focus, &:active {
+	&:disabled {
 		background-color: $background-alternate;
-		border-color: $decoration-normal;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			border-color: $decoration-normal;
+		}
 	}
 }
 
@@ -236,20 +241,17 @@ button.primary, .button.primary {
 		color: $button-foreground-active;
 		border-color: $button-decoration-active;
 	}
-}
 
-.primary:disabled, input.primary[type="submit"]:disabled, 
-input.primary[type="button"]:disabled, button.primary:disabled, 
-.button.primary:disabled, .primary:disabled:hover, 
-input.primary[type="submit"]:disabled:hover, 
-input.primary[type="button"]:disabled:hover, button.primary:disabled:hover, 
-.button.primary:disabled:hover, .primary:disabled:focus, 
-input.primary[type="submit"]:disabled:focus, 
-input.primary[type="button"]:disabled:focus, button.primary:disabled:focus, 
-.button.primary:disabled:focus {
-	background-color: $background-alternate;
-	color: $foreground-inactive;
-	border-color: $decoration-normal;
+	&:disabled {
+		background-color: $background-alternate;
+		color: $foreground-inactive;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			color: $foreground-inactive;
+			border-color: $decoration-normal;
+		}
+	}
 }
 
 /* Navigation */
@@ -311,69 +313,86 @@ input.primary[type="button"]:disabled:focus, button.primary:disabled:focus,
 	color: $foreground-normal;
 }
 
-.select2-container-multi .select2-choices, 
-.select2-container-multi.select2-container-active 
-.select2-choices, .select2-container .select2-choice {
-	background-color: $background-dark;
-	color: $foreground-normal;
-	border-color: $decoration-normal;
+.select2-container-multi {
+	
+	.select2-choices, &.select2-container-active .select2-choices {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+	}
+
+	.select2-choices .select2-search-choice, &.select2-container-active .select2-choices .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:hover, &.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
+
+	.select2-choices .select2-search-field input {
+		color: $foreground-normal;
+
+		&.select2-active {
+			background-color: $background-dark !important;
+		}
+	}
 }
 
-.select2-container-multi .select2-choices .select2-search-choice, 
-.select2-container-multi.select2-container-active .select2-choices .select2-search-choice, 
-.select2-container .select2-choice .select2-search-choice {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-	color: $foreground-normal;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
+.select2-container {
+	
+	.select2-choice {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+	}
 
-.select2-container-multi .select2-choices .select2-search-field input {
-	color: $foreground-normal;
-}
+	.select2-choice .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
 
-.select2-container-multi .select2-choices .select2-search-field input.select2-active {
-	background-color: $background-dark !important;
+		&:hover, &.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
 }
 
 #select2-drop {
 	background-color: $background-normal;
 	color: $foreground-normal;
-}
 
-#select2-drop.select2-drop-active {
-	border-color: $decoration-normal;
+	&.select2-drop-active {
+		border-color: $decoration-normal;
+	}
+
+	.select2-results {
+
+		.select2-result, .select2-no-results, .select2-searching {
+			background-color: $background-dark;
+			color: $foreground-normal;
+		}
+
+		.select2-result.select2-selected {
+			background-color: $background-normal;
+		}
+
+		.select2-result.select2-highlighted {
+			background-color: $background-normal;
+			color: $foreground-normal;
+		}
+	}
 }
 
 .select2-drop-active {
 	border-color: $decoration-normal;
-}
-
-#select2-drop .select2-results .select2-result.select2-selected {
-	background-color: $background-normal;
-}
-
-#select2-drop .select2-results .select2-result, 
-#select2-drop .select2-results .select2-no-results, 
-#select2-drop .select2-results .select2-searching {
-	background-color: $background-dark;
-	color: $foreground-normal;
-}
-
-#select2-drop .select2-results .select2-result.select2-highlighted {
-	background-color: $background-normal;
-	color: $foreground-normal;
-}
-
-.select2-container-multi .select2-choices .select2-search-choice.select2-search-choice-focus, 
-.select2-container-multi .select2-choices .select2-search-choice:hover, 
-.select2-container-multi.select2-container-active .select2-choices .select2-search-choice.select2-search-choice-focus, 
-.select2-container-multi.select2-container-active .select2-choices .select2-search-choice:hover, 
-.select2-container .select2-choice .select2-search-choice.select2-search-choice-focus, 
-.select2-container .select2-choice .select2-search-choice:hover {
-	background-color: $background-normal;
-	border-color: $decoration-active;
 }
 
 // Users
@@ -599,6 +618,17 @@ span.extension {
 
 /* News App */
 
-#explore .category {
-	background-color: $background-active;
+#explore {
+	
+	.category {
+		background-color: $background-active;
+	}
+
+	.grid-item {
+		border-color: $decoration-normal;
+	}
+
+	.explore-footer a {
+		color: $foreground-link;
+	}
 }
