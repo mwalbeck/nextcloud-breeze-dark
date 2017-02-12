@@ -8,6 +8,7 @@ body {
 
 #body-user #header, #body-settings #header, #body-public #header {
 	background-color: $background-normal;
+	//border-bottom: 1px solid $decoration-active;
 }
 
 a {
@@ -432,7 +433,7 @@ ul.multiselectoptions {
 
 #app-navigation {
 	background-color: $background-normal;
-	border: none;
+	border-color: $decoration-normal;
 
 	li > a {
 		color: $foreground-normal !important;
@@ -475,7 +476,7 @@ ul.multiselectoptions {
 
 .nav-trashbin {
 	background-color: $background-normal;
-	border: none;
+	border-color: $decoration-normal;
 }
 
 .bubble {
@@ -506,7 +507,7 @@ ul.multiselectoptions {
 }
 
 #app-settings-content, #app-settings-header {
-	border: none;
+	border-color: $decoration-normal;
 }
 
 #app-settings-content {
@@ -548,15 +549,26 @@ ul.multiselectoptions {
 	color: $foreground-active;
 }
 
+/* App Store */
+
+.app-level span {
+	color: $foreground-normal;
+}
+
 /* Files App */
+
+#app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.9%;
+}
 
 #app-content-files #filestable {
 	background-color: $background-dark;
-	padding-bottom: 2em;
 }
 
 #controls {
 	background-color: $background-normal;
+	margin-top: 1px;
 }
 
 #filestable tbody {
@@ -599,7 +611,7 @@ span.extension {
 
 #app-sidebar {
 	background-color: $background-normal;
-	border: none;
+	border-color: $decoration-normal;
 
 	.file-details {
 		color: $foreground-normal;

@@ -307,7 +307,7 @@ ul.multiselectoptions {
 /* App Navigation */
 #app-navigation {
   background-color: #31363B;
-  border: none; }
+  border-color: #706F6E; }
   #app-navigation li > a {
     color: #EFF0F1 !important;
     opacity: 1; }
@@ -331,7 +331,7 @@ ul.multiselectoptions {
 
 .nav-trashbin {
   background-color: #31363B;
-  border: none; }
+  border-color: #706F6E; }
 
 .bubble {
   background-color: #31363B;
@@ -352,7 +352,7 @@ ul.multiselectoptions {
   margin: 3px 0; }
 
 #app-settings-content, #app-settings-header {
-  border: none; }
+  border-color: #706F6E; }
 
 #app-settings-content {
   background-color: #31363B; }
@@ -381,13 +381,21 @@ ul.multiselectoptions {
   opacity: 1;
   color: #FCFCFC; }
 
+/* App Store */
+.app-level span {
+  color: #EFF0F1; }
+
 /* Files App */
+#app-content {
+  border-top: 1px solid #706F6E;
+  height: 99.9%; }
+
 #app-content-files #filestable {
-  background-color: #232629;
-  padding-bottom: 2em; }
+  background-color: #232629; }
 
 #controls {
-  background-color: #31363B; }
+  background-color: #31363B;
+  margin-top: 1px; }
 
 #filestable tbody tr {
   background-color: #232629; }
@@ -413,7 +421,7 @@ span.extension {
 
 #app-sidebar {
   background-color: #31363B;
-  border: none; }
+  border-color: #706F6E; }
   #app-sidebar .file-details {
     color: #EFF0F1; }
 
