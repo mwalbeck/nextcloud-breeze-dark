@@ -19,7 +19,7 @@ $decoration-normal: #706F6E;
 $decoration-active: #3DAEE9;
 
 $foreground-active: #FCFCFC;
-$foreground-inactive: #BDC3C7;
+$foreground-inactive: rgba(189, 195, 199, 1);
 $foreground-link: #2980B9;
 $foreground-normal: #EFF0F1;
 
@@ -27,6 +27,8 @@ $foreground-negative: #DA4453;
 $foreground-neutral: #F67400;
 $foreground-positive: #27AE60;
 $foreground-visited: #7F8C8D;
+
+$foreground-markdown-marker: rgba(189, 195, 199, 0.4);
 
 
 /* Buttons*/
