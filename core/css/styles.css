@@ -196,6 +196,15 @@ button.primary, .button.primary {
       color: #BDC3C7;
       border-color: #706F6E; }
 
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+.searchbox input[type="search"]:valid {
+  color: #FCFCFC;
+  border-color: #3DAEE9;
+  background-color: #232629; }
+
+#app-content #searchresults {
+  background-color: #31363B; }
+
 /* Navigation */
 #navigation {
   background-color: #31363B;
@@ -388,7 +397,8 @@ ul.multiselectoptions {
 /* Files App */
 #app-content {
   border-top: 1px solid #706F6E;
-  height: 99.9%; }
+  height: 99.9%;
+  background-color: #232629; }
 
 #app-content-files #filestable {
   background-color: #232629; }
@@ -418,6 +428,14 @@ table td.filesize {
 
 span.extension {
   color: #BDC3C7; }
+
+#app-content-systemtagsfilter #controls input[type="text"] {
+  height: 34px;
+  padding: 6px 10px; }
+#app-content-systemtagsfilter .select2-choices {
+  background-color: #232629;
+  border-color: #706F6E;
+  color: #EFF0F1; }
 
 #app-sidebar {
   background-color: #31363B;

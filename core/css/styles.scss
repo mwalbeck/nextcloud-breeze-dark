@@ -255,6 +255,18 @@ button.primary, .button.primary {
 	}
 }
 
+// Search
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+ .searchbox input[type="search"]:valid {
+	 color: $foreground-active;
+	 border-color: $decoration-active;
+	 background-color: $background-dark;
+ }
+
+ #app-content #searchresults {
+	 background-color: $background-normal;
+ }
+
 /* Navigation */
 
 #navigation {
@@ -560,6 +572,7 @@ ul.multiselectoptions {
 #app-content {
 	border-top: 1px solid $decoration-normal;
 	height: 99.9%;
+	background-color: $background-dark;
 }
 
 #app-content-files #filestable {
@@ -605,6 +618,19 @@ table td.filesize {
 
 span.extension {
 	color: $foreground-inactive;
+}
+
+#app-content-systemtagsfilter {
+	#controls input[type="text"] {
+		height: 34px;
+		padding: 6px 10px;
+	}
+
+	.select2-choices {
+		background-color: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+	}
 }
 
 // App Sidebar
