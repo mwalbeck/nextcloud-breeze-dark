@@ -467,7 +467,7 @@ span.extension {
 
 .note-search input {
   border: none;
-  background-color: #31363b;
+  background-color: transparent;
   color: #eff0f1; }
   .note-search input:active, .note-search input:focus, .note-search input:hover {
     border-bottom: 1px solid #3daee9;
@@ -479,6 +479,6 @@ span.extension {
     color: rgba(189, 195, 199, 0.4); }
 
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
-  opacity: 1; }
+  opacity: 0.7; }
 
 /*# sourceMappingURL=styles.css.map */

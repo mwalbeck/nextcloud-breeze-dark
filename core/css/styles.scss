@@ -682,7 +682,7 @@ span.extension {
 
 .note-search input {
 	border: none;
-	background-color: $background-normal;
+	background-color: transparent;
 	color: $foreground-normal;
 
 	&:active, &:focus, &:hover {
@@ -701,6 +701,6 @@ span.extension {
 
 #app-navigation .active > .utils {
 	.icon-delete:hover, .icon-star:hover {
-		opacity: 1;
+		opacity: 0.7;
 	}
 }
