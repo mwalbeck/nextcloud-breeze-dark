@@ -6,27 +6,27 @@
 
 /* Default Colors */
 $background-active: rgba(61, 174, 233, 1);
-$background-active-alternate: #1D99F3;
+$background-active-alternate: rgba(29, 153, 243, 1);
 $background-active-hover: rgba(61, 174, 233, 0.25);
-$background-alternate: #4D4D4D;
-$background-dark: #232629;
-$background-normal: #31363B;
-$background-negative: #DA4453;
-$background-neutral: #F67400;
-$background-positive: #27AE60;
+$background-alternate: rgba(77, 77, 77, 1);
+$background-dark: rgba(35, 38, 41, 1);
+$background-normal: rgba(49, 54, 59, 1);
+$background-negative: rgba(218, 68, 83, 1);
+$background-neutral: rgba(246, 116, 0, 1);
+$background-positive: rgba(39, 174, 96, 1);
 
-$decoration-normal: #706F6E;
-$decoration-active: #3DAEE9;
+$decoration-normal: rgba(112, 111, 110, 1);
+$decoration-active: rgba(61, 174, 233, 1);
 
-$foreground-active: #FCFCFC;
+$foreground-active: rgba(252, 252, 252, 1);
 $foreground-inactive: rgba(189, 195, 199, 1);
-$foreground-link: #2980B9;
-$foreground-normal: #EFF0F1;
+$foreground-link: rgba(41, 128, 185, 1);
+$foreground-normal: rgba(239, 240, 241, 1);
 
-$foreground-negative: #DA4453;
-$foreground-neutral: #F67400;
-$foreground-positive: #27AE60;
-$foreground-visited: #7F8C8D;
+$foreground-negative: rgba(218, 68, 83, 1);
+$foreground-neutral: rgba(246, 116, 0, 1);
+$foreground-positive: rgba(39, 174, 96, 1);
+$foreground-visited: rgba(127, 140, 141, 1);
 
 $foreground-markdown-marker: rgba(189, 195, 199, 0.4);
 
