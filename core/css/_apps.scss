@@ -1,0 +1,222 @@
+/* Files App */
+
+#app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.9%;
+	background-color: $background-dark;
+}
+
+#app-content-files #filestable {
+	background-color: $background-dark;
+}
+
+#controls {
+	background-color: $background-normal;
+	margin-top: 1px;
+}
+
+#filestable tbody {
+	tr {
+		background-color: $background-dark;
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+		}
+	}
+
+	.name:focus {
+		background-color: transparent;
+	}
+}
+
+.summary {
+	color: $foreground-inactive;
+	opacity: 1;
+}
+
+table td.filesize {
+	color: $foreground-inactive !important;
+}
+
+span.extension {
+	color: $foreground-inactive;
+}
+
+#app-content-systemtagsfilter {
+	#controls input[type="text"] {
+		height: 34px;
+		padding: 6px 10px;
+	}
+
+	.select2-choices {
+		background-color: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+	}
+}
+
+// App Sidebar
+
+#app-sidebar {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	.file-details {
+		color: $foreground-normal;
+	}
+}
+
+.tabHeaders .tabHeader, .tabHeaders .tabHeader a {
+	color: $foreground-normal;
+}
+
+.tabHeaders .tabHeader.selected a, 
+.tabHeaders .tabHeader:hover a {
+	color: $foreground-active;
+	border-bottom: 1px solid $decoration-active;
+}
+
+/* News App */
+
+#explore {
+	
+	.category {
+		background-color: $background-active;
+	}
+
+	.grid-item {
+		border-color: $decoration-normal;
+	}
+
+	.explore-footer a {
+		color: $foreground-link;
+	}
+}
+
+.app-news #app-navigation {
+	li.collapsible.open {
+		a {
+			background-color: $background-dark;
+		}
+	}
+
+	li.folder {
+		border-right: 1px solid $decoration-normal;
+	}
+
+    .app-navigation-entry-menu {
+        background-color: $background-normal;
+        color: $foreground-normal;
+        border: 1px solid $decoration-normal;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+        filter: none;
+
+        &::after {
+            border-bottom-color: $decoration-normal;
+        }
+    }
+}
+
+#app-content {
+	.item {
+		background-color: $background-dark;
+		border-color: $decoration-normal;
+	}
+
+	.item.active {
+		background-color: $background-dark;
+		background-image: none;
+	}
+
+	.date {
+		color: $foreground-inactive;
+	}
+
+	.heading a {
+		color: $foreground-normal;
+	}
+
+	.subtitle {
+		color: $foreground-inactive;
+	}
+
+	.utils .title h1 a {
+		color: $foreground-normal;
+	}
+
+	.finished-auto-paging #articles::after {
+		background-color: $background-dark;
+		background-image: none;
+	}
+
+    .no-feeds-available {
+        color: $foreground-markdown-marker;
+    }
+
+    .body {
+
+        a {
+		    color: $foreground-link;
+        }
+
+        blockquote {
+            border-color: $decoration-active;
+            background-color: $background-normal;
+        }
+
+        h3 {
+            color: $foreground-active;
+        }
+
+        /*h4, h5, h6 {
+            color: $foreground-normal;
+        }*/
+
+        pre {
+            background-color: $background-normal;
+            border-color: $decoration-normal;
+        }
+	}
+}
+
+/* Notes App */
+#app-navigation li .nav-entry {
+	color: $foreground-normal;
+}
+
+.note-search input {
+	border: none;
+	background-color: transparent;
+	color: $foreground-normal;
+
+	&:active, &:focus, &:hover {
+		border-bottom: 1px solid $decoration-active;
+		color: $foreground-active;
+	}
+}
+
+.mdedit {
+	color: $foreground-normal;
+
+	.marker {
+		color: $foreground-markdown-marker;
+	}
+}
+
+#app-navigation .active > .utils {
+	.icon-delete:hover, .icon-star:hover {
+		opacity: 0.7;
+	}
+}

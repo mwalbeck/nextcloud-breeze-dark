@@ -363,11 +363,9 @@ ul.multiselectoptions {
   margin: 3px 0; }
 
 #app-settings-content, #app-settings-header {
-  border-color: #706f6e; }
-
-#app-settings-content {
+  border-color: #706f6e;
   background-color: #31363b; }
-  #app-settings-content a {
+  #app-settings-content a, #app-settings-header a {
     color: #2980b9; }
 
 .settings-button {
@@ -465,6 +463,17 @@ span.extension {
   background-color: #232629; }
 .app-news #app-navigation li.folder {
   border-right: 1px solid #706f6e; }
+.app-news #app-navigation .app-navigation-entry-menu {
+  background-color: #31363b;
+  color: #eff0f1;
+  border: 1px solid #706f6e;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; }
+  .app-news #app-navigation .app-navigation-entry-menu::after {
+    border-bottom-color: #706f6e; }
 
 #app-content .item {
   background-color: #232629;
@@ -478,13 +487,27 @@ span.extension {
   color: #eff0f1; }
 #app-content .subtitle {
   color: #bdc3c7; }
-#app-content .body a {
-  color: #2980b9; }
 #app-content .utils .title h1 a {
   color: #eff0f1; }
 #app-content .finished-auto-paging #articles::after {
   background-color: #232629;
   background-image: none; }
+#app-content .no-feeds-available {
+  color: rgba(189, 195, 199, 0.4); }
+#app-content .body {
+  /*h4, h5, h6 {
+      color: $foreground-normal;
+  }*/ }
+  #app-content .body a {
+    color: #2980b9; }
+  #app-content .body blockquote {
+    border-color: #3daee9;
+    background-color: #31363b; }
+  #app-content .body h3 {
+    color: #fcfcfc; }
+  #app-content .body pre {
+    background-color: #31363b;
+    border-color: #706f6e; }
 
 /* Notes App */
 #app-navigation li .nav-entry {
