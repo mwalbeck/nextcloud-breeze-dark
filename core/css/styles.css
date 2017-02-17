@@ -426,8 +426,64 @@ ul.multiselectoptions {
 #app-content hr {
   border-color: #706f6e; }
 
-/* Files App */
-#app-content {
+/* Contacts */
+.app-content-list {
+  background-color: #232629;
+  border-top: 1px solid #706f6e;
+  border-right: 1px solid #706f6e; }
+
+.app-content-list-item {
+  border-color: #706f6e; }
+  .app-content-list-item:first-child {
+    border: none; }
+  .app-content-list-item:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-content-list-item:active, .app-content-list-item:focus {
+    background-color: #3daee9; }
+  .app-content-list-item.active {
+    background-color: #3daee9;
+    color: #fcfcfc;
+    font-weight: 600;
+    border-color: #3daee9; }
+  .app-content-list-item a {
+    color: #eff0f1; }
+
+.contacts-list-count {
+  color: #bdc3c7;
+  border-color: #706f6e; }
+
+.contact-details-wrapper {
+  background-color: #31363b; }
+
+.contactdetails__header {
+  background-color: #3daee9 !important;
+  color: #eff0f1; }
+  .contactdetails__header .contactdetails__org, .contactdetails__header .contactdetails__title {
+    color: #eff0f1 !important;
+    font-weight: 600; }
+    .contactdetails__header .contactdetails__org:placeholder-shown, .contactdetails__header .contactdetails__title:placeholder-shown {
+      color: #eff0f1;
+      opacity: 1; }
+
+.contactdetails__name {
+  color: #eff0f1;
+  font-weight: 600; }
+
+detailsitem .icon-delete {
+  opacity: 0.4; }
+
+input.newAddressBookSubmit {
+  border: none;
+  background-color: inherit; }
+  input.newAddressBookSubmit:hover, input.newAddressBookSubmit:focus, input.newAddressBookSubmit:active {
+    border: none;
+    background-color: inherit; }
+
+input.newAddressBookInput {
+  padding: 5px; }
+
+/* Files */
+.app-files #app-content {
   border-top: 1px solid #706f6e;
   height: 99.9%;
   background-color: #232629; }
@@ -542,7 +598,7 @@ span.extension {
 #link {
   border-color: #706f6e; }
 
-/* News App */
+/* News */
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
@@ -598,7 +654,7 @@ span.extension {
   background-color: #31363b;
   border-color: #706f6e; }
 
-/* Notes App */
+/* Notes */
 #app-navigation li .nav-entry {
   color: #eff0f1; }
 
