@@ -1,5 +1,6 @@
  
 @import 'colours';
+@import 'icons';
 
 body {
 	color: $foreground-normal;
@@ -17,6 +18,20 @@ a {
 
 em {
 	opacity: 0.75;
+}
+
+#controls {
+	background-color: $background-normal;
+
+	.button {
+		width: 38px;
+	}
+}
+
+/* Breadcrumbs */
+
+div.crumb > span {
+	color: $foreground-normal;
 }
 
 /* Tables */

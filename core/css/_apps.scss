@@ -10,7 +10,7 @@
 	background-color: $background-dark;
 }
 
-#controls {
+#app-content-files #controls {
 	background-color: $background-normal;
 	margin-top: 1px;
 }
@@ -83,6 +83,66 @@ span.extension {
 .tabHeaders .tabHeader:hover a {
 	color: $foreground-active;
 	border-bottom: 1px solid $decoration-active;
+}
+
+/* Gallery */
+
+#content-wrapper .app-gallery {
+	background-color: $background-dark;
+}
+
+#controls .button {
+	&.sorting {
+		padding: 8px 5px;
+
+		&.active-button {
+			background-color: $background-active;
+			border-color: $decoration-active;
+			color: $foreground-normal;
+
+			&:hover {
+				background-color: $background-active;
+				border-color: $decoration-active;
+				color: $foreground-normal;
+
+			}
+		}
+	}
+
+	&.left-switch-button {
+		border-color: $decoration-normal;
+
+		&:hover {
+			border-color: $decoration-active;
+		}
+	}
+
+	&.view-switcher.gallery {
+		background-color: $background-normal;
+		color: $foreground-normal;
+		border: 1px solid $decoration-normal;
+
+		&:hover {
+			background-color: $background-normal;
+			color: $foreground-normal;
+			border-color: $decoration-active
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+			border-color: $decoration-active;
+		}
+	}
+}
+
+#dropdown {
+	background: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+#link {
+	border-color: $decoration-normal;
 }
 
 /* News App */
@@ -176,13 +236,13 @@ span.extension {
             background-color: $background-normal;
         }
 
-        h3 {
+        h1, h2, h3 {
             color: $foreground-active;
         }
 
-        /*h4, h5, h6 {
+        h4, h5, h6 {
             color: $foreground-normal;
-        }*/
+        }
 
         pre {
             background-color: $background-normal;
