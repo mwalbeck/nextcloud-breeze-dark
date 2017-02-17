@@ -22,7 +22,7 @@ em {
 #controls {
   background-color: #31363b; }
   #controls .button {
-    width: 38px; }
+    padding: 7px 11px; }
 
 /* Breadcrumbs */
 div.crumb > span {
@@ -240,6 +240,8 @@ button.primary, .button.primary {
 .app-settings #app-content {
   border-top: 1px solid #706f6e;
   height: 99.9%; }
+  .app-settings #app-content #controls {
+    border-top: 1px solid #706f6e; }
 
 #quota {
   background-color: #232629;

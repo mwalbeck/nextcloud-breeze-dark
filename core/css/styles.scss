@@ -23,7 +23,7 @@ em {
 	background-color: $background-normal;
 
 	.button {
-		width: 38px;
+		padding: 7px 11px;
 	}
 }
 
@@ -320,6 +320,10 @@ button.primary, .button.primary {
 .app-settings #app-content {
 	border-top: 1px solid $decoration-normal;
 	height: 99.9%;
+
+	#controls {
+		border-top: 1px solid $decoration-normal;
+	}
 }
 
 // Personal
