@@ -422,3 +422,29 @@ span.extension {
 		opacity: 0.7;
 	}
 }
+
+/* First Run Wizard */
+#cboxLoadedContent {
+	background-color: $background-dark;
+}
+
+#firstrunwizard p a {
+	color: $foreground-link;
+
+	&:hover, &:focus {
+		color: $foreground-link;
+	}
+}
+
+/* File Access Control */
+.workflowengine .operation {
+	border-bottom-color: $decoration-normal;
+
+	.check:hover {
+		background-color: $background-normal;
+	}
+
+	&.modified {
+		border-left-color: $foreground-neutral;
+	}
+}

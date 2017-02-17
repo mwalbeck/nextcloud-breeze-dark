@@ -237,6 +237,10 @@ button.primary, .button.primary {
     color: #eff0f1; }
 
 /* Settings */
+.app-settings #app-content {
+  border-top: 1px solid #706f6e;
+  height: 99.9%; }
+
 #quota {
   background-color: #232629;
   color: #eff0f1;
@@ -673,5 +677,22 @@ span.extension {
 
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
   opacity: 0.7; }
+
+/* First Run Wizard */
+#cboxLoadedContent {
+  background-color: #232629; }
+
+#firstrunwizard p a {
+  color: #2980b9; }
+  #firstrunwizard p a:hover, #firstrunwizard p a:focus {
+    color: #2980b9; }
+
+/* File Access Control */
+.workflowengine .operation {
+  border-bottom-color: #706f6e; }
+  .workflowengine .operation .check:hover {
+    background-color: #31363b; }
+  .workflowengine .operation.modified {
+    border-left-color: #f67400; }
 
 /*# sourceMappingURL=styles.css.map */

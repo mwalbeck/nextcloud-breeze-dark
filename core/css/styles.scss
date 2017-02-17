@@ -317,6 +317,11 @@ button.primary, .button.primary {
 
 /* Settings */
 
+.app-settings #app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.9%;
+}
+
 // Personal
 
 #quota {
