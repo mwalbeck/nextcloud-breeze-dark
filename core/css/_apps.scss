@@ -448,3 +448,22 @@ span.extension {
 		border-left-color: $foreground-neutral;
 	}
 }
+
+/* External Storage */
+table.grid th, table.grid td {
+	border-bottom-color: $decoration-normal;
+}
+
+.dropdown {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+#externalStorage td.mountOptionsToggle > img {
+	opacity: 0.7;
+
+	&:hover {
+		opacity: 1;
+	}
+}

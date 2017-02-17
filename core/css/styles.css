@@ -695,4 +695,18 @@ span.extension {
   .workflowengine .operation.modified {
     border-left-color: #f67400; }
 
+/* External Storage */
+table.grid th, table.grid td {
+  border-bottom-color: #706f6e; }
+
+.dropdown {
+  background-color: #31363b;
+  box-shadow: none;
+  border: 1px solid #706f6e; }
+
+#externalStorage td.mountOptionsToggle > img {
+  opacity: 0.7; }
+  #externalStorage td.mountOptionsToggle > img:hover {
+    opacity: 1; }
+
 /*# sourceMappingURL=styles.css.map */
