@@ -1,5 +1,34 @@
-/* Files App */
+/* Activity */
+.activitymessage {
+	color: $foreground-normal;
+	opacity: 0.6;
+}
 
+.box .activitytime {
+	color: $foreground-inactive;
+	opacity: 0.5;
+}
+
+#no_more_activities {
+	color: $foreground-inactive;
+	opacity: 0.5;
+}
+
+/* Announcement Center */
+#announcement_submit_msg {
+	opacity: 0.8;
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
+#app-content hr {
+	border-color: $decoration-normal;
+}
+
+/* Files App */
 #app-content {
 	border-top: 1px solid $decoration-normal;
 	height: 99.9%;
@@ -34,13 +63,17 @@
 	}
 
 	.name:focus {
-		background-color: transparent;
+		background-color: $background-dark;
 	}
 }
 
 .summary {
 	color: $foreground-inactive;
 	opacity: 1;
+}
+
+table tr.mouseOver td {
+	background-color: $background-dark;
 }
 
 table td.filesize {
@@ -61,6 +94,33 @@ span.extension {
 		background-color: $background-dark;
 		border-color: $decoration-normal;
 		color: $foreground-normal;
+	}
+}
+
+#fileList .popovermenu .action {
+	color: $foreground-normal;
+}
+
+#fileList a.action.permanent {
+	opacity: 0.4 !important;
+}
+
+#controls .button.view-switcher {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+
+	&:hover {
+		border-color: $decoration-active;
+		background-color: $background-normal;
+	}
+
+	&:focus, &:active {
+		border-color: $decoration-active;
+		background-color: $background-active;
+	}
+
+	img {
+		opacity: 0.6;
 	}
 }
 
