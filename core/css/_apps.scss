@@ -467,3 +467,21 @@ table.grid th, table.grid td {
 		opacity: 1;
 	}
 }
+
+/* Two Factor U2F */
+.two-factor-link {
+	padding: 0 12px;
+	color: $foreground-inactive;
+
+	&:hover {
+		color: $foreground-active;
+	}
+}
+
+#body-login .warning {
+	background-color: $background-dark;
+}
+
+.challenge-form input[type="text"], .totp-form input[type="text"] {
+	background: $background-normal;
+}
