@@ -333,7 +333,7 @@ span.extension {
 
 .app-news #app-content {
 	border-top: 1px solid $decoration-normal;
-	
+
 	.item {
 		background-color: $background-dark;
 		border-color: $decoration-normal;
@@ -486,4 +486,16 @@ table.grid th, table.grid td {
 
 .challenge-form input[type="text"], .totp-form input[type="text"] {
 	background: $background-normal;
+}
+
+/* Notifications */
+
+.notification-container {
+	box-shadow: none;
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+}
+
+.notification {
+	color: $foreground-normal;
 }
