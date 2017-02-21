@@ -21,13 +21,56 @@
 .icon-add {
   background-image: url("../img/actions/add.svg?v=1"); }
 
-.nav-icon-trashbin {
-  background-image: url("../img/actions/delete.svg?v=1"); }
-
 .icon-delete {
   background-image: url("../img/actions/delete.svg?v=1"); }
   .icon-delete:hover, .icon-delete:focus {
     background-image: url("../img/actions/delete-hover.svg?v=1"); }
+
+.icon-upload {
+  background-image: url("../img/actions/upload.svg?v=1"); }
+
+.icon-folder, .icon-filetype-folder {
+  background-image: url("../img/filetypes/folder.svg?v=1"); }
+
+.icon-file, .icon-filetype-text {
+  background-image: url("../img/filetypes/text.svg?v=1"); }
+
+.icon-public {
+  background-image: url("../img/actions/public.svg?v=1"); }
+
+.icon-share {
+  background-image: url("../img/actions/share.svg?v=1"); }
+
+.icon-more {
+  background-image: url("../img/actions/more.svg?v=1"); }
+
+/* Nav Bar Icons */
+.nav-icon-files {
+  background-image: url("../img/places/files.svg?v=1"); }
+
+.nav-icon-sharingin, .nav-icon-sharingout {
+  background-image: url("../img/actions/share.svg?v=1"); }
+
+.nav-icon-sharinglinks {
+  background-image: url("../img/actions/public.svg?v=1"); }
+
+.nav-icon-systemtagsfilter {
+  background-image: url("../img/actions/tag.svg"); }
+
+.nav-icon-extstoragemounts {
+  background-image: url("../img/actions/external.svg?v=1"); }
+
+.nav-icon-trashbin {
+  background-image: url("../img/actions/delete.svg?v=1"); }
+
+.icon-external {
+  background-image: url("../img/actions/external.svg?v=1"); }
+
+.icon-download {
+  background-image: url("../img/actions/download.svg?v=1"); }
+
+.icon-triangle-s {
+  background-image: url("../img/actions/triangle-s.svg?v=1"); }
 
 #navigation .app-icon {
   filter: none; }
