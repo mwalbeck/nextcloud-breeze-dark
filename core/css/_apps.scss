@@ -117,6 +117,10 @@ input.newAddressBookInput {
 	background-color: $background-dark;
 }
 
+.app-files #app-navigation + #app-content #controls {
+	margin-top: 1px;
+}
+
 #app-content-files #filestable {
 	background-color: $background-dark;
 }
@@ -141,12 +145,28 @@ input.newAddressBookInput {
 		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
 			background-color: $background-active;
 			color: $foreground-active;
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: $background-alternate;
+		}
+
+		&.externalErroredRow {
+			background-color: $background-negative;
 		}
 	}
 
 	.name:focus {
 		background-color: $background-dark;
 	}
+}
+
+#filestable.multiselect {
+	top: 93px;
 }
 
 .summary {
@@ -160,6 +180,17 @@ table tr.mouseOver td {
 
 table td.filesize {
 	color: $foreground-inactive !important;
+}
+
+table.multiselect {
+	thead th {
+		background-color: $background-active-hover;
+		color: $foreground-normal;
+	}
+
+	th a {
+		color: $foreground-normal;
+	}
 }
 
 span.extension {

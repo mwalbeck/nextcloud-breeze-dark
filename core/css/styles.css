@@ -494,6 +494,9 @@ input.newAddressBookInput {
   height: 99.9%;
   background-color: #232629; }
 
+.app-files #app-navigation + #app-content #controls {
+  margin-top: 1px; }
+
 #app-content-files #filestable {
   background-color: #232629; }
 
@@ -510,8 +513,17 @@ input.newAddressBookInput {
   #filestable tbody tr.highlighted, #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult {
     background-color: #3daee9;
     color: #fcfcfc; }
+    #filestable tbody tr.highlighted .filename, #filestable tbody tr.highlighted .filesize, #filestable tbody tr.highlighted .date, #filestable tbody tr.highlighted .name:focus .filename, #filestable tbody tr.highlighted .name:focus .filesize, #filestable tbody tr.highlighted .name:focus .date, #filestable tbody tr.selected .filename, #filestable tbody tr.selected .filesize, #filestable tbody tr.selected .date, #filestable tbody tr.searchresult .filename, #filestable tbody tr.searchresult .filesize, #filestable tbody tr.searchresult .date {
+      font-weight: 600; }
+  #filestable tbody tr.externalDisabledRow {
+    background-color: #4d4d4d; }
+  #filestable tbody tr.externalErroredRow {
+    background-color: #da4453; }
 #filestable tbody .name:focus {
   background-color: #232629; }
+
+#filestable.multiselect {
+  top: 93px; }
 
 .summary {
   color: #bdc3c7;
@@ -522,6 +534,12 @@ table tr.mouseOver td {
 
 table td.filesize {
   color: #bdc3c7 !important; }
+
+table.multiselect thead th {
+  background-color: rgba(61, 174, 233, 0.25);
+  color: #eff0f1; }
+table.multiselect th a {
+  color: #eff0f1; }
 
 span.extension {
   color: #bdc3c7; }
