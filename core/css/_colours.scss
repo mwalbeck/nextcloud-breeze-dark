@@ -30,7 +30,6 @@ $foreground-visited: rgba(127, 140, 141, 1);
 
 $foreground-markdown-marker: rgba(189, 195, 199, 0.4);
 
-
 /* Buttons*/
 $button-background-active: $background-active;
 $button-background-normal: $background-normal;
@@ -48,3 +47,7 @@ $input-decoration-active: $decoration-active;
 $input-foreground-normal: $foreground-normal;
 $input-foreground-active: $foreground-active;
 $input-foreground-inactive: $foreground-inactive;
+
+/*
+ Default white for icons: rgba(242, 242, 242, 1)
+*/

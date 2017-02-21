@@ -6,6 +6,15 @@
 /* Default Colors */
 /* Buttons*/
 /* Input */
+/*
+ Default white for icons: rgba(242, 242, 242, 1)
+*/
+.icon-link {
+  background-image: url("../img/places/link.svg?v=1"); }
+
+.icon-toggle {
+  background-image: url("../img/actions/toggle.svg?v=1"); }
+
 body {
   color: #eff0f1;
   background-color: #31363b; }
@@ -508,6 +517,8 @@ input.newAddressBookInput {
   background-color: #232629; }
   #filestable tbody tr:hover {
     background-color: rgba(61, 174, 233, 0.25); }
+    #filestable tbody tr:hover .name:focus {
+      background-color: inherit; }
   #filestable tbody tr:focus, #filestable tbody tr:active {
     background-color: #3daee9; }
   #filestable tbody tr.highlighted, #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult {

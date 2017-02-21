@@ -136,6 +136,10 @@ input.newAddressBookInput {
 
 		&:hover {
 			background-color: $background-active-hover;
+			
+			.name:focus {
+				background-color: inherit;
+			}
 		}
 
 		&:focus, &:active {
