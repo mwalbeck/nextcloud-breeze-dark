@@ -25,3 +25,15 @@
 	    background-image: url('../img/actions/delete-hover.svg?v=1');
     }
 }
+
+#navigation .app-icon {
+	filter: none;
+
+	image {
+		filter: none;
+	}
+}
+
+#firstrunwizard .appsmall {
+	filter: invert(100%);
+}
