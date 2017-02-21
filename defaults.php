@@ -73,7 +73,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getTitle() {
-		return 'Custom Cloud';
+		return 'Nextcloud';
 	}
 
 	/**
@@ -81,7 +81,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getName() {
-		return 'Custom Cloud';
+		return 'Nextcloud';
 	}
 
 	/**
@@ -89,7 +89,7 @@ class OC_Theme {
 	 * @return string title
 	 */
 	public function getHTMLName() {
-		return 'Custom Cloud';
+		return 'Nextcloud';
 	}
 
 	/**
@@ -97,7 +97,7 @@ class OC_Theme {
 	 * @return string entity name
 	 */
 	public function getEntity() {
-		return 'Custom Cloud Co.';
+		return 'Nextcloud';
 	}
 
 	/**
@@ -105,7 +105,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return 'Your custom cloud, personalized for you!';
+		return ' – a safe home for all your data';
 	}
 
 	/**
@@ -121,8 +121,7 @@ class OC_Theme {
 	 * @return string short footer
 	 */
 	public function getShortFooter() {
-		$footer = '© 2016 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
-			'<br/>' . $this->getSlogan();
+		$footer = '<a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'. $this->getSlogan();
 
 		return $footer;
 	}
@@ -132,8 +131,7 @@ class OC_Theme {
 	 * @return string long footer
 	 */
 	public function getLongFooter() {
-		$footer = '© 2016 <a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'.
-			'<br/>' . $this->getSlogan();
+		$footer = '<a href="'.$this->getBaseUrl().'" target="_blank\">'.$this->getEntity().'</a>'. $this->getSlogan();
 
 		return $footer;
 	}
