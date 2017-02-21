@@ -5,3 +5,23 @@
 .icon-toggle {
 	background-image: url('../img/actions/toggle.svg?v=1');
 }
+
+.settings-button {
+	background-image: url('../img/actions/settings.svg?v=1');
+}
+
+.icon-add {
+	background-image: url('../img/actions/add.svg?v=1');
+}
+
+.nav-icon-trashbin {
+	background-image: url('../img/actions/delete.svg?v=1');
+}
+
+.icon-delete {
+    background-image: url('../img/actions/delete.svg?v=1');
+
+    &:hover, &:focus {
+	    background-image: url('../img/actions/delete-hover.svg?v=1');
+    }
+}
