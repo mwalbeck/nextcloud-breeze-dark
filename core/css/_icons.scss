@@ -84,20 +84,113 @@
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
+.icon-rename {
+	background-image: url('../img/actions/rename.svg?v=1');
+}
 
+.icon-details {
+	background-image: url('../img/actions/details.svg?v=1');
+}
 
+.icon-password {
+	background-image: url('../img/actions/password.svg?v=1');
+}
 
+.icon-contacts-dark, .icon-contacts {
+	background-image: url('../img/places/contacts.svg?v=1');
+}
 
+.icon-info {
+	background-image: url('../img/actions/details.svg?v=1');
+	opacity: 0.5;
+}
 
+.icon-clippy {
+	background-image: url('../img/actions/clippy.svg?v=2');
+	opacity: 0.5;
+}
 
+.icon-tag {
+	background-image: url('../img/actions/tag.svg?v=1');
+}
 
+.icon-comment {
+	background-image: url('../img/actions/comment.svg?v=1');
+}
 
+.icon-history {
+	background-image: url('../img/actions/history.svg?v=1');
+}
 
+.icon-confirm {
+	background-image: url('../img/actions/confirm.svg?v=2');
+}
 
+.icon-search {
+	background-image: url('../img/actions/search.svg?v=1');
+}
 
+.nav-icon-favorites {
+	background-image: url('../img/actions/star.svg?v=1');
+}
 
+.icon-star, .icon-starred:hover, .icon-starred:focus {
+	background-image: url('../img/actions/star.svg?v=1');
+	opacity: 0.5;
+}
 
+.icon-starred, .icon-star:hover, .icon-star:focus {
+	background-image: url('../img/actions/starred.svg?v=1');
+	opacity: 1;
+}
 
+input.radio[type="radio"] {
+	+ label::before {
+		background: url('../img/actions/radio.svg') left top no-repeat;
+	}
+
+	&:checked + label::before {
+		background-image: url('../img/actions/radio-checked.svg');
+	}
+
+	&:disabled + label::before {
+		background-image: url('../img/actions/radio-disabled.svg');
+	}
+
+	&:checked:disabled + label::before {
+		background-image: url('../img/actions/radio-checked-disabled.svg');
+	}
+}
+
+input.checkbox[type="checkbox"] {
+	+ label::before {
+		background: url('../img/actions/checkbox.svg') left top no-repeat;
+	}
+
+	&:checked + label::before {
+		background-image: url('../img/actions/checkbox-checked.svg');
+	}
+
+	&:disabled + label::before {
+		background-image: url('../img/actions/checkbox-disabled.svg');
+	}
+
+	&:checked:disabled + label::before {
+		background-image: url('../img/actions/checkbox-checked-disabled.svg');
+	}
+}
+
+select {
+	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
+}
+
+#app-navigation .app-navigation-entry-utils-menu-button button {
+	background-image: url('../img/actions/more.svg?v=1');
+}
+
+#app-navigation .collapsible > .collapse {
+	background-image: url('../img/actions/triangle-s.svg?v=1');
+}
 
 
 

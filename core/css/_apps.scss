@@ -431,6 +431,11 @@ span.extension {
 }
 
 /* Notes */
+
+.app-notes #app-content {
+	border-top: 1px solid $decoration-normal;
+}
+
 #app-navigation li .nav-entry {
 	color: $foreground-normal;
 }
