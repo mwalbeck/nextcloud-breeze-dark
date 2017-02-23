@@ -579,6 +579,59 @@ ul.multiselectoptions {
 #app-content hr {
   border-color: #706f6e; }
 
+/* Calendar */
+.app-calendar #app-content {
+  border-top: 1px solid #706f6e;
+  height: 99.9%; }
+
+#app-navigation .new-entity {
+  color: #eff0f1; }
+  #app-navigation .new-entity:hover {
+    background-color: rgba(61, 174, 233, 0.25);
+    color: #eff0f1; }
+
+#app-navigation .app-navigation-input {
+  width: 94%; }
+
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
+  border-color: #706f6e; }
+
+#fullcalendar {
+  background-color: #232629; }
+  #fullcalendar table thead th {
+    background-color: #232629; }
+  #fullcalendar table tbody tr td.fc-other-month {
+    background-color: #31363b; }
+  #fullcalendar.fc-unthemed tr td {
+    border-top-color: #706f6e; }
+  #fullcalendar.fc-unthemed .fc-today {
+    background-color: #3daee9 !important;
+    color: #fcfcfc;
+    border-color: #706f6e; }
+    #fullcalendar.fc-unthemed .fc-today span.fc-day-number {
+      font-weight: 600; }
+
+.fc-basic-view .fc-day-top .fc-week-number {
+  background-color: #31363b;
+  color: #eff0f1;
+  border-right: 1px solid #706f6e;
+  border-bottom: 1px solid #706f6e; }
+
+.fc th, .fc .fc-axis, .fc-day-grid-event .fc-time, .fc-ltr .fc-basic-view .fc-day-number, .fc-ltr .fc-basic-view .fc-week-number, .fc-time-grid-event .fc-time {
+  opacity: 1;
+  font-size: 85%; }
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+  padding-right: 6px; }
+
+.app-calendar #app-navigation #calendarlistcontainer ul.app-navigation-list li.app-navigation-list-item.active {
+  background-color: #31363b;
+  border-right: 1px solid #706f6e; }
+
+#app-settings .settings-fieldset .settings-upload {
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+
 /* Contacts */
 .app-content-list {
   background-color: #232629;
