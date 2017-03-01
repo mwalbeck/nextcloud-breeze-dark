@@ -198,6 +198,12 @@ img.notification-icon {
 .app-files #app-content-files #controls .breadcrumb .crumb a img.svg {
   filter: invert(100%); }
 
+#controls #breadcrumbs .crumb a img {
+  filter: invert(100%); }
+
+.actions a.button.new img {
+  filter: invert(75%); }
+
 body {
   color: #eff0f1;
   background-color: #31363b; }

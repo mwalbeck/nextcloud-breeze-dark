@@ -7,6 +7,7 @@ Currently theming is more or less done for:
 Activity
 Contacts
 Files
+Gallery
 Notes
 News
 
