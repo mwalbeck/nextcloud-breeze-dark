@@ -468,7 +468,11 @@ span.extension {
 	}
 
 	.utils .title h1 a {
-		color: $foreground-normal;
+		color: $foreground-active;
+	}
+
+	.read .utils .title h1 a {
+		color: $foreground-inactive;
 	}
 
 	.finished-auto-paging #articles::after {
@@ -503,6 +507,10 @@ span.extension {
             background-color: $background-normal;
             border-color: $decoration-normal;
         }
+
+		.title .intro {
+			color: $foreground-background;
+		}
 	}
 }
 
