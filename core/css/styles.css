@@ -634,8 +634,7 @@ ul.multiselectoptions {
 
 /* Calendar */
 .app-calendar #app-content {
-  border-top: 1px solid #706f6e;
-  height: 99.9%; }
+  overflow-y: hidden; }
 
 #app-navigation .new-entity {
   color: #eff0f1; }
@@ -650,7 +649,8 @@ ul.multiselectoptions {
   border-color: #706f6e; }
 
 #fullcalendar {
-  background-color: #232629; }
+  background-color: #232629;
+  border-top: 1px solid #706f6e; }
   #fullcalendar table thead th {
     background-color: #232629; }
   #fullcalendar table tbody tr td.fc-other-month {
@@ -684,6 +684,40 @@ ul.multiselectoptions {
 #app-settings .settings-fieldset .settings-upload {
   background-color: #31363b;
   border: 1px solid #706f6e; }
+
+#app-navigation .app-navigation-entry-menu {
+  background-color: #31363b;
+  color: #eff0f1;
+  border: 1px solid #706f6e;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; }
+  #app-navigation .app-navigation-entry-menu::after {
+    border-bottom-color: #706f6e; }
+
+#app-navigation .togglebuttons .button.active {
+  background-color: #3daee9;
+  color: #fcfcfc;
+  border-color: #3daee9; }
+#app-navigation .togglebuttons .button.today:focus {
+  background-color: #3daee9; }
+
+#datepicker table tbody tr {
+  background-color: #31363b; }
+
+.app-calendar #app-navigation .active {
+  background-color: inherit; }
+
+.app-calendar #app-navigation #datepickercontainer #datepicker table td {
+  border: none; }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
+    border-color: #706f6e;
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td button:active, .app-calendar #app-navigation #datepickercontainer #datepicker table td button:focus {
+    background-color: #3daee9;
+    border-color: #706f6e; }
 
 /* Contacts */
 .app-content-list {

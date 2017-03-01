@@ -31,8 +31,7 @@
 /* Calendar */
 
 .app-calendar #app-content {
-	border-top: 1px solid $decoration-normal;
-	height: 99.9%;
+	overflow-y: hidden;
 }
 
 #app-navigation .new-entity {
@@ -54,6 +53,7 @@
 
 #fullcalendar {
 	background-color: $background-dark;
+	border-top: 1px solid $decoration-normal;
 
 	table thead th {
 		background-color: $background-dark;
@@ -102,6 +102,59 @@
 #app-settings .settings-fieldset .settings-upload {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
+}
+
+#app-navigation .app-navigation-entry-menu {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#app-navigation .togglebuttons {
+	.button.active {
+		background-color: $background-active;
+		color: $foreground-active;
+		border-color: $decoration-active;
+	}
+
+	.button.today:focus {
+		background-color: $background-active;
+	}
+}
+
+#datepicker table tbody tr {
+	background-color: $background-normal;
+}
+
+.app-calendar #app-navigation .active {
+	background-color: inherit;
+}
+
+.app-calendar #app-navigation {
+	#datepickercontainer #datepicker table td {
+		border: none;
+
+		button {
+			&:hover {
+				border-color: $decoration-normal;
+				background-color: $background-active-hover;
+			}
+
+			&:active, &:focus {
+				background-color: $background-active;
+				border-color: $decoration-normal;
+			}
+		}
+	}
 }
 
 /* Contacts */
