@@ -32,6 +32,7 @@
 
 .app-calendar #app-content {
 	overflow-y: hidden;
+	padding-right: 0 !important;
 }
 
 #app-navigation .new-entity {
@@ -155,6 +156,23 @@
 			}
 		}
 	}
+}
+
+.modal-open .modal.popover, .modal-open .modal.import {
+	background: $background-normal;
+	box-shadow: none;
+}
+
+.modal-dialog .modal-content #app-sidebar {
+	border: none;
+}
+
+.advanced .advanced--button-area {
+	border-color: $decoration-normal;
+}
+
+.advanced--fieldset-attendeelist .advanced--toggler:hover, .advanced--fieldset-reminderlist .advanced--toggler:hover {
+	background: $background-active-hover;
 }
 
 /* Contacts */

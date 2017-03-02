@@ -634,7 +634,8 @@ ul.multiselectoptions {
 
 /* Calendar */
 .app-calendar #app-content {
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  padding-right: 0 !important; }
 
 #app-navigation .new-entity {
   color: #eff0f1; }
@@ -718,6 +719,19 @@ ul.multiselectoptions {
   .app-calendar #app-navigation #datepickercontainer #datepicker table td button:active, .app-calendar #app-navigation #datepickercontainer #datepicker table td button:focus {
     background-color: #3daee9;
     border-color: #706f6e; }
+
+.modal-open .modal.popover, .modal-open .modal.import {
+  background: #31363b;
+  box-shadow: none; }
+
+.modal-dialog .modal-content #app-sidebar {
+  border: none; }
+
+.advanced .advanced--button-area {
+  border-color: #706f6e; }
+
+.advanced--fieldset-attendeelist .advanced--toggler:hover, .advanced--fieldset-reminderlist .advanced--toggler:hover {
+  background: rgba(61, 174, 233, 0.25); }
 
 /* Contacts */
 .app-content-list {
