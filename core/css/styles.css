@@ -823,7 +823,7 @@ input.newAddressBookInput {
   #filestable tbody tr.externalErroredRow {
     background-color: #da4453; }
 #filestable tbody .name:focus {
-  background-color: #232629; }
+  background-color: inherit; }
 
 #filestable.multiselect {
   top: 93px; }
