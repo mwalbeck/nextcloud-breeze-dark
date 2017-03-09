@@ -733,6 +733,36 @@ ul.multiselectoptions {
 .advanced--fieldset-attendeelist .advanced--toggler:hover, .advanced--fieldset-reminderlist .advanced--toggler:hover {
   background: rgba(61, 174, 233, 0.25); }
 
+.ui-widget-content {
+  background: #31363b;
+  border: 1px solid #706f6e; }
+
+.ui-datepicker th {
+  color: #eff0f1; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #706f6e;
+  background: #232629;
+  font-weight: bold;
+  color: #bdc3c7; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .5;
+  filter: Alpha(Opacity=50);
+  font-weight: normal; }
+
+.ui-datepicker-calendar tbody tr:hover, .ui-datepicker-calendar tbody tr:focus, .ui-datepicker-calendar tbody tr:active, .ui-timepicker tbody tr:hover, .ui-timepicker tbody tr:focus, .ui-timepicker tbody tr:active {
+  background-color: inherit; }
+
+.ui-widget-header {
+  border: 1px solid #3daee9;
+  background: #3daee9;
+  color: #eff0f1; }
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  border: 1px solid #706f6e;
+  background: #31363b; }
+
 /* Contacts */
 .app-content-list {
   background-color: #232629;
