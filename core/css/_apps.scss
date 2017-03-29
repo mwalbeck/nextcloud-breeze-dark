@@ -1,4 +1,11 @@
 /* Activity */
+
+.app-activity #app-content {
+	position: relative;
+	height: 99.9%;
+	border-top: 1px solid $decoration-normal;
+}
+
 .activitymessage {
 	color: $foreground-normal;
 	opacity: 0.6;
@@ -701,6 +708,27 @@ table.grid th, table.grid td {
 
 	&:hover {
 		opacity: 1;
+	}
+}
+
+/* Text Editor */
+#editor_controls {
+	background-color: $background-normal;
+
+	small.filename {
+		color: $foreground-normal;
+	}
+
+	#editor_close {
+		opacity: 1;
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		&:active, &:focus {
+			background-color: $background-active;
+		}
 	}
 }
 
