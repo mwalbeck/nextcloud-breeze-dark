@@ -175,6 +175,14 @@ select {
 #app-navigation .collapsible > .collapse {
   background-image: url("../img/actions/triangle-s.svg?v=1"); }
 
+.glyphicon-chevron-right {
+  background: url("../img/rightarrow.svg") center center no-repeat;
+  filter: invert(100%); }
+
+.glyphicon-chevron-left {
+  background: url("../img/leftarrow.svg") center center no-repeat;
+  filter: invert(100%); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -745,11 +753,19 @@ ul.multiselectoptions {
 .ui-datepicker th {
   color: #eff0f1; }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
   border: 1px solid #706f6e;
   background: #232629;
   font-weight: bold;
   color: #bdc3c7; }
+
+.ui-state-hover, .ui-widget-header .ui-state-hover {
+  background-color: #31363b;
+  color: #eff0f1; }
+
+.ui-widget-content .ui-state-hover {
+  background-color: rgba(61, 174, 233, 0.25); }
 
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
   opacity: .5;
@@ -767,6 +783,9 @@ ul.multiselectoptions {
 .ui-datepicker-prev, .ui-datepicker-next {
   border: 1px solid #706f6e;
   background: #31363b; }
+
+.advanced .advanced--input {
+  background: #232629 !important; }
 
 /* Contacts */
 .app-content-list {

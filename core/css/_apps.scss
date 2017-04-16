@@ -191,12 +191,23 @@
 	color: $foreground-normal;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.ui-state-default, .ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default {
 	border: 1px solid $decoration-normal;
 	background: $background-dark;
 	font-weight: bold;
 	color: $foreground-inactive;
 }
+
+.ui-state-hover, .ui-widget-header .ui-state-hover {
+	background-color: $background-normal;
+	color: $foreground-normal;
+}
+
+.ui-widget-content .ui-state-hover {
+	background-color: $background-active-hover;
+}
+
 
 .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
 	opacity: .5;
@@ -219,6 +230,10 @@
 .ui-datepicker-prev, .ui-datepicker-next {
 	border: 1px solid $decoration-normal;
 	background: $background-normal;
+}
+
+.advanced .advanced--input {
+	background: $background-dark !important;
 }
 
 /* Contacts */
