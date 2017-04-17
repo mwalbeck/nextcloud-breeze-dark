@@ -321,7 +321,7 @@ input.newAddressBookInput {
 /* Files */
 .app-files #app-content {
 	border-top: 1px solid $decoration-normal;
-	height: 99.9%;
+	height: 99.8%;
 	background-color: $background-dark;
 }
 
@@ -433,6 +433,7 @@ span.extension {
 #controls .button.view-switcher {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
+	margin-right: 6px;
 
 	&:hover {
 		border-color: $decoration-active;

@@ -327,6 +327,15 @@ button.primary, .button.primary {
 	}
 }
 
+#app-order #apporder p em {
+	opacity: 1;
+}
+
+#appsorter img {
+	background: inherit;
+	border: 1px solid $decoration-normal;
+}
+
 // Personal
 
 #quota {
@@ -586,6 +595,16 @@ ul.multiselectoptions {
 #body-login #remember_login:checked+label {
 	opacity: 1;
 	color: $foreground-active;
+}
+
+/* File Sharing */
+
+#body-public #content-wrapper #content {
+	border-top: 1px solid $decoration-normal;
+
+	#preview {
+		background: inherit;
+	}
 }
 
 /* App Store */

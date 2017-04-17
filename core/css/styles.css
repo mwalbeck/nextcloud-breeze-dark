@@ -449,6 +449,13 @@ button.primary, .button.primary {
   .app-settings #app-content #controls {
     border-top: 1px solid #706f6e; }
 
+#app-order #apporder p em {
+  opacity: 1; }
+
+#appsorter img {
+  background: inherit;
+  border: 1px solid #706f6e; }
+
 #quota {
   background-color: #232629;
   color: #eff0f1;
@@ -612,6 +619,12 @@ ul.multiselectoptions {
 #body-login #remember_login:checked + label {
   opacity: 1;
   color: #fcfcfc; }
+
+/* File Sharing */
+#body-public #content-wrapper #content {
+  border-top: 1px solid #706f6e; }
+  #body-public #content-wrapper #content #preview {
+    background: inherit; }
 
 /* App Store */
 .app-level span {
@@ -846,7 +859,7 @@ input.newAddressBookInput {
 /* Files */
 .app-files #app-content {
   border-top: 1px solid #706f6e;
-  height: 99.9%;
+  height: 99.8%;
   background-color: #232629; }
 
 .app-files #app-navigation + #app-content #controls {
@@ -917,7 +930,8 @@ span.extension {
 
 #controls .button.view-switcher {
   background-color: #31363b;
-  border: 1px solid #706f6e; }
+  border: 1px solid #706f6e;
+  margin-right: 6px; }
   #controls .button.view-switcher:hover {
     border-color: #3daee9;
     background-color: #31363b; }
