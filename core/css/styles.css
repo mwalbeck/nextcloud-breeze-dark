@@ -1143,4 +1143,168 @@ table.grid th, table.grid td {
 .notification {
   color: #eff0f1; }
 
+.app-tasks #app-content {
+  height: 99.9%;
+  border-top: 1px solid #706f6e; }
+  .app-tasks #app-content h2 {
+    text-shadow: none;
+    opacity: 1; }
+  .app-tasks #app-content #add-task {
+    border: 1px solid #706f6e;
+    background: #232629; }
+    .app-tasks #app-content #add-task input {
+      color: #eff0f1;
+      background: #232629 !important; }
+  .app-tasks #app-content .sortorder-dropdown-button {
+    background-color: #31363b;
+    border: 1px solid #706f6e;
+    height: 32px;
+    margin: 13px 0px 12px 12px;
+    border-radius: 0; }
+  .app-tasks #app-content .sortorder-dropdown li > a {
+    color: #eff0f1; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .title {
+    background-color: #3daee9;
+    border-bottom: 1px solid #706f6e;
+    text-shadow: none; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
+    background: inherit;
+    text-shadow: none;
+    border-bottom: 1px dashed #706f6e; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note {
+    background-color: #232629;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #706f6e; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
+    color: #eff0f1; }
+  .app-tasks #app-content .categories-list li {
+    background-color: #31363b;
+    border: 1px solid #706f6e;
+    color: #eff0f1; }
+  .app-tasks #app-content .select2-drop {
+    background: #232629;
+    color: #eff0f1;
+    border: 1px solid #706f6e;
+    border-top: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .app-tasks #app-content .select2-container-multi .select2-choices,
+  .app-tasks #app-content .select2-container-multi.select2-container-active .select2-choices,
+  .app-tasks #app-content .select2-container .select2-choice {
+    border-radius: 0;
+    border: 1px solid #706f6e; }
+
+.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+  color: #eff0f1;
+  background-color: #31363b;
+  border-color: #706f6e;
+  margin: 3px 0 3px 5px; }
+
+#app-navigation li > a span.title, #app-navigation li > a span.icon {
+  opacity: 1; }
+
+#content {
+  color: #eff0f1; }
+
+#content li.task-item .task-body, #content div.task-item .task-body {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+
+#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
+  color: #eff0f1;
+  text-shadow: none; }
+
+#content li.task-item .task-body:hover,
+#content div.task-item .task-body:hover {
+  background-color: rgba(61, 174, 233, 0.25); }
+
+#content li.task-item .task-body.active,
+#content div.task-item .task-body.active {
+  background-color: #3daee9; }
+
+#app-content div.task-list .loadmore span {
+  color: #bdc3c7;
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+  #app-content div.task-list .loadmore span:hover {
+    color: #eff0f1;
+    background-color: inherit;
+    border-color: #3daee9; }
+
+#app-navigation .app-navigation-entry-edit input.icon-close, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover {
+  background-color: #31363b; }
+  #app-navigation .app-navigation-entry-edit input.icon-close:hover, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover:hover {
+    background-color: #3daee9; }
+
+#app-navigation .app-navigation-entry-edit input {
+  border: 1px solid #706f6e; }
+
+#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
+  background: #232629 !important;
+  color: #eff0f1; }
+
+#content li.task-item.add-subtask, #content div.task-item.add-subtask {
+  border: 1px solid #706f6e; }
+
+#app-sidebar div.content-wrapper .body .section input {
+  background: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none;
+  color: #eff0f1; }
+
+div.percentdone {
+  height: 3px;
+  margin-bottom: -3px;
+  background-color: #CCC;
+  border-radius: 0; }
+
+#app-sidebar div.content-wrapper div.footer {
+  border-top: none;
+  box-shadow: none; }
+
+div.ui-datepicker, div.ui-timepicker {
+  background: #31363b;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: none;
+  color: #eff0f1; }
+
+.ui-datepicker .ui-widget-header, .ui-timepicker .ui-widget-header {
+  background: inherit;
+  color: #eff0f1; }
+
+.ui-datepicker table thead th, .ui-timepicker table thead th {
+  color: #eff0f1; }
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+  color: #eff0f1;
+  border-radius: 3px 3px 3px 3px; }
+
+.ui-datepicker table a.ui-state-default:hover, .ui-timepicker table a.ui-state-default:hover {
+  background: rgba(61, 174, 233, 0.25); }
+
+.ui-datepicker table td.selected a, .ui-timepicker table td.selected a {
+  background: #3daee9;
+  border-radius: 3px 3px 3px 3px;
+  color: #fcfcfc;
+  text-shadow: none; }
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+  background-color: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none; }
+
+.ui-widget-content {
+  color: #eff0f1; }
+
+#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
+  color: #eff0f1;
+  text-shadow: none; }
+
+#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
+  color: #da4453;
+  font-weight: bold;
+  text-shadow: none; }
+
 /*# sourceMappingURL=styles.css.map */
