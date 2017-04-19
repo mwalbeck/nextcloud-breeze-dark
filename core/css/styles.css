@@ -205,7 +205,6 @@ img.notification-icon {
   filter: invert(75%); }
 
 body {
-  color: #eff0f1;
   background-color: #31363b; }
 
 #body-user #header, #body-settings #header, #body-public #header {
