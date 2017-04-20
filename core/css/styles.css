@@ -1327,6 +1327,22 @@ div.ui-datepicker, div.ui-timepicker {
       background-color: rgba(61, 174, 233, 0.25); }
     .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
       background-color: #3daee9; }
+  .app-passman #app-content #app-content-wrapper .viewModes .view-mode {
+    background-color: #31363b; }
+    .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
+      background-color: #3daee9; }
+    .app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
+      background-color: #31363b; }
+  .app-passman #app-content #app-content-wrapper .tags .tag {
+    background-color: #4d4d4d;
+    border: 1px solid #706f6e; }
+  .app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
+    background-color: #4d4d4d;
+    border: 1px solid #706f6e; }
+  .app-passman #app-content #app-content-wrapper #passman-controls {
+    top: 46px;
+    background-color: inherit;
+    border-bottom: 1px solid #706f6e; }
   .app-passman #app-content .tab_header li.active .indicator {
     height: 5px;
     left: 0;
@@ -1385,26 +1401,14 @@ div.ui-datepicker, div.ui-timepicker {
         background-color: rgba(61, 174, 233, 0.25);
         border-radius: 0 0 5px 5px; }
 
-#passman-controls {
-  top: 46px;
-  background-color: inherit; }
-
-#app-content #app-content-wrapper #passman-controls {
-  border-bottom: 1px solid #706f6e; }
-
-#app-content #app-content-wrapper .viewModes .view-mode.active {
-  background-color: #3daee9; }
-
-#app-content #app-content-wrapper .viewModes .view-mode:first-child,
-#app-content #app-content-wrapper .viewModes .view-mode:last-child {
-  border: 1px solid #706f6e; }
-
-#app-content #app-content-wrapper .viewModes .view-mode {
-  background-color: #31363b; }
-
 #app-settings-content:not(.ng-hide) {
   height: none;
   padding: 5px 0 15px 0; }
+
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .btn-danger {
   background-image: none;
@@ -1413,81 +1417,35 @@ div.ui-datepicker, div.ui-timepicker {
   background-color: #da4453;
   border-color: #da4453; }
 
-.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
 tags-input .tags {
-  -moz-appearance: textfield;
-  -webkit-appearance: textfield;
-  padding: 1px;
-  overflow: hidden;
-  word-wrap: break-word;
-  cursor: text;
   background-color: #232629;
   border: 1px solid #706f6e;
-  box-shadow: none;
-  height: 100%; }
-
-tags-input .tags.focused {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border-color: #3daee9; }
-
+  box-shadow: none; }
+  tags-input .tags.focused {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #3daee9; }
+  tags-input .tags .tag-item.selected {
+    background: #da4453 !important; }
+  tags-input .tags .tag-item {
+    border: 1px solid #706f6e;
+    border-radius: 3px;
+    color: #eff0f1; }
 tags-input.ng-invalid .tags {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   border-color: #da4453; }
-
-tags-input .tags .tag-item.selected {
-  background: #da4453 !important; }
-
-tags-input .tags .tag-item {
-  margin: 2px;
-  padding: 0 5px;
-  display: inline-block;
-  float: left;
-  font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
-  height: 26px;
-  line-height: 25px;
-  border: 1px solid #706f6e;
-  border-radius: 3px;
-  color: #eff0f1; }
-
 tags-input .autocomplete {
-  margin-top: 5px;
-  position: absolute;
-  padding: 5px 0;
-  z-index: 999;
-  width: 100%;
   background-color: #232629;
   border: 1px solid #706f6e;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
-
-tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
-  color: #eff0f1;
-  background-color: #3daee9; }
-
-#app-content #app-content-wrapper .tags .tag {
-  background-color: #4d4d4d;
-  padding: 4px;
-  font-size: 12px;
-  margin-right: 3px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-clip: padding-box;
-  border: 1px solid #706f6e; }
-
-#app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
-  background-color: #4d4d4d;
-  padding: 4px;
-  margin-right: 3px;
-  border: 1px solid #706f6e; }
+  tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
+    color: #eff0f1;
+    background-color: #3daee9; }
 
 .angularjs-datetime-picker {
   color: #eff0f1;

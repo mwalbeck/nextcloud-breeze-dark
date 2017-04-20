@@ -23,6 +23,36 @@
                     background-color: $background-active;
                 }
             }
+
+            .viewModes {
+                .view-mode {
+                    background-color: $background-normal;
+
+                    &.active {
+                        background-color: $background-active;
+                    }
+
+                    &:first-child, &:last-child {
+                        background-color: $background-normal;
+                    }
+                }
+            }
+
+            .tags .tag {
+                background-color: $background-alternate;
+                border: 1px solid $decoration-normal;
+            }
+
+            .app_sidebar .credential-data .tags .tag {
+                background-color: $background-alternate;
+                border: 1px solid $decoration-normal;
+            }
+
+            #passman-controls {
+                top: 46px;
+                background-color: inherit;
+                border-bottom: 1px solid $decoration-normal;
+            }
         }
 
         .tab_header li.active .indicator {
@@ -119,31 +149,15 @@
     }
 }
 
-#passman-controls {
-    top: 46px;
-	background-color: inherit;
-}
-
-#app-content #app-content-wrapper #passman-controls {
-	border-bottom: 1px solid $decoration-normal;
-}
-
-#app-content #app-content-wrapper .viewModes .view-mode.active {
-	background-color: $background-active;
-}
-
-#app-content #app-content-wrapper .viewModes .view-mode:first-child,
-#app-content #app-content-wrapper .viewModes .view-mode:last-child {
-	border: 1px solid $decoration-normal;
-}
-
-#app-content #app-content-wrapper .viewModes .view-mode {
-	background-color: $background-normal;
-}
-
 #app-settings-content:not(.ng-hide) {
 	height: none;
 	padding: 5px 0 15px 0;
+}
+
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .btn-danger {
@@ -154,90 +168,49 @@
 	border-color: $background-negative;
 }
 
-.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
-	text-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
+tags-input {
+    .tags {
+        background-color: $background-dark;
+        border: 1px solid $decoration-normal;
+        box-shadow: none;
 
-tags-input .tags {
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	padding: 1px;
-	overflow: hidden;
-	word-wrap: break-word;
-	cursor: text;
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
-	box-shadow: none;
-	height: 100%;
-}
+        &.focused {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-color: $decoration-active;
+        }
 
-tags-input .tags.focused {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-    border-color: $decoration-active;
-}
+        .tag-item.selected {
+            background: $background-negative !important;
+        }
 
-tags-input.ng-invalid .tags {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-    border-color: $background-negative;
-}
+        .tag-item {
+            border: 1px solid $decoration-normal;
+            border-radius: 3px;
+            color: $foreground-normal;
+        }
+    }
 
-tags-input .tags .tag-item.selected {
-	background: $background-negative !important;
-}
+    &.ng-invalid .tags {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-color: $background-negative;
+    }
 
-tags-input .tags .tag-item {
-	margin: 2px;
-	padding: 0 5px;
-	display: inline-block;
-	float: left;
-	font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
-	height: 26px;
-	line-height: 25px;
-	border: 1px solid $decoration-normal;
-	border-radius: 3px;
-	color: $foreground-normal;
-}
+    .autocomplete {
+        background-color: $background-dark;
+        border: 1px solid $decoration-normal;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
 
-tags-input .autocomplete {
-	margin-top: 5px;
-	position: absolute;
-	padding: 5px 0;
-	z-index: 999;
-	width: 100%;
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
-
-tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
-	color: $foreground-normal;
-	background-color: $background-active;
-}
-
-#app-content #app-content-wrapper .tags .tag {
-	background-color: $background-alternate;
-	padding: 4px;
-	font-size: 12px;
-	margin-right: 3px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background-clip: padding-box;
-    border: 1px solid $decoration-normal;
-}
-
-#app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
-	background-color: $background-alternate;
-	padding: 4px;
-	margin-right: 3px;
-    border: 1px solid $decoration-normal;
+        .suggestion-item.selected, .suggestion-item.selected em {
+            color: $foreground-normal;
+	        background-color: $background-active;
+        }
+    }
 }
 
 .angularjs-datetime-picker {
