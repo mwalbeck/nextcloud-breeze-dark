@@ -28,6 +28,15 @@ em {
 	}
 }
 
+h1, h2, h3 {
+    color: $foreground-active;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	color: $foreground-normal;
+}
+
 /* Breadcrumbs */
 
 div.crumb > span {
@@ -615,3 +624,4 @@ ul.multiselectoptions {
 
 @import 'apps';
 @import 'tasks';
+@import 'passman';

@@ -1,0 +1,286 @@
+.app-passman {
+    #app-content {
+        height: 99.9%;
+        border-top: 1px solid $decoration-normal;
+
+        #controls {
+            background-color: inherit;
+        }
+
+        #app-content-wrapper {
+            .credential-table tr td {
+                border-bottom-color: $decoration-normal;
+            }
+
+            .credential-table tr {
+                background-color: $background-dark;
+
+                &:hover {
+                    background-color: $background-active-hover;
+                }
+
+                &.selected {
+                    background-color: $background-active;
+                }
+            }
+        }
+
+        .tab_header li.active .indicator {
+            height: 5px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $background-active !important;
+        }
+
+        .tab_header li.tab {
+            border-right: 1px solid $decoration-normal;
+            color: $foreground-normal !important;
+            background-color: $background-normal !important;
+        }
+
+        .tab_container {
+            border: none;
+        }
+
+        .pass-meter .details, .pass-meter .pass-meter-message {
+            color: $foreground-inactive;
+        }
+
+        .pw-gen .generate_pw .cell {
+            padding: 4.7px;
+            display: inline-block;
+            font-size: 14px;
+            border: 1px solid $decoration-normal;
+            background-color: $background-normal;
+            cursor: pointer;
+        }
+
+        .pass-meter-col.poor .indicator {
+            background-color: $background-negative;
+        }
+
+        .pass-meter-col.weak .indicator {
+            background-color: $background-neutral;
+        }
+
+        .pass-meter-col.good .indicator {
+            background-color: $background-positive;
+        }
+
+        .pass-meter-col.strong .indicator {
+            background-color: $background-active;
+        }
+
+        .inputfile + label {
+            font-size: 1.25em;
+            background-color: $background-dark;
+            margin-top: 3px;
+            padding: 5px;
+            border: 1px solid $decoration-normal;
+
+            &:hover {
+                border-color: $decoration-active;
+            }
+        }
+    }
+
+    .link {
+        color: $foreground-link !important;
+    }
+
+    #app-navigation li:hover > a, #app-navigation li:active > a {
+	    background-color: $background-normal;
+    }
+}
+
+.vault_wrapper {
+	box-shadow: none;
+	background: $background-dark;
+    border: 1px solid $decoration-normal;
+
+    .vaultlist li {
+        padding: 16px;
+        border-bottom: 1px solid $decoration-normal;
+
+        &:hover {
+            background-color: $background-active-hover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        &.ng-scope:last-child {
+            border-bottom: none;
+
+            &:hover {
+                background-color: $background-active-hover;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}
+
+#passman-controls {
+    top: 46px;
+	background-color: inherit;
+}
+
+#app-content #app-content-wrapper #passman-controls {
+	border-bottom: 1px solid $decoration-normal;
+}
+
+#app-content #app-content-wrapper .viewModes .view-mode.active {
+	background-color: $background-active;
+}
+
+#app-content #app-content-wrapper .viewModes .view-mode:first-child,
+#app-content #app-content-wrapper .viewModes .view-mode:last-child {
+	border: 1px solid $decoration-normal;
+}
+
+#app-content #app-content-wrapper .viewModes .view-mode {
+	background-color: $background-normal;
+}
+
+#app-settings-content:not(.ng-hide) {
+	height: none;
+	padding: 5px 0 15px 0;
+}
+
+.btn-danger {
+	background-image: none;
+	filter: none;
+	background-repeat: no-repeat;
+    background-color: $background-negative;
+	border-color: $background-negative;
+}
+
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+tags-input .tags {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	padding: 1px;
+	overflow: hidden;
+	word-wrap: break-word;
+	cursor: text;
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+	height: 100%;
+}
+
+tags-input .tags.focused {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    border-color: $decoration-active;
+}
+
+tags-input.ng-invalid .tags {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    border-color: $background-negative;
+}
+
+tags-input .tags .tag-item.selected {
+	background: $background-negative !important;
+}
+
+tags-input .tags .tag-item {
+	margin: 2px;
+	padding: 0 5px;
+	display: inline-block;
+	float: left;
+	font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 26px;
+	line-height: 25px;
+	border: 1px solid $decoration-normal;
+	border-radius: 3px;
+	color: $foreground-normal;
+}
+
+tags-input .autocomplete {
+	margin-top: 5px;
+	position: absolute;
+	padding: 5px 0;
+	z-index: 999;
+	width: 100%;
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
+	color: $foreground-normal;
+	background-color: $background-active;
+}
+
+#app-content #app-content-wrapper .tags .tag {
+	background-color: $background-alternate;
+	padding: 4px;
+	font-size: 12px;
+	margin-right: 3px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-clip: padding-box;
+    border: 1px solid $decoration-normal;
+}
+
+#app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
+	background-color: $background-alternate;
+	padding: 4px;
+	margin-right: 3px;
+    border: 1px solid $decoration-normal;
+}
+
+.angularjs-datetime-picker {
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	background: $background-dark;
+
+    .adp-month {
+        background: $background-dark;
+        border-bottom: 1px solid $decoration-normal;
+
+        > button {
+            color: $foreground-normal;
+            top: 4px;
+
+            &:hover {
+                color: $background-active;
+            }
+        }
+    }
+
+    .adp-days {
+        > .adp-day.selected {
+            background: $background-active-hover;
+            border-color: $decoration-active;
+        }
+
+         > .adp-day.selectable:hover {
+            background: $background-active-hover;
+        }
+    }
+
+    #adp-time {
+        label {
+            float: left;
+        }
+
+        input[type="range"] {
+            float: right;
+        }
+    }
+}
+
+.sequence code {
+	border: none;
+}

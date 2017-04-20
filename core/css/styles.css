@@ -230,6 +230,13 @@ em {
   #controls .button {
     padding: 7px 11px; }
 
+h1, h2, h3 {
+  color: #fcfcfc;
+  font-weight: 600; }
+
+h4, h5, h6 {
+  color: #eff0f1; }
+
 /* Breadcrumbs */
 div.crumb > span {
   color: #eff0f1; }
@@ -1306,5 +1313,205 @@ div.ui-datepicker, div.ui-timepicker {
   color: #da4453;
   font-weight: bold;
   text-shadow: none; }
+
+.app-passman #app-content {
+  height: 99.9%;
+  border-top: 1px solid #706f6e; }
+  .app-passman #app-content #controls {
+    background-color: inherit; }
+  .app-passman #app-content #app-content-wrapper .credential-table tr td {
+    border-bottom-color: #706f6e; }
+  .app-passman #app-content #app-content-wrapper .credential-table tr {
+    background-color: #232629; }
+    .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
+      background-color: #3daee9; }
+  .app-passman #app-content .tab_header li.active .indicator {
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3daee9 !important; }
+  .app-passman #app-content .tab_header li.tab {
+    border-right: 1px solid #706f6e;
+    color: #eff0f1 !important;
+    background-color: #31363b !important; }
+  .app-passman #app-content .tab_container {
+    border: none; }
+  .app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
+    color: #bdc3c7; }
+  .app-passman #app-content .pw-gen .generate_pw .cell {
+    padding: 4.7px;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #706f6e;
+    background-color: #31363b;
+    cursor: pointer; }
+  .app-passman #app-content .pass-meter-col.poor .indicator {
+    background-color: #da4453; }
+  .app-passman #app-content .pass-meter-col.weak .indicator {
+    background-color: #f67400; }
+  .app-passman #app-content .pass-meter-col.good .indicator {
+    background-color: #27ae60; }
+  .app-passman #app-content .pass-meter-col.strong .indicator {
+    background-color: #3daee9; }
+  .app-passman #app-content .inputfile + label {
+    font-size: 1.25em;
+    background-color: #232629;
+    margin-top: 3px;
+    padding: 5px;
+    border: 1px solid #706f6e; }
+    .app-passman #app-content .inputfile + label:hover {
+      border-color: #3daee9; }
+.app-passman .link {
+  color: #2980b9 !important; }
+.app-passman #app-navigation li:hover > a, .app-passman #app-navigation li:active > a {
+  background-color: #31363b; }
+
+.vault_wrapper {
+  box-shadow: none;
+  background: #232629;
+  border: 1px solid #706f6e; }
+  .vault_wrapper .vaultlist li {
+    padding: 16px;
+    border-bottom: 1px solid #706f6e; }
+    .vault_wrapper .vaultlist li:hover {
+      background-color: rgba(61, 174, 233, 0.25);
+      border-radius: 5px 5px 0 0; }
+    .vault_wrapper .vaultlist li.ng-scope:last-child {
+      border-bottom: none; }
+      .vault_wrapper .vaultlist li.ng-scope:last-child:hover {
+        background-color: rgba(61, 174, 233, 0.25);
+        border-radius: 0 0 5px 5px; }
+
+#passman-controls {
+  top: 46px;
+  background-color: inherit; }
+
+#app-content #app-content-wrapper #passman-controls {
+  border-bottom: 1px solid #706f6e; }
+
+#app-content #app-content-wrapper .viewModes .view-mode.active {
+  background-color: #3daee9; }
+
+#app-content #app-content-wrapper .viewModes .view-mode:first-child,
+#app-content #app-content-wrapper .viewModes .view-mode:last-child {
+  border: 1px solid #706f6e; }
+
+#app-content #app-content-wrapper .viewModes .view-mode {
+  background-color: #31363b; }
+
+#app-settings-content:not(.ng-hide) {
+  height: none;
+  padding: 5px 0 15px 0; }
+
+.btn-danger {
+  background-image: none;
+  filter: none;
+  background-repeat: no-repeat;
+  background-color: #da4453;
+  border-color: #da4453; }
+
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+tags-input .tags {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  padding: 1px;
+  overflow: hidden;
+  word-wrap: break-word;
+  cursor: text;
+  background-color: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none;
+  height: 100%; }
+
+tags-input .tags.focused {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #3daee9; }
+
+tags-input.ng-invalid .tags {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #da4453; }
+
+tags-input .tags .tag-item.selected {
+  background: #da4453 !important; }
+
+tags-input .tags .tag-item {
+  margin: 2px;
+  padding: 0 5px;
+  display: inline-block;
+  float: left;
+  font: 14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 26px;
+  line-height: 25px;
+  border: 1px solid #706f6e;
+  border-radius: 3px;
+  color: #eff0f1; }
+
+tags-input .autocomplete {
+  margin-top: 5px;
+  position: absolute;
+  padding: 5px 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #232629;
+  border: 1px solid #706f6e;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
+  color: #eff0f1;
+  background-color: #3daee9; }
+
+#app-content #app-content-wrapper .tags .tag {
+  background-color: #4d4d4d;
+  padding: 4px;
+  font-size: 12px;
+  margin-right: 3px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  border: 1px solid #706f6e; }
+
+#app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
+  background-color: #4d4d4d;
+  padding: 4px;
+  margin-right: 3px;
+  border: 1px solid #706f6e; }
+
+.angularjs-datetime-picker {
+  color: #eff0f1;
+  border: 1px solid #706f6e;
+  background: #232629; }
+  .angularjs-datetime-picker .adp-month {
+    background: #232629;
+    border-bottom: 1px solid #706f6e; }
+    .angularjs-datetime-picker .adp-month > button {
+      color: #eff0f1;
+      top: 4px; }
+      .angularjs-datetime-picker .adp-month > button:hover {
+        color: #3daee9; }
+  .angularjs-datetime-picker .adp-days > .adp-day.selected {
+    background: rgba(61, 174, 233, 0.25);
+    border-color: #3daee9; }
+  .angularjs-datetime-picker .adp-days > .adp-day.selectable:hover {
+    background: rgba(61, 174, 233, 0.25); }
+  .angularjs-datetime-picker #adp-time label {
+    float: left; }
+  .angularjs-datetime-picker #adp-time input[type="range"] {
+    float: right; }
+
+.sequence code {
+  border: none; }
 
 /*# sourceMappingURL=styles.css.map */
