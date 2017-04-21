@@ -257,3 +257,16 @@ tags-input {
 .sequence code {
 	border: none;
 }
+
+#passman-settings #passman-tabs {
+    .ui-widget-header {
+        border: none;
+        background: #31363b;
+        color: #eff0f1;
+    }
+
+    .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+        margin-bottom: inherit;
+        padding-bottom: inherit;
+    }
+}

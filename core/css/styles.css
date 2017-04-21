@@ -175,6 +175,9 @@ select {
 #app-navigation .collapsible > .collapse {
   background-image: url("../img/actions/triangle-s.svg?v=1"); }
 
+.icon-menu {
+  background-image: url("../img/actions/menu.svg?v=1"); }
+
 .glyphicon-chevron-right {
   background: url("../img/rightarrow.svg") center center no-repeat;
   filter: invert(100%); }
@@ -540,6 +543,10 @@ ul.multiselectoptions {
     -moz-box-shadow: none;
     box-shadow: none; }
 
+/* Encryption */
+#body-user .warning, #body-settings .warning {
+  background: #da4453; }
+
 /* Notifications */
 #notification {
   background-color: #31363b;
@@ -633,6 +640,20 @@ ul.multiselectoptions {
   #body-public #content-wrapper #content #preview {
     background: inherit; }
 
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  #app-content {
+    width: 100% !important;
+    left: 0 !important;
+    background-color: #31363b;
+    overflow-x: hidden !important;
+    z-index: 1000; }
+
+  #app-navigation-toggle {
+    z-index: 1001;
+    background-color: rgba(61, 174, 233, 0.25);
+    opacity: 0.5;
+    border-bottom-right-radius: 5px; } }
 /* App Store */
 .app-level span {
   color: #eff0f1; }
@@ -1471,5 +1492,13 @@ tags-input .autocomplete {
 
 .sequence code {
   border: none; }
+
+#passman-settings #passman-tabs .ui-widget-header {
+  border: none;
+  background: #31363b;
+  color: #eff0f1; }
+#passman-settings #passman-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: inherit;
+  padding-bottom: inherit; }
 
 /*# sourceMappingURL=styles.css.map */
