@@ -1,0 +1,57 @@
+#content-wrapper .app-gallery {
+	background-color: $background-dark;
+}
+
+#controls .button {
+	&.sorting {
+		padding: 8px 5px;
+
+		&.active-button {
+			background-color: $background-active;
+			border-color: $decoration-active;
+			color: $foreground-normal;
+
+			&:hover {
+				background-color: $background-active;
+				border-color: $decoration-active;
+				color: $foreground-normal;
+
+			}
+		}
+	}
+
+	&.left-switch-button {
+		border-color: $decoration-normal;
+
+		&:hover {
+			border-color: $decoration-active;
+		}
+	}
+
+	&.view-switcher.gallery {
+		background-color: $background-normal;
+		color: $foreground-normal;
+		border: 1px solid $decoration-normal;
+
+		&:hover {
+			background-color: $background-normal;
+			color: $foreground-normal;
+			border-color: $decoration-active
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+			border-color: $decoration-active;
+		}
+	}
+}
+
+#dropdown {
+	background: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+#link {
+	border-color: $decoration-normal;
+}

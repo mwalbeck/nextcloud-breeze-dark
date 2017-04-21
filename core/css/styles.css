@@ -658,7 +658,95 @@ ul.multiselectoptions {
 .app-level span {
   color: #eff0f1; }
 
-/* Activity */
+/* Announcement Center */
+#announcement_submit_msg {
+  opacity: 0.8; }
+  #announcement_submit_msg.success {
+    color: #fcfcfc;
+    background-color: #27ae60; }
+
+#app-content hr {
+  border-color: #706f6e; }
+
+#app-sidebar {
+  background-color: #31363b;
+  border-color: #706f6e; }
+  #app-sidebar .file-details {
+    color: #eff0f1; }
+
+.tabHeaders .tabHeader, .tabHeaders .tabHeader a {
+  color: #eff0f1; }
+
+.tabHeaders .tabHeader.selected a,
+.tabHeaders .tabHeader:hover a {
+  color: #fcfcfc;
+  border-bottom: 1px solid #3daee9; }
+
+/* First Run Wizard */
+#cboxLoadedContent {
+  background-color: #232629; }
+
+#firstrunwizard p a {
+  color: #2980b9; }
+  #firstrunwizard p a:hover, #firstrunwizard p a:focus {
+    color: #2980b9; }
+
+/* File Access Control */
+.workflowengine .operation {
+  border-bottom-color: #706f6e; }
+  .workflowengine .operation .check:hover {
+    background-color: #31363b; }
+  .workflowengine .operation.modified {
+    border-left-color: #f67400; }
+
+/* External Storage */
+table.grid th, table.grid td {
+  border-bottom-color: #706f6e; }
+
+.dropdown {
+  background-color: #31363b;
+  box-shadow: none;
+  border: 1px solid #706f6e; }
+
+#externalStorage td.mountOptionsToggle > img {
+  opacity: 0.7; }
+  #externalStorage td.mountOptionsToggle > img:hover {
+    opacity: 1; }
+
+/* Text Editor */
+#editor_controls {
+  background-color: #31363b; }
+  #editor_controls small.filename {
+    color: #eff0f1; }
+  #editor_controls #editor_close {
+    opacity: 1; }
+    #editor_controls #editor_close:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    #editor_controls #editor_close:active, #editor_controls #editor_close:focus {
+      background-color: #3daee9; }
+
+/* Two Factor U2F */
+.two-factor-link {
+  padding: 0 12px;
+  color: #bdc3c7; }
+  .two-factor-link:hover {
+    color: #fcfcfc; }
+
+#body-login .warning {
+  background-color: #232629; }
+
+.challenge-form input[type="text"], .totp-form input[type="text"] {
+  background: #31363b; }
+
+/* Notifications */
+.notification-container {
+  box-shadow: none;
+  background-color: #31363b;
+  border-color: #706f6e; }
+
+.notification {
+  color: #eff0f1; }
+
 .app-activity #app-content {
   position: relative;
   height: 99.9%;
@@ -676,17 +764,6 @@ ul.multiselectoptions {
   color: #bdc3c7;
   opacity: 0.5; }
 
-/* Announcement Center */
-#announcement_submit_msg {
-  opacity: 0.8; }
-  #announcement_submit_msg.success {
-    color: #fcfcfc;
-    background-color: #27ae60; }
-
-#app-content hr {
-  border-color: #706f6e; }
-
-/* Calendar */
 .app-calendar #app-content {
   overflow-y: hidden;
   padding-right: 0 !important; }
@@ -828,7 +905,6 @@ ul.multiselectoptions {
 .advanced .advanced--input {
   background: #232629 !important; }
 
-/* Contacts */
 .app-content-list {
   background-color: #232629;
   border-top: 1px solid #706f6e;
@@ -884,7 +960,6 @@ input.newAddressBookSubmit {
 input.newAddressBookInput {
   padding: 5px; }
 
-/* Files */
 .app-files #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%;
@@ -969,21 +1044,6 @@ span.extension {
   #controls .button.view-switcher img {
     opacity: 0.6; }
 
-#app-sidebar {
-  background-color: #31363b;
-  border-color: #706f6e; }
-  #app-sidebar .file-details {
-    color: #eff0f1; }
-
-.tabHeaders .tabHeader, .tabHeaders .tabHeader a {
-  color: #eff0f1; }
-
-.tabHeaders .tabHeader.selected a,
-.tabHeaders .tabHeader:hover a {
-  color: #fcfcfc;
-  border-bottom: 1px solid #3daee9; }
-
-/* Gallery */
 #content-wrapper .app-gallery {
   background-color: #232629; }
 
@@ -1021,7 +1081,6 @@ span.extension {
 #link {
   border-color: #706f6e; }
 
-/* News */
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
@@ -1083,7 +1142,6 @@ span.extension {
   .app-news #app-content .body .title .intro {
     color: rgba(189, 195, 199, 0.6); }
 
-/* Notes */
 .app-notes #app-content {
   border-top: 1px solid #706f6e; }
 
@@ -1105,235 +1163,6 @@ span.extension {
 
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
   opacity: 0.7; }
-
-/* First Run Wizard */
-#cboxLoadedContent {
-  background-color: #232629; }
-
-#firstrunwizard p a {
-  color: #2980b9; }
-  #firstrunwizard p a:hover, #firstrunwizard p a:focus {
-    color: #2980b9; }
-
-/* File Access Control */
-.workflowengine .operation {
-  border-bottom-color: #706f6e; }
-  .workflowengine .operation .check:hover {
-    background-color: #31363b; }
-  .workflowengine .operation.modified {
-    border-left-color: #f67400; }
-
-/* External Storage */
-table.grid th, table.grid td {
-  border-bottom-color: #706f6e; }
-
-.dropdown {
-  background-color: #31363b;
-  box-shadow: none;
-  border: 1px solid #706f6e; }
-
-#externalStorage td.mountOptionsToggle > img {
-  opacity: 0.7; }
-  #externalStorage td.mountOptionsToggle > img:hover {
-    opacity: 1; }
-
-/* Text Editor */
-#editor_controls {
-  background-color: #31363b; }
-  #editor_controls small.filename {
-    color: #eff0f1; }
-  #editor_controls #editor_close {
-    opacity: 1; }
-    #editor_controls #editor_close:hover {
-      background-color: rgba(61, 174, 233, 0.25); }
-    #editor_controls #editor_close:active, #editor_controls #editor_close:focus {
-      background-color: #3daee9; }
-
-/* Two Factor U2F */
-.two-factor-link {
-  padding: 0 12px;
-  color: #bdc3c7; }
-  .two-factor-link:hover {
-    color: #fcfcfc; }
-
-#body-login .warning {
-  background-color: #232629; }
-
-.challenge-form input[type="text"], .totp-form input[type="text"] {
-  background: #31363b; }
-
-/* Notifications */
-.notification-container {
-  box-shadow: none;
-  background-color: #31363b;
-  border-color: #706f6e; }
-
-.notification {
-  color: #eff0f1; }
-
-.app-tasks #app-content {
-  height: 99.9%;
-  border-top: 1px solid #706f6e; }
-  .app-tasks #app-content h2 {
-    text-shadow: none;
-    opacity: 1; }
-  .app-tasks #app-content #add-task {
-    border: 1px solid #706f6e;
-    background: #232629; }
-    .app-tasks #app-content #add-task input {
-      color: #eff0f1;
-      background: #232629 !important; }
-  .app-tasks #app-content .sortorder-dropdown-button {
-    background-color: #31363b;
-    border: 1px solid #706f6e;
-    height: 32px;
-    margin: 13px 0px 12px 12px;
-    border-radius: 0; }
-  .app-tasks #app-content .sortorder-dropdown li > a {
-    color: #eff0f1; }
-  .app-tasks #app-content #app-sidebar div.content-wrapper .title {
-    background-color: #3daee9;
-    border-bottom: 1px solid #706f6e;
-    text-shadow: none; }
-  .app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
-    background: inherit;
-    text-shadow: none;
-    border-bottom: 1px dashed #706f6e; }
-  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note {
-    background-color: #232629;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: #706f6e; }
-  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
-    color: #eff0f1; }
-  .app-tasks #app-content .categories-list li {
-    background-color: #31363b;
-    border: 1px solid #706f6e;
-    color: #eff0f1; }
-  .app-tasks #app-content .select2-drop {
-    background: #232629;
-    color: #eff0f1;
-    border: 1px solid #706f6e;
-    border-top: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  .app-tasks #app-content .select2-container-multi .select2-choices,
-  .app-tasks #app-content .select2-container-multi.select2-container-active .select2-choices,
-  .app-tasks #app-content .select2-container .select2-choice {
-    border-radius: 0;
-    border: 1px solid #706f6e; }
-
-.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
-  color: #eff0f1;
-  background-color: #31363b;
-  border-color: #706f6e;
-  margin: 3px 0 3px 5px; }
-
-#app-navigation li > a span.title, #app-navigation li > a span.icon {
-  opacity: 1; }
-
-#content {
-  color: #eff0f1; }
-
-#content li.task-item .task-body, #content div.task-item .task-body {
-  background-color: #232629;
-  border: 1px solid #706f6e; }
-
-#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
-  color: #eff0f1;
-  text-shadow: none; }
-
-#content li.task-item .task-body:hover,
-#content div.task-item .task-body:hover {
-  background-color: rgba(61, 174, 233, 0.25); }
-
-#content li.task-item .task-body.active,
-#content div.task-item .task-body.active {
-  background-color: #3daee9; }
-
-#app-content div.task-list .loadmore span {
-  color: #bdc3c7;
-  background-color: #31363b;
-  border: 1px solid #706f6e; }
-  #app-content div.task-list .loadmore span:hover {
-    color: #eff0f1;
-    background-color: inherit;
-    border-color: #3daee9; }
-
-#app-navigation .app-navigation-entry-edit input.icon-close, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover {
-  background-color: #31363b; }
-  #app-navigation .app-navigation-entry-edit input.icon-close:hover, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover:hover {
-    background-color: #3daee9; }
-
-#app-navigation .app-navigation-entry-edit input {
-  border: 1px solid #706f6e; }
-
-#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
-  background: #232629 !important;
-  color: #eff0f1; }
-
-#content li.task-item.add-subtask, #content div.task-item.add-subtask {
-  border: 1px solid #706f6e; }
-
-#app-sidebar div.content-wrapper .body .section input {
-  background: #232629;
-  border: 1px solid #706f6e;
-  box-shadow: none;
-  color: #eff0f1; }
-
-div.percentdone {
-  height: 3px;
-  margin-bottom: -3px;
-  background-color: #CCC;
-  border-radius: 0; }
-
-#app-sidebar div.content-wrapper div.footer {
-  border-top: none;
-  box-shadow: none; }
-
-div.ui-datepicker, div.ui-timepicker {
-  background: #31363b;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: none;
-  color: #eff0f1; }
-
-.ui-datepicker .ui-widget-header, .ui-timepicker .ui-widget-header {
-  background: inherit;
-  color: #eff0f1; }
-
-.ui-datepicker table thead th, .ui-timepicker table thead th {
-  color: #eff0f1; }
-
-.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
-  color: #eff0f1;
-  border-radius: 3px 3px 3px 3px; }
-
-.ui-datepicker table a.ui-state-default:hover, .ui-timepicker table a.ui-state-default:hover {
-  background: rgba(61, 174, 233, 0.25); }
-
-.ui-datepicker table td.selected a, .ui-timepicker table td.selected a {
-  background: #3daee9;
-  border-radius: 3px 3px 3px 3px;
-  color: #fcfcfc;
-  text-shadow: none; }
-
-#app-sidebar div.content-wrapper .body .section input.focus {
-  background-color: #232629;
-  border: 1px solid #706f6e;
-  box-shadow: none; }
-
-.ui-widget-content {
-  color: #eff0f1; }
-
-#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
-  color: #eff0f1;
-  text-shadow: none; }
-
-#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
-  color: #da4453;
-  font-weight: bold;
-  text-shadow: none; }
 
 .app-passman #app-content {
   height: 99.9%;
@@ -1500,5 +1329,169 @@ tags-input .autocomplete {
 #passman-settings #passman-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   margin-bottom: inherit;
   padding-bottom: inherit; }
+
+.app-tasks #app-content {
+  height: 99.9%;
+  border-top: 1px solid #706f6e; }
+  .app-tasks #app-content h2 {
+    text-shadow: none;
+    opacity: 1; }
+  .app-tasks #app-content #add-task {
+    border: 1px solid #706f6e;
+    background: #232629; }
+    .app-tasks #app-content #add-task input {
+      color: #eff0f1;
+      background: #232629 !important; }
+  .app-tasks #app-content .sortorder-dropdown-button {
+    background-color: #31363b;
+    border: 1px solid #706f6e;
+    height: 32px;
+    margin: 13px 0px 12px 12px;
+    border-radius: 0; }
+  .app-tasks #app-content .sortorder-dropdown li > a {
+    color: #eff0f1; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .title {
+    background-color: #3daee9;
+    border-bottom: 1px solid #706f6e;
+    text-shadow: none; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
+    background: inherit;
+    text-shadow: none;
+    border-bottom: 1px dashed #706f6e; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note {
+    background-color: #232629;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: #706f6e; }
+  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
+    color: #eff0f1; }
+  .app-tasks #app-content .categories-list li {
+    background-color: #31363b;
+    border: 1px solid #706f6e;
+    color: #eff0f1; }
+  .app-tasks #app-content .select2-drop {
+    background: #232629;
+    color: #eff0f1;
+    border: 1px solid #706f6e;
+    border-top: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .app-tasks #app-content .select2-container-multi .select2-choices,
+  .app-tasks #app-content .select2-container-multi.select2-container-active .select2-choices,
+  .app-tasks #app-content .select2-container .select2-choice {
+    border-radius: 0;
+    border: 1px solid #706f6e; }
+
+.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+  color: #eff0f1;
+  background-color: #31363b;
+  border-color: #706f6e;
+  margin: 3px 0 3px 5px; }
+
+#app-navigation li > a span.title, #app-navigation li > a span.icon {
+  opacity: 1; }
+
+#content {
+  color: #eff0f1; }
+
+#content li.task-item .task-body, #content div.task-item .task-body {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+
+#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
+  color: #eff0f1;
+  text-shadow: none; }
+
+#content li.task-item .task-body:hover,
+#content div.task-item .task-body:hover {
+  background-color: rgba(61, 174, 233, 0.25); }
+
+#content li.task-item .task-body.active,
+#content div.task-item .task-body.active {
+  background-color: #3daee9; }
+
+#app-content div.task-list .loadmore span {
+  color: #bdc3c7;
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+  #app-content div.task-list .loadmore span:hover {
+    color: #eff0f1;
+    background-color: inherit;
+    border-color: #3daee9; }
+
+#app-navigation .app-navigation-entry-edit input.icon-close, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover {
+  background-color: #31363b; }
+  #app-navigation .app-navigation-entry-edit input.icon-close:hover, #app-navigation .app-navigation-entry-edit input[type="submit"]:hover:hover {
+    background-color: #3daee9; }
+
+#app-navigation .app-navigation-entry-edit input {
+  border: 1px solid #706f6e; }
+
+#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
+  background: #232629 !important;
+  color: #eff0f1; }
+
+#content li.task-item.add-subtask, #content div.task-item.add-subtask {
+  border: 1px solid #706f6e; }
+
+#app-sidebar div.content-wrapper .body .section input {
+  background: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none;
+  color: #eff0f1; }
+
+div.percentdone {
+  height: 3px;
+  margin-bottom: -3px;
+  background-color: #CCC;
+  border-radius: 0; }
+
+#app-sidebar div.content-wrapper div.footer {
+  border-top: none;
+  box-shadow: none; }
+
+div.ui-datepicker, div.ui-timepicker {
+  background: #31363b;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: none;
+  color: #eff0f1; }
+
+.ui-datepicker .ui-widget-header, .ui-timepicker .ui-widget-header {
+  background: inherit;
+  color: #eff0f1; }
+
+.ui-datepicker table thead th, .ui-timepicker table thead th {
+  color: #eff0f1; }
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+  color: #eff0f1;
+  border-radius: 3px 3px 3px 3px; }
+
+.ui-datepicker table a.ui-state-default:hover, .ui-timepicker table a.ui-state-default:hover {
+  background: rgba(61, 174, 233, 0.25); }
+
+.ui-datepicker table td.selected a, .ui-timepicker table td.selected a {
+  background: #3daee9;
+  border-radius: 3px 3px 3px 3px;
+  color: #fcfcfc;
+  text-shadow: none; }
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+  background-color: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none; }
+
+.ui-widget-content {
+  color: #eff0f1; }
+
+#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
+  color: #eff0f1;
+  text-shadow: none; }
+
+#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
+  color: #da4453;
+  font-weight: bold;
+  text-shadow: none; }
 
 /*# sourceMappingURL=styles.css.map */

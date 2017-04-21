@@ -1,0 +1,32 @@
+.app-notes #app-content {
+	border-top: 1px solid $decoration-normal;
+}
+
+#app-navigation li .nav-entry {
+	color: $foreground-normal;
+}
+
+.note-search input {
+	border: none;
+	background-color: transparent;
+	color: $foreground-normal;
+
+	&:active, &:focus, &:hover {
+		border-bottom: 1px solid $decoration-active;
+		color: $foreground-active;
+	}
+}
+
+.mdedit {
+	color: $foreground-normal;
+
+	.marker {
+		color: $foreground-markdown-marker;
+	}
+}
+
+#app-navigation .active > .utils {
+	.icon-delete:hover, .icon-star:hover {
+		opacity: 0.7;
+	}
+}

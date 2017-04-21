@@ -1,0 +1,20 @@
+.app-activity #app-content {
+	position: relative;
+	height: 99.9%;
+	border-top: 1px solid $decoration-normal;
+}
+
+.activitymessage {
+	color: $foreground-normal;
+	opacity: 0.6;
+}
+
+.box .activitytime {
+	color: $foreground-inactive;
+	opacity: 0.5;
+}
+
+#no_more_activities {
+	color: $foreground-inactive;
+	opacity: 0.5;
+}

@@ -647,6 +647,13 @@ ul.multiselectoptions {
 	color: $foreground-normal;
 }
 
-@import 'apps';
-@import 'tasks';
-@import 'passman';
+@import 'apps/apps';
+@import 'apps/activity';
+@import 'apps/calendar';
+@import 'apps/contacts';
+@import 'apps/files';
+@import 'apps/gallery';
+@import 'apps/news';
+@import 'apps/notes';
+@import 'apps/passman';
+@import 'apps/tasks';

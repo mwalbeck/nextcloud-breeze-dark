@@ -1,0 +1,130 @@
+.app-files #app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.8%;
+	background-color: $background-dark;
+}
+
+.app-files #app-navigation + #app-content #controls {
+	margin-top: 1px;
+}
+
+#app-content-files #filestable {
+	background-color: $background-dark;
+}
+
+#app-content-files #controls {
+	background-color: $background-normal;
+	margin-top: 1px;
+}
+
+#filestable tbody {
+	tr {
+		background-color: $background-dark;
+
+		&:hover {
+			background-color: $background-active-hover;
+			
+			.name:focus {
+				background-color: inherit;
+			}
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: $background-alternate;
+		}
+
+		&.externalErroredRow {
+			background-color: $background-negative;
+		}
+	}
+
+	.name:focus {
+		background-color: inherit;
+	}
+}
+
+#filestable.multiselect {
+	top: 93px;
+}
+
+.summary {
+	color: $foreground-inactive;
+	opacity: 1;
+}
+
+table tr.mouseOver td {
+	background-color: $background-dark;
+}
+
+table td.filesize {
+	color: $foreground-inactive !important;
+}
+
+table.multiselect {
+	thead th {
+		background-color: $background-active-hover;
+		color: $foreground-normal;
+	}
+
+	th a {
+		color: $foreground-normal;
+	}
+}
+
+span.extension {
+	color: $foreground-inactive;
+}
+
+#app-content-systemtagsfilter {
+	#controls input[type="text"] {
+		height: 34px;
+		padding: 6px 10px;
+	}
+
+	.select2-choices {
+		background-color: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+	}
+}
+
+#fileList .popovermenu .action {
+	color: $foreground-normal;
+}
+
+#fileList a.action.permanent {
+	opacity: 0.4 !important;
+}
+
+#controls .button.view-switcher {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	margin-right: 6px;
+
+	&:hover {
+		border-color: $decoration-active;
+		background-color: $background-normal;
+	}
+
+	&:focus, &:active {
+		border-color: $decoration-active;
+		background-color: $background-active;
+	}
+
+	img {
+		opacity: 0.6;
+	}
+}
