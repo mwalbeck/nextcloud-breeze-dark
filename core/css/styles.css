@@ -222,9 +222,13 @@ body {
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #31363b; }
 
-div.crumb.last a {
-	color: white;
-	opacity: 0.5;
+div.crumb a {
+ 	color: white;
+ 	opacity: 0.5;
+}
+
+div.crumb:first-child a {
+ 	opacity: 1;
 }
 
 a {
