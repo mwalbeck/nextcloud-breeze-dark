@@ -232,6 +232,20 @@ select {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
+.icon-menu {
+	background-image: url('../img/actions/menu.svg?v=1');
+}
+
+.glyphicon-chevron-right {
+	background: url("../img/rightarrow.svg") center center no-repeat;
+	filter: invert(100%);
+}
+
+.glyphicon-chevron-left {
+	background: url("../img/leftarrow.svg") center center no-repeat;
+	filter: invert(100%);
+}
+
 /* CSS tricks to change icon color */
 
 #navigation .app-icon {

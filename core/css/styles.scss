@@ -28,6 +28,15 @@ em {
 	}
 }
 
+h1, h2, h3 {
+    color: $foreground-active;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	color: $foreground-normal;
+}
+
 /* Breadcrumbs */
 
 div.crumb > span {
@@ -327,6 +336,15 @@ button.primary, .button.primary {
 	}
 }
 
+#app-order #apporder p em {
+	opacity: 1;
+}
+
+#appsorter img {
+	background: inherit;
+	border: 1px solid $decoration-normal;
+}
+
 // Personal
 
 #quota {
@@ -451,6 +469,12 @@ ul.multiselectoptions {
 		-moz-box-shadow: none;
 		box-shadow: none;
 	}
+}
+
+/* Encryption */
+
+#body-user .warning, #body-settings .warning {
+	background: $background-negative;
 }
 
 /* Notifications */
@@ -588,6 +612,35 @@ ul.multiselectoptions {
 	color: $foreground-active;
 }
 
+/* File Sharing */
+
+#body-public #content-wrapper #content {
+	border-top: 1px solid $decoration-normal;
+
+	#preview {
+		background: inherit;
+	}
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+	#app-content {
+		width: 100% !important;
+		left: 0 !important;
+		background-color: $background-normal;
+		overflow-x: hidden !important;
+		z-index: 1000;
+	}
+
+	#app-navigation-toggle {
+		z-index: 1001;
+		background-color: $background-active-hover;
+		opacity: 0.5;
+		border-bottom-right-radius: 5px;
+	}
+}
+
 /* App Store */
 
 .app-level span {
@@ -595,3 +648,5 @@ ul.multiselectoptions {
 }
 
 @import 'apps';
+@import 'tasks';
+@import 'passman';

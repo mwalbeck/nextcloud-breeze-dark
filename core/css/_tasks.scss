@@ -1,0 +1,223 @@
+.app-tasks {
+    #app-content {
+        height: 99.9%;
+        border-top: 1px solid $decoration-normal;
+
+        h2 {
+            text-shadow: none;
+            opacity: 1;
+        }
+
+        #add-task {
+            border: 1px solid $decoration-normal;
+            background: $background-dark;
+
+            input {
+                color: $foreground-normal;
+                background: $background-dark !important;
+            }
+        }
+
+        .sortorder-dropdown-button {
+            background-color: $background-normal;
+            border: 1px solid $decoration-normal;
+            height: 32px;
+            margin: 13px 0px 12px 12px;
+            border-radius: 0;
+        }
+
+        .sortorder-dropdown {
+            li > a{
+                color: $foreground-normal;
+            }
+        }
+
+        #app-sidebar div.content-wrapper .title {
+            background-color: $background-active;
+            border-bottom: 1px solid $decoration-normal;
+            text-shadow: none;
+        }
+
+        #app-sidebar div.content-wrapper .body .section {
+            background: inherit;
+            text-shadow: none;
+            border-bottom: 1px dashed $decoration-normal;
+        }
+
+        #app-sidebar div.content-wrapper .body .note {
+            background-color: $background-dark;
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: $decoration-normal;
+        }
+
+        #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
+            color: $foreground-normal;
+        }
+
+        .categories-list li {
+            background-color: $background-normal;
+            border: 1px solid $decoration-normal;
+            color: $foreground-normal;
+        }
+
+        .select2-drop {
+            background: $background-dark;
+            color: $foreground-normal;
+            border: 1px solid $decoration-normal;
+            border-top: 0;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .select2-container-multi .select2-choices, 
+        .select2-container-multi.select2-container-active .select2-choices, 
+        .select2-container .select2-choice {
+            border-radius: 0;
+            border: 1px solid $decoration-normal;
+        }
+    }
+}
+
+.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+	color: $foreground-normal;
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+    margin: 3px 0 3px 5px;
+}
+
+#app-navigation li > a span.title, #app-navigation li > a span.icon {
+	opacity: 1;
+}
+
+#content {
+    color: $foreground-normal;
+}
+
+#content li.task-item .task-body, #content div.task-item .task-body {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+}
+
+#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
+	color: $foreground-normal;
+	text-shadow: none;
+}
+
+#content li.task-item .task-body:hover,  
+#content div.task-item .task-body:hover {
+	background-color: $background-active-hover;
+}
+
+#content li.task-item .task-body.active, 
+#content div.task-item .task-body.active {
+    background-color: $background-active;
+}
+
+#app-content div.task-list .loadmore span {
+	color: $foreground-inactive;
+	background-color: $background-normal;
+    border: 1px solid $decoration-normal;
+
+    &:hover {
+        color: $foreground-normal;
+	    background-color: inherit;
+        border-color: $decoration-active;
+    }
+}
+
+#app-navigation .app-navigation-entry-edit {
+    input.icon-close, input[type="submit"]:hover {
+        background-color: $background-normal;
+
+        &:hover {
+            background-color: $background-active;
+        }
+    }
+}
+
+#app-navigation .app-navigation-entry-edit input {
+	border: 1px solid $decoration-normal;
+}
+
+#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
+	background: $background-dark !important;
+	color: $foreground-normal;
+}
+
+#content li.task-item.add-subtask, #content div.task-item.add-subtask {
+	border: 1px solid $decoration-normal;
+}
+
+#app-sidebar div.content-wrapper .body .section input {
+	background: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+	color: $foreground-normal;
+}
+
+div.percentdone {
+	height: 3px;
+	margin-bottom: -3px;
+	background-color: #CCC;
+	border-radius: 0;
+}
+
+#app-sidebar div.content-wrapper div.footer {
+	border-top: none;
+	box-shadow: none;
+}
+
+div.ui-datepicker, div.ui-timepicker {
+    background: $background-normal;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: none;
+    color: $foreground-normal;
+}
+
+.ui-datepicker .ui-widget-header, .ui-timepicker .ui-widget-header {
+	background: inherit;
+	color: $foreground-normal;
+}
+
+.ui-datepicker table thead th, .ui-timepicker table thead th {
+	color: $foreground-normal;
+}
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+	color: $foreground-normal;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.ui-datepicker table a.ui-state-default:hover, .ui-timepicker table a.ui-state-default:hover {
+	background: $background-active-hover;
+}
+
+.ui-datepicker table td.selected a, .ui-timepicker table td.selected a {
+	background: $background-active;
+	border-radius: 3px 3px 3px 3px;
+	color: $foreground-active;
+	text-shadow: none;
+}
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+}
+
+.ui-widget-content {
+	color: $foreground-normal;
+}
+
+#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
+	color: $foreground-normal;
+	text-shadow: none;
+}
+
+#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
+	color: $foreground-negative;
+    font-weight: bold;
+    text-shadow: none;
+}
