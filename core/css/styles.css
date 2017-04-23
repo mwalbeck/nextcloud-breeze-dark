@@ -222,6 +222,15 @@ body {
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #31363b; }
 
+div.crumb a {
+ 	color: white;
+ 	opacity: 0.5;
+}
+
+div.crumb:first-child a {
+ 	opacity: 1;
+}
+
 a {
   color: #2980b9; }
 
