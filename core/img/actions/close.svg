@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg11"
-   sodipodi:docname="close2.svg"
+   sodipodi:docname="close-2.svg"
    inkscape:version="0.92.1 r">
   <metadata
      id="metadata15">
@@ -38,8 +38,8 @@
      inkscape:window-height="1377"
      id="namedview13"
      showgrid="false"
-     inkscape:zoom="14.75"
-     inkscape:cx="-10"
+     inkscape:zoom="69.832031"
+     inkscape:cx="5.5011467"
      inkscape:cy="8"
      inkscape:window-x="1680"
      inkscape:window-y="0"
@@ -49,13 +49,13 @@
      id="defs5">
     <filter
        id="a"
-       height="1.0023977"
-       width="1.0024023"
-       y="-0.0011988507"
-       x="-0.0012011515"
+       height="1.5994253"
+       width="1.6005758"
+       y="-0.29971267"
+       x="-0.30028788"
        color-interpolation-filters="sRGB">
       <feGaussianBlur
-         stdDeviation="0.00495475"
+         stdDeviation="1.2386875"
          id="feGaussianBlur2" />
     </filter>
   </defs>
@@ -66,9 +66,9 @@
      d="M12.95 11.536l-1.414 1.414L8 9.414 4.465 12.95 3.05 11.536 6.586 8 3.05 4.464 4.465 3.05 8 6.586l3.516-3.555 1.434 1.434L9.414 8z"
      fill="#fff"
      id="path7"
-     style="stroke:#ffffff;stroke-opacity:0;filter:url(#a)" />
+     style="fill-rule:nonzero;fill:#ffffff;fill-opacity:1;stroke:#232629;stroke-opacity:1;filter:url(#a)" />
   <path
      d="M12.95 11.536l-1.414 1.414L8 9.414 4.465 12.95 3.05 11.536 6.586 8 3.05 4.464 4.465 3.05 8 6.586l3.516-3.555 1.434 1.434L9.414 8z"
      id="path9"
-     style="fill:#f2f2f2;fill-opacity:1;stroke:#f2f2f2;stroke-opacity:1" />
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

@@ -325,6 +325,23 @@ button.primary, .button.primary {
 	}
 }
 
+#app-sidebar .close {
+	opacity: 1;
+}
+
+div.crumb a, div.crumb > span {
+	color: $foreground-inactive;
+}
+
+div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
+	-ms-filter: none;
+	opacity: 1;
+}
+
+div.crumb span.icon-share, div.crumb span.icon-public {
+	opacity: 0.3;
+}
+
 /* Settings */
 
 .app-settings #app-content {
