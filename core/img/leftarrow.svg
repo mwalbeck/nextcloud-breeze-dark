@@ -1,13 +1,55 @@
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="136.3 -90.4 106.9 197.4" style="enable-background:new 136.3 -90.4 106.9 197.4;" xml:space="preserve">
-<style type="text/css">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="136.3 -90.4 106.9 197.4"
+   style="enable-background:new 136.3 -90.4 106.9 197.4;"
+   xml:space="preserve"
+   sodipodi:docname="leftarrow.svg"
+   inkscape:version="0.92.1 r"><metadata
+     id="metadata17"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs15" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="5.6601446"
+     inkscape:cx="53.450001"
+     inkscape:cy="98.699997"
+     inkscape:window-x="1680"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1" /><style
+     type="text/css"
+     id="style2">
 	.st0{fill:#010002;}
-</style>
-<g>
-	<g>
-		<g>
-			<polygon class="st0" points="237.9,107 136.3,8.3 237.9,-90.4 243.1,-85 147.1,8.3 243.1,101.6 			"/>
-		</g>
-	</g>
-</g>
-</svg>
+</style><g
+     id="g10"
+     style="fill:#f2f2f2;fill-opacity:1"><g
+       id="g8"
+       style="fill:#f2f2f2;fill-opacity:1"><g
+         id="g6"
+         style="fill:#f2f2f2;fill-opacity:1"><polygon
+           class="st0"
+           points="237.9,107 136.3,8.3 237.9,-90.4 243.1,-85 147.1,8.3 243.1,101.6    "
+           id="polygon4"
+           style="fill:#f2f2f2;fill-opacity:1" /></g></g></g></svg>

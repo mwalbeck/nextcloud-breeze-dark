@@ -178,13 +178,14 @@ select {
 .icon-menu {
   background-image: url("../img/actions/menu.svg?v=1"); }
 
+.icon-timezone {
+  background: url("../img/timezone.svg") center center no-repeat; }
+
 .glyphicon-chevron-right {
-  background: url("../img/rightarrow.svg") center center no-repeat;
-  filter: invert(100%); }
+  background: url("../img/rightarrow.svg") center center no-repeat; }
 
 .glyphicon-chevron-left {
-  background: url("../img/leftarrow.svg") center center no-repeat;
-  filter: invert(100%); }
+  background: url("../img/leftarrow.svg") center center no-repeat; }
 
 /* CSS tricks to change icon color */
 #navigation .app-icon {
