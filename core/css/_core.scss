@@ -1,0 +1,667 @@
+/* This file is contains styling for nextcloud core */
+
+body {
+	color: $foreground-normal;
+	background-color: $background-normal;
+}
+
+#body-user #header, #body-settings #header, #body-public #header {
+	background-color: $background-normal;
+	//border-bottom: 1px solid $decoration-active;
+}
+
+a {
+	color: $foreground-link;
+}
+
+em {
+	opacity: 0.75;
+}
+
+#controls {
+	background-color: $background-normal;
+
+	.button {
+		padding: 7px 11px;
+	}
+}
+
+h1, h2, h3 {
+    color: $foreground-active;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	color: $foreground-normal;
+}
+
+/* Breadcrumbs */
+
+div.crumb > span {
+	color: $foreground-normal;
+}
+
+/* Tables */
+
+tbody {
+
+	tr:hover, tr:focus {
+		background-color: $background-active-hover;
+	}
+
+	tr:active {
+		background-color: inherit;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+table {
+
+	thead th {
+		background-color: $background-normal;
+	}
+
+	th, td {
+		border-bottom: 1px solid $decoration-normal;
+	}
+}
+
+td.date, td.date > span {
+	color: $foreground-inactive !important;
+}
+
+#filestable {
+	background-color: $background-dark;
+}
+
+.section {
+	color: $foreground-normal;
+}
+
+/* oc-dialog */
+
+.oc-dialog {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+.oc-dialog-title {
+	background-color: $background-normal;
+}
+
+.oc-dialog-buttonrow {
+	background-image: none;
+	background-color: $background-normal;
+}
+
+#oc-dialog-filepicker-content .filelist {
+	background-color: $background-dark;
+}
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+	background-color: $background-active;
+
+	td {
+		font-weight: 600;
+	}
+
+	.filename {
+		color: $foreground-active;
+	}
+
+	&:hover {
+		background-color: $background-active;
+	}
+}
+
+/* Cropper */
+
+#cropper .inner-container {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	.jcrop-holder {
+		box-shadow: none;
+	}
+}
+
+// Info colours
+
+#postsetupchecks .errors, 
+#postsetupchecks .warnings, 
+#security-warning > ul {
+	color: $foreground-negative;
+}
+
+.success {
+	color: $foreground-positive;
+}
+
+span {
+
+	&.warnings {
+		background-color: $background-negative;
+	}
+
+	&.error {
+		background-color: $background-negative;
+	}
+
+	&.success {
+		background-color: $background-positive;
+	}
+}
+
+.msg {
+
+	&.warnings {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.error {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
+#body-user .warning {
+	color: $foreground-negative;
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+}
+
+/* use logos from theme */
+#header {
+	.logo {
+	background-image: url('../img/logo.svg');
+	width: 250px;
+	height: 121px;
+	}
+	
+	.logo-icon {
+	background-image: url('../img/logo-icon.svg');
+	width: 62px;
+	height: 34px;
+	}
+}
+
+/* Input Fields */
+
+input[type="text"], input[type="password"], input[type="search"], 
+input[type="number"], input[type="email"], input[type="tel"], 
+input[type="url"], input[type="time"], textarea {
+	background-color: $input-background-normal;
+	color: $input-foreground-inactive;
+	border: 1px solid $input-decoration-normal;
+
+	&:hover, &:focus {
+		color: $input-foreground-active;
+		border-color: $input-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+
+		&:hover, &:focus, &:active {
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+/* Buttons */
+
+input[type="submit"], input[type="button"], 
+button, .button, select {
+	background-color: $button-background-normal;
+	border: 1px solid $button-decoration-normal;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-normal;
+		color: $button-foreground-normal;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus, &:active {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+.primary, input.primary[type="submit"], input.primary[type="button"], 
+button.primary, .button.primary {
+	border-color: $button-decoration-normal;
+	background-color: $button-background-dark;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-dark;
+		color: $button-foreground-normal;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus, &:active {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+		color: $foreground-inactive;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			color: $foreground-inactive;
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+// Search
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+ .searchbox input[type="search"]:valid {
+	 color: $foreground-active;
+	 border-color: $decoration-active;
+	 background-color: $background-dark;
+ }
+
+ #app-content #searchresults {
+	 background-color: $background-normal;
+ }
+
+/* Navigation */
+
+#navigation {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a span {
+		color: $foreground-normal;
+	}
+}
+
+#settings {
+	color: $foreground-normal;
+}
+
+#expanddiv {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+#app-sidebar .close {
+	opacity: 1;
+}
+
+div.crumb a, div.crumb > span {
+	color: $foreground-inactive;
+}
+
+div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
+	-ms-filter: none;
+	opacity: 1;
+}
+
+div.crumb span.icon-share, div.crumb span.icon-public {
+	opacity: 0.3;
+}
+
+/* Settings */
+
+.app-settings #app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.9%;
+
+	#controls {
+		border-top: 1px solid $decoration-normal;
+	}
+}
+
+#app-order #apporder p em {
+	opacity: 1;
+}
+
+#appsorter img {
+	background: inherit;
+	border: 1px solid $decoration-normal;
+}
+
+// Personal
+
+#quota {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+
+	div {
+		background-color: $background-dark
+	}
+}
+
+#sessions .token-list td, #apppasswords .token-list td {
+	border-color: $decoration-normal;
+	border-top: none;
+}
+
+// Admin - Server Settings
+
+.followupsection {
+	color: $foreground-normal;
+}
+
+.select2-container-multi {
+	
+	.select2-choices, &.select2-container-active .select2-choices {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+	}
+
+	.select2-choices .select2-search-choice, &.select2-container-active .select2-choices .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:hover, &.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
+
+	.select2-choices .select2-search-field input {
+		color: $foreground-normal;
+
+		&.select2-active {
+			background-color: $background-dark !important;
+		}
+	}
+}
+
+.select2-container {
+	
+	.select2-choice {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+	}
+
+	.select2-choice .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:hover, &.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
+}
+
+#select2-drop {
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	&.select2-drop-active {
+		border-color: $decoration-normal;
+	}
+
+	.select2-results {
+
+		.select2-result, .select2-no-results, .select2-searching {
+			background-color: $background-dark;
+			color: $foreground-normal;
+		}
+
+		.select2-result.select2-selected {
+			background-color: $background-normal;
+		}
+
+		.select2-result.select2-highlighted {
+			background-color: $background-normal;
+			color: $foreground-normal;
+		}
+	}
+}
+
+.select2-drop-active {
+	border-color: $decoration-normal;
+}
+
+// Users
+
+#userlist th.name {
+	color: $foreground-normal;
+}
+
+div.multiselect.active {
+	background-color: $background-normal;
+}
+
+ul.multiselectoptions {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Encryption */
+
+#body-user .warning, #body-settings .warning {
+	background: $background-negative;
+}
+
+/* Notifications */
+
+#notification {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	border-top: none;
+
+	a {
+		color: $foreground-link;
+	}
+}
+
+/* App Navigation */
+
+#app-navigation {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	li > a {
+		color: $foreground-normal !important;
+		opacity: 1;
+	}
+
+	li:hover > a {
+		background-color: $background-active-hover;
+	}
+
+	li:focus > a {
+		background-color: $background-active;
+	}
+
+	li:active > a {
+		background-color: $background-active;
+	}
+
+	.active {
+		background-color: $background-active;
+	}
+
+	.active a {
+		color: $foreground-active;
+		font-weight: 600;
+		background-color: inherit;
+	}
+
+	.add-new button {
+		color: $foreground-normal !important;
+	}
+
+	.add-new div.heading {
+		&:hover {
+			background-color: $background-active-hover;
+		}
+	}
+
+	.add-new-popup {
+		box-shadow: none;
+		border-color: $decoration-active;
+	}
+}
+
+.nav-trashbin {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+}
+
+.bubble {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+.popovermenu .menuitem {
+	color: $foreground-normal;
+}
+
+// App Settings
+
+#app-settings {
+	.import-export button {
+		margin: 3px 0;
+	}
+}
+
+#app-settings-content, #app-settings-header {
+	border-color: $decoration-normal;
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	a {
+		color: $foreground-link;
+	}
+}
+
+.settings-button {
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	&:hover {
+		background-color: $background-active-hover;
+	}
+
+	&:focus, &:active {
+		background-color: $background-active;
+		color: $foreground-active;
+	}
+}
+
+/* Login Screen Specific */
+
+#body-login {
+	background: none;
+	background-color: $background-normal;
+}
+
+#body-login form input[type="checkbox"] + label {
+	color: $foreground-inactive	;
+}
+
+#body-login #remember_login:hover+label,
+#body-login #remember_login:focus+label,
+#body-login #remember_login:checked+label {
+	opacity: 1;
+	color: $foreground-active;
+}
+
+/* File Sharing */
+
+#body-public #content-wrapper #content {
+	border-top: 1px solid $decoration-normal;
+
+	#preview {
+		background: inherit;
+	}
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+	#app-content {
+		width: 100% !important;
+		left: 0 !important;
+		background-color: $background-normal;
+		overflow-x: hidden !important;
+		z-index: 1000;
+	}
+
+	#app-navigation-toggle {
+		z-index: 1001;
+		background-color: $background-active-hover;
+		opacity: 0.5;
+		border-bottom-right-radius: 5px;
+	}
+}
+
+/* App Store */
+
+.app-level span {
+	color: $foreground-normal;
+}

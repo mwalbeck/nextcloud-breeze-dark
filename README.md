@@ -1,5 +1,5 @@
 # Nextcloud Breeze Dark Theme
-This is a Breeze Dark Theme for Nextcloud based on the Breeze Dark theme made by the KDE Project.
+This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the Breeze Dark theme made by the KDE Project.
 
 The icons are from the default Nextcloud theme, with the colors changed to better fit a dark theme.
 
@@ -19,8 +19,4 @@ To enable the theme, add or change the theme option in your config.php to:
 
 The theme is written with [Sass](http://sass-lang.com/).
 
-If you would like to contribute please make your pull requests to the **develop** branch.
-
-You can find the colours and their variable names in _colours.scss. Any changes to icons should go in the _icons.scss. Changes to Nextcloud core should go in styles.scss. For new apps please place the styling in a new file called _APPNAME.scss and import it at the bottom of style.scss.
-
-If you would like to contribute with styling for an app not currently styled, then please open a new issue.
+Please have a look at the CONTRIBUTING.md for details on how to contribute.

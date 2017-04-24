@@ -216,6 +216,7 @@ img.notification-icon {
 .actions a.button.new img {
   filter: invert(75%); }
 
+/* This file is contains styling for nextcloud core */
 body {
   color: #eff0f1;
   background-color: #31363b; }
