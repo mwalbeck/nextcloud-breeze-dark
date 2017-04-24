@@ -247,6 +247,8 @@ div.crumb > span {
 /* Tables */
 tbody tr:hover, tbody tr:focus {
   background-color: rgba(61, 174, 233, 0.25); }
+tbody tr:active {
+  background-color: inherit; }
 tbody a {
   color: #eff0f1; }
 

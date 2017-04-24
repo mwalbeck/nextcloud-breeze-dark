@@ -51,6 +51,10 @@ tbody {
 		background-color: $background-active-hover;
 	}
 
+	tr:active {
+		background-color: inherit;
+	}
+
 	a {
 		color: $foreground-normal;
 	}
