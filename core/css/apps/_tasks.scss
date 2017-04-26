@@ -80,6 +80,11 @@
     }
 }
 
+#app-sidebar div.content-wrapper .title .expandable-container {
+	background: $background-dark;
+	border: 1px solid $decoration-normal;
+}
+
 .detail-categories .select2-container-multi .select2-choices .select2-search-choice {
 	color: $foreground-normal;
 	background-color: $background-normal;

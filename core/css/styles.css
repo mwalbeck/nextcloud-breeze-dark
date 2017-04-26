@@ -1400,6 +1400,10 @@ tags-input .autocomplete {
     border-radius: 0;
     border: 1px solid #706f6e; }
 
+#app-sidebar div.content-wrapper .title .expandable-container {
+  background: #232629;
+  border: 1px solid #706f6e; }
+
 .detail-categories .select2-container-multi .select2-choices .select2-search-choice {
   color: #eff0f1;
   background-color: #31363b;
