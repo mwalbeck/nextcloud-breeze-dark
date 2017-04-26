@@ -221,19 +221,11 @@ body {
   color: #eff0f1;
   background-color: #31363b; }
 
-#body-user #header, #body-settings #header, #body-public #header {
-  background-color: #31363b; }
-
 a {
   color: #2980b9; }
 
 em {
   opacity: 0.75; }
-
-#controls {
-  background-color: #31363b; }
-  #controls .button {
-    padding: 7px 11px; }
 
 h1, h2, h3 {
   color: #fcfcfc;
@@ -242,9 +234,13 @@ h1, h2, h3 {
 h4, h5, h6 {
   color: #eff0f1; }
 
-/* Breadcrumbs */
-div.crumb > span {
-  color: #eff0f1; }
+#body-user #header, #body-settings #header, #body-public #header {
+  background-color: #31363b; }
+
+#controls {
+  background-color: #31363b; }
+  #controls .button {
+    padding: 7px 11px; }
 
 /* Tables */
 tbody tr:hover, tbody tr:focus {
@@ -267,6 +263,17 @@ td.date, td.date > span {
 
 .section {
   color: #eff0f1; }
+
+/* Breadcrumbs */
+div.crumb a, div.crumb > span {
+  color: #bdc3c7; }
+
+div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
+  -ms-filter: none;
+  opacity: 1; }
+
+div.crumb span.icon-share, div.crumb span.icon-public {
+  opacity: 0.3; }
 
 /* oc-dialog */
 .oc-dialog {
@@ -459,16 +466,6 @@ button.primary, .button.primary {
 #app-sidebar .close {
   opacity: 1; }
 
-div.crumb a, div.crumb > span {
-  color: #bdc3c7; }
-
-div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
-  -ms-filter: none;
-  opacity: 1; }
-
-div.crumb span.icon-share, div.crumb span.icon-public {
-  opacity: 0.3; }
-
 /* Settings */
 .app-settings #app-content {
   border-top: 1px solid #706f6e;
@@ -572,6 +569,9 @@ ul.multiselectoptions {
   #notification a {
     color: #2980b9; }
 
+.notification:not(:last-child) {
+  border-bottom: 1px solid #706f6e; }
+
 /* App Navigation */
 #app-navigation {
   background-color: #31363b;
@@ -642,12 +642,19 @@ ul.multiselectoptions {
   background: none;
   background-color: #31363b; }
 
+#body-login p.info,
+#body-login form fieldset legend,
+#body-login #datadirContent label,
+#body-login form fieldset .warning-info,
 #body-login form input[type="checkbox"] + label {
   color: #bdc3c7; }
 
 #body-login #remember_login:hover + label,
 #body-login #remember_login:focus + label,
-#body-login #remember_login:checked + label {
+#body-login #forgot-password:hover,
+#body-login #forgot-password:focus,
+#body-login p.info a:hover,
+#body-login p.info a:focus {
   opacity: 1;
   color: #fcfcfc; }
 

@@ -5,25 +5,12 @@ body {
 	background-color: $background-normal;
 }
 
-#body-user #header, #body-settings #header, #body-public #header {
-	background-color: $background-normal;
-	//border-bottom: 1px solid $decoration-active;
-}
-
 a {
 	color: $foreground-link;
 }
 
 em {
 	opacity: 0.75;
-}
-
-#controls {
-	background-color: $background-normal;
-
-	.button {
-		padding: 7px 11px;
-	}
 }
 
 h1, h2, h3 {
@@ -35,10 +22,16 @@ h4, h5, h6 {
 	color: $foreground-normal;
 }
 
-/* Breadcrumbs */
+#body-user #header, #body-settings #header, #body-public #header {
+	background-color: $background-normal;
+}
 
-div.crumb > span {
-	color: $foreground-normal;
+#controls {
+	background-color: $background-normal;
+
+	.button {
+		padding: 7px 11px;
+	}
 }
 
 /* Tables */
@@ -79,6 +72,21 @@ td.date, td.date > span {
 
 .section {
 	color: $foreground-normal;
+}
+
+/* Breadcrumbs */
+
+div.crumb a, div.crumb > span {
+	color: $foreground-inactive;
+}
+
+div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
+	-ms-filter: none;
+	opacity: 1;
+}
+
+div.crumb span.icon-share, div.crumb span.icon-public {
+	opacity: 0.3;
 }
 
 /* oc-dialog */
@@ -331,19 +339,6 @@ button.primary, .button.primary {
 	opacity: 1;
 }
 
-div.crumb a, div.crumb > span {
-	color: $foreground-inactive;
-}
-
-div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
-	-ms-filter: none;
-	opacity: 1;
-}
-
-div.crumb span.icon-share, div.crumb span.icon-public {
-	opacity: 0.3;
-}
-
 /* Settings */
 
 .app-settings #app-content {
@@ -508,6 +503,10 @@ ul.multiselectoptions {
 	}
 }
 
+.notification:not(:last-child) {
+	border-bottom: 1px solid $decoration-normal;
+}
+
 /* App Navigation */
 
 #app-navigation {
@@ -620,13 +619,20 @@ ul.multiselectoptions {
 	background-color: $background-normal;
 }
 
+#body-login p.info, 
+#body-login form fieldset legend, 
+#body-login #datadirContent label, 
+#body-login form fieldset .warning-info, 
 #body-login form input[type="checkbox"] + label {
-	color: $foreground-inactive	;
+	color: $foreground-inactive;
 }
 
-#body-login #remember_login:hover+label,
-#body-login #remember_login:focus+label,
-#body-login #remember_login:checked+label {
+#body-login #remember_login:hover + label, 
+#body-login #remember_login:focus + label,
+#body-login #forgot-password:hover, 
+#body-login #forgot-password:focus, 
+#body-login p.info a:hover, 
+#body-login p.info a:focus {
 	opacity: 1;
 	color: $foreground-active;
 }
