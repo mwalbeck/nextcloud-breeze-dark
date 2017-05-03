@@ -243,17 +243,30 @@ h4, h5, h6 {
     padding: 7px 11px; }
 
 /* Tables */
-tbody tr:hover, tbody tr:focus {
-  background-color: rgba(61, 174, 233, 0.25); }
-tbody tr:active {
-  background-color: inherit; }
-tbody a {
-  color: #eff0f1; }
-
-table thead th {
+table tbody tr {
   background-color: #31363b; }
-table th, table td {
-  border-bottom: 1px solid #706f6e; }
+table tbody tr:hover, table tbody tr:focus {
+  background-color: rgba(61, 174, 233, 0.25); }
+table tbody tr:active {
+  background-color: inherit; }
+table tbody a {
+  color: #eff0f1; }
+table tbody td {
+  color: #eff0f1;
+  border-bottom: 1px solid #706f6e;
+  background-color: #31363b; }
+table thead tr {
+  background-color: #31363b; }
+table thead tr:hover, table thead tr:focus {
+  background-color: rgba(61, 174, 233, 0.25); }
+table thead tr:active {
+  background-color: inherit; }
+table thead th a, table thead a {
+  color: #eff0f1; }
+table thead th {
+  color: #eff0f1;
+  border-bottom: 1px solid #706f6e;
+  background-color: #31363b; }
 
 td.date, td.date > span {
   color: #bdc3c7 !important; }
@@ -618,6 +631,9 @@ ul.multiselectoptions {
 .popovermenu .menuitem {
   color: #eff0f1; }
 
+.popovermenu li > a {
+  opacity: 1 !important; }
+
 #app-settings .import-export button {
   margin: 3px 0; }
 
@@ -681,6 +697,17 @@ ul.multiselectoptions {
 /* App Store */
 .app-level span {
   color: #eff0f1; }
+
+/* Log reader */
+#logreader-root table tbody tr {
+  background-color: #31363b !important; }
+  #logreader-root table tbody tr td {
+    border-bottom-color: #706f6e; }
+#logreader-root table thead tr {
+  background-color: #31363b !important; }
+#logreader-root table thead th {
+  color: #eff0f1;
+  border-bottom-color: #706f6e; }
 
 /* Announcement Center */
 #announcement_submit_msg {

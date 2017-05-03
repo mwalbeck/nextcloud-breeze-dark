@@ -36,29 +36,56 @@ h4, h5, h6 {
 
 /* Tables */
 
-tbody {
-
-	tr:hover, tr:focus {
-		background-color: $background-active-hover;
-	}
-
-	tr:active {
-		background-color: inherit;
-	}
-
-	a {
-		color: $foreground-normal;
-	}
-}
-
 table {
 
-	thead th {
-		background-color: $background-normal;
+	tbody {
+
+		tr {
+			background-color: $background-normal;
+		}
+
+		tr:hover, tr:focus {
+			background-color: $background-active-hover;
+		}
+
+		tr:active {
+			background-color: inherit;
+		}
+
+		a {
+			color: $foreground-normal;
+		}
+
+		td {
+			color: $foreground-normal;
+			border-bottom: 1px solid $decoration-normal;
+			background-color: $background-normal;
+		}
 	}
 
-	th, td {
-		border-bottom: 1px solid $decoration-normal;
+	thead {
+
+		tr {
+			background-color: $background-normal;
+		}
+
+		tr:hover, tr:focus {
+			background-color: $background-active-hover;
+		}
+
+		tr:active {
+			background-color: inherit;
+		}
+
+		th a, a {
+			color: $foreground-normal;
+		}
+
+		th {
+			color: $foreground-normal;
+			border-bottom: 1px solid $decoration-normal;
+			background-color: $background-normal;
+		}
 	}
 }
 
@@ -580,6 +607,10 @@ ul.multiselectoptions {
 	color: $foreground-normal;
 }
 
+.popovermenu li > a {
+	opacity: 1 !important;
+}
+
 // App Settings
 
 #app-settings {
@@ -670,4 +701,23 @@ ul.multiselectoptions {
 
 .app-level span {
 	color: $foreground-normal;
+}
+
+/* Log reader */
+
+#logreader-root table {
+	tbody tr {
+	background-color: $background-normal !important;
+
+		td {
+			border-bottom-color: $decoration-normal;
+		}
+	}
+	thead tr {
+		background-color: $background-normal !important;
+	}
+	thead th {
+		color: $foreground-normal;
+		border-bottom-color: $decoration-normal;
+	}
 }
