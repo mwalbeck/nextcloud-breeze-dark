@@ -56,7 +56,7 @@ table {
 			color: $foreground-normal;
 		}
 
-		td {
+		td, th {
 			color: $foreground-normal;
 			border-bottom: 1px solid $decoration-normal;
 			background-color: $background-normal;
@@ -509,6 +509,22 @@ ul.multiselectoptions {
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
+	}
+}
+
+.quota {
+
+}
+
+select.quota-user {
+	background-color: $background-normal !important;
+
+	&:focus, &:active {
+		background-color: $background-active !important;
+	}
+
+	option {
+		background-color: $background-normal;
 	}
 }
 

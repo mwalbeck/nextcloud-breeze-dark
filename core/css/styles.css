@@ -251,7 +251,7 @@ table tbody tr:active {
   background-color: inherit; }
 table tbody a {
   color: #eff0f1; }
-table tbody td {
+table tbody td, table tbody th {
   color: #eff0f1;
   border-bottom: 1px solid #706f6e;
   background-color: #31363b; }
@@ -569,6 +569,13 @@ ul.multiselectoptions {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
+
+select.quota-user {
+  background-color: #31363b !important; }
+  select.quota-user:focus, select.quota-user:active {
+    background-color: #3daee9 !important; }
+  select.quota-user option {
+    background-color: #31363b; }
 
 /* Encryption */
 #body-user .warning, #body-settings .warning {
