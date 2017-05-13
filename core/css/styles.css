@@ -407,6 +407,11 @@ button, .button, select {
     background-color: #3daee9;
     color: #fcfcfc;
     border-color: #3daee9; }
+  button:active, .button:focus, .button:active, select:focus, select:active {
+    background-color: #31363b;
+    color: #eff0f1;
+    border-color: #3daee9;
+    }
   input[type="submit"]:disabled, input[type="button"]:disabled,
   button:disabled, .button:disabled, select:disabled {
     background-color: #4d4d4d; }
