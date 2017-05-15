@@ -126,7 +126,7 @@ input:not([type="range"]), textarea {
 textarea {
 	&:not(:disabled) {
 		&:hover, &:focus, &:active {
-			border-color: $decoration-normal !important;
+			border-color: $decoration-active !important;
 			background-color: $background-dark !important;
 		}
 	}

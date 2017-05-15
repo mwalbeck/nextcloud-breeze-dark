@@ -6,11 +6,6 @@
 	margin-top: 1px;
 }
 
-#app-content-files #controls {
-	background-color: $background-normal;
-	margin-top: 1px;
-}
-
 #filestable tbody {
 	tr {
 		background-color: $background-normal;
@@ -50,9 +45,9 @@
 	}
 }
 
-#filestable.multiselect {
-	top: 93px;
-}
+/*#filestable.multiselect thead {
+	border-bottom: 1px solid $decoration-normal;
+}*/
 
 .summary {
 	color: $foreground-inactive;
@@ -84,6 +79,10 @@ tr {
 			color: $foreground-inactive;
 		}
 	}
+}
+
+td.date, td.date > span {
+	color: $foreground-inactive !important;
 }
 
 #app-content-systemtagsfilter {

@@ -6,16 +6,19 @@
 	background-color: $background-normal;
 }
 
-td.date, td.date > span {
-	color: $foreground-inactive !important;
-}
-
-#filestable {
-	background-color: $background-dark;
-}
-
 .section {
 	color: $foreground-normal;
+}
+
+.menu {
+	box-shadow: none;
+}
+
+.popovermenu li .menuitem {
+	color: $foreground-inactive;
+	&:hover {
+		color: $foreground-active;
+	}
 }
 
 /* Breadcrumbs */
@@ -193,6 +196,10 @@ span {
 
 	a {
 		color: $foreground-normal;
+
+		&:hover {
+			color: $foreground-active;
+		}
 	}
 }
 

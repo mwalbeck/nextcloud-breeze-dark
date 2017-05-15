@@ -290,7 +290,7 @@ input:not([type="range"]), textarea {
       border-color: #706f6e; }
 
 textarea:not(:disabled):hover, textarea:not(:disabled):focus, textarea:not(:disabled):active {
-  border-color: #706f6e !important;
+  border-color: #3daee9 !important;
   background-color: #232629 !important; }
 
 input[type="submit"], input[type="button"],
@@ -342,14 +342,16 @@ button.primary, .button.primary {
 #controls {
   background-color: #31363b; }
 
-td.date, td.date > span {
-  color: #bdc3c7 !important; }
-
-#filestable {
-  background-color: #232629; }
-
 .section {
   color: #eff0f1; }
+
+.menu {
+  box-shadow: none; }
+
+.popovermenu li .menuitem {
+  color: #bdc3c7; }
+  .popovermenu li .menuitem:hover {
+    color: #fcfcfc; }
 
 /* Breadcrumbs */
 div.crumb a, div.crumb > span {
@@ -467,6 +469,8 @@ span.success {
     border-bottom-color: #706f6e; }
   #expanddiv a {
     color: #eff0f1; }
+    #expanddiv a:hover {
+      color: #fcfcfc; }
 
 #app-sidebar .close {
   opacity: 1; }
@@ -694,12 +698,6 @@ select.quota-user {
   filter: none; }
   .bubble::after {
     border-bottom-color: #706f6e; }
-
-.popovermenu .menuitem {
-  color: #eff0f1; }
-
-.popovermenu li > a {
-  opacity: 1 !important; }
 
 #app-sidebar {
   background-color: #31363b;
@@ -983,10 +981,6 @@ input.newAddressBookInput {
 .app-files #app-navigation + #app-content #controls {
   margin-top: 1px; }
 
-#app-content-files #controls {
-  background-color: #31363b;
-  margin-top: 1px; }
-
 #filestable tbody tr {
   background-color: #31363b; }
   #filestable tbody tr:hover {
@@ -1007,9 +1001,9 @@ input.newAddressBookInput {
 #filestable tbody .name:focus {
   background-color: inherit; }
 
-#filestable.multiselect {
-  top: 93px; }
-
+/*#filestable.multiselect thead {
+	border-bottom: 1px solid $decoration-normal;
+}*/
 .summary {
   color: #bdc3c7;
   opacity: 1; }
@@ -1028,6 +1022,9 @@ table.multiselect th a {
 
 tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus span.extension {
   color: #bdc3c7; }
+
+td.date, td.date > span {
+  color: #bdc3c7 !important; }
 
 #app-content-systemtagsfilter #controls input[type="text"] {
   height: 34px;
