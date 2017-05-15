@@ -60,7 +60,7 @@
 }
 
 table tr.mouseOver td {
-	background-color: $background-dark;
+	background-color: transparent;
 }
 
 table td.filesize {
@@ -78,8 +78,12 @@ table.multiselect {
 	}
 }
 
-span.extension {
-	color: $foreground-inactive;
+tr {
+	&, &:hover, &:active, &:focus {
+		span.extension {
+			color: $foreground-inactive;
+		}
+	}
 }
 
 #app-content-systemtagsfilter {

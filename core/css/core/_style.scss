@@ -78,30 +78,41 @@ input.checkbox[type="radio"] {
 	}
 }
 
-select:active, 
-button:active, 
-.button:active, 
-input:active:not([type="range"]), 
-textarea:active, 
-#quota:active, 
-.pager li a:active {
+input:not([type="range"]), 
+textarea, 
+#quota, 
+.pager li a {
 	&:not(:disabled):not(.primary) {
-		background-color: $background-dark;
-		border-color: $decoration-active;
+		&:not(#quota):hover {
+			border-color: $decoration-active;
+		}
+		&:focus, &:active {
+			background-color: $background-dark;
+			border-color: $decoration-active;
+		}
 	}
 }
 
-input[type="text"], input[type="password"], input[type="search"], 
-input[type="number"], input[type="email"], input[type="tel"], 
-input[type="url"], input[type="time"], textarea {
-	background-color: $input-background-normal;
-	color: $input-foreground-inactive;
-	border: 1px solid $input-decoration-normal;
-
-	&:hover, &:focus {
-		color: $input-foreground-active;
-		border-color: $input-decoration-active;
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+	&:not(:disabled):not(.primary) {
+		&:not(#quota):hover {
+			border-color: $decoration-active;
+		}
+		&:focus, &:active {
+			background-color: $background-active;
+			border-color: $decoration-active;
+		}
 	}
+}
+
+input:not([type="range"]), textarea {
+	background-color: $background-dark;
+	color: $foreground-inactive;
+	border: 1px solid $decoration-normal;
 
 	&:disabled {
 		background-color: $background-alternate;
@@ -112,9 +123,13 @@ input[type="url"], input[type="time"], textarea {
 	}
 }
 
-textarea:active:not(:disabled), textarea:hover:not(:disabled), textarea:focus:not(:disabled) {
-	border-color: $decoration-normal !important;
-	background-color: $background-dark !important;
+textarea {
+	&:not(:disabled) {
+		&:hover, &:focus, &:active {
+			border-color: $decoration-normal !important;
+			background-color: $background-dark !important;
+		}
+	}
 }
 
 input[type="submit"], input[type="button"], 
@@ -122,18 +137,6 @@ button, .button, select {
 	background-color: $button-background-normal;
 	border: 1px solid $button-decoration-normal;
 	color: $button-foreground-normal;
-
-	&:hover {
-		background-color: $button-background-normal;
-		color: $button-foreground-normal;
-		border-color: $button-decoration-active;
-	}
-
-	&:focus, &:active {
-		background-color: $button-background-active;
-		color: $button-foreground-active;
-		border-color: $button-decoration-active;
-	}
 
 	&:disabled {
 		background-color: $background-alternate;
