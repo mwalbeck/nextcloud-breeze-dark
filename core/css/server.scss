@@ -1,9 +1,10 @@
- 
-@import 'colours';
-@import 'icons';
-
-@import 'core';
-
+// General and Nextcloud Core styling
+@import 'core/colours';
+@import 'core/icons';
+@import 'core/style';
+@import 'core/server';
+@import 'core/apps';
+// Styling for individuel apps
 @import 'apps/apps';
 @import 'apps/activity';
 @import 'apps/calendar';

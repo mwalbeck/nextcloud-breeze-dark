@@ -38,7 +38,7 @@
 	background-image: url('../img/actions/public.svg?v=1');
 }
 
-.icon-share {
+.icon-share, .icon-shared {
 	background-image: url('../img/actions/share.svg?v=1');
 }
 
@@ -184,42 +184,6 @@
 	background-image: url('../img/actions/nonfulltext.svg');
 }
 
-input.radio[type="radio"] {
-	+ label::before {
-		background: url('../img/actions/radio.svg') left top no-repeat;
-	}
-
-	&:checked + label::before {
-		background-image: url('../img/actions/radio-checked.svg');
-	}
-
-	&:disabled + label::before {
-		background-image: url('../img/actions/radio-disabled.svg');
-	}
-
-	&:checked:disabled + label::before {
-		background-image: url('../img/actions/radio-checked-disabled.svg');
-	}
-}
-
-input.checkbox[type="checkbox"] {
-	+ label::before {
-		background: url('../img/actions/checkbox.svg') left top no-repeat;
-	}
-
-	&:checked + label::before {
-		background-image: url('../img/actions/checkbox-checked.svg');
-	}
-
-	&:disabled + label::before {
-		background-image: url('../img/actions/checkbox-disabled.svg');
-	}
-
-	&:checked:disabled + label::before {
-		background-image: url('../img/actions/checkbox-checked-disabled.svg');
-	}
-}
-
 select {
 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
 }
@@ -256,10 +220,6 @@ select {
 	image {
 		filter: none;
 	}
-}
-
-#firstrunwizard .appsmall {
-	filter: invert(100%);
 }
 
 img.notification-icon {

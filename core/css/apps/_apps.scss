@@ -1,15 +1,81 @@
-/* Announcement Center */
-#announcement_submit_msg {
-	opacity: 0.8;
+// Content
+#app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.9%;
+	background-color: $background-dark;
+}
 
-	&.success {
+/* App Navigation */
+
+#app-navigation {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	li > a {
+		color: $foreground-normal;
+		opacity: 1;
+	}
+
+	li:hover > a {
+		background-color: $background-active-hover;
+	}
+
+	/*li:focus > a, li:active > a {
+		background-color: $background-active;
+	}*/
+
+	.active {
+		background-color: $background-active;
+		box-shadow: inset 2px 0 $background-active-alternate;
+	}
+
+	.active a {
 		color: $foreground-active;
-		background-color: $background-positive;
+		font-weight: 600;
+	}
+
+	.add-new button {
+		color: $foreground-normal !important;
+	}
+
+	.add-new div.heading {
+		&:hover {
+			background-color: $background-active-hover;
+		}
+	}
+
+	.add-new-popup {
+		box-shadow: none;
+		border-color: $decoration-active;
 	}
 }
 
-#app-content hr {
+.nav-trashbin {
+	background-color: $background-normal;
 	border-color: $decoration-normal;
+}
+
+.bubble {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+.popovermenu .menuitem {
+	color: $foreground-normal;
+}
+
+.popovermenu li > a {
+	opacity: 1 !important;
 }
 
 // App Sidebar
@@ -31,6 +97,20 @@
 .tabHeaders .tabHeader:hover a {
 	color: $foreground-active;
 	border-bottom: 1px solid $decoration-active;
+}
+
+/* Announcement Center */
+#announcement_submit_msg {
+	opacity: 0.8;
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
+#app-content hr {
+	border-color: $decoration-normal;
 }
 
 /* First Run Wizard */

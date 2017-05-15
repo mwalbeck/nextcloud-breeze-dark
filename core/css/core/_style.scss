@@ -1,0 +1,187 @@
+// This file is contains styling for nextcloud core
+
+body {
+	color: $foreground-normal;
+	background-color: $background-normal;
+}
+
+a {
+	color: $foreground-link;
+
+	&:hover, &:focus {
+		color: $foreground-link;
+	}
+}
+
+em {
+	opacity: 0.75;
+}
+
+h1, h2, h3 {
+    color: $foreground-active;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	color: $foreground-normal;
+}
+
+// Tables
+
+table {
+
+	tbody {
+
+		tr {
+			background-color: $background-normal;
+		}
+
+		tr:hover, tr:focus {
+			background-color: $background-active-hover;
+		}
+
+		tr:active {
+			background-color: inherit;
+		}
+
+		a {
+			color: $foreground-normal;
+		}
+
+		td, th {
+			color: $foreground-normal;
+			border-bottom: 1px solid $decoration-normal;
+			background-color: $background-normal;
+		}
+	}
+
+	thead {
+
+		tr {
+			background-color: $background-normal;
+		}
+
+		tr:hover, tr:focus {
+			background-color: $background-active-hover;
+		}
+
+		tr:active {
+			background-color: inherit;
+		}
+
+		th a, a {
+			color: $foreground-normal;
+		}
+
+		th {
+			color: $foreground-normal;
+			border-bottom: 1px solid $decoration-normal;
+			background-color: $background-normal;
+		}
+	}
+}
+
+// Input Fields
+
+input[type="text"], input[type="password"], input[type="search"], 
+input[type="number"], input[type="email"], input[type="tel"], 
+input[type="url"], input[type="time"], textarea {
+	background-color: $input-background-normal;
+	color: $input-foreground-inactive;
+	border: 1px solid $input-decoration-normal;
+
+	&:hover, &:focus {
+		color: $input-foreground-active;
+		border-color: $input-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+
+		&:hover, &:focus, &:active {
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+input.radio[type="checkbox"], 
+input.radio[type="radio"], 
+input.checkbox[type="checkbox"], 
+input.checkbox[type="radio"] {
+	&:checked + label::before, &:indeterminate + label::before {
+		background-color: $background-active-alternate;
+		border-color: $background-active-alternate;
+	}
+}
+
+// Buttons
+
+input[type="submit"], input[type="button"], 
+button, .button, select {
+	background-color: $button-background-normal;
+	border: 1px solid $button-decoration-normal;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-normal;
+		color: $button-foreground-normal;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus, &:active {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+.primary, input.primary[type="submit"], input.primary[type="button"], 
+button.primary, .button.primary {
+	border-color: $button-decoration-normal;
+	background-color: $button-background-dark;
+	color: $button-foreground-normal;
+
+	&:hover {
+		background-color: $button-background-dark;
+		color: $button-foreground-normal;
+		border-color: $button-decoration-active;
+	}
+
+	&:focus, &:active {
+		background-color: $button-background-active;
+		color: $button-foreground-active;
+		border-color: $button-decoration-active;
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+		color: $foreground-inactive;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			color: $foreground-inactive;
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+select:active, 
+button:active, 
+.button:active, 
+input:active:not([type="range"]), 
+textarea:active, 
+#quota:active, 
+.pager li a:active {
+	&:not(:disabled):not(.primary) {
+		background-color: $background-active;
+	}
+}
