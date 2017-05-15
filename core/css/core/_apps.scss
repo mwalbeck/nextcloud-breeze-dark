@@ -4,6 +4,10 @@
 	height: 99.8%;
 }
 
+#app-navigation + #app-content #controls {
+	margin-top: 1px;
+}
+
 /* App Navigation */
 
 #app-navigation {

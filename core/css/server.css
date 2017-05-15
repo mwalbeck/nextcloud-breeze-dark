@@ -172,6 +172,24 @@ select {
 .icon-activity {
   background-image: url("../img/activity.svg?v=1"); }
 
+.nav-icon-personal-settings {
+  background-image: url("../img/personal.svg?v=1"); }
+
+.nav-icon-sessions {
+  background-image: url("../img/toggle-filelist.svg?v=1"); }
+
+.nav-icon-apppasswords {
+  background-image: url("../img/actions/password.svg?v=1"); }
+
+.nav-icon-clientsbox {
+  background-image: url("../img/change.svg?v=1"); }
+
+.nav-icon-activity {
+  background-image: url("../img/activity-dark.svg?v=1"); }
+
+.nav-icon-federated-cloud {
+  background-image: url("../img/actions/share.svg?v=1"); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -442,8 +460,8 @@ span.success {
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
   color: #fcfcfc;
-  border-color: #3daee9;
-  background-color: #232629; }
+  border-color: #3daee9 !important;
+  background-color: #232629 !important; }
 
 #app-content #searchresults {
   background-color: #31363b; }
@@ -458,9 +476,6 @@ span.success {
   #navigation a span {
     color: #eff0f1; }
 
-#settings {
-  color: #eff0f1; }
-
 #expanddiv {
   background-color: #31363b;
   border: 1px solid #706f6e;
@@ -474,14 +489,6 @@ span.success {
 
 #app-sidebar .close {
   opacity: 1; }
-
-/* Settings */
-#app-order #apporder p em {
-  opacity: 1; }
-
-#appsorter img {
-  background: inherit;
-  border: 1px solid #706f6e; }
 
 #quota {
   background-color: #232629;
@@ -566,6 +573,12 @@ select.quota-user {
     background-color: #3daee9 !important; }
   select.quota-user option {
     background-color: #31363b; }
+
+#newgroupname {
+  border-bottom: 1px solid #706f6e; }
+
+#app-settings-content .info-text {
+  color: #eff0f1; }
 
 /* Encryption */
 #body-user .warning, #body-settings .warning {
@@ -659,6 +672,9 @@ select.quota-user {
 #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
+
+#app-navigation + #app-content #controls {
+  margin-top: 1px; }
 
 /* App Navigation */
 #app-navigation {
@@ -762,18 +778,12 @@ select.quota-user {
 .notification {
   color: #eff0f1; }
 
-.app-activity #app-content {
-  position: relative;
-  height: 99.9%;
-  border-top: 1px solid #706f6e; }
-
 .activitymessage {
   color: #eff0f1;
   opacity: 0.6; }
 
 .box .activitytime {
-  color: #bdc3c7;
-  opacity: 0.5; }
+  color: #bdc3c7; }
 
 #no_more_activities {
   color: #bdc3c7;
@@ -977,9 +987,6 @@ input.newAddressBookInput {
 
 .app-files #app-content {
   background-color: #232629; }
-
-.app-files #app-navigation + #app-content #controls {
-  margin-top: 1px; }
 
 #filestable tbody tr {
   background-color: #31363b; }

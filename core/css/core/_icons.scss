@@ -216,6 +216,30 @@ select {
 	background-image: url('../img/activity.svg?v=1');
 }
 
+.nav-icon-personal-settings {
+	background-image: url('../img/personal.svg?v=1');
+}
+
+.nav-icon-sessions {
+	background-image: url('../img/toggle-filelist.svg?v=1');
+}
+
+.nav-icon-apppasswords {
+	background-image: url('../img/actions/password.svg?v=1');
+}
+
+.nav-icon-clientsbox {
+	background-image: url('../img/change.svg?v=1');
+}
+
+.nav-icon-activity {
+	background-image: url('../img/activity-dark.svg?v=1');
+}
+
+.nav-icon-federated-cloud {
+	background-image: url('../img/actions/share.svg?v=1');
+}
+
 /* CSS tricks to change icon color */
 
 #navigation .app-icon {

@@ -157,8 +157,8 @@ span {
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
  .searchbox input[type="search"]:valid {
 	 color: $foreground-active;
-	 border-color: $decoration-active;
-	 background-color: $background-dark;
+	 border-color: $decoration-active !important;
+	 background-color: $background-dark !important;
  }
 
  #app-content #searchresults {
@@ -181,10 +181,6 @@ span {
 	}
 }
 
-#settings {
-	color: $foreground-normal;
-}
-
 #expanddiv {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
@@ -205,17 +201,6 @@ span {
 
 #app-sidebar .close {
 	opacity: 1;
-}
-
-/* Settings */
-
-#app-order #apporder p em {
-	opacity: 1;
-}
-
-#appsorter img {
-	background: inherit;
-	border: 1px solid $decoration-normal;
 }
 
 // Personal
@@ -344,10 +329,6 @@ ul.multiselectoptions {
 	}
 }
 
-.quota {
-
-}
-
 select.quota-user {
 	background-color: $background-normal !important;
 
@@ -358,6 +339,14 @@ select.quota-user {
 	option {
 		background-color: $background-normal;
 	}
+}
+
+#newgroupname {
+	border-bottom: 1px solid $decoration-normal;
+}
+
+#app-settings-content .info-text {
+	color: $foreground-normal;
 }
 
 /* Encryption */
