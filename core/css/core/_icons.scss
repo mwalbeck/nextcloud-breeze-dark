@@ -212,6 +212,10 @@ select {
 	background: url("../img/leftarrow.svg") center center no-repeat;
 }
 
+.icon-activity {
+	background-image: url('../img/activity.svg?v=1');
+}
+
 /* CSS tricks to change icon color */
 
 #navigation .app-icon {

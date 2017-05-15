@@ -4,10 +4,6 @@
 
 #controls {
 	background-color: $background-normal;
-
-	.button {
-		padding: 7px 11px;
-	}
 }
 
 td.date, td.date > span {
@@ -205,15 +201,6 @@ span {
 }
 
 /* Settings */
-
-.app-settings #app-content {
-	border-top: 1px solid $decoration-normal;
-	height: 99.9%;
-
-	#controls {
-		border-top: 1px solid $decoration-normal;
-	}
-}
 
 #app-order #apporder p em {
 	opacity: 1;

@@ -1,15 +1,9 @@
 .app-files #app-content {
-	border-top: 1px solid $decoration-normal;
-	height: 99.8%;
 	background-color: $background-dark;
 }
 
 .app-files #app-navigation + #app-content #controls {
 	margin-top: 1px;
-}
-
-#app-content-files #filestable {
-	background-color: $background-dark;
 }
 
 #app-content-files #controls {
@@ -19,7 +13,7 @@
 
 #filestable tbody {
 	tr {
-		background-color: $background-dark;
+		background-color: $background-normal;
 
 		&:hover {
 			background-color: $background-active-hover;
@@ -112,7 +106,6 @@ span.extension {
 #controls .button.view-switcher {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
-	margin-right: 6px;
 
 	&:hover {
 		border-color: $decoration-active;
@@ -122,9 +115,5 @@ span.extension {
 	&:focus, &:active {
 		border-color: $decoration-active;
 		background-color: $background-active;
-	}
-
-	img {
-		opacity: 0.6;
 	}
 }
