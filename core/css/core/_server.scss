@@ -113,6 +113,34 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
+#expanddiv {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+#navigation {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+
+	&::after {
+		border-bottom-color: 
+	}
+
+	a span {
+		color: $foreground-normal;
+	}
+}
+
 /* Info colours ------------------------------------------------------------- */
 #postsetupchecks .errors, 
 #postsetupchecks .warnings, 
@@ -492,30 +520,5 @@ ul.multiselectoptions {
 		background-color: $background-active-hover;
 		opacity: 0.5;
 		border-bottom-right-radius: 5px;
-	}
-
-	#expanddiv {
-		background-color: $background-normal;
-		box-shadow: none;
-		border: 1px solid $decoration-normal;
-
-		&::after {
-			border-bottom-color: $decoration-normal;
-		}
-
-		a {
-			color: $foreground-normal;
-			opacity: 0.5;
-		}
-	}
-
-	#navigation {
-		background-color: $background-normal;
-		border: 1px solid $decoration-normal;
-		box-shadow: none;
-
-		a span {
-			color: $foreground-normal;
-		}
 	}
 }
