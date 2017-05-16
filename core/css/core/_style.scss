@@ -9,6 +9,10 @@ a {
 	&:hover, &:focus {
 		color: $foreground-link;
 	}
+
+	&.button:hover, &.button:focus {
+		color: $foreground-normal;
+	}
 }
 
 em {
@@ -109,7 +113,8 @@ input[type="button"] {
 	}
 }
 
-input:not([type="range"]), textarea {
+input:not([type="range"]), 
+textarea {
 	background-color: $background-dark;
 	color: $foreground-inactive;
 	border: 1px solid $decoration-normal;
@@ -132,8 +137,11 @@ textarea {
 	}
 }
 
-input[type="submit"], input[type="button"], 
-button, .button, select {
+input[type="submit"], 
+input[type="button"], 
+button, 
+.button, 
+select {
 	background-color: $button-background-normal;
 	border: 1px solid $button-decoration-normal;
 	color: $button-foreground-normal;
