@@ -53,10 +53,10 @@ td.date, td.date > span {
 
 #fileList .popovermenu .action {
 	color: $foreground-normal;
-}
 
-#fileList a.action.permanent {
-	opacity: 0.4 !important;
+	&:hover, &:focus, &:active {
+		color: $foreground-active;
+	}
 }
 
 #controls .button.view-switcher {

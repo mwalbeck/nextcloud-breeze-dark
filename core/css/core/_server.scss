@@ -66,30 +66,6 @@
 	 background-color: $background-normal;
  }
 
- /* Notifications */ // CHECK THIS CODE PLEASE
-
-.notification-container {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-
-	.notification-time {
-		opacity: 1;
-		color: $foreground-inactive;
-	}
-
-	.notification {
-		color: $foreground-normal;
-	}
-
-	a {
-		color: $foreground-link;
-	}
-}
-
-.notification:not(:last-child) {
-	border-bottom: 1px solid $decoration-normal;
-}
-
 /* Controls */
 #controls {
 	background-color: $background-normal;
@@ -119,6 +95,21 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	color: $foreground-inactive;
 	&:hover {
 		color: $foreground-active;
+	}
+}
+
+.bubble {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
 	}
 }
 
@@ -501,7 +492,7 @@ ul.multiselectoptions {
 	border-color: $decoration-normal;
 }
 
-/* Public view for file sharing */ // CHECK THIS CODE PLEASE
+/* Public view for file sharing */
 #body-public {
 
 	#content-wrapper #content {

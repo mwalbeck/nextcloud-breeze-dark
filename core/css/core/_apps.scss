@@ -58,21 +58,6 @@
 	border-color: $decoration-normal;
 }
 
-.bubble {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	border: 1px solid $decoration-normal;
-	-webkit-filter: none;
-	-moz-filter: none;
-	-ms-filter: none;
-	-o-filter: none;
-	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
-}
-
 /* App Sidebar */
 
 #app-sidebar {
@@ -188,4 +173,27 @@
 	&:hover {
 		opacity: 1;
 	}
+}
+
+ /* Notifications */
+.notification-container {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	.notification-time {
+		opacity: 1;
+		color: $foreground-inactive;
+	}
+
+	.notification {
+		color: $foreground-normal;
+	}
+
+	a {
+		color: $foreground-link;
+	}
+}
+
+.notification:not(:last-child) {
+	border-bottom: 1px solid $decoration-normal;
 }

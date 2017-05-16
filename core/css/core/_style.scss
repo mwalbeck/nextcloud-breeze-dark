@@ -126,16 +126,12 @@ input[type="button"] {
 
 	&:not(:disabled):not(.primary) {
 		
-		&:not(#quota):hover {
+		&:hover {
 			border-color: $decoration-active;
 		}
 		
-		&:focus, &:active {
+		&:focus, &:active, &.active {
 			background-color: $background-active;
-			border-color: $decoration-active;
-		}
-		
-		&.active {
 			border-color: $decoration-active;
 		}
 	}
@@ -150,34 +146,33 @@ input[type="button"] {
 			border-color: $decoration-normal;
 		}
 	}
-}
 
-.primary, input.primary[type="submit"], input.primary[type="button"], 
-button.primary, .button.primary { // CHECK THIS CODE PLEASE
-	border-color: $button-decoration-normal;
-	background-color: $button-background-dark;
-	color: $button-foreground-normal;
+	&.primary {
+		&:not(:disabled) {
+			border-color: $decoration-normal;
+			background-color: $background-dark;
+			color: $foreground-active;
 
-	&:hover {
-		background-color: $button-background-dark;
-		color: $button-foreground-normal;
-		border-color: $button-decoration-active;
-	}
+			&:hover {
+				border-color: $button-decoration-active;
+				background-color: $background-active-alternate;
+			}
 
-	&:focus, &:active {
-		background-color: $button-background-active;
-		color: $button-foreground-active;
-		border-color: $button-decoration-active;
-	}
+			&:focus, &:active {
+				background-color: $background-active;
+				border-color: $decoration-active;
+			}
+		}
 
-	&:disabled {
-		background-color: $background-alternate;
-		color: $foreground-inactive;
-
-		&:hover, &:focus, &:active {
+		&:disabled {
 			background-color: $background-alternate;
 			color: $foreground-inactive;
-			border-color: $decoration-normal;
+
+			&:hover, &:focus, &:active {
+				background-color: $background-alternate;
+				color: $foreground-inactive;
+				border-color: $decoration-normal;
+			}
 		}
 	}
 }
