@@ -133,7 +133,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	box-shadow: none;
 
 	&::after {
-		border-bottom-color: 
+		border-bottom-color: $decoration-normal;
 	}
 
 	a span {
