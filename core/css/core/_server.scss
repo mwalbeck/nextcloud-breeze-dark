@@ -1,4 +1,4 @@
-/* Login Screen */
+/* Login Screen ------------------------------------------------------------- */
 #body-login {
 	background-image: none !important;
 	background-color: $background-normal !important;
@@ -32,7 +32,7 @@
 	}
 }
 
-/* Header */
+/* Header ------------------------------------------------------------------- */
 
 // Logo
 #header {
@@ -54,7 +54,7 @@
 	background-color: $background-normal;
 }
 
-/* Search */
+/* Search ------------------------------------------------------------------- */
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
  .searchbox input[type="search"]:valid {
 	 color: $foreground-active;
@@ -66,12 +66,12 @@
 	 background-color: $background-normal;
  }
 
-/* Controls */
+/* Controls ----------------------------------------------------------------- */
 #controls {
 	background-color: $background-normal;
 }
 
-/* Breadcrumbs */
+/* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
 	color: $foreground-inactive;
 }
@@ -85,7 +85,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	opacity: 0.3;
 }
 
-/* Dropdown Menues */
+/* Dropdown Menues ---------------------------------------------------------- */
 // Currently seems to be used for added new files in Files app and Gallery app
 .menu {
 	box-shadow: none;
@@ -113,45 +113,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-/* Navigation */ // CHECK THIS CODE PLEASE
-
-#navigation {
-	background-color: $background-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
-
-	a span {
-		color: $foreground-normal;
-	}
-}
-
-#expanddiv {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-	box-shadow: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
-
-	a {
-		color: $foreground-normal;
-
-		&:hover {
-			color: $foreground-active;
-		}
-	}
-}
-
-#app-sidebar .close {
-	opacity: 1;
-}
-
-/* Info colours */
+/* Info colours ------------------------------------------------------------- */
 #postsetupchecks .errors, 
 #postsetupchecks .warnings, 
 #security-warning > ul {
@@ -205,7 +167,7 @@ span {
 	}
 }
 
-/* General Settings */
+/* General Settings --------------------------------------------------------- */
 
 // Section Container
 // Primarily seems to be used under settings
@@ -226,7 +188,7 @@ span {
 	}
 }
 
-/* Personal Settings */
+/* Personal Settings -------------------------------------------------------- */
 #quota {
 	background-color: $background-dark;
 	color: $foreground-normal;
@@ -242,7 +204,7 @@ span {
 	border-top: none;
 }
 
-/* Server Settings */
+/* Server Settings ---------------------------------------------------------- */
 
 // Log reader
 #logreader-root table {
@@ -258,7 +220,7 @@ span {
 	}
 }
 
-/* App Store */
+/* App Store ---------------------------------------------------------------- */
 .app-level {
 
 	span {
@@ -291,7 +253,7 @@ span {
 	color: $foreground-inactive;
 }
 
-/* Users */
+/* Users -------------------------------------------------------------------- */
 
 #userlist th.name {
 	color: $foreground-normal;
@@ -310,7 +272,7 @@ select.quota-user {
 	}
 }
 
-/* Files table */ // CHECK THIS CODE PLEASE
+/* Files table -------------------------------------------------------------- */
 // Used by files app and file picker
 #filestable tbody {
 	tr {
@@ -318,10 +280,6 @@ select.quota-user {
 
 		&:hover {
 			background-color: $background-active-hover;
-			
-			.name:focus {
-				background-color: inherit;
-			}
 		}
 
 		&:focus, &:active {
@@ -351,7 +309,7 @@ select.quota-user {
 	}
 }
 
-/* File picker */
+/* File picker -------------------------------------------------------------- */
 .oc-dialog {
 	background-color: $background-normal;
 	color: $foreground-normal;
@@ -392,7 +350,7 @@ select.quota-user {
 	background-color: $background-normal;
 }
 
-/* Multiselect */
+/* Multiselect -------------------------------------------------------------- */
 
 div.multiselect.active {
 	background-color: $background-normal;
@@ -409,23 +367,26 @@ ul.multiselectoptions {
 	}
 }
 
-/* Tags */ // CHECK THIS CODE PLEASE
+/* Tags --------------------------------------------------------------------- */
 .select2-container-multi {
 
-	.select2-choices, &.select2-container-active .select2-choices {
+	.select2-choices,
+	&.select2-container-active .select2-choices {
 		background-color: $background-dark;
 		color: $foreground-normal;
 		border-color: $decoration-normal;
 	}
 
-	.select2-choices .select2-search-choice, &.select2-container-active .select2-choices .select2-search-choice {
+	.select2-choices .select2-search-choice,
+	&.select2-container-active .select2-choices .select2-search-choice {
 		background-color: $background-normal;
 		border-color: $decoration-normal;
 		color: $foreground-normal;
 		-webkit-box-shadow: none;
 		box-shadow: none;
 
-		&:hover, &.select2-search-choice-focus {
+		&:hover,
+		&.select2-search-choice-focus {
 			background-color: $background-normal;
 			border-color: $decoration-active;
 		}
@@ -455,7 +416,8 @@ ul.multiselectoptions {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 
-		&:hover, &.select2-search-choice-focus {
+		&:hover,
+		&.select2-search-choice-focus {
 			background-color: $background-normal;
 			border-color: $decoration-active;
 		}
@@ -463,8 +425,6 @@ ul.multiselectoptions {
 }
 
 #select2-drop {
-	background-color: $background-normal;
-	color: $foreground-normal;
 
 	&.select2-drop-active {
 		border-color: $decoration-normal;
@@ -472,7 +432,9 @@ ul.multiselectoptions {
 
 	.select2-results {
 
-		.select2-result, .select2-no-results, .select2-searching {
+		.select2-result,
+		.select2-no-results,
+		.select2-searching {
 			background-color: $background-dark;
 			color: $foreground-normal;
 		}
@@ -482,17 +444,17 @@ ul.multiselectoptions {
 		}
 
 		.select2-result.select2-highlighted {
-			background-color: $background-normal;
-			color: $foreground-normal;
+			background-color: $background-alternate;
 		}
 	}
 }
 
-.select2-drop-active {
-	border-color: $decoration-normal;
+.activitysubject strong.systemtag {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
 }
 
-/* Public view for file sharing */
+/* Public view for file sharing --------------------------------------------- */
 #body-public {
 
 	#content-wrapper #content {
@@ -514,7 +476,8 @@ ul.multiselectoptions {
 	opacity: 1;
 }
 
-/* Mobile */ // CHECK THIS CODE PLEASE
+/* Mobile ------------------------------------------------------------------- */
+// CHECK THIS CODE PLEASE
 @media only screen and (max-width: 768px) {
 	#app-content {
 		width: 100% !important;

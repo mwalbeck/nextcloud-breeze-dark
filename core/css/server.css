@@ -1,3 +1,10 @@
+/*
+=============================================================================
+* Nextcloud breeze dark theme
+* Version: 12.0
+* Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
+=============================================================================
+*/
 /* 
  * 
  * All the colours for the Nextcloud Breeze Dark Theme.
@@ -418,7 +425,7 @@ input[type="button"] {
       color: #bdc3c7;
       border-color: #706f6e; }
 
-/* Login Screen */
+/* Login Screen ------------------------------------------------------------- */
 #body-login {
   background-image: none !important;
   background-color: #31363b !important; }
@@ -437,7 +444,7 @@ input[type="button"] {
   #body-login #datadirContent label {
     color: #bdc3c7; }
 
-/* Header */
+/* Header ------------------------------------------------------------------- */
 #header .logo {
   background-image: url("../img/logo.svg");
   width: 250px;
@@ -450,7 +457,7 @@ input[type="button"] {
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #31363b; }
 
-/* Search */
+/* Search ------------------------------------------------------------------- */
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
   color: #fcfcfc;
@@ -460,11 +467,11 @@ input[type="button"] {
 #app-content #searchresults {
   background-color: #31363b; }
 
-/* Controls */
+/* Controls ----------------------------------------------------------------- */
 #controls {
   background-color: #31363b; }
 
-/* Breadcrumbs */
+/* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
   color: #bdc3c7; }
 
@@ -475,7 +482,7 @@ div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
 div.crumb span.icon-shared, div.crumb span.icon-public {
   opacity: 0.3; }
 
-/* Dropdown Menues */
+/* Dropdown Menues ---------------------------------------------------------- */
 .menu {
   box-shadow: none; }
 
@@ -496,31 +503,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   .bubble::after {
     border-bottom-color: #706f6e; }
 
-/* Navigation */
-#navigation {
-  background-color: #31363b;
-  box-shadow: none;
-  border: 1px solid #706f6e; }
-  #navigation::after {
-    border-bottom-color: #706f6e; }
-  #navigation a span {
-    color: #eff0f1; }
-
-#expanddiv {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
-  box-shadow: none; }
-  #expanddiv::after {
-    border-bottom-color: #706f6e; }
-  #expanddiv a {
-    color: #eff0f1; }
-    #expanddiv a:hover {
-      color: #fcfcfc; }
-
-#app-sidebar .close {
-  opacity: 1; }
-
-/* Info colours */
+/* Info colours ------------------------------------------------------------- */
 #postsetupchecks .errors,
 #postsetupchecks .warnings,
 #security-warning > ul {
@@ -554,7 +537,7 @@ span.success {
   color: #fcfcfc;
   background-color: #27ae60; }
 
-/* General Settings */
+/* General Settings --------------------------------------------------------- */
 .section, .followupsection {
   color: #eff0f1; }
 
@@ -566,7 +549,7 @@ span.success {
   #cropper .inner-container .jcrop-holder {
     box-shadow: none; }
 
-/* Personal Settings */
+/* Personal Settings -------------------------------------------------------- */
 #quota {
   background-color: #232629;
   color: #eff0f1;
@@ -578,7 +561,7 @@ span.success {
   border-color: #706f6e;
   border-top: none; }
 
-/* Server Settings */
+/* Server Settings ---------------------------------------------------------- */
 #logreader-root table tbody tr td {
   border-bottom-color: #706f6e;
   background-color: #31363b !important; }
@@ -586,7 +569,7 @@ span.success {
   color: #eff0f1;
   border-bottom-color: #706f6e; }
 
-/* App Store */
+/* App Store ---------------------------------------------------------------- */
 .app-level span {
   color: #eff0f1; }
 .app-level .official {
@@ -602,7 +585,7 @@ span.success {
 .app-version {
   color: #bdc3c7; }
 
-/* Users */
+/* Users -------------------------------------------------------------------- */
 #userlist th.name {
   color: #eff0f1; }
 
@@ -613,13 +596,11 @@ select.quota-user {
   select.quota-user option {
     background-color: #31363b; }
 
-/* Files table */
+/* Files table -------------------------------------------------------------- */
 #filestable tbody tr {
   background-color: #31363b; }
   #filestable tbody tr:hover {
     background-color: rgba(61, 174, 233, 0.25); }
-    #filestable tbody tr:hover .name:focus {
-      background-color: inherit; }
   #filestable tbody tr:focus, #filestable tbody tr:active {
     background-color: #3daee9; }
   #filestable tbody tr.highlighted, #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult {
@@ -634,7 +615,7 @@ select.quota-user {
 #filestable tbody .name:focus {
   background-color: inherit; }
 
-/* File picker */
+/* File picker -------------------------------------------------------------- */
 .oc-dialog {
   background-color: #31363b;
   color: #eff0f1;
@@ -662,7 +643,7 @@ select.quota-user {
   background-image: none;
   background-color: #31363b; }
 
-/* Multiselect */
+/* Multiselect -------------------------------------------------------------- */
 div.multiselect.active {
   background-color: #31363b; }
 
@@ -674,7 +655,7 @@ ul.multiselectoptions {
     -moz-box-shadow: none;
     box-shadow: none; }
 
-/* Tags */
+/* Tags --------------------------------------------------------------------- */
 .select2-container-multi .select2-choices, .select2-container-multi.select2-container-active .select2-choices {
   background-color: #232629;
   color: #eff0f1;
@@ -707,24 +688,23 @@ ul.multiselectoptions {
     background-color: #31363b;
     border-color: #3daee9; }
 
-#select2-drop {
-  background-color: #31363b;
-  color: #eff0f1; }
-  #select2-drop.select2-drop-active {
-    border-color: #706f6e; }
-  #select2-drop .select2-results .select2-result, #select2-drop .select2-results .select2-no-results, #select2-drop .select2-results .select2-searching {
-    background-color: #232629;
-    color: #eff0f1; }
-  #select2-drop .select2-results .select2-result.select2-selected {
-    background-color: #31363b; }
-  #select2-drop .select2-results .select2-result.select2-highlighted {
-    background-color: #31363b;
-    color: #eff0f1; }
-
-.select2-drop-active {
+#select2-drop.select2-drop-active {
   border-color: #706f6e; }
+#select2-drop .select2-results .select2-result,
+#select2-drop .select2-results .select2-no-results,
+#select2-drop .select2-results .select2-searching {
+  background-color: #232629;
+  color: #eff0f1; }
+#select2-drop .select2-results .select2-result.select2-selected {
+  background-color: #31363b; }
+#select2-drop .select2-results .select2-result.select2-highlighted {
+  background-color: #4d4d4d; }
 
-/* Public view for file sharing */
+.activitysubject strong.systemtag {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+
+/* Public view for file sharing --------------------------------------------- */
 #body-public #content-wrapper #content {
   border-top: 1px solid #706f6e; }
   #body-public #content-wrapper #content #preview {
@@ -735,7 +715,7 @@ ul.multiselectoptions {
 .directLink label {
   opacity: 1; }
 
-/* Mobile */
+/* Mobile ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   #app-content {
     width: 100% !important;
@@ -791,6 +771,8 @@ ul.multiselectoptions {
   border-color: #706f6e; }
   #app-sidebar .file-details {
     color: #eff0f1; }
+  #app-sidebar .close {
+    opacity: 1; }
 
 .tabHeaders .tabHeader, .tabHeaders .tabHeader a {
   color: #eff0f1; }

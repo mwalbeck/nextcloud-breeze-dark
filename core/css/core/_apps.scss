@@ -67,6 +67,10 @@
 	.file-details {
 		color: $foreground-normal;
 	}
+
+	.close {
+		opacity: 1;
+	}
 }
 
 .tabHeaders .tabHeader, .tabHeaders .tabHeader a {
