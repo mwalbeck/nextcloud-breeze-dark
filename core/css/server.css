@@ -407,19 +407,16 @@ button.primary, .button.primary {
     color: #bdc3c7; }
     #body-login p.info a {
       font-weight: 600; }
-
-#body-login form fieldset legend,
-#body-login #datadirContent label,
-#body-login form fieldset .warning-info,
-#body-login form input[type="checkbox"] + label {
-  color: #bdc3c7; }
-
-#body-login #remember_login:hover + label,
-#body-login #remember_login:focus + label,
-#body-login #forgot-password:hover,
-#body-login #forgot-password:focus {
-  opacity: 1;
-  color: #fcfcfc; }
+      #body-login p.info a:hover {
+        opacity: 1; }
+  #body-login #remember_login + label:hover, #body-login #remember_login + label:focus {
+    opacity: 1;
+    color: #bdc3c7; }
+  #body-login form fieldset legend,
+  #body-login form fieldset .warning-info,
+  #body-login form input[type="checkbox"] + label,
+  #body-login #datadirContent label {
+    color: #bdc3c7; }
 
 /* Header */
 #header .logo {

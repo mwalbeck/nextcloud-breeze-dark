@@ -8,24 +8,28 @@
 
 		a {
 			font-weight: 600;
+
+			&:hover {
+				opacity: 1;
+			}
 		}
 		
 	}
-}
- 
-#body-login form fieldset legend, 
-#body-login #datadirContent label, 
-#body-login form fieldset .warning-info, 
-#body-login form input[type="checkbox"] + label {
-	color: $foreground-inactive;
-}
 
-#body-login #remember_login:hover + label, 
-#body-login #remember_login:focus + label,
-#body-login #forgot-password:hover, 
-#body-login #forgot-password:focus {
-	opacity: 1;
-	color: $foreground-active;
+	#remember_login + label {
+
+		&:hover, &:focus {
+			opacity: 1;
+			color: $foreground-inactive;
+		}
+	}
+
+	form fieldset legend,
+	form fieldset .warning-info,
+	form input[type="checkbox"] + label,
+	#datadirContent label {
+		color: $foreground-inactive;
+	}
 }
 
 /* Header */
