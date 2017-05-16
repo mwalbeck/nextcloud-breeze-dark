@@ -442,11 +442,15 @@ button.primary, .button.primary {
   background-color: #31363b; }
 
 /* Notifications */
-#notification {
+.notification-container {
   background-color: #31363b;
-  border: 1px solid #706f6e;
-  border-top: none; }
-  #notification a {
+  border-color: #706f6e; }
+  .notification-container .notification-time {
+    opacity: 1;
+    color: #bdc3c7; }
+  .notification-container .notification {
+    color: #eff0f1; }
+  .notification-container a {
     color: #2980b9; }
 
 .notification:not(:last-child) {
@@ -854,15 +858,6 @@ ul.multiselectoptions {
   opacity: 0.7; }
   #externalStorage td.mountOptionsToggle > img:hover {
     opacity: 1; }
-
-/* Notifications */
-.notification-container {
-  box-shadow: none;
-  background-color: #31363b;
-  border-color: #706f6e; }
-
-.notification {
-  color: #eff0f1; }
 
 .activitymessage {
   color: #eff0f1;

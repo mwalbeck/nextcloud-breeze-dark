@@ -68,10 +68,18 @@
 
  /* Notifications */ // CHECK THIS CODE PLEASE
 
-#notification {
+.notification-container {
 	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-	border-top: none;
+	border-color: $decoration-normal;
+
+	.notification-time {
+		opacity: 1;
+		color: $foreground-inactive;
+	}
+
+	.notification {
+		color: $foreground-normal;
+	}
 
 	a {
 		color: $foreground-link;
