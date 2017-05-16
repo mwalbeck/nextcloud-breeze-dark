@@ -1,3 +1,27 @@
+/* Login Screen */
+#body-login {
+	background-image: none !important;
+	background-color: $background-normal !important;
+}
+
+#body-login p.info, 
+#body-login form fieldset legend, 
+#body-login #datadirContent label, 
+#body-login form fieldset .warning-info, 
+#body-login form input[type="checkbox"] + label {
+	color: $foreground-inactive;
+}
+
+#body-login #remember_login:hover + label, 
+#body-login #remember_login:focus + label,
+#body-login #forgot-password:hover, 
+#body-login #forgot-password:focus, 
+#body-login p.info a:hover, 
+#body-login p.info a:focus {
+	opacity: 1;
+	color: $foreground-active;
+}
+
 /* Header */
 
 // Logo
@@ -32,6 +56,22 @@
 	 background-color: $background-normal;
  }
 
+ /* Notifications */ // CHECK THIS CODE PLEASE
+
+#notification {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	border-top: none;
+
+	a {
+		color: $foreground-link;
+	}
+}
+
+.notification:not(:last-child) {
+	border-bottom: 1px solid $decoration-normal;
+}
+
 /* Controls */
 #controls {
 	background-color: $background-normal;
@@ -64,7 +104,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-/* Navigation */
+/* Navigation */ // CHECK THIS CODE PLEASE
 
 #navigation {
 	background-color: $background-normal;
@@ -113,6 +153,10 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	color: $foreground-negative;
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
+}
+
+#body-settings .warning {
+	background: $background-negative;
 }
 
 .success {
@@ -180,7 +224,7 @@ span {
 	border: 1px solid $decoration-normal;
 
 	div {
-		background-color: $background-dark
+		background-color: $background-active-hover;
 	}
 }
 
@@ -190,8 +234,175 @@ span {
 }
 
 /* Server Settings */
+
+// Log reader
+#logreader-root table {
+
+	tbody tr td {
+		border-bottom-color: $decoration-normal;
+		background-color: $background-normal !important;
+	}
+
+	thead th {
+		color: $foreground-normal;
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+/* App Store */
+.app-level {
+
+	span {
+		color: $foreground-normal;
+	}
+
+	.official {
+		border-color: $background-positive;
+	}
+}
+
+#apps-list {
+	&.installed {
+		
+		.app-image-icon svg {
+			opacity: 1;
+		}
+
+		.section > * {
+			border-bottom-color: $decoration-normal;
+		}
+	}
+
+	.app-name {
+		font-weight: 600;
+	}
+}
+
+.app-version {
+	color: $foreground-inactive;
+}
+
+/* Users */
+
+#userlist th.name {
+	color: $foreground-normal;
+}
+
+// Fix for some browser showing drop down in Active colour
+select.quota-user {
+	background-color: $background-normal !important;
+
+	&:focus, &:active {
+		background-color: $background-active !important;
+	}
+
+	option {
+		background-color: $background-normal;
+	}
+}
+
+/* Files table */
+// Used by files app and file picker
+#filestable tbody {
+	tr {
+		background-color: $background-normal;
+
+		&:hover {
+			background-color: $background-active-hover;
+			
+			.name:focus {
+				background-color: inherit;
+			}
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: $background-alternate;
+		}
+
+		&.externalErroredRow {
+			background-color: $background-negative;
+		}
+	}
+
+	.name:focus {
+		background-color: inherit;
+	}
+}
+
+/* File picker */
+.oc-dialog {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+.oc-dialog-title {
+	background-color: $background-normal;
+}
+
+#oc-dialog-filepicker-content .filelist {
+	background-color: $background-dark;
+
+	td {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+	background-color: $background-active;
+
+	td {
+		font-weight: 600;
+	}
+
+	.filename {
+		color: $foreground-active;
+	}
+
+	&:hover {
+		background-color: $background-active;
+	}
+}
+
+.oc-dialog-buttonrow {
+	background-image: none;
+	background-color: $background-normal;
+}
+
+/* Multiselect */
+
+div.multiselect.active {
+	background-color: $background-normal;
+}
+
+ul.multiselectoptions {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Tags */ // CHECK THIS CODE PLEASE
 .select2-container-multi {
-	
+
 	.select2-choices, &.select2-container-active .select2-choices {
 		background-color: $background-dark;
 		color: $foreground-normal;
@@ -272,87 +483,7 @@ span {
 	border-color: $decoration-normal;
 }
 
-// Encryption
-
-#body-user .warning, #body-settings .warning {
-	background: $background-negative;
-}
-
-/* Notifications */
-
-#notification {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-	border-top: none;
-
-	a {
-		color: $foreground-link;
-	}
-}
-
-.notification:not(:last-child) {
-	border-bottom: 1px solid $decoration-normal;
-}
-
-// App Settings
-
-#app-settings {
-	.import-export button {
-		margin: 3px 0;
-	}
-}
-
-#app-settings-content, #app-settings-header {
-	border-color: $decoration-normal;
-	background-color: $background-normal;
-	color: $foreground-normal;
-
-	a {
-		color: $foreground-link;
-	}
-}
-
-.settings-button {
-	background-color: $background-normal;
-	color: $foreground-normal;
-
-	&:hover {
-		background-color: $background-active-hover;
-	}
-
-	&:focus, &:active {
-		background-color: $background-active;
-		color: $foreground-active;
-	}
-}
-
-// Login Screen Specific
-
-#body-login {
-	background-image: none !important;
-	background-color: $background-normal !important;
-}
-
-#body-login p.info, 
-#body-login form fieldset legend, 
-#body-login #datadirContent label, 
-#body-login form fieldset .warning-info, 
-#body-login form input[type="checkbox"] + label {
-	color: $foreground-inactive;
-}
-
-#body-login #remember_login:hover + label, 
-#body-login #remember_login:focus + label,
-#body-login #forgot-password:hover, 
-#body-login #forgot-password:focus, 
-#body-login p.info a:hover, 
-#body-login p.info a:focus {
-	opacity: 1;
-	color: $foreground-active;
-}
-
-/* File Sharing */
-
+/* Public view for file sharing */
 #body-public #content-wrapper #content {
 	border-top: 1px solid $decoration-normal;
 
@@ -362,7 +493,6 @@ span {
 }
 
 /* Mobile */
-
 @media only screen and (max-width: 768px) {
 	#app-content {
 		width: 100% !important;
@@ -378,107 +508,4 @@ span {
 		opacity: 0.5;
 		border-bottom-right-radius: 5px;
 	}
-}
-
-/* App Store */
-
-.app-level span {
-	color: $foreground-normal;
-}
-
-/* Log reader */
-
-#logreader-root table {
-	tbody tr {
-	background-color: $background-normal !important;
-
-		td {
-			border-bottom-color: $decoration-normal;
-		}
-	}
-	thead tr {
-		background-color: $background-normal !important;
-	}
-	thead th {
-		color: $foreground-normal;
-		border-bottom-color: $decoration-normal;
-	}
-}
-
-/* oc-dialog */
-.oc-dialog {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal;
-}
-
-.oc-dialog-title {
-	background-color: $background-normal;
-}
-
-.oc-dialog-buttonrow {
-	background-image: none;
-	background-color: $background-normal;
-}
-
-#oc-dialog-filepicker-content .filelist {
-	background-color: $background-dark;
-}
-
-#oc-dialog-filepicker-content .filepicker_element_selected {
-	background-color: $background-active;
-
-	td {
-		font-weight: 600;
-	}
-
-	.filename {
-		color: $foreground-active;
-	}
-
-	&:hover {
-		background-color: $background-active;
-	}
-}
-
-// Users
-
-#userlist th.name {
-	color: $foreground-normal;
-}
-
-div.multiselect.active {
-	background-color: $background-normal;
-}
-
-ul.multiselectoptions {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-
-	&.down {
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-	}
-}
-
-select.quota-user {
-	background-color: $background-normal !important;
-
-	&:focus, &:active {
-		background-color: $background-active !important;
-	}
-
-	option {
-		background-color: $background-normal;
-	}
-}
-
-#newgroupname {
-	border-bottom: 1px solid $decoration-normal;
-}
-
-#app-settings-content .info-text {
-	color: $foreground-normal;
 }

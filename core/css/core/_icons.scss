@@ -240,6 +240,14 @@ select {
 	background-image: url('../img/actions/share.svg?v=1');
 }
 
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+	background-image: url('../img/places/home.svg?v=1');
+}
+
+.oc-dialog-close {
+	background: url('../img/actions/close.svg') no-repeat center;
+}
+
 /* CSS tricks to change icon color */
 
 #navigation .app-icon {

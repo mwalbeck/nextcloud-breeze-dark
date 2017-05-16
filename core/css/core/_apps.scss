@@ -47,6 +47,10 @@
 		box-shadow: none;
 		border-color: $decoration-active;
 	}
+
+	.app-external {
+		color: $foreground-normal;
+	}
 }
 
 .nav-trashbin {
@@ -69,7 +73,7 @@
 	}
 }
 
-// App Sidebar
+/* App Sidebar */
 
 #app-sidebar {
 	background-color: $background-normal;
@@ -88,6 +92,43 @@
 .tabHeaders .tabHeader:hover a {
 	color: $foreground-active;
 	border-bottom: 1px solid $decoration-active;
+}
+
+/* App Settings */
+#app-settings {
+	.import-export button {
+		margin: 3px 0;
+	}
+}
+
+#app-settings-content {
+	.info-text {
+		color: $foreground-normal;
+	}
+}
+
+#app-settings-content, #app-settings-header {
+	border-color: $decoration-normal;
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	a {
+		color: $foreground-link;
+	}
+}
+
+.settings-button {
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	&:hover {
+		background-color: $background-active-hover;
+	}
+
+	&:focus, &:active {
+		background-color: $background-active;
+		color: $foreground-active;
+	}
 }
 
 /*****************************************************************************/

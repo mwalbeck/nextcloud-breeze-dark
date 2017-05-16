@@ -190,6 +190,12 @@ select {
 .nav-icon-federated-cloud {
   background-image: url("../img/actions/share.svg?v=1"); }
 
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+  background-image: url("../img/places/home.svg?v=1"); }
+
+.oc-dialog-close {
+  background: url("../img/actions/close.svg") no-repeat center; }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -267,84 +273,101 @@ input.checkbox[type="radio"]:indeterminate + label::before {
   background-color: #1d99f3;
   border-color: #1d99f3; }
 
-input:not([type="range"]):not(:disabled):not(.primary):not(#quota):hover,
-textarea:not(:disabled):not(.primary):not(#quota):hover,
-#quota:not(:disabled):not(.primary):not(#quota):hover,
-.pager li a:not(:disabled):not(.primary):not(#quota):hover {
-  border-color: #3daee9; }
-input:not([type="range"]):not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):active,
-textarea:not(:disabled):not(.primary):focus,
-textarea:not(:disabled):not(.primary):active,
-#quota:not(:disabled):not(.primary):focus,
-#quota:not(:disabled):not(.primary):active,
-.pager li a:not(:disabled):not(.primary):focus,
-.pager li a:not(:disabled):not(.primary):active {
-  background-color: #232629;
-  border-color: #3daee9; }
-
-select:not(:disabled):not(.primary):not(#quota):hover,
-button:not(:disabled):not(.primary):not(#quota):hover,
-.button:not(:disabled):not(.primary):not(#quota):hover,
-input[type="submit"]:not(:disabled):not(.primary):not(#quota):hover,
-input[type="button"]:not(:disabled):not(.primary):not(#quota):hover {
-  border-color: #3daee9; }
-select:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary):active,
-button:not(:disabled):not(.primary):focus,
-button:not(:disabled):not(.primary):active,
-.button:not(:disabled):not(.primary):focus,
-.button:not(:disabled):not(.primary):active,
-input[type="submit"]:not(:disabled):not(.primary):focus,
-input[type="submit"]:not(:disabled):not(.primary):active,
-input[type="button"]:not(:disabled):not(.primary):focus,
-input[type="button"]:not(:disabled):not(.primary):active {
-  background-color: #3daee9;
-  border-color: #3daee9; }
-
 input:not([type="range"]),
-textarea {
+textarea,
+#quota,
+.pager li a {
   background-color: #232629;
   color: #bdc3c7;
   border: 1px solid #706f6e; }
+  input:not([type="range"]):not(:disabled):not(.primary):not(#quota):hover,
+  textarea:not(:disabled):not(.primary):not(#quota):hover,
+  #quota:not(:disabled):not(.primary):not(#quota):hover,
+  .pager li a:not(:disabled):not(.primary):not(#quota):hover {
+    border-color: #3daee9; }
+  input:not([type="range"]):not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):active,
+  textarea:not(:disabled):not(.primary):focus,
+  textarea:not(:disabled):not(.primary):active,
+  #quota:not(:disabled):not(.primary):focus,
+  #quota:not(:disabled):not(.primary):active,
+  .pager li a:not(:disabled):not(.primary):focus,
+  .pager li a:not(:disabled):not(.primary):active {
+    background-color: #232629;
+    border-color: #3daee9; }
+  input:not([type="range"]):not(:disabled):not(.primary).active,
+  textarea:not(:disabled):not(.primary).active,
+  #quota:not(:disabled):not(.primary).active,
+  .pager li a:not(:disabled):not(.primary).active {
+    border-color: #3daee9; }
   input:not([type="range"]):disabled,
-  textarea:disabled {
+  textarea:disabled,
+  #quota:disabled,
+  .pager li a:disabled {
     background-color: #4d4d4d; }
     input:not([type="range"]):disabled:hover, input:not([type="range"]):disabled:focus, input:not([type="range"]):disabled:active,
     textarea:disabled:hover,
     textarea:disabled:focus,
-    textarea:disabled:active {
+    textarea:disabled:active,
+    #quota:disabled:hover,
+    #quota:disabled:focus,
+    #quota:disabled:active,
+    .pager li a:disabled:hover,
+    .pager li a:disabled:focus,
+    .pager li a:disabled:active {
       border-color: #706f6e; }
 
-textarea:not(:disabled):hover, textarea:not(:disabled):focus, textarea:not(:disabled):active {
-  border-color: #3daee9 !important;
-  background-color: #232629 !important; }
-
-input[type="submit"],
-input[type="button"],
+select,
 button,
 .button,
-select {
+input[type="submit"],
+input[type="button"] {
   background-color: #31363b;
   border: 1px solid #706f6e;
   color: #eff0f1; }
-  input[type="submit"]:disabled,
-  input[type="button"]:disabled,
+  select:not(:disabled):not(.primary):not(#quota):hover,
+  button:not(:disabled):not(.primary):not(#quota):hover,
+  .button:not(:disabled):not(.primary):not(#quota):hover,
+  input[type="submit"]:not(:disabled):not(.primary):not(#quota):hover,
+  input[type="button"]:not(:disabled):not(.primary):not(#quota):hover {
+    border-color: #3daee9; }
+  select:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary):active,
+  button:not(:disabled):not(.primary):focus,
+  button:not(:disabled):not(.primary):active,
+  .button:not(:disabled):not(.primary):focus,
+  .button:not(:disabled):not(.primary):active,
+  input[type="submit"]:not(:disabled):not(.primary):focus,
+  input[type="submit"]:not(:disabled):not(.primary):active,
+  input[type="button"]:not(:disabled):not(.primary):focus,
+  input[type="button"]:not(:disabled):not(.primary):active {
+    background-color: #3daee9;
+    border-color: #3daee9; }
+  select:not(:disabled):not(.primary).active,
+  button:not(:disabled):not(.primary).active,
+  .button:not(:disabled):not(.primary).active,
+  input[type="submit"]:not(:disabled):not(.primary).active,
+  input[type="button"]:not(:disabled):not(.primary).active {
+    border-color: #3daee9; }
+  select:disabled,
   button:disabled,
   .button:disabled,
-  select:disabled {
-    background-color: #4d4d4d; }
-    input[type="submit"]:disabled:hover, input[type="submit"]:disabled:focus, input[type="submit"]:disabled:active,
-    input[type="button"]:disabled:hover,
-    input[type="button"]:disabled:focus,
-    input[type="button"]:disabled:active,
+  input[type="submit"]:disabled,
+  input[type="button"]:disabled {
+    background-color: #4d4d4d;
+    color: #bdc3c7;
+    opacity: 1; }
+    select:disabled:hover, select:disabled:focus, select:disabled:active,
     button:disabled:hover,
     button:disabled:focus,
     button:disabled:active,
     .button:disabled:hover,
     .button:disabled:focus,
     .button:disabled:active,
-    select:disabled:hover,
-    select:disabled:focus,
-    select:disabled:active {
+    input[type="submit"]:disabled:hover,
+    input[type="submit"]:disabled:focus,
+    input[type="submit"]:disabled:active,
+    input[type="button"]:disabled:hover,
+    input[type="button"]:disabled:focus,
+    input[type="button"]:disabled:active {
       background-color: #4d4d4d;
       border-color: #706f6e; }
 
@@ -376,6 +399,27 @@ button.primary, .button.primary {
       color: #bdc3c7;
       border-color: #706f6e; }
 
+/* Login Screen */
+#body-login {
+  background-image: none !important;
+  background-color: #31363b !important; }
+
+#body-login p.info,
+#body-login form fieldset legend,
+#body-login #datadirContent label,
+#body-login form fieldset .warning-info,
+#body-login form input[type="checkbox"] + label {
+  color: #bdc3c7; }
+
+#body-login #remember_login:hover + label,
+#body-login #remember_login:focus + label,
+#body-login #forgot-password:hover,
+#body-login #forgot-password:focus,
+#body-login p.info a:hover,
+#body-login p.info a:focus {
+  opacity: 1;
+  color: #fcfcfc; }
+
 /* Header */
 #header .logo {
   background-image: url("../img/logo.svg");
@@ -398,6 +442,17 @@ button.primary, .button.primary {
 
 #app-content #searchresults {
   background-color: #31363b; }
+
+/* Notifications */
+#notification {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  border-top: none; }
+  #notification a {
+    color: #2980b9; }
+
+.notification:not(:last-child) {
+  border-bottom: 1px solid #706f6e; }
 
 /* Controls */
 #controls {
@@ -458,6 +513,9 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   background-color: #31363b;
   border: 1px solid #706f6e; }
 
+#body-settings .warning {
+  background: #da4453; }
+
 .success {
   color: #27ae60; }
 
@@ -496,13 +554,109 @@ span.success {
   color: #eff0f1;
   border: 1px solid #706f6e; }
   #quota div {
-    background-color: #232629; }
+    background-color: rgba(61, 174, 233, 0.25); }
 
 #sessions .token-list td, #apppasswords .token-list td {
   border-color: #706f6e;
   border-top: none; }
 
 /* Server Settings */
+#logreader-root table tbody tr td {
+  border-bottom-color: #706f6e;
+  background-color: #31363b !important; }
+#logreader-root table thead th {
+  color: #eff0f1;
+  border-bottom-color: #706f6e; }
+
+/* App Store */
+.app-level span {
+  color: #eff0f1; }
+.app-level .official {
+  border-color: #27ae60; }
+
+#apps-list.installed .app-image-icon svg {
+  opacity: 1; }
+#apps-list.installed .section > * {
+  border-bottom-color: #706f6e; }
+#apps-list .app-name {
+  font-weight: 600; }
+
+.app-version {
+  color: #bdc3c7; }
+
+/* Users */
+#userlist th.name {
+  color: #eff0f1; }
+
+select.quota-user {
+  background-color: #31363b !important; }
+  select.quota-user:focus, select.quota-user:active {
+    background-color: #3daee9 !important; }
+  select.quota-user option {
+    background-color: #31363b; }
+
+/* Files table */
+#filestable tbody tr {
+  background-color: #31363b; }
+  #filestable tbody tr:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+    #filestable tbody tr:hover .name:focus {
+      background-color: inherit; }
+  #filestable tbody tr:focus, #filestable tbody tr:active {
+    background-color: #3daee9; }
+  #filestable tbody tr.highlighted, #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult {
+    background-color: #3daee9;
+    color: #fcfcfc; }
+    #filestable tbody tr.highlighted .filename, #filestable tbody tr.highlighted .filesize, #filestable tbody tr.highlighted .date, #filestable tbody tr.highlighted .name:focus .filename, #filestable tbody tr.highlighted .name:focus .filesize, #filestable tbody tr.highlighted .name:focus .date, #filestable tbody tr.selected .filename, #filestable tbody tr.selected .filesize, #filestable tbody tr.selected .date, #filestable tbody tr.searchresult .filename, #filestable tbody tr.searchresult .filesize, #filestable tbody tr.searchresult .date {
+      font-weight: 600; }
+  #filestable tbody tr.externalDisabledRow {
+    background-color: #4d4d4d; }
+  #filestable tbody tr.externalErroredRow {
+    background-color: #da4453; }
+#filestable tbody .name:focus {
+  background-color: inherit; }
+
+/* File picker */
+.oc-dialog {
+  background-color: #31363b;
+  color: #eff0f1;
+  box-shadow: none;
+  border: 1px solid #706f6e; }
+
+.oc-dialog-title {
+  background-color: #31363b; }
+
+#oc-dialog-filepicker-content .filelist {
+  background-color: #232629; }
+  #oc-dialog-filepicker-content .filelist td {
+    border-bottom-color: #706f6e; }
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+  background-color: #3daee9; }
+  #oc-dialog-filepicker-content .filepicker_element_selected td {
+    font-weight: 600; }
+  #oc-dialog-filepicker-content .filepicker_element_selected .filename {
+    color: #fcfcfc; }
+  #oc-dialog-filepicker-content .filepicker_element_selected:hover {
+    background-color: #3daee9; }
+
+.oc-dialog-buttonrow {
+  background-image: none;
+  background-color: #31363b; }
+
+/* Multiselect */
+div.multiselect.active {
+  background-color: #31363b; }
+
+ul.multiselectoptions {
+  background-color: #31363b;
+  border-color: #706f6e; }
+  ul.multiselectoptions.down {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+/* Tags */
 .select2-container-multi .select2-choices, .select2-container-multi.select2-container-active .select2-choices {
   background-color: #232629;
   color: #eff0f1;
@@ -552,60 +706,7 @@ span.success {
 .select2-drop-active {
   border-color: #706f6e; }
 
-#body-user .warning, #body-settings .warning {
-  background: #da4453; }
-
-/* Notifications */
-#notification {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
-  border-top: none; }
-  #notification a {
-    color: #2980b9; }
-
-.notification:not(:last-child) {
-  border-bottom: 1px solid #706f6e; }
-
-#app-settings .import-export button {
-  margin: 3px 0; }
-
-#app-settings-content, #app-settings-header {
-  border-color: #706f6e;
-  background-color: #31363b;
-  color: #eff0f1; }
-  #app-settings-content a, #app-settings-header a {
-    color: #2980b9; }
-
-.settings-button {
-  background-color: #31363b;
-  color: #eff0f1; }
-  .settings-button:hover {
-    background-color: rgba(61, 174, 233, 0.25); }
-  .settings-button:focus, .settings-button:active {
-    background-color: #3daee9;
-    color: #fcfcfc; }
-
-#body-login {
-  background-image: none !important;
-  background-color: #31363b !important; }
-
-#body-login p.info,
-#body-login form fieldset legend,
-#body-login #datadirContent label,
-#body-login form fieldset .warning-info,
-#body-login form input[type="checkbox"] + label {
-  color: #bdc3c7; }
-
-#body-login #remember_login:hover + label,
-#body-login #remember_login:focus + label,
-#body-login #forgot-password:hover,
-#body-login #forgot-password:focus,
-#body-login p.info a:hover,
-#body-login p.info a:focus {
-  opacity: 1;
-  color: #fcfcfc; }
-
-/* File Sharing */
+/* Public view for file sharing */
 #body-public #content-wrapper #content {
   border-top: 1px solid #706f6e; }
   #body-public #content-wrapper #content #preview {
@@ -625,74 +726,6 @@ span.success {
     background-color: rgba(61, 174, 233, 0.25);
     opacity: 0.5;
     border-bottom-right-radius: 5px; } }
-/* App Store */
-.app-level span {
-  color: #eff0f1; }
-
-/* Log reader */
-#logreader-root table tbody tr {
-  background-color: #31363b !important; }
-  #logreader-root table tbody tr td {
-    border-bottom-color: #706f6e; }
-#logreader-root table thead tr {
-  background-color: #31363b !important; }
-#logreader-root table thead th {
-  color: #eff0f1;
-  border-bottom-color: #706f6e; }
-
-/* oc-dialog */
-.oc-dialog {
-  background-color: #31363b;
-  color: #eff0f1;
-  box-shadow: none;
-  border: 1px solid #706f6e; }
-
-.oc-dialog-title {
-  background-color: #31363b; }
-
-.oc-dialog-buttonrow {
-  background-image: none;
-  background-color: #31363b; }
-
-#oc-dialog-filepicker-content .filelist {
-  background-color: #232629; }
-
-#oc-dialog-filepicker-content .filepicker_element_selected {
-  background-color: #3daee9; }
-  #oc-dialog-filepicker-content .filepicker_element_selected td {
-    font-weight: 600; }
-  #oc-dialog-filepicker-content .filepicker_element_selected .filename {
-    color: #fcfcfc; }
-  #oc-dialog-filepicker-content .filepicker_element_selected:hover {
-    background-color: #3daee9; }
-
-#userlist th.name {
-  color: #eff0f1; }
-
-div.multiselect.active {
-  background-color: #31363b; }
-
-ul.multiselectoptions {
-  background-color: #31363b;
-  border-color: #706f6e; }
-  ul.multiselectoptions.down {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; }
-
-select.quota-user {
-  background-color: #31363b !important; }
-  select.quota-user:focus, select.quota-user:active {
-    background-color: #3daee9 !important; }
-  select.quota-user option {
-    background-color: #31363b; }
-
-#newgroupname {
-  border-bottom: 1px solid #706f6e; }
-
-#app-settings-content .info-text {
-  color: #eff0f1; }
-
 #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
@@ -722,6 +755,8 @@ select.quota-user {
   #app-navigation .add-new-popup {
     box-shadow: none;
     border-color: #3daee9; }
+  #app-navigation .app-external {
+    color: #eff0f1; }
 
 .nav-trashbin {
   background-color: #31363b;
@@ -739,6 +774,7 @@ select.quota-user {
   .bubble::after {
     border-bottom-color: #706f6e; }
 
+/* App Sidebar */
 #app-sidebar {
   background-color: #31363b;
   border-color: #706f6e; }
@@ -752,6 +788,29 @@ select.quota-user {
 .tabHeaders .tabHeader:hover a {
   color: #fcfcfc;
   border-bottom: 1px solid #3daee9; }
+
+/* App Settings */
+#app-settings .import-export button {
+  margin: 3px 0; }
+
+#app-settings-content .info-text {
+  color: #eff0f1; }
+
+#app-settings-content, #app-settings-header {
+  border-color: #706f6e;
+  background-color: #31363b;
+  color: #eff0f1; }
+  #app-settings-content a, #app-settings-header a {
+    color: #2980b9; }
+
+.settings-button {
+  background-color: #31363b;
+  color: #eff0f1; }
+  .settings-button:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .settings-button:focus, .settings-button:active {
+    background-color: #3daee9;
+    color: #fcfcfc; }
 
 /*****************************************************************************/
 /*****************************************************************************/
@@ -1012,29 +1071,6 @@ input.newAddressBookInput {
 .app-files #app-content {
   background-color: #232629; }
 
-#filestable tbody tr {
-  background-color: #31363b; }
-  #filestable tbody tr:hover {
-    background-color: rgba(61, 174, 233, 0.25); }
-    #filestable tbody tr:hover .name:focus {
-      background-color: inherit; }
-  #filestable tbody tr:focus, #filestable tbody tr:active {
-    background-color: #3daee9; }
-  #filestable tbody tr.highlighted, #filestable tbody tr.highlighted .name:focus, #filestable tbody tr.selected, #filestable tbody tr.searchresult {
-    background-color: #3daee9;
-    color: #fcfcfc; }
-    #filestable tbody tr.highlighted .filename, #filestable tbody tr.highlighted .filesize, #filestable tbody tr.highlighted .date, #filestable tbody tr.highlighted .name:focus .filename, #filestable tbody tr.highlighted .name:focus .filesize, #filestable tbody tr.highlighted .name:focus .date, #filestable tbody tr.selected .filename, #filestable tbody tr.selected .filesize, #filestable tbody tr.selected .date, #filestable tbody tr.searchresult .filename, #filestable tbody tr.searchresult .filesize, #filestable tbody tr.searchresult .date {
-      font-weight: 600; }
-  #filestable tbody tr.externalDisabledRow {
-    background-color: #4d4d4d; }
-  #filestable tbody tr.externalErroredRow {
-    background-color: #da4453; }
-#filestable tbody .name:focus {
-  background-color: inherit; }
-
-/*#filestable.multiselect thead {
-	border-bottom: 1px solid $decoration-normal;
-}*/
 .summary {
   color: #bdc3c7;
   opacity: 1; }

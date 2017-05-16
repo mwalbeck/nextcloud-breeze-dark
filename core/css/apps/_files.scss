@@ -2,49 +2,6 @@
 	background-color: $background-dark;
 }
 
-#filestable tbody {
-	tr {
-		background-color: $background-normal;
-
-		&:hover {
-			background-color: $background-active-hover;
-			
-			.name:focus {
-				background-color: inherit;
-			}
-		}
-
-		&:focus, &:active {
-			background-color: $background-active;
-		}
-
-		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
-			background-color: $background-active;
-			color: $foreground-active;
-
-			.filename, .filesize, .date {
-				font-weight: 600;
-			}
-		}
-
-		&.externalDisabledRow {
-			background-color: $background-alternate;
-		}
-
-		&.externalErroredRow {
-			background-color: $background-negative;
-		}
-	}
-
-	.name:focus {
-		background-color: inherit;
-	}
-}
-
-/*#filestable.multiselect thead {
-	border-bottom: 1px solid $decoration-normal;
-}*/
-
 .summary {
 	color: $foreground-inactive;
 	opacity: 1;

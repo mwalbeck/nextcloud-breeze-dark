@@ -86,39 +86,26 @@ input:not([type="range"]),
 textarea, 
 #quota, 
 .pager li a {
-	&:not(:disabled):not(.primary) {
-		&:not(#quota):hover {
-			border-color: $decoration-active;
-		}
-		&:focus, &:active {
-			background-color: $background-dark;
-			border-color: $decoration-active;
-		}
-	}
-}
-
-select,
-button,
-.button,
-input[type="submit"],
-input[type="button"] {
-	&:not(:disabled):not(.primary) {
-		&:not(#quota):hover {
-			border-color: $decoration-active;
-		}
-		&:focus, &:active {
-			background-color: $background-active;
-			border-color: $decoration-active;
-		}
-	}
-}
-
-input:not([type="range"]), 
-textarea {
 	background-color: $background-dark;
 	color: $foreground-inactive;
 	border: 1px solid $decoration-normal;
 
+	&:not(:disabled):not(.primary) {
+		
+		&:not(#quota):hover {
+			border-color: $decoration-active;
+		}
+		
+		&:focus, &:active {
+			background-color: $background-dark;
+			border-color: $decoration-active;
+		}
+
+		&.active {
+			border-color: $decoration-active;
+		}
+	}
+	
 	&:disabled {
 		background-color: $background-alternate;
 
@@ -128,26 +115,35 @@ textarea {
 	}
 }
 
-textarea {
-	&:not(:disabled) {
-		&:hover, &:focus, &:active {
-			border-color: $decoration-active !important;
-			background-color: $background-dark !important;
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	color: $foreground-normal;
+
+	&:not(:disabled):not(.primary) {
+		
+		&:not(#quota):hover {
+			border-color: $decoration-active;
+		}
+		
+		&:focus, &:active {
+			background-color: $background-active;
+			border-color: $decoration-active;
+		}
+		
+		&.active {
+			border-color: $decoration-active;
 		}
 	}
-}
-
-input[type="submit"], 
-input[type="button"], 
-button, 
-.button, 
-select {
-	background-color: $button-background-normal;
-	border: 1px solid $button-decoration-normal;
-	color: $button-foreground-normal;
 
 	&:disabled {
 		background-color: $background-alternate;
+		color: $foreground-inactive;
+		opacity: 1;
 
 		&:hover, &:focus, &:active {
 			background-color: $background-alternate;
