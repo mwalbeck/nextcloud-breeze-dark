@@ -728,7 +728,24 @@ ul.multiselectoptions {
     z-index: 1001;
     background-color: rgba(61, 174, 233, 0.25);
     opacity: 0.5;
-    border-bottom-right-radius: 5px; } }
+    border-bottom-right-radius: 5px; }
+
+  #expanddiv {
+    background-color: #31363b;
+    box-shadow: none;
+    border: 1px solid #706f6e; }
+    #expanddiv::after {
+      border-bottom-color: #706f6e; }
+    #expanddiv a {
+      color: #eff0f1;
+      opacity: 0.5; }
+
+  #navigation {
+    background-color: #31363b;
+    border: 1px solid #706f6e;
+    box-shadow: none; }
+    #navigation a span {
+      color: #eff0f1; } }
 #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
