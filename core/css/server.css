@@ -403,8 +403,11 @@ button.primary, .button.primary {
 #body-login {
   background-image: none !important;
   background-color: #31363b !important; }
+  #body-login p.info {
+    color: #bdc3c7; }
+    #body-login p.info a {
+      font-weight: 600; }
 
-#body-login p.info,
 #body-login form fieldset legend,
 #body-login #datadirContent label,
 #body-login form fieldset .warning-info,
@@ -414,9 +417,7 @@ button.primary, .button.primary {
 #body-login #remember_login:hover + label,
 #body-login #remember_login:focus + label,
 #body-login #forgot-password:hover,
-#body-login #forgot-password:focus,
-#body-login p.info a:hover,
-#body-login p.info a:focus {
+#body-login #forgot-password:focus {
   opacity: 1;
   color: #fcfcfc; }
 
@@ -711,6 +712,11 @@ ul.multiselectoptions {
   border-top: 1px solid #706f6e; }
   #body-public #content-wrapper #content #preview {
     background: inherit; }
+#body-public footer .info, #body-public footer .info a {
+  color: #bdc3c7; }
+
+.directLink label {
+  opacity: 1; }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {

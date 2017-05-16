@@ -2,9 +2,17 @@
 #body-login {
 	background-image: none !important;
 	background-color: $background-normal !important;
-}
 
-#body-login p.info, 
+	p.info {
+		color: $foreground-inactive;
+
+		a {
+			font-weight: 600;
+		}
+		
+	}
+}
+ 
 #body-login form fieldset legend, 
 #body-login #datadirContent label, 
 #body-login form fieldset .warning-info, 
@@ -15,9 +23,7 @@
 #body-login #remember_login:hover + label, 
 #body-login #remember_login:focus + label,
 #body-login #forgot-password:hover, 
-#body-login #forgot-password:focus, 
-#body-login p.info a:hover, 
-#body-login p.info a:focus {
+#body-login #forgot-password:focus {
 	opacity: 1;
 	color: $foreground-active;
 }
@@ -301,7 +307,7 @@ select.quota-user {
 	}
 }
 
-/* Files table */
+/* Files table */ // CHECK THIS CODE PLEASE
 // Used by files app and file picker
 #filestable tbody {
 	tr {
@@ -483,16 +489,29 @@ ul.multiselectoptions {
 	border-color: $decoration-normal;
 }
 
-/* Public view for file sharing */
-#body-public #content-wrapper #content {
-	border-top: 1px solid $decoration-normal;
+/* Public view for file sharing */ // CHECK THIS CODE PLEASE
+#body-public {
 
-	#preview {
-		background: inherit;
+	#content-wrapper #content {
+		border-top: 1px solid $decoration-normal;
+
+		#preview {
+			background: inherit;
+		}
+	}
+
+	footer .info {
+		&, a {
+			color: $foreground-inactive;
+		}
 	}
 }
 
-/* Mobile */
+.directLink label {
+	opacity: 1;
+}
+
+/* Mobile */ // CHECK THIS CODE PLEASE
 @media only screen and (max-width: 768px) {
 	#app-content {
 		width: 100% !important;

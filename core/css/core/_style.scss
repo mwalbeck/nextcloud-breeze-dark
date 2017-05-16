@@ -153,7 +153,7 @@ input[type="button"] {
 }
 
 .primary, input.primary[type="submit"], input.primary[type="button"], 
-button.primary, .button.primary {
+button.primary, .button.primary { // CHECK THIS CODE PLEASE
 	border-color: $button-decoration-normal;
 	background-color: $button-background-dark;
 	color: $button-foreground-normal;
