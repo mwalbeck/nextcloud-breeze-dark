@@ -1,4 +1,5 @@
 /* Login Screen ------------------------------------------------------------- */
+
 #body-login {
 	background-image: none !important;
 	background-color: $background-normal !important;
@@ -55,6 +56,7 @@
 }
 
 /* Search ------------------------------------------------------------------- */
+
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
  .searchbox input[type="search"]:valid {
 	 color: $foreground-active;
@@ -67,11 +69,13 @@
  }
 
 /* Controls ----------------------------------------------------------------- */
+
 #controls {
 	background-color: $background-normal;
 }
 
 /* Breadcrumbs -------------------------------------------------------------- */
+
 div.crumb a, div.crumb > span {
 	color: $foreground-inactive;
 }
@@ -87,6 +91,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 /* Dropdown Menues ---------------------------------------------------------- */
 // Currently seems to be used for added new files in Files app and Gallery app
+
 .menu {
 	box-shadow: none;
 }
@@ -142,6 +147,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 }
 
 /* Info colours ------------------------------------------------------------- */
+
 #postsetupchecks .errors, 
 #postsetupchecks .warnings, 
 #security-warning > ul {
@@ -217,6 +223,7 @@ span {
 }
 
 /* Personal Settings -------------------------------------------------------- */
+
 #quota {
 	background-color: $background-dark;
 	color: $foreground-normal;
@@ -249,6 +256,7 @@ span {
 }
 
 /* App Store ---------------------------------------------------------------- */
+
 .app-level {
 
 	span {
@@ -302,6 +310,7 @@ select.quota-user {
 
 /* Files table -------------------------------------------------------------- */
 // Used by files app and file picker
+
 #filestable tbody {
 	tr {
 		background-color: $background-normal;
@@ -338,6 +347,7 @@ select.quota-user {
 }
 
 /* File picker -------------------------------------------------------------- */
+
 .oc-dialog {
 	background-color: $background-normal;
 	color: $foreground-normal;
@@ -396,6 +406,7 @@ ul.multiselectoptions {
 }
 
 /* Tags --------------------------------------------------------------------- */
+
 .select2-container-multi {
 
 	.select2-choices,
@@ -483,6 +494,7 @@ ul.multiselectoptions {
 }
 
 /* Public view for file sharing --------------------------------------------- */
+
 #body-public {
 
 	#content-wrapper #content {
@@ -505,7 +517,7 @@ ul.multiselectoptions {
 }
 
 /* Mobile ------------------------------------------------------------------- */
-// CHECK THIS CODE PLEASE
+
 @media only screen and (max-width: 768px) {
 	#app-content {
 		width: 100% !important;
