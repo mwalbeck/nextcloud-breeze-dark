@@ -747,6 +747,7 @@ ul.multiselectoptions {
     background-color: rgba(61, 174, 233, 0.25);
     opacity: 0.5;
     border-bottom-right-radius: 5px; } }
+/* Content ------------------------------------------------------------------ */
 #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
@@ -754,7 +755,7 @@ ul.multiselectoptions {
 #app-navigation + #app-content #controls {
   margin-top: 1px; }
 
-/* App Navigation */
+/* App Navigation ----------------------------------------------------------- */
 #app-navigation {
   background-color: #31363b;
   border-color: #706f6e; }
@@ -783,7 +784,7 @@ ul.multiselectoptions {
   background-color: #31363b;
   border-color: #706f6e; }
 
-/* App Sidebar */
+/* App Sidebar -------------------------------------------------------------- */
 #app-sidebar {
   background-color: #31363b;
   border-color: #706f6e; }
@@ -800,7 +801,7 @@ ul.multiselectoptions {
   color: #fcfcfc;
   border-bottom: 1px solid #3daee9; }
 
-/* App Settings */
+/* App Settings ------------------------------------------------------------- */
 #app-settings .import-export button {
   margin: 3px 0; }
 
@@ -823,9 +824,12 @@ ul.multiselectoptions {
     background-color: #3daee9;
     color: #fcfcfc; }
 
-/*****************************************************************************/
-/*****************************************************************************/
-/* First Run Wizard */
+/*
+===============================================================================
+* Left over styling for small apps
+===============================================================================
+*/
+/* First Run Wizard --------------------------------------------------------- */
 #cboxLoadedContent {
   background-color: #232629; }
 
@@ -834,7 +838,7 @@ ul.multiselectoptions {
   #firstrunwizard p a:hover, #firstrunwizard p a:focus {
     color: #2980b9; }
 
-/* Announcement Center */
+/* Announcement Center ------------------------------------------------------ */
 #announcement_submit_msg {
   opacity: 0.8; }
   #announcement_submit_msg.success {
@@ -844,7 +848,7 @@ ul.multiselectoptions {
 #app-content hr {
   border-color: #706f6e; }
 
-/* File Access Control */
+/* File Access Control ------------------------------------------------------ */
 .workflowengine .operation {
   border-bottom-color: #706f6e; }
   .workflowengine .operation .check:hover {
@@ -852,7 +856,7 @@ ul.multiselectoptions {
   .workflowengine .operation.modified {
     border-left-color: #f67400; }
 
-/* External Storage */
+/* External Storage --------------------------------------------------------- */
 .dropdown {
   background-color: #31363b;
   box-shadow: none;
@@ -863,7 +867,7 @@ ul.multiselectoptions {
   #externalStorage td.mountOptionsToggle > img:hover {
     opacity: 1; }
 
-/* Notifications */
+/* Notifications ----------------------------------------------------------- */
 .notification-container {
   background-color: #31363b;
   border-color: #706f6e; }

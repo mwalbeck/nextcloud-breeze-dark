@@ -1,4 +1,5 @@
-// Content
+/* Content ------------------------------------------------------------------ */
+
 #app-content {
 	border-top: 1px solid $decoration-normal;
 	height: 99.8%;
@@ -8,7 +9,7 @@
 	margin-top: 1px;
 }
 
-/* App Navigation */
+/* App Navigation ----------------------------------------------------------- */
 
 #app-navigation {
 	background-color: $background-normal;
@@ -58,7 +59,7 @@
 	border-color: $decoration-normal;
 }
 
-/* App Sidebar */
+/* App Sidebar -------------------------------------------------------------- */
 
 #app-sidebar {
 	background-color: $background-normal;
@@ -83,7 +84,8 @@
 	border-bottom: 1px solid $decoration-active;
 }
 
-/* App Settings */
+/* App Settings ------------------------------------------------------------- */
+
 #app-settings {
 	.import-export button {
 		margin: 3px 0;
@@ -120,11 +122,14 @@
 	}
 }
 
-/*****************************************************************************/
-// Left over styling for small apps
-/*****************************************************************************/
+/*
+===============================================================================
+* Left over styling for small apps
+===============================================================================
+*/
 
-/* First Run Wizard */
+/* First Run Wizard --------------------------------------------------------- */
+
 #cboxLoadedContent {
 	background-color: $background-dark;
 }
@@ -137,7 +142,8 @@
 	}
 }
 
-/* Announcement Center */
+/* Announcement Center ------------------------------------------------------ */
+
 #announcement_submit_msg {
 	opacity: 0.8;
 
@@ -151,7 +157,8 @@
 	border-color: $decoration-normal;
 }
 
-/* File Access Control */
+/* File Access Control ------------------------------------------------------ */
+
 .workflowengine .operation {
 	border-bottom-color: $decoration-normal;
 
@@ -164,7 +171,8 @@
 	}
 }
 
-/* External Storage */
+/* External Storage --------------------------------------------------------- */
+
 .dropdown {
 	background-color: $background-normal;
 	box-shadow: none;
@@ -179,7 +187,8 @@
 	}
 }
 
- /* Notifications */
+ /* Notifications ----------------------------------------------------------- */
+ 
 .notification-container {
 	background-color: $background-normal;
 	border-color: $decoration-normal;
