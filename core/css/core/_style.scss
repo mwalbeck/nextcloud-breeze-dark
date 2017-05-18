@@ -115,6 +115,15 @@ textarea,
 	}
 }
 
+textarea {
+	&:active, &:hover, &:focus {
+		&:not(:disabled) {
+			border-color: $decoration-active !important;
+			background-color: $background-dark !important;
+		}
+	}
+}
+
 select,
 button,
 .button,

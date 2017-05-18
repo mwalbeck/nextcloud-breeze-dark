@@ -323,6 +323,10 @@ textarea,
     .pager li a:disabled:active {
       border-color: #706f6e; }
 
+textarea:active:not(:disabled), textarea:hover:not(:disabled), textarea:focus:not(:disabled) {
+  border-color: #3daee9 !important;
+  background-color: #232629 !important; }
+
 select,
 button,
 .button,
