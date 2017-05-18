@@ -722,6 +722,22 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
+/* Tooltips ----------------------------------------------------------------- */
+.tooltip.right .tooltip-arrow {
+  border-right-color: #706f6e; }
+.tooltip.left .tooltip-arrow {
+  border-left-color: #706f6e; }
+.tooltip.top .tooltip-arrow, .tooltip.top-left .tooltip-arrow, .tooltip.top-right .tooltip-arrow {
+  border-top-color: #706f6e; }
+.tooltip.bottom .tooltip-arrow, .tooltip.bottom-left .tooltip-arrow, .tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #706f6e; }
+
+.tooltip-inner {
+  background-color: #31363b;
+  color: #eff0f1;
+  box-shadow: none;
+  border: 1px solid #706f6e; }
+
 /* Public view for file sharing --------------------------------------------- */
 #body-public #content-wrapper #content {
   border-top: 1px solid #706f6e; }
