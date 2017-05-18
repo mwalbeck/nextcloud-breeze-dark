@@ -762,14 +762,16 @@ ul.multiselectoptions {
   #app-navigation li > a {
     color: #eff0f1;
     opacity: 1; }
-  #app-navigation li:hover > a {
-    background-color: rgba(61, 174, 233, 0.25); }
+    #app-navigation li > a:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
   #app-navigation .active {
     background-color: #3daee9;
     box-shadow: inset 2px 0 #1d99f3; }
-  #app-navigation .active a {
-    color: #fcfcfc;
-    font-weight: 600; }
+    #app-navigation .active a {
+      color: #fcfcfc;
+      font-weight: 600; }
+  #app-navigation .app-external {
+    color: #eff0f1; }
   #app-navigation .add-new button {
     color: #eff0f1 !important; }
   #app-navigation .add-new div.heading:hover {
@@ -777,8 +779,6 @@ ul.multiselectoptions {
   #app-navigation .add-new-popup {
     box-shadow: none;
     border-color: #3daee9; }
-  #app-navigation .app-external {
-    color: #eff0f1; }
 
 .nav-trashbin {
   background-color: #31363b;

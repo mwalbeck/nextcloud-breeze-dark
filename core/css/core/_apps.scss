@@ -18,39 +18,42 @@
 	li > a {
 		color: $foreground-normal;
 		opacity: 1;
-	}
 
-	li:hover > a {
-		background-color: $background-active-hover;
+		&:hover {
+			background-color: $background-active-hover;
+		}
 	}
 
 	.active {
 		background-color: $background-active;
 		box-shadow: inset 2px 0 $background-active-alternate;
+
+		a {
+			color: $foreground-active;
+			font-weight: 600;
+		}
 	}
 
-	.active a {
-		color: $foreground-active;
-		font-weight: 600;
+	.app-external {
+		color: $foreground-normal;
 	}
 
-	.add-new button {
-		color: $foreground-normal !important;
-	}
+	// Not sure this is still used
+	.add-new {
+		button {
+			color: $foreground-normal !important;
+		}
 
-	.add-new div.heading {
-		&:hover {
-			background-color: $background-active-hover;
+		div.heading {
+			&:hover {
+				background-color: $background-active-hover;
+			}
 		}
 	}
 
 	.add-new-popup {
 		box-shadow: none;
 		border-color: $decoration-active;
-	}
-
-	.app-external {
-		color: $foreground-normal;
 	}
 }
 
@@ -188,7 +191,7 @@
 }
 
  /* Notifications ----------------------------------------------------------- */
- 
+
 .notification-container {
 	background-color: $background-normal;
 	border-color: $decoration-normal;
