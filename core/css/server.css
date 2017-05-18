@@ -763,6 +763,21 @@ ul.multiselectoptions {
     background-color: rgba(61, 174, 233, 0.25);
     opacity: 0.5;
     border-bottom-right-radius: 5px; } }
+/* App menu ----------------------------------------------------------------- */
+#appmenu li span {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  color: #eff0f1;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; }
+#appmenu li a.active::before {
+  border-bottom-color: #31363b; }
+#appmenu li:hover a::before {
+  border-bottom-color: #706f6e; }
+
 /* Content ------------------------------------------------------------------ */
 #app-content {
   border-top: 1px solid #706f6e;

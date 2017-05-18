@@ -1,3 +1,26 @@
+/* App menu ----------------------------------------------------------------- */
+
+#appmenu li {
+	span {
+		background-color: $background-normal;
+		border: 1px solid $decoration-normal;
+		color: $foreground-normal;
+		-webkit-filter: none;
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none;
+		filter: none;
+	}
+
+	a.active::before {
+		border-bottom-color: $background-normal;
+	}
+
+	&:hover a::before {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
 /* Content ------------------------------------------------------------------ */
 
 #app-content {
