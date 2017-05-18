@@ -486,9 +486,19 @@ div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
 div.crumb span.icon-shared, div.crumb span.icon-public {
   opacity: 0.3; }
 
-/* Dropdown Menues ---------------------------------------------------------- */
+/* Menues ------------------------------------------------------------------- */
 .menu {
-  box-shadow: none; }
+  box-shadow: none;
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+  .menu::after {
+    border-bottom-color: #706f6e; }
+
+#contactsmenu > .menu .contact {
+  border-bottom-color: #706f6e; }
+
+#emptycontent, .emptycontent {
+  color: #bdc3c7; }
 
 .popovermenu li .menuitem {
   color: #bdc3c7; }
@@ -515,6 +525,9 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
     border-bottom-color: #706f6e; }
   #expanddiv a {
     color: #eff0f1; }
+
+#body-settings #expand::before {
+  border-bottom-color: #706f6e; }
 
 #navigation {
   background-color: #31363b;
