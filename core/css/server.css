@@ -800,22 +800,19 @@ ul.multiselectoptions {
   border-bottom: 1px solid #3daee9; }
 
 /* App Settings ------------------------------------------------------------- */
-#app-settings .import-export button {
-  margin: 3px 0; }
+#app-settings-header {
+  border-color: #706f6e; }
 
-#app-settings-content .info-text {
-  color: #eff0f1; }
-
-#app-settings-content, #app-settings-header {
+#app-settings-content {
   border-color: #706f6e;
-  background-color: #31363b;
-  color: #eff0f1; }
-  #app-settings-content a, #app-settings-header a {
+  background-color: #31363b; }
+  #app-settings-content a {
     color: #2980b9; }
+  #app-settings-content .info-text {
+    color: #eff0f1; }
 
 .settings-button {
-  background-color: #31363b;
-  color: #eff0f1; }
+  background-color: #31363b; }
   .settings-button:hover {
     background-color: rgba(61, 174, 233, 0.25); }
   .settings-button:focus, .settings-button:active {

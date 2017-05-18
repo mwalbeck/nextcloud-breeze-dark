@@ -90,31 +90,25 @@
 
 /* App Settings ------------------------------------------------------------- */
 
-#app-settings {
-	.import-export button {
-		margin: 3px 0;
-	}
+#app-settings-header {
+	border-color: $decoration-normal;
 }
 
 #app-settings-content {
+	border-color: $decoration-normal;
+	background-color: $background-normal;
+
+	a {
+		color: $foreground-link;
+	}
+
 	.info-text {
 		color: $foreground-normal;
 	}
 }
 
-#app-settings-content, #app-settings-header {
-	border-color: $decoration-normal;
-	background-color: $background-normal;
-	color: $foreground-normal;
-
-	a {
-		color: $foreground-link;
-	}
-}
-
 .settings-button {
 	background-color: $background-normal;
-	color: $foreground-normal;
 
 	&:hover {
 		background-color: $background-active-hover;
