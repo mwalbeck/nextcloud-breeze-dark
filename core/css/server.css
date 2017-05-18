@@ -795,9 +795,7 @@ ul.multiselectoptions {
 
 .tabHeaders .tabHeader, .tabHeaders .tabHeader a {
   color: #eff0f1; }
-
-.tabHeaders .tabHeader.selected a,
-.tabHeaders .tabHeader:hover a {
+.tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a {
   color: #fcfcfc;
   border-bottom: 1px solid #3daee9; }
 
