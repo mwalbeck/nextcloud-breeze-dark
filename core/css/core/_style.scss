@@ -124,7 +124,7 @@ input[type="button"] {
 	border: 1px solid $decoration-normal;
 	color: $foreground-normal;
 
-	&:not(:disabled):not(.primary) {
+	&:not(:disabled):not(.primary):not(#quota) {
 		
 		&:hover {
 			border-color: $decoration-active;

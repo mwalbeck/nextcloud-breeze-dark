@@ -331,25 +331,25 @@ input[type="button"] {
   background-color: #31363b;
   border: 1px solid #706f6e;
   color: #eff0f1; }
-  select:not(:disabled):not(.primary):hover,
-  button:not(:disabled):not(.primary):hover,
-  .button:not(:disabled):not(.primary):hover,
-  input[type="submit"]:not(:disabled):not(.primary):hover,
-  input[type="button"]:not(:disabled):not(.primary):hover {
+  select:not(:disabled):not(.primary):not(#quota):hover,
+  button:not(:disabled):not(.primary):not(#quota):hover,
+  .button:not(:disabled):not(.primary):not(#quota):hover,
+  input[type="submit"]:not(:disabled):not(.primary):not(#quota):hover,
+  input[type="button"]:not(:disabled):not(.primary):not(#quota):hover {
     border-color: #3daee9; }
-  select:not(:disabled):not(.primary):focus, select:not(:disabled):not(.primary):active, select:not(:disabled):not(.primary).active,
-  button:not(:disabled):not(.primary):focus,
-  button:not(:disabled):not(.primary):active,
-  button:not(:disabled):not(.primary).active,
-  .button:not(:disabled):not(.primary):focus,
-  .button:not(:disabled):not(.primary):active,
-  .button:not(:disabled):not(.primary).active,
-  input[type="submit"]:not(:disabled):not(.primary):focus,
-  input[type="submit"]:not(:disabled):not(.primary):active,
-  input[type="submit"]:not(:disabled):not(.primary).active,
-  input[type="button"]:not(:disabled):not(.primary):focus,
-  input[type="button"]:not(:disabled):not(.primary):active,
-  input[type="button"]:not(:disabled):not(.primary).active {
+  select:not(:disabled):not(.primary):not(#quota):focus, select:not(:disabled):not(.primary):not(#quota):active, select:not(:disabled):not(.primary):not(#quota).active,
+  button:not(:disabled):not(.primary):not(#quota):focus,
+  button:not(:disabled):not(.primary):not(#quota):active,
+  button:not(:disabled):not(.primary):not(#quota).active,
+  .button:not(:disabled):not(.primary):not(#quota):focus,
+  .button:not(:disabled):not(.primary):not(#quota):active,
+  .button:not(:disabled):not(.primary):not(#quota).active,
+  input[type="submit"]:not(:disabled):not(.primary):not(#quota):focus,
+  input[type="submit"]:not(:disabled):not(.primary):not(#quota):active,
+  input[type="submit"]:not(:disabled):not(.primary):not(#quota).active,
+  input[type="button"]:not(:disabled):not(.primary):not(#quota):focus,
+  input[type="button"]:not(:disabled):not(.primary):not(#quota):active,
+  input[type="button"]:not(:disabled):not(.primary):not(#quota).active {
     background-color: #3daee9;
     border-color: #3daee9; }
   select:disabled,
