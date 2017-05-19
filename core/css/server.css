@@ -902,26 +902,6 @@ ul.multiselectoptions {
   #externalStorage td.mountOptionsToggle > img:hover {
     opacity: 1; }
 
-/* Notifications ----------------------------------------------------------- */
-#notification {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
-  border-top: none; }
-
-.notification-container {
-  background-color: #31363b;
-  border-color: #706f6e; }
-  .notification-container .notification-time {
-    opacity: 1;
-    color: #bdc3c7; }
-  .notification-container .notification {
-    color: #eff0f1; }
-  .notification-container a {
-    color: #2980b9; }
-
-.notification:not(:last-child) {
-  border-bottom: 1px solid #706f6e; }
-
 .activitymessage {
   color: #eff0f1;
   opacity: 0.6; }
@@ -1223,6 +1203,26 @@ td.date, td.date > span {
 
 #link {
   border-color: #706f6e; }
+
+/* Notifications ----------------------------------------------------------- */
+#notification {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  border-top: none; }
+
+.notification-container {
+  background-color: #31363b;
+  border-color: #706f6e; }
+  .notification-container .notification-time {
+    opacity: 1;
+    color: #bdc3c7; }
+  .notification-container .notification {
+    color: #eff0f1; }
+  .notification-container a {
+    color: #2980b9; }
+
+.notification:not(:last-child) {
+  border-bottom: 1px solid #706f6e; }
 
 #explore .category {
   background-color: #3daee9; }

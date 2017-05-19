@@ -192,33 +192,3 @@
 		opacity: 1;
 	}
 }
-
- /* Notifications ----------------------------------------------------------- */
-
-#notification {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-	border-top: none;
-}
-
-.notification-container {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-
-	.notification-time {
-		opacity: 1;
-		color: $foreground-inactive;
-	}
-
-	.notification {
-		color: $foreground-normal;
-	}
-
-	a {
-		color: $foreground-link;
-	}
-}
-
-.notification:not(:last-child) {
-	border-bottom: 1px solid $decoration-normal;
-}
