@@ -575,6 +575,8 @@ span.success {
 /* General Settings --------------------------------------------------------- */
 .section, .followupsection {
   color: #eff0f1; }
+  .section > span, .followupsection > span {
+    color: #bdc3c7; }
 
 #cropper .inner-container {
   background-color: #31363b;
@@ -881,16 +883,6 @@ ul.multiselectoptions {
   #firstrunwizard p a:hover, #firstrunwizard p a:focus {
     color: #2980b9; }
 
-/* Announcement Center ------------------------------------------------------ */
-#announcement_submit_msg {
-  opacity: 0.8; }
-  #announcement_submit_msg.success {
-    color: #fcfcfc;
-    background-color: #27ae60; }
-
-#app-content hr {
-  border-color: #706f6e; }
-
 /* File Access Control ------------------------------------------------------ */
 .workflowengine .operation {
   border-bottom-color: #706f6e; }
@@ -940,6 +932,16 @@ ul.multiselectoptions {
 #no_more_activities {
   color: #bdc3c7;
   opacity: 0.5; }
+
+/* Announcement Center ------------------------------------------------------ */
+#announcement_submit_msg {
+  opacity: 0.8; }
+  #announcement_submit_msg.success {
+    color: #fcfcfc;
+    background-color: #27ae60; }
+
+#app-content hr {
+  border-color: #706f6e; }
 
 .app-calendar #app-content {
   overflow-y: hidden;

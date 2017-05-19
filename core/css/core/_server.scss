@@ -224,6 +224,10 @@ span {
 // Primarily seems to be used under settings
 .section, .followupsection {
 	color: $foreground-normal;
+
+	> span {
+		color: $foreground-inactive;
+	}
 }
 
 // Cropper

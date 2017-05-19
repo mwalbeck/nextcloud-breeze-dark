@@ -163,21 +163,6 @@
 	}
 }
 
-/* Announcement Center ------------------------------------------------------ */
-
-#announcement_submit_msg {
-	opacity: 0.8;
-
-	&.success {
-		color: $foreground-active;
-		background-color: $background-positive;
-	}
-}
-
-#app-content hr {
-	border-color: $decoration-normal;
-}
-
 /* File Access Control ------------------------------------------------------ */
 
 .workflowengine .operation {
