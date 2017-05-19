@@ -1231,6 +1231,31 @@ td.date, td.date > span {
 .notification:not(:last-child) {
   border-bottom: 1px solid #706f6e; }
 
+/* Text Editor -------------------------------------------------------------- */
+#editor_controls {
+  background-color: #31363b; }
+  #editor_controls small.filename {
+    color: #eff0f1; }
+  #editor_controls #editor_close {
+    opacity: 1; }
+    #editor_controls #editor_close:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    #editor_controls #editor_close:active, #editor_controls #editor_close:focus {
+      background-color: #3daee9; }
+
+/* Two Factor U2F */
+.two-factor-link {
+  padding: 0 12px;
+  color: #bdc3c7; }
+  .two-factor-link:hover {
+    color: #fcfcfc; }
+
+#body-login .warning {
+  background-color: #232629; }
+
+.challenge-form input[type="text"], .totp-form input[type="text"] {
+  background: #31363b; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
