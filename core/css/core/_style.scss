@@ -108,6 +108,8 @@ textarea,
 	
 	&:disabled {
 		background-color: $background-alternate;
+		color: $foreground-inactive;
+		opacity: 1;
 
 		&:hover, &:focus, &:active {
 			border-color: $decoration-normal;

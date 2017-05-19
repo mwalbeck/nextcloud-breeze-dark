@@ -51,11 +51,18 @@ td.date, td.date > span {
 	}
 }
 
-#fileList .popovermenu .action {
-	color: $foreground-normal;
+#fileList {
 
-	&:hover, &:focus, &:active {
-		color: $foreground-active;
+	a.action {
+		opacity: 0.5;
+	}
+
+	.popovermenu .action {
+		color: $foreground-normal;
+
+		&:hover, &:focus, &:active {
+			color: $foreground-active;
+		}
 	}
 }
 

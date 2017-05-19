@@ -310,7 +310,9 @@ textarea,
   textarea:disabled,
   #quota:disabled,
   .pager li a:disabled {
-    background-color: #4d4d4d; }
+    background-color: #4d4d4d;
+    color: #bdc3c7;
+    opacity: 1; }
     input:not([type="range"]):disabled:hover, input:not([type="range"]):disabled:focus, input:not([type="range"]):disabled:active,
     textarea:disabled:hover,
     textarea:disabled:focus,
@@ -880,6 +882,9 @@ ul.multiselectoptions {
   color: #bdc3c7;
   opacity: 0.5; }
 
+.activity-icon {
+  opacity: 0.7; }
+
 /* Announcement Center ------------------------------------------------------ */
 #announcement_submit_msg {
   opacity: 0.8; }
@@ -1135,6 +1140,8 @@ td.date, td.date > span {
   border-color: #706f6e;
   color: #eff0f1; }
 
+#fileList a.action {
+  opacity: 0.5; }
 #fileList .popovermenu .action {
   color: #eff0f1; }
   #fileList .popovermenu .action:hover, #fileList .popovermenu .action:focus, #fileList .popovermenu .action:active {
