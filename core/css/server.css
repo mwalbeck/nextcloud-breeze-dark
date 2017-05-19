@@ -878,14 +878,6 @@ ul.multiselectoptions {
 * Left over styling for small apps
 ===============================================================================
 */
-/* File Access Control ------------------------------------------------------ */
-.workflowengine .operation {
-  border-bottom-color: #706f6e; }
-  .workflowengine .operation .check:hover {
-    background-color: #31363b; }
-  .workflowengine .operation.modified {
-    border-left-color: #f67400; }
-
 /* External Storage --------------------------------------------------------- */
 .dropdown {
   background-color: #31363b;
@@ -1113,6 +1105,16 @@ input.newAddressBookSubmit {
 
 input.newAddressBookInput {
   padding: 5px; }
+
+/* File Access Control ------------------------------------------------------ */
+.workflowengine .operation {
+  border-bottom-color: #706f6e; }
+  .workflowengine .operation .check:hover {
+    background-color: #31363b; }
+  .workflowengine .operation.modified {
+    border-left-color: #f67400; }
+.workflowengine .invalid-input {
+  border-color: #da4453; }
 
 .app-files #app-content {
   background-color: #232629; }
