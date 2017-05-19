@@ -3,8 +3,15 @@
 #editor_controls {
 	background-color: $background-normal;
 
-	small.filename {
-		color: $foreground-normal;
+	small {
+
+		&.filename {
+			color: $foreground-normal;
+		}
+
+		&.saving-message {
+			color: $foreground-inactive;
+		}
 	}
 
 	#editor_close {

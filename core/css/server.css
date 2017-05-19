@@ -841,6 +841,8 @@ ul.multiselectoptions {
     color: #eff0f1; }
   #app-sidebar .close {
     opacity: 1; }
+  #app-sidebar .thumbnail {
+    color: #eff0f1; }
 
 .tabHeaders .tabHeader, .tabHeaders .tabHeader a {
   color: #eff0f1; }
@@ -1236,6 +1238,8 @@ td.date, td.date > span {
   background-color: #31363b; }
   #editor_controls small.filename {
     color: #eff0f1; }
+  #editor_controls small.saving-message {
+    color: #bdc3c7; }
   #editor_controls #editor_close {
     opacity: 1; }
     #editor_controls #editor_close:hover {
