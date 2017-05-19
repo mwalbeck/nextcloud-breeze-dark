@@ -142,25 +142,3 @@
 		color: $foreground-active;
 	}
 }
-
-/*
-===============================================================================
-* Left over styling for small apps
-===============================================================================
-*/
-
-/* External Storage --------------------------------------------------------- */
-
-.dropdown {
-	background-color: $background-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal;
-}
-
-#externalStorage td.mountOptionsToggle > img {
-	opacity: 0.7;
-
-	&:hover {
-		opacity: 1;
-	}
-}

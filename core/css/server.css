@@ -873,22 +873,6 @@ ul.multiselectoptions {
     background-color: #3daee9;
     color: #fcfcfc; }
 
-/*
-===============================================================================
-* Left over styling for small apps
-===============================================================================
-*/
-/* External Storage --------------------------------------------------------- */
-.dropdown {
-  background-color: #31363b;
-  box-shadow: none;
-  border: 1px solid #706f6e; }
-
-#externalStorage td.mountOptionsToggle > img {
-  opacity: 0.7; }
-  #externalStorage td.mountOptionsToggle > img:hover {
-    opacity: 1; }
-
 .activitymessage {
   color: #eff0f1;
   opacity: 0.6; }
@@ -1105,6 +1089,12 @@ input.newAddressBookSubmit {
 
 input.newAddressBookInput {
   padding: 5px; }
+
+/* External Storage --------------------------------------------------------- */
+.dropdown {
+  background-color: #31363b;
+  box-shadow: none;
+  border: 1px solid #706f6e; }
 
 /* File Access Control ------------------------------------------------------ */
 .workflowengine .operation {
