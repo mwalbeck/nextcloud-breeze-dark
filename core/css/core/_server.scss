@@ -485,6 +485,8 @@ ul.multiselectoptions {
 }
 
 #select2-drop {
+	background-color: $background-normal;
+	color: $foreground-normal;
 
 	&.select2-drop-active {
 		border-color: $decoration-normal;
@@ -505,6 +507,7 @@ ul.multiselectoptions {
 
 		.select2-result.select2-highlighted {
 			background-color: $background-alternate;
+			color: $foreground-normal;
 		}
 	}
 }

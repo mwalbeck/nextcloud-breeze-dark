@@ -725,17 +725,21 @@ ul.multiselectoptions {
     background-color: #31363b;
     border-color: #3daee9; }
 
-#select2-drop.select2-drop-active {
-  border-color: #706f6e; }
-#select2-drop .select2-results .select2-result,
-#select2-drop .select2-results .select2-no-results,
-#select2-drop .select2-results .select2-searching {
-  background-color: #232629;
+#select2-drop {
+  background-color: #31363b;
   color: #eff0f1; }
-#select2-drop .select2-results .select2-result.select2-selected {
-  background-color: #31363b; }
-#select2-drop .select2-results .select2-result.select2-highlighted {
-  background-color: #4d4d4d; }
+  #select2-drop.select2-drop-active {
+    border-color: #706f6e; }
+  #select2-drop .select2-results .select2-result,
+  #select2-drop .select2-results .select2-no-results,
+  #select2-drop .select2-results .select2-searching {
+    background-color: #232629;
+    color: #eff0f1; }
+  #select2-drop .select2-results .select2-result.select2-selected {
+    background-color: #31363b; }
+  #select2-drop .select2-results .select2-result.select2-highlighted {
+    background-color: #4d4d4d;
+    color: #eff0f1; }
 
 .activitysubject strong.systemtag {
   background-color: #232629;
