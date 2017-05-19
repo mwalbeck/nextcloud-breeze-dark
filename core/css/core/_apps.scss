@@ -210,6 +210,12 @@
 
  /* Notifications ----------------------------------------------------------- */
 
+#notification {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	border-top: none;
+}
+
 .notification-container {
 	background-color: $background-normal;
 	border-color: $decoration-normal;

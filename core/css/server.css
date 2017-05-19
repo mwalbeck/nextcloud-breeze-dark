@@ -911,6 +911,11 @@ ul.multiselectoptions {
     opacity: 1; }
 
 /* Notifications ----------------------------------------------------------- */
+#notification {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  border-top: none; }
+
 .notification-container {
   background-color: #31363b;
   border-color: #706f6e; }
