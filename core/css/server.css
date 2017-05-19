@@ -501,7 +501,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   color: #bdc3c7; }
 
 .popovermenu li .menuitem {
-  color: #bdc3c7; }
+  color: #bdc3c7;
+  opacity: 0.7; }
   .popovermenu li .menuitem:hover {
     color: #fcfcfc; }
 
@@ -597,14 +598,6 @@ span.success {
 #sessions .token-list td, #apppasswords .token-list td {
   border-color: #706f6e;
   border-top: none; }
-
-/* Server Settings ---------------------------------------------------------- */
-#logreader-root table tbody tr td {
-  border-bottom-color: #706f6e;
-  background-color: #31363b !important; }
-#logreader-root table thead th {
-  color: #eff0f1;
-  border-bottom-color: #706f6e; }
 
 /* App Store ---------------------------------------------------------------- */
 .app-level span {
@@ -852,6 +845,9 @@ ul.multiselectoptions {
 .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a {
   color: #fcfcfc;
   border-bottom: 1px solid #3daee9; }
+
+.shareTabView .icon {
+  opacity: 0.5; }
 
 /* App Settings ------------------------------------------------------------- */
 #app-settings-header {
@@ -1199,6 +1195,14 @@ td.date, td.date > span {
 
 #link {
   border-color: #706f6e; }
+
+/* Log reader --------------------------------------------------------------- */
+#logreader-root table tbody tr td {
+  border-bottom-color: #706f6e;
+  background-color: #31363b !important; }
+#logreader-root table thead th {
+  color: #eff0f1;
+  border-bottom-color: #706f6e; }
 
 /* Notifications ----------------------------------------------------------- */
 #notification {

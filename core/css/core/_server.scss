@@ -1,5 +1,5 @@
-/* Login Screen ------------------------------------------------------------- */
 
+/* Login Screen ------------------------------------------------------------- */
 #body-login {
 	background-image: none !important;
 	background-color: $background-normal !important;
@@ -111,6 +111,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 .popovermenu li .menuitem {
 	color: $foreground-inactive;
+	opacity: 0.7;
+
 	&:hover {
 		color: $foreground-active;
 	}
@@ -258,22 +260,6 @@ span {
 #sessions .token-list td, #apppasswords .token-list td {
 	border-color: $decoration-normal;
 	border-top: none;
-}
-
-/* Server Settings ---------------------------------------------------------- */
-
-// Log reader
-#logreader-root table {
-
-	tbody tr td {
-		border-bottom-color: $decoration-normal;
-		background-color: $background-normal !important;
-	}
-
-	thead th {
-		color: $foreground-normal;
-		border-bottom-color: $decoration-normal;
-	}
 }
 
 /* App Store ---------------------------------------------------------------- */
