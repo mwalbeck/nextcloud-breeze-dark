@@ -874,15 +874,6 @@ ul.multiselectoptions {
 * Left over styling for small apps
 ===============================================================================
 */
-/* First Run Wizard --------------------------------------------------------- */
-#cboxLoadedContent {
-  background-color: #232629; }
-
-#firstrunwizard p a {
-  color: #2980b9; }
-  #firstrunwizard p a:hover, #firstrunwizard p a:focus {
-    color: #2980b9; }
-
 /* File Access Control ------------------------------------------------------ */
 .workflowengine .operation {
   border-bottom-color: #706f6e; }
@@ -1166,6 +1157,15 @@ td.date, td.date > span {
   #controls .button.view-switcher:focus, #controls .button.view-switcher:active {
     border-color: #3daee9;
     background-color: #3daee9; }
+
+/* First Run Wizard --------------------------------------------------------- */
+#cboxLoadedContent {
+  background-color: #232629; }
+
+#firstrunwizard p a {
+  color: #2980b9; }
+  #firstrunwizard p a:hover, #firstrunwizard p a:focus {
+    color: #2980b9; }
 
 #content-wrapper .app-gallery {
   background-color: #232629; }
