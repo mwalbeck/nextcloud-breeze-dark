@@ -846,6 +846,17 @@ ul.multiselectoptions {
 
 .shareTabView .icon {
   opacity: 0.5; }
+.shareTabView .error {
+  color: #da4453;
+  border-color: #da4453;
+  box-shadow: none; }
+
+.ui-widget-content a {
+  color: #eff0f1; }
+.ui-widget-content .ui-state-focus {
+  border-color: #3daee9;
+  background: rgba(61, 174, 233, 0.25);
+  color: #eff0f1; }
 
 /* App Settings ------------------------------------------------------------- */
 #app-settings-header {

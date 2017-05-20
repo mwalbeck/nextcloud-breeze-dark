@@ -115,8 +115,28 @@
 	}
 }
 
-.shareTabView .icon {
-	opacity: 0.5;
+.shareTabView {
+	.icon {
+		opacity: 0.5;
+	}
+
+	.error {
+		color: $foreground-negative;
+		border-color: $background-negative;
+		box-shadow: none;
+	}
+}
+
+.ui-widget-content {
+	a {
+		color: $foreground-normal;
+	}
+
+	.ui-state-focus {
+		border-color: $decoration-active;
+		background: $background-active-hover;
+		color: $foreground-normal;
+	}
 }
 
 /* App Settings ------------------------------------------------------------- */
