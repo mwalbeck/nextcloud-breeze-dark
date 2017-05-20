@@ -13,7 +13,7 @@
 	}
 
 	a.active::before {
-		border-bottom-color: $background-normal;
+		border-bottom-color: transparent;
 	}
 
 	&:hover a::before {

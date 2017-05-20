@@ -790,7 +790,7 @@ ul.multiselectoptions {
   -o-filter: none;
   filter: none; }
 #appmenu li a.active::before {
-  border-bottom-color: #31363b; }
+  border-bottom-color: transparent; }
 #appmenu li:hover a::before {
   border-bottom-color: #706f6e; }
 
