@@ -852,6 +852,14 @@ ul.multiselectoptions {
   border-color: #da4453;
   box-shadow: none; }
 
+.versionsTabView li {
+  border-color: #706f6e; }
+  .versionsTabView li:hover {
+    background: rgba(61, 174, 233, 0.25); }
+.versionsTabView a {
+  opacity: 1;
+  color: #bdc3c7; }
+
 .ui-widget-content a {
   color: #eff0f1; }
 .ui-widget-content .ui-state-focus {

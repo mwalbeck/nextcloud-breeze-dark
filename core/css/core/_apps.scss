@@ -123,6 +123,22 @@
 	}
 }
 
+.versionsTabView {
+
+	li {
+		border-color: $decoration-normal;
+
+		&:hover {
+			background: $background-active-hover;
+		}
+	}
+
+	a {
+		opacity: 1;
+		color: $foreground-inactive;
+	}
+}
+
 .ui-widget-content {
 	a {
 		color: $foreground-normal;
