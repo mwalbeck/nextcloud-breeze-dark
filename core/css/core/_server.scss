@@ -66,6 +66,10 @@
 	background-color: $background-normal;
 }
 
+#app-navigation + #app-content #controls {
+	margin-top: 1px;
+}
+
 /* Breadcrumbs -------------------------------------------------------------- */
 
 div.crumb a, div.crumb > span {
@@ -531,12 +535,8 @@ ul.multiselectoptions {
 
 #body-public {
 
-	#content-wrapper #content {
-		border-top: 1px solid $decoration-normal;
-
-		#preview {
-			background: inherit;
-		}
+	#content-wrapper #content #preview {
+		background: inherit;
 	}
 
 	footer .info {

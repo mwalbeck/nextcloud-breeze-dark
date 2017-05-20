@@ -474,6 +474,9 @@ input[type="button"] {
 #controls {
   background-color: #31363b; }
 
+#app-navigation + #app-content #controls {
+  margin-top: 1px; }
+
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
   color: #bdc3c7; }
@@ -754,10 +757,8 @@ ul.multiselectoptions {
   border: 1px solid #706f6e; }
 
 /* Public view for file sharing --------------------------------------------- */
-#body-public #content-wrapper #content {
-  border-top: 1px solid #706f6e; }
-  #body-public #content-wrapper #content #preview {
-    background: inherit; }
+#body-public #content-wrapper #content #preview {
+  background: inherit; }
 #body-public footer .info, #body-public footer .info a {
   color: #bdc3c7; }
 
@@ -797,9 +798,6 @@ ul.multiselectoptions {
 #app-content {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
-
-#app-navigation + #app-content #controls {
-  margin-top: 1px; }
 
 /* App Navigation ----------------------------------------------------------- */
 #app-navigation {
