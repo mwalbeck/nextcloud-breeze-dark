@@ -451,14 +451,8 @@ input[type="button"] {
     color: #bdc3c7; }
 
 /* Header ------------------------------------------------------------------- */
-#header .logo {
-  background-image: url("../img/logo.svg");
-  width: 250px;
-  height: 121px; }
-#header .logo-icon {
-  background-image: url("../img/logo-icon.svg");
-  width: 62px;
-  height: 34px; }
+#header .logo, #header .logo-icon {
+  background-image: url("../img/logo.svg"); }
 
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #31363b; }
