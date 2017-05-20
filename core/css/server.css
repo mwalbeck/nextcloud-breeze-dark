@@ -203,6 +203,9 @@ select {
 .oc-dialog-close {
   background: url("../img/actions/close.svg") no-repeat center; }
 
+.select2-container .select2-choice .select2-arrow b {
+  background: url("../img/actions/triangle-s.svg") no-repeat center !important; }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
