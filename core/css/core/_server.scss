@@ -445,13 +445,21 @@ ul.multiselectoptions {
 
 .select2-container {
 	
-	.select2-choice {
+	.select2-choices {
 		background-color: $background-dark;
 		color: $foreground-normal;
 		border-color: $decoration-normal;
+
+		.select2-search-field {
+			background: $background-dark;
+		}
+
+		.select2-input {
+			background: $background-dark;
+		}
 	}
 
-	.select2-choice .select2-search-choice {
+	.select2-choices .select2-search-choice {
 		background-color: $background-normal;
 		border-color: $decoration-normal;
 		color: $foreground-normal;
@@ -462,6 +470,17 @@ ul.multiselectoptions {
 		&.select2-search-choice-focus {
 			background-color: $background-normal;
 			border-color: $decoration-active;
+		}
+	}
+
+	.select2-choice {
+		background: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal !important;
+
+		.select2-arrow {
+			background: $background-normal;
+			border-color: $decoration-normal;
 		}
 	}
 }
@@ -492,6 +511,11 @@ ul.multiselectoptions {
 			color: $foreground-normal;
 		}
 	}
+}
+
+.select2-dropdown-open .select2-choice {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .activitysubject strong.systemtag {
