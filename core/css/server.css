@@ -209,6 +209,9 @@ select {
 #show + label, #dbpassword-toggle + label, #personal-show + label {
   background-image: url("../img/actions/toggle.svg?v=1"); }
 
+.nav-icon-second-factor-backup-codes {
+  background-image: url("../img/actions/password.svg?v=1"); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -1288,11 +1291,10 @@ td.date, td.date > span {
       background-color: #3daee9; }
 
 /* Two Factor U2F */
-.two-factor-link {
-  padding: 0 12px;
-  color: #bdc3c7; }
-  .two-factor-link:hover {
-    color: #fcfcfc; }
+.two-factor-link .button {
+  color: #bdc3c7 !important; }
+  .two-factor-link .button:hover {
+    color: #fcfcfc !important; }
 
 #body-login .warning {
   background-color: #232629; }

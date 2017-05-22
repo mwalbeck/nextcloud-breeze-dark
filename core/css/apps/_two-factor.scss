@@ -1,10 +1,9 @@
 /* Two Factor U2F */
-.two-factor-link {
-	padding: 0 12px;
-	color: $foreground-inactive;
+.two-factor-link .button {
+	color: $foreground-inactive !important;
 
 	&:hover {
-		color: $foreground-active;
+		color: $foreground-active !important;
 	}
 }
 
