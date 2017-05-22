@@ -1269,6 +1269,10 @@ td.date, td.date > span {
 .notification:not(:last-child) {
   border-bottom: 1px solid #706f6e; }
 
+/* Retention ---------------------------------------------------------------- */
+#retention #retention-list td {
+  border-color: #706f6e; }
+
 /* Text Editor -------------------------------------------------------------- */
 #editor_controls {
   background-color: #31363b; }
