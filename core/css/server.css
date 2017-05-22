@@ -206,6 +206,9 @@ select {
 .select2-container .select2-choice .select2-arrow b {
   background: url("../img/actions/triangle-s.svg") no-repeat center !important; }
 
+#show + label, #dbpassword-toggle + label, #personal-show + label {
+  background-image: url("../img/actions/toggle.svg?v=1"); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -755,6 +758,10 @@ ul.multiselectoptions {
   color: #eff0f1;
   box-shadow: none;
   border: 1px solid #706f6e; }
+
+#adminaccount .tooltip-inner {
+  background-color: transparent;
+  border: none; }
 
 /* Public view for file sharing --------------------------------------------- */
 #body-public #content-wrapper #content #preview {

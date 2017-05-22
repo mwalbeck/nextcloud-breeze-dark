@@ -252,6 +252,10 @@ select {
 	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
 }
 
+#show + label, #dbpassword-toggle + label, #personal-show + label {
+	background-image: url('../img/actions/toggle.svg?v=1');
+}
+
 /* CSS tricks to change icon color */
 
 #navigation .app-icon {

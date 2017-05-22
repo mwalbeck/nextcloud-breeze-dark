@@ -531,6 +531,11 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
+#adminaccount .tooltip-inner {
+	background-color: transparent;
+	border: none;
+}
+
 /* Public view for file sharing --------------------------------------------- */
 
 #body-public {
