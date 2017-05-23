@@ -1276,6 +1276,12 @@ td.date, td.date > span {
 #retention #retention-list td {
   border-color: #706f6e; }
 
+/* SSO & SAML authentication ------------------------------------------------ */
+#user-saml-settings .toggle {
+  color: #2980b9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1; }
+
 /* Text Editor -------------------------------------------------------------- */
 #editor_controls {
   background-color: #31363b; }
