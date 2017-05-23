@@ -442,7 +442,7 @@ input[type="button"] {
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-  background-image: none !important;
+  background-image: url(/index.php/apps/theming/loginbackground) !important;
   background-color: #31363b !important; }
   #body-login p.info {
     color: #bdc3c7; }
