@@ -693,7 +693,7 @@ ul.multiselectoptions {
     -moz-box-shadow: none;
     box-shadow: none; }
 
-/* Tags --------------------------------------------------------------------- */
+/* Dropdown Selects --------------------------------------------------------- */
 .select2-container-multi .select2-choices, .select2-container-multi.select2-container-active .select2-choices {
   background-color: #232629;
   color: #eff0f1;
@@ -737,19 +737,21 @@ ul.multiselectoptions {
     background: #31363b;
     border-color: #706f6e; }
 
-#select2-drop {
+#select2-drop, .select2-drop {
   background-color: #31363b;
   color: #eff0f1; }
-  #select2-drop.select2-drop-active {
+  #select2-drop.select2-drop-active, .select2-drop.select2-drop-active {
     border-color: #706f6e; }
   #select2-drop .select2-results .select2-result,
   #select2-drop .select2-results .select2-no-results,
-  #select2-drop .select2-results .select2-searching {
+  #select2-drop .select2-results .select2-searching, .select2-drop .select2-results .select2-result,
+  .select2-drop .select2-results .select2-no-results,
+  .select2-drop .select2-results .select2-searching {
     background-color: #232629;
     color: #eff0f1; }
-  #select2-drop .select2-results .select2-result.select2-selected {
+  #select2-drop .select2-results .select2-result.select2-selected, .select2-drop .select2-results .select2-result.select2-selected {
     background-color: #31363b; }
-  #select2-drop .select2-results .select2-result.select2-highlighted {
+  #select2-drop .select2-results .select2-highlighted, #select2-drop .select2-results .select2-result.select2-highlighted, .select2-drop .select2-results .select2-highlighted, .select2-drop .select2-results .select2-result.select2-highlighted {
     background-color: #4d4d4d;
     color: #eff0f1; }
 
@@ -1079,7 +1081,6 @@ ul.multiselectoptions {
 
 .app-content-list {
   background-color: #232629;
-  border-top: 1px solid #706f6e;
   border-right: 1px solid #706f6e; }
 
 .app-content-list-item {
@@ -1106,31 +1107,25 @@ ul.multiselectoptions {
   background-color: #31363b; }
 
 .contactdetails__header {
-  background-color: #3daee9 !important;
   color: #eff0f1; }
+  .contactdetails__header .contactdetails__name {
+    color: #eff0f1;
+    font-weight: 600; }
   .contactdetails__header .contactdetails__org, .contactdetails__header .contactdetails__title {
     color: #eff0f1 !important;
     font-weight: 600; }
     .contactdetails__header .contactdetails__org:placeholder-shown, .contactdetails__header .contactdetails__title:placeholder-shown {
       color: #eff0f1;
       opacity: 1; }
-
-.contactdetails__name {
-  color: #eff0f1;
-  font-weight: 600; }
+  .contactdetails__header #details-actions a, .contactdetails__header #details-actions button {
+    opacity: 0.7; }
 
 detailsitem .icon-delete {
   opacity: 0.4; }
 
-input.newAddressBookSubmit {
+input.newAddressBookSubmit, input.newAddressBookSubmit:hover, input.newAddressBookSubmit:focus, input.newAddressBookSubmit:active {
   border: none;
-  background-color: inherit; }
-  input.newAddressBookSubmit:hover, input.newAddressBookSubmit:focus, input.newAddressBookSubmit:active {
-    border: none;
-    background-color: inherit; }
-
-input.newAddressBookInput {
-  padding: 5px; }
+  background-color: inherit !important; }
 
 /* External Storage --------------------------------------------------------- */
 .dropdown {

@@ -408,7 +408,8 @@ ul.multiselectoptions {
 	}
 }
 
-/* Tags --------------------------------------------------------------------- */
+/* Dropdown Selects --------------------------------------------------------- */
+// Used by tags selection and some dropdowns
 
 .select2-container-multi {
 
@@ -485,7 +486,7 @@ ul.multiselectoptions {
 	}
 }
 
-#select2-drop {
+#select2-drop, .select2-drop {
 	background-color: $background-normal;
 	color: $foreground-normal;
 
@@ -506,7 +507,7 @@ ul.multiselectoptions {
 			background-color: $background-normal;
 		}
 
-		.select2-result.select2-highlighted {
+		.select2-highlighted, .select2-result.select2-highlighted {
 			background-color: $background-alternate;
 			color: $foreground-normal;
 		}
