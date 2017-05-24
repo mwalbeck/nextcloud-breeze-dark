@@ -765,6 +765,66 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
+/* Date picker -------------------------------------------------------------- */
+.ui-widget-content {
+  background: #31363b;
+  border: 1px solid #706f6e;
+  color: #eff0f1; }
+
+.ui-widget-header {
+  background: inherit;
+  color: #eff0f1;
+  border: none; }
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+  color: #eff0f1;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid #706f6e;
+  background: #232629;
+  font-weight: bold; }
+
+.ui-datepicker table a.ui-state-default:hover,
+.ui-timepicker table a.ui-state-default:hover {
+  background: rgba(61, 174, 233, 0.25); }
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+  opacity: .5;
+  filter: Alpha(Opacity=50);
+  font-weight: normal; }
+
+.ui-datepicker-calendar tbody tr:hover, .ui-datepicker-calendar tbody tr:focus, .ui-datepicker-calendar tbody tr:active, .ui-timepicker tbody tr:hover, .ui-timepicker tbody tr:focus, .ui-timepicker tbody tr:active {
+  background-color: inherit; }
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  border: 1px solid #706f6e;
+  background: #31363b; }
+
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev-hover {
+  background: #31363b;
+  border-color: #3daee9; }
+
+div.ui-datepicker, div.ui-timepicker {
+  background: #31363b;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: none;
+  color: #eff0f1; }
+
+.ui-datepicker table a.ui-state-active,
+.ui-timepicker table a.ui-state-active {
+  background: #3daee9;
+  border-radius: 3px 3px 3px 3px;
+  color: #fcfcfc;
+  text-shadow: none; }
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+  background-color: #232629;
+  border: 1px solid #706f6e;
+  box-shadow: none; }
+
 /* Tooltips ----------------------------------------------------------------- */
 .tooltip.right .tooltip-arrow {
   border-right-color: #706f6e; }
@@ -1018,7 +1078,8 @@ ul.multiselectoptions {
 
 .modal-open .modal.popover, .modal-open .modal.import {
   background: #31363b;
-  box-shadow: none; }
+  box-shadow: none;
+  border: 1px solid #706f6e; }
 
 .modal-dialog .modal-content #app-sidebar {
   border: none; }
@@ -1031,48 +1092,6 @@ ul.multiselectoptions {
 .advanced--fieldset-attendeelist .advanced--toggler:hover,
 .advanced--fieldset-reminderlist .advanced--toggler:hover {
   background: rgba(61, 174, 233, 0.25); }
-
-.ui-widget-content {
-  background: #31363b;
-  border: 1px solid #706f6e; }
-
-.ui-datepicker th {
-  color: #eff0f1; }
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-  border: 1px solid #706f6e;
-  background: #232629;
-  font-weight: bold;
-  color: #bdc3c7; }
-
-.ui-state-hover,
-.ui-widget-header .ui-state-hover {
-  background-color: #31363b;
-  color: #eff0f1; }
-
-.ui-widget-content .ui-state-hover {
-  background-color: rgba(61, 174, 233, 0.25); }
-
-.ui-priority-secondary,
-.ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
-  opacity: .5;
-  filter: Alpha(Opacity=50);
-  font-weight: normal; }
-
-.ui-datepicker-calendar tbody tr:hover, .ui-datepicker-calendar tbody tr:focus, .ui-datepicker-calendar tbody tr:active, .ui-timepicker tbody tr:hover, .ui-timepicker tbody tr:focus, .ui-timepicker tbody tr:active {
-  background-color: inherit; }
-
-.ui-widget-header {
-  border: 1px solid #3daee9;
-  background: #3daee9;
-  color: #eff0f1; }
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
-  border: 1px solid #706f6e;
-  background: #31363b; }
 
 .app-content-list {
   background-color: #232629;
@@ -1672,40 +1691,6 @@ div.percentdone {
 #app-sidebar div.content-wrapper div.footer {
   border-top: none;
   box-shadow: none; }
-
-div.ui-datepicker, div.ui-timepicker {
-  background: #31363b;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: none;
-  color: #eff0f1; }
-
-.ui-datepicker .ui-widget-header, .ui-timepicker .ui-widget-header {
-  background: inherit;
-  color: #eff0f1; }
-
-.ui-datepicker table thead th, .ui-timepicker table thead th {
-  color: #eff0f1; }
-
-.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
-  color: #eff0f1;
-  border-radius: 3px 3px 3px 3px; }
-
-.ui-datepicker table a.ui-state-default:hover, .ui-timepicker table a.ui-state-default:hover {
-  background: rgba(61, 174, 233, 0.25); }
-
-.ui-datepicker table td.selected a, .ui-timepicker table td.selected a {
-  background: #3daee9;
-  border-radius: 3px 3px 3px 3px;
-  color: #fcfcfc;
-  text-shadow: none; }
-
-#app-sidebar div.content-wrapper .body .section input.focus {
-  background-color: #232629;
-  border: 1px solid #706f6e;
-  box-shadow: none; }
-
-.ui-widget-content {
-  color: #eff0f1; }
 
 #content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
   color: #eff0f1;

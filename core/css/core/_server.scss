@@ -531,6 +531,80 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
+/* Date picker -------------------------------------------------------------- */
+
+.ui-widget-content {
+	background: $background-normal;
+	border: 1px solid $decoration-normal;
+	color: $foreground-normal;
+}
+
+.ui-widget-header {
+	background: inherit;
+	color: $foreground-normal;
+	border: none;
+}
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+	color: $foreground-normal;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid $decoration-normal;
+	background: $background-dark;
+	font-weight: bold;
+}
+
+.ui-datepicker table a.ui-state-default:hover,
+.ui-timepicker table a.ui-state-default:hover {
+	background: $background-active-hover;
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+	font-weight: normal;
+}
+
+.ui-datepicker-calendar tbody tr, .ui-timepicker tbody tr {
+	&:hover, &:focus, &:active {
+		background-color: inherit;
+	}
+}
+
+.ui-datepicker-prev, 
+.ui-datepicker-next {
+	border: 1px solid $decoration-normal;
+	background: $background-normal;
+}
+
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev-hover, {
+	background: $background-normal;
+	border-color: $decoration-active;
+}
+
+div.ui-datepicker, div.ui-timepicker {
+    background: $background-normal;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: none;
+    color: $foreground-normal;
+}
+
+.ui-datepicker table a.ui-state-active,
+.ui-timepicker table a.ui-state-active {
+	background: $background-active;
+	border-radius: 3px 3px 3px 3px;
+	color: $foreground-active;
+	text-shadow: none;
+}
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+}
+
 /* Tooltips ----------------------------------------------------------------- */
 
 .tooltip {

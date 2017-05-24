@@ -139,6 +139,7 @@
 	.modal.popover, .modal.import {
 		background: $background-normal;
 		box-shadow: none;
+		border: 1px solid $decoration-normal;
 	}
 }
 
@@ -161,58 +162,4 @@
 .advanced--fieldset-attendeelist .advanced--toggler:hover, 
 .advanced--fieldset-reminderlist .advanced--toggler:hover {
 	background: $background-active-hover;
-}
-
-.ui-widget-content {
-	background: $background-normal;
-	border: 1px solid $decoration-normal;
-}
-
-.ui-datepicker th {
-	color: $foreground-normal;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default, 
-.ui-widget-header .ui-state-default {
-	border: 1px solid $decoration-normal;
-	background: $background-dark;
-	font-weight: bold;
-	color: $foreground-inactive;
-}
-
-.ui-state-hover,
-.ui-widget-header .ui-state-hover {
-	background-color: $background-normal;
-	color: $foreground-normal;
-}
-
-.ui-widget-content .ui-state-hover {
-	background-color: $background-active-hover;
-}
-
-
-.ui-priority-secondary,
-.ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
-	opacity: .5;
-	filter: Alpha(Opacity=50);
-	font-weight: normal;
-}
-
-.ui-datepicker-calendar tbody tr, .ui-timepicker tbody tr {
-	&:hover, &:focus, &:active {
-		background-color: inherit;
-	}
-}
-
-.ui-widget-header {
-	border: 1px solid $decoration-active;
-	background: $background-active;
-	color: $foreground-normal;
-}
-
-.ui-datepicker-prev, 
-.ui-datepicker-next {
-	border: 1px solid $decoration-normal;
-	background: $background-normal;
 }
