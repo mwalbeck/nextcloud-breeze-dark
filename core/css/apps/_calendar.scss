@@ -1,28 +1,75 @@
-.app-calendar #app-content {
-	overflow-y: hidden;
-	padding-right: 0 !important;
-}
+.app-calendar {
+	
+	#app-content {
+		overflow-y: hidden;
+		padding-right: 0 !important;
+	}
 
-#app-navigation .new-entity {
-	color: $foreground-normal;
+	#app-navigation {
 
-	&:hover {
-		background-color: $background-active-hover;
-		color: $foreground-normal;
+		.active {
+			background-color: inherit;
+		}
+
+		.new-entity {
+			color: $foreground-normal;
+
+			&:hover {
+				background-color: $background-active-hover;
+				color: $foreground-normal;
+			}
+		}
+
+		.app-navigation-entry-menu {
+			background-color: $background-normal;
+			color: $foreground-normal;
+			border: 1px solid $decoration-normal;
+			-webkit-filter: none;
+			-moz-filter: none;
+			-ms-filter: none;
+			-o-filter: none;
+			filter: none;
+
+			&::after {
+				border-bottom-color: $decoration-normal;
+			}
+		}
+
+		.togglebuttons {
+
+			.button.active {
+				color: $foreground-normal;
+				box-shadow: none;
+			}
+		}
+
+		#datepickercontainer {
+			box-shadow: none;
+
+			#datepicker table td {
+				
+				button {
+					box-shadow: none;
+					border-color: $decoration-normal;
+
+					&:hover {
+						background-color: $background-active-hover;
+					}
+				}
+			}
+		}
 	}
 }
-
-#app-navigation .app-navigation-input {
-	width: 94%;
-}
-
-.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
-	border-color: $decoration-normal;;
+ 
+.fc-unthemed {
+	
+	th, td, thead, tbody, .fc-divider, .fc-row, .fc-popover {
+		border-color: $decoration-normal;
+	}
 }
 
 #fullcalendar {
 	background-color: $background-dark;
-	border-top: 1px solid $decoration-normal;
 
 	table thead th {
 		background-color: $background-dark;
@@ -32,17 +79,30 @@
 		background-color: $background-normal;
 	}
 
-	&.fc-unthemed tr td {
-		border-top-color: $decoration-normal;
+	&.fc-unthemed {
+
+		tr td {
+			border-top-color: $decoration-normal;
+		}
+		
+		.fc-today {
+			background-color: $background-active !important;
+			color: $foreground-active;
+			border-color: $decoration-normal;
+
+			span.fc-day-number {
+				font-weight: 600;
+			}
+		}
 	}
 
-	&.fc-unthemed .fc-today {
-		background-color: $background-active !important;
-		color: $foreground-active;
-		border-color: $decoration-normal;
+	td.fc-day {
+		&.fc-sat, &.fc-sun {
+			background-color: $background-dark;
 
-		span.fc-day-number {
-			font-weight: 600;
+			&.fc-other-month {
+				background-color: $background-normal;
+			}
 		}
 	}
 }
@@ -54,18 +114,19 @@
 	border-bottom: 1px solid $decoration-normal;
 }
 
-.fc th, .fc .fc-axis, .fc-day-grid-event .fc-time, .fc-ltr .fc-basic-view .fc-day-number, .fc-ltr .fc-basic-view .fc-week-number, .fc-time-grid-event .fc-time {
+.fc th,
+.fc .fc-axis,
+.fc-day-grid-event .fc-time,
+.fc-ltr .fc-basic-view .fc-day-number,
+.fc-ltr .fc-basic-view .fc-week-number,
+.fc-time-grid-event .fc-time {
 	opacity: 1;
 	font-size: 85%;
 }
 
+// Centers the position of the day number in the corner
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
 	padding-right: 6px;
-}
-
-.app-calendar #app-navigation #calendarlistcontainer ul.app-navigation-list li.app-navigation-list-item.active {
-	background-color: $background-normal;
-	border-right: 1px solid $decoration-normal;
 }
 
 #app-settings .settings-fieldset .settings-upload {
@@ -73,73 +134,32 @@
 	border: 1px solid $decoration-normal;
 }
 
-#app-navigation .app-navigation-entry-menu {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	border: 1px solid $decoration-normal;
-	-webkit-filter: none;
-	-moz-filter: none;
-	-ms-filter: none;
-	-o-filter: none;
-	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
+.modal-open {
+	
+	.modal.popover, .modal.import {
+		background: $background-normal;
+		box-shadow: none;
 	}
-}
-
-#app-navigation .togglebuttons {
-	.button.active {
-		background-color: $background-active;
-		color: $foreground-active;
-		border-color: $decoration-active;
-	}
-
-	.button.today:focus {
-		background-color: $background-active;
-	}
-}
-
-#datepicker table tbody tr {
-	background-color: $background-normal;
-}
-
-.app-calendar #app-navigation .active {
-	background-color: inherit;
-}
-
-.app-calendar #app-navigation {
-	#datepickercontainer #datepicker table td {
-		border: none;
-
-		button {
-			&:hover {
-				border-color: $decoration-normal;
-				background-color: $background-active-hover;
-			}
-
-			&:active, &:focus {
-				background-color: $background-active;
-				border-color: $decoration-normal;
-			}
-		}
-	}
-}
-
-.modal-open .modal.popover, .modal-open .modal.import {
-	background: $background-normal;
-	box-shadow: none;
 }
 
 .modal-dialog .modal-content #app-sidebar {
 	border: none;
 }
 
-.advanced .advanced--button-area {
-	border-color: $decoration-normal;
+.advanced {
+
+	// Force location field in app sidebar to be dark
+	.advanced--input {
+		background: $background-dark !important;
+	}
+
+	.advanced--button-area {
+		border-color: $decoration-normal;
+	}
 }
 
-.advanced--fieldset-attendeelist .advanced--toggler:hover, .advanced--fieldset-reminderlist .advanced--toggler:hover {
+.advanced--fieldset-attendeelist .advanced--toggler:hover, 
+.advanced--fieldset-reminderlist .advanced--toggler:hover {
 	background: $background-active-hover;
 }
 
@@ -152,7 +172,8 @@
 	color: $foreground-normal;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, 
+.ui-state-default,
+.ui-widget-content .ui-state-default, 
 .ui-widget-header .ui-state-default {
 	border: 1px solid $decoration-normal;
 	background: $background-dark;
@@ -160,7 +181,8 @@
 	color: $foreground-inactive;
 }
 
-.ui-state-hover, .ui-widget-header .ui-state-hover {
+.ui-state-hover,
+.ui-widget-header .ui-state-hover {
 	background-color: $background-normal;
 	color: $foreground-normal;
 }
@@ -170,7 +192,8 @@
 }
 
 
-.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
 	opacity: .5;
 	filter: Alpha(Opacity=50);
 	font-weight: normal;
@@ -188,11 +211,8 @@
 	color: $foreground-normal;
 }
 
-.ui-datepicker-prev, .ui-datepicker-next {
+.ui-datepicker-prev, 
+.ui-datepicker-next {
 	border: 1px solid $decoration-normal;
 	background: $background-normal;
-}
-
-.advanced .advanced--input {
-	background: $background-dark !important;
 }

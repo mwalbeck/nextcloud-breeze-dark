@@ -943,22 +943,40 @@ ul.multiselectoptions {
 .app-calendar #app-content {
   overflow-y: hidden;
   padding-right: 0 !important; }
-
-#app-navigation .new-entity {
+.app-calendar #app-navigation .active {
+  background-color: inherit; }
+.app-calendar #app-navigation .new-entity {
   color: #eff0f1; }
-  #app-navigation .new-entity:hover {
+  .app-calendar #app-navigation .new-entity:hover {
     background-color: rgba(61, 174, 233, 0.25);
     color: #eff0f1; }
-
-#app-navigation .app-navigation-input {
-  width: 94%; }
+.app-calendar #app-navigation .app-navigation-entry-menu {
+  background-color: #31363b;
+  color: #eff0f1;
+  border: 1px solid #706f6e;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none; }
+  .app-calendar #app-navigation .app-navigation-entry-menu::after {
+    border-bottom-color: #706f6e; }
+.app-calendar #app-navigation .togglebuttons .button.active {
+  color: #eff0f1;
+  box-shadow: none; }
+.app-calendar #app-navigation #datepickercontainer {
+  box-shadow: none; }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td button {
+    box-shadow: none;
+    border-color: #706f6e; }
+    .app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
 
 .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
   border-color: #706f6e; }
 
 #fullcalendar {
-  background-color: #232629;
-  border-top: 1px solid #706f6e; }
+  background-color: #232629; }
   #fullcalendar table thead th {
     background-color: #232629; }
   #fullcalendar table tbody tr td.fc-other-month {
@@ -971,6 +989,10 @@ ul.multiselectoptions {
     border-color: #706f6e; }
     #fullcalendar.fc-unthemed .fc-today span.fc-day-number {
       font-weight: 600; }
+  #fullcalendar td.fc-day.fc-sat, #fullcalendar td.fc-day.fc-sun {
+    background-color: #232629; }
+    #fullcalendar td.fc-day.fc-sat.fc-other-month, #fullcalendar td.fc-day.fc-sun.fc-other-month {
+      background-color: #31363b; }
 
 .fc-basic-view .fc-day-top .fc-week-number {
   background-color: #31363b;
@@ -978,54 +1000,21 @@ ul.multiselectoptions {
   border-right: 1px solid #706f6e;
   border-bottom: 1px solid #706f6e; }
 
-.fc th, .fc .fc-axis, .fc-day-grid-event .fc-time, .fc-ltr .fc-basic-view .fc-day-number, .fc-ltr .fc-basic-view .fc-week-number, .fc-time-grid-event .fc-time {
+.fc th,
+.fc .fc-axis,
+.fc-day-grid-event .fc-time,
+.fc-ltr .fc-basic-view .fc-day-number,
+.fc-ltr .fc-basic-view .fc-week-number,
+.fc-time-grid-event .fc-time {
   opacity: 1;
   font-size: 85%; }
 
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
   padding-right: 6px; }
 
-.app-calendar #app-navigation #calendarlistcontainer ul.app-navigation-list li.app-navigation-list-item.active {
-  background-color: #31363b;
-  border-right: 1px solid #706f6e; }
-
 #app-settings .settings-fieldset .settings-upload {
   background-color: #31363b;
   border: 1px solid #706f6e; }
-
-#app-navigation .app-navigation-entry-menu {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none; }
-  #app-navigation .app-navigation-entry-menu::after {
-    border-bottom-color: #706f6e; }
-
-#app-navigation .togglebuttons .button.active {
-  background-color: #3daee9;
-  color: #fcfcfc;
-  border-color: #3daee9; }
-#app-navigation .togglebuttons .button.today:focus {
-  background-color: #3daee9; }
-
-#datepicker table tbody tr {
-  background-color: #31363b; }
-
-.app-calendar #app-navigation .active {
-  background-color: inherit; }
-
-.app-calendar #app-navigation #datepickercontainer #datepicker table td {
-  border: none; }
-  .app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
-    border-color: #706f6e;
-    background-color: rgba(61, 174, 233, 0.25); }
-  .app-calendar #app-navigation #datepickercontainer #datepicker table td button:active, .app-calendar #app-navigation #datepickercontainer #datepicker table td button:focus {
-    background-color: #3daee9;
-    border-color: #706f6e; }
 
 .modal-open .modal.popover, .modal-open .modal.import {
   background: #31363b;
@@ -1034,10 +1023,13 @@ ul.multiselectoptions {
 .modal-dialog .modal-content #app-sidebar {
   border: none; }
 
+.advanced .advanced--input {
+  background: #232629 !important; }
 .advanced .advanced--button-area {
   border-color: #706f6e; }
 
-.advanced--fieldset-attendeelist .advanced--toggler:hover, .advanced--fieldset-reminderlist .advanced--toggler:hover {
+.advanced--fieldset-attendeelist .advanced--toggler:hover,
+.advanced--fieldset-reminderlist .advanced--toggler:hover {
   background: rgba(61, 174, 233, 0.25); }
 
 .ui-widget-content {
@@ -1047,21 +1039,24 @@ ul.multiselectoptions {
 .ui-datepicker th {
   color: #eff0f1; }
 
-.ui-state-default, .ui-widget-content .ui-state-default,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
   border: 1px solid #706f6e;
   background: #232629;
   font-weight: bold;
   color: #bdc3c7; }
 
-.ui-state-hover, .ui-widget-header .ui-state-hover {
+.ui-state-hover,
+.ui-widget-header .ui-state-hover {
   background-color: #31363b;
   color: #eff0f1; }
 
 .ui-widget-content .ui-state-hover {
   background-color: rgba(61, 174, 233, 0.25); }
 
-.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
   opacity: .5;
   filter: Alpha(Opacity=50);
   font-weight: normal; }
@@ -1074,12 +1069,10 @@ ul.multiselectoptions {
   background: #3daee9;
   color: #eff0f1; }
 
-.ui-datepicker-prev, .ui-datepicker-next {
+.ui-datepicker-prev,
+.ui-datepicker-next {
   border: 1px solid #706f6e;
   background: #31363b; }
-
-.advanced .advanced--input {
-  background: #232629 !important; }
 
 .app-content-list {
   background-color: #232629;
