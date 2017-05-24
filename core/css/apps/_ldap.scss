@@ -1,0 +1,11 @@
+#ldapSettings {
+    > fieldset {
+        background-color: $background-normal;
+    }
+
+    ul.ui-tabs-nav .ui-tabs-active {
+        &, & > a {
+            background-color: $background-dark;
+        }
+    }
+}
