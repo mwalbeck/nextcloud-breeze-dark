@@ -504,6 +504,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 #contactsmenu > .menu .contact {
   border-bottom-color: #706f6e; }
+#contactsmenu > .menu .content .footer a {
+  opacity: 1; }
 
 #emptycontent, .emptycontent {
   color: #bdc3c7; }
