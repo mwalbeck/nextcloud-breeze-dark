@@ -943,6 +943,10 @@ div.ui-datepicker, div.ui-timepicker {
   #app-navigation .add-new-popup {
     box-shadow: none;
     border-color: #3daee9; }
+  #app-navigation input {
+    background: #232629 !important; }
+  #app-navigation select {
+    background: #31363b !important; }
 
 .nav-trashbin {
   background-color: #31363b;
@@ -1124,6 +1128,48 @@ div.ui-datepicker, div.ui-timepicker {
 .advanced--fieldset-reminderlist .advanced--toggler:hover {
   background: rgba(61, 174, 233, 0.25); }
 
+#circles_list div {
+  color: #eff0f1;
+  border-color: #706f6e;
+  background-color: #31363b; }
+  #circles_list div:hover {
+    background: rgba(61, 174, 233, 0.25); }
+#circles_list .selected {
+  background: #3daee9 !important; }
+
+#circles_new_type_definition div {
+  color: #eff0f1; }
+
+#mainui #circle_details #name {
+  color: #fcfcfc; }
+#mainui #circle_details #type {
+  color: #eff0f1; }
+#mainui #circle_details .lightenbg {
+  background: #3daee9; }
+#mainui #memberslist .entry td {
+  color: #eff0f1; }
+
+#rightpanel .lightenbg {
+  background: #4d4d4d; }
+
+div.circle {
+  border-bottom-color: #706f6e; }
+  div.circle:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  div.circle .title, div.circle .type, div.circle .owner {
+    color: #eff0f1; }
+
+#app-navigation.circles.selected {
+  background-color: #232629 !important;
+  border-top: 1px solid #706f6e; }
+#app-navigation.circles .circle.selected {
+  background-color: #3daee9; }
+
+#members_search_result {
+  border-color: #706f6e;
+  color: #eff0f1;
+  background: #31363b; }
+
 .app-content-list {
   background-color: #232629;
   border-right: 1px solid #706f6e; }
@@ -1282,6 +1328,13 @@ td.date, td.date > span {
   border: 1px solid #706f6e; }
 
 #link {
+  border-color: #706f6e; }
+
+#groupfolders-react-root th {
+  border-bottom-color: #706f6e; }
+
+.group-edit {
+  background-color: #31363b;
   border-color: #706f6e; }
 
 #ldapSettings > fieldset {

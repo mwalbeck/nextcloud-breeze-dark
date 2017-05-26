@@ -74,6 +74,14 @@
 		box-shadow: none;
 		border-color: $decoration-active;
 	}
+
+	input {
+		background: $background-dark !important;
+	}
+
+	select {
+		background: $background-normal !important;
+	}
 }
 
 .nav-trashbin {
