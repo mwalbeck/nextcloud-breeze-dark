@@ -260,8 +260,45 @@ select {
 	background-image: url('../img/actions/password.svg?v=1');
 }
 
+.icon-announcement {
+	background-image: url('../img/announcementcenter.svg');
+}
+
+.nav-icon-totp-second-factor-auth {
+	background-image: url('../img/twofactor-totp.svg?v=1');
+}
+
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+	background-image: url('../img/twofactor-u2f.svg?v=1');
+}
+
+.social-facebook,
+.icon-social-facebook {
+	background-image: url('../img/social/facebook.svg');
+}
+
+.social-twitter,
+.icon-social-twitter {
+	background-image: url('../img/social/twitter.svg');
+}
+
+.social-googleplus,
+.icon-social-googleplus {
+	background-image: url('../img/social/googleplus.svg');
+}
+
+.social-diaspora,
+.icon-social-diaspora {
+	background-image: url('../img/social/diaspora.svg');
+}
+
+.icon-social-email {
+	background-image: url('../img/email.svg');
+}
+
 /* CSS tricks to change icon color */
 
+// Change the app icons in the navigation menu to white
 #navigation .app-icon {
 	filter: none;
 
@@ -274,20 +311,24 @@ img.notification-icon {
 	filter: invert(75%);
 }
 
+// Change the button, to gallery app, to white
 #controls .button.view-switcher img {
 	opacity: 0.6;
 	filter: invert(100%);
 }
 
+// Change the, to files app, button to white again since it was change to black with the above
 #controls .button.view-switcher.gallery img {
-	opacity: .5;
 	filter: invert(0%);
 }
 
-.app-files #app-content-files #controls .breadcrumb .crumb a img.svg {
+// Change home icon to white in the files app, both for 
+.app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
+.app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
 	filter: invert(100%);
 }
 
+// Change home icon in gallery app to white
 #controls #breadcrumbs .crumb a img {
 	filter: invert(100%);
 }
