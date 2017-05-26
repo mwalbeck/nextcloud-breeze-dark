@@ -261,7 +261,7 @@ select {
 }
 
 .icon-announcement {
-	background-image: url('../img/announcementcenter.svg');
+	background-image: url('../img/places/announcementcenter.svg');
 }
 
 .nav-icon-totp-second-factor-auth {
@@ -335,4 +335,9 @@ img.notification-icon {
 
 .actions a.button.new img {
 	filter: invert(75%);
+}
+
+// Make icon for impersonate in user menu white
+a.impersonate img.svg {
+	filter: invert(100%);
 }

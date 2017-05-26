@@ -213,7 +213,7 @@ select {
   background-image: url("../img/actions/password.svg?v=1"); }
 
 .icon-announcement {
-  background-image: url("../img/announcementcenter.svg"); }
+  background-image: url("../img/places/announcementcenter.svg"); }
 
 .nav-icon-totp-second-factor-auth {
   background-image: url("../img/twofactor-totp.svg?v=1"); }
@@ -265,6 +265,9 @@ img.notification-icon {
 
 .actions a.button.new img {
   filter: invert(75%); }
+
+a.impersonate img.svg {
+  filter: invert(100%); }
 
 body {
   color: #eff0f1;
