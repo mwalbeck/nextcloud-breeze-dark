@@ -1,0 +1,681 @@
+
+/* Login Screen ------------------------------------------------------------- */
+#body-login {
+	background-image: none !important;
+	background-color: $background-normal !important;
+
+	p.info {
+		color: $foreground-inactive;
+
+		a {
+			font-weight: 600;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+		
+	}
+
+	#remember_login + label {
+
+		&:hover, &:focus {
+			opacity: 1;
+			color: $foreground-inactive;
+		}
+	}
+
+	form fieldset legend,
+	form fieldset .warning-info,
+	form input[type="checkbox"] + label,
+	#datadirContent label {
+		color: $foreground-inactive;
+	}
+}
+
+/* Header ------------------------------------------------------------------- */
+
+// Logo
+#header {
+	.logo, .logo-icon {
+		background-image: url('../img/logo.svg');
+	}
+}
+
+// Header Bar
+#body-user #header, #body-settings #header, #body-public #header {
+	background-color: $background-normal;
+}
+
+/* Search ------------------------------------------------------------------- */
+
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+ .searchbox input[type="search"]:valid {
+	 color: $foreground-active;
+	 border-color: $decoration-active !important;
+	 background-color: $background-dark !important;
+ }
+
+ #app-content #searchresults {
+	 background-color: $background-normal;
+ }
+
+/* Controls ----------------------------------------------------------------- */
+
+#controls {
+	background-color: $background-normal;
+}
+
+#app-navigation + #app-content #controls {
+	margin-top: 1px;
+}
+
+/* Breadcrumbs -------------------------------------------------------------- */
+
+div.crumb a, div.crumb > span {
+	color: $foreground-inactive;
+}
+
+div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
+	-ms-filter: none;
+	opacity: 1;
+}
+
+div.crumb span.icon-shared, div.crumb span.icon-public {
+	opacity: 0.3;
+}
+
+/* Menues ------------------------------------------------------------------- */
+
+.menu {
+	box-shadow: none;
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#contactsmenu > .menu {
+	
+	.contact {
+		border-bottom-color: $decoration-normal;
+	}
+
+	.content .footer a {
+		opacity: 1;
+	}
+}
+
+ #emptycontent, .emptycontent {
+	color: $foreground-inactive;
+}
+
+.popovermenu li .menuitem {
+	color: $foreground-inactive;
+	opacity: 0.7;
+
+	&:hover {
+		color: $foreground-active;
+	}
+}
+
+.bubble {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#expanddiv {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a {
+		color: $foreground-normal;
+	}
+}
+
+#body-settings #expand::before {
+	border-bottom-color: $decoration-normal;
+}
+
+#navigation {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	a span {
+		color: $foreground-normal;
+	}
+}
+
+/* Info colours ------------------------------------------------------------- */
+
+#postsetupchecks .errors, 
+#postsetupchecks .warnings, 
+#security-warning > ul {
+	color: $foreground-negative;
+}
+
+#body-user .warning {
+	color: $foreground-negative;
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+}
+
+#body-settings .warning {
+	background: $background-negative;
+}
+
+.success {
+	color: $foreground-positive;
+}
+
+span {
+
+	&.warnings {
+		background-color: $background-negative;
+	}
+
+	&.error {
+		background-color: $background-negative;
+	}
+
+	&.success {
+		background-color: $background-positive;
+	}
+}
+
+.msg {
+
+	&.warnings {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.error {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
+/* General Settings --------------------------------------------------------- */
+
+// Section Container
+// Primarily seems to be used under settings
+.section, .followupsection {
+	color: $foreground-normal;
+
+	> span {
+		color: $foreground-inactive;
+	}
+}
+
+// Cropper
+// For cropping images, found under personal settings for adding avatar
+#cropper .inner-container {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+
+	.jcrop-holder {
+		box-shadow: none;
+	}
+}
+
+/* Personal Settings -------------------------------------------------------- */
+
+#quota {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+
+	div {
+		background-color: $background-active-hover;
+	}
+}
+
+#sessions .token-list td, #apppasswords .token-list td {
+	border-color: $decoration-normal;
+	border-top: none;
+}
+
+/* App Store ---------------------------------------------------------------- */
+
+.app-level {
+
+	span {
+		color: $foreground-normal;
+	}
+
+	.official {
+		border-color: $background-positive;
+	}
+}
+
+#apps-list {
+	&.installed {
+		
+		.app-image-icon svg {
+			opacity: 1;
+		}
+
+		.section > * {
+			border-bottom-color: $decoration-normal;
+		}
+	}
+
+	.app-name {
+		font-weight: 600;
+	}
+}
+
+.app-version {
+	color: $foreground-inactive;
+}
+
+/* Users -------------------------------------------------------------------- */
+
+#userlist th.name {
+	color: $foreground-normal;
+}
+
+// Fix for some browser showing drop down in Active colour
+select.quota-user {
+	background-color: $background-normal !important;
+
+	&:focus, &:active {
+		background-color: $background-active !important;
+	}
+
+	option {
+		background-color: $background-normal;
+	}
+}
+
+/* Files table -------------------------------------------------------------- */
+// Used by files app and file picker
+
+#filestable tbody {
+	tr {
+		background-color: $background-normal;
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: $background-alternate;
+		}
+
+		&.externalErroredRow {
+			background-color: $background-negative;
+		}
+	}
+
+	.name:focus {
+		background-color: inherit;
+	}
+}
+
+/* File picker -------------------------------------------------------------- */
+
+.oc-dialog {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+.oc-dialog-title {
+	background-color: $background-normal;
+}
+
+#oc-dialog-filepicker-content .filelist {
+	background-color: $background-dark;
+
+	td {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#oc-dialog-filepicker-content .filepicker_element_selected {
+	background-color: $background-active;
+
+	td {
+		font-weight: 600;
+	}
+
+	.filename {
+		color: $foreground-active;
+	}
+
+	&:hover {
+		background-color: $background-active;
+	}
+}
+
+.oc-dialog-buttonrow {
+	background-image: none;
+	background-color: $background-normal;
+}
+
+/* Multiselect -------------------------------------------------------------- */
+
+div.multiselect.active {
+	background-color: $background-normal;
+}
+
+ul.multiselectoptions {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Dropdown Selects --------------------------------------------------------- */
+// Used by tags selection and some dropdowns
+
+.select2-container-multi {
+
+	.select2-choices,
+	&.select2-container-active .select2-choices {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+	}
+
+	.select2-choices .select2-search-choice,
+	&.select2-container-active .select2-choices .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:hover,
+		&.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
+
+	.select2-choices .select2-search-field input {
+		color: $foreground-normal;
+
+		&.select2-active {
+			background-color: $background-dark !important;
+		}
+	}
+}
+
+.select2-container {
+	
+	.select2-choices {
+		background-color: $background-dark;
+		color: $foreground-normal;
+		border-color: $decoration-normal;
+
+		.select2-search-field {
+			background: $background-dark;
+		}
+
+		.select2-input {
+			background: $background-dark;
+		}
+	}
+
+	.select2-choices .select2-search-choice {
+		background-color: $background-normal;
+		border-color: $decoration-normal;
+		color: $foreground-normal;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:hover,
+		&.select2-search-choice-focus {
+			background-color: $background-normal;
+			border-color: $decoration-active;
+		}
+	}
+
+	.select2-choice {
+		background: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal !important;
+
+		.select2-arrow {
+			background: $background-normal;
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+#select2-drop, .select2-drop {
+	background-color: $background-normal;
+	color: $foreground-normal;
+
+	&.select2-drop-active {
+		border-color: $decoration-normal;
+	}
+
+	.select2-results {
+
+		.select2-result,
+		.select2-no-results,
+		.select2-searching {
+			background-color: $background-dark;
+			color: $foreground-normal;
+		}
+
+		.select2-result.select2-selected {
+			background-color: $background-normal;
+		}
+
+		.select2-highlighted, .select2-result.select2-highlighted {
+			background-color: $background-alternate;
+			color: $foreground-normal;
+		}
+	}
+}
+
+.select2-dropdown-open .select2-choice {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.activitysubject strong.systemtag {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+}
+
+/* Date picker -------------------------------------------------------------- */
+
+.ui-widget-content {
+	background: $background-normal;
+	border: 1px solid $decoration-normal;
+	color: $foreground-normal;
+}
+
+.ui-widget-header {
+	background: inherit;
+	color: $foreground-normal;
+	border: none;
+}
+
+.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+	color: $foreground-normal;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid $decoration-normal;
+	background: $background-dark;
+	font-weight: bold;
+}
+
+.ui-datepicker table a.ui-state-default:hover,
+.ui-timepicker table a.ui-state-default:hover {
+	background: $background-active-hover;
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+	font-weight: normal;
+}
+
+.ui-datepicker-calendar tbody tr, .ui-timepicker tbody tr {
+	&:hover, &:focus, &:active {
+		background-color: inherit;
+	}
+}
+
+.ui-datepicker-prev, 
+.ui-datepicker-next {
+	border: 1px solid $decoration-normal;
+	background: $background-normal;
+}
+
+.ui-datepicker .ui-datepicker-next-hover,
+.ui-datepicker .ui-datepicker-prev-hover, {
+	background: $background-normal;
+	border-color: $decoration-active;
+}
+
+div.ui-datepicker, div.ui-timepicker {
+    background: $background-normal;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: none;
+    color: $foreground-normal;
+}
+
+.ui-datepicker table a.ui-state-active,
+.ui-timepicker table a.ui-state-active {
+	background: $background-active;
+	border-radius: 3px 3px 3px 3px;
+	color: $foreground-active;
+	text-shadow: none;
+}
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+}
+
+/* Tooltips ----------------------------------------------------------------- */
+
+.tooltip {
+
+	&.right .tooltip-arrow {
+		border-right-color: $decoration-normal;
+	}
+
+	&.left .tooltip-arrow {
+		border-left-color: $decoration-normal;
+	}
+
+	&.top .tooltip-arrow,
+	&.top-left .tooltip-arrow,
+	&.top-right .tooltip-arrow  {
+		border-top-color: $decoration-normal;
+	}
+
+	&.bottom .tooltip-arrow,
+	&.bottom-left .tooltip-arrow,
+	&.bottom-right .tooltip-arrow  {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+.tooltip-inner {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+#adminaccount .tooltip-inner {
+	background-color: transparent;
+	border: none;
+}
+
+/* Public view for file sharing --------------------------------------------- */
+
+#body-public {
+
+	#content-wrapper #content #preview {
+		background: inherit;
+	}
+
+	footer .info {
+		&, a {
+			color: $foreground-inactive;
+		}
+	}
+}
+
+.directLink label {
+	opacity: 1;
+}
+
+/* Mobile ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+	#app-content {
+		width: 100% !important;
+		left: 0 !important;
+		background-color: $background-normal;
+		overflow-x: hidden !important;
+		z-index: 1000;
+	}
+
+	#app-navigation-toggle {
+		z-index: 1001;
+		background-color: $background-active-hover;
+		opacity: 0.5;
+		border-bottom-right-radius: 5px;
+	}
+}

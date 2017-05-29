@@ -38,7 +38,7 @@
 	background-image: url('../img/actions/public.svg?v=1');
 }
 
-.icon-share {
+.icon-share, .icon-shared {
 	background-image: url('../img/actions/share.svg?v=1');
 }
 
@@ -184,42 +184,6 @@
 	background-image: url('../img/actions/nonfulltext.svg');
 }
 
-input.radio[type="radio"] {
-	+ label::before {
-		background: url('../img/actions/radio.svg') left top no-repeat;
-	}
-
-	&:checked + label::before {
-		background-image: url('../img/actions/radio-checked.svg');
-	}
-
-	&:disabled + label::before {
-		background-image: url('../img/actions/radio-disabled.svg');
-	}
-
-	&:checked:disabled + label::before {
-		background-image: url('../img/actions/radio-checked-disabled.svg');
-	}
-}
-
-input.checkbox[type="checkbox"] {
-	+ label::before {
-		background: url('../img/actions/checkbox.svg') left top no-repeat;
-	}
-
-	&:checked + label::before {
-		background-image: url('../img/actions/checkbox-checked.svg');
-	}
-
-	&:disabled + label::before {
-		background-image: url('../img/actions/checkbox-disabled.svg');
-	}
-
-	&:checked:disabled + label::before {
-		background-image: url('../img/actions/checkbox-checked-disabled.svg');
-	}
-}
-
 select {
 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
 }
@@ -248,8 +212,93 @@ select {
 	background: url("../img/leftarrow.svg") center center no-repeat;
 }
 
+.icon-activity {
+	background-image: url('../img/activity.svg?v=1');
+}
+
+.nav-icon-personal-settings {
+	background-image: url('../img/personal.svg?v=1');
+}
+
+.nav-icon-sessions {
+	background-image: url('../img/toggle-filelist.svg?v=1');
+}
+
+.nav-icon-apppasswords {
+	background-image: url('../img/actions/password.svg?v=1');
+}
+
+.nav-icon-clientsbox {
+	background-image: url('../img/change.svg?v=1');
+}
+
+.nav-icon-activity {
+	background-image: url('../img/activity-dark.svg?v=1');
+}
+
+.nav-icon-federated-cloud {
+	background-image: url('../img/actions/share.svg?v=1');
+}
+
+#oc-dialog-filepicker-content .dirtree div:first-child a {
+	background-image: url('../img/places/home.svg?v=1');
+}
+
+.oc-dialog-close {
+	background: url('../img/actions/close.svg') no-repeat center;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
+}
+
+#show + label, #dbpassword-toggle + label, #personal-show + label {
+	background-image: url('../img/actions/toggle.svg?v=1');
+}
+
+.nav-icon-second-factor-backup-codes {
+	background-image: url('../img/actions/password.svg?v=1');
+}
+
+.icon-announcement {
+	background-image: url('../img/places/announcementcenter.svg');
+}
+
+.nav-icon-totp-second-factor-auth {
+	background-image: url('../img/twofactor-totp.svg?v=1');
+}
+
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+	background-image: url('../img/twofactor-u2f.svg?v=1');
+}
+
+.social-facebook,
+.icon-social-facebook {
+	background-image: url('../img/social/facebook.svg');
+}
+
+.social-twitter,
+.icon-social-twitter {
+	background-image: url('../img/social/twitter.svg');
+}
+
+.social-googleplus,
+.icon-social-googleplus {
+	background-image: url('../img/social/googleplus.svg');
+}
+
+.social-diaspora,
+.icon-social-diaspora {
+	background-image: url('../img/social/diaspora.svg');
+}
+
+.icon-social-email {
+	background-image: url('../img/email.svg');
+}
+
 /* CSS tricks to change icon color */
 
+// Change the app icons in the navigation menu to white
 #navigation .app-icon {
 	filter: none;
 
@@ -258,32 +307,37 @@ select {
 	}
 }
 
-#firstrunwizard .appsmall {
-	filter: invert(100%);
-}
-
 img.notification-icon {
 	filter: invert(75%);
 }
 
+// Change the button, to gallery app, to white
 #controls .button.view-switcher img {
 	opacity: 0.6;
 	filter: invert(100%);
 }
 
+// Change the, to files app, button to white again since it was change to black with the above
 #controls .button.view-switcher.gallery img {
-	opacity: .5;
 	filter: invert(0%);
 }
 
-.app-files #app-content-files #controls .breadcrumb .crumb a img.svg {
+// Change home icon to white in the files app, both for 
+.app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
+.app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
 	filter: invert(100%);
 }
 
+// Change home icon in gallery app to white
 #controls #breadcrumbs .crumb a img {
 	filter: invert(100%);
 }
 
 .actions a.button.new img {
 	filter: invert(75%);
+}
+
+// Make icon for impersonate in user menu white
+a.impersonate img.svg {
+	filter: invert(100%);
 }

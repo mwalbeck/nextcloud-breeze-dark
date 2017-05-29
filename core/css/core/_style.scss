@@ -1,0 +1,189 @@
+body {
+	color: $foreground-normal;
+	background-color: $background-normal;
+}
+
+a {
+	color: $foreground-link;
+
+	&:hover, &:focus {
+		color: $foreground-link;
+	}
+
+	&.button:hover, &.button:focus {
+		color: $foreground-normal;
+	}
+}
+
+em {
+	opacity: 1;
+}
+
+h1, h2, h3 {
+    color: $foreground-active;
+	font-weight: 600;
+}
+
+h4, h5, h6 {
+	color: $foreground-normal;
+}
+
+// Tables
+
+table {
+
+	tr {
+		background-color: $background-normal;
+	}
+
+	tr:hover, tr:focus {
+		background-color: $background-active-hover;
+	}
+
+	tr:active {
+		background-color: inherit;
+	}
+
+	th a, a {
+		color: $foreground-normal;
+
+		&:hover, &:focus {
+			color: $foreground-normal;
+		}
+	}
+
+	td {
+		border-bottom-color: $decoration-normal;
+	}
+
+	thead {
+
+		th {
+			color: $foreground-normal;
+			border-bottom: 1px solid $decoration-normal;
+			background-color: $background-normal;
+		}
+	}
+}
+
+table.grid th, table.grid td {
+	border-bottom-color: $decoration-normal;
+}
+
+// Input Fields
+
+input.radio[type="checkbox"], 
+input.radio[type="radio"], 
+input.checkbox[type="checkbox"], 
+input.checkbox[type="radio"] {
+	&:checked + label::before, &:indeterminate + label::before {
+		background-color: $background-active-alternate;
+		border-color: $background-active-alternate;
+	}
+}
+
+input:not([type="range"]), 
+textarea, 
+#quota, 
+.pager li a {
+	background-color: $background-dark;
+	color: $foreground-inactive;
+	border: 1px solid $decoration-normal;
+
+	&:not(:disabled):not(.primary) {
+		
+		&:not(#quota):hover {
+			border-color: $decoration-active;
+		}
+		
+		&:focus, &:active {
+			background-color: $background-dark;
+			border-color: $decoration-active;
+		}
+
+		&.active {
+			border-color: $decoration-active;
+		}
+	}
+	
+	&:disabled {
+		background-color: $background-alternate;
+		color: $foreground-inactive;
+		opacity: 1;
+
+		&:hover, &:focus, &:active {
+			border-color: $decoration-normal;
+		}
+	}
+}
+
+textarea {
+	&:active, &:hover, &:focus {
+		&:not(:disabled) {
+			border-color: $decoration-active !important;
+			background-color: $background-dark !important;
+		}
+	}
+}
+
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+	color: $foreground-normal;
+
+	&:not(:disabled):not(.primary):not(#quota) {
+		
+		&:hover {
+			border-color: $decoration-active;
+		}
+		
+		&:focus, &:active, &.active {
+			background-color: $background-active;
+			border-color: $decoration-active;
+		}
+	}
+
+	&:disabled {
+		background-color: $background-alternate;
+		color: $foreground-inactive;
+		opacity: 1;
+
+		&:hover, &:focus, &:active {
+			background-color: $background-alternate;
+			border-color: $decoration-normal;
+		}
+	}
+
+	&.primary {
+		&:not(:disabled) {
+			border-color: $decoration-normal;
+			background-color: $background-dark;
+			color: $foreground-active;
+
+			&:hover {
+				border-color: $button-decoration-active;
+				background-color: $background-active-alternate;
+			}
+
+			&:focus, &:active {
+				background-color: $background-active;
+				border-color: $decoration-active;
+			}
+		}
+
+		&:disabled {
+			background-color: $background-alternate;
+			color: $foreground-inactive;
+
+			&:hover, &:focus, &:active {
+				background-color: $background-alternate;
+				color: $foreground-inactive;
+				border-color: $decoration-normal;
+			}
+		}
+	}
+}

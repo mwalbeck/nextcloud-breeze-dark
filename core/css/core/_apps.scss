@@ -1,0 +1,192 @@
+/* App menu ----------------------------------------------------------------- */
+
+#appmenu li {
+	span {
+		background-color: $background-normal;
+		border: 1px solid $decoration-normal;
+		color: $foreground-normal;
+		-webkit-filter: none;
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none;
+		filter: none;
+	}
+
+	a.active::before {
+		border-bottom-color: transparent;
+	}
+
+	&:hover a::before {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+/* Content ------------------------------------------------------------------ */
+
+#app-content {
+	border-top: 1px solid $decoration-normal;
+	height: 99.8%;
+}
+
+/* App Navigation ----------------------------------------------------------- */
+
+#app-navigation {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	li > a {
+		color: $foreground-normal;
+		opacity: 1;
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+	}
+
+	.active {
+		background-color: $background-active;
+		box-shadow: inset 2px 0 $background-active-alternate;
+
+		a {
+			color: $foreground-active;
+			font-weight: 600;
+		}
+	}
+
+	.app-external {
+		color: $foreground-normal;
+	}
+
+	// Not sure this is still used
+	.add-new {
+		button {
+			color: $foreground-normal !important;
+		}
+
+		div.heading {
+			&:hover {
+				background-color: $background-active-hover;
+			}
+		}
+	}
+
+	.add-new-popup {
+		box-shadow: none;
+		border-color: $decoration-active;
+	}
+
+	input {
+		background: $background-dark !important;
+	}
+
+	select {
+		background: $background-normal !important;
+	}
+}
+
+.nav-trashbin {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+}
+
+/* App Sidebar -------------------------------------------------------------- */
+
+#app-sidebar {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	.file-details {
+		color: $foreground-normal;
+	}
+
+	.close {
+		opacity: 1;
+	}
+
+	.thumbnail {
+		color: $foreground-normal;
+	}
+}
+
+.tabHeaders .tabHeader {
+	&, a {
+		color: $foreground-normal;
+	}
+
+	&.selected a, &:hover a {
+		color: $foreground-active;
+		border-bottom: 1px solid $decoration-active;
+	}
+}
+
+.shareTabView {
+	.icon {
+		opacity: 0.5;
+	}
+
+	.error {
+		color: $foreground-negative;
+		border-color: $background-negative;
+		box-shadow: none;
+	}
+}
+
+.versionsTabView {
+
+	li {
+		border-color: $decoration-normal;
+
+		&:hover {
+			background: $background-active-hover;
+		}
+	}
+
+	a {
+		opacity: 1;
+		color: $foreground-inactive;
+	}
+}
+
+.ui-widget-content {
+	a {
+		color: $foreground-normal;
+	}
+
+	.ui-state-focus {
+		border-color: $decoration-active;
+		background: $background-active-hover;
+		color: $foreground-normal;
+	}
+}
+
+/* App Settings ------------------------------------------------------------- */
+
+#app-settings-header {
+	border-color: $decoration-normal;
+}
+
+#app-settings-content {
+	border-color: $decoration-normal;
+	background-color: $background-normal;
+
+	a {
+		color: $foreground-link;
+	}
+
+	.info-text {
+		color: $foreground-normal;
+	}
+}
+
+.settings-button {
+	background-color: $background-normal;
+
+	&:hover {
+		background-color: $background-active-hover;
+	}
+
+	&:focus, &:active {
+		background-color: $background-active;
+		color: $foreground-active;
+	}
+}
