@@ -1,0 +1,37 @@
+/*
+=============================================================================
+* Nextcloud breeze dark theme
+* Version: 12.0.0
+* Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
+=============================================================================
+*/
+// General and Nextcloud Core
+@import 'core/colours';
+@import 'core/icons';
+@import 'core/style';
+@import 'core/server';
+@import 'core/apps';
+// Official apps
+@import 'apps/activity';
+@import 'apps/announcement-center';
+@import 'apps/calendar';
+@import 'apps/circles';
+@import 'apps/contacts';
+@import 'apps/external-storage';
+@import 'apps/file-access-control';
+@import 'apps/files';
+@import 'apps/first-run-wizard';
+@import 'apps/gallery';
+@import 'apps/group-folders';
+@import 'apps/ldap';
+@import 'apps/log-reader';
+@import 'apps/notifications';
+@import 'apps/retention';
+@import 'apps/sso-saml';
+@import 'apps/text-editor';
+@import 'apps/two-factor';
+// 3rd party apps
+@import 'apps/news';
+@import 'apps/notes';
+@import 'apps/passman';
+@import 'apps/tasks';

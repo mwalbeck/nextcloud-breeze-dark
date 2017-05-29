@@ -1,0 +1,13 @@
+/* First Run Wizard --------------------------------------------------------- */
+
+#cboxLoadedContent {
+	background-color: $background-dark;
+}
+
+#firstrunwizard p a {
+	color: $foreground-link;
+
+	&:hover, &:focus {
+		color: $foreground-link;
+	}
+}

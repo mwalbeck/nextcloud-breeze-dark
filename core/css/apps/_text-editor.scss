@@ -1,0 +1,28 @@
+/* Text Editor -------------------------------------------------------------- */
+
+#editor_controls {
+	background-color: $background-normal;
+
+	small {
+
+		&.filename {
+			color: $foreground-normal;
+		}
+
+		&.saving-message {
+			color: $foreground-inactive;
+		}
+	}
+
+	#editor_close {
+		opacity: 1;
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		&:active, &:focus {
+			background-color: $background-active;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+/* Two Factor U2F */
+.two-factor-link .button {
+	color: $foreground-inactive !important;
+
+	&:hover {
+		color: $foreground-active !important;
+	}
+}
+
+#body-login .warning {
+	background-color: $background-dark;
+}
+
+.challenge-form input[type="text"], .totp-form input[type="text"] {
+	background: $background-normal;
+}

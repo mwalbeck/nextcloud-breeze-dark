@@ -1,6 +1,5 @@
 .app-content-list {
 	background-color: $background-dark;
-	border-top: 1px solid $decoration-normal;
 	border-right: 1px solid $decoration-normal;
 }
 
@@ -41,8 +40,12 @@
 }
 
 .contactdetails__header {
-	background-color: $background-active !important;
 	color: $foreground-normal;
+
+	.contactdetails__name {
+		color: $foreground-normal;
+		font-weight: 600;
+	}
 
 	.contactdetails__org, .contactdetails__title {
 		color: $foreground-normal !important;
@@ -53,11 +56,12 @@
 			opacity: 1;
 		}
 	}
-}
 
-.contactdetails__name {
-	color: $foreground-normal;
-	font-weight: 600;
+	#details-actions {
+		a, button {
+			opacity: 0.7;
+		}
+	}
 }
 
 detailsitem .icon-delete {
@@ -65,15 +69,9 @@ detailsitem .icon-delete {
 }
 
 input.newAddressBookSubmit {
-	border: none;
-	background-color: inherit;
 
-	&:hover, &:focus, &:active {
+	&, &:hover, &:focus, &:active {
 		border: none;
-		background-color: inherit;
+		background-color: inherit !important;
 	}
-}
-
-input.newAddressBookInput {
-	padding: 5px;
 }
