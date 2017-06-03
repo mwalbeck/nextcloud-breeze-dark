@@ -553,7 +553,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   .popovermenu li .menuitem:hover {
     color: #fcfcfc; }
 
-.bubble {
+.bubble, .app-navigation-entry-menu {
   background-color: #31363b;
   color: #eff0f1;
   border: 1px solid #706f6e;
@@ -562,7 +562,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   -ms-filter: none;
   -o-filter: none;
   filter: none; }
-  .bubble::after {
+  .bubble::after, .app-navigation-entry-menu::after {
     border-bottom-color: #706f6e; }
 
 #expanddiv {
@@ -813,7 +813,16 @@ ul.multiselectoptions {
   color: #eff0f1;
   border: none; }
 
-.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+.ui-datepicker,
+.ui-datepicker-title,
+.ui-datepicker .ui-widget-header,
+.ui-timepicker,
+.ui-timepicker-title,
+.ui-timepicker .ui-widget-header {
+  color: #eff0f1; }
+
+.ui-datepicker table a.ui-state-default,
+.ui-timepicker table a.ui-state-default {
   color: #eff0f1;
   border-radius: 3px 3px 3px 3px;
   border: 1px solid #706f6e;
@@ -1426,17 +1435,6 @@ td.date, td.date > span {
 .app-news #app-navigation li.folder {
   border-right: 1px solid #706f6e;
   background: #232629; }
-.app-news #app-navigation .app-navigation-entry-menu {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none; }
-  .app-news #app-navigation .app-navigation-entry-menu::after {
-    border-bottom-color: #706f6e; }
 
 .app-news #app-content {
   border-top: 1px solid #706f6e; }
@@ -1684,6 +1682,8 @@ tags-input .autocomplete {
     background-color: #3daee9;
     border-bottom: 1px solid #706f6e;
     text-shadow: none; }
+    .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:hover, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:active, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:focus {
+      background: none repeat scroll 0 0 transparent !important; }
   .app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
     background: inherit;
     text-shadow: none;
