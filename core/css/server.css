@@ -1525,6 +1525,10 @@ td.date, td.date > span {
     top: 46px;
     background-color: inherit;
     border-bottom: 1px solid #706f6e; }
+  .app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
+    background: #31363b;
+    border-color: #706f6e;
+    box-shadow: none; }
   .app-passman #app-content .tab_header li.active .indicator {
     height: 5px;
     left: 0;
@@ -1565,7 +1569,7 @@ td.date, td.date > span {
 .app-passman .link {
   color: #2980b9 !important; }
 .app-passman #app-navigation li:hover > a, .app-passman #app-navigation li:active > a {
-  background-color: #31363b; }
+  background: none; }
 
 .vault_wrapper {
   box-shadow: none;
@@ -1657,6 +1661,10 @@ tags-input .autocomplete {
 #passman-settings #passman-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   margin-bottom: inherit;
   padding-bottom: inherit; }
+
+.ui-tabs .ui-tabs-nav li {
+  background: #232629;
+  border-color: #706f6e; }
 
 .app-tasks #app-content {
   height: 99.9%;

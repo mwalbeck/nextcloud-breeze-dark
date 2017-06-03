@@ -8,6 +8,7 @@
         }
 
         #app-content-wrapper {
+
             .credential-table tr td {
                 border-bottom-color: $decoration-normal;
             }
@@ -52,6 +53,12 @@
                 top: 46px;
                 background-color: inherit;
                 border-bottom: 1px solid $decoration-normal;
+            }
+
+            .searchboxContainer .searchOptions {
+                background: $background-normal;
+                border-color: $decoration-normal;
+                box-shadow: none;
             }
         }
 
@@ -120,7 +127,7 @@
     }
 
     #app-navigation li:hover > a, #app-navigation li:active > a {
-	    background-color: $background-normal;
+	    background: none;
     }
 }
 
@@ -264,4 +271,9 @@ tags-input {
         margin-bottom: inherit;
         padding-bottom: inherit;
     }
+}
+
+.ui-tabs .ui-tabs-nav li {
+    background: $background-dark;
+    border-color: $decoration-normal;
 }
