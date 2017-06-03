@@ -4,6 +4,10 @@
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
 	border-top: none;
+
+	a {
+		color: $foreground-link;
+	}
 }
 
 .notification-container {

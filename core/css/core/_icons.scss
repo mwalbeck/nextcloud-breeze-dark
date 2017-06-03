@@ -296,6 +296,14 @@ select {
 	background-image: url('../img/email.svg');
 }
 
+#app-navigation .icon-updatemode-unread {
+	background-image: url('../img/actions/updatemodeunread.svg');
+}
+
+#app-navigation .icon-updatemode-default {
+	background-image: url('../img/actions/updatemodedefault.svg');
+}
+
 /* CSS tricks to change icon color */
 
 // Change the app icons in the navigation menu to white

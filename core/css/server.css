@@ -240,6 +240,12 @@ select {
 .icon-social-email {
   background-image: url("../img/email.svg"); }
 
+#app-navigation .icon-updatemode-unread {
+  background-image: url("../img/actions/updatemodeunread.svg"); }
+
+#app-navigation .icon-updatemode-default {
+  background-image: url("../img/actions/updatemodedefault.svg"); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -944,9 +950,9 @@ div.ui-datepicker, div.ui-timepicker {
     box-shadow: none;
     border-color: #3daee9; }
   #app-navigation input {
-    background: #232629 !important; }
+    background-color: #232629 !important; }
   #app-navigation select {
-    background: #31363b !important; }
+    background-color: #31363b !important; }
 
 .nav-trashbin {
   background-color: #31363b;
@@ -1355,6 +1361,8 @@ td.date, td.date > span {
   background-color: #31363b;
   border: 1px solid #706f6e;
   border-top: none; }
+  #notification a {
+    color: #2980b9; }
 
 .notification-container {
   background-color: #31363b;
@@ -1416,7 +1424,8 @@ td.date, td.date > span {
 .app-news #app-navigation li.collapsible.open a {
   background-color: #232629; }
 .app-news #app-navigation li.folder {
-  border-right: 1px solid #706f6e; }
+  border-right: 1px solid #706f6e;
+  background: #232629; }
 .app-news #app-navigation .app-navigation-entry-menu {
   background-color: #31363b;
   color: #eff0f1;
