@@ -531,7 +531,27 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
-/* Date picker -------------------------------------------------------------- */
+/* UI Widget ---------------------------------------------------------------- */
+// Used by datepicker, timepicker and others
+
+.ui-dialog {
+
+	.ui-dialog-content {
+		background-color: $background-normal;
+	}
+
+	.ui-dialog-buttonpane {
+		background-color: $background-normal;
+	}
+}
+
+.ui-dialog-titlebar {
+
+	&.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
+	}
+}
 
 .ui-widget-content {
 	background: $background-normal;

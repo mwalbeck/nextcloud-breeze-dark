@@ -304,6 +304,50 @@ select {
 	background-image: url('../img/actions/updatemodedefault.svg');
 }
 
+// Audio player
+
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+	background-image: url('../img/actions/play-big.svg');
+}
+
+.playing .play-pause {
+	background-image: url('../img/actions/pause-big.svg');
+}
+
+.sm2-inline-button.previous {
+	background-image: url('../img/actions/play-previous.svg');
+}
+
+.sm2-inline-button.next {
+	background-image: url('../img/actions/play-next.svg');
+}
+
+.sm2-inline-button.repeat {
+	background-image: url('../img/actions/repeat.svg');
+}
+
+#albenoverview li {
+	background-image: url('../img/actions/toggle-pictures.svg');
+}
+
+#albenoverview li i {
+	color: $foreground-inactive;
+
+	&:hover {
+		color: $foreground-active;
+	}
+}
+
+.sm2-volume-control {
+	filter: invert(95%);
+}
+
+.sm2-inline-button.shuffle {
+	filter: invert(95%);
+}
+
 /* CSS tricks to change icon color */
 
 // Change the app icons in the navigation menu to white

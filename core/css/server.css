@@ -246,6 +246,37 @@ select {
 #app-navigation .icon-updatemode-default {
   background-image: url("../img/actions/updatemodedefault.svg"); }
 
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+  background-image: url("../img/actions/play-big.svg"); }
+
+.playing .play-pause {
+  background-image: url("../img/actions/pause-big.svg"); }
+
+.sm2-inline-button.previous {
+  background-image: url("../img/actions/play-previous.svg"); }
+
+.sm2-inline-button.next {
+  background-image: url("../img/actions/play-next.svg"); }
+
+.sm2-inline-button.repeat {
+  background-image: url("../img/actions/repeat.svg"); }
+
+#albenoverview li {
+  background-image: url("../img/actions/toggle-pictures.svg"); }
+
+#albenoverview li i {
+  color: #bdc3c7; }
+  #albenoverview li i:hover {
+    color: #fcfcfc; }
+
+.sm2-volume-control {
+  filter: invert(95%); }
+
+.sm2-inline-button.shuffle {
+  filter: invert(95%); }
+
 /* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
@@ -802,7 +833,16 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
-/* Date picker -------------------------------------------------------------- */
+/* UI Widget ---------------------------------------------------------------- */
+.ui-dialog .ui-dialog-content {
+  background-color: #31363b; }
+.ui-dialog .ui-dialog-buttonpane {
+  background-color: #31363b; }
+
+.ui-dialog-titlebar.ui-widget-header {
+  background-color: #31363b;
+  color: #eff0f1; }
+
 .ui-widget-content {
   background: #31363b;
   border: 1px solid #706f6e;
@@ -1424,6 +1464,72 @@ td.date, td.date > span {
 
 .challenge-form input[type="text"], .totp-form input[type="text"] {
   background: #31363b; }
+
+#app-navigation-toggle_alternative {
+  background-color: #31363b; }
+
+.sm2-bar-ui, .sm2-bar-ui .bd a {
+  color: #eff0f1; }
+.sm2-bar-ui .sm2-inline-gradient {
+  background-color: #31363b; }
+.sm2-bar-ui .bd .sm2-button-element:hover {
+  background-color: #31363b; }
+
+.sm2-progress .sm2-progress-bar {
+  background-color: #3daee9;
+  background-image: none; }
+.sm2-progress .sm2-progress-track {
+  background-color: #232629;
+  background-image: none; }
+.sm2-progress .sm2-progress-ball {
+  background-color: #f2f2f2; }
+
+#myCategory li.activeIndiPlaylist:hover {
+  font-weight: bold; }
+#myCategory li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  font-weight: normal; }
+
+.sm2-playlist-cover {
+  background-color: rgba(61, 174, 233, 0.25) !important; }
+
+.albumdescr span.albumname {
+  color: #eff0f1; }
+.albumdescr span.artist {
+  color: #bdc3c7; }
+
+.songcontainer {
+  background-color: #232629 !important;
+  color: #eff0f1 !important;
+  box-shadow: none; }
+  .songcontainer .songcontainer-cover {
+    box-shadow: none; }
+  .songcontainer span.title, .songcontainer span.number, .songcontainer span.time {
+    color: #eff0f1 !important; }
+
+#individual-playlist-header span {
+  color: #eff0f1; }
+#individual-playlist-header .header-indi {
+  border-bottom-color: #706f6e;
+  color: #eff0f1; }
+
+#individual-playlist li {
+  color: #eff0f1; }
+  #individual-playlist li.dragable:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  #individual-playlist li span.title, #individual-playlist li span.interpret, #individual-playlist li span.album-indi, #individual-playlist li span.time {
+    color: #eff0f1 !important; }
+#individual-playlist .ioc {
+  color: #eff0f1 !important; }
+
+#phototools {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  #phototools img {
+    filter: invert(95%); }
 
 #explore .category {
   background-color: #3daee9; }
