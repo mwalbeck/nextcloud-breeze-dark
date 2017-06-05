@@ -16,6 +16,65 @@
 /*
  Default white for icons: rgba(242, 242, 242, 1)
 */
+/* Social Sharing ----------------------------------------------------------- */
+.social-facebook,
+.icon-social-facebook {
+  background-image: url("../img/social/facebook.svg"); }
+
+.social-twitter,
+.icon-social-twitter {
+  background-image: url("../img/social/twitter.svg"); }
+
+.social-googleplus,
+.icon-social-googleplus {
+  background-image: url("../img/social/googleplus.svg"); }
+
+.social-diaspora,
+.icon-social-diaspora {
+  background-image: url("../img/social/diaspora.svg"); }
+
+.icon-social-email {
+  background-image: url("../img/email.svg"); }
+
+/* Audio player ------------------------------------------------------------- */
+.nav-icon-audio-player {
+  background-image: url("../img/places/audioplayer.svg"); }
+
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+  background-image: url("../img/actions/play-big.svg"); }
+
+.playing .play-pause {
+  background-image: url("../img/actions/pause-big.svg"); }
+
+.sm2-inline-button.previous {
+  background-image: url("../img/actions/play-previous.svg"); }
+
+.sm2-inline-button.next {
+  background-image: url("../img/actions/play-next.svg"); }
+
+.sm2-inline-button.repeat {
+  background-image: url("../img/actions/repeat.svg"); }
+
+#albenoverview li {
+  background-image: url("../img/actions/toggle-pictures.svg"); }
+
+#albenoverview li i {
+  color: #bdc3c7; }
+  #albenoverview li i:hover {
+    color: #fcfcfc; }
+
+/* Two Factor --------------------------------------------------------------- */
+.nav-icon-totp-second-factor-auth {
+  background-image: url("../img/twofactor-totp.svg?v=1"); }
+
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+  background-image: url("../img/twofactor-u2f.svg?v=1"); }
+
+.nav-icon-second-factor-backup-codes {
+  background-image: url("../img/actions/password.svg?v=1"); }
+
 .icon-link {
   background-image: url("../img/places/link.svg?v=1"); }
 
@@ -209,36 +268,8 @@ select {
 #show + label, #dbpassword-toggle + label, #personal-show + label {
   background-image: url("../img/actions/toggle.svg?v=1"); }
 
-.nav-icon-second-factor-backup-codes {
-  background-image: url("../img/actions/password.svg?v=1"); }
-
 .icon-announcement {
   background-image: url("../img/places/announcementcenter.svg"); }
-
-.nav-icon-totp-second-factor-auth {
-  background-image: url("../img/twofactor-totp.svg?v=1"); }
-
-.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
-  background-image: url("../img/twofactor-u2f.svg?v=1"); }
-
-.social-facebook,
-.icon-social-facebook {
-  background-image: url("../img/social/facebook.svg"); }
-
-.social-twitter,
-.icon-social-twitter {
-  background-image: url("../img/social/twitter.svg"); }
-
-.social-googleplus,
-.icon-social-googleplus {
-  background-image: url("../img/social/googleplus.svg"); }
-
-.social-diaspora,
-.icon-social-diaspora {
-  background-image: url("../img/social/diaspora.svg"); }
-
-.icon-social-email {
-  background-image: url("../img/email.svg"); }
 
 #app-navigation .icon-updatemode-unread {
   background-image: url("../img/actions/updatemodeunread.svg"); }
@@ -246,38 +277,13 @@ select {
 #app-navigation .icon-updatemode-default {
   background-image: url("../img/actions/updatemodedefault.svg"); }
 
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover {
-  background-image: url("../img/actions/play-big.svg"); }
-
-.playing .play-pause {
-  background-image: url("../img/actions/pause-big.svg"); }
-
-.sm2-inline-button.previous {
-  background-image: url("../img/actions/play-previous.svg"); }
-
-.sm2-inline-button.next {
-  background-image: url("../img/actions/play-next.svg"); }
-
-.sm2-inline-button.repeat {
-  background-image: url("../img/actions/repeat.svg"); }
-
-#albenoverview li {
-  background-image: url("../img/actions/toggle-pictures.svg"); }
-
-#albenoverview li i {
-  color: #bdc3c7; }
-  #albenoverview li i:hover {
-    color: #fcfcfc; }
-
+/* CSS tricks to change icon color */
 .sm2-volume-control {
   filter: invert(95%); }
 
 .sm2-inline-button.shuffle {
   filter: invert(95%); }
 
-/* CSS tricks to change icon color */
 #navigation .app-icon {
   filter: none; }
   #navigation .app-icon image {
@@ -288,23 +294,23 @@ img.notification-icon {
 
 #controls .button.view-switcher img {
   opacity: 0.6;
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 #controls .button.view-switcher.gallery img {
   filter: invert(0%); }
 
 .app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
 .app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 #controls #breadcrumbs .crumb a img {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 .actions a.button.new img {
   filter: invert(75%); }
 
 a.impersonate img.svg {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 body {
   color: #eff0f1;
