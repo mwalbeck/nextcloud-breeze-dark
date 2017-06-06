@@ -1,6 +1,5 @@
 The icons for this theme are from the following projects:
 
-* Elementary Filetype Icons - [https://github.com/elementary/icons](https://github.com/elementary/icons)
 * Nextcloud Server - [https://github.com/nextcloud/server](https://github.com/nextcloud/server)
 * Nextcloud Serverinfo - [https://github.com/nextcloud/serverinfo](https://github.com/nextcloud/serverinfo)
 * Nextcloud News - [https://github.com/nextcloud/news](https://github.com/nextcloud/news)
