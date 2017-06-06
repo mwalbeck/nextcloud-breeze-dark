@@ -227,7 +227,7 @@ select {
   background-image: url("../img/actions/menu.svg?v=1"); }
 
 .icon-timezone {
-  background: url("../img/timezone.svg") center center no-repeat; }
+  background: url("../img/actions/timezone.svg") center center no-repeat; }
 
 .glyphicon-chevron-right {
   background: url("../img/rightarrow.svg") center center no-repeat; }
@@ -242,7 +242,7 @@ select {
   background-image: url("../img/personal.svg?v=1"); }
 
 .nav-icon-sessions {
-  background-image: url("../img/toggle-filelist.svg?v=1"); }
+  background-image: url("../img/actions/toggle-filelist.svg?v=1"); }
 
 .nav-icon-apppasswords {
   background-image: url("../img/actions/password.svg?v=1"); }
