@@ -1537,6 +1537,40 @@ td.date, td.date > span {
   #phototools img {
     filter: invert(95%); }
 
+#bm_import:hover ~ button#bm_import_submit {
+  background-color: #31363b;
+  color: #eff0f1; }
+
+.bookmark_single {
+  border-bottom-color: #706f6e; }
+  .bookmark_single:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+
+.bookmark_single_form {
+  border-bottom-color: #706f6e; }
+  .bookmark_single_form .tagit {
+    box-shadow: none; }
+
+ul.tagit {
+  border-color: #706f6e; }
+  ul.tagit input[type="text"] {
+    color: #bdc3c7; }
+  ul.tagit li.tagit-choice {
+    color: #eff0f1;
+    background-color: #31363b;
+    border-color: #706f6e; }
+    ul.tagit li.tagit-choice:hover, ul.tagit li.tagit-choice.remove {
+      background-color: #31363b;
+      border-color: #3daee9; }
+    ul.tagit li.tagit-choice .close .text-icon {
+      color: #bdc3c7; }
+    ul.tagit li.tagit-choice a.tagLabel:hover, ul.tagit li.tagit-choice a.close .text-icon:hover {
+      color: #fcfcfc; }
+
+#tag_filter ul.tagit li.tagit-choice {
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
