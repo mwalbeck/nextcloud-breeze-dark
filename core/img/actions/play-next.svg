@@ -9,12 +9,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="16"
    width="16"
-   version="1"
-   id="svg4"
-   sodipodi:docname="text-code.svg"
-   inkscape:version="0.92.1 r">
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="play-next.svg">
   <metadata
-     id="metadata10">
+     id="metadata12">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
+     id="defs10" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,20 +36,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     id="namedview6"
+     inkscape:window-width="3200"
+     inkscape:window-height="1683"
+     id="namedview8"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
+     inkscape:cx="-11.932203"
      inkscape:cy="8"
-     inkscape:window-x="1680"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg2" />
   <path
-     d="M10.828 3.05L9.414 4.465 12.95 8l-3.536 3.536 1.414 1.414L15.778 8l-4.95-4.95zm-5.657 0L.223 8l4.95 4.95 1.414-1.414L3.05 8l3.536-3.535L5.172 3.05z"
-     fill="#969696"
-     id="path2"
+     d="M7 2l7 6-7 6z"
+     id="path4"
+     style="fill:#f2f2f2;fill-opacity:1" />
+  <path
+     d="M2 2l7 6-7 6z"
+     id="path6"
      style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

@@ -22,22 +22,8 @@
 
 	li.folder {
 		border-right: 1px solid $decoration-normal;
+		background: $background-dark;
 	}
-
-    .app-navigation-entry-menu {
-        background-color: $background-normal;
-        color: $foreground-normal;
-        border: 1px solid $decoration-normal;
-        -webkit-filter: none;
-        -moz-filter: none;
-        -ms-filter: none;
-        -o-filter: none;
-        filter: none;
-
-        &::after {
-            border-bottom-color: $decoration-normal;
-        }
-    }
 }
 
 .app-news #app-content {

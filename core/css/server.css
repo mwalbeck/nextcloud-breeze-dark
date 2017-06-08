@@ -16,6 +16,65 @@
 /*
  Default white for icons: rgba(242, 242, 242, 1)
 */
+/* Social Sharing ----------------------------------------------------------- */
+.social-facebook,
+.icon-social-facebook {
+  background-image: url("../img/social/facebook.svg"); }
+
+.social-twitter,
+.icon-social-twitter {
+  background-image: url("../img/social/twitter.svg"); }
+
+.social-googleplus,
+.icon-social-googleplus {
+  background-image: url("../img/social/googleplus.svg"); }
+
+.social-diaspora,
+.icon-social-diaspora {
+  background-image: url("../img/social/diaspora.svg"); }
+
+.icon-social-email {
+  background-image: url("../img/email.svg"); }
+
+/* Audio player ------------------------------------------------------------- */
+.nav-icon-audio-player {
+  background-image: url("../img/places/audioplayer.svg"); }
+
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+  background-image: url("../img/actions/play-big.svg"); }
+
+.playing .play-pause {
+  background-image: url("../img/actions/pause-big.svg"); }
+
+.sm2-inline-button.previous {
+  background-image: url("../img/actions/play-previous.svg"); }
+
+.sm2-inline-button.next {
+  background-image: url("../img/actions/play-next.svg"); }
+
+.sm2-inline-button.repeat {
+  background-image: url("../img/actions/repeat.svg"); }
+
+#albenoverview li {
+  background-image: url("../img/actions/toggle-pictures.svg"); }
+
+#albenoverview li i {
+  color: #bdc3c7; }
+  #albenoverview li i:hover {
+    color: #fcfcfc; }
+
+/* Two Factor --------------------------------------------------------------- */
+.nav-icon-totp-second-factor-auth {
+  background-image: url("../img/twofactor-totp.svg?v=1"); }
+
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+  background-image: url("../img/twofactor-u2f.svg?v=1"); }
+
+.nav-icon-second-factor-backup-codes {
+  background-image: url("../img/actions/password.svg?v=1"); }
+
 .icon-link {
   background-image: url("../img/places/link.svg?v=1"); }
 
@@ -168,7 +227,7 @@ select {
   background-image: url("../img/actions/menu.svg?v=1"); }
 
 .icon-timezone {
-  background: url("../img/timezone.svg") center center no-repeat; }
+  background: url("../img/actions/timezone.svg") center center no-repeat; }
 
 .glyphicon-chevron-right {
   background: url("../img/rightarrow.svg") center center no-repeat; }
@@ -183,7 +242,7 @@ select {
   background-image: url("../img/personal.svg?v=1"); }
 
 .nav-icon-sessions {
-  background-image: url("../img/toggle-filelist.svg?v=1"); }
+  background-image: url("../img/actions/toggle-filelist.svg?v=1"); }
 
 .nav-icon-apppasswords {
   background-image: url("../img/actions/password.svg?v=1"); }
@@ -209,38 +268,22 @@ select {
 #show + label, #dbpassword-toggle + label, #personal-show + label {
   background-image: url("../img/actions/toggle.svg?v=1"); }
 
-.nav-icon-second-factor-backup-codes {
-  background-image: url("../img/actions/password.svg?v=1"); }
-
 .icon-announcement {
   background-image: url("../img/places/announcementcenter.svg"); }
 
-.nav-icon-totp-second-factor-auth {
-  background-image: url("../img/twofactor-totp.svg?v=1"); }
+#app-navigation .icon-updatemode-unread {
+  background-image: url("../img/actions/updatemodeunread.svg"); }
 
-.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
-  background-image: url("../img/twofactor-u2f.svg?v=1"); }
-
-.social-facebook,
-.icon-social-facebook {
-  background-image: url("../img/social/facebook.svg"); }
-
-.social-twitter,
-.icon-social-twitter {
-  background-image: url("../img/social/twitter.svg"); }
-
-.social-googleplus,
-.icon-social-googleplus {
-  background-image: url("../img/social/googleplus.svg"); }
-
-.social-diaspora,
-.icon-social-diaspora {
-  background-image: url("../img/social/diaspora.svg"); }
-
-.icon-social-email {
-  background-image: url("../img/email.svg"); }
+#app-navigation .icon-updatemode-default {
+  background-image: url("../img/actions/updatemodedefault.svg"); }
 
 /* CSS tricks to change icon color */
+.sm2-volume-control {
+  filter: invert(95%); }
+
+.sm2-inline-button.shuffle {
+  filter: invert(95%); }
+
 #navigation .app-icon {
   filter: none; }
   #navigation .app-icon image {
@@ -251,23 +294,23 @@ img.notification-icon {
 
 #controls .button.view-switcher img {
   opacity: 0.6;
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 #controls .button.view-switcher.gallery img {
   filter: invert(0%); }
 
 .app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
 .app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 #controls #breadcrumbs .crumb a img {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 .actions a.button.new img {
   filter: invert(75%); }
 
 a.impersonate img.svg {
-  filter: invert(100%); }
+  filter: invert(95%); }
 
 body {
   color: #eff0f1;
@@ -547,7 +590,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   .popovermenu li .menuitem:hover {
     color: #fcfcfc; }
 
-.bubble {
+.bubble, .app-navigation-entry-menu {
   background-color: #31363b;
   color: #eff0f1;
   border: 1px solid #706f6e;
@@ -556,7 +599,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   -ms-filter: none;
   -o-filter: none;
   filter: none; }
-  .bubble::after {
+  .bubble::after, .app-navigation-entry-menu::after {
     border-bottom-color: #706f6e; }
 
 #expanddiv {
@@ -796,7 +839,16 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
-/* Date picker -------------------------------------------------------------- */
+/* UI Widget ---------------------------------------------------------------- */
+.ui-dialog .ui-dialog-content {
+  background-color: #31363b; }
+.ui-dialog .ui-dialog-buttonpane {
+  background-color: #31363b; }
+
+.ui-dialog-titlebar.ui-widget-header {
+  background-color: #31363b;
+  color: #eff0f1; }
+
 .ui-widget-content {
   background: #31363b;
   border: 1px solid #706f6e;
@@ -807,7 +859,16 @@ ul.multiselectoptions {
   color: #eff0f1;
   border: none; }
 
-.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+.ui-datepicker,
+.ui-datepicker-title,
+.ui-datepicker .ui-widget-header,
+.ui-timepicker,
+.ui-timepicker-title,
+.ui-timepicker .ui-widget-header {
+  color: #eff0f1; }
+
+.ui-datepicker table a.ui-state-default,
+.ui-timepicker table a.ui-state-default {
   color: #eff0f1;
   border-radius: 3px 3px 3px 3px;
   border: 1px solid #706f6e;
@@ -944,9 +1005,9 @@ div.ui-datepicker, div.ui-timepicker {
     box-shadow: none;
     border-color: #3daee9; }
   #app-navigation input {
-    background: #232629 !important; }
+    background-color: #232629 !important; }
   #app-navigation select {
-    background: #31363b !important; }
+    background-color: #31363b !important; }
 
 .nav-trashbin {
   background-color: #31363b;
@@ -1337,10 +1398,12 @@ td.date, td.date > span {
   background-color: #31363b;
   border-color: #706f6e; }
 
-#ldapSettings > fieldset {
+#ldapSettings {
   background-color: #31363b; }
-#ldapSettings ul.ui-tabs-nav .ui-tabs-active, #ldapSettings ul.ui-tabs-nav .ui-tabs-active > a {
-  background-color: #232629; }
+  #ldapSettings > fieldset {
+    background-color: #31363b; }
+  #ldapSettings ul.ui-tabs-nav .ui-tabs-active, #ldapSettings ul.ui-tabs-nav .ui-tabs-active > a {
+    background-color: #232629; }
 
 /* Log reader --------------------------------------------------------------- */
 #logreader-root table tbody tr td {
@@ -1355,6 +1418,8 @@ td.date, td.date > span {
   background-color: #31363b;
   border: 1px solid #706f6e;
   border-top: none; }
+  #notification a {
+    color: #2980b9; }
 
 .notification-container {
   background-color: #31363b;
@@ -1406,6 +1471,106 @@ td.date, td.date > span {
 .challenge-form input[type="text"], .totp-form input[type="text"] {
   background: #31363b; }
 
+#app-navigation-toggle_alternative {
+  background-color: #31363b; }
+
+.sm2-bar-ui, .sm2-bar-ui .bd a {
+  color: #eff0f1; }
+.sm2-bar-ui .sm2-inline-gradient {
+  background-color: #31363b; }
+.sm2-bar-ui .bd .sm2-button-element:hover {
+  background-color: #31363b; }
+
+.sm2-progress .sm2-progress-bar {
+  background-color: #3daee9;
+  background-image: none; }
+.sm2-progress .sm2-progress-track {
+  background-color: #232629;
+  background-image: none; }
+.sm2-progress .sm2-progress-ball {
+  background-color: #f2f2f2; }
+
+#myCategory li.activeIndiPlaylist:hover {
+  font-weight: bold; }
+#myCategory li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  font-weight: normal; }
+
+.sm2-playlist-cover {
+  background-color: rgba(61, 174, 233, 0.25) !important; }
+
+.albumdescr span.albumname {
+  color: #eff0f1; }
+.albumdescr span.artist {
+  color: #bdc3c7; }
+
+.songcontainer {
+  background-color: #232629 !important;
+  color: #eff0f1 !important;
+  box-shadow: none; }
+  .songcontainer .songcontainer-cover {
+    box-shadow: none; }
+  .songcontainer span.title, .songcontainer span.number, .songcontainer span.time {
+    color: #eff0f1 !important; }
+
+#individual-playlist-header span {
+  color: #eff0f1; }
+#individual-playlist-header .header-indi {
+  border-bottom-color: #706f6e;
+  color: #eff0f1; }
+
+#individual-playlist li {
+  color: #eff0f1; }
+  #individual-playlist li.dragable:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  #individual-playlist li span.title, #individual-playlist li span.interpret, #individual-playlist li span.album-indi, #individual-playlist li span.time {
+    color: #eff0f1 !important; }
+#individual-playlist .ioc {
+  color: #eff0f1 !important; }
+
+#phototools {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  #phototools img {
+    filter: invert(95%); }
+
+#bm_import:hover ~ button#bm_import_submit {
+  background-color: #31363b;
+  color: #eff0f1; }
+
+.bookmark_single {
+  border-bottom-color: #706f6e; }
+  .bookmark_single:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+
+.bookmark_single_form {
+  border-bottom-color: #706f6e; }
+  .bookmark_single_form .tagit {
+    box-shadow: none; }
+
+ul.tagit {
+  border-color: #706f6e; }
+  ul.tagit input[type="text"] {
+    color: #bdc3c7; }
+  ul.tagit li.tagit-choice {
+    color: #eff0f1;
+    background-color: #31363b;
+    border-color: #706f6e; }
+    ul.tagit li.tagit-choice:hover, ul.tagit li.tagit-choice.remove {
+      background-color: #31363b;
+      border-color: #3daee9; }
+    ul.tagit li.tagit-choice .close .text-icon {
+      color: #bdc3c7; }
+    ul.tagit li.tagit-choice a.tagLabel:hover, ul.tagit li.tagit-choice a.close .text-icon:hover {
+      color: #fcfcfc; }
+
+#tag_filter ul.tagit li.tagit-choice {
+  background-color: #31363b;
+  border: 1px solid #706f6e; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
@@ -1416,18 +1581,8 @@ td.date, td.date > span {
 .app-news #app-navigation li.collapsible.open a {
   background-color: #232629; }
 .app-news #app-navigation li.folder {
-  border-right: 1px solid #706f6e; }
-.app-news #app-navigation .app-navigation-entry-menu {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none; }
-  .app-news #app-navigation .app-navigation-entry-menu::after {
-    border-bottom-color: #706f6e; }
+  border-right: 1px solid #706f6e;
+  background: #232629; }
 
 .app-news #app-content {
   border-top: 1px solid #706f6e; }
@@ -1518,6 +1673,10 @@ td.date, td.date > span {
     top: 46px;
     background-color: inherit;
     border-bottom: 1px solid #706f6e; }
+  .app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
+    background: #31363b;
+    border-color: #706f6e;
+    box-shadow: none; }
   .app-passman #app-content .tab_header li.active .indicator {
     height: 5px;
     left: 0;
@@ -1558,7 +1717,7 @@ td.date, td.date > span {
 .app-passman .link {
   color: #2980b9 !important; }
 .app-passman #app-navigation li:hover > a, .app-passman #app-navigation li:active > a {
-  background-color: #31363b; }
+  background: none; }
 
 .vault_wrapper {
   box-shadow: none;
@@ -1651,6 +1810,10 @@ tags-input .autocomplete {
   margin-bottom: inherit;
   padding-bottom: inherit; }
 
+.ui-tabs .ui-tabs-nav li {
+  background: #232629;
+  border-color: #706f6e; }
+
 .app-tasks #app-content {
   height: 99.9%;
   border-top: 1px solid #706f6e; }
@@ -1675,6 +1838,8 @@ tags-input .autocomplete {
     background-color: #3daee9;
     border-bottom: 1px solid #706f6e;
     text-shadow: none; }
+    .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:hover, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:active, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:focus {
+      background: none repeat scroll 0 0 transparent !important; }
   .app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
     background: inherit;
     text-shadow: none;

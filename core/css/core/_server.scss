@@ -121,7 +121,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-.bubble {
+.bubble, .app-navigation-entry-menu {
 	background-color: $background-normal;
 	color: $foreground-normal;
 	border: 1px solid $decoration-normal;
@@ -531,7 +531,27 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
-/* Date picker -------------------------------------------------------------- */
+/* UI Widget ---------------------------------------------------------------- */
+// Used by datepicker, timepicker and others
+
+.ui-dialog {
+
+	.ui-dialog-content {
+		background-color: $background-normal;
+	}
+
+	.ui-dialog-buttonpane {
+		background-color: $background-normal;
+	}
+}
+
+.ui-dialog-titlebar {
+
+	&.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
+	}
+}
 
 .ui-widget-content {
 	background: $background-normal;
@@ -545,7 +565,17 @@ ul.multiselectoptions {
 	border: none;
 }
 
-.ui-datepicker table a.ui-state-default, .ui-timepicker table a.ui-state-default {
+.ui-datepicker,
+.ui-datepicker-title,
+.ui-datepicker .ui-widget-header,
+.ui-timepicker,
+.ui-timepicker-title,
+.ui-timepicker .ui-widget-header {
+	color: $foreground-normal;
+}
+
+.ui-datepicker table a.ui-state-default,
+.ui-timepicker table a.ui-state-default {
 	color: $foreground-normal;
 	border-radius: 3px 3px 3px 3px;
 	border: 1px solid $decoration-normal;
