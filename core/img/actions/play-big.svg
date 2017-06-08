@@ -9,10 +9,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="16"
    width="16"
-   version="1"
-   id="svg4"
-   sodipodi:docname="x-office-presentation.svg"
-   inkscape:version="0.92.1 r">
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="play-big.svg">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -36,21 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
+     inkscape:window-width="3200"
+     inkscape:window-height="1683"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
+     inkscape:cx="-11.932203"
      inkscape:cy="8"
-     inkscape:window-x="1680"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg2" />
   <path
-     style="block-progression:tb;text-transform:none;text-indent:0;fill:#f67400;fill-opacity:1"
-     d="M1.344 2A.445.445 0 0 0 1 2.438v11.124c0 .23.212.44.438.44h13.124a.457.457 0 0 0 .438-.44V2.61c0-.336-.265-.61-.516-.61zM2 5h12v6H2z"
-     fill="#f0965f"
-     color="#000"
-     id="path2" />
+     d="M0 0l16 8-16 8z"
+     id="path4"
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

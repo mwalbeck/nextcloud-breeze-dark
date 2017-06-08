@@ -1,3 +1,84 @@
+/* Social Sharing ----------------------------------------------------------- */
+
+.social-facebook,
+.icon-social-facebook {
+	background-image: url('../img/social/facebook.svg');
+}
+
+.social-twitter,
+.icon-social-twitter {
+	background-image: url('../img/social/twitter.svg');
+}
+
+.social-googleplus,
+.icon-social-googleplus {
+	background-image: url('../img/social/googleplus.svg');
+}
+
+.social-diaspora,
+.icon-social-diaspora {
+	background-image: url('../img/social/diaspora.svg');
+}
+
+.icon-social-email {
+	background-image: url('../img/email.svg');
+}
+
+/* Audio player ------------------------------------------------------------- */
+
+// Personal Setting sidebar
+.nav-icon-audio-player {
+	background-image: url('../img/places/audioplayer.svg');
+}
+
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+	background-image: url('../img/actions/play-big.svg');
+}
+
+.playing .play-pause {
+	background-image: url('../img/actions/pause-big.svg');
+}
+
+.sm2-inline-button.previous {
+	background-image: url('../img/actions/play-previous.svg');
+}
+
+.sm2-inline-button.next {
+	background-image: url('../img/actions/play-next.svg');
+}
+
+.sm2-inline-button.repeat {
+	background-image: url('../img/actions/repeat.svg');
+}
+
+#albenoverview li {
+	background-image: url('../img/actions/toggle-pictures.svg');
+}
+
+#albenoverview li i {
+	color: $foreground-inactive;
+
+	&:hover {
+		color: $foreground-active;
+	}
+}
+
+/* Two Factor --------------------------------------------------------------- */
+
+.nav-icon-totp-second-factor-auth {
+	background-image: url('../img/twofactor-totp.svg?v=1');
+}
+
+.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+	background-image: url('../img/twofactor-u2f.svg?v=1');
+}
+
+.nav-icon-second-factor-backup-codes {
+	background-image: url('../img/actions/password.svg?v=1');
+}
+
 .icon-link {
 	background-image: url('../img/places/link.svg?v=1');
 }
@@ -201,7 +282,7 @@ select {
 }
 
 .icon-timezone {
-	background: url("../img/timezone.svg") center center no-repeat;
+	background: url("../img/actions/timezone.svg") center center no-repeat;
 }
 
 .glyphicon-chevron-right {
@@ -221,7 +302,7 @@ select {
 }
 
 .nav-icon-sessions {
-	background-image: url('../img/toggle-filelist.svg?v=1');
+	background-image: url('../img/actions/toggle-filelist.svg?v=1');
 }
 
 .nav-icon-apppasswords {
@@ -256,47 +337,29 @@ select {
 	background-image: url('../img/actions/toggle.svg?v=1');
 }
 
-.nav-icon-second-factor-backup-codes {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
 .icon-announcement {
 	background-image: url('../img/places/announcementcenter.svg');
 }
 
-.nav-icon-totp-second-factor-auth {
-	background-image: url('../img/twofactor-totp.svg?v=1');
+#app-navigation .icon-updatemode-unread {
+	background-image: url('../img/actions/updatemodeunread.svg');
 }
 
-.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
-	background-image: url('../img/twofactor-u2f.svg?v=1');
-}
-
-.social-facebook,
-.icon-social-facebook {
-	background-image: url('../img/social/facebook.svg');
-}
-
-.social-twitter,
-.icon-social-twitter {
-	background-image: url('../img/social/twitter.svg');
-}
-
-.social-googleplus,
-.icon-social-googleplus {
-	background-image: url('../img/social/googleplus.svg');
-}
-
-.social-diaspora,
-.icon-social-diaspora {
-	background-image: url('../img/social/diaspora.svg');
-}
-
-.icon-social-email {
-	background-image: url('../img/email.svg');
+#app-navigation .icon-updatemode-default {
+	background-image: url('../img/actions/updatemodedefault.svg');
 }
 
 /* CSS tricks to change icon color */
+
+// Audio player
+
+.sm2-volume-control {
+	filter: invert(95%);
+}
+
+.sm2-inline-button.shuffle {
+	filter: invert(95%);
+}
 
 // Change the app icons in the navigation menu to white
 #navigation .app-icon {
@@ -314,7 +377,7 @@ img.notification-icon {
 // Change the button, to gallery app, to white
 #controls .button.view-switcher img {
 	opacity: 0.6;
-	filter: invert(100%);
+	filter: invert(95%);
 }
 
 // Change the, to files app, button to white again since it was change to black with the above
@@ -325,12 +388,12 @@ img.notification-icon {
 // Change home icon to white in the files app, both for 
 .app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
 .app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
-	filter: invert(100%);
+	filter: invert(95%);
 }
 
 // Change home icon in gallery app to white
 #controls #breadcrumbs .crumb a img {
-	filter: invert(100%);
+	filter: invert(95%);
 }
 
 .actions a.button.new img {
@@ -339,5 +402,5 @@ img.notification-icon {
 
 // Make icon for impersonate in user menu white
 a.impersonate img.svg {
-	filter: invert(100%);
+	filter: invert(95%);
 }

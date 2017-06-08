@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="16"
-   width="16"
+   height="17"
+   width="17"
    version="1.1"
-   id="svg8"
-   sodipodi:docname="checkbox-mixed-disabled.svg"
+   id="svg4"
+   sodipodi:docname="history.svg"
    inkscape:version="0.92.1 r">
   <metadata
-     id="metadata14">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs12" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,27 +38,17 @@
      inkscape:pageshadow="2"
      inkscape:window-width="2560"
      inkscape:window-height="1377"
-     id="namedview10"
+     id="namedview6"
      showgrid="false"
-     inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
-     inkscape:cy="8"
+     inkscape:zoom="13.882353"
+     inkscape:cx="0.57627119"
+     inkscape:cy="8.5"
      inkscape:window-x="1680"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:current-layer="svg4" />
   <path
-     d="M2.5 2.5h11v11h-11z"
-     fill="#dcdcdc"
+     d="M9.525 2.08c-3.95 0-6.535 3.447-6.364 6.72H1l3.904 3.92 4.08-3.874H6.837C6.6 7.146 8 5.732 9.526 5.754c1.595.024 2.8 1.23 2.8 2.734.09 1.594-1.63 3.428-3.966 2.53 0 1.23.003 2.545 0 3.765 4.19.83 7.64-2.51 7.64-6.25C16 4.97 13.08 2.08 9.525 2.08z"
      id="path2"
-     style="fill:#4d4d4d;fill-opacity:1" />
-  <path
-     d="M3 2c-.554 0-1 .446-1 1v10c0 .554.446 1 1 1h10c.554 0 1-.446 1-1V3c0-.554-.446-1-1-1H3zm0 1h10v10H3V3z"
-     fill="#969696"
-     id="path4"
-     style="fill:#706f6e;fill-opacity:1" />
-  <path
-     d="M4 7h8v2H4z"
-     fill="#fff"
-     id="path6" />
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

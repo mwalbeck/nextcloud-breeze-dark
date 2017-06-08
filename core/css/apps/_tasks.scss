@@ -36,6 +36,12 @@
             background-color: $background-active;
             border-bottom: 1px solid $decoration-normal;
             text-shadow: none;
+
+            textarea {
+                &:hover, &:active, &:focus {
+                    background: none repeat scroll 0 0 transparent !important;
+                }
+            }
         }
 
         #app-sidebar div.content-wrapper .body .section {

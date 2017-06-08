@@ -1,0 +1,52 @@
+#bm_import:hover ~ button#bm_import_submit {
+	background-color: $background-normal;
+	color: $foreground-normal;
+}
+
+.bookmark_single {
+	border-bottom-color: $decoration-normal;
+
+    &:hover {
+        background-color: $background-active-hover;
+    }
+}
+
+.bookmark_single_form {
+	border-bottom-color: $decoration-normal;
+
+    .tagit {
+        box-shadow: none;
+    }
+}
+
+ul.tagit {
+	border-color: $decoration-normal;
+
+    input[type="text"] {
+        color: $foreground-inactive;
+    }
+
+    li.tagit-choice {
+	    color: $foreground-normal;
+        background-color: $background-normal;
+        border-color: $decoration-normal;
+
+        &:hover, &.remove {
+            background-color: $background-normal;
+	        border-color: $decoration-active;
+        }
+
+        .close .text-icon {
+	        color: $foreground-inactive;
+        }
+
+        a.tagLabel:hover, a.close .text-icon:hover {
+            color: $foreground-active;
+        }
+    }
+}
+
+#tag_filter ul.tagit li.tagit-choice {
+	background-color: $background-normal;
+    border: 1px solid $decoration-normal;
+}

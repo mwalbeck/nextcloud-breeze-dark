@@ -9,10 +9,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="16"
    width="16"
-   version="1"
-   id="svg4"
-   sodipodi:docname="text.svg"
-   inkscape:version="0.92.1 r">
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pause.svg">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -36,21 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
+     inkscape:window-width="3200"
+     inkscape:window-height="1683"
      id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
+     inkscape:cx="-11.932203"
      inkscape:cy="8"
-     inkscape:window-x="1680"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg2" />
   <path
-     style="block-progression:tb;text-transform:none;text-indent:0;fill:#f2f2f2;fill-opacity:1"
-     d="M2.35 1.002A.45.45 0 0 0 2 1.44V14.56c0 .232.206.44.432.44H13.57a.452.452 0 0 0 .432-.438V4.42a.458.458 0 0 0-.055-.192l-3.312-3.2a.427.427 0 0 0-.135-.026H2.43a.424.424 0 0 0-.08 0zM4 3h6v1H4V3zm0 3h5v1H4V6zm0 3h8v1H4V9zm0 3h4v1H4v-1z"
-     fill="#969696"
-     color="#000"
-     id="path2" />
+     d="M3 3v10h4V3H3zm6 0v10h4V3H9z"
+     id="path4"
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

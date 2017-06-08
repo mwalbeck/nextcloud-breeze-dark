@@ -9,12 +9,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="16"
    width="16"
+   id="svg2"
    version="1.1"
-   id="svg6"
-   sodipodi:docname="checkbox.svg"
-   inkscape:version="0.92.1 r">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="play-add.svg">
   <metadata
-     id="metadata12">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,25 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1259"
-     inkscape:window-height="1170"
-     id="namedview8"
+     inkscape:window-width="3200"
+     inkscape:window-height="1683"
+     id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
+     inkscape:cx="-11.932203"
      inkscape:cy="8"
-     inkscape:window-x="2973"
-     inkscape:window-y="39"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg6" />
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <path
-     d="M2.5 2.5h11v11h-11z"
-     fill="#fff"
-     id="path2"
-     style="fill:#f2f2f2;fill-opacity:1" />
-  <path
-     d="M3 2c-.554 0-1 .446-1 1v10c0 .554.446 1 1 1h10c.554 0 1-.446 1-1V3c0-.554-.446-1-1-1H3zm0 1h10v10H3V3z"
-     fill="#969696"
+     d="M2 1l11 6-11 6zM11 9v2H9v2h2v2h2v-2h2v-2h-2V9z"
      id="path4"
-     style="fill:#706f6e;fill-opacity:1" />
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>

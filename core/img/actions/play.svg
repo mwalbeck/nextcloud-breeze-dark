@@ -9,12 +9,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="16"
    width="16"
+   id="svg2"
    version="1.1"
-   id="svg6"
-   sodipodi:docname="radio.svg"
-   inkscape:version="0.92.1 r">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="play.svg">
   <metadata
-     id="metadata12">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10" />
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,25 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     id="namedview8"
+     inkscape:window-width="3200"
+     inkscape:window-height="1683"
+     id="namedview6"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="0.54237288"
+     inkscape:cx="-11.932203"
      inkscape:cy="8"
-     inkscape:window-x="1680"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
+     inkscape:current-layer="svg2" />
   <path
-     d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"
-     fill="#fff"
-     id="path2"
-     style="fill:#f2f2f2;fill-opacity:1" />
-  <path
-     d="M8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7zm0 1a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z"
-     fill="#969696"
+     d="M2 2l12 6-12 6z"
      id="path4"
-     style="fill:#706f6e;fill-opacity:1" />
+     style="fill:#f2f2f2;fill-opacity:1" />
 </svg>
