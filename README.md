@@ -5,6 +5,8 @@ The icons are from the default Nextcloud theme and the individual apps, with the
 
 Current stable release: 12.0.0
 
+![screenshot of theme](screenshot.png)
+
 ## Version number
 
 The first number is the Nextcloud version. The second number is the Nextcloud point release version. The third number is the theme version.
