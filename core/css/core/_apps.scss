@@ -87,6 +87,22 @@
 	select {
 		background-color: $background-normal !important;
 	}
+
+	& > ul > li {
+
+		&:focus,
+		&:hover,
+		&.active,
+		& a.selected {
+			opacity: 1;
+			box-shadow: inset 2px 0 $background-active-alternate;
+
+			& > a {
+				opacity: 1;
+				box-shadow: inset 2px 0 $background-active-alternate;
+			}
+		}
+	}
 }
 
 .nav-trashbin {
