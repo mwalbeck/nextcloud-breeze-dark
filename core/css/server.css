@@ -123,7 +123,8 @@
 .nav-icon-systemtagsfilter {
   background-image: url("../img/actions/tag.svg"); }
 
-.nav-icon-extstoragemounts {
+.nav-icon-extstoragemounts,
+.nav-icon-external-storage {
   background-image: url("../img/actions/external.svg?v=1"); }
 
 .nav-icon-trashbin {
@@ -980,6 +981,10 @@ div.ui-datepicker, div.ui-timepicker {
   border-top: 1px solid #706f6e;
   height: 99.8%; }
 
+#app-content-header {
+  background-color: #3daee9;
+  box-shadow: none; }
+
 /* App Navigation ----------------------------------------------------------- */
 #app-navigation {
   background-color: #31363b;
@@ -1054,7 +1059,8 @@ div.ui-datepicker, div.ui-timepicker {
 
 /* App Settings ------------------------------------------------------------- */
 #app-settings-header {
-  border-color: #706f6e; }
+  border-color: #706f6e;
+  background-color: #31363b; }
 
 #app-settings-content {
   border-color: #706f6e;
@@ -1813,6 +1819,50 @@ tags-input .autocomplete {
 .ui-tabs .ui-tabs-nav li {
   background: #232629;
   border-color: #706f6e; }
+
+.app-ocsms #app-content-header {
+  margin-top: 1px; }
+
+#app-mailbox-peers {
+  border-color: #706f6e;
+  background-color: #232629; }
+  #app-mailbox-peers li {
+    border-top-color: #706f6e; }
+    #app-mailbox-peers li:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+      #app-mailbox-peers li:hover > a {
+        background: none; }
+  #app-mailbox-peers .selected {
+    background-color: #3daee9; }
+    #app-mailbox-peers .selected:hover {
+      background-color: #3daee9; }
+    #app-mailbox-peers .selected a {
+      background: none; }
+
+.ocsms-plname {
+  color: #eff0f1; }
+
+#ocsms-phone-msg-nb {
+  color: #eff0f1; }
+
+#ocsms-phone-label {
+  font-weight: bold;
+  color: #fcfcfc; }
+
+.msg-date {
+  color: #bdc3c7;
+  opacity: 0.5; }
+
+.msg-sent, .msg-recv {
+  background-color: #232629;
+  border-color: #706f6e;
+  box-shadow: none; }
+  .msg-sent:hover .msg-date, .msg-recv:hover .msg-date {
+    opacity: 1;
+    color: #bdc3c7; }
+
+.msg-sent {
+  border-color: #27ae60; }
 
 .app-tasks #app-content {
   height: 99.9%;

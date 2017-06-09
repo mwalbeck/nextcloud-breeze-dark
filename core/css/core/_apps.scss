@@ -28,6 +28,11 @@
 	height: 99.8%;
 }
 
+#app-content-header {
+	background-color: $background-active;
+	box-shadow: none;
+}
+
 /* App Navigation ----------------------------------------------------------- */
 
 #app-navigation {
@@ -163,6 +168,7 @@
 
 #app-settings-header {
 	border-color: $decoration-normal;
+	background-color: $background-normal;
 }
 
 #app-settings-content {
