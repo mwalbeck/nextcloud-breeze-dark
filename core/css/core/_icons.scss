@@ -113,9 +113,28 @@
     }
 }
 
-.icon-checkmark, .icon-sent {
+.icon-checkmark,
+.icon-sent {
 	background-image: url('../img/actions/checkmark.svg?v=1');
 }
+
+.icon-history,
+#app-navigation .icon-updatemode-default {
+	background-image: url('../img/actions/history.svg?v=1');
+}
+
+#app-navigation .icon-updatemode-unread {
+	background-image: url('../img/actions/history.svg');
+	opacity: 0.25;
+}
+
+
+
+
+
+
+
+
 
 .icon-link {
 	background-image: url('../img/places/link.svg?v=1');
@@ -220,10 +239,6 @@
 
 .icon-comment {
 	background-image: url('../img/actions/comment.svg?v=1');
-}
-
-.icon-history {
-	background-image: url('../img/actions/history.svg?v=1');
 }
 
 .icon-confirm {
@@ -345,14 +360,6 @@ select {
 
 .icon-announcement {
 	background-image: url('../img/places/announcementcenter.svg');
-}
-
-#app-navigation .icon-updatemode-unread {
-	background-image: url('../img/actions/updatemodeunread.svg');
-}
-
-#app-navigation .icon-updatemode-default {
-	background-image: url('../img/actions/updatemodedefault.svg');
 }
 
 .icon-reply {

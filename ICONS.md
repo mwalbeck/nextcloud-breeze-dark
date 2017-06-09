@@ -1,7 +1,6 @@
 The icons for this theme are from the following projects:
 
 * Nextcloud Server, AGPLv3 - [https://github.com/nextcloud/server](https://github.com/nextcloud/server)
-* Nextcloud Serverinfo, AGPLv3 - [https://github.com/nextcloud/serverinfo](https://github.com/nextcloud/serverinfo)
 * Nextcloud News, AGPLv3 - [https://github.com/nextcloud/news](https://github.com/nextcloud/news)
 * Nextcloud Activity, AGPLv3 - [https://github.com/nextcloud/activity](https://github.com/nextcloud/activity)
 * Nextcloud Two Factor TOTP, AGPLv3 - [https://github.com/nextcloud/twofactor_totp](https://github.com/nextcloud/twofactor_totp)
