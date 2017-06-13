@@ -487,3 +487,9 @@ img.notification-icon {
 a.impersonate img.svg {
 	filter: invert(95%);
 }
+
+// Force svgs to 16x16 in settings dropdown
+#settings #expanddiv ul li a img {
+	width: 16px;
+	height: 16px;
+}

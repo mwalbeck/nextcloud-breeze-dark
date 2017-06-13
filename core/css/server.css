@@ -356,6 +356,10 @@ img.notification-icon {
 a.impersonate img.svg {
   filter: invert(95%); }
 
+#settings #expanddiv ul li a img {
+  width: 16px;
+  height: 16px; }
+
 body {
   color: #eff0f1;
   background-color: #31363b; }
