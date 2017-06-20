@@ -1,0 +1,85 @@
+#mail-messages {
+    border-right: 1px solid $decoration-normal;
+    background-color: $background-dark;
+}
+
+#mail-message-header {
+	background: $background-normal;
+
+    & .transparency {
+        color: $foreground-normal !important;
+
+        a {
+            color: $foreground-link !important;
+        }
+    }
+}
+
+#mail-new-message-fixed {
+	background-color: $background-normal;
+}
+
+.mail-message-summary {
+	border-top-color: $decoration-normal;
+
+    &:first-child {
+        border-top: none;
+    }
+
+    &:hover {
+        background-color: $background-active-hover;
+    }
+
+    &:focus, &.active {
+        background-color: $background-active;
+    }
+}
+
+.mail-message-summary-from, .date {
+    opacity: 1;
+    color: $foreground-inactive;
+}
+
+.active .mail-message-summary-from, .active .date {
+    opacity: 1;
+    color: $foreground-normal;
+}
+
+.mail-message-summary-subject {
+    color: $foreground-active;
+    font-weight: bold;
+}
+
+.account-toggle-collapse {
+    color: $foreground-inactive;
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.app-settings-hint {
+    color: $foreground-inactive;
+}
+
+.transparency {
+    opacity: 1;
+}
+
+input.to, input.cc, input.bcc, input.subject, textarea.message-body {
+    border: none;
+	border-top: 1px solid $decoration-normal;
+
+    &:hover, &:focus, &:active {
+        border-color: $decoration-normal !important;
+    }
+}
+
+textarea.message-body {
+    border-bottom: 1px solid $decoration-normal;
+}
+
+#setup .toggle-manual-mode {
+    opacity: 0.7;
+}

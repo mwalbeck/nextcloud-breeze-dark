@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 12.0.1
+* Version: 12.0.2
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -33,7 +33,9 @@
 // 3rd party apps
 @import 'apps/audio-player';
 @import 'apps/bookmarks';
+@import 'apps/mail';
 @import 'apps/news';
 @import 'apps/notes';
 @import 'apps/passman';
+@import 'apps/phone-sync';
 @import 'apps/tasks';

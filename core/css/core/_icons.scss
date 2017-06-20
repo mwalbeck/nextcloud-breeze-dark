@@ -1,4 +1,405 @@
-/* Social Sharing ----------------------------------------------------------- */
+/* Password ----------------------------------------------------------------- */
+
+.icon-password,
+.nav-icon-second-factor-backup-codes,
+.nav-icon-apppasswords {
+	background-image: url('../img/actions/password.svg?v=1');
+}
+
+/* Home --------------------------------------------------------------------- */
+
+#oc-dialog-filepicker-content .dirtree div:first-child a,
+.icon-inbox {
+	background-image: url('../img/places/home.svg?v=1');
+}
+
+/* Star --------------------------------------------------------------------- */
+
+.icon-flagged,
+.nav-icon-favorites {
+	background-image: url('../img/actions/star.svg?v=1');
+}
+
+.icon-star,
+.icon-starred:hover,
+.icon-starred:focus {
+	background-image: url('../img/actions/star.svg?v=1');
+	opacity: 0.5;
+}
+
+/* Starred ------------------------------------------------------------------ */
+
+.icon-starred,
+.icon-star:hover,
+.icon-star:focus {
+	background-image: url('../img/actions/starred.svg?v=1');
+	opacity: 1;
+}
+
+/* Rename ------------------------------------------------------------------- */
+
+.icon-rename,
+.icon-drafts {
+	background-image: url('../img/actions/rename.svg?v=1');
+}
+
+/* Error -------------------------------------------------------------------- */
+
+.icon-junk {
+	background-image: url('../img/actions/error.svg');
+}
+
+/* Delete ------------------------------------------------------------------- */
+
+.icon-delete {
+    background-image: url('../img/actions/delete.svg?v=1');
+
+    &:hover, &:focus {
+	    background-image: url('../img/actions/delete-hover.svg?v=1');
+    }
+}
+
+.icon-trash,
+.nav-icon-trashbin {
+	background-image: url('../img/actions/delete.svg?v=1');
+}
+
+/* Checkmark ---------------------------------------------------------------- */
+
+.icon-checkmark,
+.icon-sent {
+	background-image: url('../img/actions/checkmark.svg?v=1');
+}
+
+/* History ------------------------------------------------------------------ */
+
+.icon-history,
+#app-navigation .icon-updatemode-default {
+	background-image: url('../img/actions/history.svg?v=1');
+}
+
+#app-navigation .icon-updatemode-unread {
+	background-image: url('../img/actions/history.svg');
+	opacity: 0.25;
+}
+
+/* External ----------------------------------------------------------------- */
+
+.nav-icon-extstoragemounts,
+.nav-icon-external-storage,
+.icon-external {
+	background-image: url('../img/actions/external.svg?v=1');
+}
+
+/* Public ------------------------------------------------------------------- */
+
+.icon-public,
+.nav-icon-sharinglinks {
+	background-image: url('../img/actions/public.svg?v=1');
+}
+
+/* Share -------------------------------------------------------------------- */
+
+.icon-share,
+.icon-shared,
+.nav-icon-federated-cloud,
+.nav-icon-sharingin,
+.nav-icon-sharingout {
+	background-image: url('../img/actions/share.svg?v=1');
+}
+
+/* Tag ---------------------------------------------------------------------- */
+
+.icon-tag,
+.nav-icon-systemtagsfilter {
+	background-image: url('../img/actions/tag.svg?v=1');
+}
+
+/* Link --------------------------------------------------------------------- */
+
+.icon-link {
+	background-image: url('../img/places/link.svg?v=1');
+}
+
+/* Toggle ------------------------------------------------------------------- */
+
+.icon-toggle,
+#show + label,
+#dbpassword-toggle + label,
+#personal-show + label {
+	background-image: url('../img/actions/toggle.svg?v=1');
+}
+
+/* Toggle Filelist ---------------------------------------------------------- */
+
+.nav-icon-sessions {
+	background-image: url('../img/actions/toggle-filelist.svg?v=1');
+}
+
+/* Toggle Pictures ---------------------------------------------------------- */
+
+#albenoverview li {
+	background-image: url('../img/actions/toggle-pictures.svg');
+}
+
+/* Settings ----------------------------------------------------------------- */
+
+.settings-button {
+	background-image: url('../img/actions/settings.svg?v=1');
+}
+
+/* Add ---------------------------------------------------------------------- */
+
+.icon-add {
+	background-image: url('../img/actions/add.svg?v=1');
+}
+
+/* Upload ------------------------------------------------------------------- */
+
+.icon-upload {
+	background-image: url('../img/actions/upload.svg?v=1');
+}
+
+/* More --------------------------------------------------------------------- */
+
+.icon-more,
+#app-navigation .app-navigation-entry-utils-menu-button button {
+	background-image: url('../img/actions/more.svg?v=1');
+}
+
+/* Files -------------------------------------------------------------------- */
+
+.nav-icon-files {
+	background-image: url('../img/places/files.svg?v=1');
+}
+
+/* Download ----------------------------------------------------------------- */
+
+.icon-download {
+	background-image: url('../img/actions/download.svg?v=1');
+}
+
+/* Triangle-N --------------------------------------------------------------- */
+
+.icon-triangle-n {
+	background-image: url('../img/actions/triangle-n.svg?v=1');
+}
+
+/* Triangle-S --------------------------------------------------------------- */
+
+.icon-triangle-s,
+#app-navigation .collapsible > .collapse {
+	background-image: url('../img/actions/triangle-s.svg?v=1');
+}
+
+select {
+	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
+}
+
+/* Details ------------------------------------------------------------------ */
+
+.icon-details {
+	background-image: url('../img/actions/details.svg?v=1');
+}
+
+/* Contacts ----------------------------------------------------------------- */
+
+.icon-contacts-dark, .icon-contacts {
+	background-image: url('../img/places/contacts.svg?v=1');
+}
+
+/* Info --------------------------------------------------------------------- */
+
+.icon-info {
+	background-image: url('../img/actions/details.svg?v=1');
+	opacity: 0.5;
+}
+
+/* Clippy ------------------------------------------------------------------- */
+
+.icon-clippy {
+	background-image: url('../img/actions/clippy.svg?v=2');
+	opacity: 0.5;
+}
+
+/* Comment ------------------------------------------------------------------ */
+
+.icon-comment {
+	background-image: url('../img/actions/comment.svg?v=1');
+}
+
+/* Confirm ------------------------------------------------------------------ */
+
+.icon-confirm {
+	background-image: url('../img/actions/confirm.svg?v=2');
+}
+
+/* Search ------------------------------------------------------------------- */
+
+.icon-search {
+	background-image: url('../img/actions/search.svg?v=1');
+}
+
+/* Recent ------------------------------------------------------------------- */
+
+.nav-icon-recent {
+	background-image: url('../img/actions/recent.svg?v=1');
+}
+
+/* Caret -------------------------------------------------------------------- */
+
+.icon-caret-dark {
+	background-image: url('../img/actions/caret.svg?v=1');
+}
+
+/* RSS ---------------------------------------------------------------------- */
+
+.icon-rss {
+	background-image: url('../img/actions/rss.svg') !important;
+}
+
+/* Close -------------------------------------------------------------------- */
+
+.icon-close {
+	background-image: url('../img/actions/close.svg?v=1');
+}
+
+.oc-dialog-close {
+	background: url('../img/actions/close.svg') no-repeat center;
+}
+
+/* Menu --------------------------------------------------------------------- */
+
+.icon-menu {
+	background-image: url('../img/actions/menu.svg?v=1');
+}
+
+/* User --------------------------------------------------------------------- */
+
+.nav-icon-personal-settings {
+	background-image: url('../img/actions/user.svg?v=1');
+}
+
+/* Right Arrow -------------------------------------------------------------- */
+
+.glyphicon-chevron-right {
+	background: url("../img/rightarrow.svg") center center no-repeat;
+}
+
+/* Left Arrow --------------------------------------------------------------- */
+
+.glyphicon-chevron-left {
+	background: url("../img/leftarrow.svg") center center no-repeat;
+}
+
+/* Change ------------------------------------------------------------------- */
+
+.nav-icon-clientsbox {
+	background-image: url('../img/change.svg?v=1');
+}
+
+/* Play Big ----------------------------------------------------------------- */
+
+.play-pause,
+.play-pause:hover,
+.paused .play-pause:hover {
+	background-image: url('../img/actions/play-big.svg');
+}
+
+/* Pause Big ---------------------------------------------------------------- */
+
+.playing .play-pause {
+	background-image: url('../img/actions/pause-big.svg');
+}
+
+/* Play Previous ------------------------------------------------------------ */
+
+.sm2-inline-button.previous {
+	background-image: url('../img/actions/play-previous.svg');
+}
+
+/* Play Next ---------------------------------------------------------------- */
+
+.sm2-inline-button.next {
+	background-image: url('../img/actions/play-next.svg');
+}
+
+/* Activity App ------------------------------------------------------------- */
+
+.icon-activity,
+.nav-icon-activity {
+	background-image: url('../img/activity.svg?v=1');
+}
+
+/* Calendar App ------------------------------------------------------------- */
+
+.icon-timezone {
+	background: url("../img/actions/timezone.svg") center center no-repeat;
+}
+
+/* News App ----------------------------------------------------------------- */
+
+// Unpinned
+.icon-unpinned,
+#app-navigation .icon-unpinned {
+	background-image: url('../img/actions/unpinned.svg');
+}
+
+// Pinned
+.icon-pinned,
+#app-navigation .icon-pinned {
+	background-image: url('../img/actions/pinned.svg');
+}
+
+// Full text enabled
+.icon-full-text-enabled {
+	background-image: url('../img/actions/fulltext.svg');
+}
+
+// Full text disabled
+.icon-full-text-disabled {
+	background-image: url('../img/actions/nonfulltext.svg');
+}
+
+/* Annoucement Center App --------------------------------------------------- */
+
+.icon-announcement {
+	background-image: url('../img/places/announcementcenter.svg');
+}
+
+/* Audio player App --------------------------------------------------------- */
+
+.nav-icon-audio-player {
+	background-image: url('../img/places/audioplayer.svg');
+}
+
+#albenoverview li i {
+	color: $foreground-inactive;
+
+	&:hover {
+		color: $foreground-active;
+	}
+}
+
+.sm2-inline-button.repeat {
+	background-image: url('../img/actions/repeat.svg');
+}
+
+/* Mail App ----------------------------------------------------------------- */
+
+.icon-reply {
+	background-image: url('../img/mail/reply.svg');
+}
+
+.icon-archive {
+	background-image: url('../img/mail/archive.svg');
+}
+
+/* Social Sharing App ------------------------------------------------------- */
 
 .social-facebook,
 .icon-social-facebook {
@@ -24,339 +425,21 @@
 	background-image: url('../img/email.svg');
 }
 
-/* Audio player ------------------------------------------------------------- */
-
-// Personal Setting sidebar
-.nav-icon-audio-player {
-	background-image: url('../img/places/audioplayer.svg');
-}
-
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover {
-	background-image: url('../img/actions/play-big.svg');
-}
-
-.playing .play-pause {
-	background-image: url('../img/actions/pause-big.svg');
-}
-
-.sm2-inline-button.previous {
-	background-image: url('../img/actions/play-previous.svg');
-}
-
-.sm2-inline-button.next {
-	background-image: url('../img/actions/play-next.svg');
-}
-
-.sm2-inline-button.repeat {
-	background-image: url('../img/actions/repeat.svg');
-}
-
-#albenoverview li {
-	background-image: url('../img/actions/toggle-pictures.svg');
-}
-
-#albenoverview li i {
-	color: $foreground-inactive;
-
-	&:hover {
-		color: $foreground-active;
-	}
-}
-
-/* Two Factor --------------------------------------------------------------- */
+/* Two Factor Apps ---------------------------------------------------------- */
 
 .nav-icon-totp-second-factor-auth {
 	background-image: url('../img/twofactor-totp.svg?v=1');
 }
 
-.nav-icon-u2f-second-factor-auth, .icon-u2f-device {
+.icon-u2f-device,
+.nav-icon-u2f-second-factor-auth {
 	background-image: url('../img/twofactor-u2f.svg?v=1');
 }
 
-.nav-icon-second-factor-backup-codes {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
-.icon-link {
-	background-image: url('../img/places/link.svg?v=1');
-}
-
-.icon-toggle {
-	background-image: url('../img/actions/toggle.svg?v=1');
-}
-
-.settings-button {
-	background-image: url('../img/actions/settings.svg?v=1');
-}
-
-.icon-add {
-	background-image: url('../img/actions/add.svg?v=1');
-}
-
-.icon-delete {
-    background-image: url('../img/actions/delete.svg?v=1');
-
-    &:hover, &:focus {
-	    background-image: url('../img/actions/delete-hover.svg?v=1');
-    }
-}
-
-.icon-upload {
-	background-image: url('../img/actions/upload.svg?v=1');
-}
-
-.icon-folder, .icon-filetype-folder {
-	background-image: url('../img/filetypes/folder.svg?v=1');
-}
-
-.icon-file, .icon-filetype-text {
-	background-image: url('../img/filetypes/text.svg?v=1');
-}
-
-.icon-public {
-	background-image: url('../img/actions/public.svg?v=1');
-}
-
-.icon-share, .icon-shared {
-	background-image: url('../img/actions/share.svg?v=1');
-}
-
-.icon-more {
-	background-image: url('../img/actions/more.svg?v=1');
-}
-
-/* Nav Bar Icons */
-
-.nav-icon-files {
-	background-image: url('../img/places/files.svg?v=1');
-}
-
-.nav-icon-sharingin, .nav-icon-sharingout {
-	background-image: url('../img/actions/share.svg?v=1');
-}
-
-.nav-icon-sharinglinks {
-	background-image: url('../img/actions/public.svg?v=1');
-}
-
-.nav-icon-systemtagsfilter {
-	background-image: url('../img/actions/tag.svg');
-}
-
-.nav-icon-extstoragemounts {
-	background-image: url('../img/actions/external.svg?v=1');
-}
-
-.nav-icon-trashbin {
-	background-image: url('../img/actions/delete.svg?v=1');
-}
-
-.icon-external {
-	background-image: url('../img/actions/external.svg?v=1');
-}
-
-.icon-download {
-	background-image: url('../img/actions/download.svg?v=1');
-}
-
-.icon-triangle-s {
-	background-image: url('../img/actions/triangle-s.svg?v=1');
-}
-
-.icon-rename {
-	background-image: url('../img/actions/rename.svg?v=1');
-}
-
-.icon-details {
-	background-image: url('../img/actions/details.svg?v=1');
-}
-
-.icon-password {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
-.icon-contacts-dark, .icon-contacts {
-	background-image: url('../img/places/contacts.svg?v=1');
-}
-
-.icon-info {
-	background-image: url('../img/actions/details.svg?v=1');
-	opacity: 0.5;
-}
-
-.icon-clippy {
-	background-image: url('../img/actions/clippy.svg?v=2');
-	opacity: 0.5;
-}
-
-.icon-tag {
-	background-image: url('../img/actions/tag.svg?v=1');
-}
-
-.icon-comment {
-	background-image: url('../img/actions/comment.svg?v=1');
-}
-
-.icon-history {
-	background-image: url('../img/actions/history.svg?v=1');
-}
-
-.icon-confirm {
-	background-image: url('../img/actions/confirm.svg?v=2');
-}
-
-.icon-search {
-	background-image: url('../img/actions/search.svg?v=1');
-}
-
-.nav-icon-favorites {
-	background-image: url('../img/actions/star.svg?v=1');
-}
-
-.nav-icon-recent {
-	background-image: url('../img/actions/recent.svg?v=1');
-}
-
-.icon-star, .icon-starred:hover, .icon-starred:focus {
-	background-image: url('../img/actions/star.svg?v=1');
-	opacity: 0.5;
-}
-
-.icon-starred, .icon-star:hover, .icon-star:focus {
-	background-image: url('../img/actions/starred.svg?v=1');
-	opacity: 1;
-}
-
-.icon-checkmark {
-	background-image: url('../img/actions/checkmark.svg?v=1');
-}
-
-.icon-caret-dark {
-	background-image: url('../img/actions/caret-dark.svg?v=1');
-}
-
-.icon-rss {
-	background-image: url('../img/actions/rss.svg') !important;
-}
-
-.icon-close {
-	background-image: url('../img/actions/close.svg?v=1');
-}
-
-.icon-triangle-n {
-	background-image: url('../img/actions/triangle-n.svg?v=1');
-}
-
-#app-navigation .icon-unpinned, .icon-unpinned {
-	background-image: url('../img/actions/unpinned.svg');
-}
-
-#app-navigation .icon-pinned, .icon-pinned {
-	background-image: url('../img/actions/pinned.svg');
-}
-
-.icon-full-text-enabled {
-	background-image: url('../img/actions/fulltext.svg');
-}
-
-.icon-full-text-disabled {
-	background-image: url('../img/actions/nonfulltext.svg');
-}
-
-select {
-	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
-}
-
-#app-navigation .app-navigation-entry-utils-menu-button button {
-	background-image: url('../img/actions/more.svg?v=1');
-}
-
-#app-navigation .collapsible > .collapse {
-	background-image: url('../img/actions/triangle-s.svg?v=1');
-}
-
-.icon-menu {
-	background-image: url('../img/actions/menu.svg?v=1');
-}
-
-.icon-timezone {
-	background: url("../img/actions/timezone.svg") center center no-repeat;
-}
-
-.glyphicon-chevron-right {
-	background: url("../img/rightarrow.svg") center center no-repeat;
-}
-
-.glyphicon-chevron-left {
-	background: url("../img/leftarrow.svg") center center no-repeat;
-}
-
-.icon-activity {
-	background-image: url('../img/activity.svg?v=1');
-}
-
-.nav-icon-personal-settings {
-	background-image: url('../img/personal.svg?v=1');
-}
-
-.nav-icon-sessions {
-	background-image: url('../img/actions/toggle-filelist.svg?v=1');
-}
-
-.nav-icon-apppasswords {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
-.nav-icon-clientsbox {
-	background-image: url('../img/change.svg?v=1');
-}
-
-.nav-icon-activity {
-	background-image: url('../img/activity-dark.svg?v=1');
-}
-
-.nav-icon-federated-cloud {
-	background-image: url('../img/actions/share.svg?v=1');
-}
-
-#oc-dialog-filepicker-content .dirtree div:first-child a {
-	background-image: url('../img/places/home.svg?v=1');
-}
-
-.oc-dialog-close {
-	background: url('../img/actions/close.svg') no-repeat center;
-}
-
-.select2-container .select2-choice .select2-arrow b {
-	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
-}
-
-#show + label, #dbpassword-toggle + label, #personal-show + label {
-	background-image: url('../img/actions/toggle.svg?v=1');
-}
-
-.icon-announcement {
-	background-image: url('../img/places/announcementcenter.svg');
-}
-
-#app-navigation .icon-updatemode-unread {
-	background-image: url('../img/actions/updatemodeunread.svg');
-}
-
-#app-navigation .icon-updatemode-default {
-	background-image: url('../img/actions/updatemodedefault.svg');
-}
-
-/* CSS tricks to change icon color */
+/* CSS tricks to change icon color ------------------------------------------ */
 
 // Audio player
-
-.sm2-volume-control {
-	filter: invert(95%);
-}
-
+.sm2-volume-control,
 .sm2-inline-button.shuffle {
 	filter: invert(95%);
 }
@@ -403,4 +486,15 @@ img.notification-icon {
 // Make icon for impersonate in user menu white
 a.impersonate img.svg {
 	filter: invert(95%);
+}
+
+// Force svgs to 16x16 in settings dropdown
+#settings #expanddiv ul li a img {
+	width: 16px;
+	height: 16px;
+}
+
+// Info icon in ldap settings
+#ldapSettings .ldapWizardControls a img {
+    filter: invert(95%);
 }
