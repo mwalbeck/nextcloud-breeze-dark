@@ -1,0 +1,65 @@
+.app-ocsms #app-content-header {
+    margin-top: 1px;
+}
+
+#app-mailbox-peers {
+    border-color: $decoration-normal;
+    background-color: $background-dark;
+    
+    li {
+        border-top-color: $decoration-normal;
+
+        &:hover {
+            background-color: $background-active-hover;
+
+            & > a {
+                background: none;
+            }
+        }
+    }
+
+    .selected {
+        background-color: $background-active;
+
+        &:hover {
+            background-color: $background-active;
+        }
+
+        a {
+            background: none;
+        }
+    }
+}
+
+.ocsms-plname {
+    color: $foreground-normal;
+}
+
+#ocsms-phone-msg-nb {
+	color: $foreground-normal;
+}
+
+#ocsms-phone-label {
+	font-weight: bold;
+	color: $foreground-active;
+}
+
+.msg-date {
+	color: $foreground-inactive;
+    opacity: 0.5;
+}
+
+.msg-sent, .msg-recv {
+    background-color: $background-dark;
+	border-color: $decoration-normal;
+    box-shadow: none;
+
+    &:hover .msg-date {
+        opacity: 1;
+        color: $foreground-inactive;
+    }
+}
+
+.msg-sent {
+	border-color: $foreground-positive;
+}
