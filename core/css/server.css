@@ -562,6 +562,16 @@ input[type="button"] {
       color: #bdc3c7;
       border-color: #706f6e; }
 
+/* jQuery UI Fixes ---------------------------------------------------------- */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border-color: #706f6e;
+  background: none;
+  background-color: #31363b;
+  font-weight: bold;
+  color: #eff0f1; }
+
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
   background-image: none !important;
