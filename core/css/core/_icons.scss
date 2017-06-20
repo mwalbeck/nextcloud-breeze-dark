@@ -493,3 +493,8 @@ a.impersonate img.svg {
 	width: 16px;
 	height: 16px;
 }
+
+// Info icon in ldap settings
+#ldapSettings .ldapWizardControls a img {
+    filter: invert(95%);
+}
