@@ -1657,6 +1657,10 @@ ul.tagit {
   opacity: 1;
   color: #bdc3c7; }
 
+.active .mail-message-summary-from, .active .date {
+  opacity: 1;
+  color: #eff0f1; }
+
 .mail-message-summary-subject {
   color: #fcfcfc;
   font-weight: bold; }
@@ -1681,6 +1685,9 @@ input.to, input.cc, input.bcc, input.subject, textarea.message-body {
 
 textarea.message-body {
   border-bottom: 1px solid #706f6e; }
+
+#setup .toggle-manual-mode {
+  opacity: 0.7; }
 
 #explore .category {
   background-color: #3daee9; }
