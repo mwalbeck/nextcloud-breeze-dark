@@ -535,6 +535,23 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
+/* Upload Progress ---------------------------------------------------------- */
+
+#uploadprogresswrapper {
+
+	#uploadprogressbar {
+
+		.label.outer, .label.inner {
+			color: $foreground-normal;
+		}
+
+		.ui-progressbar-value.ui-widget-header.ui-corner-left {
+			background-color: $background-active-hover;
+			top: 1px; // Temp fix for disaligned progressbar
+		}
+	}
+}
+
 /* UI Widget ---------------------------------------------------------------- */
 // Used by datepicker, timepicker and others
 

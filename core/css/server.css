@@ -902,6 +902,13 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
+/* Upload Progress ---------------------------------------------------------- */
+#uploadprogresswrapper #uploadprogressbar .label.outer, #uploadprogresswrapper #uploadprogressbar .label.inner {
+  color: #eff0f1; }
+#uploadprogresswrapper #uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
+  background-color: rgba(61, 174, 233, 0.25);
+  top: 1px; }
+
 /* UI Widget ---------------------------------------------------------------- */
 .ui-dialog .ui-dialog-content {
   background-color: #31363b; }
