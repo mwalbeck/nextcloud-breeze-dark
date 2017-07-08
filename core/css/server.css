@@ -1463,6 +1463,14 @@ td.date, td.date > span {
 #link {
   border-color: #706f6e; }
 
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous {
+  border: none; }
+  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:hover, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:hover {
+    border: none; }
+  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next.active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous.active {
+    background-color: transparent;
+    border: none; }
+
 #groupfolders-react-root th {
   border-bottom-color: #706f6e; }
 
