@@ -363,6 +363,10 @@ select.quota-user {
 	color: $foreground-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
+
+	.fileexists th label {
+		color: $foreground-normal;
+	}
 }
 
 .oc-dialog-title {

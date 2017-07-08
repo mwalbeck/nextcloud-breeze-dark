@@ -796,6 +796,8 @@ select.quota-user {
   color: #eff0f1;
   box-shadow: none;
   border: 1px solid #706f6e; }
+  .oc-dialog .fileexists th label {
+    color: #eff0f1; }
 
 .oc-dialog-title {
   background-color: #31363b; }
