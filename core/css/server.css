@@ -248,6 +248,10 @@ select {
 .sm2-inline-button.next {
   background-image: url("../img/actions/play-next.svg"); }
 
+/* Fullscreen --------------------------------------------------------------- */
+.icon-fullscreen {
+  background-image: url("../img/actions/fullscreen.svg"); }
+
 /* Activity App ------------------------------------------------------------- */
 .icon-activity,
 .nav-icon-activity {
@@ -1770,8 +1774,30 @@ textarea.message-body {
   .app-news #app-content .body .title .intro {
     color: rgba(189, 195, 199, 0.6); }
 
-.app-notes #app-content {
-  border-top: 1px solid #706f6e; }
+.app-notes #app-content .note-meta {
+  opacity: 1; }
+  .app-notes #app-content .note-meta .note-word-count {
+    opacity: 0.6; }
+  .app-notes #app-content .note-meta .note-meta-right {
+    opacity: 0.6; }
+    .app-notes #app-content .note-meta .note-meta-right:hover, .app-notes #app-content .note-meta .note-meta-right:active, .app-notes #app-content .note-meta .note-meta-right:focus {
+      opacity: 1; }
+.app-notes #app-content:-webkit-full-screen {
+  border-top: none; }
+  .app-notes #app-content:-webkit-full-screen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:-moz-full-screen {
+  border-top: none; }
+  .app-notes #app-content:-moz-full-screen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:-ms-fullscreen {
+  border-top: none; }
+  .app-notes #app-content:-ms-fullscreen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:fullscreen {
+  border-top: none; }
+  .app-notes #app-content:fullscreen #app-content-container {
+    background-color: #31363b; }
 
 #app-navigation li .nav-entry {
   color: #eff0f1; }
@@ -1784,10 +1810,12 @@ textarea.message-body {
     border-bottom: 1px solid #3daee9;
     color: #fcfcfc; }
 
-.mdedit {
+.CodeMirror {
+  background-color: #31363b;
   color: #eff0f1; }
-  .mdedit .marker {
-    color: rgba(189, 195, 199, 0.4); }
+
+.CodeMirror-cursor {
+  border-left-color: rgba(189, 195, 199, 0.4); }
 
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
   opacity: 0.7; }
