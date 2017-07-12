@@ -257,6 +257,10 @@ span {
 
 	div {
 		background-color: $background-active-hover;
+
+		&.quota-warning {
+			background-color: $background-neutral;
+		}
 	}
 }
 
