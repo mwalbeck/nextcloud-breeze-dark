@@ -723,6 +723,23 @@ span.success {
   color: #fcfcfc;
   background-color: #27ae60; }
 
+/* Quota -------------------------------------------------------------------- */
+#quota {
+  color: #eff0f1;
+  border: none; }
+  #quota div {
+    background-color: rgba(61, 174, 233, 0.25); }
+    #quota div.quota-warning {
+      background-color: #f67400; }
+
+#app-navigation #quota {
+  background-color: #31363b;
+  border-right: 1px solid #706f6e; }
+
+#app-content #quota {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+
 /* General Settings --------------------------------------------------------- */
 .section, .followupsection {
   color: #eff0f1; }
@@ -738,15 +755,6 @@ span.success {
     box-shadow: none; }
 
 /* Personal Settings -------------------------------------------------------- */
-#quota {
-  background-color: #232629;
-  color: #eff0f1;
-  border: 1px solid #706f6e; }
-  #quota div {
-    background-color: rgba(61, 174, 233, 0.25); }
-    #quota div.quota-warning {
-      background-color: #f67400; }
-
 #sessions .token-list td, #apppasswords .token-list td {
   border-color: #706f6e;
   border-top: none; }
