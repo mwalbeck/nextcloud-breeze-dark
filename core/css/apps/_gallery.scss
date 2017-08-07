@@ -55,3 +55,22 @@
 #link {
 	border-color: $decoration-normal;
 }
+
+#slideshow {
+
+	input[type="button"]:not(:disabled):not(.primary):not(#quota) {
+
+		&.next, &.previous {
+			border: none;
+
+			&:hover {
+				border: none;
+			}
+		
+			&:focus, &:active, &.active {
+				background-color: transparent;
+				border: none;
+			}
+		}
+	}
+}

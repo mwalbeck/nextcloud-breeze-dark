@@ -22,13 +22,15 @@
 
 .icon-star,
 .icon-starred:hover,
-.icon-starred:focus {
+.icon-starred:focus,
+.icon-stationfav, {
 	background-image: url('../img/actions/star.svg?v=1');
 	opacity: 0.5;
 }
 
 /* Starred ------------------------------------------------------------------ */
 
+.starred,
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus {
@@ -132,7 +134,8 @@
 
 /* Toggle Filelist ---------------------------------------------------------- */
 
-.nav-icon-sessions {
+.nav-icon-sessions,
+.nav-icon-security {
 	background-image: url('../img/actions/toggle-filelist.svg?v=1');
 }
 
@@ -326,6 +329,12 @@ select {
 
 .sm2-inline-button.next {
 	background-image: url('../img/actions/play-next.svg');
+}
+
+/* Fullscreen --------------------------------------------------------------- */
+
+.icon-fullscreen {
+	background-image: url('../img/actions/fullscreen.svg');
 }
 
 /* Activity App ------------------------------------------------------------- */

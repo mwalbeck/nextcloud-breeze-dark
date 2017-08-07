@@ -1,5 +1,52 @@
 .app-notes #app-content {
-	border-top: 1px solid $decoration-normal;
+
+	.note-meta {
+		opacity: 1;
+
+		.note-word-count {
+			opacity: 0.6;
+		}
+
+		.note-meta-right {
+			opacity: 0.6;
+
+			&:hover, &:active, &:focus {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:-webkit-full-screen {
+		border-top: none;
+
+		#app-content-container {
+			background-color: $background-normal;
+		}
+	}
+
+	&:-moz-full-screen {
+		border-top: none;
+
+		#app-content-container {
+			background-color: $background-normal;
+		}
+	}
+
+	&:-ms-fullscreen {
+		border-top: none;
+
+		#app-content-container {
+			background-color: $background-normal;
+		}
+	}
+
+	&:fullscreen {
+		border-top: none;
+
+		#app-content-container {
+			background-color: $background-normal;
+		}
+	}
 }
 
 #app-navigation li .nav-entry {
@@ -17,12 +64,13 @@
 	}
 }
 
-.mdedit {
+.CodeMirror {
+	background-color: $background-normal;
 	color: $foreground-normal;
+}
 
-	.marker {
-		color: $foreground-markdown-marker;
-	}
+.CodeMirror-cursor {
+	border-left-color: $foreground-markdown-marker;
 }
 
 #app-navigation .active > .utils {

@@ -1,11 +1,14 @@
 .app-passman {
-    #app-content {
-        height: 99.9%;
-        border-top: 1px solid $decoration-normal;
 
-        #controls {
-            background-color: inherit;
-        }
+    #app-navigation .taginput:hover {
+        background: none;
+    }
+
+    .link {
+        color: $foreground-link !important;
+    }
+
+    #app-content {
 
         #app-content-wrapper {
 
@@ -35,6 +38,7 @@
 
                     &:first-child, &:last-child {
                         background-color: $background-normal;
+                        border-color: $decoration-normal;
                     }
                 }
             }
@@ -120,14 +124,6 @@
                 border-color: $decoration-active;
             }
         }
-    }
-
-    .link {
-        color: $foreground-link !important;
-    }
-
-    #app-navigation li:hover > a, #app-navigation li:active > a {
-	    background: none;
     }
 }
 
