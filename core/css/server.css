@@ -1831,80 +1831,76 @@ textarea.message-body {
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
   opacity: 0.7; }
 
-.app-passman #app-content {
-  height: 99.9%;
-  border-top: 1px solid #706f6e; }
-  .app-passman #app-content #controls {
-    background-color: inherit; }
-  .app-passman #app-content #app-content-wrapper .credential-table tr td {
-    border-bottom-color: #706f6e; }
-  .app-passman #app-content #app-content-wrapper .credential-table tr {
-    background-color: #232629; }
-    .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
-      background-color: rgba(61, 174, 233, 0.25); }
-    .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
-      background-color: #3daee9; }
-  .app-passman #app-content #app-content-wrapper .viewModes .view-mode {
-    background-color: #31363b; }
-    .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
-      background-color: #3daee9; }
-    .app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
-      background-color: #31363b; }
-  .app-passman #app-content #app-content-wrapper .tags .tag {
-    background-color: #4d4d4d;
-    border: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
-    background-color: #4d4d4d;
-    border: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper #passman-controls {
-    top: 46px;
-    background-color: inherit;
-    border-bottom: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
-    background: #31363b;
-    border-color: #706f6e;
-    box-shadow: none; }
-  .app-passman #app-content .tab_header li.active .indicator {
-    height: 5px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #3daee9 !important; }
-  .app-passman #app-content .tab_header li.tab {
-    border-right: 1px solid #706f6e;
-    color: #eff0f1 !important;
-    background-color: #31363b !important; }
-  .app-passman #app-content .tab_container {
-    border: none; }
-  .app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
-    color: #bdc3c7; }
-  .app-passman #app-content .pw-gen .generate_pw .cell {
-    padding: 4.7px;
-    display: inline-block;
-    font-size: 14px;
-    border: 1px solid #706f6e;
-    background-color: #31363b;
-    cursor: pointer; }
-  .app-passman #app-content .pass-meter-col.poor .indicator {
-    background-color: #da4453; }
-  .app-passman #app-content .pass-meter-col.weak .indicator {
-    background-color: #f67400; }
-  .app-passman #app-content .pass-meter-col.good .indicator {
-    background-color: #27ae60; }
-  .app-passman #app-content .pass-meter-col.strong .indicator {
-    background-color: #3daee9; }
-  .app-passman #app-content .inputfile + label {
-    font-size: 1.25em;
-    background-color: #232629;
-    margin-top: 3px;
-    padding: 5px;
-    border: 1px solid #706f6e; }
-    .app-passman #app-content .inputfile + label:hover {
-      border-color: #3daee9; }
+.app-passman #app-navigation .taginput:hover {
+  background: none; }
 .app-passman .link {
   color: #2980b9 !important; }
-.app-passman #app-navigation li:hover > a, .app-passman #app-navigation li:active > a {
-  background: none; }
+.app-passman #app-content #app-content-wrapper .credential-table tr td {
+  border-bottom-color: #706f6e; }
+.app-passman #app-content #app-content-wrapper .credential-table tr {
+  background-color: #232629; }
+  .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
+    background-color: #3daee9; }
+.app-passman #app-content #app-content-wrapper .viewModes .view-mode {
+  background-color: #31363b; }
+  .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
+    background-color: #3daee9; }
+  .app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
+    background-color: #31363b;
+    border-color: #706f6e; }
+.app-passman #app-content #app-content-wrapper .tags .tag {
+  background-color: #4d4d4d;
+  border: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
+  background-color: #4d4d4d;
+  border: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper #passman-controls {
+  top: 46px;
+  background-color: inherit;
+  border-bottom: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
+  background: #31363b;
+  border-color: #706f6e;
+  box-shadow: none; }
+.app-passman #app-content .tab_header li.active .indicator {
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3daee9 !important; }
+.app-passman #app-content .tab_header li.tab {
+  border-right: 1px solid #706f6e;
+  color: #eff0f1 !important;
+  background-color: #31363b !important; }
+.app-passman #app-content .tab_container {
+  border: none; }
+.app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
+  color: #bdc3c7; }
+.app-passman #app-content .pw-gen .generate_pw .cell {
+  padding: 4.7px;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #706f6e;
+  background-color: #31363b;
+  cursor: pointer; }
+.app-passman #app-content .pass-meter-col.poor .indicator {
+  background-color: #da4453; }
+.app-passman #app-content .pass-meter-col.weak .indicator {
+  background-color: #f67400; }
+.app-passman #app-content .pass-meter-col.good .indicator {
+  background-color: #27ae60; }
+.app-passman #app-content .pass-meter-col.strong .indicator {
+  background-color: #3daee9; }
+.app-passman #app-content .inputfile + label {
+  font-size: 1.25em;
+  background-color: #232629;
+  margin-top: 3px;
+  padding: 5px;
+  border: 1px solid #706f6e; }
+  .app-passman #app-content .inputfile + label:hover {
+    border-color: #3daee9; }
 
 .vault_wrapper {
   box-shadow: none;
