@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 12.0.2
+* Version: 12.0.3
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -34,11 +34,13 @@
 
 .icon-star,
 .icon-starred:hover,
-.icon-starred:focus {
+.icon-starred:focus,
+.icon-stationfav {
   background-image: url("../img/actions/star.svg?v=1");
   opacity: 0.5; }
 
 /* Starred ------------------------------------------------------------------ */
+.starred,
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus {
@@ -114,7 +116,8 @@
   background-image: url("../img/actions/toggle.svg?v=1"); }
 
 /* Toggle Filelist ---------------------------------------------------------- */
-.nav-icon-sessions {
+.nav-icon-sessions,
+.nav-icon-security {
   background-image: url("../img/actions/toggle-filelist.svg?v=1"); }
 
 /* Toggle Pictures ---------------------------------------------------------- */
@@ -247,6 +250,10 @@ select {
 /* Play Next ---------------------------------------------------------------- */
 .sm2-inline-button.next {
   background-image: url("../img/actions/play-next.svg"); }
+
+/* Fullscreen --------------------------------------------------------------- */
+.icon-fullscreen {
+  background-image: url("../img/actions/fullscreen.svg"); }
 
 /* Activity App ------------------------------------------------------------- */
 .icon-activity,
@@ -718,6 +725,23 @@ span.success {
   color: #fcfcfc;
   background-color: #27ae60; }
 
+/* Quota -------------------------------------------------------------------- */
+#quota {
+  color: #eff0f1;
+  border: none; }
+  #quota div {
+    background-color: rgba(61, 174, 233, 0.25); }
+    #quota div.quota-warning {
+      background-color: #f67400; }
+
+#app-navigation #quota {
+  background-color: #31363b;
+  border-right: 1px solid #706f6e; }
+
+#app-content #quota {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+
 /* General Settings --------------------------------------------------------- */
 .section, .followupsection {
   color: #eff0f1; }
@@ -733,13 +757,6 @@ span.success {
     box-shadow: none; }
 
 /* Personal Settings -------------------------------------------------------- */
-#quota {
-  background-color: #232629;
-  color: #eff0f1;
-  border: 1px solid #706f6e; }
-  #quota div {
-    background-color: rgba(61, 174, 233, 0.25); }
-
 #sessions .token-list td, #apppasswords .token-list td {
   border-color: #706f6e;
   border-top: none; }
@@ -796,6 +813,8 @@ select.quota-user {
   color: #eff0f1;
   box-shadow: none;
   border: 1px solid #706f6e; }
+  .oc-dialog .fileexists th label {
+    color: #eff0f1; }
 
 .oc-dialog-title {
   background-color: #31363b; }
@@ -899,6 +918,13 @@ ul.multiselectoptions {
 .activitysubject strong.systemtag {
   background-color: #232629;
   border: 1px solid #706f6e; }
+
+/* Upload Progress ---------------------------------------------------------- */
+#uploadprogresswrapper #uploadprogressbar .label.outer, #uploadprogresswrapper #uploadprogressbar .label.inner {
+  color: #eff0f1; }
+#uploadprogresswrapper #uploadprogressbar .ui-progressbar-value.ui-widget-header.ui-corner-left {
+  background-color: rgba(61, 174, 233, 0.25);
+  top: 1px; }
 
 /* UI Widget ---------------------------------------------------------------- */
 .ui-dialog .ui-dialog-content {
@@ -1463,6 +1489,14 @@ td.date, td.date > span {
 #link {
   border-color: #706f6e; }
 
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous {
+  border: none; }
+  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:hover, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:hover {
+    border: none; }
+  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next.active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous.active {
+    background-color: transparent;
+    border: none; }
+
 #groupfolders-react-root th {
   border-bottom-color: #706f6e; }
 
@@ -1753,8 +1787,30 @@ textarea.message-body {
   .app-news #app-content .body .title .intro {
     color: rgba(189, 195, 199, 0.6); }
 
-.app-notes #app-content {
-  border-top: 1px solid #706f6e; }
+.app-notes #app-content .note-meta {
+  opacity: 1; }
+  .app-notes #app-content .note-meta .note-word-count {
+    opacity: 0.6; }
+  .app-notes #app-content .note-meta .note-meta-right {
+    opacity: 0.6; }
+    .app-notes #app-content .note-meta .note-meta-right:hover, .app-notes #app-content .note-meta .note-meta-right:active, .app-notes #app-content .note-meta .note-meta-right:focus {
+      opacity: 1; }
+.app-notes #app-content:-webkit-full-screen {
+  border-top: none; }
+  .app-notes #app-content:-webkit-full-screen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:-moz-full-screen {
+  border-top: none; }
+  .app-notes #app-content:-moz-full-screen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:-ms-fullscreen {
+  border-top: none; }
+  .app-notes #app-content:-ms-fullscreen #app-content-container {
+    background-color: #31363b; }
+.app-notes #app-content:fullscreen {
+  border-top: none; }
+  .app-notes #app-content:fullscreen #app-content-container {
+    background-color: #31363b; }
 
 #app-navigation li .nav-entry {
   color: #eff0f1; }
@@ -1767,88 +1823,86 @@ textarea.message-body {
     border-bottom: 1px solid #3daee9;
     color: #fcfcfc; }
 
-.mdedit {
+.CodeMirror {
+  background-color: #31363b;
   color: #eff0f1; }
-  .mdedit .marker {
-    color: rgba(189, 195, 199, 0.4); }
+
+.CodeMirror-cursor {
+  border-left-color: rgba(189, 195, 199, 0.4); }
 
 #app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
   opacity: 0.7; }
 
-.app-passman #app-content {
-  height: 99.9%;
-  border-top: 1px solid #706f6e; }
-  .app-passman #app-content #controls {
-    background-color: inherit; }
-  .app-passman #app-content #app-content-wrapper .credential-table tr td {
-    border-bottom-color: #706f6e; }
-  .app-passman #app-content #app-content-wrapper .credential-table tr {
-    background-color: #232629; }
-    .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
-      background-color: rgba(61, 174, 233, 0.25); }
-    .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
-      background-color: #3daee9; }
-  .app-passman #app-content #app-content-wrapper .viewModes .view-mode {
-    background-color: #31363b; }
-    .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
-      background-color: #3daee9; }
-    .app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
-      background-color: #31363b; }
-  .app-passman #app-content #app-content-wrapper .tags .tag {
-    background-color: #4d4d4d;
-    border: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
-    background-color: #4d4d4d;
-    border: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper #passman-controls {
-    top: 46px;
-    background-color: inherit;
-    border-bottom: 1px solid #706f6e; }
-  .app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
-    background: #31363b;
-    border-color: #706f6e;
-    box-shadow: none; }
-  .app-passman #app-content .tab_header li.active .indicator {
-    height: 5px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #3daee9 !important; }
-  .app-passman #app-content .tab_header li.tab {
-    border-right: 1px solid #706f6e;
-    color: #eff0f1 !important;
-    background-color: #31363b !important; }
-  .app-passman #app-content .tab_container {
-    border: none; }
-  .app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
-    color: #bdc3c7; }
-  .app-passman #app-content .pw-gen .generate_pw .cell {
-    padding: 4.7px;
-    display: inline-block;
-    font-size: 14px;
-    border: 1px solid #706f6e;
-    background-color: #31363b;
-    cursor: pointer; }
-  .app-passman #app-content .pass-meter-col.poor .indicator {
-    background-color: #da4453; }
-  .app-passman #app-content .pass-meter-col.weak .indicator {
-    background-color: #f67400; }
-  .app-passman #app-content .pass-meter-col.good .indicator {
-    background-color: #27ae60; }
-  .app-passman #app-content .pass-meter-col.strong .indicator {
-    background-color: #3daee9; }
-  .app-passman #app-content .inputfile + label {
-    font-size: 1.25em;
-    background-color: #232629;
-    margin-top: 3px;
-    padding: 5px;
-    border: 1px solid #706f6e; }
-    .app-passman #app-content .inputfile + label:hover {
-      border-color: #3daee9; }
+.app-passman #app-navigation .taginput:hover {
+  background: none; }
 .app-passman .link {
   color: #2980b9 !important; }
-.app-passman #app-navigation li:hover > a, .app-passman #app-navigation li:active > a {
-  background: none; }
+.app-passman #app-content #app-content-wrapper .credential-table tr td {
+  border-bottom-color: #706f6e; }
+.app-passman #app-content #app-content-wrapper .credential-table tr {
+  background-color: #232629; }
+  .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
+    background-color: #3daee9; }
+.app-passman #app-content #app-content-wrapper .viewModes .view-mode {
+  background-color: #31363b; }
+  .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
+    background-color: #3daee9; }
+  .app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
+    background-color: #31363b;
+    border-color: #706f6e; }
+.app-passman #app-content #app-content-wrapper .tags .tag {
+  background-color: #4d4d4d;
+  border: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
+  background-color: #4d4d4d;
+  border: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper #passman-controls {
+  top: 46px;
+  background-color: inherit;
+  border-bottom: 1px solid #706f6e; }
+.app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
+  background: #31363b;
+  border-color: #706f6e;
+  box-shadow: none; }
+.app-passman #app-content .tab_header li.active .indicator {
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3daee9 !important; }
+.app-passman #app-content .tab_header li.tab {
+  border-right: 1px solid #706f6e;
+  color: #eff0f1 !important;
+  background-color: #31363b !important; }
+.app-passman #app-content .tab_container {
+  border: none; }
+.app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
+  color: #bdc3c7; }
+.app-passman #app-content .pw-gen .generate_pw .cell {
+  padding: 4.7px;
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #706f6e;
+  background-color: #31363b;
+  cursor: pointer; }
+.app-passman #app-content .pass-meter-col.poor .indicator {
+  background-color: #da4453; }
+.app-passman #app-content .pass-meter-col.weak .indicator {
+  background-color: #f67400; }
+.app-passman #app-content .pass-meter-col.good .indicator {
+  background-color: #27ae60; }
+.app-passman #app-content .pass-meter-col.strong .indicator {
+  background-color: #3daee9; }
+.app-passman #app-content .inputfile + label {
+  font-size: 1.25em;
+  background-color: #232629;
+  margin-top: 3px;
+  padding: 5px;
+  border: 1px solid #706f6e; }
+  .app-passman #app-content .inputfile + label:hover {
+    border-color: #3daee9; }
 
 .vault_wrapper {
   box-shadow: none;
@@ -2124,5 +2178,14 @@ div.percentdone {
   color: #da4453;
   font-weight: bold;
   text-shadow: none; }
+
+/* Radio -------------------------------------------------------------------- */
+.app-radio #app-navigation #app-settings #volumeslider .ui-widget-header {
+  background-color: #3daee9; }
+.app-radio #app-navigation #app-settings #volumeslider .ui-state-focus {
+  background-color: #31363b; }
+.app-radio #app-navigation #app-settings #playbutton:hover:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:active:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:focus:not(:disabled):not(.primary):not(#quota) {
+  border: none;
+  background-color: inherit; }
 
 /*# sourceMappingURL=server.css.map */

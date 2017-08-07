@@ -223,6 +223,31 @@ span {
 	}
 }
 
+/* Quota -------------------------------------------------------------------- */
+
+#quota {
+	color: $foreground-normal;
+	border: none;
+
+	div {
+		background-color: $background-active-hover;
+
+		&.quota-warning {
+			background-color: $background-neutral;
+		}
+	}
+}
+
+#app-navigation #quota {
+	background-color: $background-normal;
+	border-right: 1px solid $decoration-normal;
+}
+
+#app-content #quota {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+}
+
 /* General Settings --------------------------------------------------------- */
 
 // Section Container
@@ -249,16 +274,6 @@ span {
 }
 
 /* Personal Settings -------------------------------------------------------- */
-
-#quota {
-	background-color: $background-dark;
-	color: $foreground-normal;
-	border: 1px solid $decoration-normal;
-
-	div {
-		background-color: $background-active-hover;
-	}
-}
 
 #sessions .token-list td, #apppasswords .token-list td {
 	border-color: $decoration-normal;
@@ -363,6 +378,10 @@ select.quota-user {
 	color: $foreground-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
+
+	.fileexists th label {
+		color: $foreground-normal;
+	}
 }
 
 .oc-dialog-title {
@@ -529,6 +548,23 @@ ul.multiselectoptions {
 .activitysubject strong.systemtag {
 	background-color: $background-dark;
 	border: 1px solid $decoration-normal;
+}
+
+/* Upload Progress ---------------------------------------------------------- */
+
+#uploadprogresswrapper {
+
+	#uploadprogressbar {
+
+		.label.outer, .label.inner {
+			color: $foreground-normal;
+		}
+
+		.ui-progressbar-value.ui-widget-header.ui-corner-left {
+			background-color: $background-active-hover;
+			top: 1px; // Temp fix for disaligned progressbar
+		}
+	}
 }
 
 /* UI Widget ---------------------------------------------------------------- */
