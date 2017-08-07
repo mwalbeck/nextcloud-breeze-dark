@@ -1,0 +1,30 @@
+/* Radio -------------------------------------------------------------------- */
+
+.app-radio {
+    
+    #app-navigation {
+
+        #app-settings {
+
+            #volumeslider {
+
+                .ui-widget-header {
+                    background-color: $background-active;
+                }
+
+                .ui-state-focus {
+                    background-color: $background-normal;
+                }
+            }
+
+            #playbutton {
+                &:hover, &:active, &:focus {
+                    &:not(:disabled):not(.primary):not(#quota) {
+                        border: none;
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

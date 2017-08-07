@@ -34,11 +34,13 @@
 
 .icon-star,
 .icon-starred:hover,
-.icon-starred:focus {
+.icon-starred:focus,
+.icon-stationfav {
   background-image: url("../img/actions/star.svg?v=1");
   opacity: 0.5; }
 
 /* Starred ------------------------------------------------------------------ */
+.starred,
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus {
@@ -2176,5 +2178,14 @@ div.percentdone {
   color: #da4453;
   font-weight: bold;
   text-shadow: none; }
+
+/* Radio -------------------------------------------------------------------- */
+.app-radio #app-navigation #app-settings #volumeslider .ui-widget-header {
+  background-color: #3daee9; }
+.app-radio #app-navigation #app-settings #volumeslider .ui-state-focus {
+  background-color: #31363b; }
+.app-radio #app-navigation #app-settings #playbutton:hover:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:active:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:focus:not(:disabled):not(.primary):not(#quota) {
+  border: none;
+  background-color: inherit; }
 
 /*# sourceMappingURL=server.css.map */
