@@ -1,0 +1,41 @@
+.app-music {
+
+    #app-navigation {
+        
+        .app-navigation-separator {
+            border-bottom-color: $decoration-normal;
+        }
+    }
+
+    #emptycontent {
+        background-color: $background-normal;
+    }
+
+    .alphabet-navigation a {
+        opacity: 0.2;
+
+        &.available {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    #controls .progress-info .progress {
+    
+        .seek-bar {
+            background-color: $background-dark;
+
+            .buffer-bar {
+                opacity: 1;
+                background-color: $background-active-hover;
+            }
+
+            .play-bar {
+                background-color: $background-active;
+            }
+        }
+    }
+}

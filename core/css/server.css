@@ -233,6 +233,10 @@ select {
 .nav-icon-clientsbox {
   background-image: url("../img/change.svg?v=1"); }
 
+/* Edit --------------------------------------------------------------------- */
+.icon-edit {
+  background-image: url("../img/actions/edit.svg?v=1"); }
+
 /* Play Big ----------------------------------------------------------------- */
 .play-pause,
 .play-pause:hover,
@@ -369,6 +373,11 @@ a.impersonate img.svg {
 
 #ldapSettings .ldapWizardControls a img {
   filter: invert(95%); }
+
+.app-music img.play.svg, .app-music img.control {
+  filter: invert(95%); }
+.app-music img.play.overlay.svg {
+  filter: invert(0%); }
 
 body {
   color: #eff0f1;
@@ -2187,5 +2196,23 @@ div.percentdone {
 .app-radio #app-navigation #app-settings #playbutton:hover:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:active:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:focus:not(:disabled):not(.primary):not(#quota) {
   border: none;
   background-color: inherit; }
+
+.app-music #app-navigation .app-navigation-separator {
+  border-bottom-color: #706f6e; }
+.app-music #emptycontent {
+  background-color: #31363b; }
+.app-music .alphabet-navigation a {
+  opacity: 0.2; }
+  .app-music .alphabet-navigation a.available {
+    opacity: 0.7; }
+    .app-music .alphabet-navigation a.available:hover {
+      opacity: 1; }
+.app-music #controls .progress-info .progress .seek-bar {
+  background-color: #232629; }
+  .app-music #controls .progress-info .progress .seek-bar .buffer-bar {
+    opacity: 1;
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-music #controls .progress-info .progress .seek-bar .play-bar {
+    background-color: #3daee9; }
 
 /*# sourceMappingURL=server.css.map */

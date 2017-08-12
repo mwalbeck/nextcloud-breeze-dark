@@ -305,6 +305,12 @@ select {
 	background-image: url('../img/change.svg?v=1');
 }
 
+/* Edit --------------------------------------------------------------------- */
+
+.icon-edit {
+	background-image: url('../img/actions/edit.svg?v=1')
+}
+
 /* Play Big ----------------------------------------------------------------- */
 
 .play-pause,
@@ -506,4 +512,17 @@ a.impersonate img.svg {
 // Info icon in ldap settings
 #ldapSettings .ldapWizardControls a img {
     filter: invert(95%);
+}
+
+// Play button in Music App under All Tracks menu
+
+.app-music {
+	
+	img.play.svg, img.control {
+		filter: invert(95%);
+	}
+
+	img.play.overlay.svg {
+		filter: invert(0%);
+	}
 }
