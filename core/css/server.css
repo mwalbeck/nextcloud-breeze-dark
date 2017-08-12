@@ -2221,4 +2221,11 @@ div.percentdone {
   .app-music #controls .progress-info .progress .seek-bar .play-bar {
     background-color: #3daee9; }
 
+button#deleteaccount {
+  background-color: #da4453; }
+  button#deleteaccount:hover:not(:disabled):not(.primary):not(#quota) {
+    border-color: #da4453; }
+  button#deleteaccount:disabled {
+    background-color: #4d4d4d; }
+
 /*# sourceMappingURL=server.css.map */
