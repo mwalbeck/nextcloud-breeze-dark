@@ -2,7 +2,8 @@
 
 .icon-password,
 .nav-icon-second-factor-backup-codes,
-.nav-icon-apppasswords {
+.nav-icon-apppasswords,
+.nav-icon-ransomware-protection {
 	background-image: url('../img/actions/password.svg?v=1');
 }
 
@@ -62,7 +63,8 @@
 }
 
 .icon-trash,
-.nav-icon-trashbin {
+.nav-icon-trashbin,
+.nav-icon-drop-account {
 	background-image: url('../img/actions/delete.svg?v=1');
 }
 
@@ -414,6 +416,12 @@ select {
 	background-image: url('../img/mail/archive.svg');
 }
 
+/* Music App ---------------------------------------------------------------- */
+
+.nav-icon-music {
+	background-image: url('../img/places/music.svg')
+}
+
 /* Social Sharing App ------------------------------------------------------- */
 
 .social-facebook,
@@ -517,7 +525,7 @@ a.impersonate img.svg {
 // Play button in Music App under All Tracks menu
 
 .app-music {
-	
+
 	img.play.svg, img.control {
 		filter: invert(95%);
 	}
