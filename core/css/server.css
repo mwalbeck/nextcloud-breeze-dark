@@ -251,6 +251,10 @@ select {
 .paused .play-pause:hover {
   background-image: url("../img/actions/play-big.svg"); }
 
+/* User Plus ---------------------------------------------------------------- */
+.icon-add-user {
+  background-image: url("../img/actions/user-plus.svg") !important; }
+
 /* Pause Big ---------------------------------------------------------------- */
 .playing .play-pause {
   background-image: url("../img/actions/pause-big.svg"); }
@@ -1348,6 +1352,8 @@ div.circle {
   border-color: #706f6e;
   color: #eff0f1;
   background: #31363b; }
+  #members_search_result .members_search.exact {
+    background-color: rgba(61, 174, 233, 0.25); }
 
 .app-content-list {
   background-color: #232629;

@@ -78,5 +78,9 @@ div.circle {
 #members_search_result {
 	border-color: $decoration-normal;
 	color: $foreground-normal;
-	background: $background-normal;
+    background: $background-normal;
+    
+    .members_search.exact {
+        background-color: $background-active-hover;
+    }
 }
