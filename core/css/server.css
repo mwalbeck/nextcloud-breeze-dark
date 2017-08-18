@@ -239,6 +239,11 @@ select {
 .icon-edit {
   background-image: url("../img/actions/edit.svg?v=1"); }
 
+/* Mail --------------------------------------------------------------------- */
+.icon-mail,
+.icon-social-email {
+  background-image: url("../img/email.svg"); }
+
 /* Play Big ----------------------------------------------------------------- */
 .play-pause,
 .play-pause:hover,
@@ -328,9 +333,6 @@ select {
 .social-diaspora,
 .icon-social-diaspora {
   background-image: url("../img/social/diaspora.svg"); }
-
-.icon-social-email {
-  background-image: url("../img/email.svg"); }
 
 /* Two Factor Apps ---------------------------------------------------------- */
 .nav-icon-totp-second-factor-auth {
