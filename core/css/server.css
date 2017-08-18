@@ -127,7 +127,8 @@
   background-image: url("../img/actions/toggle-pictures.svg"); }
 
 /* Settings ----------------------------------------------------------------- */
-.settings-button {
+.settings-button,
+.icon-settings-dark {
   background-image: url("../img/actions/settings.svg?v=1"); }
 
 /* Add ---------------------------------------------------------------------- */
@@ -1323,7 +1324,9 @@ div.ui-datepicker, div.ui-timepicker {
 #mainui #circle_details .lightenbg {
   background: #3daee9; }
 #mainui #memberslist .entry td {
-  color: #eff0f1; }
+  color: #eff0f1;
+  background: #31363b !important;
+  border-bottom-color: #706f6e; }
 
 #rightpanel .lightenbg {
   background: #4d4d4d; }
