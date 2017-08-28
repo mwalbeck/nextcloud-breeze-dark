@@ -83,3 +83,10 @@ textarea.message-body {
 #setup .toggle-manual-mode {
     opacity: 0.7;
 }
+
+.folders {
+
+    .ui-droppable-active {
+        background-color: inherit;
+    }
+}

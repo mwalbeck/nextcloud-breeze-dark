@@ -1762,6 +1762,9 @@ textarea.message-body {
 #setup .toggle-manual-mode {
   opacity: 0.7; }
 
+.folders .ui-droppable-active {
+  background-color: inherit; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
