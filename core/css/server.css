@@ -2242,4 +2242,21 @@ button#deleteaccount {
   button#deleteaccount:disabled {
     background-color: #4d4d4d; }
 
+.app-flowupload hr {
+  border-top-color: #706f6e;
+  border-bottom-color: #706f6e; }
+.app-flowupload .alert {
+  color: #eff0f1;
+  background-color: rgba(61, 174, 233, 0.25);
+  text-shadow: none;
+  border-color: #3daee9; }
+.app-flowupload .table-bordered {
+  border-color: #706f6e; }
+  .app-flowupload .table-bordered th, .app-flowupload .table-bordered td {
+    border-color: #706f6e; }
+.app-flowupload .table-striped tbody > tr:nth-child(2n+1) > td {
+  background-color: #31363b; }
+.app-flowupload .table-hover tbody tr:hover > td {
+  background-color: rgba(61, 174, 233, 0.25); }
+
 /*# sourceMappingURL=server.css.map */
