@@ -957,6 +957,8 @@ ul.multiselectoptions {
 .ui-dialog-titlebar.ui-widget-header {
   background-color: #31363b;
   color: #eff0f1; }
+  .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close .ui-icon-closethick {
+    background-image: url("../../core/img/actions/close.svg"); }
 
 .ui-widget-content {
   background: #31363b;
