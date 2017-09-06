@@ -1,0 +1,36 @@
+.app-flowupload {
+    
+    hr {
+        border-top-color: $decoration-normal;
+        border-bottom-color: $decoration-normal;    
+    }
+
+    .alert {
+        color: $foreground-normal;
+        background-color: $background-active-hover;
+        text-shadow: none;
+        border-color: $decoration-active;
+    }
+
+    .table-bordered {
+        border-color: $decoration-normal;
+
+        th, td {
+            border-color: $decoration-normal;
+        }
+    }
+
+    .table-striped {
+        
+        tbody > tr:nth-child(2n+1) > td {
+            background-color: $background-normal;
+        }
+    }
+
+    .table-hover {
+        
+        tbody tr:hover > td {
+            background-color: $background-active-hover;
+        }
+    }
+}

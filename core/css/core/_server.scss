@@ -586,6 +586,13 @@ ul.multiselectoptions {
 	&.ui-widget-header {
 		background-color: $background-normal;
 		color: $foreground-normal;
+
+		.ui-dialog-titlebar-close {
+			
+			.ui-icon-closethick {
+				background-image: url('../../core/img/actions/close.svg');   
+			} 
+		}
 	}
 }
 
