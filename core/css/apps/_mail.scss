@@ -83,3 +83,26 @@ textarea.message-body {
 #setup .toggle-manual-mode {
     opacity: 0.7;
 }
+
+.folders {
+
+    .ui-droppable-active {
+        background-color: inherit;
+    }
+}
+
+.mail-message-attachments .attachments {
+
+    &> div {
+        border-color: $decoration-normal;
+
+        &:hover, span:hover {
+            background-color: inherit;
+        }
+    }
+
+    .attachment-download {
+        opacity: 1;
+        border-color: transparent;
+    }
+}

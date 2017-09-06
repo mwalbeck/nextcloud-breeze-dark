@@ -2,7 +2,8 @@
 
 .icon-password,
 .nav-icon-second-factor-backup-codes,
-.nav-icon-apppasswords {
+.nav-icon-apppasswords,
+.nav-icon-ransomware-protection {
 	background-image: url('../img/actions/password.svg?v=1');
 }
 
@@ -62,7 +63,8 @@
 }
 
 .icon-trash,
-.nav-icon-trashbin {
+.nav-icon-trashbin,
+.nav-icon-drop-account {
 	background-image: url('../img/actions/delete.svg?v=1');
 }
 
@@ -147,7 +149,8 @@
 
 /* Settings ----------------------------------------------------------------- */
 
-.settings-button {
+.settings-button,
+.icon-settings-dark {
 	background-image: url('../img/actions/settings.svg?v=1');
 }
 
@@ -305,12 +308,31 @@ select {
 	background-image: url('../img/change.svg?v=1');
 }
 
+/* Edit --------------------------------------------------------------------- */
+
+.icon-edit {
+	background-image: url('../img/actions/edit.svg?v=1')
+}
+
+/* Mail --------------------------------------------------------------------- */
+
+.icon-mail,
+.icon-social-email {
+	background-image: url('../img/email.svg');
+}
+
 /* Play Big ----------------------------------------------------------------- */
 
 .play-pause,
 .play-pause:hover,
 .paused .play-pause:hover {
 	background-image: url('../img/actions/play-big.svg');
+}
+
+/* User Plus ---------------------------------------------------------------- */
+
+.icon-add-user {
+	background-image: url('../img/actions/user-plus.svg') !important;
 }
 
 /* Pause Big ---------------------------------------------------------------- */
@@ -408,6 +430,12 @@ select {
 	background-image: url('../img/mail/archive.svg');
 }
 
+/* Music App ---------------------------------------------------------------- */
+
+.nav-icon-music {
+	background-image: url('../img/places/music.svg')
+}
+
 /* Social Sharing App ------------------------------------------------------- */
 
 .social-facebook,
@@ -428,10 +456,6 @@ select {
 .social-diaspora,
 .icon-social-diaspora {
 	background-image: url('../img/social/diaspora.svg');
-}
-
-.icon-social-email {
-	background-image: url('../img/email.svg');
 }
 
 /* Two Factor Apps ---------------------------------------------------------- */
@@ -506,4 +530,17 @@ a.impersonate img.svg {
 // Info icon in ldap settings
 #ldapSettings .ldapWizardControls a img {
     filter: invert(95%);
+}
+
+// Play button in Music App under All Tracks menu
+
+.app-music {
+
+	img.play.svg, img.control {
+		filter: invert(95%);
+	}
+
+	img.play.overlay.svg {
+		filter: invert(0%);
+	}
 }
