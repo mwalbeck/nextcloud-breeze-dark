@@ -7,8 +7,16 @@
         }
     }
 
-    #emptycontent {
+    #scanning, #toScan, #emptycontent {
         background-color: $background-normal;
+
+        &:hover * {
+            color: $foreground-normal;
+        }
+
+        .icon-audio {
+            opacity: 1;
+        }
     }
 
     .alphabet-navigation a {
@@ -25,6 +33,30 @@
 
     #controls .progress-info .progress {
     
+        .seek-bar {
+            background-color: $background-dark;
+
+            .buffer-bar {
+                opacity: 1;
+                background-color: $background-active-hover;
+            }
+
+            .play-bar {
+                background-color: $background-active;
+            }
+        }
+    }
+}
+
+#music-controls {
+    background-color: $background-normal;
+
+    #albumart {
+        border: none;
+    }
+
+    .progress-info {
+
         .seek-bar {
             background-color: $background-dark;
 

@@ -2229,8 +2229,12 @@ div.percentdone {
 
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e; }
-.app-music #emptycontent {
+.app-music #scanning, .app-music #toScan, .app-music #emptycontent {
   background-color: #31363b; }
+  .app-music #scanning:hover *, .app-music #toScan:hover *, .app-music #emptycontent:hover * {
+    color: #eff0f1; }
+  .app-music #scanning .icon-audio, .app-music #toScan .icon-audio, .app-music #emptycontent .icon-audio {
+    opacity: 1; }
 .app-music .alphabet-navigation a {
   opacity: 0.2; }
   .app-music .alphabet-navigation a.available {
@@ -2244,6 +2248,18 @@ div.percentdone {
     background-color: rgba(61, 174, 233, 0.25); }
   .app-music #controls .progress-info .progress .seek-bar .play-bar {
     background-color: #3daee9; }
+
+#music-controls {
+  background-color: #31363b; }
+  #music-controls #albumart {
+    border: none; }
+  #music-controls .progress-info .seek-bar {
+    background-color: #232629; }
+    #music-controls .progress-info .seek-bar .buffer-bar {
+      opacity: 1;
+      background-color: rgba(61, 174, 233, 0.25); }
+    #music-controls .progress-info .seek-bar .play-bar {
+      background-color: #3daee9; }
 
 button#deleteaccount {
   background-color: #da4453; }
