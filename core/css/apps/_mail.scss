@@ -90,3 +90,19 @@ textarea.message-body {
         background-color: inherit;
     }
 }
+
+.mail-message-attachments .attachments {
+
+    &> div {
+        border-color: $decoration-normal;
+
+        &:hover, span:hover {
+            background-color: inherit;
+        }
+    }
+
+    .attachment-download {
+        opacity: 1;
+        border-color: transparent;
+    }
+}

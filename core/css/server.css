@@ -1767,6 +1767,14 @@ textarea.message-body {
 .folders .ui-droppable-active {
   background-color: inherit; }
 
+.mail-message-attachments .attachments > div {
+  border-color: #706f6e; }
+  .mail-message-attachments .attachments > div:hover, .mail-message-attachments .attachments > div span:hover {
+    background-color: inherit; }
+.mail-message-attachments .attachments .attachment-download {
+  opacity: 1;
+  border-color: transparent; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
