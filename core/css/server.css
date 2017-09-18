@@ -1248,7 +1248,12 @@ div.ui-datepicker, div.ui-timepicker {
     box-shadow: none;
     border-color: #706f6e; }
     .app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
-      background-color: rgba(61, 174, 233, 0.25); }
+      background-color: rgba(61, 174, 233, 0.25);
+      border-radius: 50%; }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-today {
+    background-color: #1d99f3; }
+  .app-calendar #app-navigation #datepickercontainer .datepicker-heading .button {
+    background-color: #31363b; }
 
 .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
   border-color: #706f6e; }
