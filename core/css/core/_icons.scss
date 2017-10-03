@@ -325,7 +325,11 @@ select {
 
 .play-pause,
 .play-pause:hover,
-.paused .play-pause:hover {
+.paused .play-pause:hover,
+.current.playing .play-pause,
+:hover > .play-pause,
+#app-view .current:not(.playing):hover > .play-pause,
+#app-navigation .current:not(.playing) :hover .play-pause {
 	background-image: url('../img/actions/play-big.svg');
 }
 
@@ -337,7 +341,10 @@ select {
 
 /* Pause Big ---------------------------------------------------------------- */
 
-.playing .play-pause {
+.playing .play-pause,
+.current:not(.playing) .play-pause, 
+#app-view .current.playing:hover > .play-pause,
+#app-navigation .current.playing :hover .play-pause {
 	background-image: url('../img/actions/pause-big.svg');
 }
 
@@ -538,9 +545,5 @@ a.impersonate img.svg {
 
 	img.play.svg, img.control {
 		filter: invert(95%);
-	}
-
-	img.play.overlay.svg {
-		filter: invert(0%);
 	}
 }

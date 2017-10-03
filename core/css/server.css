@@ -248,7 +248,11 @@ select {
 /* Play Big ----------------------------------------------------------------- */
 .play-pause,
 .play-pause:hover,
-.paused .play-pause:hover {
+.paused .play-pause:hover,
+.current.playing .play-pause,
+:hover > .play-pause,
+#app-view .current:not(.playing):hover > .play-pause,
+#app-navigation .current:not(.playing) :hover .play-pause {
   background-image: url("../img/actions/play-big.svg"); }
 
 /* User Plus ---------------------------------------------------------------- */
@@ -256,7 +260,10 @@ select {
   background-image: url("../img/actions/user-plus.svg") !important; }
 
 /* Pause Big ---------------------------------------------------------------- */
-.playing .play-pause {
+.playing .play-pause,
+.current:not(.playing) .play-pause,
+#app-view .current.playing:hover > .play-pause,
+#app-navigation .current.playing :hover .play-pause {
   background-image: url("../img/actions/pause-big.svg"); }
 
 /* Play Previous ------------------------------------------------------------ */
@@ -389,8 +396,6 @@ a.impersonate img.svg {
 
 .app-music img.play.svg, .app-music img.control {
   filter: invert(95%); }
-.app-music img.play.overlay.svg {
-  filter: invert(0%); }
 
 body {
   color: #eff0f1;
