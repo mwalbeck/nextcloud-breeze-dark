@@ -2236,6 +2236,10 @@ div.percentdone {
 .app-radio #app-navigation #app-settings #playbutton:hover:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:active:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:focus:not(:disabled):not(.primary):not(#quota) {
   border: none;
   background-color: inherit; }
+.app-radio #app-content #app-content-files #filestable tbody tr {
+  background-color: #31363b !important; }
+  .app-radio #app-content #app-content-files #filestable tbody tr:hover {
+    background-color: rgba(61, 174, 233, 0.25) !important; }
 
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e; }
