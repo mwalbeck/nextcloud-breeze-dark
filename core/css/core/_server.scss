@@ -168,6 +168,13 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
+#app-navigation .utils .action {
+
+	&:hover, &:focus {
+		opacity: 0.7;
+	}
+}
+
 /* Info colours ------------------------------------------------------------- */
 
 #postsetupchecks .errors, 
@@ -458,6 +465,7 @@ ul.multiselectoptions {
 		&.select2-search-choice-focus {
 			background-color: $background-normal;
 			border-color: $decoration-active;
+			color: $foreground-normal;
 		}
 	}
 

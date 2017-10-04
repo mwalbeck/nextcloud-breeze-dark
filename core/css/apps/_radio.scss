@@ -27,4 +27,18 @@
             }
         }
     }
+
+    #app-content {
+
+        #app-content-files {
+
+            #filestable tbody tr {
+                background-color: $background-normal !important;
+
+                &:hover {
+                    background-color: $background-active-hover !important;
+                }
+            }
+        }
+    }
 }

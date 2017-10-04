@@ -1,77 +1,150 @@
-.app-content-list {
-	background-color: $background-dark;
-	border-right: 1px solid $decoration-normal;
-}
+.app-contacts {
 
-.app-content-list-item {
-	border-color: $decoration-normal;
-
-	&:first-child {
-		border: none;
+	.app-content-list {
+		background-color: $background-dark;
+		border-right: 1px solid $decoration-normal;
 	}
 
-	&:hover {
-		background-color: $background-active-hover;
-	}
+	.app-content-list-item {
+		border-color: $decoration-normal;
 
-	&:active, &:focus {
-		background-color: $background-active;
-	}
+		&:first-child {
+			border: none;
+		}
 
-	&.active {
-		background-color: $background-active;
-		color: $foreground-active;
-		font-weight: 600;
-		border-color: $decoration-active;
-	}
+		&:hover {
+			background-color: $background-active-hover;
+		}
 
-	a {
-		color: $foreground-normal;
-	}
-}
+		&:active, &:focus {
+			background-color: $background-active;
+		}
 
-.contacts-list-count {
-	color: $foreground-inactive;
-	border-color: $decoration-normal;
-}
+		&.active {
+			background-color: $background-active;
+			color: $foreground-active;
+			font-weight: 600;
+			border-color: $decoration-active;
+		}
 
-.contact-details-wrapper {
-	background-color: $background-normal;
-}
-
-.contactdetails__header {
-	color: $foreground-normal;
-
-	.contactdetails__name {
-		color: $foreground-normal;
-		font-weight: 600;
-	}
-
-	.contactdetails__org, .contactdetails__title {
-		color: $foreground-normal !important;
-		font-weight: 600;
-
-		&:placeholder-shown {
+		a {
 			color: $foreground-normal;
+		}
+	}
+
+	.contacts-list-count {
+		color: $foreground-inactive;
+		border-color: $decoration-normal;
+	}
+
+	.contact-details-wrapper {
+		background-color: $background-normal;
+	}
+
+	.contactdetails__header {
+		color: $foreground-normal;
+
+		.contactdetails__name {
+			color: $foreground-normal;
+			font-weight: 600;
+		}
+
+		.contactdetails__org, .contactdetails__title {
+			color: $foreground-normal !important;
+			font-weight: 600;
+
+			&:placeholder-shown {
+				color: $foreground-normal;
+				opacity: 1;
+			}
+		}
+
+		#details-actions {
+			a, button {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	detailsitem {
+
+		input, select {
+
+			&:hover, &:focus, &:active {
+
+				+ .icon-delete {
+					opacity: 0.4;
+				}
+			}
+		}
+		
+		.icon-delete, &:hover .icon-delete {
+			opacity: 0.4;
+		}
+
+		select {
+			color: $foreground-inactive;
 			opacity: 1;
 		}
 	}
 
-	#details-actions {
-		a, button {
-			opacity: 0.7;
+	input.newAddressBookSubmit {
+
+		&, &:hover, &:focus, &:active {
+			border: none;
+			background-color: inherit !important;
 		}
 	}
-}
 
-detailsitem .icon-delete {
-	opacity: 0.4;
-}
+	ul.addressBookList li .action > span {
+		opacity: 1;
+	}
 
-input.newAddressBookSubmit {
+	.addressBookList {
 
-	&, &:hover, &:focus, &:active {
-		border: none;
-		background-color: inherit !important;
+		input[type="submit"], input[type="button"] {
+
+			&.inline-button {
+				border: 1px solid $decoration-normal;
+				border-left: none;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+
+	contactimport {
+
+		.select2-drop-active {
+			box-shadow: none;
+		}
+
+		.select2-results .select2-result-label:hover {
+			background: $background-active-hover;
+		}
+
+		.select2-container .select2-choice {
+			
+			&:hover {
+				border-color: $decoration-active;
+			}
+
+			.select2-arrow {
+				background: $background-dark;
+			}
+		}
+	}
+
+	importscreen {
+
+		#importscreen-wrapper {
+			background: $background-normal;
+		}
+
+		#importscreen-progress {
+			background-color: $background-dark;
+		}
 	}
 }
