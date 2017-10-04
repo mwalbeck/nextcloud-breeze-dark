@@ -3,7 +3,7 @@ This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the 
 
 The icons are from the default Nextcloud theme and the individual apps, with the colors changed to better fit the theme.
 
-Current stable release: 12.0.4
+Current stable release: 12.0.5
 
 ![screenshot of theme](screenshot.png)
 

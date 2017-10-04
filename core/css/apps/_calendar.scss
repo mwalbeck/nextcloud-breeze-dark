@@ -54,7 +54,19 @@
 
 					&:hover {
 						background-color: $background-active-hover;
+						border-radius: 50%;
 					}
+				}
+
+				&.highlight-today {
+					background-color: $background-active-alternate;
+				}
+			}
+
+			.datepicker-heading {
+
+				.button {
+					background-color: $background-normal;
 				}
 			}
 		}
