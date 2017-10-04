@@ -718,6 +718,9 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   #navigation a span {
     color: #eff0f1; }
 
+#app-navigation .utils .action:hover, #app-navigation .utils .action:focus {
+  opacity: 0.7; }
+
 /* Info colours ------------------------------------------------------------- */
 #postsetupchecks .errors,
 #postsetupchecks .warnings,
@@ -889,7 +892,8 @@ ul.multiselectoptions {
   box-shadow: none; }
   .select2-container-multi .select2-choices .select2-search-choice:hover, .select2-container-multi .select2-choices .select2-search-choice.select2-search-choice-focus, .select2-container-multi.select2-container-active .select2-choices .select2-search-choice:hover, .select2-container-multi.select2-container-active .select2-choices .select2-search-choice.select2-search-choice-focus {
     background-color: #31363b;
-    border-color: #3daee9; }
+    border-color: #3daee9;
+    color: #eff0f1; }
 .select2-container-multi .select2-choices .select2-search-field input {
   color: #eff0f1; }
   .select2-container-multi .select2-choices .select2-search-field input.select2-active {
@@ -1367,53 +1371,71 @@ div.circle {
   #members_search_result .members_search.exact {
     background-color: rgba(61, 174, 233, 0.25); }
 
-.app-content-list {
+.app-contacts .app-content-list {
   background-color: #232629;
   border-right: 1px solid #706f6e; }
-
-.app-content-list-item {
+.app-contacts .app-content-list-item {
   border-color: #706f6e; }
-  .app-content-list-item:first-child {
+  .app-contacts .app-content-list-item:first-child {
     border: none; }
-  .app-content-list-item:hover {
+  .app-contacts .app-content-list-item:hover {
     background-color: rgba(61, 174, 233, 0.25); }
-  .app-content-list-item:active, .app-content-list-item:focus {
+  .app-contacts .app-content-list-item:active, .app-contacts .app-content-list-item:focus {
     background-color: #3daee9; }
-  .app-content-list-item.active {
+  .app-contacts .app-content-list-item.active {
     background-color: #3daee9;
     color: #fcfcfc;
     font-weight: 600;
     border-color: #3daee9; }
-  .app-content-list-item a {
+  .app-contacts .app-content-list-item a {
     color: #eff0f1; }
-
-.contacts-list-count {
+.app-contacts .contacts-list-count {
   color: #bdc3c7;
   border-color: #706f6e; }
-
-.contact-details-wrapper {
+.app-contacts .contact-details-wrapper {
   background-color: #31363b; }
-
-.contactdetails__header {
+.app-contacts .contactdetails__header {
   color: #eff0f1; }
-  .contactdetails__header .contactdetails__name {
+  .app-contacts .contactdetails__header .contactdetails__name {
     color: #eff0f1;
     font-weight: 600; }
-  .contactdetails__header .contactdetails__org, .contactdetails__header .contactdetails__title {
+  .app-contacts .contactdetails__header .contactdetails__org, .app-contacts .contactdetails__header .contactdetails__title {
     color: #eff0f1 !important;
     font-weight: 600; }
-    .contactdetails__header .contactdetails__org:placeholder-shown, .contactdetails__header .contactdetails__title:placeholder-shown {
+    .app-contacts .contactdetails__header .contactdetails__org:placeholder-shown, .app-contacts .contactdetails__header .contactdetails__title:placeholder-shown {
       color: #eff0f1;
       opacity: 1; }
-  .contactdetails__header #details-actions a, .contactdetails__header #details-actions button {
+  .app-contacts .contactdetails__header #details-actions a, .app-contacts .contactdetails__header #details-actions button {
     opacity: 0.7; }
-
-detailsitem .icon-delete {
+.app-contacts detailsitem input:hover + .icon-delete, .app-contacts detailsitem input:focus + .icon-delete, .app-contacts detailsitem input:active + .icon-delete, .app-contacts detailsitem select:hover + .icon-delete, .app-contacts detailsitem select:focus + .icon-delete, .app-contacts detailsitem select:active + .icon-delete {
   opacity: 0.4; }
-
-input.newAddressBookSubmit, input.newAddressBookSubmit:hover, input.newAddressBookSubmit:focus, input.newAddressBookSubmit:active {
+.app-contacts detailsitem .icon-delete, .app-contacts detailsitem:hover .icon-delete {
+  opacity: 0.4; }
+.app-contacts detailsitem select {
+  color: #bdc3c7;
+  opacity: 1; }
+.app-contacts input.newAddressBookSubmit, .app-contacts input.newAddressBookSubmit:hover, .app-contacts input.newAddressBookSubmit:focus, .app-contacts input.newAddressBookSubmit:active {
   border: none;
   background-color: inherit !important; }
+.app-contacts ul.addressBookList li .action > span {
+  opacity: 1; }
+.app-contacts .addressBookList input[type="submit"].inline-button, .app-contacts .addressBookList input[type="button"].inline-button {
+  border: 1px solid #706f6e;
+  border-left: none; }
+  .app-contacts .addressBookList input[type="submit"].inline-button:hover, .app-contacts .addressBookList input[type="button"].inline-button:hover {
+    opacity: 0.7; }
+.app-contacts contactimport .select2-drop-active {
+  box-shadow: none; }
+.app-contacts contactimport .select2-results .select2-result-label:hover {
+  background: rgba(61, 174, 233, 0.25); }
+.app-contacts contactimport .select2-container .select2-choice:hover {
+  border-color: #3daee9; }
+.app-contacts contactimport .select2-container .select2-choice .select2-arrow {
+  background: #232629; }
+.app-contacts importscreen #importscreen-wrapper {
+  background: #31363b; }
+.app-contacts importscreen #importscreen-progress {
+  background-color: #232629; }
 
 /* External Storage --------------------------------------------------------- */
 .dropdown {
