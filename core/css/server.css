@@ -1748,6 +1748,11 @@ ul.tagit {
     #mail-message-header .transparency a {
       color: #2980b9 !important; }
 
+#mail-content {
+  background-color: #EEE;
+  color: #000;
+  padding: 1em; }
+
 #mail-new-message-fixed {
   background-color: #31363b; }
 
