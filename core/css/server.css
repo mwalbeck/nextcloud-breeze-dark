@@ -278,6 +278,36 @@ select {
 .icon-fullscreen {
   background-image: url("../img/actions/fullscreen.svg"); }
 
+/* Video -------------------------------------------------------------------- */
+.icon-video,
+.icon-video-white {
+  background-image: url("../img/actions/video.svg"); }
+
+/* Video off ---------------------------------------------------------------- */
+.icon-video-off,
+.icon-video-off-white {
+  background-image: url("../img/actions/video-off.svg"); }
+
+/* Audio -------------------------------------------------------------------- */
+.icon-audio,
+.icon-audio-white {
+  background-image: url("../img/actions/audio.svg"); }
+
+/* Audio off ---------------------------------------------------------------- */
+.icon-audio-off,
+.icon-audio-off-white {
+  background-image: url("../img/actions/audio-off.svg"); }
+
+/* Screen -------------------------------------------------------------------- */
+.icon-screen,
+.icon-screen-white {
+  background-image: url("../img/actions/screen.svg"); }
+
+/* Screen off ---------------------------------------------------------------- */
+.icon-screen-off,
+.icon-screen-off-white {
+  background-image: url("../img/actions/screen-off.svg"); }
+
 /* Activity App ------------------------------------------------------------- */
 .icon-activity,
 .nav-icon-activity {
@@ -1636,6 +1666,9 @@ td.date, td.date > span {
 
 .challenge-form input[type="text"], .totp-form input[type="text"] {
   background: #31363b; }
+
+#oca-spreedme-add-room {
+  border-bottom-color: #706f6e; }
 
 #app-navigation-toggle_alternative {
   background-color: #31363b; }
