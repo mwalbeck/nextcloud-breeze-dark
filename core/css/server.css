@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 12.0.5
+* Version: 12.0.6
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -277,6 +277,36 @@ select {
 /* Fullscreen --------------------------------------------------------------- */
 .icon-fullscreen {
   background-image: url("../img/actions/fullscreen.svg"); }
+
+/* Video -------------------------------------------------------------------- */
+.icon-video,
+.icon-video-white {
+  background-image: url("../img/actions/video.svg"); }
+
+/* Video off ---------------------------------------------------------------- */
+.icon-video-off,
+.icon-video-off-white {
+  background-image: url("../img/actions/video-off.svg"); }
+
+/* Audio -------------------------------------------------------------------- */
+.icon-audio,
+.icon-audio-white {
+  background-image: url("../img/actions/audio.svg"); }
+
+/* Audio off ---------------------------------------------------------------- */
+.icon-audio-off,
+.icon-audio-off-white {
+  background-image: url("../img/actions/audio-off.svg"); }
+
+/* Screen -------------------------------------------------------------------- */
+.icon-screen,
+.icon-screen-white {
+  background-image: url("../img/actions/screen.svg"); }
+
+/* Screen off ---------------------------------------------------------------- */
+.icon-screen-off,
+.icon-screen-off-white {
+  background-image: url("../img/actions/screen-off.svg"); }
 
 /* Activity App ------------------------------------------------------------- */
 .icon-activity,
@@ -1637,6 +1667,9 @@ td.date, td.date > span {
 .challenge-form input[type="text"], .totp-form input[type="text"] {
   background: #31363b; }
 
+#oca-spreedme-add-room {
+  border-bottom-color: #706f6e; }
+
 #app-navigation-toggle_alternative {
   background-color: #31363b; }
 
@@ -1748,6 +1781,13 @@ ul.tagit {
     #mail-message-header .transparency a {
       color: #2980b9 !important; }
 
+#mail-content {
+  background-color: #EEE;
+  color: #000;
+  padding: 1em;
+  border: 1px solid #706f6e;
+  border-radius: 3px; }
+
 #mail-new-message-fixed {
   background-color: #31363b; }
 
@@ -1755,22 +1795,28 @@ ul.tagit {
   border-top-color: #706f6e; }
   .mail-message-summary:first-child {
     border-top: none; }
+  .mail-message-summary:last-child {
+    border-bottom: 1px solid #706f6e; }
   .mail-message-summary:hover {
     background-color: rgba(61, 174, 233, 0.25); }
   .mail-message-summary:focus, .mail-message-summary.active {
     background-color: #3daee9; }
+  .mail-message-summary.unseen {
+    box-shadow: inset 3px 0 #1d99f3; }
 
-.mail-message-summary-from, .date {
+.date {
+  opacity: 0.5;
+  color: #bdc3c7; }
+
+.mail-message-summary-from,
+.active .date {
   opacity: 1;
   color: #bdc3c7; }
 
-.active .mail-message-summary-from, .active .date {
+.mail-message-summary-subject,
+.active .mail-message-summary-from {
   opacity: 1;
   color: #eff0f1; }
-
-.mail-message-summary-subject {
-  color: #fcfcfc;
-  font-weight: bold; }
 
 .account-toggle-collapse {
   color: #bdc3c7;

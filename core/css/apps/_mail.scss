@@ -15,6 +15,14 @@
     }
 }
 
+#mail-content {
+    background-color: #EEE;
+    color: #000;
+    padding: 1em;
+    border: 1px solid $decoration-normal;
+    border-radius: 3px;
+}
+
 #mail-new-message-fixed {
 	background-color: $background-normal;
 }
@@ -26,6 +34,10 @@
         border-top: none;
     }
 
+    &:last-child {
+        border-bottom: 1px solid $decoration-normal;
+    }
+
     &:hover {
         background-color: $background-active-hover;
     }
@@ -33,21 +45,27 @@
     &:focus, &.active {
         background-color: $background-active;
     }
+
+    &.unseen {
+        box-shadow: inset 3px 0 $background-active-alternate;
+    }
 }
 
-.mail-message-summary-from, .date {
+.date {
+    opacity: 0.5;
+    color: $foreground-inactive;
+}
+
+.mail-message-summary-from,
+.active .date {
     opacity: 1;
     color: $foreground-inactive;
 }
 
-.active .mail-message-summary-from, .active .date {
+.mail-message-summary-subject,
+.active .mail-message-summary-from {
     opacity: 1;
     color: $foreground-normal;
-}
-
-.mail-message-summary-subject {
-    color: $foreground-active;
-    font-weight: bold;
 }
 
 .account-toggle-collapse {
