@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 12.0.6
+* Version: 12.0.7
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -426,6 +426,13 @@ a.impersonate img.svg {
 
 .app-music img.play.svg, .app-music img.control {
   filter: invert(95%); }
+
+.app-settings #app-navigation img[src$="/img/app-dark.svg"] {
+  filter: invert(95%); }
+.app-settings #apps-list .app-image image {
+  filter: invert(5%); }
+.app-settings #apps-list #app-user_saml .app-image image {
+  filter: none; }
 
 body {
   color: #eff0f1;

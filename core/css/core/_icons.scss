@@ -589,3 +589,28 @@ a.impersonate img.svg {
 		filter: invert(95%);
 	}
 }
+
+// Apps with generic icons names
+
+.app-settings {
+
+	// In admin section
+	#app-navigation img[src$="/img/app-dark.svg"] {
+		filter: invert(95%);
+	}
+
+	// In apps list
+	#apps-list .app-image image {
+		filter: invert(5%);
+
+	}
+
+	// Apps that are excluded from colour inverting
+	#apps-list {
+
+		#app-user_saml .app-image image {
+			filter: none;
+		}
+	}
+
+}
