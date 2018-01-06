@@ -2358,6 +2358,8 @@ div.percentdone {
       background-color: rgba(61, 174, 233, 0.25); }
     #music-controls .progress-info .seek-bar .play-bar {
       background-color: #3daee9; }
+  #music-controls img.control {
+    filter: invert(95%); }
 
 button#deleteaccount {
   background-color: #da4453; }
