@@ -1860,6 +1860,12 @@ textarea.message-body {
   opacity: 1;
   border-color: transparent; }
 
+#app-navigation > ul > .navigation-account > li > a,
+#app-navigation > ul > .navigation-account > .folders > li > a,
+#app-navigation > ul > .navigation-account > .folders > li > .folders > .folders > li > a {
+  color: #eff0f1;
+  opacity: 0.75; }
+
 #explore .category {
   background-color: #3daee9; }
 #explore .grid-item {
