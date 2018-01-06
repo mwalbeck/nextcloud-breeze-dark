@@ -1743,6 +1743,9 @@ td.date, td.date > span {
   #phototools img {
     filter: invert(95%); }
 
+#audio-settings li.audio-settings-item {
+  opacity: 1; }
+
 #bm_import:hover ~ button#bm_import_submit {
   background-color: #31363b;
   color: #eff0f1; }
