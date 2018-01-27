@@ -684,7 +684,7 @@ input[type="button"] {
 
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
-  color: #bdc3c7; }
+  color: #eff0f1; }
 
 div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
   -ms-filter: none;
@@ -1508,7 +1508,8 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   color: #bdc3c7; }
 
 td.date, td.date > span {
-  color: #bdc3c7 !important; }
+  color: #bdc3c7 !important;
+  opacity: 1; }
 
 #app-content-systemtagsfilter #controls input[type="text"] {
   height: 34px;
@@ -1524,6 +1525,8 @@ td.date, td.date > span {
   color: #eff0f1; }
   #fileList .popovermenu .action:hover, #fileList .popovermenu .action:focus, #fileList .popovermenu .action:active {
     color: #fcfcfc; }
+#fileList tr td.selection > .selectCheckBox + label::before {
+  opacity: 0.5; }
 
 #controls .button.view-switcher {
   background-color: #31363b;
