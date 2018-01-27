@@ -301,14 +301,27 @@ select {
 
 /* Right Arrow -------------------------------------------------------------- */
 
-.glyphicon-chevron-right {
-	background: url("../img/rightarrow.svg") center center no-repeat;
+.icon-view-next {
+	background-image: url('../img/actions/arrow-right.svg');
 }
 
-/* Left Arrow --------------------------------------------------------------- */
+/* Left Arrow _-------------------------------------------------------------- */
+
+.icon-view-previous {
+	background-image: url('../img/actions/arrow-left.svg');
+}
+
+/* Right Arrow Big ---------------------------------------------------------- */
+
+.icon-view-next,
+.glyphicon-chevron-right {
+	background-image: url("../img/rightarrow.svg") center center no-repeat;
+}
+
+/* Left Arrow Big--------------------------------------------------------------- */
 
 .glyphicon-chevron-left {
-	background: url("../img/leftarrow.svg") center center no-repeat;
+	background-image: url("../img/leftarrow.svg") center center no-repeat;
 }
 
 /* Change ------------------------------------------------------------------- */
@@ -340,6 +353,12 @@ select {
 
 .icon-badge {
 	background-image: url('../img/places/calendar.svg');
+}
+
+/* Play --------------------------------------------------------------------- */
+
+.icon-play {
+	background-image: url('../img/actions/play.svg');
 }
 
 /* Play Big ----------------------------------------------------------------- */
@@ -551,6 +570,15 @@ select {
 .sm2-volume-control,
 .sm2-inline-button.shuffle {
 	filter: invert(95%);
+}
+
+// Image viewer
+.icon-white {
+	filter: unset;
+
+	&.icon-shadow {
+		filter: unset;
+	}
 }
 
 // Change the app icons in the navigation menu to white
