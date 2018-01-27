@@ -1197,7 +1197,8 @@ div.ui-datepicker, div.ui-timepicker {
 
 .nav-trashbin {
   background-color: #31363b;
-  border-color: #706f6e; }
+  border-color: #706f6e;
+  border-right: 1px solid #706f6e; }
 
 /* App Sidebar -------------------------------------------------------------- */
 #app-sidebar {
