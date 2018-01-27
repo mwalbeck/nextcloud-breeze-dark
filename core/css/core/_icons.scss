@@ -9,9 +9,9 @@
 
 /* Home --------------------------------------------------------------------- */
 
-#oc-dialog-filepicker-content .dirtree div:first-child a,
+.icon-home,
 .icon-inbox,
-.icon-home {
+#oc-dialog-filepicker-content .dirtree div:first-child a {
 	background-image: url('../img/places/home.svg?v=1');
 }
 
@@ -144,6 +144,7 @@
 
 /* Toggle Pictures ---------------------------------------------------------- */
 
+.icon-toggle-pictures,
 #albenoverview li {
 	background-image: url('../img/actions/toggle-pictures.svg');
 }
@@ -320,6 +321,12 @@ select {
 
 .icon-edit {
 	background-image: url('../img/actions/edit.svg?v=1')
+}
+
+/* Quota -------------------------------------------------------------------- */
+
+.nav-icon-quota {
+	background-image: url('../img/actions/quota.svg?v=1');
 }
 
 /* Mail --------------------------------------------------------------------- */
@@ -557,23 +564,6 @@ select {
 
 img.notification-icon {
 	filter: invert(75%);
-}
-
-// Change the button, to gallery app, to white
-#controls .button.view-switcher img {
-	opacity: 0.6;
-	filter: invert(95%);
-}
-
-// Change the, to files app, button to white again since it was change to black with the above
-#controls .button.view-switcher.gallery img {
-	filter: invert(0%);
-}
-
-// Change home icon to white in the files app, both for 
-.app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
-.app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
-	filter: invert(95%);
 }
 
 // Change home icon in gallery app to white

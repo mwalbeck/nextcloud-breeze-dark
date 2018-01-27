@@ -24,9 +24,9 @@
   background-image: url("../img/actions/password.svg?v=1"); }
 
 /* Home --------------------------------------------------------------------- */
-#oc-dialog-filepicker-content .dirtree div:first-child a,
+.icon-home,
 .icon-inbox,
-.icon-home {
+#oc-dialog-filepicker-content .dirtree div:first-child a {
   background-image: url("../img/places/home.svg?v=1"); }
 
 /* Star --------------------------------------------------------------------- */
@@ -124,6 +124,7 @@
   background-image: url("../img/actions/toggle-filelist.svg?v=1"); }
 
 /* Toggle Pictures ---------------------------------------------------------- */
+.icon-toggle-pictures,
 #albenoverview li {
   background-image: url("../img/actions/toggle-pictures.svg"); }
 
@@ -245,6 +246,10 @@ select {
 /* Edit --------------------------------------------------------------------- */
 .icon-edit {
   background-image: url("../img/actions/edit.svg?v=1"); }
+
+/* Quota -------------------------------------------------------------------- */
+.nav-icon-quota {
+  background-image: url("../img/actions/quota.svg?v=1"); }
 
 /* Mail --------------------------------------------------------------------- */
 .icon-mail,
@@ -410,17 +415,6 @@ select {
 
 img.notification-icon {
   filter: invert(75%); }
-
-#controls .button.view-switcher img {
-  opacity: 0.6;
-  filter: invert(95%); }
-
-#controls .button.view-switcher.gallery img {
-  filter: invert(0%); }
-
-.app-files #app-content-files #controls .breadcrumb .crumb a img.svg,
-.app-files #app-content-trashbin #controls .breadcrumb .crumb a img.svg {
-  filter: invert(95%); }
 
 #controls #breadcrumbs .crumb a img {
   filter: invert(95%); }
