@@ -819,6 +819,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
     border-bottom-color: #706f6e; }
   #expanddiv a {
     color: #eff0f1; }
+    #expanddiv a:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
 
 #body-settings #expand::before {
   border-bottom-color: #706f6e; }
