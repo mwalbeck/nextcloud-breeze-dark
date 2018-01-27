@@ -681,6 +681,11 @@ input[type="button"] {
 /* Header ------------------------------------------------------------------- */
 #header .logo, #header .logo-icon {
   background-image: url("../img/logo.svg"); }
+#header .menu {
+  background-color: #31363b;
+  filter: unset; }
+  #header .menu::after {
+    border-bottom-color: #706f6e; }
 
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #31363b; }
