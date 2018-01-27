@@ -69,6 +69,10 @@ td.date, td.date > span {
 	tr td.selection > .selectCheckBox + label::before {
 		opacity: 0.5;
 	}
+
+	.fileActionsMenu a.action:hover {
+		background-color: $background-active-hover;
+	}
 }
 
 #controls .button.view-switcher {
