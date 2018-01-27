@@ -1613,6 +1613,8 @@ td.date, td.date > span {
     color: #fcfcfc; }
 #fileList tr td.selection > .selectCheckBox + label::before {
   opacity: 0.5; }
+#fileList .fileActionsMenu a.action:hover {
+  background-color: rgba(61, 174, 233, 0.25); }
 
 #controls .button.view-switcher {
   background-color: #31363b;
