@@ -70,7 +70,7 @@
 /* Breadcrumbs -------------------------------------------------------------- */
 
 div.crumb a, div.crumb > span {
-	color: $foreground-inactive;
+	color: $foreground-normal;
 }
 
 div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {

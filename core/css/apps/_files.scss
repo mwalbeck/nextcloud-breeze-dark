@@ -36,6 +36,7 @@ tr {
 
 td.date, td.date > span {
 	color: $foreground-inactive !important;
+	opacity: 1;
 }
 
 #app-content-systemtagsfilter {
@@ -63,6 +64,10 @@ td.date, td.date > span {
 		&:hover, &:focus, &:active {
 			color: $foreground-active;
 		}
+	}
+
+	tr td.selection > .selectCheckBox + label::before {
+		opacity: 0.5;
 	}
 }
 
