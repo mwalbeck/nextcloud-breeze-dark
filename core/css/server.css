@@ -1145,10 +1145,10 @@ div.ui-datepicker, div.ui-timepicker {
 #app-navigation {
   background-color: #31363b;
   border-color: #706f6e; }
-  #app-navigation li > a {
+  #app-navigation ul > li > a, #app-navigation li > a {
     color: #eff0f1;
     opacity: 1; }
-    #app-navigation li > a:hover {
+    #app-navigation ul > li > a:hover, #app-navigation li > a:hover {
       background-color: rgba(61, 174, 233, 0.25); }
   #app-navigation .active {
     background-color: #3daee9;
@@ -1233,7 +1233,9 @@ div.ui-datepicker, div.ui-timepicker {
     color: #eff0f1; }
 
 .settings-button {
-  background-color: #31363b; }
+  background-color: #31363b;
+  color: #eff0f1;
+  opacity: 1; }
   .settings-button:hover {
     background-color: rgba(61, 174, 233, 0.25); }
   .settings-button:focus, .settings-button:active {
