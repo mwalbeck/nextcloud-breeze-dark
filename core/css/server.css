@@ -227,12 +227,21 @@ select {
   background-image: url("../img/actions/user.svg?v=1"); }
 
 /* Right Arrow -------------------------------------------------------------- */
-.glyphicon-chevron-right {
-  background: url("../img/rightarrow.svg") center center no-repeat; }
+.icon-view-next {
+  background-image: url("../img/actions/arrow-right.svg"); }
 
-/* Left Arrow --------------------------------------------------------------- */
+/* Left Arrow _-------------------------------------------------------------- */
+.icon-view-previous {
+  background-image: url("../img/actions/arrow-left.svg"); }
+
+/* Right Arrow Big ---------------------------------------------------------- */
+.icon-view-next,
+.glyphicon-chevron-right {
+  background-image: url("../img/rightarrow.svg") center center no-repeat; }
+
+/* Left Arrow Big--------------------------------------------------------------- */
 .glyphicon-chevron-left {
-  background: url("../img/leftarrow.svg") center center no-repeat; }
+  background-image: url("../img/leftarrow.svg") center center no-repeat; }
 
 /* Change ------------------------------------------------------------------- */
 .nav-icon-clientsbox {
@@ -250,6 +259,10 @@ select {
 .icon-mail,
 .icon-social-email {
   background-image: url("../img/email.svg"); }
+
+/* Play --------------------------------------------------------------------- */
+.icon-play {
+  background-image: url("../img/actions/play.svg"); }
 
 /* Play Big ----------------------------------------------------------------- */
 .play-pause,
@@ -394,6 +407,11 @@ select {
 .sm2-volume-control,
 .sm2-inline-button.shuffle {
   filter: invert(95%); }
+
+.icon-white {
+  filter: unset; }
+  .icon-white.icon-shadow {
+    filter: unset; }
 
 #navigation .app-icon {
   filter: none; }
