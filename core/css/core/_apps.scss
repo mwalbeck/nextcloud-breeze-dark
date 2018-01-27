@@ -43,7 +43,7 @@
 		color: $foreground-normal;
 		opacity: 1;
 
-		&:hover {
+		&:hover, &:hover + div.app-navigation-entry-utils {
 			background-color: $background-active-hover;
 		}
 	}
