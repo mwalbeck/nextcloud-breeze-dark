@@ -632,8 +632,13 @@ a.impersonate img.svg {
 
 .app-settings {
 
-	// In admin section
+	// In admin and personal settings
 	#app-navigation img[src$="/img/app-dark.svg"] {
+		filter: invert(95%);
+	}
+
+	// In admin section
+	#app-navigation img[src$="/settings/img/password.svg"] {
 		filter: invert(95%);
 	}
 

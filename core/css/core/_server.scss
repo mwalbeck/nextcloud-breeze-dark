@@ -129,13 +129,20 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	&::after {
 		border-bottom-color: $decoration-normal;
 	}
-	
-	li .menuitem {
-		color: $foreground-inactive;
-		opacity: 0.7;
 
-		&:hover {
-			color: $foreground-active;
+	li {
+
+		> a {
+			color: $foreground-normal;
+		}
+
+		.menuitem {
+			color: $foreground-inactive;
+			opacity: 0.7;
+
+			&:hover {
+				color: $foreground-active;
+			}
 		}
 	}
 }
