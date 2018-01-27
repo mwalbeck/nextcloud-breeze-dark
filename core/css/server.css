@@ -686,9 +686,6 @@ input[type="button"] {
 #controls {
   background-color: #31363b; }
 
-#app-navigation + #app-content #controls {
-  margin-top: 1px; }
-
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
   color: #bdc3c7; }
