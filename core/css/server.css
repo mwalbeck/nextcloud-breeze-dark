@@ -71,7 +71,8 @@
 
 /* Checkmark ---------------------------------------------------------------- */
 .icon-checkmark,
-.icon-sent {
+.icon-sent,
+.icon-category-enabled {
   background-image: url("../img/actions/checkmark.svg?v=1"); }
 
 /* History ------------------------------------------------------------------ */
@@ -130,7 +131,8 @@
 
 /* Settings ----------------------------------------------------------------- */
 .settings-button,
-.icon-settings-dark {
+.icon-settings-dark,
+.icon-category-tools {
   background-image: url("../img/actions/settings.svg?v=1"); }
 
 /* Add ---------------------------------------------------------------------- */
@@ -212,7 +214,8 @@ select {
   background-image: url("../img/actions/rss.svg") !important; }
 
 /* Close -------------------------------------------------------------------- */
-.icon-close {
+.icon-close,
+.icon-category-disabled {
   background-image: url("../img/actions/close.svg?v=1"); }
 
 .oc-dialog-close {
@@ -223,7 +226,8 @@ select {
   background-image: url("../img/actions/menu.svg?v=1"); }
 
 /* User --------------------------------------------------------------------- */
-.nav-icon-personal-settings {
+.nav-icon-personal-settings,
+.icon-category-installed {
   background-image: url("../img/actions/user.svg?v=1"); }
 
 /* Right Arrow -------------------------------------------------------------- */
@@ -317,15 +321,49 @@ select {
 .icon-audio-off-white {
   background-image: url("../img/actions/audio-off.svg"); }
 
-/* Screen -------------------------------------------------------------------- */
+/* Screen ------------------------------------------------------------------- */
 .icon-screen,
 .icon-screen-white {
   background-image: url("../img/actions/screen.svg"); }
 
-/* Screen off ---------------------------------------------------------------- */
+/* Screen off --------------------------------------------------------------- */
 .icon-screen-off,
 .icon-screen-off-white {
   background-image: url("../img/actions/screen-off.svg"); }
+
+/* App Categories ----------------------------------------------------------- */
+.icon-category-app-bundles {
+  background-image: url("../img/categories/bundles.svg?v=1"); }
+
+.icon-category-customization {
+  background-image: url("../img/categories/customization.svg?v=1"); }
+
+.icon-category-files {
+  background-image: url("../img/categories/files.svg?v=1"); }
+
+.icon-category-games {
+  background-image: url("../img/categories/games.svg?v=1"); }
+
+.icon-category-integration {
+  background-image: url("../img/categories/integration.svg?v=1"); }
+
+.icon-category-monitoring {
+  background-image: url("../img/categories/monitoring.svg?v=1"); }
+
+.icon-category-multimedia {
+  background-image: url("../img/categories/multimedia.svg?v=1"); }
+
+.icon-category-office {
+  background-image: url("../img/categories/office.svg?v=1"); }
+
+.icon-category-organization {
+  background-image: url("../img/categories/organization.svg?v=1"); }
+
+.icon-category-security {
+  background-image: url("../img/actions/password.svg?v=1"); }
+
+.icon-category-social {
+  background-image: url("../img/categories/social.svg?v=1"); }
 
 /* Activity App ------------------------------------------------------------- */
 .icon-activity,
