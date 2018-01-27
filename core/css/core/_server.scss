@@ -235,13 +235,10 @@ span {
 #quota {
 	color: $foreground-normal;
 	border: none;
+	border-radius: 3px;
 
-	div {
+	progress {
 		background-color: $background-active-hover;
-
-		&.quota-warning {
-			background-color: $background-neutral;
-		}
 	}
 }
 
