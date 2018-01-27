@@ -684,7 +684,8 @@ input[type="button"] {
 
 /* Controls ----------------------------------------------------------------- */
 #controls {
-  background-color: #31363b; }
+  background-color: #31363b;
+  height: unset; }
 
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
