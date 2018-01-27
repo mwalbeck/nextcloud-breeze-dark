@@ -442,6 +442,8 @@ a.impersonate img.svg {
 
 .app-settings #app-navigation img[src$="/img/app-dark.svg"] {
   filter: invert(95%); }
+.app-settings #app-navigation img[src$="/settings/img/password.svg"] {
+  filter: invert(95%); }
 .app-settings #apps-list .app-image image {
   filter: invert(5%); }
 .app-settings #apps-list #app-user_saml .app-image image {
@@ -732,6 +734,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 #emptycontent, .emptycontent {
   color: #bdc3c7; }
 
+.popovermenu li > a {
+  color: #eff0f1; }
 .popovermenu li .menuitem {
   color: #bdc3c7;
   opacity: 0.7; }
