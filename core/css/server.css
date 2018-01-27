@@ -815,11 +815,10 @@ span.success {
 /* Quota -------------------------------------------------------------------- */
 #quota {
   color: #eff0f1;
-  border: none; }
-  #quota div {
+  border: none;
+  border-radius: 3px; }
+  #quota progress {
     background-color: rgba(61, 174, 233, 0.25); }
-    #quota div.quota-warning {
-      background-color: #f67400; }
 
 #app-navigation #quota {
   background-color: #31363b;
