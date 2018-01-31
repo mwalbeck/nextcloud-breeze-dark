@@ -219,12 +219,15 @@ select {
   background-image: url("../img/actions/rss.svg") !important; }
 
 /* Close -------------------------------------------------------------------- */
-.icon-close,
-.icon-category-disabled {
+.icon-close {
   background-image: url("../img/actions/close.svg?v=1"); }
 
 .oc-dialog-close {
   background: url("../img/actions/close.svg") no-repeat center; }
+
+/* Close (no shadow) -------------------------------------------------------- */
+.icon-category-disabled {
+  background-image: url("../img/actions/close-ns.svg"); }
 
 /* Menu --------------------------------------------------------------------- */
 .icon-menu {
