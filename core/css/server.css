@@ -25,7 +25,8 @@
 
 /* Home --------------------------------------------------------------------- */
 #oc-dialog-filepicker-content .dirtree div:first-child a,
-.icon-inbox {
+.icon-inbox,
+.icon-home {
   background-image: url("../img/places/home.svg?v=1"); }
 
 /* Star --------------------------------------------------------------------- */
@@ -128,6 +129,7 @@
 
 /* Settings ----------------------------------------------------------------- */
 .settings-button,
+.icon-settings,
 .icon-settings-dark {
   background-image: url("../img/actions/settings.svg?v=1"); }
 
@@ -179,6 +181,10 @@ select {
 .icon-info {
   background-image: url("../img/actions/details.svg?v=1");
   opacity: 0.5; }
+
+/* Help --------------------------------------------------------------------- */
+.icon-help {
+  background-image: url("../img/help.svg"); }
 
 /* Clippy ------------------------------------------------------------------- */
 .icon-clippy {
@@ -244,6 +250,10 @@ select {
 .icon-mail,
 .icon-social-email {
   background-image: url("../img/email.svg"); }
+
+/* Calendar ----------------------------------------------------------------- */
+.icon-badge {
+  background-image: url("../img/places/calendar.svg"); }
 
 /* Play Big ----------------------------------------------------------------- */
 .play-pause,
@@ -316,6 +326,10 @@ select {
 /* Calendar App ------------------------------------------------------------- */
 .icon-timezone {
   background: url("../img/actions/timezone.svg") center center no-repeat; }
+
+/* Deck App ----------------------------------------------------------------- */
+.icon-deck {
+  background: url("../img/deck.svg"); }
 
 /* News App ----------------------------------------------------------------- */
 .icon-unpinned,
@@ -716,11 +730,17 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 #emptycontent, .emptycontent {
   color: #bdc3c7; }
 
-.popovermenu li .menuitem {
-  color: #bdc3c7;
-  opacity: 0.7; }
-  .popovermenu li .menuitem:hover {
-    color: #fcfcfc; }
+.popovermenu {
+  background-color: #31363b;
+  color: #eff0f1;
+  border: 1px solid #706f6e; }
+  .popovermenu::after {
+    border-bottom-color: #706f6e; }
+  .popovermenu li .menuitem {
+    color: #bdc3c7;
+    opacity: 0.7; }
+    .popovermenu li .menuitem:hover {
+      color: #fcfcfc; }
 
 .bubble, .app-navigation-entry-menu {
   background-color: #31363b;
@@ -1153,7 +1173,7 @@ div.ui-datepicker, div.ui-timepicker {
   #app-navigation .active {
     background-color: #3daee9;
     box-shadow: inset 2px 0 #1d99f3; }
-    #app-navigation .active a {
+    #app-navigation .active > a {
       color: #fcfcfc;
       font-weight: 600; }
   #app-navigation .app-external {
@@ -2384,5 +2404,61 @@ button#deleteaccount {
   background-color: #31363b; }
 .app-flowupload .table-hover tbody tr:hover > td {
   background-color: rgba(61, 174, 233, 0.25); }
+
+#app-navigation .editing .app-navigation-entry-edit {
+  background: #31363b;
+  border-right: 1px solid #706f6e; }
+
+#boardlist td {
+  border-bottom-color: #706f6e; }
+#boardlist thead td {
+  opacity: 1; }
+#boardlist tbody .board-create td {
+  border-bottom: none; }
+
+.board-header-controls #stack-add {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+  .board-header-controls #stack-add:hover {
+    border-color: #3daee9; }
+
+#board-detail-labels ul li .label-edit input {
+  color: #eff0f1 !important; }
+#board-detail-labels ul li .label-edit.ng-scope input {
+  color: #000000 !important; }
+
+#sidebar-header h3 {
+  background-color: #31363b; }
+
+.labels .label-edit input {
+  border-bottom-color: #706f6e; }
+
+.stack {
+  border-right-color: #706f6e; }
+
+#board .card {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+  box-shadow: none; }
+  #board .card:hover {
+    border-color: #3daee9; }
+  #board .card .card-controls {
+    background-color: #232629; }
+    #board .card .card-controls .due {
+      opacity: 0.7; }
+#board.card-selected .card.current {
+  opacity: 1;
+  box-shadow: none;
+  border-color: #3daee9; }
+
+#card-meta #card-dates {
+  opacity: 0.7; }
+#card-meta .section-header {
+  border-bottom-color: #706f6e; }
+#card-meta .card-description.section-content .container {
+  background-color: #31363b; }
+#card-meta .save-indicator.unsaved {
+  background-color: #4d4d4d;
+  color: #eff0f1; }
 
 /*# sourceMappingURL=server.css.map */

@@ -52,7 +52,7 @@
 		background-color: $background-active;
 		box-shadow: inset 2px 0 $background-active-alternate;
 
-		a {
+		> a {
 			color: $foreground-active;
 			font-weight: 600;
 		}
