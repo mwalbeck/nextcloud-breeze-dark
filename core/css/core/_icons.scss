@@ -153,7 +153,10 @@
 /* Settings ----------------------------------------------------------------- */
 
 .settings-button,
+<<<<<<< HEAD
 .icon-settings,
+=======
+>>>>>>> f2dd68ab69c5ee2c1a687e50a288a000173240ce
 .icon-settings-dark,
 .icon-category-tools {
 	background-image: url('../img/actions/settings.svg?v=1');
@@ -281,7 +284,8 @@ select {
 
 /* Close -------------------------------------------------------------------- */
 
-.icon-close {
+.icon-close,
+.icon-category-disabled {
 	background-image: url('../img/actions/close.svg?v=1');
 }
 
@@ -358,12 +362,15 @@ select {
 	background-image: url('../img/email.svg');
 }
 
+<<<<<<< HEAD
 /* Calendar ----------------------------------------------------------------- */
 
 .icon-badge {
 	background-image: url('../img/places/calendar.svg');
 }
 
+=======
+>>>>>>> f2dd68ab69c5ee2c1a687e50a288a000173240ce
 /* Play --------------------------------------------------------------------- */
 
 .icon-play {
