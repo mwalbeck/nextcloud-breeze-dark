@@ -716,6 +716,7 @@ div.ui-datepicker, div.ui-timepicker {
 /* Tooltips ----------------------------------------------------------------- */
 
 .tooltip {
+	filter: none;
 
 	&.right .tooltip-arrow {
 		border-right-color: $decoration-normal;
