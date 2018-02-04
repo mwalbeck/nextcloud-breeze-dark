@@ -1760,6 +1760,9 @@ td.date, td.date > span {
   opacity: 1; }
 
 /* Text Editor -------------------------------------------------------------- */
+#editor_container {
+  background-color: #706f6e; }
+
 #editor_controls {
   background-color: #31363b; }
   #editor_controls small.filename {
@@ -1772,6 +1775,24 @@ td.date, td.date > span {
       background-color: rgba(61, 174, 233, 0.25); }
     #editor_controls #editor_close:active, #editor_controls #editor_close:focus {
       background-color: #3daee9; }
+
+.ace-clouds {
+  background-color: #31363b !important;
+  color: #eff0f1 !important; }
+  .ace-clouds .ace_gutter {
+    color: #bdc3c7 !important;
+    background-color: #31363b !important;
+    opacity: 1 !important; }
+    .ace-clouds .ace_gutter .ace_gutter-cell {
+      opacity: 0.7; }
+  .ace-clouds .ace_gutter-active-line {
+    background-color: rgba(61, 174, 233, 0.25) !important; }
+  .ace-clouds .ace_marker-layer .ace_active-line {
+    background: #31363b !important; }
+  .ace-clouds .ace_marker-layer .ace_selection {
+    background: rgba(61, 174, 233, 0.25) !important; }
+  .ace-clouds .ace_cursor {
+    color: #eff0f1 !important; }
 
 /* Two Factor U2F */
 .two-factor-link .button {
