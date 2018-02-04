@@ -558,6 +558,7 @@ input.checkbox[type="radio"]:indeterminate + label::before {
 input:not([type="range"]),
 textarea,
 #quota,
+div[contenteditable="true"],
 .pager li a {
   background-color: #232629;
   color: #bdc3c7;
@@ -565,6 +566,7 @@ textarea,
   input:not([type="range"]):not(:disabled):not(.primary):not(#quota):hover,
   textarea:not(:disabled):not(.primary):not(#quota):hover,
   #quota:not(:disabled):not(.primary):not(#quota):hover,
+  div[contenteditable="true"]:not(:disabled):not(.primary):not(#quota):hover,
   .pager li a:not(:disabled):not(.primary):not(#quota):hover {
     border-color: #3daee9; }
   input:not([type="range"]):not(:disabled):not(.primary):focus, input:not([type="range"]):not(:disabled):not(.primary):active,
@@ -572,6 +574,8 @@ textarea,
   textarea:not(:disabled):not(.primary):active,
   #quota:not(:disabled):not(.primary):focus,
   #quota:not(:disabled):not(.primary):active,
+  div[contenteditable="true"]:not(:disabled):not(.primary):focus,
+  div[contenteditable="true"]:not(:disabled):not(.primary):active,
   .pager li a:not(:disabled):not(.primary):focus,
   .pager li a:not(:disabled):not(.primary):active {
     background-color: #232629;
@@ -579,11 +583,20 @@ textarea,
   input:not([type="range"]):not(:disabled):not(.primary).active,
   textarea:not(:disabled):not(.primary).active,
   #quota:not(:disabled):not(.primary).active,
+  div[contenteditable="true"]:not(:disabled):not(.primary).active,
   .pager li a:not(:disabled):not(.primary).active {
+    border-color: #3daee9; }
+  input:not([type="range"]):not(:disabled):hover,
+  textarea:not(:disabled):hover,
+  #quota:not(:disabled):hover,
+  div[contenteditable="true"]:not(:disabled):hover,
+  .pager li a:not(:disabled):hover {
+    background-color: #232629;
     border-color: #3daee9; }
   input:not([type="range"]):disabled,
   textarea:disabled,
   #quota:disabled,
+  div[contenteditable="true"]:disabled,
   .pager li a:disabled {
     background-color: #4d4d4d;
     color: #bdc3c7;
@@ -595,10 +608,17 @@ textarea,
     #quota:disabled:hover,
     #quota:disabled:focus,
     #quota:disabled:active,
+    div[contenteditable="true"]:disabled:hover,
+    div[contenteditable="true"]:disabled:focus,
+    div[contenteditable="true"]:disabled:active,
     .pager li a:disabled:hover,
     .pager li a:disabled:focus,
     .pager li a:disabled:active {
       border-color: #706f6e; }
+
+div[contenteditable="true"]:not(:disabled):hover, div[contenteditable="true"]:not(:disabled):active, div[contenteditable="true"]:not(:disabled):focus {
+  background-color: #232629 !important;
+  border-color: #3daee9 !important; }
 
 textarea:active:not(:disabled), textarea:hover:not(:disabled), textarea:focus:not(:disabled) {
   border-color: #3daee9 !important;

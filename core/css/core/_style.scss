@@ -82,9 +82,10 @@ input.checkbox[type="radio"] {
 	}
 }
 
-input:not([type="range"]), 
-textarea, 
-#quota, 
+input:not([type="range"]),
+textarea,
+#quota,
+div[contenteditable="true"],
 .pager li a {
 	background-color: $background-dark;
 	color: $foreground-inactive;
@@ -105,6 +106,14 @@ textarea,
 			border-color: $decoration-active;
 		}
 	}
+
+	&:not(:disabled) {
+
+		&:hover {
+			background-color: $background-dark;
+			border-color: $decoration-active;
+		}
+	}
 	
 	&:disabled {
 		background-color: $background-alternate;
@@ -114,6 +123,14 @@ textarea,
 		&:hover, &:focus, &:active {
 			border-color: $decoration-normal;
 		}
+	}
+}
+
+div[contenteditable="true"]:not(:disabled) {
+
+	&:hover, &:active, &:focus {
+		background-color: $background-dark !important;
+		border-color: $decoration-active !important;
 	}
 }
 
