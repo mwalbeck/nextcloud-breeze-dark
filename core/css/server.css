@@ -926,9 +926,8 @@ span.success {
     box-shadow: none; }
 
 /* Personal Settings -------------------------------------------------------- */
-#sessions .token-list td, #apppasswords .token-list td {
-  border-color: #706f6e;
-  border-top: none; }
+#security .token-list td {
+  border-top-color: #706f6e; }
 
 /* App Store ---------------------------------------------------------------- */
 .app-level span {

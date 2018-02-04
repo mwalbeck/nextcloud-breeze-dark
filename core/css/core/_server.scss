@@ -309,9 +309,8 @@ span {
 
 /* Personal Settings -------------------------------------------------------- */
 
-#sessions .token-list td, #apppasswords .token-list td {
-	border-color: $decoration-normal;
-	border-top: none;
+#security .token-list td {
+	border-top-color: $decoration-normal;
 }
 
 /* App Store ---------------------------------------------------------------- */
