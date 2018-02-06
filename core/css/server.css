@@ -507,6 +507,10 @@ a.impersonate img.svg {
   filter: invert(5%); }
 .app-settings #apps-list #app-user_saml .app-image image {
   filter: none; }
+.app-settings #personal-settings .federationScopeMenu ul li a img[src$="/core/img/actions/password.svg"],
+.app-settings #personal-settings .federationScopeMenu ul li a img[src$="/core/img/places/contacts-dark.svg"],
+.app-settings #personal-settings .federationScopeMenu ul li a img[src$="/core/img/places/link.svg"] {
+  filter: invert(95%); }
 
 body {
   color: #eff0f1;

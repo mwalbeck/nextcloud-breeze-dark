@@ -727,4 +727,11 @@ a.impersonate img.svg {
 		}
 	}
 
+	#personal-settings .federationScopeMenu ul li a {
+		img[src$="/core/img/actions/password.svg"], 
+		img[src$="/core/img/places/contacts-dark.svg"],
+		img[src$="/core/img/places/link.svg"] {
+			filter: invert(95%);
+		}
+	}
 }
