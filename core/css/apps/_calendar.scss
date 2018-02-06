@@ -13,10 +13,12 @@
 
 		.new-entity {
 			color: $foreground-normal;
+			opacity: 0.7;
 
 			&:hover {
 				background-color: $background-active-hover;
 				color: $foreground-normal;
+				opacity: 1;
 			}
 		}
 
@@ -33,6 +35,11 @@
 			&::after {
 				border-bottom-color: $decoration-normal;
 			}
+		}
+
+		.app-navigation-entry-edit,
+		.app-navigation-entry-deleted {
+			background-color: $background-normal;
 		}
 
 		.togglebuttons {
@@ -77,6 +84,10 @@
 	
 	th, td, thead, tbody, .fc-divider, .fc-row, .fc-popover {
 		border-color: $decoration-normal;
+	}
+
+	.fc-divider, .fc-popover .fc-header, .fc-list-heading td {
+		background-color: $background-alternate;
 	}
 }
 

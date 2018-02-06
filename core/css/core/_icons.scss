@@ -174,7 +174,9 @@
 /* More --------------------------------------------------------------------- */
 
 .icon-more,
-#app-navigation .app-navigation-entry-utils-menu-button button {
+#app-navigation .app-navigation-entry-utils 
+.app-navigation-entry-utils-menu-button 
+button:not([class^="icon-"]):not([class*=" icon-"]) {
 	background-image: url('../img/actions/more.svg?v=1');
 }
 
@@ -324,14 +326,16 @@ select {
 /* Right Arrow Big ---------------------------------------------------------- */
 
 .icon-view-next,
-.glyphicon-chevron-right {
-	background-image: url("../img/rightarrow.svg") center center no-repeat;
+.glyphicon-chevron-right,
+.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
+	background: url("../img/rightarrow.svg") center center no-repeat;
 }
 
 /* Left Arrow Big--------------------------------------------------------------- */
 
-.glyphicon-chevron-left {
-	background-image: url("../img/leftarrow.svg") center center no-repeat;
+.glyphicon-chevron-left,
+.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+	background: url("../img/leftarrow.svg") center center no-repeat;
 }
 
 /* Change ------------------------------------------------------------------- */

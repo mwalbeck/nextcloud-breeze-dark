@@ -668,69 +668,108 @@ ul.multiselectoptions {
 	border: none;
 }
 
-.ui-datepicker,
-.ui-datepicker-title,
-.ui-datepicker .ui-widget-header,
-.ui-timepicker,
-.ui-timepicker-title,
-.ui-timepicker .ui-widget-header {
-	color: $foreground-normal;
-}
-
-.ui-datepicker table a.ui-state-default,
-.ui-timepicker table a.ui-state-default {
-	color: $foreground-normal;
-	border-radius: 3px 3px 3px 3px;
+// Datepicker
+.ui-widget.ui-datepicker {
+	filter: none;
 	border: 1px solid $decoration-normal;
-	background: $background-dark;
-	font-weight: bold;
-}
 
-.ui-datepicker table a.ui-state-default:hover,
-.ui-timepicker table a.ui-state-default:hover {
-	background: $background-active-hover;
-}
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
 
-.ui-priority-secondary,
-.ui-widget-content .ui-priority-secondary,
-.ui-widget-header .ui-priority-secondary {
-	opacity: .5;
-	filter: Alpha(Opacity=50);
-	font-weight: normal;
-}
+	.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
 
-.ui-datepicker-calendar tbody tr, .ui-timepicker tbody tr {
-	&:hover, &:focus, &:active {
-		background-color: inherit;
+		.ui-icon {
+			opacity: 1;
+		}
+
+		.ui-datepicker-prev, .ui-datepicker-next {
+			border-color: $decoration-normal;
+			background: $background-normal;
+		}
+	}
+
+	.ui-datepicker-calendar {
+
+		th {
+			color: $foreground-normal;
+			opacity: 0.7;
+		}
+		
+		tr td > * {
+			color: $foreground-normal;
+		}
+
+		td .ui-priority-secondary:not(.ui-state-hover) {
+			color: $foreground-inactive;
+			opacity: 0.5;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) :not(.ui-state-hover):not(.ui-state-active) {
+			color: $background-active;
+			opacity: 1;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) .ui-priority-secondary:not(.ui-state-hover) {
+			color: $background-active;
+			opacity: 0.7;
+		}
+
+		td.ui-datepicker-current-day:not(.ui-state-disabled) a.ui-state-active, td .ui-state-hover, 
+		td .ui-state-focus {
+			background-color: $background-active;
+			color: $foreground-active;
+		}
+
+		td.ui-datepicker-today a:not(.ui-state-hover) {
+			background-color: $background-alternate;
+		}
 	}
 }
 
-.ui-datepicker-prev, 
-.ui-datepicker-next {
+// Timepicker
+.ui-widget.ui-timepicker {
+	filter: none;
+	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
-	background: $background-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
+	}
+
+	table.ui-timepicker tr td > * {
+		color: $foreground-normal;
+	}
+
+	.ui-timepicker-table {
+
+		th {
+			color: $foreground-inactive;
+			opacity: 0.7%;
+		}
+	
+		td.ui-timepicker-hours {
+			border-right-color: $decoration-normal;
+		}
+
+		td.ui-timepicker-hour-cell a.ui-state-active, 
+		td.ui-timepicker-minute-cell a.ui-state-active, 
+		td .ui-state-hover, 
+		td .ui-state-focus {
+			background-color: $background-active;
+			color: $foreground-active;
+		}
+	}
 }
 
-.ui-datepicker .ui-datepicker-next-hover,
-.ui-datepicker .ui-datepicker-prev-hover, {
-	background: $background-normal;
-	border-color: $decoration-active;
-}
-
-div.ui-datepicker, div.ui-timepicker {
-    background: $background-normal;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: none;
-    color: $foreground-normal;
-}
-
-.ui-datepicker table a.ui-state-active,
-.ui-timepicker table a.ui-state-active {
-	background: $background-active;
-	border-radius: 3px 3px 3px 3px;
-	color: $foreground-active;
-	text-shadow: none;
-}
+.ui-widget.ui-timepicker .ui-timepicker-table th
 
 #app-sidebar div.content-wrapper .body .section input.focus {
 	background-color: $background-dark;
