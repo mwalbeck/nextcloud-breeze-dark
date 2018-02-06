@@ -11,12 +11,12 @@ If you would like to report a bug please open a new issue. If you would like to 
 When reporting a bug please provide the following information:
 
 * Version of Nextcloud
-* Version of this theme (Can be found at the top of server.scss or the README)
+* Version of this theme (Can be found at the top of server.scss)
 * Which browser you are using and the version of said browser
 
 ## Feature/styling Requests
 
-If you would like something added to the theme please open up a new issue. If you would like styling add for a specific app, you can either open a new issue, or leave a comment on this [issue](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/2). If you would like to add the styling yourself please open up a new issue.
+If you would like something added to the theme please open up a new issue. If you would like styling added for a specific app or add that styling yourselves, please open a new issue.
 
 ## Pull Requests
 
