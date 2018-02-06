@@ -124,3 +124,13 @@ textarea.message-body {
         border-color: transparent;
     }
 }
+
+#app-navigation > ul > .navigation-account {
+
+    > li > a,
+    > .folders > li > a,
+    > .folders > li > .folders > .folders > li > a {
+        color: $foreground-normal;
+        opacity: 0.75;
+    }
+}

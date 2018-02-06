@@ -1,0 +1,107 @@
+#app-navigation .editing .app-navigation-entry-edit {
+    background: $background-normal;
+    border-right: 1px solid $decoration-normal;
+}
+
+#boardlist {
+
+    td {
+        border-bottom-color: $decoration-normal;
+    }
+
+    thead td {
+        opacity: 1;
+    }
+
+    tbody {
+
+        .board-create td {
+            border-bottom: none;
+        }
+    }
+}
+
+.board-header-controls {
+
+    #stack-add {
+        background-color: $background-dark;
+        border: 1px solid $decoration-normal;
+
+        &:hover {
+            border-color: $decoration-active;
+        }
+    }
+}
+
+#board-detail-labels ul li .label-edit {
+
+    input {
+        color: $foreground-normal !important;
+    }
+
+    &.ng-scope input {
+        color: #000000 !important;
+    }
+}
+
+#sidebar-header {
+
+    h3 {
+        background-color: $background-normal;
+    }
+}
+
+.labels .label-edit input {
+    border-bottom-color: $decoration-normal;
+}
+
+.stack {
+	border-right-color: $decoration-normal;
+}
+
+#board {
+
+    .card {
+        background-color: $background-normal;
+        border: 1px solid $decoration-normal;
+        box-shadow: none;
+
+        &:hover {
+            border-color: $decoration-active;
+        }
+        
+        .card-controls {
+            background-color: $background-dark;
+
+            .due {
+                opacity: 0.7;
+            }
+        }
+    }
+    
+    &.card-selected .card.current {
+        opacity: 1;
+        box-shadow: none;
+        border-color: $decoration-active;
+    }
+}
+
+#card-meta {
+
+    #card-dates {
+        opacity: 0.7;
+    }
+
+    .section-header {
+        border-bottom-color: $decoration-normal;
+    }
+
+    .card-description.section-content .container {
+        background-color: $background-normal;
+    }
+
+    .save-indicator.unsaved {
+        background-color: $background-alternate;
+        color: $foreground-normal;
+    }
+}

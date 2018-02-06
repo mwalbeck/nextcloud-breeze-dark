@@ -10,7 +10,8 @@
 /* Home --------------------------------------------------------------------- */
 
 #oc-dialog-filepicker-content .dirtree div:first-child a,
-.icon-inbox {
+.icon-inbox,
+.icon-home {
 	background-image: url('../img/places/home.svg?v=1');
 }
 
@@ -150,6 +151,7 @@
 /* Settings ----------------------------------------------------------------- */
 
 .settings-button,
+.icon-settings,
 .icon-settings-dark {
 	background-image: url('../img/actions/settings.svg?v=1');
 }
@@ -223,6 +225,12 @@ select {
 .icon-info {
 	background-image: url('../img/actions/details.svg?v=1');
 	opacity: 0.5;
+}
+
+/* Help --------------------------------------------------------------------- */
+
+.icon-help {
+	background-image: url('../img/help.svg');
 }
 
 /* Clippy ------------------------------------------------------------------- */
@@ -319,6 +327,12 @@ select {
 .icon-mail,
 .icon-social-email {
 	background-image: url('../img/email.svg');
+}
+
+/* Calendar ----------------------------------------------------------------- */
+
+.icon-badge {
+	background-image: url('../img/places/calendar.svg');
 }
 
 /* Play Big ----------------------------------------------------------------- */
@@ -419,6 +433,12 @@ select {
 
 .icon-timezone {
 	background: url("../img/actions/timezone.svg") center center no-repeat;
+}
+
+/* Deck App ----------------------------------------------------------------- */
+
+.icon-deck {
+	background: url("../img/deck.svg");
 }
 
 /* News App ----------------------------------------------------------------- */

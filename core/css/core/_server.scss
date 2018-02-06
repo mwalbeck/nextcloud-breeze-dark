@@ -112,12 +112,22 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	color: $foreground-inactive;
 }
 
-.popovermenu li .menuitem {
-	color: $foreground-inactive;
-	opacity: 0.7;
+.popovermenu {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
 
-	&:hover {
-		color: $foreground-active;
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+	
+	li .menuitem {
+		color: $foreground-inactive;
+		opacity: 0.7;
+
+		&:hover {
+			color: $foreground-active;
+		}
 	}
 }
 

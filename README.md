@@ -6,7 +6,6 @@ The icons are from the default Nextcloud theme and the individual apps, with the
 ![screenshot of theme](screenshot.png)
 
 ## Version number
-
 The first number is the Nextcloud version. The second number is the Nextcloud point release version. The third number is the theme version.
 
 ## Progress
@@ -24,7 +23,16 @@ To enable the theme, add or change the theme option in your **config.php** to:
     'theme' => 'nextcloud-breeze-dark',
 
 ## Contributions
-
 The theme is written with [Sass](http://sass-lang.com/).
 
 Please have a look at the CONTRIBUTING.md for details on how to contribute.
+
+## Donations
+If you like the theme and would like to donate you can use the following cryptocurrency addresses:
+
+BTC: 1Pp3UG9k6ZkwrVXrhr9kwwvjwDk5Vchu3f
+BCH: 1C7dQLqMU6Kucxx9GcFDMnTTTsBpeNT9vo
+LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx
+DOGE: DNsXstU98g61QtF4CKwL6NZE8UAf4eJSdC
+
+Thank you.
