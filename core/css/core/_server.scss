@@ -584,6 +584,32 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
+/* Auto suggestion users in comments dropdown ------------------------------- */
+
+.atwho-view {
+	background: $background-normal;
+	color: $foreground-normal;
+	border-color: $decoration-normal;
+	box-shadow: none;
+
+	.cur {
+		background: $background-active-hover;
+		color: $foreground-normal;
+
+		strong {
+			color: $foreground-normal;
+		}
+	}
+
+	ul li {
+		border-bottom-color: $decoration-normal;
+	}
+
+	strong {
+		color: $foreground-normal;
+	}
+}
+
 /* Upload Progress ---------------------------------------------------------- */
 
 #uploadprogresswrapper {

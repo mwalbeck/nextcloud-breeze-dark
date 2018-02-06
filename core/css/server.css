@@ -1088,6 +1088,22 @@ ul.multiselectoptions {
   background-color: #232629;
   border: 1px solid #706f6e; }
 
+/* Auto suggestion users in comments dropdown ------------------------------- */
+.atwho-view {
+  background: #31363b;
+  color: #eff0f1;
+  border-color: #706f6e;
+  box-shadow: none; }
+  .atwho-view .cur {
+    background: rgba(61, 174, 233, 0.25);
+    color: #eff0f1; }
+    .atwho-view .cur strong {
+      color: #eff0f1; }
+  .atwho-view ul li {
+    border-bottom-color: #706f6e; }
+  .atwho-view strong {
+    color: #eff0f1; }
+
 /* Upload Progress ---------------------------------------------------------- */
 #uploadprogresswrapper #uploadprogressbar .label.outer, #uploadprogresswrapper #uploadprogressbar .label.inner {
   color: #eff0f1; }
