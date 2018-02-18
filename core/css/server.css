@@ -156,7 +156,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
   background-image: url("../img/places/files.svg?v=1"); }
 
 /* Download ----------------------------------------------------------------- */
-.icon-download {
+.icon-download,
+.icon-category-updates {
   background-image: url("../img/actions/download.svg?v=1"); }
 
 /* Triangle-N --------------------------------------------------------------- */

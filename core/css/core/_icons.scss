@@ -188,7 +188,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 
 /* Download ----------------------------------------------------------------- */
 
-.icon-download {
+.icon-download,
+.icon-category-updates {
 	background-image: url('../img/actions/download.svg?v=1');
 }
 
