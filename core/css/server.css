@@ -165,7 +165,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 
 /* Triangle-S --------------------------------------------------------------- */
 .icon-triangle-s,
-#app-navigation .collapsible > .collapse {
+#app-navigation .collapsible::after {
   background-image: url("../img/actions/triangle-s.svg?v=1"); }
 
 select {
@@ -2051,11 +2051,13 @@ textarea.message-body {
 #explore .explore-footer a {
   color: #2980b9; }
 
-.app-news #app-navigation li.collapsible.open a {
-  background-color: #232629; }
 .app-news #app-navigation li.folder {
   border-right: 1px solid #706f6e;
   background: #31363b; }
+.app-news #app-navigation > ul > li > a,
+.app-news #app-navigation > ul > li > ul > li > a {
+  color: #eff0f1;
+  opacity: 1; }
 
 .app-news #app-content {
   border-top: 1px solid #706f6e; }

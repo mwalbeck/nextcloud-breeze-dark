@@ -14,15 +14,16 @@
 }
 
 .app-news #app-navigation {
-	li.collapsible.open {
-		a {
-			background-color: $background-dark;
-		}
-	}
 
 	li.folder {
 		border-right: 1px solid $decoration-normal;
 		background: $background-normal;
+	}
+
+	> ul > li > a,
+	> ul > li > ul > li > a {
+		color: $foreground-normal;
+		opacity: 1;
 	}
 }
 
