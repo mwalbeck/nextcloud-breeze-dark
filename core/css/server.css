@@ -463,6 +463,10 @@ select {
 .nav-icon-u2f-second-factor-auth {
   background-image: url("../img/twofactor-u2f.svg?v=1"); }
 
+/* FullTextSearch ----------------------------------------------------------- */
+div.icon-fulltextsearch-white {
+  background-image: url("../img/fulltextsearch.svg"); }
+
 /* CSS tricks to change icon color ------------------------------------------ */
 .sm2-volume-control,
 .sm2-inline-button.shuffle {
@@ -502,7 +506,8 @@ a.impersonate img.svg {
 
 .app-settings #app-navigation img[src$="/img/app-dark.svg"] {
   filter: invert(95%); }
-.app-settings #app-navigation img[src$="/settings/img/password.svg"] {
+.app-settings #app-navigation img[src$="/settings/img/password.svg"],
+.app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"] {
   filter: invert(95%); }
 .app-settings #apps-list .app-image image {
   filter: invert(5%); }
@@ -2621,5 +2626,15 @@ button#deleteaccount {
 
 .app-settings #app-content #fns .div-table .div-table-row .div-table-col select, .app-settings #app-content #fns .div-table .div-table-row .div-table-col input, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col select, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col input, .app-settings #app-content #files .div-table .div-table-row .div-table-col select, .app-settings #app-content #files .div-table .div-table-row .div-table-col input {
   background-color: #232629 !important; }
+
+.provider_navigation {
+  color: #eff0f1;
+  background: #31363b; }
+
+.result_entry_default {
+  background: #31363b; }
+
+#fts-popup .div-table-col-left {
+  color: #eff0f1; }
 
 /*# sourceMappingURL=server.css.map */
