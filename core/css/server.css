@@ -1231,11 +1231,15 @@ ul.multiselectoptions {
   background-color: #31363b;
   color: #eff0f1;
   box-shadow: none;
-  border: 1px solid #706f6e; }
+  border: 1px solid #706f6e !important;
+  padding: 10px; }
 
 #adminaccount .tooltip-inner {
   background-color: transparent;
   border: none; }
+
+.contact .tooltip .tooltip-arrow {
+  right: -4px; }
 
 /* Public view for file sharing --------------------------------------------- */
 #body-public #content-wrapper #content #preview {

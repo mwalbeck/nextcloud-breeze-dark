@@ -818,12 +818,18 @@ ul.multiselectoptions {
 	background-color: $background-normal;
 	color: $foreground-normal;
 	box-shadow: none;
-	border: 1px solid $decoration-normal;
+	border: 1px solid $decoration-normal !important;
+	padding: 10px;
 }
 
 #adminaccount .tooltip-inner {
 	background-color: transparent;
 	border: none;
+}
+
+// Fix for tooltip arrow not being aligned in contacts dropdown
+.contact .tooltip .tooltip-arrow {
+	right: -4px;
 }
 
 /* Public view for file sharing --------------------------------------------- */
