@@ -788,6 +788,9 @@ input[type="button"] {
   border-color: #3daee9 !important;
   background-color: #232629 !important; }
 
+.searchbox input[type="search"]:hover {
+  background-color: #31363b; }
+
 #app-content #searchresults {
   background-color: #31363b; }
 
@@ -815,6 +818,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   .menu::after {
     border-bottom-color: #706f6e; }
 
+#contactsmenu .menutoggle:hover {
+  opacity: 1; }
 #contactsmenu > .menu .contact {
   border-bottom-color: #706f6e; }
 #contactsmenu > .menu .content .footer a {
@@ -2636,5 +2641,8 @@ button#deleteaccount {
 
 #fts-popup .div-table-col-left {
   color: #eff0f1; }
+
+#fulltextsearch .menutoggle:hover {
+  opacity: 1 !important; }
 
 /*# sourceMappingURL=server.css.map */
