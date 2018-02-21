@@ -1,0 +1,54 @@
+.app-weather {
+
+    table tr {
+        background-color: unset;
+    }
+}
+
+#city-list-left {
+    background-color: $background-normal;
+    border-left: none;
+    border-right-color: $decoration-normal;
+
+    .city-list {
+        
+        li {
+        
+            a {
+                color: $foreground-normal;
+            }
+
+            &:hover, &:hover > a {
+                background-color: $background-active-hover;
+                box-shadow: inset 2px 0 $background-active-alternate;
+            }
+
+            &.selected, &.selected a {
+                background-color: $background-active;
+                color: $foreground-active;
+                font-weight: 600;
+                box-shadow: inset 2px 0 $background-active-alternate;
+            }
+        }
+
+        #create-city {
+            background-color: $background-normal;
+            border-left: none;
+            border-right: none;
+            border-top-color: $decoration-active;
+            border-bottom-color: $decoration-active;
+
+            h1 {
+                color: $foreground-active;
+            }
+
+            hr {
+                background: $decoration-normal;
+            }
+        }
+    }
+}
+
+#city-right {
+    border-top: 1px solid $decoration-normal;
+}

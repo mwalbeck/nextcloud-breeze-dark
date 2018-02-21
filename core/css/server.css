@@ -2649,4 +2649,35 @@ button#deleteaccount {
 #fulltextsearch .menutoggle:hover {
   opacity: 1 !important; }
 
+.app-weather table tr {
+  background-color: unset; }
+
+#city-list-left {
+  background-color: #31363b;
+  border-left: none;
+  border-right-color: #706f6e; }
+  #city-list-left .city-list li a {
+    color: #eff0f1; }
+  #city-list-left .city-list li:hover, #city-list-left .city-list li:hover > a {
+    background-color: rgba(61, 174, 233, 0.25);
+    box-shadow: inset 2px 0 #1d99f3; }
+  #city-list-left .city-list li.selected, #city-list-left .city-list li.selected a {
+    background-color: #3daee9;
+    color: #fcfcfc;
+    font-weight: 600;
+    box-shadow: inset 2px 0 #1d99f3; }
+  #city-list-left .city-list #create-city {
+    background-color: #31363b;
+    border-left: none;
+    border-right: none;
+    border-top-color: #3daee9;
+    border-bottom-color: #3daee9; }
+    #city-list-left .city-list #create-city h1 {
+      color: #fcfcfc; }
+    #city-list-left .city-list #create-city hr {
+      background: #706f6e; }
+
+#city-right {
+  border-top: 1px solid #706f6e; }
+
 /*# sourceMappingURL=server.css.map */
