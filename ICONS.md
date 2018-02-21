@@ -11,5 +11,6 @@ The icons for this theme are from the following projects:
 * Nextcloud Social Sharing, AGPLv3 - [https://github.com/nextcloud/socialsharing](https://github.com/nextcloud/socialsharing)
 * Nextcloud Mail, AGPLv3 - [https://github.com/nextcloud/mail](https://github.com/nextcloud/mail)
 * Audio Player, AGPLv3 - [https://github.com/Rello/audioplayer](https://github.com/Rello/audioplayer)
+* FullTextSearch, AGPLv3 - [https://github.com/nextcloud/fulltextsearch](https://github.com/nextcloud/fulltextsearch)
 
 The colours of the icons have been changed to better fit the style of the theme.

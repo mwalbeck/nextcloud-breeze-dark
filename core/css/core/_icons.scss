@@ -188,7 +188,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 
 /* Download ----------------------------------------------------------------- */
 
-.icon-download {
+.icon-download,
+.icon-category-updates {
 	background-image: url('../img/actions/download.svg?v=1');
 }
 
@@ -201,7 +202,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 /* Triangle-S --------------------------------------------------------------- */
 
 .icon-triangle-s,
-#app-navigation .collapsible > .collapse {
+#app-navigation .collapsible::after {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
@@ -635,6 +636,12 @@ select {
 	background-image: url('../img/twofactor-u2f.svg?v=1');
 }
 
+/* FullTextSearch ----------------------------------------------------------- */
+
+div.icon-fulltextsearch-white {
+	background-image: url('../img/fulltextsearch.svg');
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Audio player
@@ -708,8 +715,9 @@ a.impersonate img.svg {
 		filter: invert(95%);
 	}
 
-	// In admin section
-	#app-navigation img[src$="/settings/img/password.svg"] {
+	// In admin settings
+	#app-navigation img[src$="/settings/img/password.svg"],
+	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"] {
 		filter: invert(95%);
 	}
 
