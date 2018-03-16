@@ -621,6 +621,23 @@ ul.multiselectoptions {
 	}
 }
 
+/* Auto suggestion in sharing dropdown -------------------------------------- */
+
+.ui-autocomplete.ui-widget-content {
+	background: $background-normal;
+	border-top: none;
+	border-color: $decoration-active;
+}
+
+.ui-autocomplete.ui-menu .ui-menu-item {
+
+	a.ui-state-focus, a.ui-state-active {
+		font-weight: inherit;
+		border: none;
+		margin: 0;
+	}
+}
+
 /* Upload Progress ---------------------------------------------------------- */
 
 #uploadprogresswrapper {

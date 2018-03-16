@@ -1123,6 +1123,17 @@ ul.multiselectoptions {
   .atwho-view strong {
     color: #eff0f1; }
 
+/* Auto suggestion in sharing dropdown -------------------------------------- */
+.ui-autocomplete.ui-widget-content {
+  background: #31363b;
+  border-top: none;
+  border-color: #3daee9; }
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-state-focus, .ui-autocomplete.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: inherit;
+  border: none;
+  margin: 0; }
+
 /* Upload Progress ---------------------------------------------------------- */
 #uploadprogresswrapper #uploadprogressbar .label.outer, #uploadprogresswrapper #uploadprogressbar .label.inner {
   color: #eff0f1; }
