@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 13.0.1
+* Version: 13.0.2
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -752,7 +752,7 @@ input[type="button"] {
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-  background-image: none !important;
+  background-image: url(../../loginbackground.png), url(../../loginbackground.jpg) !important;
   background-color: #31363b !important; }
   #body-login p.info {
     color: #bdc3c7; }
@@ -1122,6 +1122,17 @@ ul.multiselectoptions {
     border-bottom-color: #706f6e; }
   .atwho-view strong {
     color: #eff0f1; }
+
+/* Auto suggestion in sharing dropdown -------------------------------------- */
+.ui-autocomplete.ui-widget-content {
+  background: #31363b;
+  border-top: none;
+  border-color: #3daee9; }
+
+.ui-autocomplete.ui-menu .ui-menu-item a.ui-state-focus, .ui-autocomplete.ui-menu .ui-menu-item a.ui-state-active {
+  font-weight: inherit;
+  border: none;
+  margin: 0; }
 
 /* Upload Progress ---------------------------------------------------------- */
 #uploadprogresswrapper #uploadprogressbar .label.outer, #uploadprogresswrapper #uploadprogressbar .label.inner {
