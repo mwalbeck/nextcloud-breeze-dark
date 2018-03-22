@@ -1,7 +1,8 @@
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-	background-image: none !important;
+	background-image: url(../../loginbackground.png),
+					  url(../../loginbackground.jpg) !important;
 	background-color: $background-normal !important;
 
 	p.info {
