@@ -1981,6 +1981,27 @@ ul.tagit {
   background-color: #31363b;
   border: 1px solid #706f6e; }
 
+.app-mail #app-navigation li > a:hover {
+  background-color: unset; }
+  .app-mail #app-navigation li > a:hover + div.app-navigation-entry-utils {
+    background-color: unset; }
+.app-mail #app-navigation .navigation-account > .folders > li > .folders > .folders > li > a {
+  padding-right: 14px; }
+.app-mail #app-navigation .navigation-account > .folders > li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li {
+    background-color: #31363b; }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li.active {
+      background-color: #3daee9; }
+.app-mail #app-navigation .navigation-account > .folders > li.active {
+  background-color: #3daee9;
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li.active .folders > li {
+    background-color: #31363b; }
+
 #mail-messages {
   border-right: 1px solid #706f6e;
   background-color: #232629; }
