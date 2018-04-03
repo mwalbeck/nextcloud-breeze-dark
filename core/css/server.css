@@ -1195,6 +1195,8 @@ div.ui-datepicker, div.ui-timepicker {
     #app-navigation > ul > li:focus > a, #app-navigation > ul > li:hover > a, #app-navigation > ul > li.active > a, #app-navigation > ul > li a.selected > a {
       opacity: 1;
       box-shadow: inset 2px 0 #1d99f3; }
+  #app-navigation .collapsible.open {
+    background-image: none; }
 
 .nav-trashbin {
   background-color: #31363b;
@@ -1799,6 +1801,25 @@ ul.tagit {
 #tag_filter ul.tagit li.tagit-choice {
   background-color: #31363b;
   border: 1px solid #706f6e; }
+
+.app-mail #app-navigation li > a:hover {
+  background-color: unset; }
+.app-mail #app-navigation .navigation-account > .folders > li > .folders > .folders > li > a {
+  padding-right: 14px; }
+.app-mail #app-navigation .navigation-account > .folders > li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li {
+    background-color: #31363b; }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li.active {
+      background-color: #3daee9; }
+.app-mail #app-navigation .navigation-account > .folders > li.active {
+  background-color: #3daee9;
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li.active .folders > li {
+    background-color: #31363b; }
 
 #mail-messages {
   border-right: 1px solid #706f6e;
