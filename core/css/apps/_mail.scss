@@ -1,3 +1,55 @@
+.app-mail {
+
+    .date {
+        opacity: 0.5;
+        color: $foreground-inactive;
+    }
+
+    #app-navigation {
+
+        li > a:hover {
+            background-color: unset;
+
+            + div.app-navigation-entry-utils {
+                background-color: unset;
+            }
+        }
+
+        .navigation-account > .folders > li {
+
+            > .folders > .folders > li > a {
+                padding-right: 14px;
+            }
+
+            &:hover {
+                background-color: $background-active-hover;
+                border-right: 1px solid $decoration-normal;
+        
+                .folders > li {
+                    background-color: $background-normal;
+
+                    &:hover {
+                        background-color: $background-active-hover;
+                    }
+        
+                    &.active {
+                        background-color: $background-active;
+                    }
+                }
+            }
+
+            &.active {
+                background-color: $background-active;
+                border-right: 1px solid $decoration-normal;
+        
+                .folders > li {
+                    background-color: $background-normal;
+                }
+            }
+        }
+    }
+}
+
 #mail-messages {
     border-right: 1px solid $decoration-normal;
     background-color: $background-dark;
@@ -49,11 +101,6 @@
     &.unseen {
         box-shadow: inset 3px 0 $background-active-alternate;
     }
-}
-
-.date {
-    opacity: 0.5;
-    color: $foreground-inactive;
 }
 
 .mail-message-summary-from,

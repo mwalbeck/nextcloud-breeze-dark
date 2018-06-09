@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 13.0.2
+* Version: 13.0.3
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -1165,7 +1165,8 @@ ul.multiselectoptions {
 
 .ui-widget.ui-datepicker {
   filter: none;
-  border: 1px solid #706f6e; }
+  border: 1px solid #706f6e;
+  background-color: #31363b; }
   .ui-widget.ui-datepicker::after {
     border-bottom-color: #706f6e; }
   .ui-widget.ui-datepicker .ui-widget-header {
@@ -1201,6 +1202,8 @@ ul.multiselectoptions {
   filter: none;
   background-color: #31363b;
   border: 1px solid #706f6e; }
+  .ui-widget.ui-timepicker .ui-widget-content {
+    background-color: #31363b; }
   .ui-widget.ui-timepicker::after {
     border-bottom-color: #706f6e; }
   .ui-widget.ui-timepicker .ui-widget-header {
@@ -1211,10 +1214,11 @@ ul.multiselectoptions {
   .ui-widget.ui-timepicker .ui-timepicker-table th {
     color: #bdc3c7;
     opacity: 0.7%; }
+  .ui-widget.ui-timepicker .ui-timepicker-table td > * {
+    color: #eff0f1; }
   .ui-widget.ui-timepicker .ui-timepicker-table td.ui-timepicker-hours {
     border-right-color: #706f6e; }
-  .ui-widget.ui-timepicker .ui-timepicker-table td.ui-timepicker-hour-cell a.ui-state-active,
-  .ui-widget.ui-timepicker .ui-timepicker-table td.ui-timepicker-minute-cell a.ui-state-active,
+  .ui-widget.ui-timepicker .ui-timepicker-table td.ui-timepicker-hour-cell a.ui-state-active, .ui-widget.ui-timepicker .ui-timepicker-table td.ui-timepicker-minute-cell a.ui-state-active,
   .ui-widget.ui-timepicker .ui-timepicker-table td .ui-state-hover,
   .ui-widget.ui-timepicker .ui-timepicker-table td .ui-state-focus {
     background-color: #3daee9;
@@ -1981,6 +1985,30 @@ ul.tagit {
   background-color: #31363b;
   border: 1px solid #706f6e; }
 
+.app-mail .date {
+  opacity: 0.5;
+  color: #bdc3c7; }
+.app-mail #app-navigation li > a:hover {
+  background-color: unset; }
+  .app-mail #app-navigation li > a:hover + div.app-navigation-entry-utils {
+    background-color: unset; }
+.app-mail #app-navigation .navigation-account > .folders > li > .folders > .folders > li > a {
+  padding-right: 14px; }
+.app-mail #app-navigation .navigation-account > .folders > li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li {
+    background-color: #31363b; }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
+    .app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li.active {
+      background-color: #3daee9; }
+.app-mail #app-navigation .navigation-account > .folders > li.active {
+  background-color: #3daee9;
+  border-right: 1px solid #706f6e; }
+  .app-mail #app-navigation .navigation-account > .folders > li.active .folders > li {
+    background-color: #31363b; }
+
 #mail-messages {
   border-right: 1px solid #706f6e;
   background-color: #232629; }
@@ -2014,10 +2042,6 @@ ul.tagit {
     background-color: #3daee9; }
   .mail-message-summary.unseen {
     box-shadow: inset 3px 0 #1d99f3; }
-
-.date {
-  opacity: 0.5;
-  color: #bdc3c7; }
 
 .mail-message-summary-from,
 .active .date {
@@ -2409,13 +2433,17 @@ tags-input .autocomplete {
     background: inherit;
     text-shadow: none;
     border-bottom: 1px dashed #706f6e; }
+    .app-tasks #app-content #app-sidebar div.content-wrapper .body .section input[type="range"] {
+      background-color: #31363b; }
+    .app-tasks #app-content #app-sidebar div.content-wrapper .body .section input[type="text"] {
+      background-color: #232629; }
   .app-tasks #app-content #app-sidebar div.content-wrapper .body .note {
     background-color: #232629;
     border-width: 1px 1px 1px 1px;
     border-style: solid;
     border-color: #706f6e; }
-  .app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
-    color: #eff0f1; }
+    .app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
+      color: #eff0f1; }
   .app-tasks #app-content .categories-list li {
     background-color: #31363b;
     border: 1px solid #706f6e;
@@ -2438,7 +2466,7 @@ tags-input .autocomplete {
   background: #232629;
   border: 1px solid #706f6e; }
 
-.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+#app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
   color: #eff0f1;
   background-color: #31363b;
   border-color: #706f6e;
@@ -2514,6 +2542,28 @@ div.percentdone {
   color: #da4453;
   font-weight: bold;
   text-shadow: none; }
+
+.app-tasks .icon {
+  opacity: 0.5; }
+.app-tasks .icon-task-star a::before,
+.app-tasks .icon-alphabetically,
+.app-tasks .icon-sort-down,
+.app-tasks .icon-all a::before,
+.app-tasks .icon-current a::before,
+.app-tasks .icon-add a::before {
+  filter: invert(95%); }
+.app-tasks #app-settings .icon-all,
+.app-tasks #app-settings .icon-current,
+.app-tasks #app-settings .icon-task-star,
+.app-tasks #app-settings .icon-calendar,
+.app-tasks #app-settings .icon-subtasks-visible, .app-tasks .app-navigation-entry-menu .icon-all,
+.app-tasks .app-navigation-entry-menu .icon-current,
+.app-tasks .app-navigation-entry-menu .icon-task-star,
+.app-tasks .app-navigation-entry-menu .icon-calendar,
+.app-tasks .app-navigation-entry-menu .icon-subtasks-visible {
+  filter: invert(95%); }
+.app-tasks #app-content .icon-subtasks-visible {
+  filter: invert(95%); }
 
 /* Radio -------------------------------------------------------------------- */
 .app-radio #app-navigation #app-settings #volumeslider .ui-widget-header {

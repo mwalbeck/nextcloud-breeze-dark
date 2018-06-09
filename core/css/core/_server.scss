@@ -701,6 +701,7 @@ ul.multiselectoptions {
 .ui-widget.ui-datepicker {
 	filter: none;
 	border: 1px solid $decoration-normal;
+	background-color: $background-normal;
 
 	&::after {
 		border-bottom-color: $decoration-normal;
@@ -764,6 +765,10 @@ ul.multiselectoptions {
 	background-color: $background-normal;
 	border: 1px solid $decoration-normal;
 
+	.ui-widget-content {
+		background-color: $background-normal;
+	}
+
 	&::after {
 		border-bottom-color: $decoration-normal;
 	}
@@ -783,17 +788,24 @@ ul.multiselectoptions {
 			color: $foreground-inactive;
 			opacity: 0.7%;
 		}
-	
-		td.ui-timepicker-hours {
-			border-right-color: $decoration-normal;
-		}
 
-		td.ui-timepicker-hour-cell a.ui-state-active, 
-		td.ui-timepicker-minute-cell a.ui-state-active, 
-		td .ui-state-hover, 
-		td .ui-state-focus {
-			background-color: $background-active;
-			color: $foreground-active;
+		td {
+
+			> * {
+				color: $foreground-normal;
+			}
+
+			&.ui-timepicker-hours {
+				border-right-color: $decoration-normal;
+			}
+
+			&.ui-timepicker-hour-cell a.ui-state-active,
+			&.ui-timepicker-minute-cell a.ui-state-active,
+			.ui-state-hover, 
+			.ui-state-focus {
+				background-color: $background-active;
+				color: $foreground-active;
+			}
 		}
 	}
 }
