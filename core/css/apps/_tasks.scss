@@ -48,6 +48,14 @@
             background: inherit;
             text-shadow: none;
             border-bottom: 1px dashed $decoration-normal;
+
+            input[type="range"] {
+                background-color: $background-normal;
+            }
+
+            input[type="text"] {
+                background-color: $background-dark;
+            }
         }
 
         #app-sidebar div.content-wrapper .body .note {
@@ -55,10 +63,10 @@
             border-width: 1px 1px 1px 1px;
             border-style: solid;
             border-color: $decoration-normal;
-        }
 
-        #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
-            color: $foreground-normal;
+            .expandingArea textarea {
+                color: $foreground-normal;
+            }
         }
 
         .categories-list li {
@@ -91,7 +99,7 @@
 	border: 1px solid $decoration-normal;
 }
 
-.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+#app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
 	color: $foreground-normal;
 	background-color: $background-normal;
 	border-color: $decoration-normal;
@@ -113,7 +121,7 @@
 
 #content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
 	color: $foreground-normal;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 #content li.task-item .task-body:hover,  
@@ -189,4 +197,39 @@ div.percentdone {
 	color: $foreground-negative;
     font-weight: bold;
     text-shadow: none;
+}
+
+
+.app-tasks {
+
+    .icon {
+        opacity: 0.5;
+    }
+
+    .icon-task-star a::before,
+    .icon-alphabetically,
+    .icon-sort-down,
+    .icon-all a::before,
+    .icon-current a::before,
+    .icon-add a::before {
+        filter: invert(95%);
+    }
+
+    #app-settings, .app-navigation-entry-menu {
+        
+        .icon-all,
+        .icon-current,
+        .icon-task-star,
+        .icon-calendar,
+        .icon-subtasks-visible {
+            filter: invert(95%);
+        }
+    }
+
+    #app-content {
+
+        .icon-subtasks-visible {
+            filter: invert(95%);
+        }
+    }
 }
