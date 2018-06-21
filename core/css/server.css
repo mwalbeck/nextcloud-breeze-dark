@@ -2741,4 +2741,25 @@ button#deleteaccount {
 #city-right {
   border-top: 1px solid #706f6e; }
 
+.app-quicknotes #app-navigation #new-note-fixed {
+  background-color: #31363b;
+  padding: 9px;
+  margin: 1px; }
+.app-quicknotes #app-navigation #colors-folder .icon-checkmark {
+  background-image: url("/core/css/../img/actions/checkmark.svg?v=1"); }
+.app-quicknotes #app-navigation #colors-folder .circle-toolbar.any-color {
+  background-color: #4d4d4d; }
+.app-quicknotes #app-navigation #notes-folder .note a {
+  color: #eff0f1;
+  opacity: 0.7; }
+.app-quicknotes .quicknote {
+  color: #000000;
+  box-shadow: none; }
+  .app-quicknotes .quicknote .icon-checkmark {
+    background-image: url("/core/css/../img/actions/checkmark.svg?v=1"); }
+  .app-quicknotes .quicknote .icon-delete {
+    background-image: url("/core/css/../img/actions/delete.svg?v=1"); }
+    .app-quicknotes .quicknote .icon-delete:hover, .app-quicknotes .quicknote .icon-delete:focus {
+      background-image: url("/core/css/../img/actions/delete-hover.svg?v=1"); }
+
 /*# sourceMappingURL=server.css.map */
