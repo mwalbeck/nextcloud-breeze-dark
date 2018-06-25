@@ -498,10 +498,10 @@ a.impersonate img.svg {
   width: 16px;
   height: 16px; }
 
-#ldapSettings .ldapWizardControls a img {
+.app-music img.play.svg, .app-music img.control {
   filter: invert(95%); }
 
-.app-music img.play.svg, .app-music img.control {
+#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   filter: invert(95%); }
 
 .app-settings #app-navigation img[src$="/img/app-dark.svg"] {
@@ -749,6 +749,35 @@ input[type="button"] {
   background-color: #31363b;
   font-weight: bold;
   color: #eff0f1; }
+
+.ui-tabs .ui-tabs-nav .ui-state-default {
+  background-color: #232629;
+  border-bottom-color: #706f6e; }
+  .ui-tabs .ui-tabs-nav .ui-state-default a {
+    color: #eff0f1; }
+
+.ui-tabs .ui-tabs-nav .ui-state-hover {
+  background-color: #232629;
+  border-bottom-color: #3daee9; }
+  .ui-tabs .ui-tabs-nav .ui-state-hover a:hover {
+    color: #eff0f1; }
+
+.ui-state-default.ui-state-disabled {
+  background-color: #4d4d4d;
+  opacity: 0.5; }
+  .ui-state-default.ui-state-disabled a {
+    color: #eff0f1; }
+
+ul.ui-tabs-nav .ui-tabs-active,
+ul.ui-tabs-nav .ui-tabs-active > a {
+  background-color: #232629;
+  color: #fcfcfc;
+  border-bottom-color: #3daee9; }
+
+.ui-accordion .ui-accordion-header {
+  background-color: #232629; }
+.ui-accordion .ui-accordion-content {
+  background-color: #31363b; }
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
@@ -1789,8 +1818,15 @@ td.date, td.date > span {
   background-color: #31363b; }
   #ldapSettings > fieldset {
     background-color: #31363b; }
-  #ldapSettings ul.ui-tabs-nav .ui-tabs-active, #ldapSettings ul.ui-tabs-nav .ui-tabs-active > a {
-    background-color: #232629; }
+  #ldapSettings ul.ui-tabs-nav .ui-tabs-active,
+  #ldapSettings ul.ui-tabs-nav .ui-tabs-active > a {
+    background-color: #232629;
+    color: #fcfcfc;
+    border-bottom-color: #3daee9; }
+  #ldapSettings div.ui-accordion-content {
+    background: #31363b; }
+  #ldapSettings .ldap_grey {
+    color: #eff0f1; }
 
 /* Log reader --------------------------------------------------------------- */
 #logreader-root table tbody tr td {

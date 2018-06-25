@@ -5,9 +5,18 @@
         background-color: $background-normal;
     }
 
-    ul.ui-tabs-nav .ui-tabs-active {
-        &, & > a {
-            background-color: $background-dark;
-        }
+    ul.ui-tabs-nav .ui-tabs-active,
+    ul.ui-tabs-nav .ui-tabs-active > a {
+        background-color: $background-dark;
+        color: $foreground-active;
+        border-bottom-color: $decoration-active;
+    }
+
+    div.ui-accordion-content {
+        background: $background-normal;
+    }
+
+    .ldap_grey {
+        color: $foreground-normal;
     }
 }
