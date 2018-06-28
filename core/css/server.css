@@ -206,7 +206,8 @@ select {
   background-image: url("../img/actions/confirm.svg?v=2"); }
 
 /* Search ------------------------------------------------------------------- */
-.icon-search {
+.icon-search,
+.icon-category-search {
   background-image: url("../img/actions/search.svg?v=1"); }
 
 /* Recent ------------------------------------------------------------------- */
