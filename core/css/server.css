@@ -762,6 +762,12 @@ input[type="button"] {
   .ui-tabs .ui-tabs-nav .ui-state-hover a:hover {
     color: #eff0f1; }
 
+.ui-tabs .ui-tabs-nav .ui-state-active {
+  background-color: #232629;
+  border-bottom-color: #3daee9; }
+  .ui-tabs .ui-tabs-nav .ui-state-active a, .ui-tabs .ui-tabs-nav .ui-state-active a:link {
+    color: #fcfcfc; }
+
 .ui-state-default.ui-state-disabled {
   background-color: #4d4d4d;
   opacity: 0.5; }
@@ -2383,17 +2389,8 @@ tags-input .autocomplete {
 .sequence code {
   border: none; }
 
-#passman-settings #passman-tabs .ui-widget-header {
-  border: none;
-  background: #31363b;
-  color: #eff0f1; }
-#passman-settings #passman-tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-  margin-bottom: inherit;
-  padding-bottom: inherit; }
-
-.ui-tabs .ui-tabs-nav li {
-  background: #232629;
-  border-color: #706f6e; }
+#passman-settings #mover table tr:hover {
+  background-color: unset; }
 
 .app-ocsms #app-content-header {
   margin-top: 1px; }

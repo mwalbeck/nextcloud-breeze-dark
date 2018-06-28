@@ -256,20 +256,12 @@ tags-input {
 	border: none;
 }
 
-#passman-settings #passman-tabs {
-    .ui-widget-header {
-        border: none;
-        background: #31363b;
-        color: #eff0f1;
-    }
+#passman-settings {
 
-    .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-        margin-bottom: inherit;
-        padding-bottom: inherit;
-    }
-}
+    #mover {
 
-.ui-tabs .ui-tabs-nav li {
-    background: $background-dark;
-    border-color: $decoration-normal;
+        table tr:hover {
+            background-color: unset;
+        }
+    }
 }

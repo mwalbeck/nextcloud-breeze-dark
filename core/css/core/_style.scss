@@ -235,6 +235,15 @@ input[type="button"] {
     }
 }
 
+.ui-tabs .ui-tabs-nav .ui-state-active {
+    background-color: $background-dark;
+    border-bottom-color: $decoration-active;
+    
+    a, a:link {
+        color: $foreground-active;
+    }
+}
+
 .ui-state-default.ui-state-disabled {
     background-color: $background-alternate;
     opacity: 0.5;
