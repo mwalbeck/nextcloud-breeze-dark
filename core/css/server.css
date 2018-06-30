@@ -505,6 +505,9 @@ a.impersonate img.svg {
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   filter: invert(95%); }
 
+.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
+  filter: invert(95%); }
+
 .app-settings #app-navigation img[src$="/img/app-dark.svg"] {
   filter: invert(95%); }
 .app-settings #app-navigation img[src$="/settings/img/password.svg"],
@@ -867,7 +870,8 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 .popovermenu {
   background-color: #31363b;
   color: #eff0f1;
-  border: 1px solid #706f6e; }
+  border: 1px solid #706f6e;
+  filter: none; }
   .popovermenu::after {
     border-bottom-color: #706f6e; }
   .popovermenu li > a {
@@ -1424,6 +1428,10 @@ ul.multiselectoptions {
   color: #eff0f1; }
 
 /* App Settings ------------------------------------------------------------- */
+#app-navigation #app-settings {
+  background-color: #31363b;
+  border-color: #706f6e; }
+
 #app-settings-header {
   border-color: #706f6e;
   background-color: #31363b; }
@@ -2228,7 +2236,8 @@ textarea.message-body {
 
 .CodeMirror {
   background-color: #31363b;
-  color: #eff0f1; }
+  color: #eff0f1;
+  border-color: #706f6e; }
 
 .CodeMirror-cursor {
   border-left-color: rgba(189, 195, 199, 0.4); }
@@ -2795,5 +2804,106 @@ button#deleteaccount {
     background-image: url("/core/css/../img/actions/delete.svg?v=1"); }
     .app-quicknotes .quicknote .icon-delete:hover, .app-quicknotes .quicknote .icon-delete:focus {
       background-image: url("/core/css/../img/actions/delete-hover.svg?v=1"); }
+
+.app-passwords #app-navigation li {
+  color: #eff0f1; }
+  .app-passwords #app-navigation li.active {
+    color: #fcfcfc; }
+.app-passwords #app-navigation .nav-icon-recent,
+.app-passwords #app-navigation .nav-icon-security {
+  background-image: none; }
+.app-passwords #app-content #controls .crumbmenu .menu,
+.app-passwords #app-content #controls .passwords-more-menu .menu {
+  border: none;
+  border-color: #706f6e;
+  transition: border .25s ease-in-out, max-height .25s ease-in-out; }
+.app-passwords #app-content #controls .crumbmenu.active .menu,
+.app-passwords #app-content #controls .passwords-more-menu.active .menu {
+  border: 1px solid #706f6e; }
+.app-passwords #app-content .item-list .row {
+  border-bottom-color: #706f6e; }
+  .app-passwords #app-content .item-list .row:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-passwords #app-content .item-list .row.header, .app-passwords #app-content .item-list .row.header .date {
+    color: #eff0f1; }
+  .app-passwords #app-content .item-list .row .date {
+    color: #bdc3c7; }
+  .app-passwords #app-content .item-list .row .genericIcon {
+    color: #eff0f1; }
+  .app-passwords #app-content .item-list .row.footer:hover {
+    background-color: #31363b; }
+.app-passwords #app-content .item-list .row .more:hover {
+  color: #eff0f1; }
+.app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li {
+  color: #eff0f1;
+  opacity: 0.7; }
+  .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li:hover {
+    background-color: rgba(61, 174, 233, 0.25);
+    color: #fcfcfc;
+    opacity: 1; }
+  .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li a {
+    color: #fcfcfc; }
+.app-passwords #app-content .backup-dialog h1 {
+  border-color: #706f6e;
+  background-color: #232629; }
+  .app-passwords #app-content .backup-dialog h1::before {
+    color: #eff0f1;
+    border-color: #706f6e; }
+.app-passwords #app-content .help .handbook-page blockquote {
+  border-left-color: #3daee9;
+  background-color: #4d4d4d; }
+.app-passwords #app-content .help .handbook-page .md-image-container .md-image-link {
+  border-color: #706f6e; }
+.app-passwords #app-content .help .handbook-page .md-image-container .md-image-caption {
+  border-top-color: #706f6e;
+  color: #bdc3c7; }
+.app-passwords #app-content .app-content-right {
+  background-color: #31363b;
+  border-left-color: #706f6e; }
+  .app-passwords #app-content .app-content-right .item-details .infos {
+    color: #bdc3c7; }
+    .app-passwords #app-content .app-content-right .item-details .infos .tags-container {
+      color: #000; }
+  .app-passwords #app-content .app-content-right .item-details .tab-container .tab-titles .tab-title {
+    color: #eff0f1; }
+    .app-passwords #app-content .app-content-right .item-details .tab-container .tab-titles .tab-title.active {
+      color: #fcfcfc; }
+  .app-passwords #app-content .app-content-right .item-details .details div:not(.header) {
+    color: #eff0f1; }
+    .app-passwords #app-content .app-content-right .item-details .details div:not(.header) span {
+      color: #eff0f1; }
+.app-passwords #app-popup #passwords-create-new .window {
+  background-color: #31363b; }
+  .app-passwords #app-popup #passwords-create-new .window .title {
+    color: #fcfcfc !important;
+    background-color: #1d99f3 !important; }
+  .app-passwords #app-popup #passwords-create-new .window form.content .section-title, .app-passwords #app-popup #passwords-create-new .window form.content .open .foldout-title {
+    border-color: #706f6e !important; }
+  .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a {
+    color: #eff0f1 !important; }
+    .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a:hover {
+      background-color: #31363b;
+      border-color: #3daee9; }
+    .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a.active {
+      background-color: #3daee9;
+      border-color: #3daee9; }
+  .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+    background-color: #4d4d4d;
+    border: none; }
+  .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror .editor-preview {
+    background-color: #31363b; }
+  .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror span.CodeMirror-selectedtext {
+    background-color: #3daee9;
+    padding: 1px 0; }
+
+.oc-dialog-buttonrow.twobuttons button.primary {
+  border-color: #706f6e; }
+  .oc-dialog-buttonrow.twobuttons button.primary:hover, .oc-dialog-buttonrow.twobuttons button.primary:active, .oc-dialog-buttonrow.twobuttons button.primary:focus {
+    border-color: #3daee9; }
+
+.app-passwords #app-content .app-content-left.settings section.danger input[type="button"]:hover {
+  background-color: #da4453 !important;
+  border-color: #da4453 !important;
+  color: #fcfcfc !important; }
 
 /*# sourceMappingURL=server.css.map */

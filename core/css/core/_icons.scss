@@ -707,6 +707,11 @@ a.impersonate img.svg {
 	filter: invert(95%);
 }
 
+// Home icon in controls in passwords app
+.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
+	filter: invert(95%);
+}
+
 // Apps with generic icons names
 
 .app-settings {

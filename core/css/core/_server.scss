@@ -137,6 +137,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	background-color: $background-normal;
 	color: $foreground-normal;
 	border: 1px solid $decoration-normal;
+	filter: none;
 
 	&::after {
 		border-bottom-color: $decoration-normal;
