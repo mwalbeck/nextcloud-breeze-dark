@@ -894,6 +894,11 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   .bubble::after, .app-navigation-entry-menu::after {
     border-bottom-color: #706f6e; }
 
+.bubble li > a {
+  color: #eff0f1; }
+  .bubble li > a:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+
 #expanddiv {
   background-color: #31363b;
   box-shadow: none;
@@ -2919,5 +2924,10 @@ button#deleteaccount {
   background-color: #da4453 !important;
   border-color: #da4453 !important;
   color: #fcfcfc !important; }
+
+#rightClickMenu li.action-0:hover {
+  background-color: rgba(61, 174, 233, 0.25); }
+#rightClickMenu li.action-0 > a:hover {
+  background-color: unset; }
 
 /*# sourceMappingURL=server.css.map */

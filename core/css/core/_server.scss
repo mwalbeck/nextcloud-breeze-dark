@@ -175,6 +175,15 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
+.bubble	li > a {
+	color: $foreground-normal;
+
+	&:hover {
+		background-color: $background-active-hover;
+	}
+}
+
+
 #expanddiv {
 	background-color: $background-normal;
 	box-shadow: none;

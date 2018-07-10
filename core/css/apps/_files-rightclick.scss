@@ -1,0 +1,13 @@
+#rightClickMenu {
+    
+    li.action-0 {
+        
+        &:hover {
+            background-color: $background-active-hover;
+        }
+
+        > a:hover {
+            background-color: unset;
+        }
+    }
+}
