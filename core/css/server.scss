@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 13.0.3
+* Version: 13.0.4
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -47,3 +47,6 @@
 @import 'apps/deck';
 @import 'apps/fulltextsearch';
 @import 'apps/weather';
+@import 'apps/quicknotes';
+@import 'apps/passwords';
+@import 'apps/files-rightclick';

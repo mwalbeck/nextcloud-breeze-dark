@@ -194,6 +194,11 @@
 
 /* App Settings ------------------------------------------------------------- */
 
+#app-navigation #app-settings {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+}
+
 #app-settings-header {
 	border-color: $decoration-normal;
 	background-color: $background-normal;

@@ -32,7 +32,6 @@ If you like the theme and would like to donate you can use the following cryptoc
 
 BTC: 1Pp3UG9k6ZkwrVXrhr9kwwvjwDk5Vchu3f  
 BCH: 1C7dQLqMU6Kucxx9GcFDMnTTTsBpeNT9vo  
-LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx  
-DOGE: DNsXstU98g61QtF4CKwL6NZE8UAf4eJSdC  
+LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx
 
 Thank you.

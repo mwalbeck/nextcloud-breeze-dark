@@ -260,7 +260,8 @@ select {
 
 /* Search ------------------------------------------------------------------- */
 
-.icon-search {
+.icon-search,
+.icon-category-search {
 	background-image: url('../img/actions/search.svg?v=1');
 }
 
@@ -692,11 +693,6 @@ a.impersonate img.svg {
 	height: 16px;
 }
 
-// Info icon in ldap settings
-#ldapSettings .ldapWizardControls a img {
-    filter: invert(95%);
-}
-
 // Play button in Music App under All Tracks menu
 
 .app-music {
@@ -704,6 +700,16 @@ a.impersonate img.svg {
 	img.play.svg, img.control {
 		filter: invert(95%);
 	}
+}
+
+// Arrow in advanved ldap settings
+#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	filter: invert(95%);
+}
+
+// Home icon in controls in passwords app
+.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
+	filter: invert(95%);
 }
 
 // Apps with generic icons names
