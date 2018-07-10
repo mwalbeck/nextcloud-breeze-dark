@@ -1,7 +1,27 @@
 .app-passman {
 
-    #app-navigation .taginput:hover {
-        background: none;
+    #app-navigation {
+
+        .taginput:hover {
+            background: none;
+        }
+
+        .nav-trashbin a {
+            background-color: $background-normal !important;
+
+            &:hover {
+                background-color: $background-active-hover !important;
+            }
+
+            &.active {
+                background-color: $background-active !important;
+                border-left: none;
+            }
+        }
+
+        .nav-icon-systemtagsfilter {
+            background-image: none;
+        }
     }
 
     .link {
@@ -119,6 +139,15 @@
             margin-top: 3px;
             padding: 5px;
             border: 1px solid $decoration-normal;
+
+            &:hover {
+                border-color: $decoration-active;
+            }
+        }
+
+        .icon-label .icon-picker .cell {
+            border-color: $decoration-normal;
+            background-color: $background-normal;
 
             &:hover {
                 border-color: $decoration-active;

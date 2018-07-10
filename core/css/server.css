@@ -2247,6 +2247,15 @@ textarea.message-body {
 
 .app-passman #app-navigation .taginput:hover {
   background: none; }
+.app-passman #app-navigation .nav-trashbin a {
+  background-color: #31363b !important; }
+  .app-passman #app-navigation .nav-trashbin a:hover {
+    background-color: rgba(61, 174, 233, 0.25) !important; }
+  .app-passman #app-navigation .nav-trashbin a.active {
+    background-color: #3daee9 !important;
+    border-left: none; }
+.app-passman #app-navigation .nav-icon-systemtagsfilter {
+  background-image: none; }
 .app-passman .link {
   color: #2980b9 !important; }
 .app-passman #app-content #app-content-wrapper .credential-table tr td {
@@ -2314,6 +2323,11 @@ textarea.message-body {
   padding: 5px;
   border: 1px solid #706f6e; }
   .app-passman #app-content .inputfile + label:hover {
+    border-color: #3daee9; }
+.app-passman #app-content .icon-label .icon-picker .cell {
+  border-color: #706f6e;
+  background-color: #31363b; }
+  .app-passman #app-content .icon-label .icon-picker .cell:hover {
     border-color: #3daee9; }
 
 .vault_wrapper {
