@@ -210,6 +210,10 @@ select {
 .icon-category-search {
   background-image: url("../img/actions/search.svg?v=1"); }
 
+.select2-drop .select2-search input {
+  background: url("../img/actions/search.svg") no-repeat right center !important;
+  background-origin: content-box !important; }
+
 /* Recent ------------------------------------------------------------------- */
 .nav-icon-recent {
   background-image: url("../img/actions/recent.svg?v=1"); }
@@ -357,7 +361,8 @@ select {
 .icon-category-customization {
   background-image: url("../img/categories/customization.svg?v=1"); }
 
-.icon-category-files {
+.icon-category-files,
+.icon-files-dark {
   background-image: url("../img/categories/files.svg?v=1"); }
 
 .icon-category-games {
@@ -2700,61 +2705,69 @@ button#deleteaccount {
 .app-flowupload .table-hover tbody tr:hover > td {
   background-color: rgba(61, 174, 233, 0.25); }
 
-#app-navigation .editing .app-navigation-entry-edit {
-  background: #31363b;
-  border-right: 1px solid #706f6e; }
-
-#boardlist td {
-  border-bottom-color: #706f6e; }
-#boardlist thead td {
-  opacity: 1; }
-#boardlist tbody .board-create td {
-  border-bottom: none; }
-
-.board-header-controls #stack-add {
-  background-color: #232629;
-  border: 1px solid #706f6e; }
-  .board-header-controls #stack-add:hover {
-    border-color: #3daee9; }
-
-#board-detail-labels ul li .label-edit input {
-  color: #eff0f1 !important; }
-#board-detail-labels ul li .label-edit.ng-scope input {
-  color: #000000 !important; }
-
-#sidebar-header h3 {
+.app-deck #app-navigation .app-navigation-entry-edit {
   background-color: #31363b; }
 
-.labels .label-edit input {
+.app-deck #app-content #controls #stack-add {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+  .app-deck #app-content #controls #stack-add:hover {
+    border-color: #3daee9; }
+.app-deck #app-content #controls .board-header-controls > button {
+  opacity: 1 !important; }
+.app-deck #app-content #boardlist thead td {
+  opacity: 1; }
+.app-deck #app-content #boardlist td {
   border-bottom-color: #706f6e; }
-
-.stack {
-  border-right-color: #706f6e; }
-
-#board .card {
+.app-deck #app-content #boardlist .board-create td {
+  border-bottom: none; }
+.app-deck #app-content #board .card {
   background-color: #31363b;
   border: 1px solid #706f6e;
   box-shadow: none; }
-  #board .card:hover {
+  .app-deck #app-content #board .card:hover, .app-deck #app-content #board .card.current {
     border-color: #3daee9; }
-  #board .card .card-controls {
+  .app-deck #app-content #board .card.create {
+    border-color: #706f6e !important; }
+    .app-deck #app-content #board .card.create:hover {
+      border-color: #3daee9 !important; }
+  .app-deck #app-content #board .card .card-controls {
     background-color: #232629; }
-    #board .card .card-controls .due {
+    .app-deck #app-content #board .card .card-controls .due {
       opacity: 0.7; }
-#board.card-selected .card.current {
-  opacity: 1;
-  box-shadow: none;
-  border-color: #3daee9; }
-
-#card-meta #card-dates {
-  opacity: 0.7; }
-#card-meta .section-header {
-  border-bottom-color: #706f6e; }
-#card-meta .card-description.section-content .container {
+      .app-deck #app-content #board .card .card-controls .due span {
+        color: #fcfcfc; }
+      .app-deck #app-content #board .card .card-controls .due.overdue {
+        background-color: #da4453;
+        opacity: 1; }
+      .app-deck #app-content #board .card .card-controls .due.now {
+        background-color: #f67400;
+        opacity: 1; }
+      .app-deck #app-content #board .card .card-controls .due.next {
+        background-color: unset;
+        opacity: 1; }
+    .app-deck #app-content #board .card .card-controls .card-files {
+      opacity: 0.7; }
+.app-deck #app-content #app-sidebar #sidebar-header h3 {
   background-color: #31363b; }
-#card-meta .save-indicator.unsaved {
+.app-deck #app-content #app-sidebar #board-detail-labels input {
+  border: none; }
+.app-deck #app-content #app-sidebar #board-detail-labels li[ng-if$="status.createLabel"] input {
+  color: #eff0f1 !important; }
+.app-deck #app-content #app-sidebar #card-meta #card-dates {
+  opacity: 0.7; }
+.app-deck #app-content #app-sidebar #card-meta .section-header {
+  border-bottom-color: #706f6e; }
+.app-deck #app-content #app-sidebar #card-meta .card-description.section-content .container {
+  background-color: #31363b; }
+.app-deck #app-content #app-sidebar #card-meta .save-indicator.unsaved {
   background-color: #4d4d4d;
   color: #eff0f1; }
+.app-deck #app-content #app-sidebar #card-meta .attachment-list.selector {
+  background-color: #31363b;
+  box-shadow: none; }
+.app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filesize, .app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filedate {
+  color: #bdc3c7; }
 
 .app-settings #app-content #fns .div-table .div-table-row .div-table-col select, .app-settings #app-content #fns .div-table .div-table-row .div-table-col input, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col select, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col input, .app-settings #app-content #files .div-table .div-table-row .div-table-col select, .app-settings #app-content #files .div-table .div-table-row .div-table-col input {
   background-color: #232629 !important; }

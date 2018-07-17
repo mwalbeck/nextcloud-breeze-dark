@@ -265,6 +265,11 @@ select {
 	background-image: url('../img/actions/search.svg?v=1');
 }
 
+.select2-drop .select2-search input {
+	background: url('../img/actions/search.svg') no-repeat right center !important;
+	background-origin: content-box !important;
+}
+
 /* Recent ------------------------------------------------------------------- */
 
 .nav-icon-recent {
@@ -477,7 +482,8 @@ select {
 }
 
 // Files
-.icon-category-files {
+.icon-category-files,
+.icon-files-dark {
 	background-image: url('../img/categories/files.svg?v=1');
 }
 
