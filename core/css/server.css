@@ -133,7 +133,8 @@
 .settings-button,
 .icon-settings,
 .icon-settings-dark,
-.icon-category-tools {
+.icon-category-tools,
+.music-nav-settings a {
   background-image: url("../img/actions/settings.svg?v=1"); }
 
 /* Add ---------------------------------------------------------------------- */
@@ -292,12 +293,13 @@ select {
   background-image: url("../img/actions/play.svg"); }
 
 /* Play Big ----------------------------------------------------------------- */
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover,
+.app-audioplayer .play-pause,
+.app-audioplayer .play-pause:hover {
+  background-image: url("../img/actions/play-big.svg"); }
+
 .current.playing .play-pause,
-:hover > .play-pause,
-#app-view .current:not(.playing):hover > .play-pause,
+div:hover > .play-pause,
+#app-view .current:not(.playing) div:hover .play-pause,
 #app-navigation .current:not(.playing) :hover .play-pause {
   background-image: url("../img/actions/play-big.svg"); }
 
@@ -306,9 +308,8 @@ select {
   background-image: url("../img/actions/user-plus.svg") !important; }
 
 /* Pause Big ---------------------------------------------------------------- */
-.playing .play-pause,
 .current:not(.playing) .play-pause,
-#app-view .current.playing:hover > .play-pause,
+#app-view .current.playing div:hover .play-pause,
 #app-navigation .current.playing :hover .play-pause {
   background-image: url("../img/actions/pause-big.svg"); }
 
@@ -478,6 +479,16 @@ div.icon-fulltextsearch-white {
 .sm2-inline-button.shuffle {
   filter: invert(95%); }
 
+#music-controls img.control,
+.app-music img.control {
+  filter: invert(95%); }
+
+.app-music #app-sidebar #follow-playback {
+  filter: invert(95%); }
+
+.app-music img.play.svg {
+  filter: invert(95%); }
+
 .icon-white {
   filter: unset; }
   .icon-white.icon-shadow {
@@ -503,9 +514,6 @@ a.impersonate img.svg {
 #settings #expanddiv ul li a img {
   width: 16px;
   height: 16px; }
-
-.app-music img.play.svg, .app-music img.control {
-  filter: invert(95%); }
 
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   filter: invert(95%); }
@@ -2647,39 +2655,42 @@ div.percentdone {
 
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e; }
-.app-music #scanning, .app-music #toScan, .app-music #emptycontent {
+
+.app-music #app-content #emptycontent, .app-music #app-content .emptycontent {
   background-color: #31363b; }
-  .app-music #scanning:hover *, .app-music #toScan:hover *, .app-music #emptycontent:hover * {
-    color: #eff0f1; }
-  .app-music #scanning .icon-audio, .app-music #toScan .icon-audio, .app-music #emptycontent .icon-audio {
-    opacity: 1; }
-.app-music .alphabet-navigation a {
+.app-music #app-content #toScan:hover * {
+  color: #fcfcfc; }
+.app-music #app-content .alphabet-navigation a {
   opacity: 0.2; }
-  .app-music .alphabet-navigation a.available {
+  .app-music #app-content .alphabet-navigation a.available {
     opacity: 0.7; }
-    .app-music .alphabet-navigation a.available:hover {
+    .app-music #app-content .alphabet-navigation a.available:hover {
       opacity: 1; }
-.app-music #controls .progress-info .progress .seek-bar {
-  background-color: #232629; }
-  .app-music #controls .progress-info .progress .seek-bar .buffer-bar {
+.app-music #app-content #controls {
+  margin-top: 1px; }
+  .app-music #app-content #controls .progress, .app-music #app-content #controls .seek-bar {
+    background-color: #232629; }
+  .app-music #app-content #controls .buffer-bar {
     opacity: 1;
     background-color: rgba(61, 174, 233, 0.25); }
-  .app-music #controls .progress-info .progress .seek-bar .play-bar {
+  .app-music #app-content #controls .play-bar {
     background-color: #3daee9; }
+.app-music #app-content #app-sidebar .close, .app-music #app-content #app-sidebar #follow-playback {
+  background-color: unset; }
+.app-music #app-content #music-user .warning a {
+  color: #2980b9 !important; }
 
 #music-controls {
   background-color: #31363b; }
   #music-controls #albumart {
     border: none; }
-  #music-controls .progress-info .seek-bar {
+  #music-controls .seek-bar {
     background-color: #232629; }
-    #music-controls .progress-info .seek-bar .buffer-bar {
-      opacity: 1;
-      background-color: rgba(61, 174, 233, 0.25); }
-    #music-controls .progress-info .seek-bar .play-bar {
-      background-color: #3daee9; }
-  #music-controls img.control {
-    filter: invert(95%); }
+  #music-controls .buffer-bar {
+    opacity: 1;
+    background-color: rgba(61, 174, 233, 0.25); }
+  #music-controls .play-bar {
+    background-color: #3daee9; }
 
 button#deleteaccount {
   background-color: #da4453; }

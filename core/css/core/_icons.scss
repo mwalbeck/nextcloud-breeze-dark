@@ -155,7 +155,8 @@
 .settings-button,
 .icon-settings,
 .icon-settings-dark,
-.icon-category-tools {
+.icon-category-tools,
+.music-nav-settings a {
 	background-image: url('../img/actions/settings.svg?v=1');
 }
 
@@ -384,12 +385,15 @@ select {
 
 /* Play Big ----------------------------------------------------------------- */
 
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover,
+.app-audioplayer .play-pause,
+.app-audioplayer .play-pause:hover {
+	background-image: url('../img/actions/play-big.svg');
+}
+
+// Music app
 .current.playing .play-pause,
-:hover > .play-pause,
-#app-view .current:not(.playing):hover > .play-pause,
+div:hover > .play-pause,
+#app-view .current:not(.playing) div:hover .play-pause,
 #app-navigation .current:not(.playing) :hover .play-pause {
 	background-image: url('../img/actions/play-big.svg');
 }
@@ -402,9 +406,9 @@ select {
 
 /* Pause Big ---------------------------------------------------------------- */
 
-.playing .play-pause,
-.current:not(.playing) .play-pause, 
-#app-view .current.playing:hover > .play-pause,
+// Music app
+.current:not(.playing) .play-pause,
+#app-view .current.playing div:hover .play-pause,
 #app-navigation .current.playing :hover .play-pause {
 	background-image: url('../img/actions/pause-big.svg');
 }
@@ -657,6 +661,22 @@ div.icon-fulltextsearch-white {
 	filter: invert(95%);
 }
 
+// Music app: icons for Music player controls in files and in app
+#music-controls img.control,
+.app-music img.control {
+	filter: invert(95%);
+}
+
+// Music app: follow-playback icon
+.app-music #app-sidebar #follow-playback {
+	filter: invert(95%);
+}
+
+// Music app: Play button on album covers
+.app-music img.play.svg {
+	filter: invert(95%);
+}
+
 // Image viewer
 .icon-white {
 	filter: unset;
@@ -697,15 +717,6 @@ a.impersonate img.svg {
 #settings #expanddiv ul li a img {
 	width: 16px;
 	height: 16px;
-}
-
-// Play button in Music App under All Tracks menu
-
-.app-music {
-
-	img.play.svg, img.control {
-		filter: invert(95%);
-	}
 }
 
 // Arrow in advanved ldap settings
