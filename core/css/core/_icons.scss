@@ -673,6 +673,11 @@ div.icon-fulltextsearch-white {
 	filter: invert(95%);
 }
 
+// Music app: Play option in file action menu in Files App
+.fileActionsMenu .action-music-play img.icon {
+	filter: invert(95%);
+}
+
 // Image viewer
 .icon-white {
 	filter: unset;

@@ -490,6 +490,9 @@ div.icon-fulltextsearch-white {
 .app-music img.play.svg {
   filter: invert(95%); }
 
+.fileActionsMenu .action-music-play img.icon {
+  filter: invert(95%); }
+
 .icon-white {
   filter: unset; }
   .icon-white.icon-shadow {
