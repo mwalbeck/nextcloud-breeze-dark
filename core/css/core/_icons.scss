@@ -204,7 +204,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 /* Triangle-S --------------------------------------------------------------- */
 
 .icon-triangle-s,
-#app-navigation .collapsible::after {
+#app-navigation .collapsible::before {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
