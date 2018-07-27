@@ -103,6 +103,11 @@
 			}
 		}
 	}
+
+	.app-navigation-entry-edit,
+	.app-navigation-entry-deleted {
+		background-color: $background-normal;
+	}
 }
 
 .app-navigation-entry-menu {

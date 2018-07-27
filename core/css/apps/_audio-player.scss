@@ -1,129 +1,156 @@
-#app-navigation-toggle_alternative {
-	background-color: $background-normal;
-}
+.app-audioplayer #app-navigation {
 
-// Progress Bar
-
-.sm2-bar-ui { 
-    &, .bd a {
-	    color: $foreground-normal;
+    #albenoverview li {
+        opacity: 1;
     }
 
-    .sm2-inline-gradient {
-        background-color: $background-normal;
-    }
+    #myCategory li {
+        opacity: 1;
 
-    .bd .sm2-button-element:hover {
-	    background-color: $background-normal;
-    }
-}
-
-.sm2-progress {
-
-    .sm2-progress-bar {
-        background-color: $background-active;
-        background-image: none;
-    }
-
-    .sm2-progress-track {
-        background-color: $background-dark;
-        background-image: none;
-    }
-
-    .sm2-progress-ball {
-        background-color: rgba(242, 242, 242, 1);
-    }
-}
-
-// Sidebar
-
-#myCategory li {
-    
-    &.activeIndiPlaylist:hover {
-        font-weight: bold;
-    }
-
-    &:hover {
-        background-color: $background-active-hover;
-        font-weight: normal;
-    }
-}
-.sm2-playlist-cover {
-	background-color: $background-active-hover !important;
-}
-
-// Content
-
-.albumdescr {
-
-    span.albumname {
-	    color: $foreground-normal;
-    }
-
-    span.artist {
-        color: $foreground-inactive;
-    }
-}
-
-.songcontainer {
-	background-color: $background-dark !important;
-	color: $foreground-normal !important;
-	box-shadow: none;
-
-    .songcontainer-cover {
-	    box-shadow: none;
-    }
-
-    span.title, span.number, span.time {
-        color: $foreground-normal !important;
-    }   
-}
-
-#individual-playlist-header {
-
-    span {
-        color: $foreground-normal;
-    }
-
-    .header-indi {
-	    border-bottom-color: $decoration-normal;
-	    color: $foreground-normal;
-    }
-}
-
-#individual-playlist {
-    
-    li {
-	    color: $foreground-normal;
-
-        &.dragable:hover {
+        &:hover {
             background-color: $background-active-hover;
         }
 
-        span.title, span.interpret, span.album-indi, span.time {
-            color: $foreground-normal !important;
+        &.active span {
+            color: $foreground-active;
+        }
+
+        i.ioc {
+            color: $foreground-normal;
+
+            &.ioc-sort:hover {
+                color: $foreground-positive;
+            }
+
+            &.ioc-delete:hover {
+                color: $foreground-negative;
+            }
+        }
+
+        &.activeHover {
+            border-color: $decoration-active;
+        }
+
+        &.dropHover {
+            background-color: $background-active-hover;
         }
     }
 
-    .ioc {
-        color: $foreground-normal !important;
+    #app-settings #audio-settings li.audio-settings-item {
+        opacity: 1;
     }
 }
 
-#phototools {
-	background-color: $background-normal;
-    border: 1px solid $decoration-normal;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+.app-audioplayer #app-content {
 
-    img {
-        filter: invert(95%);
+    #loading {
+        color: $icon-normal;
+    }
+
+    .sm2-bar-ui {
+
+        &, .bd a {
+            color: $foreground-normal;
+        }
+
+        #app-navigation-toggle_alternative {
+            background-color: $background-normal;
+        }
+
+        .sm2-inline-gradient {
+            background-color: $background-normal;
+        }
+
+        .bd .sm2-button-element:hover {
+            background-color: $background-normal;
+        }
+
+        .sm2-progress {
+
+            .sm2-progress-track {
+                background-color: $background-dark;
+            }
+    
+            .sm2-progress-bar {
+                background-color: $background-active;
+            }
+        
+            .sm2-progress-ball {
+                background-color: rgba(242, 242, 242, 1);
+            }
+        }
+    }
+
+    #playlist-container {
+
+        .coverrow .album {
+
+            .albumcover {
+                box-shadow: none;
+            }
+
+            .albumdescr {
+
+                .albumname {
+                    color: $foreground-normal;
+                }
+
+                .artist {
+                    color: $foreground-inactive;
+                }
+            }
+        }
+
+        .songcontainer {
+            background-color: $background-dark;
+            box-shadow: none;
+            color: $foreground-normal;
+
+            .open-arrow::before {
+                border-bottom-color: $background-dark;
+            }
+
+            .songcontainer-cover {
+                box-shadow: none;
+            }
+
+            a.close {
+                color: $icon-normal;
+            }
+        }
+
+        #individual-playlist-header {
+
+            .header-indi {
+                border-bottom-color: $decoration-normal;
+                color: $foreground-normal;
+            }
+
+            span {
+                color: $foreground-normal;
+            }
+        }
+
+        #individual-playlist {
+
+            & > li {
+                color: $foreground-normal;
+
+                &.dragable:hover {
+                    background-color: $background-active-hover;
+                }
+
+                span {
+                    color: $foreground-normal !important;
+                }
+            }
+        }
     }
 }
 
-// Settings
+.app-audioplayer #app-sidebar {
 
-#audio-settings li.audio-settings-item {
-	opacity: 1;
+    #ID3EditorTabView .icon-info {
+        opacity: 1;
+    }
 }
