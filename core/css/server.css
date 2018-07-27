@@ -31,6 +31,7 @@
 
 /* Star --------------------------------------------------------------------- */
 .icon-flagged,
+.icon-star-dark,
 .nav-icon-favorites {
   background-image: url("../img/actions/star.svg?v=1"); }
 
