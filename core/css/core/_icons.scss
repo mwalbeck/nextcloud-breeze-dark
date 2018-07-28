@@ -335,7 +335,6 @@ select {
 
 /* Right Arrow Big ---------------------------------------------------------- */
 
-.icon-view-next,
 .glyphicon-chevron-right,
 .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
 	background: url("../img/rightarrow.svg") center center no-repeat;
@@ -383,6 +382,12 @@ select {
 
 .icon-play {
 	background-image: url('../img/actions/play.svg');
+}
+
+/* pause --------------------------------------------------------------------- */
+
+.icon-pause {
+	background-image: url('../img/actions/pause.svg');
 }
 
 /* Play Big ----------------------------------------------------------------- */
