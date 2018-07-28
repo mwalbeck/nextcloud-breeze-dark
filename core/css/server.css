@@ -2208,20 +2208,22 @@ textarea.message-body {
     background-image: none; }
   .app-news #app-content .no-feeds-available {
     color: rgba(189, 195, 199, 0.4); }
-  .app-news #app-content .body a {
-    color: #2980b9; }
-  .app-news #app-content .body blockquote {
-    border-color: #3daee9;
-    background-color: #31363b; }
-  .app-news #app-content .body h1, .app-news #app-content .body h2, .app-news #app-content .body h3 {
-    color: #fcfcfc; }
-  .app-news #app-content .body h4, .app-news #app-content .body h5, .app-news #app-content .body h6 {
-    color: #eff0f1; }
-  .app-news #app-content .body pre {
-    background-color: #31363b;
-    border-color: #706f6e; }
-  .app-news #app-content .body .title .intro {
-    color: rgba(189, 195, 199, 0.6); }
+  .app-news #app-content .body {
+    font-size: 15px; }
+    .app-news #app-content .body a {
+      color: #2980b9; }
+    .app-news #app-content .body blockquote {
+      border-color: #3daee9;
+      background-color: #31363b; }
+    .app-news #app-content .body h1, .app-news #app-content .body h2, .app-news #app-content .body h3 {
+      color: #fcfcfc; }
+    .app-news #app-content .body h4, .app-news #app-content .body h5, .app-news #app-content .body h6 {
+      color: #eff0f1; }
+    .app-news #app-content .body pre {
+      background-color: #31363b;
+      border-color: #706f6e; }
+    .app-news #app-content .body .title .intro {
+      color: rgba(189, 195, 199, 0.6); }
 
 .app-notes #app-content .note-meta {
   opacity: 1; }
