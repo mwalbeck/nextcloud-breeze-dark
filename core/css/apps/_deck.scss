@@ -49,12 +49,8 @@
                 border-color: $decoration-active;
             }
 
-            &.create {
-                border-color: $decoration-normal !important;
-
-                &:hover {
-                    border-color: $decoration-active !important;
-                }
+            &.create:hover {
+                background-color: $background-active-hover;
             }
 
             .card-controls {

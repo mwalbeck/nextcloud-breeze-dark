@@ -2747,10 +2747,8 @@ button#deleteaccount {
   box-shadow: none; }
   .app-deck #app-content #board .card:hover, .app-deck #app-content #board .card.current {
     border-color: #3daee9; }
-  .app-deck #app-content #board .card.create {
-    border-color: #706f6e !important; }
-    .app-deck #app-content #board .card.create:hover {
-      border-color: #3daee9 !important; }
+  .app-deck #app-content #board .card.create:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
   .app-deck #app-content #board .card .card-controls {
     background-color: #232629; }
     .app-deck #app-content #board .card .card-controls .due {
