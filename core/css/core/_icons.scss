@@ -18,6 +18,7 @@
 /* Star --------------------------------------------------------------------- */
 
 .icon-flagged,
+.icon-star-dark,
 .nav-icon-favorites {
 	background-image: url('../img/actions/star.svg?v=1');
 }
@@ -155,7 +156,8 @@
 .settings-button,
 .icon-settings,
 .icon-settings-dark,
-.icon-category-tools {
+.icon-category-tools,
+.music-nav-settings a {
 	background-image: url('../img/actions/settings.svg?v=1');
 }
 
@@ -202,7 +204,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 /* Triangle-S --------------------------------------------------------------- */
 
 .icon-triangle-s,
-#app-navigation .collapsible::after {
+#app-navigation .collapsible::before {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
@@ -265,6 +267,11 @@ select {
 	background-image: url('../img/actions/search.svg?v=1');
 }
 
+.select2-drop .select2-search input {
+	background: url('../img/actions/search.svg') no-repeat right center !important;
+	background-origin: content-box !important;
+}
+
 /* Recent ------------------------------------------------------------------- */
 
 .nav-icon-recent {
@@ -296,7 +303,8 @@ select {
 
 /* Close (no shadow) -------------------------------------------------------- */
 
-.icon-category-disabled {
+.icon-category-disabled,
+#newPlaylistBtn_cancel.icon-close {
 	background-image: url('../img/actions/close-ns.svg')
 }
 
@@ -327,7 +335,6 @@ select {
 
 /* Right Arrow Big ---------------------------------------------------------- */
 
-.icon-view-next,
 .glyphicon-chevron-right,
 .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
 	background: url("../img/rightarrow.svg") center center no-repeat;
@@ -377,16 +384,23 @@ select {
 	background-image: url('../img/actions/play.svg');
 }
 
+/* pause --------------------------------------------------------------------- */
+
+.icon-pause {
+	background-image: url('../img/actions/pause.svg');
+}
+
 /* Play Big ----------------------------------------------------------------- */
 
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover,
-.current.playing .play-pause,
-:hover > .play-pause,
-#app-view .current:not(.playing):hover > .play-pause,
-#app-navigation .current:not(.playing) :hover .play-pause {
-	background-image: url('../img/actions/play-big.svg');
+// Music app
+.app-music, #music-controls {
+
+	.current.playing .play-pause,
+	div:hover > .play-pause,
+	#app-view .current:not(.playing) div:hover .play-pause,
+	#app-navigation .current:not(.playing) :hover .play-pause {
+		background-image: url('../img/actions/play-big.svg');
+	}
 }
 
 /* User Plus ---------------------------------------------------------------- */
@@ -397,23 +411,11 @@ select {
 
 /* Pause Big ---------------------------------------------------------------- */
 
-.playing .play-pause,
-.current:not(.playing) .play-pause, 
-#app-view .current.playing:hover > .play-pause,
+// Music app
+.current:not(.playing) .play-pause,
+#app-view .current.playing div:hover .play-pause,
 #app-navigation .current.playing :hover .play-pause {
 	background-image: url('../img/actions/pause-big.svg');
-}
-
-/* Play Previous ------------------------------------------------------------ */
-
-.sm2-inline-button.previous {
-	background-image: url('../img/actions/play-previous.svg');
-}
-
-/* Play Next ---------------------------------------------------------------- */
-
-.sm2-inline-button.next {
-	background-image: url('../img/actions/play-next.svg');
 }
 
 /* Fullscreen --------------------------------------------------------------- */
@@ -477,7 +479,8 @@ select {
 }
 
 // Files
-.icon-category-files {
+.icon-category-files,
+.icon-files-dark {
 	background-image: url('../img/categories/files.svg?v=1');
 }
 
@@ -572,20 +575,35 @@ select {
 
 /* Audio player App --------------------------------------------------------- */
 
-.nav-icon-audio-player {
-	background-image: url('../img/places/audioplayer.svg');
+.sm2-inline-button.play-pause,
+.sm2-inline-button.play-pause:hover,
+.paused.sm2-inline-button.play-pause:hover {
+	background-image: none, url('../img/bar-ui/play.svg');
 }
 
-#albenoverview li i {
-	color: $foreground-inactive;
+.playing .sm2-inline-button.play-pause {
+	background-image: none, url('../img/bar-ui/pause.svg');
+}
 
-	&:hover {
-		color: $foreground-active;
-	}
+.sm2-inline-button.previous {
+	background-image: none, url('../img/bar-ui/previous.svg');
+}
+
+.sm2-inline-button.next {
+	background-image: none, url('../img/bar-ui/next.svg');
 }
 
 .sm2-inline-button.repeat {
-	background-image: url('../img/actions/repeat.svg');
+	background-image: none, url('../img/bar-ui/repeat.svg');
+}
+
+.sm2-inline-button.shuffle {
+	background-image: none, url('../img/bar-ui/shuffle.svg');
+}
+
+.sm2-inline-button.sm2-volume-control,
+.sm2-inline-button.sm2-volume-control.volume-shade {
+	background-image: none, url('../img/bar-ui/volume.svg');
 }
 
 /* Mail App ----------------------------------------------------------------- */
@@ -645,9 +663,24 @@ div.icon-fulltextsearch-white {
 
 /* CSS tricks to change icon color ------------------------------------------ */
 
-// Audio player
-.sm2-volume-control,
-.sm2-inline-button.shuffle {
+// Music app: icons for Music player controls in files and in app
+#music-controls img.control,
+.app-music img.control {
+	filter: invert(95%);
+}
+
+// Music app: follow-playback icon
+.app-music #app-sidebar #follow-playback {
+	filter: invert(95%);
+}
+
+// Music app: Play button on album covers
+.app-music img.play.svg {
+	filter: invert(95%);
+}
+
+// Music app: Play option in file action menu in Files App
+.fileActionsMenu .action-music-play img.icon {
 	filter: invert(95%);
 }
 
@@ -691,15 +724,6 @@ a.impersonate img.svg {
 #settings #expanddiv ul li a img {
 	width: 16px;
 	height: 16px;
-}
-
-// Play button in Music App under All Tracks menu
-
-.app-music {
-
-	img.play.svg, img.control {
-		filter: invert(95%);
-	}
 }
 
 // Arrow in advanved ldap settings

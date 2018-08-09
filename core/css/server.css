@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 13.0.4
+* Version: 13.0.5
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -11,7 +11,7 @@
  *
 */
 /* Default Colors */
-/* Buttons*/
+/* Buttons */
 /* Input */
 /*
  Default white for icons: rgba(242, 242, 242, 1)
@@ -31,6 +31,7 @@
 
 /* Star --------------------------------------------------------------------- */
 .icon-flagged,
+.icon-star-dark,
 .nav-icon-favorites {
   background-image: url("../img/actions/star.svg?v=1"); }
 
@@ -133,7 +134,8 @@
 .settings-button,
 .icon-settings,
 .icon-settings-dark,
-.icon-category-tools {
+.icon-category-tools,
+.music-nav-settings a {
   background-image: url("../img/actions/settings.svg?v=1"); }
 
 /* Add ---------------------------------------------------------------------- */
@@ -166,7 +168,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 
 /* Triangle-S --------------------------------------------------------------- */
 .icon-triangle-s,
-#app-navigation .collapsible::after {
+#app-navigation .collapsible::before {
   background-image: url("../img/actions/triangle-s.svg?v=1"); }
 
 select {
@@ -210,6 +212,10 @@ select {
 .icon-category-search {
   background-image: url("../img/actions/search.svg?v=1"); }
 
+.select2-drop .select2-search input {
+  background: url("../img/actions/search.svg") no-repeat right center !important;
+  background-origin: content-box !important; }
+
 /* Recent ------------------------------------------------------------------- */
 .nav-icon-recent {
   background-image: url("../img/actions/recent.svg?v=1"); }
@@ -231,7 +237,8 @@ select {
   background: url("../img/actions/close.svg") no-repeat center; }
 
 /* Close (no shadow) -------------------------------------------------------- */
-.icon-category-disabled {
+.icon-category-disabled,
+#newPlaylistBtn_cancel.icon-close {
   background-image: url("../img/actions/close-ns.svg"); }
 
 /* Menu --------------------------------------------------------------------- */
@@ -252,7 +259,6 @@ select {
   background-image: url("../img/actions/arrow-left.svg"); }
 
 /* Right Arrow Big ---------------------------------------------------------- */
-.icon-view-next,
 .glyphicon-chevron-right,
 .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
   background: url("../img/rightarrow.svg") center center no-repeat; }
@@ -287,14 +293,18 @@ select {
 .icon-play {
   background-image: url("../img/actions/play.svg"); }
 
+/* pause --------------------------------------------------------------------- */
+.icon-pause {
+  background-image: url("../img/actions/pause.svg"); }
+
 /* Play Big ----------------------------------------------------------------- */
-.play-pause,
-.play-pause:hover,
-.paused .play-pause:hover,
-.current.playing .play-pause,
-:hover > .play-pause,
-#app-view .current:not(.playing):hover > .play-pause,
-#app-navigation .current:not(.playing) :hover .play-pause {
+.app-music .current.playing .play-pause,
+.app-music div:hover > .play-pause,
+.app-music #app-view .current:not(.playing) div:hover .play-pause,
+.app-music #app-navigation .current:not(.playing) :hover .play-pause, #music-controls .current.playing .play-pause,
+#music-controls div:hover > .play-pause,
+#music-controls #app-view .current:not(.playing) div:hover .play-pause,
+#music-controls #app-navigation .current:not(.playing) :hover .play-pause {
   background-image: url("../img/actions/play-big.svg"); }
 
 /* User Plus ---------------------------------------------------------------- */
@@ -302,19 +312,10 @@ select {
   background-image: url("../img/actions/user-plus.svg") !important; }
 
 /* Pause Big ---------------------------------------------------------------- */
-.playing .play-pause,
 .current:not(.playing) .play-pause,
-#app-view .current.playing:hover > .play-pause,
+#app-view .current.playing div:hover .play-pause,
 #app-navigation .current.playing :hover .play-pause {
   background-image: url("../img/actions/pause-big.svg"); }
-
-/* Play Previous ------------------------------------------------------------ */
-.sm2-inline-button.previous {
-  background-image: url("../img/actions/play-previous.svg"); }
-
-/* Play Next ---------------------------------------------------------------- */
-.sm2-inline-button.next {
-  background-image: url("../img/actions/play-next.svg"); }
 
 /* Fullscreen --------------------------------------------------------------- */
 .icon-fullscreen {
@@ -357,7 +358,8 @@ select {
 .icon-category-customization {
   background-image: url("../img/categories/customization.svg?v=1"); }
 
-.icon-category-files {
+.icon-category-files,
+.icon-files-dark {
   background-image: url("../img/categories/files.svg?v=1"); }
 
 .icon-category-games {
@@ -417,16 +419,29 @@ select {
   background-image: url("../img/places/announcementcenter.svg"); }
 
 /* Audio player App --------------------------------------------------------- */
-.nav-icon-audio-player {
-  background-image: url("../img/places/audioplayer.svg"); }
+.sm2-inline-button.play-pause,
+.sm2-inline-button.play-pause:hover,
+.paused.sm2-inline-button.play-pause:hover {
+  background-image: none, url("../img/bar-ui/play.svg"); }
 
-#albenoverview li i {
-  color: #bdc3c7; }
-  #albenoverview li i:hover {
-    color: #fcfcfc; }
+.playing .sm2-inline-button.play-pause {
+  background-image: none, url("../img/bar-ui/pause.svg"); }
+
+.sm2-inline-button.previous {
+  background-image: none, url("../img/bar-ui/previous.svg"); }
+
+.sm2-inline-button.next {
+  background-image: none, url("../img/bar-ui/next.svg"); }
 
 .sm2-inline-button.repeat {
-  background-image: url("../img/actions/repeat.svg"); }
+  background-image: none, url("../img/bar-ui/repeat.svg"); }
+
+.sm2-inline-button.shuffle {
+  background-image: none, url("../img/bar-ui/shuffle.svg"); }
+
+.sm2-inline-button.sm2-volume-control,
+.sm2-inline-button.sm2-volume-control.volume-shade {
+  background-image: none, url("../img/bar-ui/volume.svg"); }
 
 /* Mail App ----------------------------------------------------------------- */
 .icon-reply {
@@ -469,8 +484,17 @@ div.icon-fulltextsearch-white {
   background-image: url("../img/fulltextsearch.svg"); }
 
 /* CSS tricks to change icon color ------------------------------------------ */
-.sm2-volume-control,
-.sm2-inline-button.shuffle {
+#music-controls img.control,
+.app-music img.control {
+  filter: invert(95%); }
+
+.app-music #app-sidebar #follow-playback {
+  filter: invert(95%); }
+
+.app-music img.play.svg {
+  filter: invert(95%); }
+
+.fileActionsMenu .action-music-play img.icon {
   filter: invert(95%); }
 
 .icon-white {
@@ -498,9 +522,6 @@ a.impersonate img.svg {
 #settings #expanddiv ul li a img {
   width: 16px;
   height: 16px; }
-
-.app-music img.play.svg, .app-music img.control {
-  filter: invert(95%); }
 
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   filter: invert(95%); }
@@ -1382,6 +1403,9 @@ ul.multiselectoptions {
     #app-navigation > ul > li:focus > a, #app-navigation > ul > li:hover > a, #app-navigation > ul > li.active > a, #app-navigation > ul > li a.selected > a {
       opacity: 1;
       box-shadow: inset 2px 0 #1d99f3; }
+  #app-navigation .app-navigation-entry-edit,
+  #app-navigation .app-navigation-entry-deleted {
+    background-color: #31363b; }
 
 .app-navigation-entry-menu li > button {
   color: #eff0f1; }
@@ -1819,13 +1843,11 @@ td.date, td.date > span {
 #link {
   border-color: #706f6e; }
 
-#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous {
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):hover {
   border: none; }
-  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:hover, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:hover {
-    border: none; }
-  #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).next.active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous:active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).previous.active {
-    background-color: transparent;
-    border: none; }
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).active {
+  background-color: transparent;
+  border: none; }
 
 #groupfolders-react-root th {
   border-bottom-color: #706f6e; }
@@ -1938,73 +1960,72 @@ td.date, td.date > span {
 #oca-spreedme-add-room {
   border-bottom-color: #706f6e; }
 
-#app-navigation-toggle_alternative {
-  background-color: #31363b; }
+.app-audioplayer #app-navigation #albenoverview li {
+  opacity: 1; }
+.app-audioplayer #app-navigation #myCategory li {
+  opacity: 1; }
+  .app-audioplayer #app-navigation #myCategory li:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-audioplayer #app-navigation #myCategory li.active span {
+    color: #fcfcfc; }
+  .app-audioplayer #app-navigation #myCategory li i.ioc {
+    color: #eff0f1; }
+    .app-audioplayer #app-navigation #myCategory li i.ioc.ioc-sort:hover {
+      color: #27ae60; }
+    .app-audioplayer #app-navigation #myCategory li i.ioc.ioc-delete:hover {
+      color: #da4453; }
+  .app-audioplayer #app-navigation #myCategory li.activeHover {
+    border-color: #3daee9; }
+  .app-audioplayer #app-navigation #myCategory li.dropHover {
+    background-color: rgba(61, 174, 233, 0.25); }
+.app-audioplayer #app-navigation #app-settings #audio-settings li.audio-settings-item {
+  opacity: 1; }
 
-.sm2-bar-ui, .sm2-bar-ui .bd a {
+.app-audioplayer #app-content #loading {
+  color: #f2f2f2; }
+.app-audioplayer #app-content .sm2-bar-ui, .app-audioplayer #app-content .sm2-bar-ui .bd a {
   color: #eff0f1; }
-.sm2-bar-ui .sm2-inline-gradient {
+.app-audioplayer #app-content .sm2-bar-ui #app-navigation-toggle_alternative {
   background-color: #31363b; }
-.sm2-bar-ui .bd .sm2-button-element:hover {
+.app-audioplayer #app-content .sm2-bar-ui .sm2-inline-gradient {
   background-color: #31363b; }
-
-.sm2-progress .sm2-progress-bar {
-  background-color: #3daee9;
-  background-image: none; }
-.sm2-progress .sm2-progress-track {
-  background-color: #232629;
-  background-image: none; }
-.sm2-progress .sm2-progress-ball {
+.app-audioplayer #app-content .sm2-bar-ui .bd .sm2-button-element:hover {
+  background-color: #31363b; }
+.app-audioplayer #app-content .sm2-bar-ui .sm2-progress .sm2-progress-track {
+  background-color: #232629; }
+.app-audioplayer #app-content .sm2-bar-ui .sm2-progress .sm2-progress-bar {
+  background-color: #3daee9; }
+.app-audioplayer #app-content .sm2-bar-ui .sm2-progress .sm2-progress-ball {
   background-color: #f2f2f2; }
-
-#myCategory li.activeIndiPlaylist:hover {
-  font-weight: bold; }
-#myCategory li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-  font-weight: normal; }
-
-.sm2-playlist-cover {
-  background-color: rgba(61, 174, 233, 0.25) !important; }
-
-.albumdescr span.albumname {
-  color: #eff0f1; }
-.albumdescr span.artist {
-  color: #bdc3c7; }
-
-.songcontainer {
-  background-color: #232629 !important;
-  color: #eff0f1 !important;
+.app-audioplayer #app-content #playlist-container .coverrow .album .albumcover {
   box-shadow: none; }
-  .songcontainer .songcontainer-cover {
-    box-shadow: none; }
-  .songcontainer span.title, .songcontainer span.number, .songcontainer span.time {
-    color: #eff0f1 !important; }
-
-#individual-playlist-header span {
+.app-audioplayer #app-content #playlist-container .coverrow .album .albumdescr .albumname {
   color: #eff0f1; }
-#individual-playlist-header .header-indi {
+.app-audioplayer #app-content #playlist-container .coverrow .album .albumdescr .artist {
+  color: #bdc3c7; }
+.app-audioplayer #app-content #playlist-container .songcontainer {
+  background-color: #232629;
+  box-shadow: none;
+  color: #eff0f1; }
+  .app-audioplayer #app-content #playlist-container .songcontainer .open-arrow::before {
+    border-bottom-color: #232629; }
+  .app-audioplayer #app-content #playlist-container .songcontainer .songcontainer-cover {
+    box-shadow: none; }
+  .app-audioplayer #app-content #playlist-container .songcontainer a.close {
+    color: #f2f2f2; }
+.app-audioplayer #app-content #playlist-container #individual-playlist-header .header-indi {
   border-bottom-color: #706f6e;
   color: #eff0f1; }
-
-#individual-playlist li {
+.app-audioplayer #app-content #playlist-container #individual-playlist-header span {
   color: #eff0f1; }
-  #individual-playlist li.dragable:hover {
+.app-audioplayer #app-content #playlist-container #individual-playlist > li {
+  color: #eff0f1; }
+  .app-audioplayer #app-content #playlist-container #individual-playlist > li.dragable:hover {
     background-color: rgba(61, 174, 233, 0.25); }
-  #individual-playlist li span.title, #individual-playlist li span.interpret, #individual-playlist li span.album-indi, #individual-playlist li span.time {
+  .app-audioplayer #app-content #playlist-container #individual-playlist > li span {
     color: #eff0f1 !important; }
-#individual-playlist .ioc {
-  color: #eff0f1 !important; }
 
-#phototools {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-  #phototools img {
-    filter: invert(95%); }
-
-#audio-settings li.audio-settings-item {
+.app-audioplayer #app-sidebar #ID3EditorTabView .icon-info {
   opacity: 1; }
 
 #bm_import:hover ~ button#bm_import_submit {
@@ -2188,20 +2209,22 @@ textarea.message-body {
     background-image: none; }
   .app-news #app-content .no-feeds-available {
     color: rgba(189, 195, 199, 0.4); }
-  .app-news #app-content .body a {
-    color: #2980b9; }
-  .app-news #app-content .body blockquote {
-    border-color: #3daee9;
-    background-color: #31363b; }
-  .app-news #app-content .body h1, .app-news #app-content .body h2, .app-news #app-content .body h3 {
-    color: #fcfcfc; }
-  .app-news #app-content .body h4, .app-news #app-content .body h5, .app-news #app-content .body h6 {
-    color: #eff0f1; }
-  .app-news #app-content .body pre {
-    background-color: #31363b;
-    border-color: #706f6e; }
-  .app-news #app-content .body .title .intro {
-    color: rgba(189, 195, 199, 0.6); }
+  .app-news #app-content .body {
+    font-size: 15px; }
+    .app-news #app-content .body a {
+      color: #2980b9; }
+    .app-news #app-content .body blockquote {
+      border-color: #3daee9;
+      background-color: #31363b; }
+    .app-news #app-content .body h1, .app-news #app-content .body h2, .app-news #app-content .body h3 {
+      color: #fcfcfc; }
+    .app-news #app-content .body h4, .app-news #app-content .body h5, .app-news #app-content .body h6 {
+      color: #eff0f1; }
+    .app-news #app-content .body pre {
+      background-color: #31363b;
+      border-color: #706f6e; }
+    .app-news #app-content .body .title .intro {
+      color: rgba(189, 195, 199, 0.6); }
 
 .app-notes #app-content .note-meta {
   opacity: 1; }
@@ -2642,39 +2665,42 @@ div.percentdone {
 
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e; }
-.app-music #scanning, .app-music #toScan, .app-music #emptycontent {
+
+.app-music #app-content #emptycontent, .app-music #app-content .emptycontent {
   background-color: #31363b; }
-  .app-music #scanning:hover *, .app-music #toScan:hover *, .app-music #emptycontent:hover * {
-    color: #eff0f1; }
-  .app-music #scanning .icon-audio, .app-music #toScan .icon-audio, .app-music #emptycontent .icon-audio {
-    opacity: 1; }
-.app-music .alphabet-navigation a {
+.app-music #app-content #toScan:hover * {
+  color: #fcfcfc; }
+.app-music #app-content .alphabet-navigation a {
   opacity: 0.2; }
-  .app-music .alphabet-navigation a.available {
+  .app-music #app-content .alphabet-navigation a.available {
     opacity: 0.7; }
-    .app-music .alphabet-navigation a.available:hover {
+    .app-music #app-content .alphabet-navigation a.available:hover {
       opacity: 1; }
-.app-music #controls .progress-info .progress .seek-bar {
-  background-color: #232629; }
-  .app-music #controls .progress-info .progress .seek-bar .buffer-bar {
+.app-music #app-content #controls {
+  margin-top: 1px; }
+  .app-music #app-content #controls .progress, .app-music #app-content #controls .seek-bar {
+    background-color: #232629; }
+  .app-music #app-content #controls .buffer-bar {
     opacity: 1;
     background-color: rgba(61, 174, 233, 0.25); }
-  .app-music #controls .progress-info .progress .seek-bar .play-bar {
+  .app-music #app-content #controls .play-bar {
     background-color: #3daee9; }
+.app-music #app-content #app-sidebar .close, .app-music #app-content #app-sidebar #follow-playback {
+  background-color: unset; }
+.app-music #app-content #music-user .warning a {
+  color: #2980b9 !important; }
 
 #music-controls {
   background-color: #31363b; }
   #music-controls #albumart {
     border: none; }
-  #music-controls .progress-info .seek-bar {
+  #music-controls .seek-bar {
     background-color: #232629; }
-    #music-controls .progress-info .seek-bar .buffer-bar {
-      opacity: 1;
-      background-color: rgba(61, 174, 233, 0.25); }
-    #music-controls .progress-info .seek-bar .play-bar {
-      background-color: #3daee9; }
-  #music-controls img.control {
-    filter: invert(95%); }
+  #music-controls .buffer-bar {
+    opacity: 1;
+    background-color: rgba(61, 174, 233, 0.25); }
+  #music-controls .play-bar {
+    background-color: #3daee9; }
 
 button#deleteaccount {
   background-color: #da4453; }
@@ -2700,61 +2726,67 @@ button#deleteaccount {
 .app-flowupload .table-hover tbody tr:hover > td {
   background-color: rgba(61, 174, 233, 0.25); }
 
-#app-navigation .editing .app-navigation-entry-edit {
-  background: #31363b;
-  border-right: 1px solid #706f6e; }
-
-#boardlist td {
-  border-bottom-color: #706f6e; }
-#boardlist thead td {
-  opacity: 1; }
-#boardlist tbody .board-create td {
-  border-bottom: none; }
-
-.board-header-controls #stack-add {
-  background-color: #232629;
-  border: 1px solid #706f6e; }
-  .board-header-controls #stack-add:hover {
-    border-color: #3daee9; }
-
-#board-detail-labels ul li .label-edit input {
-  color: #eff0f1 !important; }
-#board-detail-labels ul li .label-edit.ng-scope input {
-  color: #000000 !important; }
-
-#sidebar-header h3 {
+.app-deck #app-navigation .app-navigation-entry-edit {
   background-color: #31363b; }
 
-.labels .label-edit input {
+.app-deck #app-content #controls #stack-add {
+  background-color: #232629;
+  border: 1px solid #706f6e; }
+  .app-deck #app-content #controls #stack-add:hover {
+    border-color: #3daee9; }
+.app-deck #app-content #controls .board-header-controls > button {
+  opacity: 1 !important; }
+.app-deck #app-content #boardlist thead td {
+  opacity: 1; }
+.app-deck #app-content #boardlist td {
   border-bottom-color: #706f6e; }
-
-.stack {
-  border-right-color: #706f6e; }
-
-#board .card {
+.app-deck #app-content #boardlist .board-create td {
+  border-bottom: none; }
+.app-deck #app-content #board .card {
   background-color: #31363b;
   border: 1px solid #706f6e;
   box-shadow: none; }
-  #board .card:hover {
+  .app-deck #app-content #board .card:hover, .app-deck #app-content #board .card.current {
     border-color: #3daee9; }
-  #board .card .card-controls {
+  .app-deck #app-content #board .card.create:hover {
+    background-color: rgba(61, 174, 233, 0.25); }
+  .app-deck #app-content #board .card .card-controls {
     background-color: #232629; }
-    #board .card .card-controls .due {
+    .app-deck #app-content #board .card .card-controls .due {
       opacity: 0.7; }
-#board.card-selected .card.current {
-  opacity: 1;
-  box-shadow: none;
-  border-color: #3daee9; }
-
-#card-meta #card-dates {
-  opacity: 0.7; }
-#card-meta .section-header {
-  border-bottom-color: #706f6e; }
-#card-meta .card-description.section-content .container {
+      .app-deck #app-content #board .card .card-controls .due span {
+        color: #fcfcfc; }
+      .app-deck #app-content #board .card .card-controls .due.overdue {
+        background-color: #da4453;
+        opacity: 1; }
+      .app-deck #app-content #board .card .card-controls .due.now {
+        background-color: #f67400;
+        opacity: 1; }
+      .app-deck #app-content #board .card .card-controls .due.next {
+        background-color: unset;
+        opacity: 1; }
+    .app-deck #app-content #board .card .card-controls .card-files {
+      opacity: 0.7; }
+.app-deck #app-content #app-sidebar #sidebar-header h3 {
   background-color: #31363b; }
-#card-meta .save-indicator.unsaved {
+.app-deck #app-content #app-sidebar #board-detail-labels input {
+  border: none; }
+.app-deck #app-content #app-sidebar #board-detail-labels li[ng-if$="status.createLabel"] input {
+  color: #eff0f1 !important; }
+.app-deck #app-content #app-sidebar #card-meta #card-dates {
+  opacity: 0.7; }
+.app-deck #app-content #app-sidebar #card-meta .section-header {
+  border-bottom-color: #706f6e; }
+.app-deck #app-content #app-sidebar #card-meta .card-description.section-content .container {
+  background-color: #31363b; }
+.app-deck #app-content #app-sidebar #card-meta .save-indicator.unsaved {
   background-color: #4d4d4d;
   color: #eff0f1; }
+.app-deck #app-content #app-sidebar #card-meta .attachment-list.selector {
+  background-color: #31363b;
+  box-shadow: none; }
+.app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filesize, .app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filedate {
+  color: #bdc3c7; }
 
 .app-settings #app-content #fns .div-table .div-table-row .div-table-col select, .app-settings #app-content #fns .div-table .div-table-row .div-table-col input, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col select, .app-settings #app-content #elastic_search .div-table .div-table-row .div-table-col input, .app-settings #app-content #files .div-table .div-table-row .div-table-col select, .app-settings #app-content #files .div-table .div-table-row .div-table-col input {
   background-color: #232629 !important; }
