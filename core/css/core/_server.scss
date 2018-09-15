@@ -55,7 +55,7 @@
 
 // Header Bar
 #body-user #header, #body-settings #header, #body-public #header {
-	background-color: $background-normal;
+	background-color: $background-dark;
 }
 
 
@@ -175,7 +175,7 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-.bubble	li > a {
+.bubble	li {
 	color: $foreground-normal;
 
 	&:hover {
@@ -183,22 +183,16 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-
-#expanddiv {
-	background-color: $background-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal;
+#header .header-left > nav > .menu, 
+#header .header-right > div > .menu {
+	filter: none;
 
 	&::after {
 		border-bottom-color: $decoration-normal;
 	}
 
-	a {
-		color: $foreground-normal;
-
-		&:hover {
-			background-color: $background-active-hover;
-		}
+	li:hover {
+		background-color: $background-active-hover;
 	}
 }
 
@@ -284,24 +278,8 @@ span {
 
 /* Quota -------------------------------------------------------------------- */
 
-#quota {
-	color: $foreground-normal;
-	border: none;
-	border-radius: 3px;
-
-	progress {
-		background-color: $background-active-hover;
-	}
-}
-
-#app-navigation #quota {
-	background-color: $background-normal;
-	border-right: 1px solid $decoration-normal;
-}
-
-#app-content #quota {
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
+#quota progress {
+	background-color: $background-active-hover;
 }
 
 /* General Settings --------------------------------------------------------- */
@@ -326,6 +304,15 @@ span {
 
 	.jcrop-holder {
 		box-shadow: none;
+	}
+}
+
+#updatenotification .channel-description span {
+	color: $foreground-normal;
+
+	strong {
+		color: $foreground-active;
+		font-weight: bold;
 	}
 }
 
@@ -560,20 +547,14 @@ ul.multiselectoptions {
 		background: $background-dark;
 		border-color: $decoration-normal;
 		color: $foreground-normal !important;
-
-		.select2-arrow {
-			background: $background-normal;
-			border-color: $decoration-normal;
-		}
 	}
 }
 
 #select2-drop, .select2-drop {
-	background-color: $background-normal;
 	color: $foreground-normal;
 
-	&.select2-drop-active {
-		border-color: $decoration-normal;
+	.select2-search {
+		background-color: $background-dark !important;
 	}
 
 	.select2-results {
@@ -586,11 +567,11 @@ ul.multiselectoptions {
 		}
 
 		.select2-result.select2-selected {
-			background-color: $background-normal;
+			background-color: $background-dark;
 		}
 
 		.select2-highlighted, .select2-result.select2-highlighted {
-			background-color: $background-alternate;
+			background-color: $background-active-hover;
 			color: $foreground-normal;
 		}
 	}

@@ -23,11 +23,6 @@
 
 /* Content ------------------------------------------------------------------ */
 
-#app-content {
-	border-top: 1px solid $decoration-normal;
-	height: 99.8%;
-}
-
 #app-content-header {
 	background-color: $background-active;
 	box-shadow: none;
@@ -47,6 +42,7 @@
 			background-color: $background-active-hover;
 		}
 	}
+
 
 	.active {
 		background-color: $background-active;
@@ -151,7 +147,7 @@
 		color: $foreground-normal;
 	}
 
-	&.selected a, &:hover a {
+	&.selected, &:hover, &:focus {
 		color: $foreground-active;
 		border-bottom: 1px solid $decoration-active;
 	}

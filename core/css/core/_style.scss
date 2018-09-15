@@ -84,7 +84,6 @@ input.checkbox[type="radio"] {
 
 input:not([type="range"]),
 textarea,
-#quota,
 div[contenteditable="true"],
 .pager li a {
 	background-color: $background-dark;
@@ -269,4 +268,16 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 	.ui-accordion-content {
 		background-color: $background-normal;
 	}
+}
+
+/* General nextcloud -------------------------------------------------------- */
+
+.preview {
+	filter: none;
+}
+
+.dropdown {
+	background-color: $background-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
 }

@@ -74,7 +74,8 @@
 
 .icon-checkmark,
 .icon-sent,
-.icon-category-enabled {
+.icon-category-enabled,
+.multiselect.multiselect-vue .multiselect__content-wrapper li > span::before {
 	background-image: url('../img/actions/checkmark.svg?v=1');
 }
 
@@ -111,8 +112,33 @@
 .icon-shared,
 .nav-icon-federated-cloud,
 .nav-icon-sharingin,
-.nav-icon-sharingout {
+.nav-icon-sharingout,
+.nav-icon-shareoverview {
 	background-image: url('../img/actions/share.svg?v=1');
+}
+
+/* Unshare ------------------------------------------------------------------ */
+
+.nav-icon-deletedshares {
+	background-image: url('../img/actions/unshare.svg?v=1');
+}
+
+/* Phone -------------------------------------------------------------------- */
+
+.icon-phone {
+	background-image: url('../img/clients/phone.svg')
+}
+
+/* Tablet ------------------------------------------------------------------- */
+
+.icon-tablet {
+	background-image: url('../img/clients/tablet.svg')
+}
+
+/* Desktop ------------------------------------------------------------------ */
+
+.icon-desktop {
+	background-image: url('../img/clients/desktop.svg')
 }
 
 /* Tag ---------------------------------------------------------------------- */
@@ -316,9 +342,16 @@ select {
 
 /* User --------------------------------------------------------------------- */
 
+.icon-user,
 .nav-icon-personal-settings,
 .icon-category-installed {
 	background-image: url('../img/actions/user.svg?v=1');
+}
+
+/* User admin --------------------------------------------------------------- */
+
+.icon-user-admin {
+	background-image: url('../img/actions/user-admin.svg?v=1');
 }
 
 /* Right Arrow -------------------------------------------------------------- */
@@ -361,7 +394,7 @@ select {
 
 /* Quota -------------------------------------------------------------------- */
 
-.nav-icon-quota {
+.icon-quota {
 	background-image: url('../img/actions/quota.svg?v=1');
 }
 
