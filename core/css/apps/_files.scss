@@ -1,14 +1,10 @@
-.summary {
-	color: $foreground-inactive;
-	opacity: 1;
-}
-
-table tr.mouseOver td {
-	background-color: transparent;
-}
-
 table td.filesize {
 	color: $foreground-inactive !important;
+}
+
+td.date, td.date > span {
+	color: $foreground-inactive !important;
+	opacity: 1;
 }
 
 table.multiselect {
@@ -26,58 +22,11 @@ tr {
 	&, &:hover, &:active, &:focus {
 		span.extension {
 			color: $foreground-inactive;
+			opacity: 0.7;
 		}
 	}
 }
 
-td.date, td.date > span {
-	color: $foreground-inactive !important;
-	opacity: 1;
-}
-
-#app-content-systemtagsfilter {
-	#controls input[type="text"] {
-		height: 34px;
-		padding: 6px 10px;
-	}
-
-	.select2-choices {
-		background-color: $background-dark;
-		border-color: $decoration-normal;
-		color: $foreground-normal;
-	}
-}
-
-#fileList {
-
-	a.action {
-		opacity: 0.5;
-	}
-
-	.popovermenu .action {
-		color: $foreground-normal;
-
-		&:hover, &:focus, &:active {
-			color: $foreground-active;
-		}
-	}
-
-	tr td.selection > .selectCheckBox + label::before {
-		opacity: 0.5;
-	}
-}
-
-#controls .button.view-switcher {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-
-	&:hover {
-		border-color: $decoration-active;
-		background-color: $background-normal;
-	}
-
-	&:focus, &:active {
-		border-color: $decoration-active;
-		background-color: $background-active;
-	}
+#fileList tr td.selection > .selectCheckBox + label::before {
+	opacity: 0.5;
 }

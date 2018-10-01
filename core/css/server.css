@@ -1690,15 +1690,12 @@ div.circle {
 .workflowengine .invalid-input {
   border-color: #da4453; }
 
-.summary {
-  color: #bdc3c7;
-  opacity: 1; }
-
-table tr.mouseOver td {
-  background-color: transparent; }
-
 table td.filesize {
   color: #bdc3c7 !important; }
+
+td.date, td.date > span {
+  color: #bdc3c7 !important;
+  opacity: 1; }
 
 table.multiselect thead th {
   background-color: rgba(61, 174, 233, 0.25);
@@ -1707,38 +1704,11 @@ table.multiselect th a {
   color: #eff0f1; }
 
 tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus span.extension {
-  color: #bdc3c7; }
+  color: #bdc3c7;
+  opacity: 0.7; }
 
-td.date, td.date > span {
-  color: #bdc3c7 !important;
-  opacity: 1; }
-
-#app-content-systemtagsfilter #controls input[type="text"] {
-  height: 34px;
-  padding: 6px 10px; }
-#app-content-systemtagsfilter .select2-choices {
-  background-color: #232629;
-  border-color: #706f6e;
-  color: #eff0f1; }
-
-#fileList a.action {
-  opacity: 0.5; }
-#fileList .popovermenu .action {
-  color: #eff0f1; }
-  #fileList .popovermenu .action:hover, #fileList .popovermenu .action:focus, #fileList .popovermenu .action:active {
-    color: #fcfcfc; }
 #fileList tr td.selection > .selectCheckBox + label::before {
   opacity: 0.5; }
-
-#controls .button.view-switcher {
-  background-color: #31363b;
-  border: 1px solid #706f6e; }
-  #controls .button.view-switcher:hover {
-    border-color: #3daee9;
-    background-color: #31363b; }
-  #controls .button.view-switcher:focus, #controls .button.view-switcher:active {
-    border-color: #3daee9;
-    background-color: #3daee9; }
 
 /* First Run Wizard --------------------------------------------------------- */
 #cboxLoadedContent {
