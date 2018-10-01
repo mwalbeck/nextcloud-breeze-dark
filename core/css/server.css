@@ -146,8 +146,9 @@ input, label {
 .nav-icon-systemtagsfilter {
   background-image: url("../img/actions/tag.svg?v=1"); }
 
-/* Link --------------------------------------------------------------------- */
-.icon-link {
+/* Link/World --------------------------------------------------------------------- */
+.icon-link,
+.icon-world {
   background-image: url("../img/places/link.svg?v=1"); }
 
 /* Toggle ------------------------------------------------------------------- */
@@ -328,7 +329,8 @@ select {
   background-image: url("../img/email.svg"); }
 
 /* Calendar ----------------------------------------------------------------- */
-.icon-badge {
+.icon-badge,
+.icon-calendar-dark {
   background-image: url("../img/places/calendar.svg"); }
 
 /* Play --------------------------------------------------------------------- */
@@ -779,7 +781,8 @@ input[type="button"] {
   input[type="submit"].primary:disabled,
   input[type="button"].primary:disabled {
     background-color: #4d4d4d;
-    color: #bdc3c7; }
+    color: #bdc3c7;
+    border-color: #706f6e; }
     select.primary:disabled:hover, select.primary:disabled:focus, select.primary:disabled:active,
     button.primary:disabled:hover,
     button.primary:disabled:focus,

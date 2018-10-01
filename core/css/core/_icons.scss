@@ -148,9 +148,10 @@
 	background-image: url('../img/actions/tag.svg?v=1');
 }
 
-/* Link --------------------------------------------------------------------- */
+/* Link/World --------------------------------------------------------------------- */
 
-.icon-link {
+.icon-link,
+.icon-world {
 	background-image: url('../img/places/link.svg?v=1');
 }
 
@@ -407,7 +408,8 @@ select {
 
 /* Calendar ----------------------------------------------------------------- */
 
-.icon-badge {
+.icon-badge,
+.icon-calendar-dark {
 	background-image: url('../img/places/calendar.svg');
 }
 

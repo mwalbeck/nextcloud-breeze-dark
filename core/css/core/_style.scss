@@ -194,6 +194,7 @@ input[type="button"] {
 		&:disabled {
 			background-color: $background-alternate;
 			color: $foreground-inactive;
+			border-color: $decoration-normal;
 
 			&:hover, &:focus, &:active {
 				background-color: $background-alternate;
