@@ -782,7 +782,8 @@ a.impersonate img.svg {
 	}
 
 	// In apps list
-	#apps-list .app-image image {
+	#apps-list .app-image image,
+	#app-sidebar #app-details-view image.app-icon {
 		filter: invert(5%);
 
 	}

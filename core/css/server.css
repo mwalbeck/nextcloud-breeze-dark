@@ -575,7 +575,8 @@ a.impersonate img.svg {
 .app-settings #app-navigation img[src$="/settings/img/password.svg"],
 .app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"] {
   filter: invert(95%); }
-.app-settings #apps-list .app-image image {
+.app-settings #apps-list .app-image image,
+.app-settings #app-sidebar #app-details-view image.app-icon {
   filter: invert(5%); }
 .app-settings #apps-list #app-user_saml .app-image image {
   filter: none; }
@@ -1054,12 +1055,17 @@ span.success {
 .app-level .official {
   border-color: #27ae60; }
 
-#apps-list.installed .app-image-icon svg {
+#apps-list.installed .app-image-icon svg,
+#apps-list.installed .app-image-icon .icon-settings-dark {
   opacity: 1; }
 #apps-list.installed .section > * {
   border-bottom-color: #706f6e; }
 #apps-list .app-name {
   font-weight: 600; }
+
+#app-sidebar #app-details-view h2 svg,
+#app-sidebar #app-details-view h2 .icon-settings-dark {
+  opacity: 1; }
 
 .app-version {
   color: #bdc3c7; }

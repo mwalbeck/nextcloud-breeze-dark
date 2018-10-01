@@ -338,7 +338,8 @@ span {
 #apps-list {
 	&.installed {
 		
-		.app-image-icon svg {
+		.app-image-icon svg,
+		.app-image-icon .icon-settings-dark {
 			opacity: 1;
 		}
 
@@ -350,6 +351,15 @@ span {
 	.app-name {
 		font-weight: 600;
 	}
+}
+
+#app-sidebar #app-details-view h2 {
+	
+	svg,
+	.icon-settings-dark {
+		opacity: 1;
+}
+
 }
 
 .app-version {
