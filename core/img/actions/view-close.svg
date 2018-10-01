@@ -1,0 +1,9 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <filter id="a" width="1.6" y="-.3" x="-.3" height="1.6" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="2.239"/>
+  </filter>
+ </defs>
+ <path filter="url(#a)" stroke="#000" stroke-width="2" d="m24.955 23.538l-1.414 1.414-7.535-7.536-7.536 7.536-1.415-1.414 7.536-7.536-7.535-7.536 1.414-1.414 7.535 7.536 7.516-7.555 1.435 1.433-7.536 7.536z"/>
+ <path d="m24.955 23.538l-1.414 1.414-7.535-7.536-7.536 7.536-1.415-1.414 7.536-7.536-7.535-7.536 1.414-1.414 7.535 7.536 7.516-7.555 1.435 1.433-7.536 7.536z" fill="#f2f2f2"/>
+</svg>

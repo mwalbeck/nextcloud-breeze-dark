@@ -56,8 +56,10 @@ $icon-normal: rgba(242, 242, 242, 1);
 
 /* Set the nextcloud color variables */
 :root {
+    --color-primary: $background-active-alternate;
     --color-main-background: $background-normal;
     --color-background-dark: $background-active-hover;
+    --color-background-darker: $background-alternate;
     --color-main-text: $foreground-normal;
     --color-text-light: $foreground-normal;
     --color-text-lighter: $foreground-inactive;

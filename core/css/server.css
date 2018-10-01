@@ -18,8 +18,10 @@
 */
 /* Set the nextcloud color variables */
 :root {
+  --color-primary: #1d99f3;
   --color-main-background: #31363b;
   --color-background-dark: rgba(61, 174, 233, 0.25);
+  --color-background-darker: #4d4d4d;
   --color-main-text: #eff0f1;
   --color-text-light: #eff0f1;
   --color-text-lighter: #bdc3c7;
@@ -284,6 +286,10 @@ input[type="email"] + .icon-confirm:disabled {
 .icon-category-disabled,
 #newPlaylistBtn_cancel.icon-close {
   background-image: url("../img/actions/close-ns.svg"); }
+
+/* View Close --------------------------------------------------------------- */
+.icon-view-close {
+  background-image: url("../img/actions/view-close.svg"); }
 
 /* Menu --------------------------------------------------------------------- */
 .icon-menu {
@@ -928,6 +934,10 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   border: 1px solid #706f6e; }
   .menu::after {
     border-bottom-color: #706f6e; }
+  .menu li {
+    color: #eff0f1; }
+    .menu li:hover {
+      background-color: rgba(61, 174, 233, 0.25); }
 
 #contactsmenu .menutoggle:hover {
   opacity: 1; }
@@ -945,11 +955,6 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
     border-bottom-color: #706f6e; }
   .popovermenu li > a {
     color: #eff0f1; }
-  .popovermenu li .menuitem {
-    color: #bdc3c7;
-    opacity: 0.7; }
-    .popovermenu li .menuitem:hover {
-      color: #fcfcfc; }
 
 .bubble, .app-navigation-entry-menu {
   background-color: #31363b;
@@ -962,11 +967,6 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   filter: none; }
   .bubble::after, .app-navigation-entry-menu::after {
     border-bottom-color: #706f6e; }
-
-.bubble li {
-  color: #eff0f1; }
-  .bubble li:hover {
-    background-color: rgba(61, 174, 233, 0.25); }
 
 #header .header-left > nav > .menu,
 #header .header-right > div > .menu {
@@ -1416,9 +1416,10 @@ ul.multiselectoptions {
     opacity: 1; }
     #app-navigation ul > li > a:hover, #app-navigation ul > li > a:hover + div.app-navigation-entry-utils, #app-navigation li > a:hover, #app-navigation li > a:hover + div.app-navigation-entry-utils {
       background-color: rgba(61, 174, 233, 0.25); }
+    #app-navigation ul > li > a.active:hover, #app-navigation li > a.active:hover {
+      background-color: #3daee9; }
   #app-navigation .active {
-    background-color: #3daee9;
-    box-shadow: inset 2px 0 #1d99f3; }
+    background-color: #3daee9; }
     #app-navigation .active > a {
       color: #fcfcfc;
       font-weight: 600; }
@@ -1435,12 +1436,6 @@ ul.multiselectoptions {
     background-color: #232629 !important; }
   #app-navigation select {
     background-color: #31363b !important; }
-  #app-navigation > ul > li:focus, #app-navigation > ul > li:hover, #app-navigation > ul > li.active, #app-navigation > ul > li a.selected {
-    opacity: 1;
-    box-shadow: inset 2px 0 #1d99f3; }
-    #app-navigation > ul > li:focus > a, #app-navigation > ul > li:hover > a, #app-navigation > ul > li.active > a, #app-navigation > ul > li a.selected > a {
-      opacity: 1;
-      box-shadow: inset 2px 0 #1d99f3; }
   #app-navigation .app-navigation-entry-edit,
   #app-navigation .app-navigation-entry-deleted {
     background-color: #31363b; }
@@ -1449,11 +1444,6 @@ ul.multiselectoptions {
   color: #eff0f1; }
   .app-navigation-entry-menu li > button:hover {
     background-color: rgba(61, 174, 233, 0.25); }
-
-.nav-trashbin {
-  background-color: #31363b;
-  border-color: #706f6e;
-  border-right: 1px solid #706f6e; }
 
 /* App Sidebar -------------------------------------------------------------- */
 #app-sidebar {
@@ -1525,7 +1515,7 @@ ul.multiselectoptions {
 
 .activitymessage {
   color: #eff0f1;
-  opacity: 0.6; }
+  opacity: 0.7; }
 
 .box .activitytime {
   color: #bdc3c7; }
@@ -1781,8 +1771,6 @@ td.date, td.date > span {
     color: #fcfcfc; }
 #fileList tr td.selection > .selectCheckBox + label::before {
   opacity: 0.5; }
-#fileList .fileActionsMenu a.action:hover {
-  background-color: rgba(61, 174, 233, 0.25); }
 
 #controls .button.view-switcher {
   background-color: #31363b;

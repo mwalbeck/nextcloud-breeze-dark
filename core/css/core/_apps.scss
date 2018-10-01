@@ -41,12 +41,14 @@
 		&:hover, &:hover + div.app-navigation-entry-utils {
 			background-color: $background-active-hover;
 		}
-	}
 
+		&.active:hover {
+			background-color: $background-active;
+		}
+	}
 
 	.active {
 		background-color: $background-active;
-		box-shadow: inset 2px 0 $background-active-alternate;
 
 		> a {
 			color: $foreground-active;
@@ -84,22 +86,6 @@
 		background-color: $background-normal !important;
 	}
 
-	& > ul > li {
-
-		&:focus,
-		&:hover,
-		&.active,
-		& a.selected {
-			opacity: 1;
-			box-shadow: inset 2px 0 $background-active-alternate;
-
-			& > a {
-				opacity: 1;
-				box-shadow: inset 2px 0 $background-active-alternate;
-			}
-		}
-	}
-
 	.app-navigation-entry-edit,
 	.app-navigation-entry-deleted {
 		background-color: $background-normal;
@@ -115,12 +101,6 @@
 			background-color: $background-active-hover;
 		}
 	}
-}
-
-.nav-trashbin {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-	border-right: 1px solid $decoration-normal;
 }
 
 /* App Sidebar -------------------------------------------------------------- */
