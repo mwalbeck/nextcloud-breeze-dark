@@ -1389,7 +1389,6 @@ ul.multiselectoptions {
     border-bottom-right-radius: 5px; } }
 /* App menu ----------------------------------------------------------------- */
 #appmenu li span {
-  background-color: #31363b;
   border: 1px solid #706f6e;
   color: #eff0f1;
   -webkit-filter: none;
@@ -1398,47 +1397,29 @@ ul.multiselectoptions {
   -o-filter: none;
   filter: none; }
 #appmenu li a.active::before {
-  border-bottom-color: transparent; }
+  border-bottom-color: #31363b; }
 #appmenu li:hover a::before {
   border-bottom-color: #706f6e; }
 
-/* Content ------------------------------------------------------------------ */
-#app-content-header {
-  background-color: #3daee9;
-  box-shadow: none; }
-
 /* App Navigation ----------------------------------------------------------- */
-#app-navigation {
-  background-color: #31363b;
-  border-color: #706f6e; }
-  #app-navigation ul > li > a, #app-navigation li > a {
-    color: #eff0f1;
-    opacity: 1; }
-    #app-navigation ul > li > a:hover, #app-navigation ul > li > a:hover + div.app-navigation-entry-utils, #app-navigation li > a:hover, #app-navigation li > a:hover + div.app-navigation-entry-utils {
-      background-color: rgba(61, 174, 233, 0.25); }
-    #app-navigation ul > li > a.active:hover, #app-navigation li > a.active:hover {
-      background-color: #3daee9; }
-  #app-navigation .active {
-    background-color: #3daee9; }
-    #app-navigation .active > a {
-      color: #fcfcfc;
-      font-weight: 600; }
-  #app-navigation .app-external {
-    color: #eff0f1; }
-  #app-navigation .add-new button {
-    color: #eff0f1 !important; }
-  #app-navigation .add-new div.heading:hover {
+#app-navigation ul > li > a, #app-navigation li > a {
+  opacity: 1; }
+  #app-navigation ul > li > a:hover, #app-navigation ul > li > a:hover + div.app-navigation-entry-utils, #app-navigation li > a:hover, #app-navigation li > a:hover + div.app-navigation-entry-utils {
     background-color: rgba(61, 174, 233, 0.25); }
-  #app-navigation .add-new-popup {
-    box-shadow: none;
-    border-color: #3daee9; }
-  #app-navigation input {
-    background-color: #232629 !important; }
-  #app-navigation select {
-    background-color: #31363b !important; }
-  #app-navigation .app-navigation-entry-edit,
-  #app-navigation .app-navigation-entry-deleted {
-    background-color: #31363b; }
+  #app-navigation ul > li > a.active:hover, #app-navigation li > a.active:hover {
+    background-color: #3daee9; }
+#app-navigation .active {
+  background-color: #3daee9; }
+  #app-navigation .active > a {
+    color: #fcfcfc;
+    font-weight: 600; }
+#app-navigation input {
+  background-color: #232629 !important; }
+#app-navigation select {
+  background-color: #31363b !important; }
+#app-navigation .app-navigation-entry-edit,
+#app-navigation .app-navigation-entry-deleted {
+  background-color: #31363b; }
 
 .app-navigation-entry-menu li > button {
   color: #eff0f1; }
@@ -1485,33 +1466,10 @@ ul.multiselectoptions {
   color: #eff0f1; }
 
 /* App Settings ------------------------------------------------------------- */
-#app-navigation #app-settings {
-  background-color: #31363b;
-  border-color: #706f6e; }
-
-#app-settings-header {
-  border-color: #706f6e;
-  background-color: #31363b; }
-
-#app-settings-content {
-  border-color: #706f6e;
-  background-color: #31363b; }
-  #app-settings-content a {
-    color: #2980b9; }
-  #app-settings-content .info-text {
-    color: #eff0f1; }
-
 .settings-button {
-  background-color: #31363b;
-  color: #eff0f1;
   opacity: 1; }
-  .settings-button.opened {
-    background-color: #31363b; }
   .settings-button:hover {
     background-color: rgba(61, 174, 233, 0.25); }
-  .settings-button:focus, .settings-button:active {
-    background-color: #3daee9;
-    color: #fcfcfc; }
 
 .activitymessage {
   color: #eff0f1;

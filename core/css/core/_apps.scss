@@ -2,7 +2,6 @@
 
 #appmenu li {
 	span {
-		background-color: $background-normal;
 		border: 1px solid $decoration-normal;
 		color: $foreground-normal;
 		-webkit-filter: none;
@@ -13,7 +12,7 @@
 	}
 
 	a.active::before {
-		border-bottom-color: transparent;
+		border-bottom-color: $background-normal;
 	}
 
 	&:hover a::before {
@@ -21,21 +20,11 @@
 	}
 }
 
-/* Content ------------------------------------------------------------------ */
-
-#app-content-header {
-	background-color: $background-active;
-	box-shadow: none;
-}
-
 /* App Navigation ----------------------------------------------------------- */
 
 #app-navigation {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
 
 	ul > li > a, li > a {
-		color: $foreground-normal;
 		opacity: 1;
 
 		&:hover, &:hover + div.app-navigation-entry-utils {
@@ -54,28 +43,6 @@
 			color: $foreground-active;
 			font-weight: 600;
 		}
-	}
-
-	.app-external {
-		color: $foreground-normal;
-	}
-
-	// Not sure this is still used
-	.add-new {
-		button {
-			color: $foreground-normal !important;
-		}
-
-		div.heading {
-			&:hover {
-				background-color: $background-active-hover;
-			}
-		}
-	}
-
-	.add-new-popup {
-		box-shadow: none;
-		border-color: $decoration-active;
 	}
 
 	input {
@@ -175,44 +142,10 @@
 
 /* App Settings ------------------------------------------------------------- */
 
-#app-navigation #app-settings {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-}
-
-#app-settings-header {
-	border-color: $decoration-normal;
-	background-color: $background-normal;
-}
-
-#app-settings-content {
-	border-color: $decoration-normal;
-	background-color: $background-normal;
-
-	a {
-		color: $foreground-link;
-	}
-
-	.info-text {
-		color: $foreground-normal;
-	}
-}
-
 .settings-button {
-	background-color: $background-normal;
-	color: $foreground-normal;
 	opacity: 1;
-
-	&.opened {
-		background-color: $background-normal;
-	}
 
 	&:hover {
 		background-color: $background-active-hover;
-	}
-
-	&:focus, &:active {
-		background-color: $background-active;
-		color: $foreground-active;
 	}
 }
