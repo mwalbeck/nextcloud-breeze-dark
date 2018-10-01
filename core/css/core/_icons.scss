@@ -166,8 +166,7 @@
 
 /* Toggle Filelist ---------------------------------------------------------- */
 
-.nav-icon-sessions,
-.nav-icon-security {
+.nav-icon-sessions {
 	background-image: url('../img/actions/toggle-filelist.svg?v=1');
 }
 
@@ -211,6 +210,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 
 /* Files -------------------------------------------------------------------- */
 
+.icon-category-files,
+.icon-files-dark,
 .nav-icon-files {
 	background-image: url('../img/places/files.svg?v=1');
 }
@@ -511,12 +512,6 @@ select {
 // Customization
 .icon-category-customization {
 	background-image: url('../img/categories/customization.svg?v=1');
-}
-
-// Files
-.icon-category-files,
-.icon-files-dark {
-	background-image: url('../img/categories/files.svg?v=1');
 }
 
 // Games

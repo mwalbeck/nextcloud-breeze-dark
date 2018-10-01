@@ -159,8 +159,7 @@ input, label {
   background-image: url("../img/actions/toggle.svg?v=1"); }
 
 /* Toggle Filelist ---------------------------------------------------------- */
-.nav-icon-sessions,
-.nav-icon-security {
+.nav-icon-sessions {
   background-image: url("../img/actions/toggle-filelist.svg?v=1"); }
 
 /* Toggle Pictures ---------------------------------------------------------- */
@@ -192,6 +191,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
   background-image: url("../img/actions/more.svg?v=1"); }
 
 /* Files -------------------------------------------------------------------- */
+.icon-category-files,
+.icon-files-dark,
 .nav-icon-files {
   background-image: url("../img/places/files.svg?v=1"); }
 
@@ -401,10 +402,6 @@ select {
 
 .icon-category-customization {
   background-image: url("../img/categories/customization.svg?v=1"); }
-
-.icon-category-files,
-.icon-files-dark {
-  background-image: url("../img/categories/files.svg?v=1"); }
 
 .icon-category-games {
   background-image: url("../img/categories/games.svg?v=1"); }
