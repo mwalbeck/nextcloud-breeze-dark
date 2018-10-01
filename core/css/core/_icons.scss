@@ -202,6 +202,8 @@
 /* More --------------------------------------------------------------------- */
 
 .icon-more,
+.icon-more-white,
+.icon-more.icon-white,
 #app-navigation .app-navigation-entry-utils 
 .app-navigation-entry-utils-menu-button 
 button:not([class^="icon-"]):not([class*=" icon-"]) {
@@ -284,7 +286,10 @@ select {
 
 /* Confirm ------------------------------------------------------------------ */
 
-.icon-confirm {
+.icon-confirm,
+input[type="text"] + .icon-confirm:disabled, 
+input[type="password"] + .icon-confirm:disabled, 
+input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/confirm.svg?v=2');
 }
 
@@ -500,6 +505,12 @@ select {
 .icon-screen-off,
 .icon-screen-off-white {
 	background-image: url('../img/actions/screen-off.svg');
+}
+
+/* Address ------------------------------------------------------------------ */
+
+.icon-address {
+	background-image: url('../img/actions/address.svg');
 }
 
 /* App Categories ----------------------------------------------------------- */
