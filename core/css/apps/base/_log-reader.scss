@@ -2,13 +2,13 @@
 
 #logreader-root table {
 
-	tbody tr td {
-		border-bottom-color: $decoration-normal;
-		background-color: $background-normal !important;
-	}
-
 	thead th {
 		color: $foreground-normal;
 		border-bottom-color: $decoration-normal;
+	}
+
+	tbody tr td {
+		border-bottom-color: $decoration-normal;
+		background-color: $background-normal !important;
 	}
 }

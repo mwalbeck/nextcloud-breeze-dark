@@ -1675,12 +1675,12 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   border: none; }
 
 /* Log reader --------------------------------------------------------------- */
-#logreader-root table tbody tr td {
-  border-bottom-color: #706f6e;
-  background-color: #31363b !important; }
 #logreader-root table thead th {
   color: #eff0f1;
   border-bottom-color: #706f6e; }
+#logreader-root table tbody tr td {
+  border-bottom-color: #706f6e;
+  background-color: #31363b !important; }
 
 #explore .category {
   background-color: #1d99f3; }
