@@ -6,48 +6,8 @@
 	background-color: $background-dark;
 }
 
-#controls .button {
-	&.sorting {
-		padding: 8px 5px;
-
-		&.active-button {
-			background-color: $background-active;
-			border-color: $decoration-active;
-			color: $foreground-normal;
-
-			&:hover {
-				background-color: $background-active;
-				border-color: $decoration-active;
-				color: $foreground-normal;
-
-			}
-		}
-	}
-
-	&.left-switch-button {
-		border-color: $decoration-normal;
-
-		&:hover {
-			border-color: $decoration-active;
-		}
-	}
-
-	&.view-switcher.gallery {
-		background-color: $background-normal;
-		color: $foreground-normal;
-		border: 1px solid $decoration-normal;
-
-		&:hover {
-			background-color: $background-normal;
-			color: $foreground-normal;
-			border-color: $decoration-active
-		}
-
-		&:focus, &:active {
-			background-color: $background-active;
-			border-color: $decoration-active;
-		}
-	}
+#controls .button.sorting {
+	padding: 8px 5px;
 }
 
 #dropdown {
@@ -60,17 +20,10 @@
 	border-color: $decoration-normal;
 }
 
-#slideshow {
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota) {
 
-	input[type="button"]:not(:disabled):not(.primary):not(#quota) {
-
-		&:hover {
-			border: none;
-		}
-	
-		&:focus, &:active, &.active {
-			background-color: transparent;
-			border: none;
-		}
+	&:hover, &:focus, &:active, &.active {
+		background-color: transparent;
+		border: none;
 	}
 }

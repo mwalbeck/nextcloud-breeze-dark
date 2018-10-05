@@ -1727,29 +1727,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 
 #controls .button.sorting {
   padding: 8px 5px; }
-  #controls .button.sorting.active-button {
-    background-color: #3daee9;
-    border-color: #3daee9;
-    color: #eff0f1; }
-    #controls .button.sorting.active-button:hover {
-      background-color: #3daee9;
-      border-color: #3daee9;
-      color: #eff0f1; }
-#controls .button.left-switch-button {
-  border-color: #706f6e; }
-  #controls .button.left-switch-button:hover {
-    border-color: #3daee9; }
-#controls .button.view-switcher.gallery {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e; }
-  #controls .button.view-switcher.gallery:hover {
-    background-color: #31363b;
-    color: #eff0f1;
-    border-color: #3daee9; }
-  #controls .button.view-switcher.gallery:focus, #controls .button.view-switcher.gallery:active {
-    background-color: #3daee9;
-    border-color: #3daee9; }
 
 #dropdown {
   background: #31363b;
@@ -1759,9 +1736,7 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 #link {
   border-color: #706f6e; }
 
-#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):hover {
-  border: none; }
-#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).active {
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):hover, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):focus, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota):active, #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota).active {
   background-color: transparent;
   border: none; }
 
