@@ -1,7 +1,7 @@
 #explore {
 	
 	.category {
-		background-color: $background-active;
+		background-color: $background-active-alternate;
 	}
 
 	.grid-item {
@@ -14,29 +14,34 @@
 }
 
 .app-news #app-navigation {
+	
+	.add-new .heading:hover {
+		background-color: $background-active-hover;
+	}
 
-	li.folder {
-		border-right: 1px solid $decoration-normal;
-		background: $background-normal;
+	.add-new-popup {
+		box-shadow: none;
+		border-color: $decoration-normal;
+		width: 100%;
 	}
 
 	> ul > li > a,
 	> ul > li > ul > li > a {
-		color: $foreground-normal;
 		opacity: 1;
+	}
+
+	#app-settings-content a {
+		color: $foreground-link;
 	}
 }
 
 .app-news #app-content {
-	border-top: 1px solid $decoration-normal;
 
 	.item {
-		background-color: $background-dark;
 		border-color: $decoration-normal;
 	}
 
 	.item.active {
-		background-color: $background-dark;
 		background-image: none;
 	}
 
@@ -48,21 +53,12 @@
 		color: $foreground-normal;
 	}
 
-	.subtitle {
+	.subtitle, .author {
 		color: $foreground-inactive;
-	}
 
-	.utils .title h1 a {
-		color: $foreground-active;
-	}
-
-	.read .utils .title h1 a {
-		color: $foreground-inactive;
-	}
-
-	.finished-auto-paging #articles::after {
-		background-color: $background-dark;
-		background-image: none;
+		a {
+			color: $foreground-link;
+		}
 	}
 
     .no-feeds-available {
@@ -97,5 +93,14 @@
 		.title .intro {
 			color: $foreground-background;
 		}
+	}
+
+	// Heading styling for compact view
+	.utils .title h1 a {
+		color: $foreground-active;
+	}
+
+	.read .utils .title h1 a {
+		color: $foreground-normal;
 	}
 }
