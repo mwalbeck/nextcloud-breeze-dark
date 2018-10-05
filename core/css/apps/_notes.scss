@@ -4,47 +4,15 @@
 		opacity: 1;
 
 		.note-word-count {
-			opacity: 0.6;
+			opacity: 0.7;
 		}
 
 		.note-meta-right {
-			opacity: 0.6;
+			opacity: 0.7;
 
 			&:hover, &:active, &:focus {
 				opacity: 1;
 			}
-		}
-	}
-
-	&:-webkit-full-screen {
-		border-top: none;
-
-		#app-content-container {
-			background-color: $background-normal;
-		}
-	}
-
-	&:-moz-full-screen {
-		border-top: none;
-
-		#app-content-container {
-			background-color: $background-normal;
-		}
-	}
-
-	&:-ms-fullscreen {
-		border-top: none;
-
-		#app-content-container {
-			background-color: $background-normal;
-		}
-	}
-
-	&:fullscreen {
-		border-top: none;
-
-		#app-content-container {
-			background-color: $background-normal;
 		}
 	}
 }
@@ -53,29 +21,11 @@
 	color: $foreground-normal;
 }
 
-.note-search input {
-	border: none;
-	background-color: transparent;
-	color: $foreground-normal;
-
-	&:active, &:focus, &:hover {
-		border-bottom: 1px solid $decoration-active;
-		color: $foreground-active;
-	}
-}
-
 .CodeMirror {
 	background-color: $background-normal;
 	color: $foreground-normal;
-	border-color: $decoration-normal;
 }
 
 .CodeMirror-cursor {
 	border-left-color: $foreground-markdown-marker;
-}
-
-#app-navigation .active > .utils {
-	.icon-delete:hover, .icon-star:hover {
-		opacity: 0.7;
-	}
 }

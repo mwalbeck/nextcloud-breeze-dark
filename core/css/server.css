@@ -64,7 +64,6 @@ input, label {
   opacity: 0.5; }
 
 /* Starred ------------------------------------------------------------------ */
-.starred,
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus {
@@ -2120,49 +2119,21 @@ textarea.message-body {
 .app-notes #app-content .note-meta {
   opacity: 1; }
   .app-notes #app-content .note-meta .note-word-count {
-    opacity: 0.6; }
+    opacity: 0.7; }
   .app-notes #app-content .note-meta .note-meta-right {
-    opacity: 0.6; }
+    opacity: 0.7; }
     .app-notes #app-content .note-meta .note-meta-right:hover, .app-notes #app-content .note-meta .note-meta-right:active, .app-notes #app-content .note-meta .note-meta-right:focus {
       opacity: 1; }
-.app-notes #app-content:-webkit-full-screen {
-  border-top: none; }
-  .app-notes #app-content:-webkit-full-screen #app-content-container {
-    background-color: #31363b; }
-.app-notes #app-content:-moz-full-screen {
-  border-top: none; }
-  .app-notes #app-content:-moz-full-screen #app-content-container {
-    background-color: #31363b; }
-.app-notes #app-content:-ms-fullscreen {
-  border-top: none; }
-  .app-notes #app-content:-ms-fullscreen #app-content-container {
-    background-color: #31363b; }
-.app-notes #app-content:fullscreen {
-  border-top: none; }
-  .app-notes #app-content:fullscreen #app-content-container {
-    background-color: #31363b; }
 
 #app-navigation li .nav-entry {
   color: #eff0f1; }
 
-.note-search input {
-  border: none;
-  background-color: transparent;
-  color: #eff0f1; }
-  .note-search input:active, .note-search input:focus, .note-search input:hover {
-    border-bottom: 1px solid #3daee9;
-    color: #fcfcfc; }
-
 .CodeMirror {
   background-color: #31363b;
-  color: #eff0f1;
-  border-color: #706f6e; }
+  color: #eff0f1; }
 
 .CodeMirror-cursor {
   border-left-color: rgba(189, 195, 199, 0.4); }
-
-#app-navigation .active > .utils .icon-delete:hover, #app-navigation .active > .utils .icon-star:hover {
-  opacity: 0.7; }
 
 .app-passman #app-navigation .taginput:hover {
   background: none; }
