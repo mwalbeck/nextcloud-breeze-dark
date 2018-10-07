@@ -1485,47 +1485,31 @@ ul.multiselectoptions {
 .activity-icon {
   opacity: 0.7; }
 
-.app-calendar #app-content {
-  overflow-y: hidden;
-  padding-right: 0 !important; }
 .app-calendar #app-navigation .active {
   background-color: inherit; }
 .app-calendar #app-navigation .new-entity {
-  color: #eff0f1;
   opacity: 0.7; }
   .app-calendar #app-navigation .new-entity:hover {
     background-color: rgba(61, 174, 233, 0.25);
-    color: #eff0f1;
     opacity: 1; }
-.app-calendar #app-navigation .app-navigation-entry-menu {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
-  filter: none; }
-  .app-calendar #app-navigation .app-navigation-entry-menu::after {
-    border-bottom-color: #706f6e; }
-.app-calendar #app-navigation .app-navigation-entry-edit,
-.app-calendar #app-navigation .app-navigation-entry-deleted {
-  background-color: #31363b; }
 .app-calendar #app-navigation .togglebuttons .button.active {
-  color: #eff0f1;
-  box-shadow: none; }
-.app-calendar #app-navigation #datepickercontainer {
-  box-shadow: none; }
-  .app-calendar #app-navigation #datepickercontainer #datepicker table td button {
-    box-shadow: none;
-    border-color: #706f6e; }
-    .app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
-      background-color: rgba(61, 174, 233, 0.25);
-      border-radius: 50%; }
-  .app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-today {
-    background-color: #1d99f3; }
-  .app-calendar #app-navigation #datepickercontainer .datepicker-heading .button {
-    background-color: #31363b; }
+  color: #eff0f1; }
+.app-calendar #app-navigation #datepickercontainer .datepicker-heading .button {
+  background-color: #31363b; }
+.app-calendar #app-navigation #datepickercontainer #datepicker table td button:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+  border-radius: 50%; }
+.app-calendar #app-navigation #datepickercontainer #datepicker table td .text-muted {
+  opacity: 0.5; }
+.app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-today {
+  background-color: #4d4d4d;
+  border-radius: 50%; }
+.app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-weekend button {
+  color: #3daee9; }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-weekend button .text-muted {
+    color: #3daee9; }
+  .app-calendar #app-navigation #datepickercontainer #datepicker table td.highlight-weekend button:hover {
+    color: #fcfcfc; }
 
 .fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
   border-color: #706f6e; }
@@ -1535,15 +1519,14 @@ ul.multiselectoptions {
 #fullcalendar {
   background-color: #232629; }
   #fullcalendar table thead th {
-    background-color: #232629; }
+    background-color: #31363b; }
   #fullcalendar table tbody tr td.fc-other-month {
     background-color: #31363b; }
   #fullcalendar.fc-unthemed tr td {
     border-top-color: #706f6e; }
   #fullcalendar.fc-unthemed .fc-today {
     background-color: #3daee9 !important;
-    color: #fcfcfc;
-    border-color: #706f6e; }
+    color: #fcfcfc; }
     #fullcalendar.fc-unthemed .fc-today span.fc-day-number {
       font-weight: 600; }
   #fullcalendar td.fc-day.fc-sat, #fullcalendar td.fc-day.fc-sun {
@@ -1569,17 +1552,10 @@ ul.multiselectoptions {
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
   padding-right: 6px; }
 
-#app-settings .settings-fieldset .settings-upload {
-  background-color: #31363b;
-  border: 1px solid #706f6e; }
-
 .modal-open .modal.popover, .modal-open .modal.import {
   background: #31363b;
   box-shadow: none;
   border: 1px solid #706f6e; }
-
-.modal-dialog .modal-content #app-sidebar {
-  border: none; }
 
 .advanced .advanced--input {
   background: #232629 !important; }

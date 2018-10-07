@@ -1,10 +1,5 @@
 .app-calendar {
 	
-	#app-content {
-		overflow-y: hidden;
-		padding-right: 0 !important;
-	}
-
 	#app-navigation {
 
 		.active {
@@ -12,68 +7,53 @@
 		}
 
 		.new-entity {
-			color: $foreground-normal;
 			opacity: 0.7;
 
 			&:hover {
 				background-color: $background-active-hover;
-				color: $foreground-normal;
 				opacity: 1;
 			}
-		}
-
-		.app-navigation-entry-menu {
-			background-color: $background-normal;
-			color: $foreground-normal;
-			border: 1px solid $decoration-normal;
-			-webkit-filter: none;
-			-moz-filter: none;
-			-ms-filter: none;
-			-o-filter: none;
-			filter: none;
-
-			&::after {
-				border-bottom-color: $decoration-normal;
-			}
-		}
-
-		.app-navigation-entry-edit,
-		.app-navigation-entry-deleted {
-			background-color: $background-normal;
 		}
 
 		.togglebuttons {
 
 			.button.active {
 				color: $foreground-normal;
-				box-shadow: none;
 			}
 		}
 
 		#datepickercontainer {
-			box-shadow: none;
+
+			.datepicker-heading .button {
+				background-color: $background-normal;
+			}
 
 			#datepicker table td {
 				
-				button {
-					box-shadow: none;
-					border-color: $decoration-normal;
+				button:hover {
+					background-color: $background-active-hover;
+					border-radius: 50%;
+				}
 
-					&:hover {
-						background-color: $background-active-hover;
-						border-radius: 50%;
-					}
+				.text-muted {
+					opacity: 0.5;
 				}
 
 				&.highlight-today {
-					background-color: $background-active-alternate;
+					background-color: $background-alternate;
+					border-radius: 50%;
 				}
-			}
 
-			.datepicker-heading {
+				&.highlight-weekend button {
+					color: $decoration-active;
 
-				.button {
-					background-color: $background-normal;
+					.text-muted {
+						color: $decoration-active;
+					}
+
+					&:hover {
+						color: $foreground-active;
+					}
 				}
 			}
 		}
@@ -93,9 +73,9 @@
 
 #fullcalendar {
 	background-color: $background-dark;
-
+	
 	table thead th {
-		background-color: $background-dark;
+		background-color: $background-normal;
 	}
 
 	table tbody tr td.fc-other-month {
@@ -111,7 +91,6 @@
 		.fc-today {
 			background-color: $background-active !important;
 			color: $foreground-active;
-			border-color: $decoration-normal;
 
 			span.fc-day-number {
 				font-weight: 600;
@@ -152,11 +131,6 @@
 	padding-right: 6px;
 }
 
-#app-settings .settings-fieldset .settings-upload {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-}
-
 .modal-open {
 	
 	.modal.popover, .modal.import {
@@ -164,10 +138,6 @@
 		box-shadow: none;
 		border: 1px solid $decoration-normal;
 	}
-}
-
-.modal-dialog .modal-content #app-sidebar {
-	border: none;
 }
 
 .advanced {
