@@ -821,3 +821,8 @@ a.impersonate img.svg {
 		}
 	}
 }
+
+// Annoucement Center
+.app-announcementcenter #app-content .section span img {
+	filter: invert(95%);
+}
