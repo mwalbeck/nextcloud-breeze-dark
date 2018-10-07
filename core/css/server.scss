@@ -24,6 +24,7 @@
 @import 'apps/base/log-reader';
 @import 'apps/base/news';
 @import 'apps/base/notes';
+@import 'apps/base/notifications';
 @import 'apps/base/text-editor';
 @import 'apps/base/two-factor';
 // Extra
@@ -39,7 +40,6 @@
 @import 'apps/extra/ldap';
 @import 'apps/extra/mail';
 @import 'apps/extra/music';
-@import 'apps/extra/notifications';
 @import 'apps/extra/passman';
 @import 'apps/extra/passwords';
 @import 'apps/extra/phone-sync';
