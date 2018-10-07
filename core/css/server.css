@@ -588,7 +588,8 @@ a.impersonate img.svg {
 .app-settings #app-navigation img[src$="/img/app-dark.svg"] {
   filter: invert(95%); }
 .app-settings #app-navigation img[src$="/settings/img/password.svg"],
-.app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"] {
+.app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
+.app-settings #app-navigation img[src$="/apps/external/img/external-dark.svg"] {
   filter: invert(95%); }
 .app-settings #apps-list .app-image image,
 .app-settings #app-sidebar #app-details-view image.app-icon {
@@ -1610,6 +1611,9 @@ ul.multiselectoptions {
     background: #31363b; }
   .app-contacts #importscreen-progress {
     background-color: #232629; }
+
+#external ul.icon-list .img {
+  background-color: #31363b; }
 
 /* File Access Control ------------------------------------------------------ */
 .workflowengine .operation {

@@ -794,7 +794,8 @@ a.impersonate img.svg {
 
 	// In admin settings
 	#app-navigation img[src$="/settings/img/password.svg"],
-	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"] {
+	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
+	#app-navigation img[src$="/apps/external/img/external-dark.svg"] {
 		filter: invert(95%);
 	}
 
