@@ -1764,12 +1764,7 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
     color: #2980b9; }
 
 .notification-container .notification-time {
-  opacity: 1;
-  color: #bdc3c7; }
-.notification-container .notification {
-  color: #eff0f1; }
-.notification-container a {
-  color: #2980b9; }
+  opacity: 0.7; }
 
 .notification:not(:last-child) {
   border-bottom: 1px solid #706f6e; }
