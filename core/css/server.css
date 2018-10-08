@@ -2031,10 +2031,9 @@ div.circle {
 .app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filesize, .app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filedate {
   color: #bdc3c7; }
 
-#rightClickMenu li.action-0:hover {
+/* Files Right Click -------------------------------------------------------- */
+#rightClickMenu li:hover {
   background-color: rgba(61, 174, 233, 0.25); }
-#rightClickMenu li.action-0 > a:hover {
-  background-color: unset; }
 
 .app-flowupload hr {
   border-top-color: #706f6e;

@@ -1,13 +1,5 @@
-#rightClickMenu {
-    
-    li.action-0 {
-        
-        &:hover {
-            background-color: $background-active-hover;
-        }
+/* Files Right Click -------------------------------------------------------- */
 
-        > a:hover {
-            background-color: unset;
-        }
-    }
+#rightClickMenu li:hover {
+    background-color: $background-active-hover;
 }
