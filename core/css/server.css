@@ -902,6 +902,11 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 #body-user #header, #body-settings #header, #body-public #header {
   background-color: #232629; }
 
+#header .header-left > nav > #navigation {
+  filter: none; }
+  #header .header-left > nav > #navigation::after {
+    border-bottom-color: #706f6e; }
+
 /* Search ------------------------------------------------------------------- */
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
