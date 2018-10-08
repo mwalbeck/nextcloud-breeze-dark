@@ -2075,6 +2075,7 @@ div.circle {
   background-color: #31363b;
   border-color: #706f6e; }
 
+/* LDAP --------------------------------------------------------------------- */
 #ldapSettings {
   background-color: #31363b; }
   #ldapSettings > fieldset {
@@ -2082,8 +2083,7 @@ div.circle {
   #ldapSettings ul.ui-tabs-nav .ui-tabs-active,
   #ldapSettings ul.ui-tabs-nav .ui-tabs-active > a {
     background-color: #232629;
-    color: #fcfcfc;
-    border-bottom-color: #3daee9; }
+    color: #fcfcfc; }
   #ldapSettings div.ui-accordion-content {
     background: #31363b; }
   #ldapSettings .ldap_grey {
