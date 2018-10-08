@@ -28,8 +28,12 @@ The theme is written with [Sass](http://sass-lang.com/).
 Please have a look at the CONTRIBUTING.md for details on how to contribute.
 
 ## Donations
-If you like the theme and would like to donate you can use the following cryptocurrency addresses:
+If you like the theme and would like to donate you can use the following ways:
 
+**PayPal:**  
+https://www.paypal.me/magnuswalbeck
+
+**Crypto:**  
 BTC: 1Pp3UG9k6ZkwrVXrhr9kwwvjwDk5Vchu3f  
 BCH: 1C7dQLqMU6Kucxx9GcFDMnTTTsBpeNT9vo  
 LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx

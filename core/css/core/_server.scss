@@ -58,7 +58,13 @@
 	background-color: $background-dark;
 }
 
+#header .header-left > nav > #navigation {
+	filter: none;
 
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
 
 /* Search ------------------------------------------------------------------- */
 

@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 14.0.0
+* Version: 14.0.1
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -11,43 +11,43 @@
 @import 'core/style';
 @import 'core/server';
 @import 'core/apps';
-// Base
-@import 'apps/base/activity';
-@import 'apps/base/announcement-center';
-@import 'apps/base/calendar';
-@import 'apps/base/contacts';
-@import 'apps/base/external-sites';
-@import 'apps/base/file-access-control';
-@import 'apps/base/files';
-@import 'apps/base/first-run-wizard';
-@import 'apps/base/gallery';
-@import 'apps/base/log-reader';
-@import 'apps/base/news';
-@import 'apps/base/notes';
-@import 'apps/base/notifications';
-@import 'apps/base/text-editor';
-@import 'apps/base/two-factor';
-// Extra
-
-@import 'apps/extra/audio-player';
-@import 'apps/extra/bookmarks';
-@import 'apps/extra/circles';
-@import 'apps/extra/deck';
-@import 'apps/extra/files-rightclick';
-@import 'apps/extra/flow-upload';
-@import 'apps/extra/fulltextsearch';
-@import 'apps/extra/group-folders';
-@import 'apps/extra/ldap';
-@import 'apps/extra/mail';
-@import 'apps/extra/music';
-@import 'apps/extra/passman';
-@import 'apps/extra/passwords';
-@import 'apps/extra/phone-sync';
-@import 'apps/extra/quicknotes';
-@import 'apps/extra/radio';
-@import 'apps/extra/retention';
-@import 'apps/extra/sso-saml';
-@import 'apps/extra/tasks';
-@import 'apps/extra/user-account-deletion';
-@import 'apps/extra/video-calls';
-@import 'apps/extra/weather';
+// Official
+@import 'apps/official/activity';
+@import 'apps/official/announcement-center';
+@import 'apps/official/calendar';
+@import 'apps/official/contacts';
+@import 'apps/official/external-sites';
+@import 'apps/official/file-access-control';
+@import 'apps/official/files';
+@import 'apps/official/first-run-wizard';
+@import 'apps/official/gallery';
+@import 'apps/official/ldap';
+@import 'apps/official/log-reader';
+@import 'apps/official/notes';
+@import 'apps/official/notifications';
+@import 'apps/official/retention';
+@import 'apps/official/text-editor';
+@import 'apps/official/two-factor';
+// Third party
+@import 'apps/thirdparty/audio-player';
+@import 'apps/thirdparty/bookmarks';
+@import 'apps/thirdparty/circles';
+@import 'apps/thirdparty/deck';
+@import 'apps/thirdparty/files-rightclick';
+@import 'apps/thirdparty/flow-upload';
+@import 'apps/thirdparty/fulltextsearch';
+@import 'apps/thirdparty/group-folders';
+@import 'apps/thirdparty/mail';
+@import 'apps/thirdparty/markdown-editor';
+@import 'apps/thirdparty/music';
+@import 'apps/thirdparty/news';
+@import 'apps/thirdparty/passman';
+@import 'apps/thirdparty/passwords';
+@import 'apps/thirdparty/phone-sync';
+@import 'apps/thirdparty/quicknotes';
+@import 'apps/thirdparty/radio';
+@import 'apps/thirdparty/sso-saml';
+@import 'apps/thirdparty/tasks';
+@import 'apps/thirdparty/user-account-deletion';
+@import 'apps/thirdparty/video-calls';
+@import 'apps/thirdparty/weather';
