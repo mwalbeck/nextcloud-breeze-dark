@@ -2199,6 +2199,23 @@ textarea.message-body {
   color: #eff0f1;
   opacity: 0.75; }
 
+/* Markdown editor -----------------------------------------------------------*/
+#app-content-texteditor #editor_container #editor_controls #preview_editor_controls button:hover {
+  background-color: rgba(61, 174, 233, 0.25); }
+#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview {
+  background-color: #31363b;
+  color: #eff0f1;
+  border-left: 1px solid #706f6e; }
+  #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown blockquote {
+    border-left-color: #4d4d4d;
+    color: #bdc3c7; }
+  #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown pre {
+    background-color: #31363b;
+    border-color: #706f6e; }
+  #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown code, #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown tt {
+    background-color: #31363b;
+    border-color: #706f6e; }
+
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e; }
 

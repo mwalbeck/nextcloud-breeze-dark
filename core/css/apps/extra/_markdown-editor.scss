@@ -1,0 +1,32 @@
+/* Markdown editor -----------------------------------------------------------*/
+
+#app-content-texteditor #editor_container {
+
+    #editor_controls #preview_editor_controls button:hover {
+        background-color: $background-active-hover;
+    }
+
+    #editor_wrap #preview_wrap #preview {
+        background-color: $background-normal;
+        color: $foreground-normal;
+        border-left: 1px solid $decoration-normal;
+
+        &.text-markdown {
+
+            blockquote {
+                border-left-color: $background-alternate;
+                color: $foreground-inactive;
+            }
+
+            pre {
+                background-color: $background-normal;
+                border-color: $decoration-normal
+            }
+
+            code, tt {
+                background-color: $background-normal;
+                border-color: $decoration-normal;
+            }
+        }
+    }
+}
