@@ -3411,34 +3411,6 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-tasks #app-content .sortorder-dropdown li > a {
   color: #eff0f1;
 }
-.app-tasks #app-content #app-sidebar div.content-wrapper .title {
-  background-color: #3daee9;
-  border-bottom: 1px solid #706f6e;
-  text-shadow: none;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:hover, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:active, .app-tasks #app-content #app-sidebar div.content-wrapper .title textarea:focus {
-  background: none repeat scroll 0 0 transparent !important;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .body .section {
-  background: inherit;
-  text-shadow: none;
-  border-bottom: 1px dashed #706f6e;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .body .section input[type=range] {
-  background-color: #31363b;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .body .section input[type=text] {
-  background-color: #232629;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .body .note {
-  background-color: #232629;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  border-color: #706f6e;
-}
-.app-tasks #app-content #app-sidebar div.content-wrapper .body .note .expandingArea textarea {
-  color: #eff0f1;
-}
 .app-tasks #app-content .categories-list li {
   background-color: #31363b;
   border: 1px solid #706f6e;
@@ -3460,9 +3432,40 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   border: 1px solid #706f6e;
 }
 
+#app-sidebar div.content-wrapper .title {
+  background-color: #3daee9;
+  border-bottom: 1px solid #706f6e;
+  text-shadow: none;
+}
+#app-sidebar div.content-wrapper .title textarea:hover, #app-sidebar div.content-wrapper .title textarea:active, #app-sidebar div.content-wrapper .title textarea:focus {
+  background: none repeat scroll 0 0 transparent !important;
+}
+
 #app-sidebar div.content-wrapper .title .expandable-container {
   background: #232629;
   border: 1px solid #706f6e;
+}
+
+#app-sidebar div.content-wrapper .body .section {
+  background: inherit;
+  text-shadow: none;
+  border-bottom: 1px dashed #706f6e;
+}
+#app-sidebar div.content-wrapper .body .section input[type=range] {
+  background-color: #31363b;
+}
+#app-sidebar div.content-wrapper .body .section input[type=text] {
+  background-color: #232629;
+}
+
+#app-sidebar div.content-wrapper .body .section .note {
+  background-color: #232629;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #706f6e;
+}
+#app-sidebar div.content-wrapper .body .section .note .expandingArea textarea {
+  color: #eff0f1;
 }
 
 #app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {

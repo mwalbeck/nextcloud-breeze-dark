@@ -32,43 +32,6 @@
             }
         }
 
-        #app-sidebar div.content-wrapper .title {
-            background-color: $background-active;
-            border-bottom: 1px solid $decoration-normal;
-            text-shadow: none;
-
-            textarea {
-                &:hover, &:active, &:focus {
-                    background: none repeat scroll 0 0 transparent !important;
-                }
-            }
-        }
-
-        #app-sidebar div.content-wrapper .body .section {
-            background: inherit;
-            text-shadow: none;
-            border-bottom: 1px dashed $decoration-normal;
-
-            input[type="range"] {
-                background-color: $background-normal;
-            }
-
-            input[type="text"] {
-                background-color: $background-dark;
-            }
-        }
-
-        #app-sidebar div.content-wrapper .body .note {
-            background-color: $background-dark;
-            border-width: 1px 1px 1px 1px;
-            border-style: solid;
-            border-color: $decoration-normal;
-
-            .expandingArea textarea {
-                color: $foreground-normal;
-            }
-        }
-
         .categories-list li {
             background-color: $background-normal;
             border: 1px solid $decoration-normal;
@@ -94,9 +57,46 @@
     }
 }
 
+#app-sidebar div.content-wrapper .title {
+    background-color: $background-active;
+    border-bottom: 1px solid $decoration-normal;
+    text-shadow: none;
+
+    textarea {
+        &:hover, &:active, &:focus {
+            background: none repeat scroll 0 0 transparent !important;
+        }
+    }
+}
+
 #app-sidebar div.content-wrapper .title .expandable-container {
 	background: $background-dark;
 	border: 1px solid $decoration-normal;
+}
+
+#app-sidebar div.content-wrapper .body .section {
+    background: inherit;
+    text-shadow: none;
+    border-bottom: 1px dashed $decoration-normal;
+
+    input[type="range"] {
+        background-color: $background-normal;
+    }
+
+    input[type="text"] {
+        background-color: $background-dark;
+    }
+}
+
+#app-sidebar div.content-wrapper .body .section .note {
+    background-color: $background-dark;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: $decoration-normal;
+
+    .expandingArea textarea {
+        color: $foreground-normal;
+    }
 }
 
 #app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
