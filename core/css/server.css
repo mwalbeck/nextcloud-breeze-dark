@@ -2830,16 +2830,7 @@ textarea.message-body {
   background-color: #3daee9;
 }
 
-#explore .category {
-  background-color: #1d99f3;
-}
-#explore .grid-item {
-  border-color: #706f6e;
-}
-#explore .explore-footer a {
-  color: #2980b9;
-}
-
+/* News --------------------------------------------------------------------- */
 .app-news #app-navigation .add-new .heading:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
@@ -2877,6 +2868,9 @@ textarea.message-body {
 .app-news #app-content .no-feeds-available {
   color: rgba(189, 195, 199, 0.4);
 }
+.app-news #app-content .title .intro {
+  color: rgba(189, 195, 199, 0.6);
+}
 .app-news #app-content .body {
   font-size: 15px;
 }
@@ -2897,14 +2891,24 @@ textarea.message-body {
   background-color: #31363b;
   border-color: #706f6e;
 }
-.app-news #app-content .body .title .intro {
-  color: rgba(189, 195, 199, 0.6);
+.app-news #app-content .compact .utils {
+  background-color: #31363b;
 }
-.app-news #app-content .utils .title h1 a {
+.app-news #app-content .compact .utils .title h1 a {
   color: #fcfcfc;
 }
-.app-news #app-content .read .utils .title h1 a {
+.app-news #app-content .compact .read .utils .title h1 a {
   color: #eff0f1;
+}
+
+.app-news #explore .category {
+  background-color: #1d99f3;
+}
+.app-news #explore .grid-item {
+  border-color: #706f6e;
+}
+.app-news #explore .explore-footer a {
+  color: #2980b9;
 }
 
 .app-passman #app-navigation .taginput:hover {
