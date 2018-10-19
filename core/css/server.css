@@ -3365,16 +3365,17 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 }
 
 /* Radio -------------------------------------------------------------------- */
-.app-radio #app-navigation #app-settings #volumeslider .ui-widget-header {
+.app-radio #app-navigation #app-settings #volumeslider .ui-slider-range {
   background-color: #3daee9;
 }
-.app-radio #app-navigation #app-settings #volumeslider .ui-state-focus {
+.app-radio #app-navigation #app-settings #volumeslider .ui-slider-handle.ui-state-focus {
   background-color: #31363b;
 }
 .app-radio #app-navigation #app-settings #playbutton:hover:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:active:not(:disabled):not(.primary):not(#quota), .app-radio #app-navigation #app-settings #playbutton:focus:not(:disabled):not(.primary):not(#quota) {
   border: none;
   background-color: inherit;
 }
+
 .app-radio #app-content #app-content-files #filestable tbody tr {
   background-color: #31363b !important;
 }
