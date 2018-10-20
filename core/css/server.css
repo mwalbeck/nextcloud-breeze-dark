@@ -1115,12 +1115,6 @@ ul.ui-tabs-nav .ui-tabs-active > a {
   background-color: #31363b;
 }
 
-/* Controls ----------------------------------------------------------------- */
-#controls {
-  background-color: #31363b;
-  height: unset;
-}
-
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
   color: #eff0f1;
