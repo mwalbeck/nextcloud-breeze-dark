@@ -1126,11 +1126,6 @@ div.crumb a, div.crumb > span {
   color: #eff0f1;
 }
 
-div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
-  -ms-filter: none;
-  opacity: 1;
-}
-
 div.crumb span.icon-shared, div.crumb span.icon-public {
   opacity: 0.3;
 }
