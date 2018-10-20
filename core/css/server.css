@@ -1703,18 +1703,6 @@ ul.multiselectoptions.down {
   right: -4px;
 }
 
-/* Public view for file sharing --------------------------------------------- */
-#body-public #content-wrapper #content #preview {
-  background: inherit;
-}
-#body-public footer .info, #body-public footer .info a {
-  color: #bdc3c7;
-}
-
-.directLink label {
-  opacity: 1;
-}
-
 /* Mobile ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   #app-content {

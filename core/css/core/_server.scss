@@ -850,25 +850,6 @@ ul.multiselectoptions {
 	right: -4px;
 }
 
-/* Public view for file sharing --------------------------------------------- */
-
-#body-public {
-
-	#content-wrapper #content #preview {
-		background: inherit;
-	}
-
-	footer .info {
-		&, a {
-			color: $foreground-inactive;
-		}
-	}
-}
-
-.directLink label {
-	opacity: 1;
-}
-
 /* Mobile ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
