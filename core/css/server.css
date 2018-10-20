@@ -3595,8 +3595,14 @@ div.percentdone {
   filter: invert(95%);
 }
 
+/* User account deletion ---------------------------------------------------- */
+#delete-account-settings .warnings {
+  color: #da4453;
+}
+
 button#deleteaccount {
   background-color: #da4453;
+  border-color: #da4453;
 }
 button#deleteaccount:hover:not(:disabled):not(.primary):not(#quota) {
   border-color: #da4453;
