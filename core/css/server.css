@@ -1077,26 +1077,15 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 }
 
 /* Header ------------------------------------------------------------------- */
-#header .logo, #header .logo-icon {
+#header .logo,
+#header .logo-icon {
   background-image: url("../img/logo.svg");
 }
-#header .menu {
-  background-color: #31363b;
-  filter: unset;
-}
-#header .menu::after {
-  border-bottom-color: #706f6e;
-}
 
-#body-user #header, #body-settings #header, #body-public #header {
+#body-user #header,
+#body-settings #header,
+#body-public #header {
   background-color: #232629;
-}
-
-#header .header-left > nav > #navigation {
-  filter: none;
-}
-#header .header-left > nav > #navigation::after {
-  border-bottom-color: #706f6e;
 }
 
 /* Search ------------------------------------------------------------------- */
@@ -1177,17 +1166,13 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
   border-bottom-color: #706f6e;
 }
 
-#header .header-left > nav > .menu,
+#header .header-left > nav > #navigation.menu,
 #header .header-right > div > .menu {
   filter: none;
 }
-#header .header-left > nav > .menu::after,
+#header .header-left > nav > #navigation.menu::after,
 #header .header-right > div > .menu::after {
   border-bottom-color: #706f6e;
-}
-#header .header-left > nav > .menu li:hover,
-#header .header-right > div > .menu li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
 }
 
 #body-settings #expand::before {

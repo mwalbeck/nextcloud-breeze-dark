@@ -35,33 +35,16 @@
 /* Header ------------------------------------------------------------------- */
 
 // Logo
-#header {
-
-	.logo, .logo-icon {
-		background-image: url('../img/logo.svg');
-	}
-
-	.menu {
-		background-color: $background-normal;
-		filter: unset;
-
-		&::after {
-			border-bottom-color: $decoration-normal;
-		}
-	}
+#header .logo,
+#header .logo-icon {
+	background-image: url('../img/logo.svg');
 }
 
 // Header Bar
-#body-user #header, #body-settings #header, #body-public #header {
+#body-user #header,
+#body-settings #header,
+#body-public #header {
 	background-color: $background-dark;
-}
-
-#header .header-left > nav > #navigation {
-	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
 }
 
 /* Search ------------------------------------------------------------------- */
@@ -162,16 +145,12 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-#header .header-left > nav > .menu, 
+#header .header-left > nav > #navigation.menu, 
 #header .header-right > div > .menu {
 	filter: none;
 
 	&::after {
 		border-bottom-color: $decoration-normal;
-	}
-
-	li:hover {
-		background-color: $background-active-hover;
 	}
 }
 
