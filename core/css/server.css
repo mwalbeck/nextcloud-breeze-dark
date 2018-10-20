@@ -1054,7 +1054,6 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-  background-image: url(../../loginbackground.png), url(../../loginbackground.jpg) !important;
   background-color: #31363b !important;
 }
 #body-login p.info {
