@@ -1265,11 +1265,6 @@ span.success {
   background-color: #27ae60;
 }
 
-/* Quota -------------------------------------------------------------------- */
-#quota progress {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-
 /* General Settings --------------------------------------------------------- */
 .section, .followupsection {
   color: #eff0f1;
