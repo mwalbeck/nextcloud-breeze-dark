@@ -591,26 +591,10 @@ ul.multiselectoptions {
 /* Auto suggestion users in comments dropdown ------------------------------- */
 
 .atwho-view {
-	background: $background-normal;
-	color: $foreground-normal;
-	border-color: $decoration-normal;
 	box-shadow: none;
 
 	.cur {
 		background: $background-active-hover;
-		color: $foreground-normal;
-
-		strong {
-			color: $foreground-normal;
-		}
-	}
-
-	ul li {
-		border-bottom-color: $decoration-normal;
-	}
-
-	strong {
-		color: $foreground-normal;
 	}
 }
 

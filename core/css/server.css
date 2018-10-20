@@ -1513,23 +1513,10 @@ ul.multiselectoptions.down {
 
 /* Auto suggestion users in comments dropdown ------------------------------- */
 .atwho-view {
-  background: #31363b;
-  color: #eff0f1;
-  border-color: #706f6e;
   box-shadow: none;
 }
 .atwho-view .cur {
   background: rgba(61, 174, 233, 0.25);
-  color: #eff0f1;
-}
-.atwho-view .cur strong {
-  color: #eff0f1;
-}
-.atwho-view ul li {
-  border-bottom-color: #706f6e;
-}
-.atwho-view strong {
-  color: #eff0f1;
 }
 
 /* UI Widget ---------------------------------------------------------------- */
