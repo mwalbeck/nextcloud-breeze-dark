@@ -1329,21 +1329,6 @@ span.success {
   color: #bdc3c7;
 }
 
-/* Users -------------------------------------------------------------------- */
-#userlist th.name {
-  color: #eff0f1;
-}
-
-select.quota-user {
-  background-color: #31363b !important;
-}
-select.quota-user:focus, select.quota-user:active {
-  background-color: #3daee9 !important;
-}
-select.quota-user option {
-  background-color: #31363b;
-}
-
 /* Files table -------------------------------------------------------------- */
 #filestable tbody tr {
   background-color: #31363b;

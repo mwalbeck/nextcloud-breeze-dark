@@ -357,25 +357,6 @@ span {
 	color: $foreground-inactive;
 }
 
-/* Users -------------------------------------------------------------------- */
-
-#userlist th.name {
-	color: $foreground-normal;
-}
-
-// Fix for some browser showing drop down in Active colour
-select.quota-user {
-	background-color: $background-normal !important;
-
-	&:focus, &:active {
-		background-color: $background-active !important;
-	}
-
-	option {
-		background-color: $background-normal;
-	}
-}
-
 /* Files table -------------------------------------------------------------- */
 // Used by files app and file picker
 
