@@ -49,20 +49,12 @@
 
 /* Search ------------------------------------------------------------------- */
 
-.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
-	color: $foreground-active;
 	border-color: $decoration-active !important;
 	background-color: $background-dark !important;
 }
-
-.searchbox input[type="search"]:hover {
-	background-color: $background-normal;
-}
-
- #app-content #searchresults {
-	background-color: $background-normal;
- }
 
 /* Breadcrumbs -------------------------------------------------------------- */
 
