@@ -201,7 +201,7 @@ input, label {
 .icon-settings,
 .icon-settings-dark,
 .icon-category-tools,
-.music-nav-settings a {
+#app-navigation .music-nav-settings a {
   background-image: url("../img/actions/settings.svg?v=1");
 }
 
