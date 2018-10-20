@@ -1,11 +1,6 @@
-.app-weather {
+/* Weather ------------------------------------------------------------------ */
 
-    table tr {
-        background-color: unset;
-    }
-}
-
-#city-list-left {
+.app-weather #city-list-left {
     background-color: $background-normal;
     border-left: none;
     border-right-color: $decoration-normal;
@@ -49,6 +44,6 @@
     }
 }
 
-#city-right {
-    border-top: 1px solid $decoration-normal;
+.app-weather #city-right table tr {
+    background-color: unset;
 }
