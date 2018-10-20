@@ -849,22 +849,3 @@ ul.multiselectoptions {
 .contact .tooltip .tooltip-arrow {
 	right: -4px;
 }
-
-/* Mobile ------------------------------------------------------------------- */
-
-@media only screen and (max-width: 768px) {
-	#app-content {
-		width: 100% !important;
-		left: 0 !important;
-		background-color: $background-normal;
-		overflow-x: hidden !important;
-		z-index: 1000;
-	}
-
-	#app-navigation-toggle {
-		z-index: 1001;
-		background-color: $background-active-hover;
-		opacity: 0.5;
-		border-bottom-right-radius: 5px;
-	}
-}
