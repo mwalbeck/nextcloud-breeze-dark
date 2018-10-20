@@ -2772,8 +2772,12 @@ textarea.message-body {
   border-color: #706f6e;
 }
 
+/* Music -------------------------------------------------------------------- */
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e;
+}
+.app-music #app-navigation li.drag-hover {
+  background-color: rgba(61, 174, 233, 0.25);
 }
 
 .app-music #app-content #emptycontent, .app-music #app-content .emptycontent {
@@ -2792,7 +2796,7 @@ textarea.message-body {
   opacity: 1;
 }
 .app-music #app-content #controls {
-  margin-top: 1px;
+  border-bottom: 1px solid #706f6e;
 }
 .app-music #app-content #controls .progress, .app-music #app-content #controls .seek-bar {
   background-color: #232629;
@@ -2813,6 +2817,7 @@ textarea.message-body {
 
 #music-controls {
   background-color: #31363b;
+  border-top: 1px solid #706f6e;
 }
 #music-controls #albumart {
   border: none;

@@ -1,7 +1,13 @@
+/* Music -------------------------------------------------------------------- */
+
 .app-music #app-navigation {
 
     .app-navigation-separator {
         border-bottom-color: $decoration-normal;
+    }
+
+    li.drag-hover {
+        background-color: $background-active-hover;
     }
 }
 
@@ -28,7 +34,7 @@
     }
 
     #controls {
-        margin-top: 1px;
+        border-bottom: 1px solid $decoration-normal;
 
         .progress, .seek-bar {
             background-color: $background-dark;
@@ -58,6 +64,7 @@
 
 #music-controls {
     background-color: $background-normal;
+    border-top: 1px solid $decoration-normal;
 
     #albumart {
         border: none;
