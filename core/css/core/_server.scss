@@ -631,19 +631,6 @@ ul.multiselectoptions {
 	}
 }
 
-/* Upload Progress ---------------------------------------------------------- */
-
-#uploadprogresswrapper #uploadprogressbar {
-
-	.label.outer, .label.inner {
-		color: $foreground-normal;
-	}
-
-	.ui-progressbar-value.ui-widget-header.ui-corner-left {
-		background-color: $background-active-hover;
-	}
-}
-
 /* UI Widget ---------------------------------------------------------------- */
 // Used by datepicker, timepicker and others
 
