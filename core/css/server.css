@@ -1088,6 +1088,15 @@ ul.ui-tabs-nav .ui-tabs-active > a {
   background-color: #232629;
 }
 
+#settings #expand:hover img,
+#settings #expand:focus img,
+settings #expand:active img,
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName {
+  opacity: 1 !important;
+}
+
 /* Search ------------------------------------------------------------------- */
 .searchbox input[type=search]:focus,
 .searchbox input[type=search]:active,
