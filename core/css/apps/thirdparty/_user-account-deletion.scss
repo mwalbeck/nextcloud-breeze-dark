@@ -1,5 +1,12 @@
+/* User account deletion ---------------------------------------------------- */
+
+#delete-account-settings .warnings {
+    color: $foreground-negative;
+}
+
 button#deleteaccount {
     background-color: $background-negative;
+    border-color: $background-negative;
 
     &:hover:not(:disabled):not(.primary):not(#quota) {
         border-color: $background-negative;

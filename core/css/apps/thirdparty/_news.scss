@@ -1,17 +1,4 @@
-#explore {
-	
-	.category {
-		background-color: $background-active-alternate;
-	}
-
-	.grid-item {
-		border-color: $decoration-normal;
-	}
-
-	.explore-footer a {
-		color: $foreground-link;
-	}
-}
+/* News --------------------------------------------------------------------- */
 
 .app-news #app-navigation {
 	
@@ -63,7 +50,11 @@
 
     .no-feeds-available {
         color: $foreground-markdown-marker;
-    }
+	}
+	
+	.title .intro {
+		color: $foreground-background;
+	}
 
     .body {
 		font-size: 15px;
@@ -89,18 +80,38 @@
             background-color: $background-normal;
             border-color: $decoration-normal;
         }
+	}
 
-		.title .intro {
-			color: $foreground-background;
+	// Styling for compact view
+	.compact {
+
+		// Background styling
+		.utils {
+			background-color: $background-normal;
+		}
+	
+		// Heading styling
+		.utils .title h1 a {
+			color: $foreground-active;
+		}
+	
+		.read .utils .title h1 a {
+			color: $foreground-normal;
 		}
 	}
+}
 
-	// Heading styling for compact view
-	.utils .title h1 a {
-		color: $foreground-active;
+.app-news #explore {
+	
+	.category {
+		background-color: $background-active-alternate;
 	}
 
-	.read .utils .title h1 a {
-		color: $foreground-normal;
+	.grid-item {
+		border-color: $decoration-normal;
+	}
+
+	.explore-footer a {
+		color: $foreground-link;
 	}
 }

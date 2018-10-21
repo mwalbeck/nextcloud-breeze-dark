@@ -1,8 +1,6 @@
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-	background-image: url(../../loginbackground.png),
-					  url(../../loginbackground.jpg) !important;
 	background-color: $background-normal !important;
 
 	p.info {
@@ -37,68 +35,41 @@
 /* Header ------------------------------------------------------------------- */
 
 // Logo
-#header {
-
-	.logo, .logo-icon {
-		background-image: url('../img/logo.svg');
-	}
-
-	.menu {
-		background-color: $background-normal;
-		filter: unset;
-
-		&::after {
-			border-bottom-color: $decoration-normal;
-		}
-	}
+#header .logo,
+#header .logo-icon {
+	background-image: url('../img/logo.svg');
 }
 
 // Header Bar
-#body-user #header, #body-settings #header, #body-public #header {
+#body-user #header,
+#body-settings #header,
+#body-public #header {
 	background-color: $background-dark;
 }
 
-#header .header-left > nav > #navigation {
-	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
+// Remove added opacity on Settings dropdown
+#settings #expand:hover img,
+#settings #expand:focus img, 
+settings #expand:active img,
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName {
+	opacity: 1 !important;
 }
 
 /* Search ------------------------------------------------------------------- */
 
-.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
-	color: $foreground-active;
 	border-color: $decoration-active !important;
 	background-color: $background-dark !important;
-}
-
-.searchbox input[type="search"]:hover {
-	background-color: $background-normal;
-}
-
- #app-content #searchresults {
-	background-color: $background-normal;
- }
-
-/* Controls ----------------------------------------------------------------- */
-
-#controls {
-	background-color: $background-normal;
-	height: unset;
 }
 
 /* Breadcrumbs -------------------------------------------------------------- */
 
 div.crumb a, div.crumb > span {
 	color: $foreground-normal;
-}
-
-div.crumb:hover, div.crumb:focus, div.crumb a:focus, div.crumb:active {
-	-ms-filter: none;
-	opacity: 1;
 }
 
 div.crumb span.icon-shared, div.crumb span.icon-public {
@@ -176,16 +147,12 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 	}
 }
 
-#header .header-left > nav > .menu, 
+#header .header-left > nav > #navigation.menu, 
 #header .header-right > div > .menu {
 	filter: none;
 
 	&::after {
 		border-bottom-color: $decoration-normal;
-	}
-
-	li:hover {
-		background-color: $background-active-hover;
 	}
 }
 
@@ -269,22 +236,12 @@ span {
 	}
 }
 
-/* Quota -------------------------------------------------------------------- */
-
-#quota progress {
-	background-color: $background-active-hover;
-}
-
 /* General Settings --------------------------------------------------------- */
 
 // Section Container
 // Primarily seems to be used under settings
 .section, .followupsection {
 	color: $foreground-normal;
-
-	> span {
-		color: $foreground-inactive;
-	}
 }
 
 // Cropper
@@ -300,6 +257,7 @@ span {
 	}
 }
 
+// Description of the different update channels
 #updatenotification .channel-description span {
 	color: $foreground-normal;
 
@@ -307,12 +265,6 @@ span {
 		color: $foreground-active;
 		font-weight: bold;
 	}
-}
-
-/* Personal Settings -------------------------------------------------------- */
-
-#security .token-list td {
-	border-top-color: $decoration-normal;
 }
 
 /* App Store ---------------------------------------------------------------- */
@@ -357,25 +309,6 @@ span {
 
 .app-version {
 	color: $foreground-inactive;
-}
-
-/* Users -------------------------------------------------------------------- */
-
-#userlist th.name {
-	color: $foreground-normal;
-}
-
-// Fix for some browser showing drop down in Active colour
-select.quota-user {
-	background-color: $background-normal !important;
-
-	&:focus, &:active {
-		background-color: $background-active !important;
-	}
-
-	option {
-		background-color: $background-normal;
-	}
 }
 
 /* Files table -------------------------------------------------------------- */
@@ -593,60 +526,10 @@ ul.multiselectoptions {
 /* Auto suggestion users in comments dropdown ------------------------------- */
 
 .atwho-view {
-	background: $background-normal;
-	color: $foreground-normal;
-	border-color: $decoration-normal;
 	box-shadow: none;
 
 	.cur {
 		background: $background-active-hover;
-		color: $foreground-normal;
-
-		strong {
-			color: $foreground-normal;
-		}
-	}
-
-	ul li {
-		border-bottom-color: $decoration-normal;
-	}
-
-	strong {
-		color: $foreground-normal;
-	}
-}
-
-/* Auto suggestion in sharing dropdown -------------------------------------- */
-
-.ui-autocomplete.ui-widget-content {
-	background: $background-normal;
-	border-top: none;
-	border-color: $decoration-active;
-}
-
-.ui-autocomplete.ui-menu .ui-menu-item {
-
-	a.ui-state-focus, a.ui-state-active {
-		font-weight: inherit;
-		border: none;
-		margin: 0;
-	}
-}
-
-/* Upload Progress ---------------------------------------------------------- */
-
-#uploadprogresswrapper {
-
-	#uploadprogressbar {
-
-		.label.outer, .label.inner {
-			color: $foreground-normal;
-		}
-
-		.ui-progressbar-value.ui-widget-header.ui-corner-left {
-			background-color: $background-active-hover;
-			top: 1px; // Temp fix for disaligned progressbar
-		}
 	}
 }
 
@@ -854,42 +737,4 @@ ul.multiselectoptions {
 // Fix for tooltip arrow not being aligned in contacts dropdown
 .contact .tooltip .tooltip-arrow {
 	right: -4px;
-}
-
-/* Public view for file sharing --------------------------------------------- */
-
-#body-public {
-
-	#content-wrapper #content #preview {
-		background: inherit;
-	}
-
-	footer .info {
-		&, a {
-			color: $foreground-inactive;
-		}
-	}
-}
-
-.directLink label {
-	opacity: 1;
-}
-
-/* Mobile ------------------------------------------------------------------- */
-
-@media only screen and (max-width: 768px) {
-	#app-content {
-		width: 100% !important;
-		left: 0 !important;
-		background-color: $background-normal;
-		overflow-x: hidden !important;
-		z-index: 1000;
-	}
-
-	#app-navigation-toggle {
-		z-index: 1001;
-		background-color: $background-active-hover;
-		opacity: 0.5;
-		border-bottom-right-radius: 5px;
-	}
 }
