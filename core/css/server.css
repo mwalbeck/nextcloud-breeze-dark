@@ -2021,6 +2021,63 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background-color: #31363b !important;
 }
 
+/* Mail --------------------------------------------------------------------- */
+.app-mail #app-navigation .folders .ui-droppable-active {
+  background-color: inherit;
+}
+.app-mail #app-navigation #app-settings .app-settings-hint {
+  color: #bdc3c7;
+}
+
+.app-mail #app-content .app-content-list .app-content-list-item.active .app-content-list-item-details {
+  opacity: 1;
+  color: #bdc3c7;
+}
+
+.app-mail #app-content .app-content-details #mail-message-header {
+  background: #31363b;
+}
+.app-mail #app-content .app-content-details #mail-message-header .transparency {
+  color: #eff0f1 !important;
+}
+.app-mail #app-content .app-content-details #mail-message-header .transparency a {
+  color: #2980b9 !important;
+}
+.app-mail #app-content .app-content-details #mail-content {
+  background-color: #EEE;
+  color: #000;
+  padding: 1em;
+  border: 1px solid #706f6e;
+  border-radius: 3px;
+}
+.app-mail #app-content .app-content-details input.to, .app-mail #app-content .app-content-details input.cc, .app-mail #app-content .app-content-details input.bcc, .app-mail #app-content .app-content-details input.subject, .app-mail #app-content .app-content-details textarea.message-body {
+  border: none;
+  border-top: 1px solid #706f6e;
+}
+.app-mail #app-content .app-content-details input.to:hover, .app-mail #app-content .app-content-details input.to:focus, .app-mail #app-content .app-content-details input.to:active, .app-mail #app-content .app-content-details input.cc:hover, .app-mail #app-content .app-content-details input.cc:focus, .app-mail #app-content .app-content-details input.cc:active, .app-mail #app-content .app-content-details input.bcc:hover, .app-mail #app-content .app-content-details input.bcc:focus, .app-mail #app-content .app-content-details input.bcc:active, .app-mail #app-content .app-content-details input.subject:hover, .app-mail #app-content .app-content-details input.subject:focus, .app-mail #app-content .app-content-details input.subject:active, .app-mail #app-content .app-content-details textarea.message-body:hover, .app-mail #app-content .app-content-details textarea.message-body:focus, .app-mail #app-content .app-content-details textarea.message-body:active {
+  border-color: #706f6e !important;
+}
+.app-mail #app-content .app-content-details textarea.message-body {
+  border-bottom: 1px solid #706f6e;
+}
+.app-mail #app-content .app-content-details .mail-message-attachments .attachments > div {
+  border-color: #706f6e;
+}
+.app-mail #app-content .app-content-details .mail-message-attachments .attachments > div:hover, .app-mail #app-content .app-content-details .mail-message-attachments .attachments > div span:hover {
+  background-color: inherit;
+}
+.app-mail #app-content .app-content-details .mail-message-attachments .attachments .attachment-download {
+  opacity: 1;
+  border-color: transparent;
+}
+.app-mail #app-content .app-content-details .transparency {
+  opacity: 1;
+}
+
+.app-mail #app-content .setup-content .toggle-manual-mode {
+  opacity: 0.7;
+}
+
 .app-notes #app-content .note-meta {
   opacity: 1;
 }
@@ -2485,152 +2542,6 @@ div.circle .title, div.circle .type, div.circle .owner {
 .group-edit {
   background-color: #31363b;
   border-color: #706f6e;
-}
-
-.app-mail .date {
-  opacity: 0.5;
-  color: #bdc3c7;
-}
-.app-mail #app-navigation li > a:hover {
-  background-color: unset;
-}
-.app-mail #app-navigation li > a:hover + div.app-navigation-entry-utils {
-  background-color: unset;
-}
-.app-mail #app-navigation .navigation-account > .folders > li > .folders > .folders > li > a {
-  padding-right: 14px;
-}
-.app-mail #app-navigation .navigation-account > .folders > li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-  border-right: 1px solid #706f6e;
-}
-.app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li {
-  background-color: #31363b;
-}
-.app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-.app-mail #app-navigation .navigation-account > .folders > li:hover .folders > li.active {
-  background-color: #3daee9;
-}
-.app-mail #app-navigation .navigation-account > .folders > li.active {
-  background-color: #3daee9;
-  border-right: 1px solid #706f6e;
-}
-.app-mail #app-navigation .navigation-account > .folders > li.active .folders > li {
-  background-color: #31363b;
-}
-
-#mail-messages {
-  border-right: 1px solid #706f6e;
-  background-color: #232629;
-}
-
-#mail-message-header {
-  background: #31363b;
-}
-#mail-message-header .transparency {
-  color: #eff0f1 !important;
-}
-#mail-message-header .transparency a {
-  color: #2980b9 !important;
-}
-
-#mail-content {
-  background-color: #EEE;
-  color: #000;
-  padding: 1em;
-  border: 1px solid #706f6e;
-  border-radius: 3px;
-}
-
-#mail-new-message-fixed {
-  background-color: #31363b;
-}
-
-.mail-message-summary {
-  border-top-color: #706f6e;
-}
-.mail-message-summary:first-child {
-  border-top: none;
-}
-.mail-message-summary:last-child {
-  border-bottom: 1px solid #706f6e;
-}
-.mail-message-summary:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-.mail-message-summary:focus, .mail-message-summary.active {
-  background-color: #3daee9;
-}
-.mail-message-summary.unseen {
-  box-shadow: inset 3px 0 #1d99f3;
-}
-
-.mail-message-summary-from,
-.active .date {
-  opacity: 1;
-  color: #bdc3c7;
-}
-
-.mail-message-summary-subject,
-.active .mail-message-summary-from {
-  opacity: 1;
-  color: #eff0f1;
-}
-
-.account-toggle-collapse {
-  color: #bdc3c7;
-  opacity: 0.5;
-}
-.account-toggle-collapse:hover {
-  opacity: 1;
-}
-
-.app-settings-hint {
-  color: #bdc3c7;
-}
-
-.transparency {
-  opacity: 1;
-}
-
-input.to, input.cc, input.bcc, input.subject, textarea.message-body {
-  border: none;
-  border-top: 1px solid #706f6e;
-}
-input.to:hover, input.to:focus, input.to:active, input.cc:hover, input.cc:focus, input.cc:active, input.bcc:hover, input.bcc:focus, input.bcc:active, input.subject:hover, input.subject:focus, input.subject:active, textarea.message-body:hover, textarea.message-body:focus, textarea.message-body:active {
-  border-color: #706f6e !important;
-}
-
-textarea.message-body {
-  border-bottom: 1px solid #706f6e;
-}
-
-#setup .toggle-manual-mode {
-  opacity: 0.7;
-}
-
-.folders .ui-droppable-active {
-  background-color: inherit;
-}
-
-.mail-message-attachments .attachments > div {
-  border-color: #706f6e;
-}
-.mail-message-attachments .attachments > div:hover, .mail-message-attachments .attachments > div span:hover {
-  background-color: inherit;
-}
-.mail-message-attachments .attachments .attachment-download {
-  opacity: 1;
-  border-color: transparent;
-}
-
-#app-navigation > ul > .navigation-account > li > a,
-#app-navigation > ul > .navigation-account > .folders > li > a,
-#app-navigation > ul > .navigation-account > .folders > li > .folders > .folders > li > a {
-  color: #eff0f1;
-  opacity: 0.75;
 }
 
 /* Markdown editor -----------------------------------------------------------*/
