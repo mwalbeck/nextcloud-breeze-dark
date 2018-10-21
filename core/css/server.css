@@ -1244,9 +1244,6 @@ span.success {
 .section, .followupsection {
   color: #eff0f1;
 }
-.section > span, .followupsection > span {
-  color: #bdc3c7;
-}
 
 #cropper .inner-container {
   background-color: #31363b;
@@ -1264,11 +1261,6 @@ span.success {
 #updatenotification .channel-description span strong {
   color: #fcfcfc;
   font-weight: bold;
-}
-
-/* Personal Settings -------------------------------------------------------- */
-#security .token-list td {
-  border-top-color: #706f6e;
 }
 
 /* App Store ---------------------------------------------------------------- */

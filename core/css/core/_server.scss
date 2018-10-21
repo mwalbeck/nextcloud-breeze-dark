@@ -242,10 +242,6 @@ span {
 // Primarily seems to be used under settings
 .section, .followupsection {
 	color: $foreground-normal;
-
-	> span {
-		color: $foreground-inactive;
-	}
 }
 
 // Cropper
@@ -261,6 +257,7 @@ span {
 	}
 }
 
+// Description of the different update channels
 #updatenotification .channel-description span {
 	color: $foreground-normal;
 
@@ -268,12 +265,6 @@ span {
 		color: $foreground-active;
 		font-weight: bold;
 	}
-}
-
-/* Personal Settings -------------------------------------------------------- */
-
-#security .token-list td {
-	border-top-color: $decoration-normal;
 }
 
 /* App Store ---------------------------------------------------------------- */
