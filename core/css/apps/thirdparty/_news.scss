@@ -99,6 +99,13 @@
 			color: $foreground-normal;
 		}
 	}
+
+	.finished-auto-paging {
+		#articles:after {
+			background-image: none;
+			background-color: $background-normal;
+		}
+	}
 }
 
 .app-news #explore {

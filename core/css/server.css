@@ -2698,6 +2698,10 @@ div.circle .title, div.circle .type, div.circle .owner {
 .app-news #app-content .compact .read .utils .title h1 a {
   color: #eff0f1;
 }
+.app-news #app-content .finished-auto-paging #articles:after {
+  background-image: none;
+  background-color: #31363b;
+}
 
 .app-news #explore .category {
   background-color: #1d99f3;
@@ -3449,5 +3453,3 @@ button#deleteaccount:disabled {
 .app-weather #city-right table tr {
   background-color: unset;
 }
-
-/*# sourceMappingURL=server.css.map */
