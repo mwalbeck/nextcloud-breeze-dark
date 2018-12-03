@@ -1,0 +1,164 @@
+.app-polls #app-content {
+
+    .icon-polls {
+        filter: invert(95%);
+    }
+
+    .table-row {
+        background-color: $background-normal;
+        border-bottom-color: $decoration-normal;
+
+        &.table-header {
+            opacity: 1;
+        }
+    }
+
+    .description {
+        color: $foreground-inactive;
+    }
+
+    .user-group-list {
+        border-color: $decoration-normal;
+    }
+
+    .cl_access_item {
+        background-color: $background-active-hover;
+        color: $foreground-normal;
+
+        &.selected:hover {
+            background-color: $foreground-negative;
+        }
+    }
+
+    .input-group-btn .btn {
+        border-color: $decoration-normal
+    }
+
+    .user {
+        border-top-color: $decoration-normal;
+    }
+
+    .current-user {
+        background-color: $background-normal;
+    }
+
+    .toggle-cell {
+
+        &.yes, &.maybe, &.no {
+            background-color: $background-normal;
+        }
+    }
+
+    .poll-cell {
+
+        &.yes {
+            background-color: $background-normal;
+            color: $foreground-positive;
+        }
+
+        &.maybe {
+            background-color: $background-normal;
+            color: $foreground-neutral;
+        }
+
+        &.no {
+            background-color: $background-normal;
+            color: $foreground-negative;
+        }
+    }
+
+    .text-row,
+    .date-row,
+    #selected-dates-table tr:first-child td {
+        background-color: $background-active-alternate;
+        color: $foreground-normal;
+    }
+
+    #selected-dates-table,
+    #selected-texts-table {
+        border: 1px solid $decoration-normal;
+    }
+
+    table .icon-checkmark,
+    table .icon-close {
+        background-color: $background-normal;
+    }
+}
+
+.app-polls #app-sidebar {
+
+    &.detailsView .pollActions > ul > li > a,
+    &.detailsView .pollActions > ul > li > ul > li > a {
+        color: $foreground-normal;
+        opacity: 0.57;
+    }
+
+    &.detailsView #commentsTabView #commentBox {
+        border-color: $decoration-normal;
+    }
+
+    &.detailsView .pollInformation .cloud .open {
+        background-color: $foreground-positive;
+    }
+
+    &.detailsView .pollInformation .cloud .information {
+        background-color: $foreground-neutral;
+    }
+}
+
+// Datepicker
+
+.xdsoft_datetimepicker {
+    box-shadow: none;
+    background: $background-normal;
+    border-color: $decoration-normal;
+    color: $foreground-normal;
+
+    .xdsoft_label i,
+    .xdsoft_prev,
+    .xdsoft_next,
+    .xdsoft_today_button {
+        filter: invert(95%);
+    }
+
+    .xdsoft_label {
+        background-color: $background-normal;
+    }
+
+    .xdsoft_calendar th, .xdsoft_calendar td {
+        background-color: $background-normal;
+        border-color: $decoration-normal;
+        color: $foreground-normal;
+    }
+
+    .xdsoft_calendar td.xdsoft_other_month {
+        background-color: $background-dark;
+    }
+
+    .xdsoft_calendar td.xdsoft_default,
+    .xdsoft_calendar td.xdsoft_current,
+    .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
+    .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
+        box-shadow: none;
+        background-color: $background-active;
+    }
+
+    .xdsoft_timepicker .xdsoft_time_box {
+        border-color: $decoration-normal;
+
+        > div > div {
+            background-color: $background-normal;
+            border-top-color: $decoration-normal;
+            color: $foreground-normal;
+        }
+    }
+
+    .xdsoft_label > .xdsoft_select {
+        border-color: $decoration-normal;
+        background: $background-normal;
+    }
+
+    .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
+        background-color: $background-active-hover;
+    }
+}
