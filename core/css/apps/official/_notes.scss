@@ -24,6 +24,7 @@
 .CodeMirror {
 	background-color: $background-normal;
 	color: $foreground-normal;
+	border-color: $decoration-normal; // Used for note editor in passwords app
 }
 
 .CodeMirror-cursor {

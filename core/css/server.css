@@ -2099,6 +2099,7 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .CodeMirror {
   background-color: #31363b;
   color: #eff0f1;
+  border-color: #706f6e;
 }
 
 .CodeMirror-cursor {
@@ -2945,8 +2946,13 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   color: #fcfcfc;
 }
 .app-passwords #app-navigation .nav-icon-recent,
-.app-passwords #app-navigation .nav-icon-security {
+.app-passwords #app-navigation .nav-icon-security,
+.app-passwords #app-navigation .nav-icon-favorites {
   background-image: none;
+}
+.app-passwords #app-navigation #app-settings {
+  background-color: #31363b;
+  border-color: #706f6e;
 }
 .app-passwords #app-content #controls .crumbmenu .menu,
 .app-passwords #app-content #controls .passwords-more-menu .menu {
@@ -3056,6 +3062,10 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar.disabled-for-preview a:not(.no-disable) {
   background-color: #4d4d4d;
   border: none;
+}
+.app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror {
+  background-color: #31363b;
+  color: #eff0f1;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror .editor-preview {
   background-color: #31363b;
