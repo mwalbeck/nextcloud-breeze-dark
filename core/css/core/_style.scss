@@ -205,6 +205,26 @@ input[type="button"] {
 	}
 }
 
+// Header buttons
+
+#header .button.primary {
+	border-color: $decoration-normal;
+
+	&:hover, &:active, &:focus {
+		border-color: $decoration-active;
+	}
+}
+
+// Link Buttons
+
+.link-button:active,
+.link-button:hover,
+.link-button:focus {
+	color: $foreground-normal;
+	background-color: $foreground-link;
+	border-color: $decoration-active !important;
+}
+
 /* jQuery UI Fixes ---------------------------------------------------------- */
 
 .ui-state-default,
