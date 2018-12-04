@@ -47,6 +47,15 @@
 	background-color: $background-dark;
 }
 
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName,
+#settings #expand:hover .avatardiv,
+#settings #expand:focus .avatardiv,
+#settings #expand:active .avatardiv {
+	border: none;
+}
+
 /* Search ------------------------------------------------------------------- */
 
 .searchbox input[type="search"]:focus,
