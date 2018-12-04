@@ -47,16 +47,6 @@
 	background-color: $background-dark;
 }
 
-// Remove added opacity on Settings dropdown
-#settings #expand:hover img,
-#settings #expand:focus img, 
-settings #expand:active img,
-#settings #expand:hover #expandDisplayName,
-#settings #expand:focus #expandDisplayName,
-#settings #expand:active #expandDisplayName {
-	opacity: 1 !important;
-}
-
 /* Search ------------------------------------------------------------------- */
 
 .searchbox input[type="search"]:focus,
