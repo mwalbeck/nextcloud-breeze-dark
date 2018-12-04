@@ -1,14 +1,13 @@
 /* App menu ----------------------------------------------------------------- */
 
 #appmenu li {
-	span {
-		border: 1px solid $decoration-normal;
-		color: $foreground-normal;
-		-webkit-filter: none;
-		-moz-filter: none;
-		-ms-filter: none;
-		-o-filter: none;
-		filter: none;
+
+	&:hover a + span,
+	&:hover span,
+	&:focus span,
+	a:focus + span,
+	a:focus span {
+		background-color: $background-dark;
 	}
 
 	a.active::before {
