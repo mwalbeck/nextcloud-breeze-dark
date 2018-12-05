@@ -207,7 +207,7 @@ input[type="button"] {
 
 // Header buttons
 
-#header .button.primary {
+#header .button.primary, #header button.primary {
 	border-color: $decoration-normal;
 
 	&:hover, &:active, &:focus {
