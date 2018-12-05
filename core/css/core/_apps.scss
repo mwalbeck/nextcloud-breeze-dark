@@ -79,8 +79,8 @@
 		color: $foreground-normal;
 	}
 
-	.close {
-		opacity: 1;
+	#app-details-view .close, .close {
+		opacity: 0.7;
 	}
 
 	.thumbnail {
