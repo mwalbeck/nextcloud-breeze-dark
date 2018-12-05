@@ -65,7 +65,7 @@ $icon-normal: rgba(242, 242, 242, 1);
     --color-primary-text: #{$foreground-normal};
     --color-text-light: #{$foreground-normal};
     --color-text-lighter: #{$foreground-inactive};
-    --color-text-maxcontrast: #{$foreground-normal};
+    --color-text-maxcontrast: #{$foreground-inactive};
     --color-border: #{$decoration-normal};
     --color-border-dark: #{$decoration-normal};
     --color-primary-element: #{$decoration-active};

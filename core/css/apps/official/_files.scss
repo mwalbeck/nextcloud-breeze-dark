@@ -8,13 +8,9 @@ td.date, td.date > span {
 }
 
 table.multiselect {
+	
 	thead th {
 		background-color: $background-active-hover;
-		color: $foreground-normal;
-	}
-
-	th a {
-		color: $foreground-normal;
 	}
 }
 
