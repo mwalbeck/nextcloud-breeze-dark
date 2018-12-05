@@ -1,7 +1,8 @@
+/* Notes -------------------------------------------------------------------- */
+
 .app-notes #app-content {
 
 	.note-meta {
-		opacity: 1;
 
 		.note-word-count {
 			opacity: 0.7;
@@ -15,18 +16,4 @@
 			}
 		}
 	}
-}
-
-#app-navigation li .nav-entry {
-	color: $foreground-normal;
-}
-
-.CodeMirror {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	border-color: $decoration-normal; // Used for note editor in passwords app
-}
-
-.CodeMirror-cursor {
-	border-left-color: $foreground-markdown-marker;
 }
