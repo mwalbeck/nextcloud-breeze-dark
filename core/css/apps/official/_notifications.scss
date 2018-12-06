@@ -1,0 +1,10 @@
+ /* Notifications ----------------------------------------------------------- */
+
+#notification {
+	border: 1px solid $decoration-normal;
+	border-top: none;
+
+	a {
+		color: $foreground-link;
+	}
+}
