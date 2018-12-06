@@ -75,7 +75,8 @@
 .icon-checkmark,
 .icon-sent,
 .icon-category-enabled,
-.multiselect.multiselect-vue .multiselect__content-wrapper li > span::before {
+.multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
+#two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
 	background-image: url('../img/actions/checkmark.svg?v=1');
 }
 
@@ -717,6 +718,13 @@ div.icon-fulltextsearch-white {
 
 /* CSS tricks to change icon color ------------------------------------------ */
 
+// Two Factor App Icon in Personal Settings
+
+img.two-factor-provider-settings-icon[src$="/apps/twofactor_totp/img/app-dark.svg"],
+img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg"] {
+	filter: invert(95%);
+}
+
 // Music app: icons for Music player controls in files and in app
 #music-controls img.control,
 .app-music img.control {
@@ -808,9 +816,9 @@ a.impersonate img.svg {
 
 	// In apps list
 	#apps-list .app-image image,
+	#apps-list-search .app-image image,
 	#app-sidebar #app-details-view image.app-icon {
 		filter: invert(5%);
-
 	}
 
 	// Apps that are excluded from colour inverting
