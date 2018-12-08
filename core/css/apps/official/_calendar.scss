@@ -1,158 +1,120 @@
-.app-calendar {
-	
-	#app-navigation {
+.app-calendar #app-navigation {
 
-		.active {
-			background-color: inherit;
+	.active {
+		background-color: inherit;
+	}
+
+	> ul > li > .app-navigation-entry-bullet + a:hover, 
+	> ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
+		background-color: $background-active-hover !important;
+	}
+
+	.new-entity {
+		opacity: 0.7;
+
+		&:hover {
+			background-color: $background-active-hover;
+			opacity: 1;
+		}
+	}
+
+	.togglebuttons .button.active {
+		color: $foreground-normal;
+	}
+
+	#datepickercontainer {
+
+		.datepicker-heading .button {
+			background-color: $background-normal;
 		}
 
-		.new-entity {
-			opacity: 0.7;
-
-			&:hover {
+		#datepicker table td {
+			
+			button:hover {
 				background-color: $background-active-hover;
-				opacity: 1;
-			}
-		}
-
-		.togglebuttons {
-
-			.button.active {
-				color: $foreground-normal;
-			}
-		}
-
-		#datepickercontainer {
-
-			.datepicker-heading .button {
-				background-color: $background-normal;
+				border-radius: 50%;
 			}
 
-			#datepicker table td {
-				
-				button:hover {
-					background-color: $background-active-hover;
-					border-radius: 50%;
-				}
+			.text-muted {
+				opacity: 0.5;
+			}
+
+			&.highlight-today {
+				background-color: $background-alternate;
+				border-radius: 50%;
+			}
+
+			&.highlight-weekend button {
+				color: $decoration-active;
 
 				.text-muted {
-					opacity: 0.5;
-				}
-
-				&.highlight-today {
-					background-color: $background-alternate;
-					border-radius: 50%;
-				}
-
-				&.highlight-weekend button {
 					color: $decoration-active;
+				}
 
-					.text-muted {
-						color: $decoration-active;
-					}
-
-					&:hover {
-						color: $foreground-active;
-					}
+				&:hover {
+					color: $foreground-active;
 				}
 			}
 		}
 	}
 }
- 
-.fc-unthemed {
+
+.app-calendar #app-content {
+
+	#fullcalendar {
+		background-color: $background-dark;
+
+		th, td, thead, tbody, .fc-row {
+			border-color: $decoration-normal;
+		}
 	
-	th, td, thead, tbody, .fc-divider, .fc-row, .fc-popover {
-		border-color: $decoration-normal;
-	}
+		table tbody tr td.fc-other-month {
+			background-color: $background-normal;
+			opacity: 1;
 
-	.fc-divider, .fc-popover .fc-header, .fc-list-heading td {
-		background-color: $background-alternate;
-	}
-}
-
-#fullcalendar {
-	background-color: $background-dark;
-	
-	table thead th {
-		background-color: $background-normal;
-	}
-
-	table tbody tr td.fc-other-month {
-		background-color: $background-normal;
-	}
-
-	&.fc-unthemed {
-
-		tr td {
-			border-top-color: $decoration-normal;
+			span {
+				opacity: 0.3;
+			}
 		}
 		
 		.fc-today {
-			background-color: $background-active !important;
+			background-color: $background-active;
 			color: $foreground-active;
+		}
 
-			span.fc-day-number {
-				font-weight: 600;
-			}
+		.fc-basic-view .fc-day-top .fc-week-number {
+			background-color: $background-normal;
+			color: $foreground-normal;
+			border-right: 1px solid $decoration-normal;
+			border-bottom: 1px solid $decoration-normal;
 		}
 	}
 
-	td.fc-day {
-		&.fc-sat, &.fc-sun {
-			background-color: $background-dark;
+	#app-sidebar {
+		
+		.advanced {
 
-			&.fc-other-month {
-				background-color: $background-normal;
+			// Force location field in app sidebar to be dark
+			.advanced--input {
+				background: $background-dark !important;
+			}
+		
+			.advanced--button-area {
+				border-color: $decoration-normal;
 			}
 		}
+		
+		.advanced--fieldset-attendeelist .advanced--toggler:hover, 
+		.advanced--fieldset-reminderlist .advanced--toggler:hover {
+			background: $background-active-hover;
+		}
 	}
-}
-
-.fc-basic-view .fc-day-top .fc-week-number {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	border-right: 1px solid $decoration-normal;
-	border-bottom: 1px solid $decoration-normal;
-}
-
-.fc th,
-.fc .fc-axis,
-.fc-day-grid-event .fc-time,
-.fc-ltr .fc-basic-view .fc-day-number,
-.fc-ltr .fc-basic-view .fc-week-number,
-.fc-time-grid-event .fc-time {
-	opacity: 1;
-	font-size: 85%;
-}
-
-// Centers the position of the day number in the corner
-.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
-	padding-right: 6px;
 }
 
 .modal-open {
-	
+		
 	.modal.popover, .modal.import {
-		background: $background-normal;
 		box-shadow: none;
 		border: 1px solid $decoration-normal;
 	}
-}
-
-.advanced {
-
-	// Force location field in app sidebar to be dark
-	.advanced--input {
-		background: $background-dark !important;
-	}
-
-	.advanced--button-area {
-		border-color: $decoration-normal;
-	}
-}
-
-.advanced--fieldset-attendeelist .advanced--toggler:hover, 
-.advanced--fieldset-reminderlist .advanced--toggler:hover {
-	background: $background-active-hover;
 }
