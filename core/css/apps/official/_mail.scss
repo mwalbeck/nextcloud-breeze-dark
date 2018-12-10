@@ -11,70 +11,64 @@
     }
 }
 
-.app-mail #app-content .app-content-list .app-content-list-item {
+.app-mail #app-content {
 
-    &.active .app-content-list-item-details {
-        opacity: 1;
-        color: $foreground-inactive;
+    .setup-content .toggle-manual-mode {
+        opacity: 0.7;
     }
-}
 
-.app-mail #app-content .app-content-details {
+    .app-content-list-item.active .app-content-list-item-details {
+        opacity: 0.7;
+    }
 
-    #mail-message-header {
-        background: $background-normal;
-    
-        & .transparency {
-            color: $foreground-normal !important;
-    
-            a {
-                color: $foreground-link !important;
+    .app-content-details {
+
+        #mail-message-header {
+            background: $background-normal;
+        
+            & .transparency {
+                color: $foreground-normal !important;
+        
+                a {
+                    color: $foreground-link !important;
+                }
             }
         }
-    }
-    
-    #mail-content {
-        background-color: #EEE;
-        color: #000;
-        padding: 1em;
-        border: 1px solid $decoration-normal;
-        border-radius: 3px;
-    }
-
-    input.to, input.cc, input.bcc, input.subject, textarea.message-body {
-        border: none;
-        border-top: 1px solid $decoration-normal;
-    
-        &:hover, &:focus, &:active {
-            border-color: $decoration-normal !important;
+        
+        #mail-content {
+            background-color: #EEE;
+            color: #000;
+            padding: 1em;
+            border: 1px solid $decoration-normal;
+            border-radius: 3px;
         }
-    }
 
-    textarea.message-body {
-        border-bottom: 1px solid $decoration-normal;
-    }
+        input.to, input.cc, input.bcc, input.subject, textarea.message-body {
+            border: none;
+            border-top: 1px solid $decoration-normal;
+        
+            &:hover, &:focus, &:active {
+                border-color: $decoration-normal !important;
+            }
+        }
 
-    .mail-message-attachments .attachments {
+        textarea.message-body {
+            border-bottom: 1px solid $decoration-normal;
+        }
 
-        &> div {
-            border-color: $decoration-normal;
-    
-            &:hover, span:hover {
+        .mail-message-attachments .attachments {
+
+            &> div:hover, &> div span:hover {
                 background-color: inherit;
             }
+        
+            .attachment-download {
+                border-color: transparent;
+            }
         }
-    
-        .attachment-download {
+
+        .transparency {
             opacity: 1;
-            border-color: transparent;
         }
     }
-
-    .transparency {
-        opacity: 1;
-    }
-}
-
-.app-mail #app-content .setup-content .toggle-manual-mode {
-    opacity: 0.7;
 }
