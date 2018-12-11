@@ -1,0 +1,21 @@
+/* Dashboard ---------------------------------------------------------------- */
+
+.app-dashboard #app-content {
+    
+    .dashboard-newwidget {
+        border-color: $decoration-normal;
+        color: $foreground-normal;
+    }
+
+    .diskspace-text {
+        color: $foreground-normal;
+    }
+
+    .diskspace-progress-limit {
+        background-color: $background-active-hover;
+    }
+
+    #diskspace-progress-used {
+        background-color: $background-active-alternate;
+    }
+}
