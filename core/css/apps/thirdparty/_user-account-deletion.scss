@@ -14,5 +14,6 @@ button#deleteaccount {
 
     &:disabled {
         background-color: $background-alternate;
+        border-color: $decoration-normal;
     }
 }
