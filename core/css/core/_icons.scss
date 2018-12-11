@@ -521,6 +521,12 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/address.svg');
 }
 
+/* Notifications ------------------------------------------------------------ */
+
+.notification-container .emptycontent .icon-notifications-dark {
+	background-image: url('../img/notifications/notifications.svg');
+}
+
 /* App Categories ----------------------------------------------------------- */
 
 // App Bundles
