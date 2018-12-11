@@ -722,6 +722,15 @@ div.icon-fulltextsearch-white {
 	background-image: url('../img/fulltextsearch.svg');
 }
 
+/* AppOrder ----------------------------------------------------------------- */
+
+// Remove filter from icons so they are white
+#app-order #apporder.section #appsorter img {
+	-webkit-filter: none;
+	filter: none;
+	filter: none;
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Two Factor App Icon in Personal Settings
