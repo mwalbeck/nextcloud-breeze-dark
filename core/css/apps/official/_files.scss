@@ -7,13 +7,6 @@ td.date, td.date > span {
 	opacity: 1;
 }
 
-table.multiselect {
-	
-	thead th {
-		background-color: $background-active-hover;
-	}
-}
-
 tr {
 	&, &:hover, &:active, &:focus {
 		span.extension {
@@ -25,4 +18,41 @@ tr {
 
 #fileList tr td.selection > .selectCheckBox + label::before {
 	opacity: 0.5;
+}
+
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) {
+	background-color: unset;
+
+	&:hover .thumbnail-wrapper,
+	&:hover .nametext,
+	&:hover .fileactions,
+	&:focus .thumbnail-wrapper,
+	&:focus .nametext,
+	&:focus .fileactions,
+	&:active .thumbnail-wrapper,
+	&:active .nametext,
+	&:active .fileactions,
+	&.selected .thumbnail-wrapper,
+	&.selected .nametext,
+	&.selected .fileactions,
+	&.highlighted .thumbnail-wrapper,
+	&.highlighted .nametext,
+	&.highlighted .fileactions,
+	&.searchresult .thumbnail-wrapper,
+	&.searchresult .nametext,
+	&.searchresult .fileactions,
+	.name:focus .thumbnail-wrapper,
+	.name:focus .nametext,
+	.name:focus .fileactions {
+		background-color: unset;
+	}
+	
+	&:hover,
+	&:focus,
+	&:active,
+	&.selected,
+	&.highlighted,
+	&.searchresult {
+		background-color: $background-active-hover;
+	}
 }
