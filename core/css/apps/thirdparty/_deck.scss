@@ -1,9 +1,4 @@
-.app-deck #app-navigation {
-
-    .app-navigation-entry-edit {
-        background-color: $background-normal;
-    }
-}
+/* Deck --------------------------------------------------------------------- */
 
 .app-deck #app-content {
 
@@ -18,7 +13,7 @@
             }
         }
 
-        .board-header-controls > button {
+        .board-header-controls > button i.icon-archive {
             opacity: 1 !important;
         }
     }
@@ -40,8 +35,11 @@
 
     #board {
 
+        .stack {
+            border-color: $decoration-normal;
+        }
+
         .card {
-            background-color: $background-normal;
             border: 1px solid $decoration-normal;
             box-shadow: none;
 
@@ -100,6 +98,10 @@
 
             li[ng-if$="status.createLabel"] input {
                 color: $foreground-normal !important;
+            }
+
+            .labels .label-edit input {
+                border-bottom-color: $decoration-normal;
             }
         }
 
