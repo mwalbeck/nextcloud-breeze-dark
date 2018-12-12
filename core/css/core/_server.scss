@@ -522,6 +522,42 @@ ul.multiselectoptions {
 	border: 1px solid $decoration-normal;
 }
 
+
+// The following has been added for bookmarks tags
+.select2-container--default .select2-selection--multiple {
+    background-color: $background-dark;
+    border-color: $decoration-normal;
+}
+
+.select2-dropdown {
+    background-color: $background-dark;
+	border-color: $decoration-normal;
+	
+	&:hover {
+		border-color: $decoration-active;
+	}
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $background-active-hover;
+    color: $foreground-normal;
+}
+
+.bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bookmark-detail .tag-nav-item {
+    background-color: $background-normal;
+    
+    &:hover {
+        background-color: $background-active-hover;
+    }
+}
+
+.select2-container--default .select2-selection--multiple:hover,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: $decoration-active;
+}
+
 /* Auto suggestion users in comments dropdown ------------------------------- */
 
 .atwho-view {
