@@ -31,13 +31,12 @@
 	}
 }
 
-.ace-clouds {
-	background-color: $background-normal !important;
+#editor.ace_editor {
+	background-color: $background-dark !important;
 	color: $foreground-normal !important;
 
 	.ace_gutter {
-		color: $foreground-inactive !important;
-		background-color: $background-normal !important;
+		color: $foreground-normal !important;
 		opacity: 1 !important;
 
 		.ace_gutter-cell {
