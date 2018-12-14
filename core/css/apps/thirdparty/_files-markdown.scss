@@ -18,13 +18,13 @@
                 color: $foreground-inactive;
             }
 
-            pre {
+            tt {
                 background-color: $background-normal;
                 border-color: $decoration-normal
             }
 
-            code, tt {
-                background-color: $background-normal;
+            code, pre {
+                background-color: $background-dark;
                 border-color: $decoration-normal;
             }
         }
