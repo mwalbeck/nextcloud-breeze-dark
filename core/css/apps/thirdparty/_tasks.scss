@@ -1,204 +1,148 @@
-.app-tasks {
-    #app-content {
-        height: 99.9%;
-        border-top: 1px solid $decoration-normal;
+/* Tasks -------------------------------------------------------------------- */
 
-        h2 {
-            text-shadow: none;
-            opacity: 1;
-        }
-
-        #add-task {
-            border: 1px solid $decoration-normal;
-            background: $background-dark;
-
-            input {
-                color: $foreground-normal;
-                background: $background-dark !important;
-            }
-        }
-
-        .sortorder-dropdown-button {
-            background-color: $background-normal;
-            border: 1px solid $decoration-normal;
-            height: 32px;
-            margin: 13px 0px 12px 12px;
-            border-radius: 0;
-        }
-
-        .sortorder-dropdown {
-            li > a{
-                color: $foreground-normal;
-            }
-        }
-
-        .categories-list li {
-            background-color: $background-normal;
-            border: 1px solid $decoration-normal;
-            color: $foreground-normal;
-        }
-
-        .select2-drop {
-            background: $background-dark;
-            color: $foreground-normal;
-            border: 1px solid $decoration-normal;
-            border-top: 0;
-            border-radius: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        }
-
-        .select2-container-multi .select2-choices, 
-        .select2-container-multi.select2-container-active .select2-choices, 
-        .select2-container .select2-choice {
-            border-radius: 0;
-            border: 1px solid $decoration-normal;
-        }
-    }
-}
-
-#app-sidebar div.content-wrapper .title {
-    background-color: $background-active;
-    border-bottom: 1px solid $decoration-normal;
-    text-shadow: none;
-
-    textarea {
-        &:hover, &:active, &:focus {
-            background: none repeat scroll 0 0 transparent !important;
-        }
-    }
-}
-
-#app-sidebar div.content-wrapper .title .expandable-container {
-	background: $background-dark;
-	border: 1px solid $decoration-normal;
-}
-
-#app-sidebar div.content-wrapper .body .section {
-    background: inherit;
-    text-shadow: none;
-    border-bottom: 1px dashed $decoration-normal;
-
-    input[type="range"] {
-        background-color: $background-normal;
-    }
-
-    input[type="text"] {
-        background-color: $background-dark;
-    }
-}
-
-#app-sidebar div.content-wrapper .body .section .note {
-    background-color: $background-dark;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
-    border-color: $decoration-normal;
-
-    .expandingArea textarea {
-        color: $foreground-normal;
-    }
-}
-
-#app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
-	color: $foreground-normal;
-	background-color: $background-normal;
-	border-color: $decoration-normal;
-    margin: 3px 0 3px 5px;
-}
-
-#app-navigation li > a span.title, #app-navigation li > a span.icon {
-	opacity: 1;
-}
-
-#content {
+#content.app-tasks {
     color: $foreground-normal;
 }
 
-#content li.task-item .task-body, #content div.task-item .task-body {
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
-}
-
-#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
-	color: $foreground-normal;
-    text-shadow: none;
-}
-
-#content li.task-item .task-body:hover,  
-#content div.task-item .task-body:hover {
-	background-color: $background-active-hover;
-}
-
-#content li.task-item .task-body.active, 
-#content div.task-item .task-body.active {
-    background-color: $background-active;
-}
-
-#app-content div.task-list .loadmore span {
-	color: $foreground-inactive;
-	background-color: $background-normal;
-    border: 1px solid $decoration-normal;
+#app-navigation .app-navigation-entry-edit input.action {
+    background-color: $background-dark;
 
     &:hover {
-        color: $foreground-normal;
-	    background-color: inherit;
-        border-color: $decoration-active;
+        background-color: $background-active-hover;
+    }
+
+    &:active, &:focus {
+        background-color: $background-active;
     }
 }
 
-#app-navigation .app-navigation-entry-edit {
-    input.icon-close, input[type="submit"]:hover {
+.app-tasks #app-content {
+
+    #add-task {
+        border-color: $decoration-normal;
+
+        input {
+            color: $foreground-normal;
+        }
+    }
+
+    .sortorder-dropdown-button {
         background-color: $background-normal;
+        border-color: $decoration-normal;
+    }
+
+    .categories-list li {
+        background-color: $background-normal;
+        border-color: $decoration-normal;
+        color: $foreground-normal;
+    }
+
+    .task-body {
+        background-color: $background-dark;
+        border-color: $decoration-normal;
 
         &:hover {
+            background-color: $background-active-hover;
+        }
+
+        &.active {
             background-color: $background-active;
+        }
+
+        .title-wrapper {
+            color: $foreground-normal;
+        }
+
+        .task-item.add-subtask {
+            border-color: $decoration-normal;
+        
+            input {
+                background: $background-dark !important;
+                color: $foreground-normal;
+            }
+        }
+
+        .duedate.overdue {
+            color: $foreground-negative;
+        }
+
+        .percentbar {
+            background-color: $background-active-hover;
+
+            .percentdone {
+                background-color: $background-active-alternate !important;
+            }
+        }
+    }
+
+    .task-list .loadmore span {
+        color: $foreground-inactive;
+        background-color: $background-normal;
+        border: 1px solid $decoration-normal;
+    
+        &:hover {
+            color: $foreground-normal;
+            border-color: $decoration-active;
         }
     }
 }
 
-#app-navigation .app-navigation-entry-edit input {
-	border: 1px solid $decoration-normal;
-}
+.app-tasks #app-sidebar div.content-wrapper {
 
-#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
-	background: $background-dark !important;
-	color: $foreground-normal;
-}
+    .title {
+        background-color: $background-active;
+        border-bottom-color: $decoration-normal;
 
-#content li.task-item.add-subtask, #content div.task-item.add-subtask {
-	border: 1px solid $decoration-normal;
-}
+        .expandable-container {
+            background: $background-dark;
+            border-color: $decoration-normal;
+        }
+    }
 
-#app-sidebar div.content-wrapper .body .section input {
-	background: $background-dark;
-	border: 1px solid $decoration-normal;
-	box-shadow: none;
-	color: $foreground-normal;
-}
+    .body .section {
+        border-bottom: 1px dashed $decoration-normal;
 
-div.percentdone {
-	height: 3px;
-	margin-bottom: -3px;
-	background-color: #CCC;
-	border-radius: 0;
-}
+        input {
+            background-color: $background-dark;
+            color: $foreground-normal;
+        }
+    
+        input[type="range"] {
+            background-color: $background-normal;
+        }
+    
+        input[type="text"] {
+            background-color: $background-dark;
+        }
 
-#app-sidebar div.content-wrapper div.footer {
-	border-top: none;
-	box-shadow: none;
-}
+        .note {
+            background-color: $background-dark;
+            border-color: $decoration-normal;
+        
+            .expandingArea textarea {
+                color: $foreground-normal;
+            }
+        }
 
-#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
-	color: $foreground-normal;
-	text-shadow: none;
-}
+        &.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
+            color: $foreground-normal;
+            background-color: $background-normal;
+            border-color: $decoration-normal;
+        }
+    }
 
-#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
-	color: $foreground-negative;
-    font-weight: bold;
-    text-shadow: none;
-}
+    .title .reactive:hover .detail-checkbox:not(.disabled) {
+        border-color: $background-active-alternate;
+    }
 
+    .reactive:hover .detail-checkbox:not(.disabled) {
+        border-color: $decoration-active;
+    }
+
+    .footer {
+        border-top: none;
+    }
+}
 
 .app-tasks {
 
@@ -211,8 +155,19 @@ div.percentdone {
     .icon-sort-down,
     .icon-all a::before,
     .icon-current a::before,
-    .icon-add a::before {
+    .icon-add a::before,
+    .icon-calendar a::before,
+    .icon-checkmark a::before,
+    .icon-task-star a::before,
+    .icon-list,
+    .icon-note,
+    .icon-hide,
+    .icon-percent {
         filter: invert(95%);
+    }
+
+    .icon-percent-active {
+        filter: none;
     }
 
     #app-settings, .app-navigation-entry-menu {
@@ -228,8 +183,33 @@ div.percentdone {
 
     #app-content {
 
-        .icon-subtasks-visible {
+        .icon-subtasks-visible,
+        .icon-subtasks-hidden {
             filter: invert(95%);
+        }
+    }
+
+    #app-sidebar {
+
+        .icon-calendar {
+            filter: invert(95%);
+        }
+
+        .icon-calendar-due {
+            filter: none;
+        }
+    }
+
+    #app-content, #app-sidebar {
+
+        .icon-task-star {
+            filter: invert(95%);
+        }
+
+        .icon-task-star-low,
+        .icon-task-star-medium,
+        .icon-task-star-high {
+            filter: none;
         }
     }
 }
