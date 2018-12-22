@@ -1,3 +1,5 @@
+/* Audio Player ------------------------------------------------------------- */
+
 .app-audioplayer #app-navigation {
 
     #albenoverview li {
@@ -17,13 +19,24 @@
 
         i.ioc {
             color: $foreground-normal;
+            opacity: 0.7;
 
             &.ioc-sort:hover {
                 color: $foreground-positive;
+                opacity: 1;
             }
 
             &.ioc-delete:hover {
                 color: $foreground-negative;
+                opacity: 1;
+            }
+        }
+
+        i.icon-rename {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
             }
         }
 

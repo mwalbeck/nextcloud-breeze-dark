@@ -847,15 +847,11 @@ a.impersonate img.svg {
 
 .app-settings {
 
-	// In admin and personal settings
-	#app-navigation img[src$="/img/app-dark.svg"] {
-		filter: invert(95%);
-	}
-
-	// In admin settings
+	#app-navigation img[src$="/img/app-dark.svg"],
 	#app-navigation img[src$="/settings/img/password.svg"],
 	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
-	#app-navigation img[src$="/apps/external/img/external-dark.svg"] {
+	#app-navigation img[src$="/apps/external/img/external-dark.svg"],
+	#app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"] {
 		filter: invert(95%);
 	}
 

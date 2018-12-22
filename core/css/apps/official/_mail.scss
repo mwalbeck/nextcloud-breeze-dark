@@ -36,8 +36,15 @@
         }
         
         #mail-content {
+            background-color: $background-dark;
+            color: $foreground-normal;
+            padding: 1em;
+            border: 1px solid $decoration-normal;
+            border-radius: 3px;
+        }
+
+        #mail-content iframe {
             background-color: #EEE;
-            color: #000;
             padding: 1em;
             border: 1px solid $decoration-normal;
             border-radius: 3px;

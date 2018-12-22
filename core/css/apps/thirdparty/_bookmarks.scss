@@ -1,52 +1,75 @@
-#bm_import:hover ~ button#bm_import_submit {
-	background-color: $background-normal;
-	color: $foreground-normal;
-}
+/* Bookmarks ---------------------------------------------------------------- */
 
-.bookmark_single {
-	border-bottom-color: $decoration-normal;
-
-    &:hover {
-        background-color: $background-active-hover;
+.app-bookmarks #app-navigation {
+    
+    .add-bookmark .form input {
+        border: none;
+        border-bottom: 1px solid $decoration-active;
     }
 }
 
-.bookmark_single_form {
-	border-bottom-color: $decoration-normal;
+.app-bookmarks #app-content {
 
-    .tagit {
+    .bulk-actions {
         box-shadow: none;
-    }
-}
-
-ul.tagit {
-	border-color: $decoration-normal;
-
-    input[type="text"] {
-        color: $foreground-inactive;
+        background: $background-normal;
+        border-bottom: 1px solid $decoration-normal;
     }
 
-    li.tagit-choice {
-	    color: $foreground-normal;
+    .bookmark-card {
         background-color: $background-normal;
+        box-shadow: none;
+        opacity: 0.93;
         border-color: $decoration-normal;
 
-        &:hover, &.remove {
+        .tag-nav-item {
             background-color: $background-normal;
-	        border-color: $decoration-active;
         }
 
-        .close .text-icon {
-	        color: $foreground-inactive;
+        .panel {
+            background-color: $background-dark-opacity;
+            border-top: 1px solid $decoration-normal;
         }
 
-        a.tagLabel:hover, a.close .text-icon:hover {
-            color: $foreground-active;
+        h2 {
+            text-shadow: none;
+
+            a {
+                color: $foreground-normal;
+            }
+        }
+
+        .select-mode-checkbox + label {
+            box-shadow: none;
+            background: $background-normal;
         }
     }
-}
 
-#tag_filter ul.tagit li.tagit-choice {
-	background-color: $background-normal;
-    border: 1px solid $decoration-normal;
+    .bookmark-detail {
+        background: $background-normal;
+        color: $foreground-normal;
+        box-shadow: none;
+        border-left: 1px solid $decoration-normal;
+
+        > .close {
+            background-color: unset;
+        }
+
+        h2 {
+            opacity: 0.7;
+        }
+
+        h3 {
+            border-bottom-color: $decoration-normal;
+        }
+
+        .status {
+            opacity: 0.7;
+            
+            .message-saving,
+            .message-saved {
+                background-color: $background-positive;
+            }
+        }
+    }
 }
