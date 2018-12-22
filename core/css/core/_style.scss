@@ -72,16 +72,6 @@ table.grid th, table.grid td {
 
 // Input Fields
 
-input.radio[type="checkbox"], 
-input.radio[type="radio"], 
-input.checkbox[type="checkbox"], 
-input.checkbox[type="radio"] {
-	&:checked + label::before, &:indeterminate + label::before {
-		background-color: $background-active-alternate;
-		border-color: $background-active-alternate;
-	}
-}
-
 input:not([type="range"]),
 textarea,
 div[contenteditable="true"],
