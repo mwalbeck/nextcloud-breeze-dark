@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 15.0.0
+* Version: 15.0.1
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -762,12 +762,11 @@ a.impersonate img.svg {
   filter: invert(95%);
 }
 
-.app-settings #app-navigation img[src$="/img/app-dark.svg"] {
-  filter: invert(95%);
-}
+.app-settings #app-navigation img[src$="/img/app-dark.svg"],
 .app-settings #app-navigation img[src$="/settings/img/password.svg"],
 .app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
-.app-settings #app-navigation img[src$="/apps/external/img/external-dark.svg"] {
+.app-settings #app-navigation img[src$="/apps/external/img/external-dark.svg"],
+.app-settings #app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"] {
   filter: invert(95%);
 }
 .app-settings #apps-list .app-image image,
@@ -842,17 +841,6 @@ table thead th {
 
 table.grid th, table.grid td {
   border-bottom-color: #706f6e;
-}
-
-input.radio[type=checkbox]:checked + label::before, input.radio[type=checkbox]:indeterminate + label::before,
-input.radio[type=radio]:checked + label::before,
-input.radio[type=radio]:indeterminate + label::before,
-input.checkbox[type=checkbox]:checked + label::before,
-input.checkbox[type=checkbox]:indeterminate + label::before,
-input.checkbox[type=radio]:checked + label::before,
-input.checkbox[type=radio]:indeterminate + label::before {
-  background-color: #1d99f3;
-  border-color: #1d99f3;
 }
 
 input:not([type=range]),
@@ -1525,6 +1513,40 @@ ul.multiselectoptions.down {
   border: 1px solid #706f6e;
 }
 
+.select2-container--default .select2-selection--multiple {
+  background-color: #232629;
+  border-color: #706f6e;
+}
+
+.select2-dropdown {
+  background-color: #232629;
+  border-color: #706f6e;
+}
+.select2-dropdown:hover {
+  border-color: #3daee9;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(61, 174, 233, 0.25);
+  color: #eff0f1;
+}
+
+.bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice,
+.bookmark-detail .tag-nav-item {
+  background-color: #31363b;
+}
+.bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice:hover,
+.bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice:hover,
+.bookmark-detail .tag-nav-item:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+
+.select2-container--default .select2-selection--multiple:hover,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #3daee9;
+}
+
 /* Auto suggestion users in comments dropdown ------------------------------- */
 .atwho-view {
   box-shadow: none;
@@ -1714,7 +1736,7 @@ ul.multiselectoptions.down {
   font-weight: 600;
 }
 #app-navigation input {
-  background-color: #232629 !important;
+  background-color: #232629;
 }
 #app-navigation select {
   background-color: #31363b !important;
@@ -1958,6 +1980,7 @@ ul.multiselectoptions.down {
   border-color: #da4453;
 }
 
+/* Files -------------------------------------------------------------------- */
 table td.filesize {
   color: #bdc3c7 !important;
 }
@@ -1987,6 +2010,10 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):hover, #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):focus, #filestable.view-grid:not(.hidden) tbody tr:not(.hidden):active, #filestable.view-grid:not(.hidden) tbody tr:not(.hidden).selected, #filestable.view-grid:not(.hidden) tbody tr:not(.hidden).highlighted, #filestable.view-grid:not(.hidden) tbody tr:not(.hidden).searchresult {
   background-color: rgba(61, 174, 233, 0.25);
+}
+
+#filestable.view-grid:not(.hidden) tbody tr.hidden-file td.filename .name .nametext .extension {
+  display: inline-block;
 }
 
 /* First Run Wizard --------------------------------------------------------- */
@@ -2077,8 +2104,14 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   color: #2980b9 !important;
 }
 .app-mail #app-content .app-content-details #mail-content {
+  background-color: #232629;
+  color: #eff0f1;
+  padding: 1em;
+  border: 1px solid #706f6e;
+  border-radius: 3px;
+}
+.app-mail #app-content .app-content-details #mail-content iframe {
   background-color: #EEE;
-  color: #000;
   padding: 1em;
   border: 1px solid #706f6e;
   border-radius: 3px;
@@ -2152,31 +2185,31 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background-color: #3daee9;
 }
 
-.ace-clouds {
-  background-color: #31363b !important;
+#editor.ace_editor {
+  background-color: #232629 !important;
   color: #eff0f1 !important;
 }
-.ace-clouds .ace_gutter {
-  color: #bdc3c7 !important;
-  background-color: #31363b !important;
+#editor.ace_editor .ace_gutter {
+  color: #eff0f1 !important;
   opacity: 1 !important;
 }
-.ace-clouds .ace_gutter .ace_gutter-cell {
+#editor.ace_editor .ace_gutter .ace_gutter-cell {
   opacity: 0.7;
 }
-.ace-clouds .ace_gutter-active-line {
+#editor.ace_editor .ace_gutter-active-line {
   background-color: rgba(61, 174, 233, 0.25) !important;
 }
-.ace-clouds .ace_marker-layer .ace_active-line {
+#editor.ace_editor .ace_marker-layer .ace_active-line {
   background: #31363b !important;
 }
-.ace-clouds .ace_marker-layer .ace_selection {
+#editor.ace_editor .ace_marker-layer .ace_selection {
   background: rgba(61, 174, 233, 0.25) !important;
 }
-.ace-clouds .ace_cursor {
+#editor.ace_editor .ace_cursor {
   color: #eff0f1 !important;
 }
 
+/* Audio Player ------------------------------------------------------------- */
 .app-audioplayer #app-navigation #albenoverview li {
   opacity: 1;
 }
@@ -2191,12 +2224,21 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 .app-audioplayer #app-navigation #myCategory li i.ioc {
   color: #eff0f1;
+  opacity: 0.7;
 }
 .app-audioplayer #app-navigation #myCategory li i.ioc.ioc-sort:hover {
   color: #27ae60;
+  opacity: 1;
 }
 .app-audioplayer #app-navigation #myCategory li i.ioc.ioc-delete:hover {
   color: #da4453;
+  opacity: 1;
+}
+.app-audioplayer #app-navigation #myCategory li i.icon-rename {
+  opacity: 0.7;
+}
+.app-audioplayer #app-navigation #myCategory li i.icon-rename:hover {
+  opacity: 1;
 }
 .app-audioplayer #app-navigation #myCategory li.activeHover {
   border-color: #3daee9;
@@ -2276,50 +2318,61 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   opacity: 1;
 }
 
-#bm_import:hover ~ button#bm_import_submit {
-  background-color: #31363b;
-  color: #eff0f1;
+/* Bookmarks ---------------------------------------------------------------- */
+.app-bookmarks #app-navigation .add-bookmark .form input {
+  border: none;
+  border-bottom: 1px solid #3daee9;
 }
 
-.bookmark_single {
-  border-bottom-color: #706f6e;
-}
-.bookmark_single:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-
-.bookmark_single_form {
-  border-bottom-color: #706f6e;
-}
-.bookmark_single_form .tagit {
+.app-bookmarks #app-content .bulk-actions {
   box-shadow: none;
+  background: #31363b;
+  border-bottom: 1px solid #706f6e;
 }
-
-ul.tagit {
+.app-bookmarks #app-content .bookmark-card {
+  background-color: #31363b;
+  box-shadow: none;
+  opacity: 0.93;
   border-color: #706f6e;
 }
-ul.tagit input[type=text] {
-  color: #bdc3c7;
+.app-bookmarks #app-content .bookmark-card .tag-nav-item {
+  background-color: #31363b;
 }
-ul.tagit li.tagit-choice {
+.app-bookmarks #app-content .bookmark-card .panel {
+  background-color: rgba(35, 38, 41, 0.9);
+  border-top: 1px solid #706f6e;
+}
+.app-bookmarks #app-content .bookmark-card h2 {
+  text-shadow: none;
+}
+.app-bookmarks #app-content .bookmark-card h2 a {
   color: #eff0f1;
-  background-color: #31363b;
-  border-color: #706f6e;
 }
-ul.tagit li.tagit-choice:hover, ul.tagit li.tagit-choice.remove {
-  background-color: #31363b;
-  border-color: #3daee9;
+.app-bookmarks #app-content .bookmark-card .select-mode-checkbox + label {
+  box-shadow: none;
+  background: #31363b;
 }
-ul.tagit li.tagit-choice .close .text-icon {
-  color: #bdc3c7;
+.app-bookmarks #app-content .bookmark-detail {
+  background: #31363b;
+  color: #eff0f1;
+  box-shadow: none;
+  border-left: 1px solid #706f6e;
 }
-ul.tagit li.tagit-choice a.tagLabel:hover, ul.tagit li.tagit-choice a.close .text-icon:hover {
-  color: #fcfcfc;
+.app-bookmarks #app-content .bookmark-detail > .close {
+  background-color: unset;
 }
-
-#tag_filter ul.tagit li.tagit-choice {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
+.app-bookmarks #app-content .bookmark-detail h2 {
+  opacity: 0.7;
+}
+.app-bookmarks #app-content .bookmark-detail h3 {
+  border-bottom-color: #706f6e;
+}
+.app-bookmarks #app-content .bookmark-detail .status {
+  opacity: 0.7;
+}
+.app-bookmarks #app-content .bookmark-detail .status .message-saving,
+.app-bookmarks #app-content .bookmark-detail .status .message-saved {
+  background-color: #27ae60;
 }
 
 #circles_list div {
@@ -2560,15 +2613,114 @@ div.circle .title, div.circle .type, div.circle .owner {
   border-left-color: #4d4d4d;
   color: #bdc3c7;
 }
-#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown pre {
+#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown tt {
   background-color: #31363b;
   border-color: #706f6e;
 }
-#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown code, #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown tt {
-  background-color: #31363b;
+#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown code, #app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown pre {
+  background-color: #232629;
   border-color: #706f6e;
 }
 
+/* a11y-dark theme */
+/* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
+/* @author: ericwbailey */
+/* Check the theme out on github https://github.com/highlightjs/highlight.js/blob/master/src/styles/a11y-dark.css */
+/* Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #d4d0ab;
+}
+
+/* Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: #ffa07a;
+}
+
+/* Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: #f5ab35;
+}
+
+/* Yellow */
+.hljs-attribute {
+  color: #ffd700;
+}
+
+/* Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #abe338;
+}
+
+/* Blue */
+.hljs-title,
+.hljs-section {
+  color: #00e0e0;
+}
+
+/* Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #dcc6e0;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #2b2b2b;
+  color: #f8f8f2;
+  padding: 0.5em;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .hljs-addition,
+.hljs-attribute,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-bullet,
+.hljs-comment,
+.hljs-link,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-params,
+.hljs-string,
+.hljs-symbol,
+.hljs-type,
+.hljs-quote {
+    color: highlight;
+  }
+
+  .hljs-keyword,
+.hljs-selector-tag {
+    font-weight: bold;
+  }
+}
 /* Music -------------------------------------------------------------------- */
 .app-music #app-navigation .app-navigation-separator {
   border-bottom-color: #706f6e;
@@ -3148,34 +3300,15 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   border-color: #27ae60;
 }
 
+/* Polls -------------------------------------------------------------------- */
 .app-polls #app-content .icon-polls {
   filter: invert(95%);
-}
-.app-polls #app-content .table-row {
-  background-color: #31363b;
-  border-bottom-color: #706f6e;
 }
 .app-polls #app-content .table-row.table-header {
   opacity: 1;
 }
-.app-polls #app-content .description {
-  color: #bdc3c7;
-}
-.app-polls #app-content .user-group-list {
-  border-color: #706f6e;
-}
-.app-polls #app-content .cl_access_item {
-  background-color: rgba(61, 174, 233, 0.25);
-  color: #eff0f1;
-}
-.app-polls #app-content .cl_access_item.selected:hover {
-  background-color: #da4453;
-}
 .app-polls #app-content .input-group-btn .btn {
   border-color: #706f6e;
-}
-.app-polls #app-content .user {
-  border-top-color: #706f6e;
 }
 .app-polls #app-content .current-user {
   background-color: #31363b;
@@ -3195,28 +3328,7 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-color: #31363b;
   color: #da4453;
 }
-.app-polls #app-content .text-row,
-.app-polls #app-content .date-row,
-.app-polls #app-content #selected-dates-table tr:first-child td {
-  background-color: #1d99f3;
-  color: #eff0f1;
-}
-.app-polls #app-content #selected-dates-table,
-.app-polls #app-content #selected-texts-table {
-  border: 1px solid #706f6e;
-}
-.app-polls #app-content table .icon-checkmark,
-.app-polls #app-content table .icon-close {
-  background-color: #31363b;
-}
 
-.app-polls #app-sidebar.detailsView .pollActions > ul > li > a, .app-polls #app-sidebar.detailsView .pollActions > ul > li > ul > li > a {
-  color: #eff0f1;
-  opacity: 0.57;
-}
-.app-polls #app-sidebar.detailsView #commentsTabView #commentBox {
-  border-color: #706f6e;
-}
 .app-polls #app-sidebar.detailsView .pollInformation .cloud .open {
   background-color: #27ae60;
 }
@@ -3224,50 +3336,15 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-color: #f67400;
 }
 
-.xdsoft_datetimepicker {
-  box-shadow: none;
-  background: #31363b;
-  border-color: #706f6e;
-  color: #eff0f1;
+.mx-datepicker.disabled .mx-input-append {
+  background-color: #4d4d4d;
 }
-.xdsoft_datetimepicker .xdsoft_label i,
-.xdsoft_datetimepicker .xdsoft_prev,
-.xdsoft_datetimepicker .xdsoft_next,
-.xdsoft_datetimepicker .xdsoft_today_button {
-  filter: invert(95%);
-}
-.xdsoft_datetimepicker .xdsoft_label {
-  background-color: #31363b;
-}
-.xdsoft_datetimepicker .xdsoft_calendar th, .xdsoft_datetimepicker .xdsoft_calendar td {
-  background-color: #31363b;
-  border-color: #706f6e;
-  color: #eff0f1;
-}
-.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month {
+.mx-datepicker .mx-input-append {
   background-color: #232629;
 }
-.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
-.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
-.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
-.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
-  box-shadow: none;
-  background-color: #3daee9;
-}
-.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
-  border-color: #706f6e;
-}
-.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
-  background-color: #31363b;
-  border-top-color: #706f6e;
-  color: #eff0f1;
-}
-.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
-  border-color: #706f6e;
-  background: #31363b;
-}
-.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
-  background-color: rgba(61, 174, 233, 0.25);
+.mx-datepicker .mx-datepicker-popup {
+  border-color: #706f6e !important;
+  background-color: #31363b !important;
 }
 
 .app-quicknotes #app-navigation #new-note-fixed {
@@ -3325,183 +3402,116 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   opacity: 1;
 }
 
-.app-tasks #app-content {
-  height: 99.9%;
-  border-top: 1px solid #706f6e;
+/* Tasks -------------------------------------------------------------------- */
+#content.app-tasks {
+  color: #eff0f1;
 }
-.app-tasks #app-content h2 {
-  text-shadow: none;
-  opacity: 1;
+
+#app-navigation .app-navigation-entry-edit input.action {
+  background-color: #232629;
 }
+#app-navigation .app-navigation-entry-edit input.action:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+#app-navigation .app-navigation-entry-edit input.action:active, #app-navigation .app-navigation-entry-edit input.action:focus {
+  background-color: #3daee9;
+}
+
 .app-tasks #app-content #add-task {
-  border: 1px solid #706f6e;
-  background: #232629;
+  border-color: #706f6e;
 }
 .app-tasks #app-content #add-task input {
   color: #eff0f1;
-  background: #232629 !important;
 }
 .app-tasks #app-content .sortorder-dropdown-button {
   background-color: #31363b;
-  border: 1px solid #706f6e;
-  height: 32px;
-  margin: 13px 0px 12px 12px;
-  border-radius: 0;
-}
-.app-tasks #app-content .sortorder-dropdown li > a {
-  color: #eff0f1;
+  border-color: #706f6e;
 }
 .app-tasks #app-content .categories-list li {
   background-color: #31363b;
-  border: 1px solid #706f6e;
+  border-color: #706f6e;
   color: #eff0f1;
 }
-.app-tasks #app-content .select2-drop {
-  background: #232629;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  border-top: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.app-tasks #app-content .select2-container-multi .select2-choices,
-.app-tasks #app-content .select2-container-multi.select2-container-active .select2-choices,
-.app-tasks #app-content .select2-container .select2-choice {
-  border-radius: 0;
-  border: 1px solid #706f6e;
-}
-
-#app-sidebar div.content-wrapper .title {
-  background-color: #3daee9;
-  border-bottom: 1px solid #706f6e;
-  text-shadow: none;
-}
-#app-sidebar div.content-wrapper .title textarea:hover, #app-sidebar div.content-wrapper .title textarea:active, #app-sidebar div.content-wrapper .title textarea:focus {
-  background: none repeat scroll 0 0 transparent !important;
-}
-
-#app-sidebar div.content-wrapper .title .expandable-container {
-  background: #232629;
-  border: 1px solid #706f6e;
-}
-
-#app-sidebar div.content-wrapper .body .section {
-  background: inherit;
-  text-shadow: none;
-  border-bottom: 1px dashed #706f6e;
-}
-#app-sidebar div.content-wrapper .body .section input[type=range] {
-  background-color: #31363b;
-}
-#app-sidebar div.content-wrapper .body .section input[type=text] {
+.app-tasks #app-content .task-body {
   background-color: #232629;
-}
-
-#app-sidebar div.content-wrapper .body .section .note {
-  background-color: #232629;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
   border-color: #706f6e;
 }
-#app-sidebar div.content-wrapper .body .section .note .expandingArea textarea {
-  color: #eff0f1;
-}
-
-#app-sidebar .content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
-  color: #eff0f1;
-  background-color: #31363b;
-  border-color: #706f6e;
-  margin: 3px 0 3px 5px;
-}
-
-#app-navigation li > a span.title, #app-navigation li > a span.icon {
-  opacity: 1;
-}
-
-#content {
-  color: #eff0f1;
-}
-
-#content li.task-item .task-body, #content div.task-item .task-body {
-  background-color: #232629;
-  border: 1px solid #706f6e;
-}
-
-#content li.task-item .task-body .title-wrapper, #content div.task-item .task-body .title-wrapper {
-  color: #eff0f1;
-  text-shadow: none;
-}
-
-#content li.task-item .task-body:hover,
-#content div.task-item .task-body:hover {
+.app-tasks #app-content .task-body:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
-
-#content li.task-item .task-body.active,
-#content div.task-item .task-body.active {
+.app-tasks #app-content .task-body.active {
   background-color: #3daee9;
 }
-
-#app-content div.task-list .loadmore span {
+.app-tasks #app-content .task-body .title-wrapper {
+  color: #eff0f1;
+}
+.app-tasks #app-content .task-body .task-item.add-subtask {
+  border-color: #706f6e;
+}
+.app-tasks #app-content .task-body .task-item.add-subtask input {
+  background: #232629 !important;
+  color: #eff0f1;
+}
+.app-tasks #app-content .task-body .duedate.overdue {
+  color: #da4453;
+}
+.app-tasks #app-content .task-body .percentbar {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+.app-tasks #app-content .task-body .percentbar .percentdone {
+  background-color: #1d99f3 !important;
+}
+.app-tasks #app-content .task-list .loadmore span {
   color: #bdc3c7;
   background-color: #31363b;
   border: 1px solid #706f6e;
 }
-#app-content div.task-list .loadmore span:hover {
+.app-tasks #app-content .task-list .loadmore span:hover {
   color: #eff0f1;
-  background-color: inherit;
   border-color: #3daee9;
 }
 
-#app-navigation .app-navigation-entry-edit input.icon-close, #app-navigation .app-navigation-entry-edit input[type=submit]:hover {
+.app-tasks #app-sidebar div.content-wrapper .title {
+  background-color: #3daee9;
+  border-bottom-color: #706f6e;
+}
+.app-tasks #app-sidebar div.content-wrapper .title .expandable-container {
+  background: #232629;
+  border-color: #706f6e;
+}
+.app-tasks #app-sidebar div.content-wrapper .body .section {
+  border-bottom: 1px dashed #706f6e;
+}
+.app-tasks #app-sidebar div.content-wrapper .body .section input {
+  background-color: #232629;
+  color: #eff0f1;
+}
+.app-tasks #app-sidebar div.content-wrapper .body .section input[type=range] {
   background-color: #31363b;
 }
-#app-navigation .app-navigation-entry-edit input.icon-close:hover, #app-navigation .app-navigation-entry-edit input[type=submit]:hover:hover {
-  background-color: #3daee9;
+.app-tasks #app-sidebar div.content-wrapper .body .section input[type=text] {
+  background-color: #232629;
 }
-
-#app-navigation .app-navigation-entry-edit input {
-  border: 1px solid #706f6e;
+.app-tasks #app-sidebar div.content-wrapper .body .section .note {
+  background-color: #232629;
+  border-color: #706f6e;
 }
-
-#content li.task-item.add-subtask input, #content div.task-item.add-subtask input {
-  background: #232629 !important;
+.app-tasks #app-sidebar div.content-wrapper .body .section .note .expandingArea textarea {
   color: #eff0f1;
 }
-
-#content li.task-item.add-subtask, #content div.task-item.add-subtask {
-  border: 1px solid #706f6e;
-}
-
-#app-sidebar div.content-wrapper .body .section input {
-  background: #232629;
-  border: 1px solid #706f6e;
-  box-shadow: none;
+.app-tasks #app-sidebar div.content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
   color: #eff0f1;
+  background-color: #31363b;
+  border-color: #706f6e;
 }
-
-div.percentdone {
-  height: 3px;
-  margin-bottom: -3px;
-  background-color: #CCC;
-  border-radius: 0;
+.app-tasks #app-sidebar div.content-wrapper .title .reactive:hover .detail-checkbox:not(.disabled) {
+  border-color: #1d99f3;
 }
-
-#app-sidebar div.content-wrapper div.footer {
+.app-tasks #app-sidebar div.content-wrapper .reactive:hover .detail-checkbox:not(.disabled) {
+  border-color: #3daee9;
+}
+.app-tasks #app-sidebar div.content-wrapper .footer {
   border-top: none;
-  box-shadow: none;
-}
-
-#content li.task-item .task-body .duedate, #content div.task-item .task-body .duedate {
-  color: #eff0f1;
-  text-shadow: none;
-}
-
-#content li.task-item .task-body .duedate.overdue, #content div.task-item .task-body .duedate.overdue {
-  color: #da4453;
-  font-weight: bold;
-  text-shadow: none;
 }
 
 .app-tasks .icon {
@@ -3512,8 +3522,18 @@ div.percentdone {
 .app-tasks .icon-sort-down,
 .app-tasks .icon-all a::before,
 .app-tasks .icon-current a::before,
-.app-tasks .icon-add a::before {
+.app-tasks .icon-add a::before,
+.app-tasks .icon-calendar a::before,
+.app-tasks .icon-checkmark a::before,
+.app-tasks .icon-task-star a::before,
+.app-tasks .icon-list,
+.app-tasks .icon-note,
+.app-tasks .icon-hide,
+.app-tasks .icon-percent {
   filter: invert(95%);
+}
+.app-tasks .icon-percent-active {
+  filter: none;
 }
 .app-tasks #app-settings .icon-all,
 .app-tasks #app-settings .icon-current,
@@ -3526,8 +3546,25 @@ div.percentdone {
 .app-tasks .app-navigation-entry-menu .icon-subtasks-visible {
   filter: invert(95%);
 }
-.app-tasks #app-content .icon-subtasks-visible {
+.app-tasks #app-content .icon-subtasks-visible,
+.app-tasks #app-content .icon-subtasks-hidden {
   filter: invert(95%);
+}
+.app-tasks #app-sidebar .icon-calendar {
+  filter: invert(95%);
+}
+.app-tasks #app-sidebar .icon-calendar-due {
+  filter: none;
+}
+.app-tasks #app-content .icon-task-star, .app-tasks #app-sidebar .icon-task-star {
+  filter: invert(95%);
+}
+.app-tasks #app-content .icon-task-star-low,
+.app-tasks #app-content .icon-task-star-medium,
+.app-tasks #app-content .icon-task-star-high, .app-tasks #app-sidebar .icon-task-star-low,
+.app-tasks #app-sidebar .icon-task-star-medium,
+.app-tasks #app-sidebar .icon-task-star-high {
+  filter: none;
 }
 
 /* User account deletion ---------------------------------------------------- */
