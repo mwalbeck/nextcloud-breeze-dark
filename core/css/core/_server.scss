@@ -5,40 +5,10 @@
 
 	p.info {
 		color: $foreground-inactive;
-
-		a {
-			font-weight: 600;
-
-			&:hover {
-				opacity: 1;
-			}
-		}
-		
-	}
-
-	#remember_login + label {
-
-		&:hover, &:focus {
-			opacity: 1;
-			color: $foreground-inactive;
-		}
-	}
-
-	form fieldset legend,
-	form fieldset .warning-info,
-	form input[type="checkbox"] + label,
-	#datadirContent label {
-		color: $foreground-inactive;
 	}
 }
 
 /* Header ------------------------------------------------------------------- */
-
-// Logo
-#header .logo,
-#header .logo-icon {
-	background-image: url('../img/logo.svg');
-}
 
 // Header Bar
 #body-user #header,
@@ -69,10 +39,11 @@
 
 div.crumb a, div.crumb > span {
 	color: $foreground-normal;
+	opacity: 0.7;
 }
 
 div.crumb span.icon-shared, div.crumb span.icon-public {
-	opacity: 0.3;
+	opacity: 0.7;
 }
 
 /* Menues ------------------------------------------------------------------- */
@@ -315,11 +286,6 @@ span {
 
 #filestable tbody {
 	tr {
-		background-color: $background-normal;
-
-		&:hover {
-			background-color: $background-active-hover;
-		}
 
 		&:focus, &:active {
 			background-color: $background-active;
@@ -351,26 +317,8 @@ span {
 /* File picker -------------------------------------------------------------- */
 
 .oc-dialog {
-	background-color: $background-normal;
-	color: $foreground-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
-
-	.fileexists th label {
-		color: $foreground-normal;
-	}
-}
-
-.oc-dialog-title {
-	background-color: $background-normal;
-}
-
-#oc-dialog-filepicker-content .filelist {
-	background-color: $background-dark;
-
-	td {
-		border-bottom-color: $decoration-normal;
-	}
 }
 
 #oc-dialog-filepicker-content .filepicker_element_selected {
@@ -383,15 +331,6 @@ span {
 	.filename {
 		color: $foreground-active;
 	}
-
-	&:hover {
-		background-color: $background-active;
-	}
-}
-
-.oc-dialog-buttonrow {
-	background-image: none;
-	background-color: $background-normal;
 }
 
 /* Multiselect -------------------------------------------------------------- */
