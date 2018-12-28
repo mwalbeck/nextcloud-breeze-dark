@@ -27,6 +27,16 @@
                 background-color: $background-dark;
                 border-color: $decoration-normal;
             }
+
+            table tr {
+                border-top-color: $decoration-normal;
+                background-color: $background-normal;
+
+                th {
+                    color: $foreground-normal;
+                    border-bottom-color: $decoration-normal;
+                }
+            }
         }
     }
 }
