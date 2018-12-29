@@ -184,24 +184,11 @@ span {
 		.app-image-icon .icon-settings-dark {
 			opacity: 1;
 		}
-
-		.section > * {
-			border-bottom-color: $decoration-normal;
-		}
 	}
 
 	.app-name {
 		font-weight: 600;
 	}
-}
-
-#app-sidebar #app-details-view h2 {
-	
-	svg,
-	.icon-settings-dark {
-		opacity: 1;
-}
-
 }
 
 .app-version {
