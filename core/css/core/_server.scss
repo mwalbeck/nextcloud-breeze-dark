@@ -146,7 +146,7 @@ span {
 
 // Section Container
 // Primarily seems to be used under settings
-.section, .followupsection {
+.followupsection {
 	color: $foreground-normal;
 }
 
@@ -157,20 +157,11 @@ span {
 	color: $foreground-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
-
-	.jcrop-holder {
-		box-shadow: none;
-	}
 }
 
 // Description of the different update channels
-#updatenotification .channel-description span {
-	color: $foreground-normal;
-
-	strong {
-		color: $foreground-active;
-		font-weight: bold;
-	}
+#updatenotification .channel-description span strong {
+	font-weight: bold;
 }
 
 /* App Store ---------------------------------------------------------------- */
