@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 15.0.1
+* Version: 15.0.2
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -205,7 +205,8 @@ input, label {
 .icon-settings,
 .icon-settings-dark,
 .icon-category-tools,
-#app-navigation .music-nav-settings a {
+#app-navigation .music-nav-settings a,
+.jsxc_settingsicon {
   background-image: url("../img/actions/settings.svg?v=1");
 }
 
@@ -276,7 +277,8 @@ select {
 }
 
 /* Help --------------------------------------------------------------------- */
-.icon-help {
+.icon-help,
+.jsxc_helpicon {
   background-image: url("../img/help.svg");
 }
 
@@ -347,7 +349,8 @@ input[type=email] + .icon-confirm:disabled {
 }
 
 /* Menu --------------------------------------------------------------------- */
-.icon-menu {
+.icon-menu,
+#jsxc_menu > span {
   background-image: url("../img/actions/menu.svg?v=1");
 }
 
@@ -766,7 +769,8 @@ a.impersonate img.svg {
 .app-settings #app-navigation img[src$="/settings/img/password.svg"],
 .app-settings #app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
 .app-settings #app-navigation img[src$="/apps/external/img/external-dark.svg"],
-.app-settings #app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"] {
+.app-settings #app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"],
+.app-settings #app-navigation img[src$="/apps/ojsxc/img/app-black.svg"] {
   filter: invert(95%);
 }
 .app-settings #apps-list .app-image image,
@@ -787,11 +791,6 @@ a.impersonate img.svg {
   filter: invert(95%);
 }
 
-body {
-  color: #eff0f1;
-  background-color: #31363b;
-}
-
 a {
   color: #2980b9;
 }
@@ -799,19 +798,6 @@ a:hover, a:focus {
   color: #2980b9;
 }
 a.button:hover, a.button:focus {
-  color: #eff0f1;
-}
-
-em {
-  opacity: 1;
-}
-
-h1, h2, h3 {
-  color: #fcfcfc;
-  font-weight: 600;
-}
-
-h4, h5, h6 {
   color: #eff0f1;
 }
 
@@ -829,14 +815,6 @@ table th a, table a {
 }
 table th a:hover, table th a:focus, table a:hover, table a:focus {
   color: #eff0f1;
-}
-table td {
-  border-bottom-color: #706f6e;
-}
-table thead th {
-  color: #eff0f1;
-  border-bottom: 1px solid #706f6e;
-  background-color: #31363b;
 }
 
 table.grid th, table.grid td {
@@ -1114,29 +1092,8 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 #body-login p.info {
   color: #bdc3c7;
 }
-#body-login p.info a {
-  font-weight: 600;
-}
-#body-login p.info a:hover {
-  opacity: 1;
-}
-#body-login #remember_login + label:hover, #body-login #remember_login + label:focus {
-  opacity: 1;
-  color: #bdc3c7;
-}
-#body-login form fieldset legend,
-#body-login form fieldset .warning-info,
-#body-login form input[type=checkbox] + label,
-#body-login #datadirContent label {
-  color: #bdc3c7;
-}
 
 /* Header ------------------------------------------------------------------- */
-#header .logo,
-#header .logo-icon {
-  background-image: url("../img/logo.svg");
-}
-
 #body-user #header,
 #body-settings #header,
 #body-public #header {
@@ -1163,62 +1120,34 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 /* Breadcrumbs -------------------------------------------------------------- */
 div.crumb a, div.crumb > span {
   color: #eff0f1;
+  opacity: 0.7;
 }
 
 div.crumb span.icon-shared, div.crumb span.icon-public {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 /* Menues ------------------------------------------------------------------- */
 .menu {
-  box-shadow: none;
-  background-color: #31363b;
   border: 1px solid #706f6e;
+  filter: none;
 }
 .menu::after {
   border-bottom-color: #706f6e;
-}
-.menu li {
-  color: #eff0f1;
 }
 .menu li:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
 
-#contactsmenu .menutoggle:hover {
-  opacity: 1;
-}
-#contactsmenu > .menu .contact {
-  border-bottom-color: #706f6e;
-}
-#contactsmenu > .menu .content .footer a {
-  opacity: 1;
-}
-
-.popovermenu {
-  background-color: #31363b;
-  color: #eff0f1;
-  border: 1px solid #706f6e;
-  filter: none;
-}
-.popovermenu::after {
-  border-bottom-color: #706f6e;
-}
 .popovermenu li > a {
   color: #eff0f1;
 }
 
-.bubble, .app-navigation-entry-menu {
-  background-color: #31363b;
-  color: #eff0f1;
+.app-navigation-entry-menu {
   border: 1px solid #706f6e;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -ms-filter: none;
-  -o-filter: none;
   filter: none;
 }
-.bubble::after, .app-navigation-entry-menu::after {
+.app-navigation-entry-menu::after {
   border-bottom-color: #706f6e;
 }
 
@@ -1233,22 +1162,6 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 #body-settings #expand::before {
   border-bottom-color: #706f6e;
-}
-
-#navigation {
-  background-color: #31363b;
-  border: 1px solid #706f6e;
-  box-shadow: none;
-}
-#navigation::after {
-  border-bottom-color: #706f6e;
-}
-#navigation a span {
-  color: #eff0f1;
-}
-
-#app-navigation .utils .action:hover, #app-navigation .utils .action:focus {
-  opacity: 0.7;
 }
 
 /* Info colours ------------------------------------------------------------- */
@@ -1296,7 +1209,7 @@ span.success {
 }
 
 /* General Settings --------------------------------------------------------- */
-.section, .followupsection {
+.followupsection {
   color: #eff0f1;
 }
 
@@ -1306,15 +1219,8 @@ span.success {
   box-shadow: none;
   border: 1px solid #706f6e;
 }
-#cropper .inner-container .jcrop-holder {
-  box-shadow: none;
-}
 
-#updatenotification .channel-description span {
-  color: #eff0f1;
-}
 #updatenotification .channel-description span strong {
-  color: #fcfcfc;
   font-weight: bold;
 }
 
@@ -1330,16 +1236,8 @@ span.success {
 #apps-list.installed .app-image-icon .icon-settings-dark {
   opacity: 1;
 }
-#apps-list.installed .section > * {
-  border-bottom-color: #706f6e;
-}
 #apps-list .app-name {
   font-weight: 600;
-}
-
-#app-sidebar #app-details-view h2 svg,
-#app-sidebar #app-details-view h2 .icon-settings-dark {
-  opacity: 1;
 }
 
 .app-version {
@@ -1347,12 +1245,6 @@ span.success {
 }
 
 /* Files table -------------------------------------------------------------- */
-#filestable tbody tr {
-  background-color: #31363b;
-}
-#filestable tbody tr:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
 #filestable tbody tr:focus, #filestable tbody tr:active {
   background-color: #3daee9;
 }
@@ -1375,24 +1267,8 @@ span.success {
 
 /* File picker -------------------------------------------------------------- */
 .oc-dialog {
-  background-color: #31363b;
-  color: #eff0f1;
   box-shadow: none;
   border: 1px solid #706f6e;
-}
-.oc-dialog .fileexists th label {
-  color: #eff0f1;
-}
-
-.oc-dialog-title {
-  background-color: #31363b;
-}
-
-#oc-dialog-filepicker-content .filelist {
-  background-color: #232629;
-}
-#oc-dialog-filepicker-content .filelist td {
-  border-bottom-color: #706f6e;
 }
 
 #oc-dialog-filepicker-content .filepicker_element_selected {
@@ -1403,14 +1279,6 @@ span.success {
 }
 #oc-dialog-filepicker-content .filepicker_element_selected .filename {
   color: #fcfcfc;
-}
-#oc-dialog-filepicker-content .filepicker_element_selected:hover {
-  background-color: #3daee9;
-}
-
-.oc-dialog-buttonrow {
-  background-image: none;
-  background-color: #31363b;
 }
 
 /* Multiselect -------------------------------------------------------------- */
@@ -1728,6 +1596,12 @@ ul.multiselectoptions.down {
 #app-navigation ul > li > a.active:hover, #app-navigation li > a.active:hover {
   background-color: #3daee9;
 }
+#app-navigation .collapsible:hover::before {
+  background-color: unset;
+}
+#app-navigation .collapsible:hover > a {
+  background-image: none;
+}
 #app-navigation .active {
   background-color: #3daee9;
 }
@@ -1922,6 +1796,21 @@ ul.multiselectoptions.down {
 }
 
 /* Contacts ----------------------------------------------------------------- */
+.app-contacts ul.addressBookList li .action {
+  opacity: 0.7;
+}
+.app-contacts ul.addressBookList li .action:hover, .app-contacts ul.addressBookList li .action:focus {
+  opacity: 1;
+}
+.app-contacts ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action {
+  border: 1px solid #da4453;
+  opacity: 1;
+  background-color: #232629 !important;
+}
+.app-contacts ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action:hover, .app-contacts ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action:active, .app-contacts ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action:focus {
+  border-color: #3daee9 !important;
+  border-left: none;
+}
 .app-contacts .app-content-list-item {
   color: #eff0f1;
 }
@@ -2621,6 +2510,14 @@ div.circle .title, div.circle .type, div.circle .owner {
   background-color: #232629;
   border-color: #706f6e;
 }
+#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown table tr {
+  border-top-color: #706f6e;
+  background-color: #31363b;
+}
+#app-content-texteditor #editor_container #editor_wrap #preview_wrap #preview.text-markdown table tr th {
+  color: #bdc3c7;
+  border-bottom-color: #706f6e;
+}
 
 /* a11y-dark theme */
 /* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
@@ -2865,6 +2762,153 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 .app-news #explore .explore-footer a {
   color: #2980b9;
+}
+
+/* JavaScript XMPP Chat ----------------------------------------------------- */
+#jsxc_submit:hover {
+  opacity: 1;
+}
+
+#jsxc_notice span,
+.jsxc_caption .jsxc_lastmsg .jsxc_unread {
+  background-color: #f67400;
+  color: #eff0f1;
+}
+
+#jsxc_roster {
+  background-color: #31363b;
+  border-left-color: #706f6e;
+}
+#jsxc_roster #jsxc_toggleRoster::before {
+  border-color: transparent #706f6e;
+}
+#jsxc_roster .jsxc_rosteritem {
+  color: #eff0f1;
+}
+#jsxc_roster .jsxc_rosteritem:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+#jsxc_roster > .jsxc_bottom {
+  background-color: #31363b;
+  border-top: 1px solid #706f6e;
+}
+#jsxc_roster > .jsxc_bottom ul {
+  background-color: #31363b;
+  color: #eff0f1;
+  border-top: 1px solid #706f6e;
+}
+#jsxc_roster > .jsxc_bottom li {
+  background-color: #31363b;
+  color: #eff0f1;
+}
+#jsxc_roster > .jsxc_bottom li:hover:not(.jsxc_disabled) {
+  background-color: rgba(61, 174, 233, 0.25);
+  color: #eff0f1;
+}
+
+#jsxc_dialog {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+}
+#jsxc_dialog form fieldset {
+  border-color: #706f6e;
+}
+#jsxc_dialog form fieldset h3 {
+  background-color: #232629;
+  color: #eff0f1;
+}
+#jsxc_dialog form fieldset h3.jsxc_experimental::after {
+  background-color: #f67400;
+}
+
+#jsxc_dialog .btn-default, #jsxc_webrtc .btn-default {
+  color: #eff0f1;
+  background-color: #232629;
+  border-color: #706f6e;
+}
+#jsxc_dialog .btn-default:hover, #jsxc_webrtc .btn-default:hover {
+  background-color: #1d99f3;
+  color: #fcfcfc;
+}
+#jsxc_dialog pre, #jsxc_webrtc pre {
+  color: #eff0f1;
+  background-color: #232629;
+  border-color: #706f6e;
+}
+#jsxc_dialog .form-control, #jsxc_webrtc .form-control {
+  color: #eff0f1;
+  background-color: #232629;
+  border-color: #706f6e;
+  box-shadow: none;
+}
+#jsxc_dialog .form-control[readonly], #jsxc_dialog .form-control[disabled], #jsxc_webrtc .form-control[readonly], #jsxc_webrtc .form-control[disabled] {
+  background-color: #4d4d4d;
+}
+#jsxc_dialog .form-control:focus, #jsxc_webrtc .form-control:focus {
+  box-shadow: none;
+  border-color: #3daee9;
+}
+#jsxc_dialog hr, #jsxc_webrtc hr {
+  border-top-color: #706f6e;
+}
+
+#jsxc_windowList .jsxc_window {
+  background-color: #31363b;
+  border-color: #706f6e;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar {
+  background-color: #1d99f3;
+  color: #eff0f1;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu {
+  background-color: #31363b;
+  color: #eff0f1;
+  filter: none;
+  border: 1px solid #706f6e;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu a {
+  color: #eff0f1;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu::after {
+  border-bottom-color: #706f6e;
+}
+#jsxc_windowList .jsxc_window .jsxc_fade {
+  background-color: #232629;
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea {
+  background-color: #232629;
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea .jsxc_in {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea .jsxc_in::after {
+  border-color: transparent rgba(61, 174, 233, 0.25);
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea .jsxc_out {
+  background-color: #31363b;
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea .jsxc_out::after {
+  border-color: transparent #31363b;
+}
+#jsxc_windowList .jsxc_window .jsxc_textarea .jsxc_timestamp {
+  color: #eff0f1;
+  opacity: 0.7;
+}
+#jsxc_windowList .jsxc_window .jsxc_textinput::placeholder {
+  color: #bdc3c7;
+}
+#jsxc_windowList .jsxc_window .jsxc_emoticons::after {
+  filter: invert(95%);
+}
+#jsxc_windowList .jsxc_window .jsxc_emoticons ul {
+  background-color: #31363b;
+  border: 1px solid #706f6e;
+}
+#jsxc_windowList .jsxc_window .jsxc_emoticons ul::after {
+  border-top-color: #706f6e;
+}
+#jsxc_windowList .jsxc_window .jsxc_transfer {
+  filter: invert(95%);
 }
 
 .app-passman #app-navigation .taginput:hover {
@@ -3388,6 +3432,12 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-color: inherit;
 }
 
+.app-radio #app-content #app-content-files #filestable th, .app-radio #app-content #app-content-files #filestable td {
+  border-color: #706f6e;
+}
+.app-radio #app-content #app-content-files #filestable thead th {
+  background-color: #31363b;
+}
 .app-radio #app-content #app-content-files #filestable tbody tr {
   background-color: #31363b !important;
 }
@@ -3599,13 +3649,13 @@ button#deleteaccount:disabled {
 }
 .app-weather #city-list-left .city-list li:hover, .app-weather #city-list-left .city-list li:hover > a {
   background-color: rgba(61, 174, 233, 0.25);
-  box-shadow: inset 2px 0 #1d99f3;
+  box-shadow: inset 4px 0 var(--color-primary);
 }
 .app-weather #city-list-left .city-list li.selected, .app-weather #city-list-left .city-list li.selected a {
   background-color: #3daee9;
   color: #fcfcfc;
   font-weight: 600;
-  box-shadow: inset 2px 0 #1d99f3;
+  box-shadow: inset 4px 0 var(--color-primary);
 }
 .app-weather #city-list-left .city-list #create-city {
   background-color: #31363b;
