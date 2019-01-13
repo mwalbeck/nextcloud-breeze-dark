@@ -1,0 +1,189 @@
+/* JavaScript XMPP Chat ----------------------------------------------------- */
+
+#jsxc_submit:hover {
+    opacity: 1;
+}
+
+#jsxc_notice span,
+.jsxc_caption .jsxc_lastmsg .jsxc_unread {
+	background-color: $background-neutral;
+	color: $foreground-normal;
+}
+
+#jsxc_roster {
+    background-color: $background-normal;
+    border-left-color: $decoration-normal;
+
+    #jsxc_toggleRoster::before {
+        border-color: transparent $decoration-normal;
+    }
+
+    .jsxc_rosteritem {
+        color: $foreground-normal;
+
+        &:hover {
+            background-color: $background-active-hover;
+        }
+    }
+
+    > .jsxc_bottom {
+        background-color: $background-normal;
+        border-top: 1px solid $decoration-normal;
+
+        ul {
+            background-color: $background-normal;
+            color: $foreground-normal;
+            border-top: 1px solid $decoration-normal;
+        }
+
+        li {
+            background-color: $background-normal;
+            color: $foreground-normal;
+
+            &:hover:not(.jsxc_disabled) {
+                background-color: $background-active-hover;
+                color: $foreground-normal;
+            }
+        }
+    }
+}
+
+#jsxc_dialog {
+    background-color: $background-normal;
+    border: 1px solid $decoration-normal;
+
+    form fieldset {
+        border-color: $decoration-normal;
+
+        h3 {
+            background-color: $background-dark;
+            color: $foreground-normal;
+
+            &.jsxc_experimental::after {
+                background-color: $background-neutral;
+            }
+        }
+    }
+}
+
+#jsxc_dialog, #jsxc_webrtc {
+
+    .btn-default {
+        color: $foreground-normal;
+        background-color: $background-dark;
+        border-color: $decoration-normal;
+
+        &:hover {
+            background-color: $background-active-alternate;
+            color: $foreground-active;
+        }
+    }
+
+    pre {
+        color: $foreground-normal;
+        background-color: $background-dark;
+        border-color: $decoration-normal;
+    }
+
+    .form-control {
+        color: $foreground-normal;
+        background-color: $background-dark;
+        border-color: $decoration-normal;
+        box-shadow: none;
+
+        &[readonly], &[disabled] {
+            background-color: $background-alternate;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: $decoration-active;
+        }
+    }
+
+    hr {
+        border-top-color: $decoration-normal;
+    }
+}
+
+#jsxc_windowList .jsxc_window {
+    background-color: $background-normal;
+    border-color: $decoration-normal;
+    
+    .jsxc_bar {
+        background-color: $background-active-alternate;
+        color: $foreground-normal;
+
+        .jsxc_settings .jsxc_menu {
+            background-color: $background-normal;
+            color: $foreground-normal;
+            filter: none;
+            border: 1px solid $decoration-normal;
+
+            a {
+                color: $foreground-normal;
+            }
+
+            &::after {
+                border-bottom-color: $decoration-normal;
+            }
+        }
+    }
+
+    .jsxc_fade {
+        background-color: $background-dark;
+    }
+
+    .jsxc_textarea {
+        background-color: $background-dark;
+
+        .jsxc_in {
+            background-color: $background-active-hover;
+
+            &::after {
+                border-color: transparent $background-active-hover;
+            }
+        }
+
+        .jsxc_out {
+            background-color: $background-normal;
+
+            &::after {
+                border-color: transparent $background-normal;
+            }
+        }
+
+        .jsxc_timestamp {
+            color: $foreground-normal;
+            opacity: 0.7;
+        }
+    }
+
+    .jsxc_textinput {
+        //border-top: 1px solid $decoration-normal;
+
+        &::placeholder {
+            color: $foreground-inactive;
+        }
+    }
+
+    .jsxc_emoticons {
+
+        &::after {
+            filter: invert(95%);
+        }
+
+        ul {
+            background-color: $background-normal;
+            border: 1px solid $decoration-normal;
+
+            &::after {
+                border-top-color: $decoration-normal;
+            }
+        }
+    }
+
+    .jsxc_transfer {
+        filter: invert(95%);
+    }
+}

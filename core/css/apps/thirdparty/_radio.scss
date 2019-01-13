@@ -24,16 +24,21 @@
     }
 }
 
-.app-radio #app-content {
+.app-radio #app-content #app-content-files #filestable {
 
-    #app-content-files {
+    th, td {
+        border-color: $decoration-normal;
+    }
 
-        #filestable tbody tr {
-            background-color: $background-normal !important;
+    thead th {
+        background-color: $background-normal;
+    }
 
-            &:hover {
-                background-color: $background-active-hover !important;
-            }
+    tbody tr {
+        background-color: $background-normal !important;
+
+        &:hover {
+            background-color: $background-active-hover !important;
         }
     }
 }

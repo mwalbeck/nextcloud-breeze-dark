@@ -1,8 +1,3 @@
-body {
-	color: $foreground-normal;
-	background-color: $background-normal;
-}
-
 a {
 	color: $foreground-link;
 
@@ -13,19 +8,6 @@ a {
 	&.button:hover, &.button:focus {
 		color: $foreground-normal;
 	}
-}
-
-em {
-	opacity: 1;
-}
-
-h1, h2, h3 {
-    color: $foreground-active;
-	font-weight: 600;
-}
-
-h4, h5, h6 {
-	color: $foreground-normal;
 }
 
 // Tables
@@ -49,19 +31,6 @@ table {
 
 		&:hover, &:focus {
 			color: $foreground-normal;
-		}
-	}
-
-	td {
-		border-bottom-color: $decoration-normal;
-	}
-
-	thead {
-
-		th {
-			color: $foreground-normal;
-			border-bottom: 1px solid $decoration-normal;
-			background-color: $background-normal;
 		}
 	}
 }

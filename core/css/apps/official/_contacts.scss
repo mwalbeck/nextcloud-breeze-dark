@@ -2,6 +2,25 @@
 
 .app-contacts {
 
+	ul.addressBookList li .action {
+		opacity: 0.7;
+
+		&:hover, &:focus {
+			opacity: 1;
+		}
+	}
+
+	ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action {
+		border: 1px solid $background-negative;
+		opacity: 1;
+		background-color: $background-dark !important;
+
+		&:hover, &:active, &:focus {
+			border-color: $decoration-active !important;
+			border-left: none;
+		}
+	}
+
 	.app-content-list-item {
 		color: $foreground-normal;
 

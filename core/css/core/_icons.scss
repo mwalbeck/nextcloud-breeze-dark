@@ -185,7 +185,8 @@
 .icon-settings,
 .icon-settings-dark,
 .icon-category-tools,
-#app-navigation .music-nav-settings a {
+#app-navigation .music-nav-settings a,
+.jsxc_settingsicon {
 	background-image: url('../img/actions/settings.svg?v=1');
 }
 
@@ -269,7 +270,8 @@ select {
 
 /* Help --------------------------------------------------------------------- */
 
-.icon-help {
+.icon-help,
+.jsxc_helpicon {
 	background-image: url('../img/help.svg');
 }
 
@@ -351,7 +353,8 @@ input[type="email"] + .icon-confirm:disabled {
 
 /* Menu --------------------------------------------------------------------- */
 
-.icon-menu {
+.icon-menu,
+#jsxc_menu > span {
 	background-image: url('../img/actions/menu.svg?v=1');
 }
 
@@ -851,7 +854,8 @@ a.impersonate img.svg {
 	#app-navigation img[src$="/settings/img/password.svg"],
 	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
 	#app-navigation img[src$="/apps/external/img/external-dark.svg"],
-	#app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"] {
+	#app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"],
+	#app-navigation img[src$="/apps/ojsxc/img/app-black.svg"] {
 		filter: invert(95%);
 	}
 

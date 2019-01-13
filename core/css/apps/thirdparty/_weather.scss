@@ -15,14 +15,14 @@
 
             &:hover, &:hover > a {
                 background-color: $background-active-hover;
-                box-shadow: inset 2px 0 $background-active-alternate;
+                box-shadow: inset 4px 0 var(--color-primary);
             }
 
             &.selected, &.selected a {
                 background-color: $background-active;
                 color: $foreground-active;
                 font-weight: 600;
-                box-shadow: inset 2px 0 $background-active-alternate;
+                box-shadow: inset 4px 0 var(--color-primary);
             }
         }
 

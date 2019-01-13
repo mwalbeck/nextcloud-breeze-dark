@@ -35,6 +35,17 @@
 		}
 	}
 
+	.collapsible:hover {
+	
+		&::before {
+			background-color: unset;
+		}
+
+		> a {
+			background-image: none;
+		}
+	}
+
 	.active {
 		background-color: $background-active;
 
