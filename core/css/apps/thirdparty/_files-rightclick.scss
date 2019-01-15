@@ -1,5 +1,15 @@
 /* Files Right Click -------------------------------------------------------- */
 
-#rightClickMenu li:hover {
-    background-color: $background-active-hover;
+.rightClick {
+    
+    border: 1px solid $decoration-normal;
+    filter: none;
+
+    li:hover {
+        background-color: $background-active-hover;
+    }
+
+    li:active, li:focus {
+        background-color: $background-active;
+    }
 }
