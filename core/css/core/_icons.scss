@@ -11,7 +11,8 @@
 
 .icon-home,
 .icon-inbox,
-#oc-dialog-filepicker-content .dirtree div:first-child a {
+#oc-dialog-filepicker-content .dirtree div:first-child a,
+#controls .breadcrumb .crumb .home {
 	background-image: url('../img/places/home.svg?v=1');
 }
 
@@ -838,11 +839,6 @@ a.impersonate img.svg {
 
 // Arrow in advanved ldap settings
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-	filter: invert(95%);
-}
-
-// Home icon in controls in passwords app
-.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
 	filter: invert(95%);
 }
 

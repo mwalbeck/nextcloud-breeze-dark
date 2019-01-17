@@ -73,6 +73,7 @@ $icon-normal: rgba(242, 242, 242, 1);
     --color-error: #{$foreground-negative};
     --color-warning: #{$foreground-neutral};
     --color-success: #{$foreground-positive};
+    --color-box-shadow: #{$background-active-alternate};
 }
 
 input, label {
