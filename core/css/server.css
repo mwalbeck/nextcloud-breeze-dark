@@ -1,7 +1,7 @@
 /*
 =============================================================================
 * Nextcloud breeze dark theme
-* Version: 15.0.2
+* Version: 15.0.3
 * Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
@@ -34,6 +34,7 @@
   --color-error: #da4453;
   --color-warning: #f67400;
   --color-success: #27ae60;
+  --color-box-shadow: #1d99f3;
 }
 
 input, label {
@@ -49,10 +50,16 @@ input, label {
   background-image: url("../img/actions/password.svg?v=1");
 }
 
+/* Auth --------------------------------------------------------------------- */
+.icon-category-auth {
+  background-image: url("../img/categories/auth.svg");
+}
+
 /* Home --------------------------------------------------------------------- */
 .icon-home,
 .icon-inbox,
-#oc-dialog-filepicker-content .dirtree div:first-child a {
+#oc-dialog-filepicker-content .dirtree div:first-child a,
+#controls .breadcrumb .crumb .home {
   background-image: url("../img/places/home.svg?v=1");
 }
 
@@ -174,7 +181,7 @@ input, label {
   background-image: url("../img/actions/tag.svg?v=1");
 }
 
-/* Link/World --------------------------------------------------------------------- */
+/* Link/World --------------------------------------------------------------- */
 .icon-link,
 .icon-world {
   background-image: url("../img/places/link.svg?v=1");
@@ -421,7 +428,7 @@ input[type=email] + .icon-confirm:disabled {
   background-image: url("../img/actions/play.svg");
 }
 
-/* pause --------------------------------------------------------------------- */
+/* Pause --------------------------------------------------------------------- */
 .icon-pause {
   background-image: url("../img/actions/pause.svg");
 }
@@ -758,10 +765,6 @@ a.impersonate img.svg {
 }
 
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-  filter: invert(95%);
-}
-
-.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
   filter: invert(95%);
 }
 
@@ -2432,8 +2435,15 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 
 /* Files Right Click -------------------------------------------------------- */
-#rightClickMenu li:hover {
+.rightClick {
+  border: 1px solid #706f6e;
+  filter: none;
+}
+.rightClick li:hover {
   background-color: rgba(61, 174, 233, 0.25);
+}
+.rightClick li:active, .rightClick li:focus {
+  background-color: #3daee9;
 }
 
 .app-flowupload hr {
@@ -2911,8 +2921,15 @@ div.circle .title, div.circle .type, div.circle .owner {
   filter: invert(95%);
 }
 
-.app-passman #app-navigation .taginput:hover {
-  background: none;
+/* Passman ------------------------------------------------------------------ */
+.app-passman #app-navigation li .bullet-color-red {
+  background-color: #da4453;
+}
+.app-passman #app-navigation li .bullet-color-yellow {
+  background-color: #f67400;
+}
+.app-passman #app-navigation li .bullet-color-green {
+  backgroud-color: #27ae60;
 }
 .app-passman #app-navigation .nav-trashbin a {
   background-color: #31363b !important;
@@ -2922,46 +2939,30 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 .app-passman #app-navigation .nav-trashbin a.active {
   background-color: #3daee9 !important;
-  border-left: none;
 }
-.app-passman #app-navigation .nav-icon-systemtagsfilter {
-  background-image: none;
-}
-.app-passman .link {
-  color: #2980b9 !important;
-}
-.app-passman #app-content #app-content-wrapper .credential-table tr td {
-  border-bottom-color: #706f6e;
-}
-.app-passman #app-content #app-content-wrapper .credential-table tr {
-  background-color: #232629;
-}
+
 .app-passman #app-content #app-content-wrapper .credential-table tr:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
 .app-passman #app-content #app-content-wrapper .credential-table tr.selected {
   background-color: #3daee9;
 }
+.app-passman #app-content #app-content-wrapper .credential-table tr td {
+  border-bottom-color: #706f6e;
+}
 .app-passman #app-content #app-content-wrapper .viewModes .view-mode {
   background-color: #31363b;
+  border-color: #706f6e;
 }
 .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
   background-color: #3daee9;
 }
-.app-passman #app-content #app-content-wrapper .viewModes .view-mode:first-child, .app-passman #app-content #app-content-wrapper .viewModes .view-mode:last-child {
-  background-color: #31363b;
-  border-color: #706f6e;
-}
-.app-passman #app-content #app-content-wrapper .tags .tag {
-  background-color: #4d4d4d;
-  border: 1px solid #706f6e;
-}
+.app-passman #app-content #app-content-wrapper .tags .tag,
 .app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
-  background-color: #4d4d4d;
+  background-color: #232629;
   border: 1px solid #706f6e;
 }
 .app-passman #app-content #app-content-wrapper #passman-controls {
-  top: 46px;
   background-color: inherit;
   border-bottom: 1px solid #706f6e;
 }
@@ -2970,31 +2971,26 @@ div.circle .title, div.circle .type, div.circle .owner {
   border-color: #706f6e;
   box-shadow: none;
 }
+.app-passman #app-content .tab_header li.active {
+  box-shadow: inset 0 -4px var(--color-primary);
+}
 .app-passman #app-content .tab_header li.active .indicator {
-  height: 5px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #3daee9 !important;
+  display: none;
 }
 .app-passman #app-content .tab_header li.tab {
-  border-right: 1px solid #706f6e;
+  border-right-color: #706f6e;
   color: #eff0f1 !important;
   background-color: #31363b !important;
+}
+.app-passman #app-content .tab_header li.tab:hover {
+  background-color: rgba(61, 174, 233, 0.25) !important;
 }
 .app-passman #app-content .tab_container {
   border: none;
 }
-.app-passman #app-content .pass-meter .details, .app-passman #app-content .pass-meter .pass-meter-message {
+.app-passman #app-content .pass-meter .details,
+.app-passman #app-content .pass-meter .pass-meter-message {
   color: #bdc3c7;
-}
-.app-passman #app-content .pw-gen .generate_pw .cell {
-  padding: 4.7px;
-  display: inline-block;
-  font-size: 14px;
-  border: 1px solid #706f6e;
-  background-color: #31363b;
-  cursor: pointer;
 }
 .app-passman #app-content .pass-meter-col.poor .indicator {
   background-color: #da4453;
@@ -3002,17 +2998,16 @@ div.circle .title, div.circle .type, div.circle .owner {
 .app-passman #app-content .pass-meter-col.weak .indicator {
   background-color: #f67400;
 }
-.app-passman #app-content .pass-meter-col.good .indicator {
+.app-passman #app-content .pass-meter-col.good .indicator,
+.app-passman #app-content .pass-meter-col.strong .indicator {
   background-color: #27ae60;
 }
-.app-passman #app-content .pass-meter-col.strong .indicator {
-  background-color: #3daee9;
+.app-passman #app-content .pw-gen .generate_pw .cell {
+  border-color: #706f6e;
+  background-color: #31363b;
 }
 .app-passman #app-content .inputfile + label {
-  font-size: 1.25em;
   background-color: #232629;
-  margin-top: 3px;
-  padding: 5px;
   border: 1px solid #706f6e;
 }
 .app-passman #app-content .inputfile + label:hover {
@@ -3025,40 +3020,36 @@ div.circle .title, div.circle .type, div.circle .owner {
 .app-passman #app-content .icon-label .icon-picker .cell:hover {
   border-color: #3daee9;
 }
+.app-passman #app-content .btn-danger {
+  text-shadow: none;
+  background-image: none;
+  box-shadow: none;
+  color: #eff0f1;
+  background-color: #da4453;
+  border-color: #da4453;
+}
+.app-passman #app-content .btn-danger:hover {
+  border-color: #f67400 !important;
+  background-color: #da4453;
+}
+.app-passman #app-content .btn-danger:focus, .app-passman #app-content .btn-danger:active {
+  border-color: #f67400 !important;
+  background-color: #f67400 !important;
+}
 
-.vault_wrapper {
+.app-passman .vault_wrapper {
   box-shadow: none;
   background: #232629;
   border: 1px solid #706f6e;
 }
-.vault_wrapper .vaultlist li {
-  padding: 16px;
-  border-bottom: 1px solid #706f6e;
+.app-passman .vault_wrapper .vaultlist li {
+  border-bottom-color: #706f6e;
 }
-.vault_wrapper .vaultlist li:hover {
+.app-passman .vault_wrapper .vaultlist li:hover {
   background-color: rgba(61, 174, 233, 0.25);
-  border-radius: 5px 5px 0 0;
 }
-.vault_wrapper .vaultlist li.ng-scope:last-child {
+.app-passman .vault_wrapper .vaultlist li.ng-scope:last-child {
   border-bottom: none;
-}
-.vault_wrapper .vaultlist li.ng-scope:last-child:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-  border-radius: 0 0 5px 5px;
-}
-
-.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.btn-danger {
-  background-image: none;
-  filter: none;
-  background-repeat: no-repeat;
-  background-color: #da4453;
-  border-color: #da4453;
 }
 
 tags-input .tags {
@@ -3072,12 +3063,8 @@ tags-input .tags.focused {
   box-shadow: none;
   border-color: #3daee9;
 }
-tags-input .tags .tag-item.selected {
-  background: #da4453 !important;
-}
 tags-input .tags .tag-item {
-  border: 1px solid #706f6e;
-  border-radius: 3px;
+  border-color: #706f6e;
   color: #eff0f1;
 }
 tags-input.ng-invalid .tags {
@@ -3095,21 +3082,20 @@ tags-input .autocomplete {
 }
 tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .suggestion-item.selected em {
   color: #eff0f1;
-  background-color: #3daee9;
+  background-color: rgba(61, 174, 233, 0.25);
 }
 
 .angularjs-datetime-picker {
   color: #eff0f1;
-  border: 1px solid #706f6e;
-  background: #232629;
+  border-color: #706f6e;
+  background: #31363b;
 }
 .angularjs-datetime-picker .adp-month {
-  background: #232629;
-  border-bottom: 1px solid #706f6e;
+  background: #31363b;
+  border-bottom-color: #706f6e;
 }
 .angularjs-datetime-picker .adp-month > button {
   color: #eff0f1;
-  top: 4px;
 }
 .angularjs-datetime-picker .adp-month > button:hover {
   color: #3daee9;
@@ -3121,12 +3107,6 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .angularjs-datetime-picker .adp-days > .adp-day.selectable:hover {
   background: rgba(61, 174, 233, 0.25);
 }
-.angularjs-datetime-picker #adp-time label {
-  float: left;
-}
-.angularjs-datetime-picker #adp-time input[type=range] {
-  float: right;
-}
 
 .sequence code {
   border: none;
@@ -3136,36 +3116,22 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-color: unset;
 }
 
-.app-passwords #app-navigation li {
-  color: #eff0f1;
+.app-passman img.icon-image {
+  filter: invert(95%);
 }
-.app-passwords #app-navigation li.active {
-  color: #fcfcfc;
-}
+
 .app-passwords #app-navigation .nav-icon-recent,
-.app-passwords #app-navigation .nav-icon-security,
 .app-passwords #app-navigation .nav-icon-favorites {
   background-image: none;
 }
-.app-passwords #app-navigation #app-settings {
-  background-color: #31363b;
-  border-color: #706f6e;
-}
+
 .app-passwords #app-content #controls .crumbmenu .menu,
 .app-passwords #app-content #controls .passwords-more-menu .menu {
-  border: none;
-  border-color: #706f6e;
   transition: border 0.25s ease-in-out, max-height 0.25s ease-in-out;
 }
 .app-passwords #app-content #controls .crumbmenu.active .menu,
 .app-passwords #app-content #controls .passwords-more-menu.active .menu {
   border: 1px solid #706f6e;
-}
-.app-passwords #app-content .item-list .row {
-  border-bottom-color: #706f6e;
-}
-.app-passwords #app-content .item-list .row:hover {
-  background-color: rgba(61, 174, 233, 0.25);
 }
 .app-passwords #app-content .item-list .row.header, .app-passwords #app-content .item-list .row.header .date {
   color: #eff0f1;
@@ -3176,23 +3142,15 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-content .item-list .row .genericIcon {
   color: #eff0f1;
 }
-.app-passwords #app-content .item-list .row.footer:hover {
-  background-color: #31363b;
-}
-.app-passwords #app-content .item-list .row .more:hover {
-  color: #eff0f1;
-}
 .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li {
   color: #eff0f1;
   opacity: 0.7;
 }
 .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-  color: #fcfcfc;
   opacity: 1;
 }
 .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li a {
-  color: #fcfcfc;
+  color: #eff0f1;
 }
 .app-passwords #app-content .backup-dialog h1 {
   border-color: #706f6e;
@@ -3202,26 +3160,18 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   color: #eff0f1;
   border-color: #706f6e;
 }
-.app-passwords #app-content .help .handbook-page blockquote {
-  border-left-color: #3daee9;
-  background-color: #4d4d4d;
+.app-passwords #app-content .help .handbook-page code, .app-passwords #app-content .help .handbook-page pre {
+  background-color: #232629;
 }
-.app-passwords #app-content .help .handbook-page .md-image-container .md-image-link {
-  border-color: #706f6e;
-}
-.app-passwords #app-content .help .handbook-page .md-image-container .md-image-caption {
-  border-top-color: #706f6e;
-  color: #bdc3c7;
-}
-.app-passwords #app-content .app-content-right {
-  background-color: #31363b;
-  border-left-color: #706f6e;
+.app-passwords #app-content .help .handbook-page a {
+  color: #2980b9 !important;
 }
 .app-passwords #app-content .app-content-right .item-details .infos {
   color: #bdc3c7;
 }
-.app-passwords #app-content .app-content-right .item-details .infos .tags-container {
-  color: #000;
+.app-passwords #app-content .app-content-right .item-details .infos .tags-container .tags .tag {
+  background-color: #232629 !important;
+  border: 1px solid #706f6e;
 }
 .app-passwords #app-content .app-content-right .item-details .tab-container .tab-titles .tab-title {
   color: #eff0f1;
@@ -3235,21 +3185,17 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-content .app-content-right .item-details .details div:not(.header) span {
   color: #eff0f1;
 }
-.app-passwords #app-popup #passwords-create-new .window {
-  background-color: #31363b;
-}
+
 .app-passwords #app-popup #passwords-create-new .window .title {
-  color: #fcfcfc !important;
-  background-color: #1d99f3 !important;
+  color: #fcfcfc;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .section-title, .app-passwords #app-popup #passwords-create-new .window form.content .open .foldout-title {
-  border-color: #706f6e !important;
+  border-color: #706f6e;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a {
   color: #eff0f1 !important;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a:hover {
-  background-color: #31363b;
   border-color: #3daee9;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a.active {
@@ -3260,16 +3206,12 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-color: #4d4d4d;
   border: none;
 }
-.app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror {
-  background-color: #31363b;
-  color: #eff0f1;
-}
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror .editor-preview {
   background-color: #31363b;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .CodeMirror span.CodeMirror-selectedtext {
   background-color: #3daee9;
-  padding: 1px 0;
+  padding: 1.225px 0;
 }
 
 .oc-dialog-buttonrow.twobuttons button.primary {
