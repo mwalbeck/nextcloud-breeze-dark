@@ -7,6 +7,12 @@
 	background-image: url('../img/actions/password.svg?v=1');
 }
 
+/* Auth --------------------------------------------------------------------- */
+
+.icon-category-auth {
+	background-image: url('../img/categories/auth.svg')
+}
+
 /* Home --------------------------------------------------------------------- */
 
 .icon-home,
@@ -150,7 +156,7 @@
 	background-image: url('../img/actions/tag.svg?v=1');
 }
 
-/* Link/World --------------------------------------------------------------------- */
+/* Link/World --------------------------------------------------------------- */
 
 .icon-link,
 .icon-world {
@@ -438,7 +444,7 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/play.svg');
 }
 
-/* pause --------------------------------------------------------------------- */
+/* Pause --------------------------------------------------------------------- */
 
 .icon-pause {
 	background-image: url('../img/actions/pause.svg');
