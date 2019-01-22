@@ -7,11 +7,18 @@
 	background-image: url('../img/actions/password.svg?v=1');
 }
 
+/* Auth --------------------------------------------------------------------- */
+
+.icon-category-auth {
+	background-image: url('../img/categories/auth.svg')
+}
+
 /* Home --------------------------------------------------------------------- */
 
 .icon-home,
 .icon-inbox,
-#oc-dialog-filepicker-content .dirtree div:first-child a {
+#oc-dialog-filepicker-content .dirtree div:first-child a,
+#controls .breadcrumb .crumb .home {
 	background-image: url('../img/places/home.svg?v=1');
 }
 
@@ -149,7 +156,7 @@
 	background-image: url('../img/actions/tag.svg?v=1');
 }
 
-/* Link/World --------------------------------------------------------------------- */
+/* Link/World --------------------------------------------------------------- */
 
 .icon-link,
 .icon-world {
@@ -437,7 +444,7 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/play.svg');
 }
 
-/* pause --------------------------------------------------------------------- */
+/* Pause --------------------------------------------------------------------- */
 
 .icon-pause {
 	background-image: url('../img/actions/pause.svg');
@@ -838,11 +845,6 @@ a.impersonate img.svg {
 
 // Arrow in advanved ldap settings
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-	filter: invert(95%);
-}
-
-// Home icon in controls in passwords app
-.app-passwords #app-content #controls img[src$="/core/img/places/home.svg"] {
 	filter: invert(95%);
 }
 
