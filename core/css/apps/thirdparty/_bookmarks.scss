@@ -3,8 +3,8 @@
 .app-bookmarks #app-navigation {
     
     .add-bookmark .form input {
-        border: none;
-        border-bottom: 1px solid $decoration-active;
+        border: 1px solid $decoration-active;
+        border-left: none;
     }
 }
 
@@ -18,8 +18,6 @@
 
     .bookmark-card {
         background-color: $background-normal;
-        box-shadow: none;
-        opacity: 0.93;
         border-color: $decoration-normal;
 
         .tag-nav-item {
@@ -33,15 +31,25 @@
 
         h2 {
             text-shadow: none;
-
-            a {
-                color: $foreground-normal;
-            }
         }
 
         .select-mode-checkbox + label {
             box-shadow: none;
             background: $background-normal;
+        }
+    }
+
+    .list-view .bookmark-card {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+
+        &:nth-of-type(2) {
+            border-top: 1px solid $decoration-normal;
+        }
+
+        .panel {
+            border: none;
         }
     }
 
@@ -71,5 +79,9 @@
                 background-color: $background-positive;
             }
         }
+    }
+
+    .popovermenu button {
+        border-radius: unset;
     }
 }
