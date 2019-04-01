@@ -33,7 +33,7 @@
 .icon-star,
 .icon-starred:hover,
 .icon-starred:focus,
-.icon-stationfav, {
+.icon-stationfav {
 	background-image: url('../img/actions/star.svg?v=1');
 	opacity: 0.5;
 }
@@ -450,7 +450,11 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/pause.svg');
 }
 
-/* Play Big ----------------------------------------------------------------- */
+/* Folder ------------------------------------------------------------------- */
+
+.icon-folder, .icon-filetype-folder {
+	background-image: url('/core/img/filetypes/folder.svg?v=16');
+}
 
 // Music app
 .app-music, #music-controls {
