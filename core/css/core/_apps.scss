@@ -26,7 +26,9 @@
 	ul > li > a, li > a {
 		opacity: 1;
 
-		&:hover, &:hover + div.app-navigation-entry-utils {
+		&:hover,
+		&:hover + div.app-navigation-entry-utils,
+		&:hover + div.app-navigation-entry-edit + div.app-navigation-entry-utils {
 			background-color: $background-active-hover;
 		}
 
@@ -62,17 +64,13 @@
 	select {
 		background-color: $background-normal !important;
 	}
-
-	.app-navigation-entry-edit,
-	.app-navigation-entry-deleted {
-		background-color: $background-normal;
-	}
 }
 
 .app-navigation-entry-menu {
 
 	li > button {
 		color: $foreground-normal;
+		border-radius: unset;
 
 		&:hover {
 			background-color: $background-active-hover;

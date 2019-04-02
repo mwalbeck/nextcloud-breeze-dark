@@ -8,19 +8,23 @@ The icons are from the default Nextcloud theme and the individual apps, with the
 ## Version number
 The first number is the Nextcloud version. The second number is the Nextcloud major point release version. The third number is the theme version.
 
-## Progress
-Theming for Core Nextcloud functionality is done. You can check on the progress of App styling and request styling for specific apps [here](https://github.com/mwalbeck/nextcloud-breeze-dark/wiki/App-Styling)
-
 ## Installation
 The master branch will always be the current stable release so you can clone that for easy installation and updates. Using git is currently the recommended way of installing the theme. You can also download it as a zip file either straight from the master branch, or on the release page.
-
-I have previously recommended that you disable the Theming app before installing this theme, that is no longer the case with Nextcloud 14 and onwards. It even seems that, from Nextcloud 14, small styling issue with folder icons are introduced by disabling the Theming app. At the same time, this also enables you to use the Theming app to customize the theme.
 
 Next, git clone or unzip it into your **nextcloud/themes** folder.
 
 To enable the theme, add or change the theme option in your **config.php** to:
 
     'theme' => 'nextcloud-breeze-dark',
+
+### Snaps
+I'm currently not aware of a way to get custom themes to work with the Nextcloud snap.
+
+## Theming app
+You can use the Nextcloud theming app to customize in your nextcloud instance like normal, though there are a few changes. If you have the theming app enabled you will most likely get a white Nextcloud icon instead of the themes default blue, this can be changes by disabling the theming app. The color attribute only changes the color of folders, and does not affect the header bar. Though depending on the color you choose (determined by the contrast with the selected color) you might get black icons in the header bar. This can be fixed by going to back to the default color or choosing a color that has a better contrast with white.
+
+## Accessibility
+This theme works with the Dyslexia font enabled.
 
 ## Contributions
 The theme is written with [Sass](http://sass-lang.com/).
