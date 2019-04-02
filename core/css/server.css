@@ -1,8 +1,11 @@
 /*
 =============================================================================
-* Nextcloud breeze dark theme
-* Version: 15.0.3
-* Check it out at https://github.com/mwalbeck/nextcloud-breeze-dark
+* Nextcloud Breeze Dark
+* Version: 15.0.4
+* Date 2019-04-02
+* Copyright (C) Magnus Walbeck and other contributors
+* License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
+* Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
 /* 
@@ -18,23 +21,23 @@
 */
 /* Set the nextcloud color variables */
 :root {
-  --color-primary: #1d99f3;
-  --color-main-background: #31363b;
-  --color-background-dark: rgba(61, 174, 233, 0.25);
-  --color-background-darker: #232629;
-  --color-main-background-translucent: #31363b;
-  --color-main-text: #eff0f1;
-  --color-primary-text: #eff0f1;
-  --color-text-light: #eff0f1;
-  --color-text-lighter: #bdc3c7;
-  --color-text-maxcontrast: #bdc3c7;
-  --color-border: #706f6e;
-  --color-border-dark: #706f6e;
-  --color-primary-element: #3daee9;
-  --color-error: #da4453;
-  --color-warning: #f67400;
-  --color-success: #27ae60;
-  --color-box-shadow: #1d99f3;
+  --color-primary: #1d99f3 !important;
+  --color-main-background: #31363b !important;
+  --color-background-dark: rgba(61, 174, 233, 0.25) !important;
+  --color-background-darker: #232629 !important;
+  --color-main-background-translucent: #31363b !important;
+  --color-main-text: #eff0f1 !important;
+  --color-primary-text: #eff0f1 !important;
+  --color-text-light: #eff0f1 !important;
+  --color-text-lighter: #bdc3c7 !important;
+  --color-text-maxcontrast: #bdc3c7 !important;
+  --color-border: #706f6e !important;
+  --color-border-dark: #706f6e !important;
+  --color-primary-element: #3daee9 !important;
+  --color-error: #da4453 !important;
+  --color-warning: #f67400 !important;
+  --color-success: #27ae60 !important;
+  --color-box-shadow: #1d99f3 !important;
 }
 
 input, label {
@@ -433,7 +436,11 @@ input[type=email] + .icon-confirm:disabled {
   background-image: url("../img/actions/pause.svg");
 }
 
-/* Play Big ----------------------------------------------------------------- */
+/* Folder ------------------------------------------------------------------- */
+.icon-folder, .icon-filetype-folder {
+  background-image: url("/core/img/filetypes/folder.svg?v=16");
+}
+
 .app-music .current.playing .play-pause,
 .app-music div:hover > .play-pause,
 .app-music #app-view .current:not(.playing) div:hover .play-pause,
@@ -1081,6 +1088,10 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 .preview {
   filter: none;
 }
+.preview:hover, .preview:focus, .preview.selected {
+  filter: none;
+  border-color: #3daee9;
+}
 
 .dropdown {
   background-color: #31363b;
@@ -1097,6 +1108,10 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 }
 
 /* Header ------------------------------------------------------------------- */
+#header .logo {
+  background-image: url("../img/logo.svg");
+}
+
 #body-user #header,
 #body-settings #header,
 #body-public #header {
@@ -1131,14 +1146,14 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 }
 
 /* Menues ------------------------------------------------------------------- */
-.menu {
+.menu, .popovermenu {
   border: 1px solid #706f6e;
   filter: none;
 }
-.menu::after {
+.menu::after, .popovermenu::after {
   border-bottom-color: #706f6e;
 }
-.menu li:hover {
+.menu li:hover, .popovermenu li:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
 
@@ -1593,7 +1608,7 @@ ul.multiselectoptions.down {
 #app-navigation ul > li > a, #app-navigation li > a {
   opacity: 1;
 }
-#app-navigation ul > li > a:hover, #app-navigation ul > li > a:hover + div.app-navigation-entry-utils, #app-navigation li > a:hover, #app-navigation li > a:hover + div.app-navigation-entry-utils {
+#app-navigation ul > li > a:hover, #app-navigation ul > li > a:hover + div.app-navigation-entry-utils, #app-navigation ul > li > a:hover + div.app-navigation-entry-edit + div.app-navigation-entry-utils, #app-navigation li > a:hover, #app-navigation li > a:hover + div.app-navigation-entry-utils, #app-navigation li > a:hover + div.app-navigation-entry-edit + div.app-navigation-entry-utils {
   background-color: rgba(61, 174, 233, 0.25);
 }
 #app-navigation ul > li > a.active:hover, #app-navigation li > a.active:hover {
@@ -1618,13 +1633,10 @@ ul.multiselectoptions.down {
 #app-navigation select {
   background-color: #31363b !important;
 }
-#app-navigation .app-navigation-entry-edit,
-#app-navigation .app-navigation-entry-deleted {
-  background-color: #31363b;
-}
 
 .app-navigation-entry-menu li > button {
   color: #eff0f1;
+  border-radius: unset;
 }
 .app-navigation-entry-menu li > button:hover {
   background-color: rgba(61, 174, 233, 0.25);
@@ -2212,8 +2224,8 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 
 /* Bookmarks ---------------------------------------------------------------- */
 .app-bookmarks #app-navigation .add-bookmark .form input {
-  border: none;
-  border-bottom: 1px solid #3daee9;
+  border: 1px solid #3daee9;
+  border-left: none;
 }
 
 .app-bookmarks #app-content .bulk-actions {
@@ -2223,8 +2235,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 .app-bookmarks #app-content .bookmark-card {
   background-color: #31363b;
-  box-shadow: none;
-  opacity: 0.93;
   border-color: #706f6e;
 }
 .app-bookmarks #app-content .bookmark-card .tag-nav-item {
@@ -2237,12 +2247,20 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-bookmarks #app-content .bookmark-card h2 {
   text-shadow: none;
 }
-.app-bookmarks #app-content .bookmark-card h2 a {
-  color: #eff0f1;
-}
 .app-bookmarks #app-content .bookmark-card .select-mode-checkbox + label {
   box-shadow: none;
   background: #31363b;
+}
+.app-bookmarks #app-content .list-view .bookmark-card {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.app-bookmarks #app-content .list-view .bookmark-card:nth-of-type(2) {
+  border-top: 1px solid #706f6e;
+}
+.app-bookmarks #app-content .list-view .bookmark-card .panel {
+  border: none;
 }
 .app-bookmarks #app-content .bookmark-detail {
   background: #31363b;
@@ -2265,6 +2283,9 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-bookmarks #app-content .bookmark-detail .status .message-saving,
 .app-bookmarks #app-content .bookmark-detail .status .message-saved {
   background-color: #27ae60;
+}
+.app-bookmarks #app-content .popovermenu button {
+  border-radius: unset;
 }
 
 #circles_list div {
