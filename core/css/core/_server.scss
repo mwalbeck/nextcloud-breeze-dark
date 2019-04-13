@@ -8,6 +8,18 @@
 	}
 }
 
+// Register button
+#alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+
+	&:hover, &:focus, &:active {
+		background-color: $background-active-alternate;
+		border-color: $decoration-active;
+	}
+}
+
 /* Header ------------------------------------------------------------------- */
 
 #header .logo {
