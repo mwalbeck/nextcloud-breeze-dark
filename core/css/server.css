@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 15.0.4
-* Date 2019-04-02
+* Version: 15.0.5
+* Date 2019-04-13
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -1105,6 +1105,16 @@ ul.ui-tabs-nav .ui-tabs-active > a {
 }
 #body-login p.info {
   color: #bdc3c7;
+}
+
+#alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
+  background-color: #232629;
+  color: #eff0f1;
+  border: 1px solid #706f6e;
+}
+#alternative-logins li a.button:not(:disabled):not(.primary):not(#quota):hover, #alternative-logins li a.button:not(:disabled):not(.primary):not(#quota):focus, #alternative-logins li a.button:not(:disabled):not(.primary):not(#quota):active {
+  background-color: #1d99f3;
+  border-color: #3daee9;
 }
 
 /* Header ------------------------------------------------------------------- */
