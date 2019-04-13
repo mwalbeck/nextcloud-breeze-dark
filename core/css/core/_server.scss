@@ -304,67 +304,19 @@ ul.multiselectoptions {
 /* Dropdown Selects --------------------------------------------------------- */
 // Used by tags selection and some dropdowns
 
+
+.select2-container,
 .select2-container-multi {
 
-	.select2-choices,
-	&.select2-container-active .select2-choices {
-		background-color: $background-dark;
-		color: $foreground-normal;
-		border-color: $decoration-normal;
-	}
-
-	.select2-choices .select2-search-choice,
-	&.select2-container-active .select2-choices .select2-search-choice {
-		background-color: $background-normal;
-		border-color: $decoration-normal;
-		color: $foreground-normal;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-
-		&:hover,
-		&.select2-search-choice-focus {
-			background-color: $background-normal;
-			border-color: $decoration-active;
-			color: $foreground-normal;
-		}
-	}
-
-	.select2-choices .select2-search-field input {
-		color: $foreground-normal;
-
-		&.select2-active {
-			background-color: $background-dark !important;
-		}
-	}
-}
-
-.select2-container {
-	
 	.select2-choices {
-		background-color: $background-dark;
-		color: $foreground-normal;
-		border-color: $decoration-normal;
-
-		.select2-search-field {
-			background: $background-dark;
+	
+		.select2-search-choice {
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
 		}
 
-		.select2-input {
-			background: $background-dark;
-		}
-	}
-
-	.select2-choices .select2-search-choice {
-		background-color: $background-normal;
-		border-color: $decoration-normal;
-		color: $foreground-normal;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-
-		&:hover,
-		&.select2-search-choice-focus {
-			background-color: $background-normal;
-			border-color: $decoration-active;
+		.select2-search-field input {
+			color: $foreground-normal !important;
 		}
 	}
 
@@ -384,18 +336,8 @@ ul.multiselectoptions {
 
 	.select2-results {
 
-		.select2-result,
-		.select2-no-results,
-		.select2-searching {
-			background-color: $background-dark;
-			color: $foreground-normal;
-		}
-
-		.select2-result.select2-selected {
-			background-color: $background-dark;
-		}
-
-		.select2-highlighted, .select2-result.select2-highlighted {
+		.select2-highlighted,
+		.select2-result.select2-highlighted {
 			background-color: $background-active-hover;
 			color: $foreground-normal;
 		}
@@ -405,11 +347,6 @@ ul.multiselectoptions {
 .select2-dropdown-open .select2-choice {
 	-webkit-box-shadow: none;
 	box-shadow: none;
-}
-
-.activitysubject strong.systemtag {
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
 }
 
 
