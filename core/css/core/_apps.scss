@@ -137,18 +137,6 @@
 	}
 }
 
-.activityTabView {
-
-	.activity.box .activitytime {
-		color: $foreground-inactive;
-	}
-
-	.activitysubject strong.systemtag {
-		background-color: $background-normal;
-		border: 1px solid $decoration-normal;
-	}
-}
-
 .ui-widget-content {
 	a {
 		color: $foreground-normal;

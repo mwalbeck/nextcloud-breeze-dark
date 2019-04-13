@@ -1,9 +1,8 @@
 .activitymessage {
-	color: $foreground-normal;
-	opacity: 0.7;
+	color: $foreground-inactive;
 }
 
-.box .activitytime {
+.activity.box .activitytime {
 	color: $foreground-inactive;
 }
 
@@ -14,4 +13,9 @@
 
 .activity-icon {
 	opacity: 0.7;
+}
+
+.activitysubject strong.systemtag {
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
 }
