@@ -53,32 +53,38 @@
 
 /* Breadcrumbs -------------------------------------------------------------- */
 
-div.crumb a, div.crumb > span {
+div.crumb a,
+div.crumb > span,
+div.crumb.crumbmenu a {
 	color: $foreground-normal;
 	opacity: 0.7;
 }
 
-div.crumb span.icon-shared, div.crumb span.icon-public {
-	opacity: 0.7;
+// Breadcrumb dropdown
+// Display background hover full width
+div.crumb.crumbmenu .popovermenu ul {
+	margin-right: 0;
 }
 
 /* Menues ------------------------------------------------------------------- */
 
-.menu, .popovermenu {
+.menu,
+.popovermenu,
+.bubble {
 	border: 1px solid $decoration-normal;
 	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
 
 	li:hover {
 		background-color: $background-active-hover;
 	}
 }
 
-.popovermenu li > a {
-	color: $foreground-normal;
+.menu,
+.popovermenu {
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
 }
 
 .app-navigation-entry-menu {
@@ -105,10 +111,13 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 /* Info colours ------------------------------------------------------------- */
 
-#postsetupchecks .errors, 
+#postsetupchecks .errors {
+	color: $foreground-negative;
+}
+
 #postsetupchecks .warnings, 
 #security-warning > ul {
-	color: $foreground-negative;
+	color: $foreground-neutral;
 }
 
 #body-user .warning {
@@ -175,11 +184,6 @@ span {
 	border: 1px solid $decoration-normal;
 }
 
-// Description of the different update channels
-#updatenotification .channel-description span strong {
-	font-weight: bold;
-}
-
 /* App Store ---------------------------------------------------------------- */
 
 .app-level {
@@ -205,10 +209,6 @@ span {
 	.app-name {
 		font-weight: 600;
 	}
-}
-
-.app-version {
-	color: $foreground-inactive;
 }
 
 /* Files table -------------------------------------------------------------- */
@@ -247,19 +247,40 @@ span {
 /* File picker -------------------------------------------------------------- */
 
 .oc-dialog {
-	box-shadow: none;
+	box-shadow: none !important;
 	border: 1px solid $decoration-normal;
 }
 
-#oc-dialog-filepicker-content .filepicker_element_selected {
-	background-color: $background-active;
+#oc-dialog-filepicker-content {
 
-	td {
-		font-weight: 600;
+	.filepicker_element_selected {
+		background-color: $background-active;
+
+		td {
+			font-weight: 600;
+		}
+
+		.filename {
+			color: $foreground-active;
+		}
 	}
 
-	.filename {
-		color: $foreground-active;
+	.actions.creatable {
+		background-color: $background-normal;
+
+		&:hover {
+			border-color: $decoration-active;
+		}
+
+		a.button {
+			border: none;
+
+			&:focus,
+			&:active {
+				background-color: $background-active;
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -430,10 +451,10 @@ ul.multiselectoptions {
 /* Auto suggestion users in comments dropdown ------------------------------- */
 
 .atwho-view {
-	box-shadow: none;
+	box-shadow: none !important;
 
 	.cur {
-		background: $background-active-hover;
+		background: $background-active-hover !important;
 	}
 }
 

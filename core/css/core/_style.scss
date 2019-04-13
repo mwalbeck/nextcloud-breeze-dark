@@ -18,19 +18,19 @@ table {
 		background-color: $background-normal;
 	}
 
-	tr:hover, tr:focus {
-		background-color: $background-active-hover;
-	}
-
-	tr:active {
-		background-color: inherit;
-	}
-
 	th a, a {
 		color: $foreground-normal;
 
 		&:hover, &:focus {
 			color: $foreground-normal;
+		}
+	}
+
+	tr.mouseOver {
+		background-color: $background-active-hover;
+
+		td {
+			background-color: unset;
 		}
 	}
 }

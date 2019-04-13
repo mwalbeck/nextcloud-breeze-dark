@@ -199,7 +199,8 @@
 
 /* Add ---------------------------------------------------------------------- */
 
-.icon-add {
+.icon-add,
+#oc-dialog-filepicker-content .actions.creatable .icon.icon-add {
 	background-image: url('../img/actions/add.svg?v=1');
 }
 
@@ -342,7 +343,7 @@ input[type="email"] + .icon-confirm:disabled {
 }
 
 .oc-dialog-close {
-	background: url('../img/actions/close.svg') no-repeat center;
+	background: url('../img/actions/close.svg') no-repeat center !important;
 }
 
 /* Close (no shadow) -------------------------------------------------------- */
