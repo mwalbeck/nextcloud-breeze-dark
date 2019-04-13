@@ -6,19 +6,12 @@
 	padding: 8px 5px;
 }
 
-#dropdown {
-	background: $background-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal;
-}
-
-#link {
-	border-color: $decoration-normal;
-}
-
 #slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota) {
 
-	&:hover, &:focus, &:active, &.active {
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
 		background-color: transparent;
 		border: none;
 	}
