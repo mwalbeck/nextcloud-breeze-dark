@@ -167,21 +167,28 @@ span {
 	}
 }
 
-/* General Settings --------------------------------------------------------- */
+/* Settings ----------------------------------------------------------------- */
 
-// Section Container
+/* Section Container */
 // Primarily seems to be used under settings
 .followupsection {
 	color: $foreground-normal;
 }
 
-// Cropper
+/* Cropper */
 // For cropping images, found under personal settings for adding avatar
 #cropper .inner-container {
 	background-color: $background-normal;
 	color: $foreground-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
+}
+
+/* Admin settings */
+
+// Overview 
+#updatenotification .update-channel-selector .update-menu .menuitem.active {
+	background-color: $background-normal;
 }
 
 /* App Store ---------------------------------------------------------------- */
@@ -302,9 +309,8 @@ ul.multiselectoptions {
 }
 
 /* Dropdown Selects --------------------------------------------------------- */
-// Used by tags selection and some dropdowns
 
-
+// Used for tags in Files app
 .select2-container,
 .select2-container-multi {
 
@@ -327,28 +333,26 @@ ul.multiselectoptions {
 	}
 }
 
+// Used for tag management in settings
 #select2-drop, .select2-drop {
-	color: $foreground-normal;
+	box-shadow: none;
 
-	.select2-search {
+	.select2-search .select2-input {
 		background-color: $background-dark !important;
 	}
 
-	.select2-results {
-
-		.select2-highlighted,
-		.select2-result.select2-highlighted {
-			background-color: $background-active-hover;
-			color: $foreground-normal;
-		}
+	&.select2-drop-above.select2-drop-active {
+		border-color: $decoration-normal;
 	}
 }
 
-.select2-dropdown-open .select2-choice {
-	-webkit-box-shadow: none;
-	box-shadow: none;
+// Used for nextcloud announcements
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+	border-color: $decoration-normal !important;
+	background: $background-normal !important;
+	border-radius: 0 !important;
 }
-
 
 // The following has been added for bookmarks tags
 .select2-container--default .select2-selection--multiple {
@@ -560,35 +564,39 @@ ul.multiselectoptions {
 /* Tooltips ----------------------------------------------------------------- */
 
 .tooltip {
-	filter: none;
+	filter: none !important;
 
+	&[x-placement^="right"],
 	&.right .tooltip-arrow {
-		border-right-color: $decoration-normal;
+		border-right-color: $decoration-normal !important;
 	}
 
+	&[x-placement^="left"],
 	&.left .tooltip-arrow {
-		border-left-color: $decoration-normal;
+		border-left-color: $decoration-normal !important;
 	}
 
-	&.top .tooltip-arrow,
-	&.top-left .tooltip-arrow,
-	&.top-right .tooltip-arrow  {
-		border-top-color: $decoration-normal;
-	}
-
+	&[x-placement^="bottom"] .tooltip-arrow,
 	&.bottom .tooltip-arrow,
 	&.bottom-left .tooltip-arrow,
 	&.bottom-right .tooltip-arrow  {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: $decoration-normal !important;
 	}
 }
 
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.top .arrow,
+.tooltip.top-left .arrow,
+.tooltip[x-placement^="top"] .arrow,
+.tooltip.top-right .arrow {
+	border-top-color: var(--color-border) !important;
+}
+
 .tooltip-inner {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	box-shadow: none;
-	border: 1px solid $decoration-normal !important;
-	padding: 10px;
+	border: 1px solid $decoration-normal;
 }
 
 #adminaccount .tooltip-inner {

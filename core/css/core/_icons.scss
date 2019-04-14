@@ -121,7 +121,8 @@
 .nav-icon-federated-cloud,
 .nav-icon-sharingin,
 .nav-icon-sharingout,
-.nav-icon-shareoverview {
+.nav-icon-shareoverview,
+.icon-control {
 	background-image: url('../img/actions/share.svg?v=1');
 }
 
@@ -168,7 +169,8 @@
 .icon-toggle,
 #show + label,
 #dbpassword-toggle + label,
-#personal-show + label {
+#personal-show + label,
+.icon-knowledge {
 	background-image: url('../img/actions/toggle.svg?v=1');
 }
 
@@ -253,7 +255,7 @@ select {
 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
 }
 
-.select2-container .select2-choice .select2-arrow b {
+div.select2-container a.select2-choice .select2-arrow b {
 	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
 }
 
@@ -312,7 +314,7 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/search.svg?v=1');
 }
 
-.select2-drop .select2-search input {
+div.select2-drop .select2-search input {
 	background: url('../img/actions/search.svg') no-repeat right center !important;
 	background-origin: content-box !important;
 }
@@ -559,6 +561,12 @@ input[type="email"] + .icon-confirm:disabled {
 
 .icon-fortunes {
 	background-image: url('../img/widgets/fortunes.svg');
+}
+
+/* Freedom ------------------------------------------------------------------ */
+
+.icon-freedom {
+	background-image: url('../img/privacy/freedom.svg');
 }
 
 /* App Categories ----------------------------------------------------------- */
