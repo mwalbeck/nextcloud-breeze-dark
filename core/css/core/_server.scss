@@ -400,45 +400,7 @@ ul.multiselectoptions {
 }
 
 /* UI Widget ---------------------------------------------------------------- */
-// Used by datepicker, timepicker and others
-
-.ui-dialog {
-
-	.ui-dialog-content {
-		background-color: $background-normal;
-	}
-
-	.ui-dialog-buttonpane {
-		background-color: $background-normal;
-	}
-}
-
-.ui-dialog-titlebar {
-
-	&.ui-widget-header {
-		background-color: $background-normal;
-		color: $foreground-normal;
-
-		.ui-dialog-titlebar-close {
-			
-			.ui-icon-closethick {
-				background-image: url('../../core/img/actions/close.svg');   
-			} 
-		}
-	}
-}
-
-.ui-widget-content {
-	background: $background-normal;
-	border: 1px solid $decoration-normal;
-	color: $foreground-normal;
-}
-
-.ui-widget-header {
-	background: inherit;
-	color: $foreground-normal;
-	border: none;
-}
+// Used by datepicker, timepicker, ldap and others
 
 // Datepicker
 .ui-widget.ui-datepicker {
@@ -559,6 +521,64 @@ ul.multiselectoptions {
 	background-color: $background-dark;
 	border: 1px solid $decoration-normal;
 	box-shadow: none;
+}
+
+// Ldap
+
+.ui-widget.ui-widget-content {
+	border-color: $decoration-normal !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+
+	.ui-state-default {
+		border-color: transparent !important;
+	}
+
+	.ui-state-hover, .ui-state-active {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border-color: $decoration-normal !important;
+	background: $background-normal !important;
+	color: $foreground-normal !important;
+
+	a,
+	a:link,
+	a:visited {
+		color: $foreground-normal;
+	}
+}
+
+.ui-button {
+	background-color: $background-normal !important;
+	color: $foreground-normal !important;
+	border: 1px solid $decoration-normal !important;
+
+	&.primary {
+		background-color: $background-dark !important;
+	}
+
+	&.ui-state-active,
+	&.ui-state-hover,
+	&:hover {
+		border-color: $decoration-active !important;
+	}
+
+	&:disabled,
+	&.ui-button-disabled,
+	&.ui-state-disabled {
+		background-color: $background-alternate !important;
+		color: $foreground-inactive !important;
+
+		&:hover {
+			border-color: $decoration-normal !important;
+		}
+	}
 }
 
 /* Tooltips ----------------------------------------------------------------- */
