@@ -29,19 +29,14 @@
 		}
 
 		#datepicker table td {
-			
-			button:hover {
-				background-color: $background-active-hover;
-				border-radius: 50%;
-			}
 
-			.text-muted {
-				opacity: 0.5;
-			}
-
-			&.highlight-today {
+			&.highlight-today button {
 				background-color: $background-alternate;
 				border-radius: 50%;
+
+				&.active {
+					background-color: $background-active;
+				}
 			}
 
 			&.highlight-weekend button {
@@ -54,6 +49,26 @@
 				&:hover {
 					color: $foreground-active;
 				}
+
+				&.active:hover {
+					background-color: $background-active;
+				}
+			}
+			
+			button {
+			
+				&:hover {
+					background-color: $background-active-hover;
+					border-radius: 50%;
+				}
+
+				&.active {
+					color: $foreground-active;
+				}
+			}
+
+			.text-muted {
+				opacity: 0.5;
 			}
 		}
 	}
@@ -80,6 +95,10 @@
 		.fc-today {
 			background-color: $background-active;
 			color: $foreground-active;
+
+			> .fc-day-number {
+				opacity: 1;
+			}
 		}
 
 		.fc-basic-view .fc-day-top .fc-week-number {
@@ -88,11 +107,16 @@
 			border-right: 1px solid $decoration-normal;
 			border-bottom: 1px solid $decoration-normal;
 		}
+
+		.fc-highlight {
+			background-color: $background-active-hover;
+			opacity: 1;
+		}
 	}
 
 	#app-sidebar {
 		
-		.advanced {
+		&.advanced {
 
 			// Force location field in app sidebar to be dark
 			.advanced--input {
