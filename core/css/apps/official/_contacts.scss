@@ -1,36 +1,15 @@
 /* Contacts ----------------------------------------------------------------- */
 
-.app-contacts {
-
-	ul.addressBookList li .action {
+.app-contacts #app-navigation {
+	
+	.addressbook .icon-shared {
 		opacity: 0.7;
-
-		&:hover, &:focus {
-			opacity: 1;
-		}
 	}
+}
 
-	ul.addressBookList li.newAddressBookContainer input.newAddressBookSubmit.inline-button.action {
-		border: 1px solid $background-negative;
-		opacity: 1;
-		background-color: $background-dark !important;
-
-		&:hover, &:active, &:focus {
-			border-color: $decoration-active !important;
-			border-left: none;
-		}
-	}
+.app-contacts #app-content {
 
 	.app-content-list-item {
-		color: $foreground-normal;
-
-		&:first-child {
-			border: none;
-		}
-
-		&:active, &:focus {
-			background-color: $background-active;
-		}
 
 		&.active {
 			background-color: $background-active;
@@ -39,37 +18,29 @@
 		}
 	}
 
-	.contactdetails__header {
+	.app-content-details header {
 
-		.contactdetails__name, 
-		.contactdetails__org,
-		.contactdetails__title {
-			color: $foreground-normal !important;
-			font-weight: 600;
-
-			&:placeholder-shown {
-				opacity: 1;
-			}
-		}
-
-		#details-contact-infos input {
-
-			&:hover, &:focus {
-				background: none;
-			}
+		#contact-header-infos input {
+			color: $foreground-active !important;
+			text-shadow: none;
 		}
 	}
 
-	detailsitem select {
-		color: $foreground-normal;
-	}
+	.app-content-details .contact-details {
 
-	#importscreen-wrapper,
-	#importscreen-sidebar-block {
-		background: $background-normal;
-	}
+		.property {
 
-	#importscreen-progress {
-		background-color: $background-dark;
+			a.icon.action-item__menutoggle {
+				color: $foreground-normal;
+			}
+
+			.mx-datepicker .mx-input-wrapper .mx-input-append {
+				background-color: $background-dark;
+			}
+		}
+
+		.multiselect.property__label input:focus {
+			background-color: $background-normal;
+		}
 	}
 }
