@@ -1,5 +1,6 @@
- /* Notifications ----------------------------------------------------------- */
+/* Notifications ------------------------------------------------------------ */
 
+// Top of screen notifications
 #notification {
 	border: 1px solid $decoration-normal;
 	border-top: none;
@@ -7,4 +8,9 @@
 	a {
 		color: $foreground-link;
 	}
+}
+
+// Notifications dropdown
+.notification-container ul li:hover {
+	background-color: $background-normal;
 }
