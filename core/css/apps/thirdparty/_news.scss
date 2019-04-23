@@ -6,17 +6,6 @@
 		background-color: $background-active-hover;
 	}
 
-	.add-new-popup {
-		box-shadow: none;
-		border-color: $decoration-normal;
-		width: 100%;
-	}
-
-	> ul > li > a,
-	> ul > li > ul > li > a {
-		opacity: 1;
-	}
-
 	#app-settings-content a {
 		color: $foreground-link;
 	}
@@ -24,16 +13,8 @@
 
 .app-news #app-content {
 
-	.item {
-		border-color: $decoration-normal;
-	}
-
 	.item.active {
 		background-image: none;
-	}
-
-	.date {
-		color: $foreground-inactive;
 	}
 
 	.heading a {
@@ -41,19 +22,10 @@
 	}
 
 	.subtitle, .author {
-		color: $foreground-inactive;
 
 		a {
 			color: $foreground-link;
 		}
-	}
-
-    .no-feeds-available {
-        color: $foreground-markdown-marker;
-	}
-	
-	.title .intro {
-		color: $foreground-background;
 	}
 
     .body {
@@ -65,30 +37,15 @@
 
         blockquote {
             border-color: $decoration-active;
-            background-color: $background-normal;
         }
 
         h1, h2, h3 {
             color: $foreground-active;
         }
-
-        h4, h5, h6 {
-            color: $foreground-normal;
-        }
-
-        pre {
-            background-color: $background-normal;
-            border-color: $decoration-normal;
-        }
 	}
 
 	// Styling for compact view
 	.compact {
-
-		// Background styling
-		.utils {
-			background-color: $background-normal;
-		}
 	
 		// Heading styling
 		.utils .title h1 a {
@@ -99,20 +56,9 @@
 			color: $foreground-normal;
 		}
 	}
-
-	.finished-auto-paging {
-		#articles:after {
-			background-image: none;
-			background-color: $background-normal;
-		}
-	}
 }
 
 .app-news #explore {
-	
-	.category {
-		background-color: $background-active-alternate;
-	}
 
 	.grid-item {
 		border-color: $decoration-normal;
