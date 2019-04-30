@@ -23,7 +23,9 @@
 
 #app-navigation {
 
-	ul > li > a, li > a {
+	ul > li > a,
+	li > a,
+	ul > li > ul > li > a {
 		opacity: 1;
 
 		&:hover,
@@ -50,6 +52,8 @@
 
 	.active {
 		background-color: $background-active;
+		color: $foreground-active;
+		font-weight: 600;
 
 		> a {
 			color: $foreground-active;
@@ -81,14 +85,10 @@
 /* App Sidebar -------------------------------------------------------------- */
 
 #app-sidebar {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
 
-	.file-details {
-		color: $foreground-normal;
-	}
-
-	#app-details-view .close, .close {
+	#app-details-view .close,
+	.close,
+	.icon-clippy {
 		opacity: 0.7;
 	}
 
@@ -98,19 +98,20 @@
 }
 
 .tabHeaders .tabHeader {
-	&, a {
-		color: $foreground-normal;
-	}
 
 	&.selected, &:hover, &:focus {
-		color: $foreground-active;
 		border-bottom: 1px solid $decoration-active;
+
+		a {
+			color: $foreground-active;
+		}
 	}
 }
 
 .shareTabView {
-	.icon {
-		opacity: 0.5;
+
+	#collection-list input:not([type="range"]) {
+		background-color: $background-normal;
 	}
 
 	.error {
@@ -131,7 +132,7 @@
 	}
 
 	a {
-		opacity: 1;
+		opacity: 1 !important;
 		color: $foreground-inactive;
 	}
 }

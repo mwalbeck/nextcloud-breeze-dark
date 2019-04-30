@@ -2,6 +2,14 @@
 
 #logreader-root table {
 
+	.menu {
+		background-color: $background-normal;
+
+		h4 {
+			border-bottom-color: $decoration-normal;
+		}
+	}
+
 	thead th {
 		color: $foreground-normal;
 		border-bottom-color: $decoration-normal;

@@ -57,7 +57,8 @@
 
 /* Error -------------------------------------------------------------------- */
 
-.icon-junk {
+.icon-junk,
+.icon-error {
 	background-image: url('../img/actions/error.svg');
 }
 
@@ -121,7 +122,8 @@
 .nav-icon-federated-cloud,
 .nav-icon-sharingin,
 .nav-icon-sharingout,
-.nav-icon-shareoverview {
+.nav-icon-shareoverview,
+.icon-control {
 	background-image: url('../img/actions/share.svg?v=1');
 }
 
@@ -168,7 +170,8 @@
 .icon-toggle,
 #show + label,
 #dbpassword-toggle + label,
-#personal-show + label {
+#personal-show + label,
+.icon-knowledge {
 	background-image: url('../img/actions/toggle.svg?v=1');
 }
 
@@ -199,7 +202,8 @@
 
 /* Add ---------------------------------------------------------------------- */
 
-.icon-add {
+.icon-add,
+#oc-dialog-filepicker-content .actions.creatable .icon.icon-add {
 	background-image: url('../img/actions/add.svg?v=1');
 }
 
@@ -244,7 +248,8 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 /* Triangle-S --------------------------------------------------------------- */
 
 .icon-triangle-s,
-#app-navigation .collapsible::before {
+#app-navigation .collapsible::before,
+.sort-contacts .multiselect .multiselect__single {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
 
@@ -252,7 +257,7 @@ select {
 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
 }
 
-.select2-container .select2-choice .select2-arrow b {
+div.select2-container a.select2-choice .select2-arrow b {
 	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
 }
 
@@ -311,7 +316,7 @@ input[type="email"] + .icon-confirm:disabled {
 	background-image: url('../img/actions/search.svg?v=1');
 }
 
-.select2-drop .select2-search input {
+div.select2-drop .select2-search input {
 	background: url('../img/actions/search.svg') no-repeat right center !important;
 	background-origin: content-box !important;
 }
@@ -342,7 +347,7 @@ input[type="email"] + .icon-confirm:disabled {
 }
 
 .oc-dialog-close {
-	background: url('../img/actions/close.svg') no-repeat center;
+	background: url('../img/actions/close.svg') no-repeat center !important;
 }
 
 /* Close (no shadow) -------------------------------------------------------- */
@@ -558,6 +563,48 @@ input[type="email"] + .icon-confirm:disabled {
 
 .icon-fortunes {
 	background-image: url('../img/widgets/fortunes.svg');
+}
+
+/* Freedom ------------------------------------------------------------------ */
+
+.icon-freedom {
+	background-image: url('../img/privacy/freedom.svg');
+}
+
+/* Picture ------------------------------------------------------------------ */
+
+.icon-picture {
+	background-image: url('../img/places/picture.svg');
+}
+
+/* Qr Code ------------------------------------------------------------------ */
+
+.icon-qrcode {
+	background-image: url('../img/actions/qrcode.svg');
+}
+
+/* Address book ------------------------------------------------------------- */
+
+.icon-address-book {
+	background-image: url('../img/actions/address-book.svg');
+}
+
+/* Group -------------------------------------------------------------------- */
+
+.icon-group {
+	background-image: url('../img/users.svg');
+}
+
+/* Social ------------------------------------------------------------------- */
+
+.icon-social {
+	background-image: url('../img/actions/social.svg');
+}
+
+/* Up ----------------------------------------------------------------------- */
+
+.icon-up {
+	background-image: url('../img/actions/up.svg');
 }
 
 /* App Categories ----------------------------------------------------------- */

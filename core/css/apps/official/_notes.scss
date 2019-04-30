@@ -4,12 +4,11 @@
 
 	.note-meta {
 
-		.note-word-count {
+		& > * {
 			opacity: 0.7;
 		}
 
 		.note-meta-right {
-			opacity: 0.7;
 
 			&:hover, &:active, &:focus {
 				opacity: 1;

@@ -31,7 +31,8 @@
 	}
 }
 
-#editor.ace_editor {
+#editor.ace_editor,
+#sidebar_editor.ace_editor {
 	background-color: $background-dark !important;
 	color: $foreground-normal !important;
 
@@ -51,7 +52,7 @@
 	.ace_marker-layer {
 
 		.ace_active-line {
-			background: $background-normal !important;
+			background: $background-dark !important;
 		}
 
 		.ace_selection {
@@ -62,4 +63,8 @@
 	.ace_cursor {
 		color: $foreground-normal !important;
 	}
+}
+
+#sidebar_editor.ace_editor .ace_cursor {
+	display: none;
 }

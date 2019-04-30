@@ -53,32 +53,38 @@
 
 /* Breadcrumbs -------------------------------------------------------------- */
 
-div.crumb a, div.crumb > span {
+div.crumb a,
+div.crumb > span,
+div.crumb.crumbmenu a {
 	color: $foreground-normal;
 	opacity: 0.7;
 }
 
-div.crumb span.icon-shared, div.crumb span.icon-public {
-	opacity: 0.7;
+// Breadcrumb dropdown
+// Display background hover full width
+div.crumb.crumbmenu .popovermenu ul {
+	margin-right: 0;
 }
 
 /* Menues ------------------------------------------------------------------- */
 
-.menu, .popovermenu {
+.menu,
+.popovermenu,
+.bubble {
 	border: 1px solid $decoration-normal;
 	filter: none;
-
-	&::after {
-		border-bottom-color: $decoration-normal;
-	}
 
 	li:hover {
 		background-color: $background-active-hover;
 	}
 }
 
-.popovermenu li > a {
-	color: $foreground-normal;
+.menu,
+.popovermenu {
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
 }
 
 .app-navigation-entry-menu {
@@ -105,10 +111,13 @@ div.crumb span.icon-shared, div.crumb span.icon-public {
 
 /* Info colours ------------------------------------------------------------- */
 
-#postsetupchecks .errors, 
+#postsetupchecks .errors {
+	color: $foreground-negative;
+}
+
 #postsetupchecks .warnings, 
 #security-warning > ul {
-	color: $foreground-negative;
+	color: $foreground-neutral;
 }
 
 #body-user .warning {
@@ -158,15 +167,15 @@ span {
 	}
 }
 
-/* General Settings --------------------------------------------------------- */
+/* Settings ----------------------------------------------------------------- */
 
-// Section Container
+/* Section Container */
 // Primarily seems to be used under settings
 .followupsection {
 	color: $foreground-normal;
 }
 
-// Cropper
+/* Cropper */
 // For cropping images, found under personal settings for adding avatar
 #cropper .inner-container {
 	background-color: $background-normal;
@@ -175,9 +184,11 @@ span {
 	border: 1px solid $decoration-normal;
 }
 
-// Description of the different update channels
-#updatenotification .channel-description span strong {
-	font-weight: bold;
+/* Admin settings */
+
+// Overview 
+#updatenotification .update-channel-selector .update-menu .menuitem.active {
+	background-color: $background-normal;
 }
 
 /* App Store ---------------------------------------------------------------- */
@@ -205,10 +216,6 @@ span {
 	.app-name {
 		font-weight: 600;
 	}
-}
-
-.app-version {
-	color: $foreground-inactive;
 }
 
 /* Files table -------------------------------------------------------------- */
@@ -247,19 +254,40 @@ span {
 /* File picker -------------------------------------------------------------- */
 
 .oc-dialog {
-	box-shadow: none;
+	box-shadow: none !important;
 	border: 1px solid $decoration-normal;
 }
 
-#oc-dialog-filepicker-content .filepicker_element_selected {
-	background-color: $background-active;
+#oc-dialog-filepicker-content {
 
-	td {
-		font-weight: 600;
+	.filepicker_element_selected {
+		background-color: $background-active;
+
+		td {
+			font-weight: 600;
+		}
+
+		.filename {
+			color: $foreground-active;
+		}
 	}
 
-	.filename {
-		color: $foreground-active;
+	.actions.creatable {
+		background-color: $background-normal;
+
+		&:hover {
+			border-color: $decoration-active;
+		}
+
+		a.button {
+			border: none;
+
+			&:focus,
+			&:active {
+				background-color: $background-active;
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -281,69 +309,20 @@ ul.multiselectoptions {
 }
 
 /* Dropdown Selects --------------------------------------------------------- */
-// Used by tags selection and some dropdowns
 
+// Used for tags in Files app
+.select2-container,
 .select2-container-multi {
 
-	.select2-choices,
-	&.select2-container-active .select2-choices {
-		background-color: $background-dark;
-		color: $foreground-normal;
-		border-color: $decoration-normal;
-	}
-
-	.select2-choices .select2-search-choice,
-	&.select2-container-active .select2-choices .select2-search-choice {
-		background-color: $background-normal;
-		border-color: $decoration-normal;
-		color: $foreground-normal;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-
-		&:hover,
-		&.select2-search-choice-focus {
-			background-color: $background-normal;
-			border-color: $decoration-active;
-			color: $foreground-normal;
-		}
-	}
-
-	.select2-choices .select2-search-field input {
-		color: $foreground-normal;
-
-		&.select2-active {
-			background-color: $background-dark !important;
-		}
-	}
-}
-
-.select2-container {
-	
 	.select2-choices {
-		background-color: $background-dark;
-		color: $foreground-normal;
-		border-color: $decoration-normal;
-
-		.select2-search-field {
-			background: $background-dark;
+	
+		.select2-search-choice {
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
 		}
 
-		.select2-input {
-			background: $background-dark;
-		}
-	}
-
-	.select2-choices .select2-search-choice {
-		background-color: $background-normal;
-		border-color: $decoration-normal;
-		color: $foreground-normal;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-
-		&:hover,
-		&.select2-search-choice-focus {
-			background-color: $background-normal;
-			border-color: $decoration-active;
+		.select2-search-field input {
+			color: $foreground-normal !important;
 		}
 	}
 
@@ -354,43 +333,26 @@ ul.multiselectoptions {
 	}
 }
 
+// Used for tag management in settings
 #select2-drop, .select2-drop {
-	color: $foreground-normal;
+	box-shadow: none;
 
-	.select2-search {
+	.select2-search .select2-input {
 		background-color: $background-dark !important;
 	}
 
-	.select2-results {
-
-		.select2-result,
-		.select2-no-results,
-		.select2-searching {
-			background-color: $background-dark;
-			color: $foreground-normal;
-		}
-
-		.select2-result.select2-selected {
-			background-color: $background-dark;
-		}
-
-		.select2-highlighted, .select2-result.select2-highlighted {
-			background-color: $background-active-hover;
-			color: $foreground-normal;
-		}
+	&.select2-drop-above.select2-drop-active {
+		border-color: $decoration-normal;
 	}
 }
 
-.select2-dropdown-open .select2-choice {
-	-webkit-box-shadow: none;
-	box-shadow: none;
+// Used for nextcloud announcements
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+	border-color: $decoration-normal !important;
+	background: $background-normal !important;
+	border-radius: 0 !important;
 }
-
-.activitysubject strong.systemtag {
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
-}
-
 
 // The following has been added for bookmarks tags
 .select2-container--default .select2-selection--multiple {
@@ -430,53 +392,15 @@ ul.multiselectoptions {
 /* Auto suggestion users in comments dropdown ------------------------------- */
 
 .atwho-view {
-	box-shadow: none;
+	box-shadow: none !important;
 
 	.cur {
-		background: $background-active-hover;
+		background: $background-active-hover !important;
 	}
 }
 
 /* UI Widget ---------------------------------------------------------------- */
-// Used by datepicker, timepicker and others
-
-.ui-dialog {
-
-	.ui-dialog-content {
-		background-color: $background-normal;
-	}
-
-	.ui-dialog-buttonpane {
-		background-color: $background-normal;
-	}
-}
-
-.ui-dialog-titlebar {
-
-	&.ui-widget-header {
-		background-color: $background-normal;
-		color: $foreground-normal;
-
-		.ui-dialog-titlebar-close {
-			
-			.ui-icon-closethick {
-				background-image: url('../../core/img/actions/close.svg');   
-			} 
-		}
-	}
-}
-
-.ui-widget-content {
-	background: $background-normal;
-	border: 1px solid $decoration-normal;
-	color: $foreground-normal;
-}
-
-.ui-widget-header {
-	background: inherit;
-	color: $foreground-normal;
-	border: none;
-}
+// Used by datepicker, timepicker, ldap and others
 
 // Datepicker
 .ui-widget.ui-datepicker {
@@ -599,38 +523,100 @@ ul.multiselectoptions {
 	box-shadow: none;
 }
 
-/* Tooltips ----------------------------------------------------------------- */
+// Ldap
 
-.tooltip {
-	filter: none;
+.ui-widget.ui-widget-content {
+	border-color: $decoration-normal !important;
+}
 
-	&.right .tooltip-arrow {
-		border-right-color: $decoration-normal;
+.ui-tabs .ui-tabs-nav {
+
+	.ui-state-default {
+		border-color: transparent !important;
 	}
 
-	&.left .tooltip-arrow {
-		border-left-color: $decoration-normal;
-	}
-
-	&.top .tooltip-arrow,
-	&.top-left .tooltip-arrow,
-	&.top-right .tooltip-arrow  {
-		border-top-color: $decoration-normal;
-	}
-
-	&.bottom .tooltip-arrow,
-	&.bottom-left .tooltip-arrow,
-	&.bottom-right .tooltip-arrow  {
-		border-bottom-color: $decoration-normal;
+	.ui-state-hover, .ui-state-active {
+		border-bottom-color: $decoration-normal !important;
 	}
 }
 
-.tooltip-inner {
-	background-color: $background-normal;
-	color: $foreground-normal;
-	box-shadow: none;
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border-color: $decoration-normal !important;
+	background: $background-normal !important;
+	color: $foreground-normal !important;
+
+	a,
+	a:link,
+	a:visited {
+		color: $foreground-normal;
+	}
+}
+
+.ui-button {
+	background-color: $background-normal !important;
+	color: $foreground-normal !important;
 	border: 1px solid $decoration-normal !important;
-	padding: 10px;
+
+	&.primary {
+		background-color: $background-dark !important;
+	}
+
+	&.ui-state-active,
+	&.ui-state-hover,
+	&:hover {
+		border-color: $decoration-active !important;
+	}
+
+	&:disabled,
+	&.ui-button-disabled,
+	&.ui-state-disabled {
+		background-color: $background-alternate !important;
+		color: $foreground-inactive !important;
+
+		&:hover {
+			border-color: $decoration-normal !important;
+		}
+	}
+}
+
+/* Tooltips ----------------------------------------------------------------- */
+
+.tooltip {
+	filter: none !important;
+
+	&[x-placement^="right"],
+	&.right .tooltip-arrow {
+		border-right-color: $decoration-normal !important;
+	}
+
+	&[x-placement^="left"],
+	&.left .tooltip-arrow {
+		border-left-color: $decoration-normal !important;
+	}
+
+	&[x-placement^="bottom"] .tooltip-arrow,
+	&.bottom .tooltip-arrow,
+	&.bottom-left .tooltip-arrow,
+	&.bottom-right .tooltip-arrow  {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.top .arrow,
+.tooltip.top-left .arrow,
+.tooltip[x-placement^="top"] .arrow,
+.tooltip.top-right .arrow {
+	border-top-color: var(--color-border) !important;
+}
+
+.tooltip-inner {
+	border: 1px solid $decoration-normal;
 }
 
 #adminaccount .tooltip-inner {
