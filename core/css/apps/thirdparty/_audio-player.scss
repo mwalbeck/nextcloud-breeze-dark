@@ -2,10 +2,6 @@
 
 .app-audioplayer #app-navigation {
 
-    #albenoverview li {
-        opacity: 1;
-    }
-
     #myCategory li {
         opacity: 1;
 
@@ -62,22 +58,6 @@
 
     .sm2-bar-ui {
 
-        &, .bd a {
-            color: $foreground-normal;
-        }
-
-        #app-navigation-toggle_alternative {
-            background-color: $background-normal;
-        }
-
-        .sm2-inline-gradient {
-            background-color: $background-normal;
-        }
-
-        .bd .sm2-button-element:hover {
-            background-color: $background-normal;
-        }
-
         .sm2-progress {
 
             .sm2-progress-track {
@@ -96,67 +76,27 @@
 
     #playlist-container {
 
-        .coverrow .album {
-
-            .albumcover {
-                box-shadow: none;
-            }
-
-            .albumdescr {
-
-                .albumname {
-                    color: $foreground-normal;
-                }
-
-                .artist {
-                    color: $foreground-inactive;
-                }
-            }
+        .coverrow .album .albumcover {
+            box-shadow: none;
         }
 
         .songcontainer {
             background-color: $background-dark;
             box-shadow: none;
             color: $foreground-normal;
+            border: 1px solid $decoration-normal;
 
             .open-arrow::before {
-                border-bottom-color: $background-dark;
+                border-bottom-color: $decoration-normal;
             }
 
             .songcontainer-cover {
                 box-shadow: none;
             }
-
-            a.close {
-                color: $icon-normal;
-            }
         }
 
-        #individual-playlist-header {
-
-            .header-indi {
-                border-bottom-color: $decoration-normal;
-                color: $foreground-normal;
-            }
-
-            span {
-                color: $foreground-normal;
-            }
-        }
-
-        #individual-playlist {
-
-            & > li {
-                color: $foreground-normal;
-
-                &.dragable:hover {
-                    background-color: $background-active-hover;
-                }
-
-                span {
-                    color: $foreground-normal !important;
-                }
-            }
+        #individual-playlist-header .header-indi {
+            border-bottom-color: $decoration-normal;
         }
     }
 }
@@ -166,4 +106,8 @@
     #ID3EditorTabView .icon-info {
         opacity: 1;
     }
+}
+
+#audios_import .ui-progressbar .ui-progressbar-value {
+    background-color: $background-active-alternate;
 }
