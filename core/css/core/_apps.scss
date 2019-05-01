@@ -95,6 +95,10 @@
 	.thumbnail {
 		color: $foreground-normal;
 	}
+
+	#collection-list input:not([type="range"]) {
+		background-color: $background-normal;
+	}
 }
 
 .tabHeaders .tabHeader {
@@ -109,10 +113,6 @@
 }
 
 .shareTabView {
-
-	#collection-list input:not([type="range"]) {
-		background-color: $background-normal;
-	}
 
 	.error {
 		color: $foreground-negative;
