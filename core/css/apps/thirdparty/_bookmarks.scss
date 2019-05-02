@@ -3,8 +3,18 @@
 .app-bookmarks #app-navigation {
     
     .add-bookmark .form input {
-        border: 1px solid $decoration-active;
-        border-left: none;
+        border: none;
+        border-top: 1px solid $decoration-normal;
+    }
+
+    .folders-item.droptarget-folder > a,
+    .folders-item.droptarget-bookmark > a {
+        background-color: $background-normal;
+        border-color: $decoration-active;
+
+        &:hover {
+            background-color: $background-active-hover;
+        }
     }
 }
 
@@ -79,9 +89,5 @@
                 background-color: $background-positive;
             }
         }
-    }
-
-    .popovermenu button {
-        border-radius: unset;
     }
 }
