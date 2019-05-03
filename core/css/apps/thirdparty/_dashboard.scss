@@ -7,6 +7,11 @@
         color: $foreground-normal;
     }
 
+    .grid-stack-item-content {
+        filter: none;
+        border: 1px solid $decoration-normal;
+    }
+
     .diskspace-text {
         color: $foreground-normal;
     }
