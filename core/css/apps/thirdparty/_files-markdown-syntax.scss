@@ -6,7 +6,7 @@
 /* Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #d4d0ab;
+  color: #d4d0ab !important;
 }
 
 /* Red */
@@ -18,7 +18,7 @@
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #ffa07a;
+  color: #ffa07a !important;
 }
 
 /* Orange */
@@ -30,12 +30,12 @@
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #f5ab35;
+  color: #f5ab35 !important;
 }
 
 /* Yellow */
 .hljs-attribute {
-  color: #ffd700;
+  color: #ffd700 !important;
 }
 
 /* Green */
@@ -43,35 +43,35 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #abe338;
+  color: #abe338 !important;
 }
 
 /* Blue */
 .hljs-title,
 .hljs-section {
-  color: #00e0e0;
+  color: #00e0e0 !important;
 }
 
 /* Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #dcc6e0;
+  color: #dcc6e0 !important;
 }
 
 .hljs {
-  display: block;
-  overflow-x: auto;
-  background: #2b2b2b;
-  color: #f8f8f2;
-  padding: 0.5em;
+  display: block !important;
+  overflow-x: auto !important;
+  background: #2b2b2b !important;
+  color: #f8f8f2 !important;
+  padding: 0.5em !important;
 }
 
 .hljs-emphasis {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .hljs-strong {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 @media screen and (-ms-high-contrast: active) {
@@ -90,11 +90,11 @@
   .hljs-symbol,
   .hljs-type,
   .hljs-quote {
-        color: highlight;
+        color: highlight !important;
     }
 
     .hljs-keyword,
     .hljs-selector-tag {
-        font-weight: bold;
+        font-weight: bold !important;
     }
 }
