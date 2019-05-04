@@ -5,10 +5,10 @@
 }
 
 button#deleteaccount {
-    background-color: $background-negative;
     border-color: $background-negative;
 
     &:hover:not(:disabled):not(.primary):not(#quota) {
+        background-color: $background-negative;
         border-color: $background-negative;
     }
 
