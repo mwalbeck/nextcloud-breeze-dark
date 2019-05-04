@@ -2,20 +2,12 @@
 
 .app-polls #app-content {
 
-    .icon-polls {
-        filter: invert(95%);
-    }
-
     .table-row.table-header {
         opacity: 1;
     }
 
-    .input-group-btn .btn {
-        border-color: $decoration-normal
-    }
-
-    .current-user {
-        background-color: $background-normal;
+    .table-row a {
+        color: $foreground-normal;
     }
 
     .toggle-cell {
@@ -28,17 +20,14 @@
     .poll-cell {
 
         &.yes {
-            background-color: $background-normal;
             color: $foreground-positive;
         }
 
         &.maybe {
-            background-color: $background-normal;
             color: $foreground-neutral;
         }
 
         &.no {
-            background-color: $background-normal;
             color: $foreground-negative;
         }
     }
@@ -53,22 +42,40 @@
     &.detailsView .pollInformation .cloud .information {
         background-color: $foreground-neutral;
     }
+
+    .pollActions li a {
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
-// Datepicker
+.app-polls .tabHeaders .tabHeader {
 
-.mx-datepicker {
-
-    &.disabled .mx-input-append {
-        background-color: $background-alternate;
+    &.selected,
+    &:hover,
+    &:focus {
+        border-bottom-color: $decoration-normal;
     }
+}
+
+/* Datepicker */
+.app-polls .mx-datepicker {
 
     .mx-input-append {
-        background-color: $background-dark;
+        background-color: $background-dark !important;
     }
 
     .mx-datepicker-popup {
         border-color: $decoration-normal !important;
         background-color: $background-normal !important;
     }
+}
+
+// Shift dates
+.app-polls .modal-dialog {
+    box-shadow: none !important;
+    border: 1px solid $decoration-normal !important;
 }
