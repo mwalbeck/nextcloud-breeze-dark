@@ -67,6 +67,12 @@
 
 #jsxc_dialog, #jsxc_webrtc {
 
+    .jsxc_btn.jsxc_btn-default {
+        border-color: $decoration-normal;
+        color: $foreground-normal;
+        background-color: $background-normal;
+    }
+
     .btn-default {
         color: $foreground-normal;
         background-color: $background-dark;
