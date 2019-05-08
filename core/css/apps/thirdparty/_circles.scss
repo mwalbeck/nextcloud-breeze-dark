@@ -1,86 +1,104 @@
-#circles_list {
+/* Circles ------------------------------------------------------------------ */
 
-    div {
+.app-circles #circle-navigation {
+    border: none;
+
+    input,
+    select,
+    option {
+        background-color: $background-dark !important;
+    }
+
+    select#circles_filters {
         color: $foreground-normal;
-        border-color: $decoration-normal;
-        background-color: $background-normal;
-        
+    }
+
+    &.selected {
+        background-color: $background-dark !important;
+        border-right: 1px solid $decoration-normal;
+    }
+
+    &.circles .circle {
+        border-bottom-color: $decoration-normal;
+
         &:hover {
-            background: $background-active-hover;
-        }
-    }
-
-    .selected {
-	    background: $background-active !important;
-    }
-}
-
-#circles_new_type_definition {
-    div {
-        color: $foreground-normal;
-    }
-}
-
-#mainui {
-    #circle_details {
-
-        #name {
-            color: $foreground-active;
+            background-color: $background-active-hover;
         }
 
-        #type {
+        .title,
+        .type,
+        .owner {
             color: $foreground-normal;
         }
 
-        .lightenbg {
-            background: $background-active;
+        &.selected {
+            background-color: $background-active;
         }
     }
 
-    #memberslist {
+    #circles_list {
 
-        .entry td {
+        div {
+            color: $foreground-normal;
+            border-color: $decoration-normal;
+            background-color: $background-normal;
+            
+            &:hover {
+                background: $background-active-hover;
+            }
+        }
+    
+        .selected {
+            background: $background-active !important;
+        }
+    }
+
+    #circles_new_type_definition div {
+        color: $foreground-normal;
+    }
+}
+
+.app-circles #app-content {
+
+    #mainui {
+
+        #circle_details {
+    
+            #name {
+                color: $foreground-active;
+            }
+    
+            #type {
+                color: $foreground-normal;
+            }
+    
+            .lightenbg {
+                background: $background-active;
+            }
+        }
+    
+        #memberslist .entry td {
             color: $foreground-normal;
             background: $background-normal !important;
             border-bottom-color: $decoration-normal;
         }
-    }
-}
 
-#rightpanel .lightenbg {
-	background: $background-alternate;
-}
+        #members_search_result {
+            border-color: $decoration-normal;
+            color: $foreground-normal;
+            background: $background-normal;
+            
+            .members_search.exact {
+                background-color: $background-active-hover;
+            }
+        }
 
-div.circle {
-	border-bottom-color: $decoration-normal;
+        #settings-panel #settings-table {
+            color: $foreground-normal;
 
-    &:hover {
-        background-color: $background-active-hover;
-    }
-
-    .title, .type, .owner {
-        color: $foreground-normal;
-    }
-}
-
-#app-navigation.circles {
-    
-    &.selected {
-		background-color: $background-dark !important;
-        border-top: 1px solid $decoration-normal;
-	}
-
-    .circle.selected {
-        background-color: $background-active;
-    }
-}
-
-#members_search_result {
-	border-color: $decoration-normal;
-	color: $foreground-normal;
-    background: $background-normal;
-    
-    .members_search.exact {
-        background-color: $background-active-hover;
+            tbody tr {
+                opacity: 1 !important;
+            }
+        }
     }
 }
