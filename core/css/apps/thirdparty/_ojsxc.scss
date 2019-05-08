@@ -32,7 +32,6 @@
 
         ul {
             background-color: $background-normal;
-            color: $foreground-normal;
             border-top: 1px solid $decoration-normal;
         }
 
@@ -68,14 +67,23 @@
 
 #jsxc_dialog, #jsxc_webrtc {
 
+    .jsxc_btn.jsxc_btn-default {
+        border-color: $decoration-normal;
+        color: $foreground-normal;
+        background-color: $background-normal;
+    }
+
     .btn-default {
         color: $foreground-normal;
         background-color: $background-dark;
         border-color: $decoration-normal;
 
         &:hover {
-            background-color: $background-active-alternate;
             color: $foreground-active;
+        }
+
+        &:active, &:focus {
+            background-color: $background-active;
         }
     }
 
@@ -122,6 +130,19 @@
 
             a {
                 color: $foreground-normal;
+                opacity: 0.7;
+
+                &.jsxc_disabled {
+                    color: $foreground-inactive;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
             }
 
             &::after {

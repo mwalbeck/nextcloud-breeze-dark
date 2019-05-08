@@ -1,47 +1,35 @@
-.app-quicknotes {
-
-    #app-navigation {
+.app-quicknotes #app-navigation {
 
         #new-note-fixed {
             background-color: $background-normal;
-            padding: 9px;
-            margin: 1px;
         }
 
         #colors-folder {
-
-            .icon-checkmark {
-                background-image: url('/core/css/../img/actions/checkmark.svg?v=1');
-            }
 
             .circle-toolbar.any-color {
                 background-color: $background-alternate;
             }
         }
+}
 
-        #notes-folder {
+.app-quicknotes .quicknote {
+    color: #000000;
+    box-shadow: none;
+}
 
-            .note a {
-                color: $foreground-normal;
-                opacity: 0.7;
-            }
-        }
+// Change icons to black as the contrast with white is really bad
+.app-quicknotes {
+
+    .icon-checkmark {
+        background-image: url('/core/css/../img/actions/checkmark.svg?v=1');
     }
-
-    .quicknote {
-        color: #000000;
-        box-shadow: none;
-
-        .icon-checkmark {
-            background-image: url('/core/css/../img/actions/checkmark.svg?v=1');
-        }
     
-        .icon-delete {
-            background-image: url('/core/css/../img/actions/delete.svg?v=1');
+    #div-content .icon-delete {
+        background-image: url('/core/css/../img/actions/delete.svg?v=1');
     
-            &:hover, &:focus {
-                background-image: url('/core/css/../img/actions/delete-hover.svg?v=1');
-            }
+        &:hover, &:focus {
+            background-image: url('../img/actions/delete-hover.svg');
+            opacity: 1;
         }
     }
 }

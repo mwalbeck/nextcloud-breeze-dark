@@ -1,5 +1,17 @@
 /* Deck --------------------------------------------------------------------- */
 
+.app-deck #app-navigation {
+
+    .editing .app-navigation-entry-edit {
+        background-color: $background-normal;
+    }
+
+    #app-settings-content .ui-select-match-item {
+        border-color: $decoration-normal !important;
+    }
+
+}
+
 .app-deck #app-content {
 
     #controls {
@@ -47,8 +59,13 @@
                 border-color: $decoration-active;
             }
 
-            &.create:hover {
-                background-color: $background-active-hover;
+            &.create {
+                border-color: $decoration-normal !important;
+
+                &:hover {
+                    background-color: $background-active-hover;
+                    border-color: $decoration-active !important;
+                }
             }
 
             .card-controls {
@@ -83,57 +100,42 @@
             }
         }
     }
+}
 
-    #app-sidebar {
+.app-deck #app-sidebar {
 
-        #sidebar-header h3 {
-            background-color: $background-normal;
+    #board-detail-labels {
+
+        input {
+            border: none;
         }
 
-        #board-detail-labels {
+        li[ng-if$="status.createLabel"] input {
+            color: $foreground-normal !important;
+        }
+    }
 
-            input {
-                border: none;
-            }
+    #sidebar-header .input-inline {
+        background-color: $background-normal;
+        border: none;
+    }
 
-            li[ng-if$="status.createLabel"] input {
-                color: $foreground-normal !important;
-            }
+    #card-dates {
+        opacity: 0.7;
+    }
 
-            .labels .label-edit input {
-                border-bottom-color: $decoration-normal;
-            }
+    #card-meta {
+
+        .save-indicator.unsaved {
+            background-color: $background-alternate;
+            color: $foreground-normal;
         }
 
-        #card-meta {
+        .attachment-list {
 
-            #card-dates {
-                opacity: 0.7;
-            }
-
-            .section-header {
-                border-bottom-color: $decoration-normal;
-            }
-
-            .card-description.section-content .container {
-                background-color: $background-normal;
-            }
-
-            .save-indicator.unsaved {
-                background-color: $background-alternate;
-                color: $foreground-normal;
-            }
-
-            .attachment-list {
-
-                &.selector {
-                    background-color: $background-normal;
-                    box-shadow: none;
-                }
-
-                li.attachment .filesize, li.attachment .filedate {
-                    color: $foreground-inactive;
-                }
+            li.attachment .filesize,
+            li.attachment .filedate {
+                color: $foreground-inactive;
             }
         }
     }

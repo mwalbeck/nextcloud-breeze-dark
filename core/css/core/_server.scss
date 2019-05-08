@@ -333,7 +333,6 @@ ul.multiselectoptions {
 	}
 }
 
-// Used for tag management in settings
 #select2-drop, .select2-drop {
 	box-shadow: none;
 
@@ -343,6 +342,15 @@ ul.multiselectoptions {
 
 	&.select2-drop-above.select2-drop-active {
 		border-color: $decoration-normal;
+	}
+
+	.select2-results .select2-result.select2-selected {
+		background-color: $background-normal;
+		box-shadow: inset 4px 0 var(--color-primary);
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
 	}
 }
 

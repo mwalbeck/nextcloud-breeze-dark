@@ -607,6 +607,13 @@ div.select2-drop .select2-search input {
 	background-image: url('../img/actions/up.svg');
 }
 
+/* File --------------------------------------------------------------------- */
+
+.icon-file,
+.icon-filetype-text {
+	background-image: url("../img/actions/edit.svg");
+}
+
 /* App Categories ----------------------------------------------------------- */
 
 // App Bundles
@@ -675,7 +682,7 @@ div.select2-drop .select2-search input {
 /* Deck App ----------------------------------------------------------------- */
 
 .icon-deck {
-	background: url("../img/deck.svg");
+	background-image: url("../img/deck.svg") !important;
 }
 
 /* News App ----------------------------------------------------------------- */
@@ -811,6 +818,11 @@ div.icon-fulltextsearch-white {
 	filter: none;
 }
 
+// Circle app icon
+.nav-icon-circlesfilter {
+	background-image: url('../img/circles/circle.svg');
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Two Factor App Icon in Personal Settings
@@ -849,6 +861,11 @@ img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg
 // Deck app: Toggle compact and expand
 .icon-toggle-compact-expanded,
 .icon-toggle-compact-collapsed {
+	filter: invert(95%);
+}
+
+// Deck app resource type
+.app-deck a.resource-type-deck img {
 	filter: invert(95%);
 }
 
