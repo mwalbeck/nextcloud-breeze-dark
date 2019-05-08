@@ -197,7 +197,7 @@ input[type="button"] {
 	}
 }
 
-.dropdown {
+.dropdown, #dropdown {
 	background-color: $background-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
