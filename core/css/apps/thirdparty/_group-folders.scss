@@ -1,8 +1,14 @@
-#groupfolders-react-root th {
+/* Group folders ------------------------------------------------------------ */
+
+#groupfolders-wrapper #groupfolders-react-root th {
 	border-bottom-color: $decoration-normal;
 }
 
 .group-edit {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
+	background-color: $background-normal !important;
+	border-color: $decoration-normal !important;
+}
+
+#groupfolders-react-root td .action-rename::after {
+	filter: invert(95%);
 }
