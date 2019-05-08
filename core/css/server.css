@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 15.0.5
-* Date 2019-04-13
+* Version: 16.0.1
+* Date 2019-05-08
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -569,6 +569,12 @@ div.select2-drop .select2-search input {
   background-image: url("../img/actions/up.svg");
 }
 
+/* File --------------------------------------------------------------------- */
+.icon-file,
+.icon-filetype-text {
+  background-image: url("../img/actions/edit.svg");
+}
+
 /* App Categories ----------------------------------------------------------- */
 .icon-category-app-bundles {
   background-image: url("../img/categories/bundles.svg?v=1");
@@ -623,7 +629,7 @@ div.select2-drop .select2-search input {
 
 /* Deck App ----------------------------------------------------------------- */
 .icon-deck {
-  background: url("../img/deck.svg");
+  background-image: url("../img/deck.svg") !important;
 }
 
 /* News App ----------------------------------------------------------------- */
@@ -744,6 +750,10 @@ div.icon-fulltextsearch-white {
   filter: none;
 }
 
+.nav-icon-circlesfilter {
+  background-image: url("../img/circles/circle.svg");
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 img.two-factor-provider-settings-icon[src$="/apps/twofactor_totp/img/app-dark.svg"],
 img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg"] {
@@ -773,6 +783,10 @@ img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg
 
 .icon-toggle-compact-expanded,
 .icon-toggle-compact-collapsed {
+  filter: invert(95%);
+}
+
+.app-deck a.resource-type-deck img {
   filter: invert(95%);
 }
 
@@ -1352,6 +1366,13 @@ ul.multiselectoptions.down {
 #select2-drop.select2-drop-above.select2-drop-active, .select2-drop.select2-drop-above.select2-drop-active {
   border-color: #706f6e;
 }
+#select2-drop .select2-results .select2-result.select2-selected, .select2-drop .select2-results .select2-result.select2-selected {
+  background-color: #31363b;
+  box-shadow: inset 4px 0 var(--color-primary);
+}
+#select2-drop .select2-results .select2-result.select2-selected:hover, .select2-drop .select2-results .select2-result.select2-selected:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
@@ -1650,6 +1671,9 @@ ul.multiselectoptions.down {
 #app-sidebar .thumbnail {
   color: #eff0f1;
 }
+#app-sidebar #collection-list input:not([type=range]) {
+  background-color: #31363b;
+}
 
 .tabHeaders .tabHeader.selected, .tabHeaders .tabHeader:hover, .tabHeaders .tabHeader:focus {
   border-bottom: 1px solid #3daee9;
@@ -1658,9 +1682,6 @@ ul.multiselectoptions.down {
   color: #fcfcfc;
 }
 
-.shareTabView #collection-list input:not([type=range]) {
-  background-color: #31363b;
-}
 .shareTabView .error {
   color: #da4453;
   border-color: #da4453;
@@ -1953,27 +1974,32 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 
 /* Mail --------------------------------------------------------------------- */
-.app-mail #app-navigation .folders .ui-droppable-active {
-  background-color: inherit;
+.app-mail #account-form .tabs-component-tab a {
+  color: #eff0f1;
 }
-.app-mail #app-navigation #app-settings .app-settings-hint {
-  color: #bdc3c7;
+.app-mail #account-form .tabs-component-tab.is-active {
+  border-bottom-color: #3daee9;
 }
 
-.app-mail #app-content .setup-content .toggle-manual-mode {
-  opacity: 0.7;
+.app-mail #app-navigation #app-settings .app-settings-hint a.active {
+  background-color: #31363b;
+  color: #bdc3c7;
+  font-weight: 400;
 }
-.app-mail #app-content .app-content-list-item.active .app-content-list-item-details {
+
+.app-mail #app-content .app-content-list .icon-starred:hover {
+  background-image: url("../img/actions/starred.svg?v=1") !important;
+}
+.app-mail #app-content .app-content-list .app-content-list-item,
+.app-mail #app-content .app-content-list .app-content-list-item-menu a {
+  color: #eff0f1;
+}
+.app-mail #app-content .app-content-list .app-content-list-item-line-two,
+.app-mail #app-content .app-content-list .app-content-list-item.active .app-content-list-item-details {
   opacity: 0.7;
 }
 .app-mail #app-content .app-content-details #mail-message-header {
   background: #31363b;
-}
-.app-mail #app-content .app-content-details #mail-message-header .transparency {
-  color: #eff0f1 !important;
-}
-.app-mail #app-content .app-content-details #mail-message-header .transparency a {
-  color: #2980b9 !important;
 }
 .app-mail #app-content .app-content-details #mail-content {
   background-color: #232629;
@@ -1988,20 +2014,20 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   border: 1px solid #706f6e;
   border-radius: 3px;
 }
-.app-mail #app-content .app-content-details input.to, .app-mail #app-content .app-content-details input.cc, .app-mail #app-content .app-content-details input.bcc, .app-mail #app-content .app-content-details input.subject, .app-mail #app-content .app-content-details textarea.message-body {
+.app-mail #app-content .app-content-details input#to, .app-mail #app-content .app-content-details input#cc, .app-mail #app-content .app-content-details input#bcc, .app-mail #app-content .app-content-details input#subject {
   border: none;
-  border-top: 1px solid #706f6e;
-}
-.app-mail #app-content .app-content-details input.to:hover, .app-mail #app-content .app-content-details input.to:focus, .app-mail #app-content .app-content-details input.to:active, .app-mail #app-content .app-content-details input.cc:hover, .app-mail #app-content .app-content-details input.cc:focus, .app-mail #app-content .app-content-details input.cc:active, .app-mail #app-content .app-content-details input.bcc:hover, .app-mail #app-content .app-content-details input.bcc:focus, .app-mail #app-content .app-content-details input.bcc:active, .app-mail #app-content .app-content-details input.subject:hover, .app-mail #app-content .app-content-details input.subject:focus, .app-mail #app-content .app-content-details input.subject:active, .app-mail #app-content .app-content-details textarea.message-body:hover, .app-mail #app-content .app-content-details textarea.message-body:focus, .app-mail #app-content .app-content-details textarea.message-body:active {
-  border-color: #706f6e !important;
+  background-color: #31363b;
 }
 .app-mail #app-content .app-content-details textarea.message-body {
-  border-bottom: 1px solid #706f6e;
+  border-bottom: 1px solid #706f6e !important;
+  border-right: 1px solid #706f6e !important;
+  background-color: #232629;
 }
 .app-mail #app-content .app-content-details .mail-message-attachments .attachments > div:hover, .app-mail #app-content .app-content-details .mail-message-attachments .attachments > div span:hover {
   background-color: inherit;
 }
-.app-mail #app-content .app-content-details .mail-message-attachments .attachments .attachment-download {
+.app-mail #app-content .app-content-details .mail-message-attachments .attachments .attachment-download,
+.app-mail #app-content .app-content-details .mail-message-attachments .attachments .attachment-save-to-cloud {
   border-color: transparent;
 }
 .app-mail #app-content .app-content-details .transparency {
@@ -2094,9 +2120,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 
 /* Audio Player ------------------------------------------------------------- */
-.app-audioplayer #app-navigation #albenoverview li {
-  opacity: 1;
-}
 .app-audioplayer #app-navigation #myCategory li {
   opacity: 1;
 }
@@ -2137,18 +2160,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-audioplayer #app-content #loading {
   color: #f2f2f2;
 }
-.app-audioplayer #app-content .sm2-bar-ui, .app-audioplayer #app-content .sm2-bar-ui .bd a {
-  color: #eff0f1;
-}
-.app-audioplayer #app-content .sm2-bar-ui #app-navigation-toggle_alternative {
-  background-color: #31363b;
-}
-.app-audioplayer #app-content .sm2-bar-ui .sm2-inline-gradient {
-  background-color: #31363b;
-}
-.app-audioplayer #app-content .sm2-bar-ui .bd .sm2-button-element:hover {
-  background-color: #31363b;
-}
 .app-audioplayer #app-content .sm2-bar-ui .sm2-progress .sm2-progress-track {
   background-color: #232629;
 }
@@ -2161,51 +2172,43 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-audioplayer #app-content #playlist-container .coverrow .album .albumcover {
   box-shadow: none;
 }
-.app-audioplayer #app-content #playlist-container .coverrow .album .albumdescr .albumname {
-  color: #eff0f1;
-}
-.app-audioplayer #app-content #playlist-container .coverrow .album .albumdescr .artist {
-  color: #bdc3c7;
-}
 .app-audioplayer #app-content #playlist-container .songcontainer {
   background-color: #232629;
   box-shadow: none;
   color: #eff0f1;
+  border: 1px solid #706f6e;
 }
 .app-audioplayer #app-content #playlist-container .songcontainer .open-arrow::before {
-  border-bottom-color: #232629;
+  border-bottom-color: #706f6e;
 }
 .app-audioplayer #app-content #playlist-container .songcontainer .songcontainer-cover {
   box-shadow: none;
 }
-.app-audioplayer #app-content #playlist-container .songcontainer a.close {
-  color: #f2f2f2;
-}
 .app-audioplayer #app-content #playlist-container #individual-playlist-header .header-indi {
   border-bottom-color: #706f6e;
-  color: #eff0f1;
-}
-.app-audioplayer #app-content #playlist-container #individual-playlist-header span {
-  color: #eff0f1;
-}
-.app-audioplayer #app-content #playlist-container #individual-playlist > li {
-  color: #eff0f1;
-}
-.app-audioplayer #app-content #playlist-container #individual-playlist > li.dragable:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-.app-audioplayer #app-content #playlist-container #individual-playlist > li span {
-  color: #eff0f1 !important;
 }
 
 .app-audioplayer #app-sidebar #ID3EditorTabView .icon-info {
   opacity: 1;
 }
 
+#audios_import .ui-progressbar .ui-progressbar-value {
+  background-color: #1d99f3;
+}
+
 /* Bookmarks ---------------------------------------------------------------- */
 .app-bookmarks #app-navigation .add-bookmark .form input {
-  border: 1px solid #3daee9;
-  border-left: none;
+  border: none;
+  border-top: 1px solid #706f6e;
+}
+.app-bookmarks #app-navigation .folders-item.droptarget-folder > a,
+.app-bookmarks #app-navigation .folders-item.droptarget-bookmark > a {
+  background-color: #31363b;
+  border-color: #3daee9;
+}
+.app-bookmarks #app-navigation .folders-item.droptarget-folder > a:hover,
+.app-bookmarks #app-navigation .folders-item.droptarget-bookmark > a:hover {
+  background-color: rgba(61, 174, 233, 0.25);
 }
 
 .app-bookmarks #app-content .bulk-actions {
@@ -2264,76 +2267,94 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-bookmarks #app-content .bookmark-detail .status .message-saved {
   background-color: #27ae60;
 }
-.app-bookmarks #app-content .popovermenu button {
-  border-radius: unset;
-}
 
-#circles_list div {
+/* Circles ------------------------------------------------------------------ */
+.app-circles #circle-navigation {
+  border: none;
+}
+.app-circles #circle-navigation input,
+.app-circles #circle-navigation select,
+.app-circles #circle-navigation option {
+  background-color: #232629 !important;
+}
+.app-circles #circle-navigation select#circles_filters {
+  color: #eff0f1;
+}
+.app-circles #circle-navigation.selected {
+  background-color: #232629 !important;
+  border-right: 1px solid #706f6e;
+}
+.app-circles #circle-navigation.circles .circle {
+  border-bottom-color: #706f6e;
+}
+.app-circles #circle-navigation.circles .circle:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+.app-circles #circle-navigation.circles .circle .title,
+.app-circles #circle-navigation.circles .circle .type,
+.app-circles #circle-navigation.circles .circle .owner {
+  color: #eff0f1;
+}
+.app-circles #circle-navigation.circles .circle.selected {
+  background-color: #3daee9;
+}
+.app-circles #circle-navigation #circles_list div {
   color: #eff0f1;
   border-color: #706f6e;
   background-color: #31363b;
 }
-#circles_list div:hover {
+.app-circles #circle-navigation #circles_list div:hover {
   background: rgba(61, 174, 233, 0.25);
 }
-#circles_list .selected {
+.app-circles #circle-navigation #circles_list .selected {
   background: #3daee9 !important;
 }
-
-#circles_new_type_definition div {
+.app-circles #circle-navigation #circles_new_type_definition div {
   color: #eff0f1;
 }
 
-#mainui #circle_details #name {
+.app-circles #app-content #mainui #circle_details #name {
   color: #fcfcfc;
 }
-#mainui #circle_details #type {
+.app-circles #app-content #mainui #circle_details #type {
   color: #eff0f1;
 }
-#mainui #circle_details .lightenbg {
+.app-circles #app-content #mainui #circle_details .lightenbg {
   background: #3daee9;
 }
-#mainui #memberslist .entry td {
+.app-circles #app-content #mainui #memberslist .entry td {
   color: #eff0f1;
   background: #31363b !important;
   border-bottom-color: #706f6e;
 }
-
-#rightpanel .lightenbg {
-  background: #4d4d4d;
-}
-
-div.circle {
-  border-bottom-color: #706f6e;
-}
-div.circle:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-div.circle .title, div.circle .type, div.circle .owner {
-  color: #eff0f1;
-}
-
-#app-navigation.circles.selected {
-  background-color: #232629 !important;
-  border-top: 1px solid #706f6e;
-}
-#app-navigation.circles .circle.selected {
-  background-color: #3daee9;
-}
-
-#members_search_result {
+.app-circles #app-content #mainui #members_search_result {
   border-color: #706f6e;
   color: #eff0f1;
   background: #31363b;
 }
-#members_search_result .members_search.exact {
+.app-circles #app-content #mainui #members_search_result .members_search.exact {
   background-color: rgba(61, 174, 233, 0.25);
+}
+.app-circles #app-content #mainui #settings-panel #settings-table {
+  color: #eff0f1;
+}
+.app-circles #app-content #mainui #settings-panel #settings-table tbody tr {
+  opacity: 1 !important;
+}
+
+#app-content-circlesfilter .select2-container .select2-choices {
+  background-color: #31363b;
+  border-color: #706f6e;
 }
 
 /* Dashboard ---------------------------------------------------------------- */
 .app-dashboard #app-content .dashboard-newwidget {
   border-color: #706f6e;
   color: #eff0f1;
+}
+.app-dashboard #app-content .grid-stack-item-content {
+  filter: none;
+  border: 1px solid #706f6e;
 }
 .app-dashboard #app-content .diskspace-text {
   color: #eff0f1;
@@ -2346,6 +2367,13 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 
 /* Deck --------------------------------------------------------------------- */
+.app-deck #app-navigation .editing .app-navigation-entry-edit {
+  background-color: #31363b;
+}
+.app-deck #app-navigation #app-settings-content .ui-select-match-item {
+  border-color: #706f6e !important;
+}
+
 .app-deck #app-content #controls #stack-add {
   background-color: #232629;
   border: 1px solid #706f6e;
@@ -2375,8 +2403,12 @@ div.circle .title, div.circle .type, div.circle .owner {
 .app-deck #app-content #board .card:hover, .app-deck #app-content #board .card.current {
   border-color: #3daee9;
 }
+.app-deck #app-content #board .card.create {
+  border-color: #706f6e !important;
+}
 .app-deck #app-content #board .card.create:hover {
   background-color: rgba(61, 174, 233, 0.25);
+  border-color: #3daee9 !important;
 }
 .app-deck #app-content #board .card .card-controls {
   background-color: #232629;
@@ -2402,36 +2434,26 @@ div.circle .title, div.circle .type, div.circle .owner {
 .app-deck #app-content #board .card .card-controls .card-files {
   opacity: 0.7;
 }
-.app-deck #app-content #app-sidebar #sidebar-header h3 {
-  background-color: #31363b;
-}
-.app-deck #app-content #app-sidebar #board-detail-labels input {
+
+.app-deck #app-sidebar #board-detail-labels input {
   border: none;
 }
-.app-deck #app-content #app-sidebar #board-detail-labels li[ng-if$="status.createLabel"] input {
+.app-deck #app-sidebar #board-detail-labels li[ng-if$="status.createLabel"] input {
   color: #eff0f1 !important;
 }
-.app-deck #app-content #app-sidebar #board-detail-labels .labels .label-edit input {
-  border-bottom-color: #706f6e;
+.app-deck #app-sidebar #sidebar-header .input-inline {
+  background-color: #31363b;
+  border: none;
 }
-.app-deck #app-content #app-sidebar #card-meta #card-dates {
+.app-deck #app-sidebar #card-dates {
   opacity: 0.7;
 }
-.app-deck #app-content #app-sidebar #card-meta .section-header {
-  border-bottom-color: #706f6e;
-}
-.app-deck #app-content #app-sidebar #card-meta .card-description.section-content .container {
-  background-color: #31363b;
-}
-.app-deck #app-content #app-sidebar #card-meta .save-indicator.unsaved {
+.app-deck #app-sidebar #card-meta .save-indicator.unsaved {
   background-color: #4d4d4d;
   color: #eff0f1;
 }
-.app-deck #app-content #app-sidebar #card-meta .attachment-list.selector {
-  background-color: #31363b;
-  box-shadow: none;
-}
-.app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filesize, .app-deck #app-content #app-sidebar #card-meta .attachment-list li.attachment .filedate {
+.app-deck #app-sidebar #card-meta .attachment-list li.attachment .filesize,
+.app-deck #app-sidebar #card-meta .attachment-list li.attachment .filedate {
   color: #bdc3c7;
 }
 
@@ -2479,13 +2501,18 @@ div.circle .title, div.circle .type, div.circle .owner {
   opacity: 1 !important;
 }
 
-#groupfolders-react-root th {
+/* Group folders ------------------------------------------------------------ */
+#groupfolders-wrapper #groupfolders-react-root th {
   border-bottom-color: #706f6e;
 }
 
 .group-edit {
-  background-color: #31363b;
-  border-color: #706f6e;
+  background-color: #31363b !important;
+  border-color: #706f6e !important;
+}
+
+#groupfolders-react-root td .action-rename::after {
+  filter: invert(95%);
 }
 
 /* Markdown editor -----------------------------------------------------------*/
@@ -2525,7 +2552,7 @@ div.circle .title, div.circle .type, div.circle .owner {
 /* Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #d4d0ab;
+  color: #d4d0ab !important;
 }
 
 /* Red */
@@ -2537,7 +2564,7 @@ div.circle .title, div.circle .type, div.circle .owner {
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-deletion {
-  color: #ffa07a;
+  color: #ffa07a !important;
 }
 
 /* Orange */
@@ -2549,12 +2576,12 @@ div.circle .title, div.circle .type, div.circle .owner {
 .hljs-params,
 .hljs-meta,
 .hljs-link {
-  color: #f5ab35;
+  color: #f5ab35 !important;
 }
 
 /* Yellow */
 .hljs-attribute {
-  color: #ffd700;
+  color: #ffd700 !important;
 }
 
 /* Green */
@@ -2562,35 +2589,35 @@ div.circle .title, div.circle .type, div.circle .owner {
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #abe338;
+  color: #abe338 !important;
 }
 
 /* Blue */
 .hljs-title,
 .hljs-section {
-  color: #00e0e0;
+  color: #00e0e0 !important;
 }
 
 /* Purple */
 .hljs-keyword,
 .hljs-selector-tag {
-  color: #dcc6e0;
+  color: #dcc6e0 !important;
 }
 
 .hljs {
-  display: block;
-  overflow-x: auto;
-  background: #2b2b2b;
-  color: #f8f8f2;
-  padding: 0.5em;
+  display: block !important;
+  overflow-x: auto !important;
+  background: #2b2b2b !important;
+  color: #f8f8f2 !important;
+  padding: 0.5em !important;
 }
 
 .hljs-emphasis {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .hljs-strong {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 @media screen and (-ms-high-contrast: active) {
@@ -2609,12 +2636,12 @@ div.circle .title, div.circle .type, div.circle .owner {
 .hljs-symbol,
 .hljs-type,
 .hljs-quote {
-    color: highlight;
+    color: highlight !important;
   }
 
   .hljs-keyword,
 .hljs-selector-tag {
-    font-weight: bold;
+    font-weight: bold !important;
   }
 }
 /* Music -------------------------------------------------------------------- */
@@ -2751,7 +2778,6 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 #jsxc_roster > .jsxc_bottom ul {
   background-color: #31363b;
-  color: #eff0f1;
   border-top: 1px solid #706f6e;
 }
 #jsxc_roster > .jsxc_bottom li {
@@ -2778,14 +2804,21 @@ div.circle .title, div.circle .type, div.circle .owner {
   background-color: #f67400;
 }
 
+#jsxc_dialog .jsxc_btn.jsxc_btn-default, #jsxc_webrtc .jsxc_btn.jsxc_btn-default {
+  border-color: #706f6e;
+  color: #eff0f1;
+  background-color: #31363b;
+}
 #jsxc_dialog .btn-default, #jsxc_webrtc .btn-default {
   color: #eff0f1;
   background-color: #232629;
   border-color: #706f6e;
 }
 #jsxc_dialog .btn-default:hover, #jsxc_webrtc .btn-default:hover {
-  background-color: #1d99f3;
   color: #fcfcfc;
+}
+#jsxc_dialog .btn-default:active, #jsxc_dialog .btn-default:focus, #jsxc_webrtc .btn-default:active, #jsxc_webrtc .btn-default:focus {
+  background-color: #3daee9;
 }
 #jsxc_dialog pre, #jsxc_webrtc pre {
   color: #eff0f1;
@@ -2825,6 +2858,16 @@ div.circle .title, div.circle .type, div.circle .owner {
 }
 #jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu a {
   color: #eff0f1;
+  opacity: 0.7;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu a.jsxc_disabled {
+  color: #bdc3c7;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu a.jsxc_disabled:hover {
+  opacity: 0.7;
+}
+#jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu a:hover {
+  opacity: 1;
 }
 #jsxc_windowList .jsxc_window .jsxc_bar .jsxc_settings .jsxc_menu::after {
   border-bottom-color: #706f6e;
@@ -3071,14 +3114,15 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-navigation .nav-icon-favorites {
   background-image: none;
 }
+.app-passwords #app-navigation ul li {
+  opacity: 1;
+}
+.app-passwords #app-navigation ul li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
 
-.app-passwords #app-content #controls .crumbmenu .menu,
 .app-passwords #app-content #controls .passwords-more-menu .menu {
   transition: border 0.25s ease-in-out, max-height 0.25s ease-in-out;
-}
-.app-passwords #app-content #controls .crumbmenu.active .menu,
-.app-passwords #app-content #controls .passwords-more-menu.active .menu {
-  border: 1px solid #706f6e;
 }
 .app-passwords #app-content .item-list .row.header, .app-passwords #app-content .item-list .row.header .date {
   color: #eff0f1;
@@ -3096,11 +3140,7 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li:hover {
   opacity: 1;
 }
-.app-passwords #app-content .item-list .row .more .popovermenu.bubble.menu li a {
-  color: #eff0f1;
-}
 .app-passwords #app-content .backup-dialog h1 {
-  border-color: #706f6e;
   background-color: #232629;
 }
 .app-passwords #app-content .backup-dialog h1::before {
@@ -3123,24 +3163,12 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-passwords #app-content .app-content-right .item-details .tab-container .tab-titles .tab-title {
   color: #eff0f1;
 }
-.app-passwords #app-content .app-content-right .item-details .tab-container .tab-titles .tab-title.active {
-  color: #fcfcfc;
-}
-.app-passwords #app-content .app-content-right .item-details .details div:not(.header) {
-  color: #eff0f1;
-}
-.app-passwords #app-content .app-content-right .item-details .details div:not(.header) span {
-  color: #eff0f1;
+.app-passwords #app-content .app-content-left.settings section.danger input[type=button]:hover {
+  border-color: #da4453;
 }
 
-.app-passwords #app-popup #passwords-create-new .window .title {
-  color: #fcfcfc;
-}
 .app-passwords #app-popup #passwords-create-new .window form.content .section-title, .app-passwords #app-popup #passwords-create-new .window form.content .open .foldout-title {
   border-color: #706f6e;
-}
-.app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a {
-  color: #eff0f1 !important;
 }
 .app-passwords #app-popup #passwords-create-new .window form.content .notes-container .editor-toolbar a:hover {
   border-color: #3daee9;
@@ -3161,17 +3189,16 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   padding: 1.225px 0;
 }
 
+.oc-dialog #pw-field-color {
+  border: none;
+  background-color: #31363b;
+}
+
 .oc-dialog-buttonrow.twobuttons button.primary {
   border-color: #706f6e;
 }
 .oc-dialog-buttonrow.twobuttons button.primary:hover, .oc-dialog-buttonrow.twobuttons button.primary:active, .oc-dialog-buttonrow.twobuttons button.primary:focus {
   border-color: #3daee9;
-}
-
-.app-passwords #app-content .app-content-left.settings section.danger input[type=button]:hover {
-  background-color: #da4453 !important;
-  border-color: #da4453 !important;
-  color: #fcfcfc !important;
 }
 
 .app-ocsms #app-content-header {
@@ -3234,31 +3261,22 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 }
 
 /* Polls -------------------------------------------------------------------- */
-.app-polls #app-content .icon-polls {
-  filter: invert(95%);
-}
 .app-polls #app-content .table-row.table-header {
   opacity: 1;
 }
-.app-polls #app-content .input-group-btn .btn {
-  border-color: #706f6e;
-}
-.app-polls #app-content .current-user {
-  background-color: #31363b;
+.app-polls #app-content .table-row a {
+  color: #eff0f1;
 }
 .app-polls #app-content .toggle-cell.yes, .app-polls #app-content .toggle-cell.maybe, .app-polls #app-content .toggle-cell.no {
   background-color: #31363b;
 }
 .app-polls #app-content .poll-cell.yes {
-  background-color: #31363b;
   color: #27ae60;
 }
 .app-polls #app-content .poll-cell.maybe {
-  background-color: #31363b;
   color: #f67400;
 }
 .app-polls #app-content .poll-cell.no {
-  background-color: #31363b;
   color: #da4453;
 }
 
@@ -3268,45 +3286,52 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-polls #app-sidebar.detailsView .pollInformation .cloud .information {
   background-color: #f67400;
 }
+.app-polls #app-sidebar .pollActions li a {
+  opacity: 0.7;
+}
+.app-polls #app-sidebar .pollActions li a:hover {
+  opacity: 1;
+}
 
-.mx-datepicker.disabled .mx-input-append {
-  background-color: #4d4d4d;
+.app-polls .tabHeaders .tabHeader.selected, .app-polls .tabHeaders .tabHeader:hover, .app-polls .tabHeaders .tabHeader:focus {
+  border-bottom-color: #706f6e;
 }
-.mx-datepicker .mx-input-append {
-  background-color: #232629;
+
+/* Datepicker */
+.app-polls .mx-datepicker .mx-input-append {
+  background-color: #232629 !important;
 }
-.mx-datepicker .mx-datepicker-popup {
+.app-polls .mx-datepicker .mx-datepicker-popup {
   border-color: #706f6e !important;
   background-color: #31363b !important;
 }
 
+.app-polls .modal-dialog {
+  box-shadow: none !important;
+  border: 1px solid #706f6e !important;
+}
+
 .app-quicknotes #app-navigation #new-note-fixed {
   background-color: #31363b;
-  padding: 9px;
-  margin: 1px;
-}
-.app-quicknotes #app-navigation #colors-folder .icon-checkmark {
-  background-image: url("/core/css/../img/actions/checkmark.svg?v=1");
 }
 .app-quicknotes #app-navigation #colors-folder .circle-toolbar.any-color {
   background-color: #4d4d4d;
 }
-.app-quicknotes #app-navigation #notes-folder .note a {
-  color: #eff0f1;
-  opacity: 0.7;
-}
+
 .app-quicknotes .quicknote {
   color: #000000;
   box-shadow: none;
 }
-.app-quicknotes .quicknote .icon-checkmark {
+
+.app-quicknotes .icon-checkmark {
   background-image: url("/core/css/../img/actions/checkmark.svg?v=1");
 }
-.app-quicknotes .quicknote .icon-delete {
+.app-quicknotes #div-content .icon-delete {
   background-image: url("/core/css/../img/actions/delete.svg?v=1");
 }
-.app-quicknotes .quicknote .icon-delete:hover, .app-quicknotes .quicknote .icon-delete:focus {
-  background-image: url("/core/css/../img/actions/delete-hover.svg?v=1");
+.app-quicknotes #div-content .icon-delete:hover, .app-quicknotes #div-content .icon-delete:focus {
+  background-image: url("../img/actions/delete-hover.svg");
+  opacity: 1;
 }
 
 /* Radio -------------------------------------------------------------------- */
@@ -3512,10 +3537,10 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 }
 
 button#deleteaccount {
-  background-color: #da4453;
   border-color: #da4453;
 }
 button#deleteaccount:hover:not(:disabled):not(.primary):not(#quota) {
+  background-color: #da4453;
   border-color: #da4453;
 }
 button#deleteaccount:disabled {
