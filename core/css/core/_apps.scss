@@ -68,6 +68,11 @@
 	select {
 		background-color: $background-normal !important;
 	}
+
+	> ul > li > .app-navigation-entry-bullet + a:hover,
+	> ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
+		background: $background-active-hover !important;
+	}
 }
 
 .app-navigation-entry-menu {
@@ -157,4 +162,10 @@
 	&:hover {
 		background-color: $background-active-hover;
 	}
+}
+
+// Date picker styling fix
+
+.mx-datepicker .mx-input-wrapper .mx-input-append {
+	background-color: $background-dark !important;
 }

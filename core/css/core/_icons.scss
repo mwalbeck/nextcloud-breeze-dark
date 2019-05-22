@@ -85,7 +85,7 @@
 .icon-category-enabled,
 .multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
 #two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-	background-image: url('../img/actions/checkmark.svg?v=1');
+	background-image: url('../img/actions/checkmark.svg?v=1') !important;
 }
 
 /* History ------------------------------------------------------------------ */
