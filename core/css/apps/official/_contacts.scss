@@ -28,15 +28,8 @@
 
 	.app-content-details .contact-details {
 
-		.property {
-
-			a.icon.action-item__menutoggle {
-				color: $foreground-normal;
-			}
-
-			.mx-datepicker .mx-input-wrapper .mx-input-append {
-				background-color: $background-dark;
-			}
+		.property a.icon.action-item__menutoggle {
+			color: $foreground-normal;
 		}
 
 		.multiselect.property__label input:focus {
