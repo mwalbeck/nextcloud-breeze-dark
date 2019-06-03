@@ -13,7 +13,7 @@
         }
 
         .bullet-color-green {
-            backgroud-color: $background-positive;
+            background-color: $background-positive;
         }
     }
 
@@ -58,6 +58,14 @@
             }
         }
 
+        .grid-view .credential {
+            border-color: $decoration-normal !important;
+
+            .credential_content .tags .tag {
+                color: $foreground-normal !important;
+            }
+        }
+
         .tags .tag,
         .app_sidebar .credential-data .tags .tag {
             background-color: $background-dark;
@@ -73,6 +81,17 @@
             background: $background-normal;
             border-color: $decoration-normal;
             box-shadow: none;
+        }
+
+        .edit_credential .compromised-button {
+            background-color: $background-negative;
+            color: $foreground-normal;
+
+            &:hover,
+            &:active,
+            &:focus {
+                border-color: $background-neutral;
+            }
         }
     }
 
@@ -106,6 +125,10 @@
     .pass-meter .details,
     .pass-meter .pass-meter-message {
         color: $foreground-inactive;
+    }
+
+    .pass-meter-col .indicator {
+        background-color: $background-dark;
     }
 
     .pass-meter-col.poor .indicator {
@@ -239,6 +262,12 @@ tags-input {
             &:hover {
                 color: $background-active;
             }
+
+            &:active,
+            &:focus {
+                color: $background-active;
+                background-color: transparent !important;
+            }
         }
     }
 
@@ -259,6 +288,14 @@ tags-input {
 	border: none;
 }
 
+.iconpicker-dialog,
+.shareincoming-dialog {
+
+    &, .ui-dialog {
+        box-shadow: none;
+    }
+}
+
 #passman-settings {
 
     #mover {
@@ -267,8 +304,4 @@ tags-input {
             background-color: unset;
         }
     }
-}
-
-.app-passman img.icon-image {
-    filter: invert(95%);
 }
