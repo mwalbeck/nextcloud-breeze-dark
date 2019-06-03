@@ -43,7 +43,8 @@
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus,
-.app-news #app-navigation .icon-starred {
+.app-news #app-navigation .icon-starred,
+.starred {
 	background-image: url('../img/actions/starred.svg?v=1');
 	opacity: 1;
 }
