@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 16.0.1
-* Date 2019-05-08
+* Version: 16.0.2
+* Date 2019-06-04
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -85,7 +85,8 @@ input, label {
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus,
-.app-news #app-navigation .icon-starred {
+.app-news #app-navigation .icon-starred,
+.starred {
   background-image: url("../img/actions/starred.svg?v=1");
   opacity: 1;
 }
@@ -122,7 +123,7 @@ input, label {
 .icon-category-enabled,
 .multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
 #two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-  background-image: url("../img/actions/checkmark.svg?v=1");
+  background-image: url("../img/actions/checkmark.svg?v=1") !important;
 }
 
 /* History ------------------------------------------------------------------ */
@@ -573,6 +574,11 @@ div.select2-drop .select2-search input {
 .icon-file,
 .icon-filetype-text {
   background-image: url("../img/actions/edit.svg");
+}
+
+/* Expired ------------------------------------------------------------------ */
+.icon-expired {
+  background-image: url("../img/actions/expired.svg");
 }
 
 /* App Categories ----------------------------------------------------------- */
@@ -1090,10 +1096,25 @@ input[type=button].primary:disabled:active {
   border-color: #3daee9;
 }
 
-.dropdown {
+.dropdown,
+#dropdown {
   background-color: #31363b;
   box-shadow: none;
   border: 1px solid #706f6e;
+}
+.dropdown input[type=text] + .icon-confirm,
+#dropdown input[type=text] + .icon-confirm {
+  height: 32px;
+  width: 32px;
+}
+.dropdown .shareWithConfirm.icon-confirm,
+#dropdown .shareWithConfirm.icon-confirm {
+  padding: 16px !important;
+  top: 20px;
+}
+
+#link {
+  border-top-color: #706f6e;
 }
 
 /* Login Screen ------------------------------------------------------------- */
@@ -1653,6 +1674,10 @@ ul.multiselectoptions.down {
 #app-navigation select {
   background-color: #31363b !important;
 }
+#app-navigation > ul > li > .app-navigation-entry-bullet + a:hover,
+#app-navigation > ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
+  background: rgba(61, 174, 233, 0.25) !important;
+}
 
 .app-navigation-entry-menu li > button {
   color: #eff0f1;
@@ -1714,6 +1739,10 @@ ul.multiselectoptions.down {
 }
 .settings-button:hover {
   background-color: rgba(61, 174, 233, 0.25);
+}
+
+.mx-datepicker .mx-input-wrapper .mx-input-append {
+  background-color: #232629 !important;
 }
 
 .activitymessage {
@@ -1856,9 +1885,6 @@ ul.multiselectoptions.down {
 }
 .app-contacts #app-content .app-content-details .contact-details .property a.icon.action-item__menutoggle {
   color: #eff0f1;
-}
-.app-contacts #app-content .app-content-details .contact-details .property .mx-datepicker .mx-input-wrapper .mx-input-append {
-  background-color: #232629;
 }
 .app-contacts #app-content .app-content-details .contact-details .multiselect.property__label input:focus {
   background-color: #31363b;
@@ -2919,7 +2945,7 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background-color: #f67400;
 }
 .app-passman #app-navigation li .bullet-color-green {
-  backgroud-color: #27ae60;
+  background-color: #27ae60;
 }
 .app-passman #app-navigation .nav-trashbin a {
   background-color: #31363b !important;
@@ -2947,6 +2973,12 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-passman #app-content #app-content-wrapper .viewModes .view-mode.active {
   background-color: #3daee9;
 }
+.app-passman #app-content #app-content-wrapper .grid-view .credential {
+  border-color: #706f6e !important;
+}
+.app-passman #app-content #app-content-wrapper .grid-view .credential .credential_content .tags .tag {
+  color: #eff0f1 !important;
+}
 .app-passman #app-content #app-content-wrapper .tags .tag,
 .app-passman #app-content #app-content-wrapper .app_sidebar .credential-data .tags .tag {
   background-color: #232629;
@@ -2960,6 +2992,13 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background: #31363b;
   border-color: #706f6e;
   box-shadow: none;
+}
+.app-passman #app-content #app-content-wrapper .edit_credential .compromised-button {
+  background-color: #da4453;
+  color: #eff0f1;
+}
+.app-passman #app-content #app-content-wrapper .edit_credential .compromised-button:hover, .app-passman #app-content #app-content-wrapper .edit_credential .compromised-button:active, .app-passman #app-content #app-content-wrapper .edit_credential .compromised-button:focus {
+  border-color: #f67400;
 }
 .app-passman #app-content .tab_header li.active {
   box-shadow: inset 0 -4px var(--color-primary);
@@ -2981,6 +3020,9 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-passman #app-content .pass-meter .details,
 .app-passman #app-content .pass-meter .pass-meter-message {
   color: #bdc3c7;
+}
+.app-passman #app-content .pass-meter-col .indicator {
+  background-color: #232629;
 }
 .app-passman #app-content .pass-meter-col.poor .indicator {
   background-color: #da4453;
@@ -3090,6 +3132,10 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .angularjs-datetime-picker .adp-month > button:hover {
   color: #3daee9;
 }
+.angularjs-datetime-picker .adp-month > button:active, .angularjs-datetime-picker .adp-month > button:focus {
+  color: #3daee9;
+  background-color: transparent !important;
+}
 .angularjs-datetime-picker .adp-days > .adp-day.selected {
   background: rgba(61, 174, 233, 0.25);
   border-color: #3daee9;
@@ -3102,12 +3148,14 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   border: none;
 }
 
-#passman-settings #mover table tr:hover {
-  background-color: unset;
+.iconpicker-dialog, .iconpicker-dialog .ui-dialog,
+.shareincoming-dialog,
+.shareincoming-dialog .ui-dialog {
+  box-shadow: none;
 }
 
-.app-passman img.icon-image {
-  filter: invert(95%);
+#passman-settings #mover table tr:hover {
+  background-color: unset;
 }
 
 .app-passwords #app-navigation .nav-icon-recent,
@@ -3298,9 +3346,6 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 }
 
 /* Datepicker */
-.app-polls .mx-datepicker .mx-input-append {
-  background-color: #232629 !important;
-}
 .app-polls .mx-datepicker .mx-datepicker-popup {
   border-color: #706f6e !important;
   background-color: #31363b !important;
@@ -3367,54 +3412,28 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 }
 
 /* Tasks -------------------------------------------------------------------- */
-#content.app-tasks {
-  color: #eff0f1;
-}
-
-#app-navigation .app-navigation-entry-edit input.action {
+.app-tasks #app-navigation .app-navigation-entry-edit input.action {
   background-color: #232629;
 }
-#app-navigation .app-navigation-entry-edit input.action:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-#app-navigation .app-navigation-entry-edit input.action:active, #app-navigation .app-navigation-entry-edit input.action:focus {
+.app-tasks #app-navigation .app-navigation-entry-edit input.action:active, .app-tasks #app-navigation .app-navigation-entry-edit input.action:focus {
   background-color: #3daee9;
 }
 
-.app-tasks #app-content #add-task {
-  border-color: #706f6e;
-}
-.app-tasks #app-content #add-task input {
-  color: #eff0f1;
-}
 .app-tasks #app-content .sortorder-dropdown-button {
   background-color: #31363b;
-  border-color: #706f6e;
 }
-.app-tasks #app-content .categories-list li {
+.app-tasks #app-content .categories-list span {
   background-color: #31363b;
-  border-color: #706f6e;
   color: #eff0f1;
 }
 .app-tasks #app-content .task-body {
   background-color: #232629;
-  border-color: #706f6e;
 }
 .app-tasks #app-content .task-body:hover {
   background-color: rgba(61, 174, 233, 0.25);
 }
-.app-tasks #app-content .task-body.active {
-  background-color: #3daee9;
-}
-.app-tasks #app-content .task-body .title-wrapper {
-  color: #eff0f1;
-}
-.app-tasks #app-content .task-body .task-item.add-subtask {
-  border-color: #706f6e;
-}
-.app-tasks #app-content .task-body .task-item.add-subtask input {
-  background: #232629 !important;
-  color: #eff0f1;
+.app-tasks #app-content .task-body.active .title {
+  font-weight: 600;
 }
 .app-tasks #app-content .task-body .duedate.overdue {
   color: #da4453;
@@ -3428,16 +3447,13 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-tasks #app-content .task-list .loadmore span {
   color: #bdc3c7;
   background-color: #31363b;
-  border: 1px solid #706f6e;
 }
 .app-tasks #app-content .task-list .loadmore span:hover {
   color: #eff0f1;
-  border-color: #3daee9;
 }
 
 .app-tasks #app-sidebar div.content-wrapper .title {
   background-color: #3daee9;
-  border-bottom-color: #706f6e;
 }
 .app-tasks #app-sidebar div.content-wrapper .title .expandable-container {
   background: #232629;
@@ -3446,27 +3462,18 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-tasks #app-sidebar div.content-wrapper .body .section {
   border-bottom: 1px dashed #706f6e;
 }
-.app-tasks #app-sidebar div.content-wrapper .body .section input {
-  background-color: #232629;
-  color: #eff0f1;
-}
-.app-tasks #app-sidebar div.content-wrapper .body .section input[type=range] {
-  background-color: #31363b;
-}
-.app-tasks #app-sidebar div.content-wrapper .body .section input[type=text] {
-  background-color: #232629;
-}
+.app-tasks #app-sidebar div.content-wrapper .body .section input,
 .app-tasks #app-sidebar div.content-wrapper .body .section .note {
   background-color: #232629;
-  border-color: #706f6e;
-}
-.app-tasks #app-sidebar div.content-wrapper .body .section .note .expandingArea textarea {
-  color: #eff0f1;
 }
 .app-tasks #app-sidebar div.content-wrapper .body .section.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
   color: #eff0f1;
   background-color: #31363b;
   border-color: #706f6e;
+}
+.app-tasks #app-sidebar div.content-wrapper .body .section .detail-categories-container .multiselect.multiselect-vue .multiselect__tag,
+.app-tasks #app-sidebar div.content-wrapper .body .section .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
+  background-color: #31363b;
 }
 .app-tasks #app-sidebar div.content-wrapper .title .reactive:hover .detail-checkbox:not(.disabled) {
   border-color: #1d99f3;
@@ -3478,9 +3485,6 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   border-top: none;
 }
 
-.app-tasks .icon {
-  opacity: 0.5;
-}
 .app-tasks .icon-task-star a::before,
 .app-tasks .icon-alphabetically,
 .app-tasks .icon-sort-down,
@@ -3495,9 +3499,6 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 .app-tasks .icon-hide,
 .app-tasks .icon-percent {
   filter: invert(95%);
-}
-.app-tasks .icon-percent-active {
-  filter: none;
 }
 .app-tasks #app-settings .icon-all,
 .app-tasks #app-settings .icon-current,
