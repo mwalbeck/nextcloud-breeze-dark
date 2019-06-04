@@ -43,7 +43,8 @@
 .icon-starred,
 .icon-star:hover,
 .icon-star:focus,
-.app-news #app-navigation .icon-starred {
+.app-news #app-navigation .icon-starred,
+.starred {
 	background-image: url('../img/actions/starred.svg?v=1');
 	opacity: 1;
 }
@@ -85,7 +86,7 @@
 .icon-category-enabled,
 .multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
 #two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-	background-image: url('../img/actions/checkmark.svg?v=1');
+	background-image: url('../img/actions/checkmark.svg?v=1') !important;
 }
 
 /* History ------------------------------------------------------------------ */
@@ -612,6 +613,12 @@ div.select2-drop .select2-search input {
 .icon-file,
 .icon-filetype-text {
 	background-image: url("../img/actions/edit.svg");
+}
+
+/* Expired ------------------------------------------------------------------ */
+
+.icon-expired {
+	background-image: url("../img/actions/expired.svg");
 }
 
 /* App Categories ----------------------------------------------------------- */

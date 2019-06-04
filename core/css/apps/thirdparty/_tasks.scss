@@ -1,15 +1,7 @@
 /* Tasks -------------------------------------------------------------------- */
 
-#content.app-tasks {
-    color: $foreground-normal;
-}
-
-#app-navigation .app-navigation-entry-edit input.action {
+.app-tasks #app-navigation .app-navigation-entry-edit input.action {
     background-color: $background-dark;
-
-    &:hover {
-        background-color: $background-active-hover;
-    }
 
     &:active, &:focus {
         background-color: $background-active;
@@ -18,48 +10,24 @@
 
 .app-tasks #app-content {
 
-    #add-task {
-        border-color: $decoration-normal;
-
-        input {
-            color: $foreground-normal;
-        }
-    }
-
     .sortorder-dropdown-button {
         background-color: $background-normal;
-        border-color: $decoration-normal;
     }
 
-    .categories-list li {
+    .categories-list span {
         background-color: $background-normal;
-        border-color: $decoration-normal;
         color: $foreground-normal;
     }
 
     .task-body {
         background-color: $background-dark;
-        border-color: $decoration-normal;
 
         &:hover {
             background-color: $background-active-hover;
         }
 
-        &.active {
-            background-color: $background-active;
-        }
-
-        .title-wrapper {
-            color: $foreground-normal;
-        }
-
-        .task-item.add-subtask {
-            border-color: $decoration-normal;
-        
-            input {
-                background: $background-dark !important;
-                color: $foreground-normal;
-            }
+        &.active .title {
+            font-weight: 600;
         }
 
         .duedate.overdue {
@@ -78,11 +46,9 @@
     .task-list .loadmore span {
         color: $foreground-inactive;
         background-color: $background-normal;
-        border: 1px solid $decoration-normal;
-    
+
         &:hover {
             color: $foreground-normal;
-            border-color: $decoration-active;
         }
     }
 }
@@ -91,7 +57,6 @@
 
     .title {
         background-color: $background-active;
-        border-bottom-color: $decoration-normal;
 
         .expandable-container {
             background: $background-dark;
@@ -102,32 +67,20 @@
     .body .section {
         border-bottom: 1px dashed $decoration-normal;
 
-        input {
-            background-color: $background-dark;
-            color: $foreground-normal;
-        }
-    
-        input[type="range"] {
-            background-color: $background-normal;
-        }
-    
-        input[type="text"] {
-            background-color: $background-dark;
-        }
-
+        input,
         .note {
             background-color: $background-dark;
-            border-color: $decoration-normal;
-        
-            .expandingArea textarea {
-                color: $foreground-normal;
-            }
         }
 
         &.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
             color: $foreground-normal;
             background-color: $background-normal;
             border-color: $decoration-normal;
+        }
+
+        .detail-categories-container .multiselect.multiselect-vue .multiselect__tag,
+        .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
+            background-color: $background-normal;
         }
     }
 
@@ -146,10 +99,6 @@
 
 .app-tasks {
 
-    .icon {
-        opacity: 0.5;
-    }
-
     .icon-task-star a::before,
     .icon-alphabetically,
     .icon-sort-down,
@@ -164,10 +113,6 @@
     .icon-hide,
     .icon-percent {
         filter: invert(95%);
-    }
-
-    .icon-percent-active {
-        filter: none;
     }
 
     #app-settings, .app-navigation-entry-menu {

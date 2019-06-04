@@ -62,16 +62,9 @@
 }
 
 /* Datepicker */
-.app-polls .mx-datepicker {
-
-    .mx-input-append {
-        background-color: $background-dark !important;
-    }
-
-    .mx-datepicker-popup {
-        border-color: $decoration-normal !important;
-        background-color: $background-normal !important;
-    }
+.app-polls .mx-datepicker .mx-datepicker-popup {
+    border-color: $decoration-normal !important;
+    background-color: $background-normal !important;
 }
 
 // Shift dates
