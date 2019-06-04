@@ -197,8 +197,23 @@ input[type="button"] {
 	}
 }
 
-.dropdown {
+.dropdown,
+#dropdown {
 	background-color: $background-normal;
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
+
+	input[type="text"] + .icon-confirm {
+		height: 32px;
+		width: 32px;
+	}
+
+	.shareWithConfirm.icon-confirm {
+		padding: 16px !important;
+		top: 20px;
+	}
+}
+
+#link {
+	border-top-color: $decoration-normal;
 }
