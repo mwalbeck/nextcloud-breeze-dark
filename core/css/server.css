@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 16.0.2
-* Date 2019-06-04
+* Version: 16.0.3
+* Date 2019-07-27
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -510,6 +510,16 @@ div.select2-drop .select2-search input {
   background-image: url("../img/actions/screen-off.svg");
 }
 
+/* Sound  ------------------------------------------------------------------- */
+.icon-sound {
+  background-image: url("../img/actions/sound.svg");
+}
+
+/* Sound off ---------------------------------------------------------------- */
+.icon-sound-off {
+  background-image: url("../img/actions/sound-off.svg");
+}
+
 /* Address ------------------------------------------------------------------ */
 .icon-address {
   background-image: url("../img/actions/address.svg");
@@ -579,6 +589,11 @@ div.select2-drop .select2-search input {
 /* Expired ------------------------------------------------------------------ */
 .icon-expired {
   background-image: url("../img/actions/expired.svg");
+}
+
+/* Projects ----------------------------------------------------------------- */
+.icon-projects {
+  background-image: url("../img/actions/projects.svg");
 }
 
 /* App Categories ----------------------------------------------------------- */
@@ -760,6 +775,19 @@ div.icon-fulltextsearch-white {
   background-image: url("../img/circles/circle.svg");
 }
 
+/* Talk --------------------------------------------------------------------- */
+.icon-talk {
+  background-image: url("../img/talk/talk.svg");
+}
+
+.icon-menu-people {
+  background-image: url("../img/talk/menu-people.svg");
+}
+
+.icon-no-password {
+  background-image: url("../img/talk/no-password.svg");
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 img.two-factor-provider-settings-icon[src$="/apps/twofactor_totp/img/app-dark.svg"],
 img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg"] {
@@ -861,6 +889,10 @@ a.impersonate img.svg {
   filter: invert(95%);
 }
 
+.app-spreed .linked-icons img[src$="/apps/spreed/img/app-dark.svg"] {
+  filter: invert(95%);
+}
+
 a {
   color: #2980b9;
 }
@@ -896,8 +928,6 @@ textarea,
 div[contenteditable=true],
 .pager li a {
   background-color: #232629;
-  color: #bdc3c7;
-  border: 1px solid #706f6e;
 }
 input:not([type=range]):not(:disabled):not(.primary):not(#quota):hover,
 textarea:not(:disabled):not(.primary):not(#quota):hover,
@@ -1070,6 +1100,12 @@ input[type=button].primary:disabled:active {
   background-color: #4d4d4d;
   color: #bdc3c7;
   border-color: #706f6e;
+}
+
+div[contenteditable=false] {
+  background-color: #4d4d4d;
+  border-color: #706f6e;
+  opacity: 1;
 }
 
 #header .button.primary, #header button.primary {
@@ -1381,7 +1417,7 @@ ul.multiselectoptions.down {
 #select2-drop, .select2-drop {
   box-shadow: none;
 }
-#select2-drop .select2-search .select2-input, .select2-drop .select2-search .select2-input {
+#select2-drop .select2-search, #select2-drop .select2-input, .select2-drop .select2-search, .select2-drop .select2-input {
   background-color: #232629 !important;
 }
 #select2-drop.select2-drop-above.select2-drop-active, .select2-drop.select2-drop-above.select2-drop-active {
@@ -1909,6 +1945,65 @@ ul.multiselectoptions.down {
   border-color: #da4453;
 }
 
+/* Text Editor -------------------------------------------------------------- */
+#editor_container {
+  background-color: #706f6e;
+}
+
+#editor_controls {
+  background-color: #31363b;
+}
+#editor_controls small.filename {
+  color: #eff0f1;
+}
+#editor_controls small.saving-message {
+  color: #bdc3c7;
+}
+#editor_controls #editor_close {
+  opacity: 1;
+}
+#editor_controls #editor_close:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+#editor_controls #editor_close:active, #editor_controls #editor_close:focus {
+  background-color: #3daee9;
+}
+
+#editor.ace_editor,
+#sidebar_editor.ace_editor {
+  background-color: #232629 !important;
+  color: #eff0f1 !important;
+}
+#editor.ace_editor .ace_gutter,
+#sidebar_editor.ace_editor .ace_gutter {
+  color: #eff0f1 !important;
+  opacity: 1 !important;
+}
+#editor.ace_editor .ace_gutter .ace_gutter-cell,
+#sidebar_editor.ace_editor .ace_gutter .ace_gutter-cell {
+  opacity: 0.7;
+}
+#editor.ace_editor .ace_gutter-active-line,
+#sidebar_editor.ace_editor .ace_gutter-active-line {
+  background-color: rgba(61, 174, 233, 0.25) !important;
+}
+#editor.ace_editor .ace_marker-layer .ace_active-line,
+#sidebar_editor.ace_editor .ace_marker-layer .ace_active-line {
+  background: #232629 !important;
+}
+#editor.ace_editor .ace_marker-layer .ace_selection,
+#sidebar_editor.ace_editor .ace_marker-layer .ace_selection {
+  background: rgba(61, 174, 233, 0.25) !important;
+}
+#editor.ace_editor .ace_cursor,
+#sidebar_editor.ace_editor .ace_cursor {
+  color: #eff0f1 !important;
+}
+
+#sidebar_editor.ace_editor .ace_cursor {
+  display: none;
+}
+
 /* Files -------------------------------------------------------------------- */
 table td.filesize {
   color: #bdc3c7 !important;
@@ -2086,63 +2181,12 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   border-color: #706f6e;
 }
 
-/* Text Editor -------------------------------------------------------------- */
-#editor_container {
-  background-color: #706f6e;
-}
-
-#editor_controls {
-  background-color: #31363b;
-}
-#editor_controls small.filename {
-  color: #eff0f1;
-}
-#editor_controls small.saving-message {
-  color: #bdc3c7;
-}
-#editor_controls #editor_close {
-  opacity: 1;
-}
-#editor_controls #editor_close:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-#editor_controls #editor_close:active, #editor_controls #editor_close:focus {
-  background-color: #3daee9;
-}
-
-#editor.ace_editor,
-#sidebar_editor.ace_editor {
-  background-color: #232629 !important;
-  color: #eff0f1 !important;
-}
-#editor.ace_editor .ace_gutter,
-#sidebar_editor.ace_editor .ace_gutter {
-  color: #eff0f1 !important;
-  opacity: 1 !important;
-}
-#editor.ace_editor .ace_gutter .ace_gutter-cell,
-#sidebar_editor.ace_editor .ace_gutter .ace_gutter-cell {
+#chatView .newCommentForm .submit,
+#chatView .newCommentForm .share {
   opacity: 0.7;
 }
-#editor.ace_editor .ace_gutter-active-line,
-#sidebar_editor.ace_editor .ace_gutter-active-line {
-  background-color: rgba(61, 174, 233, 0.25) !important;
-}
-#editor.ace_editor .ace_marker-layer .ace_active-line,
-#sidebar_editor.ace_editor .ace_marker-layer .ace_active-line {
-  background: #232629 !important;
-}
-#editor.ace_editor .ace_marker-layer .ace_selection,
-#sidebar_editor.ace_editor .ace_marker-layer .ace_selection {
-  background: rgba(61, 174, 233, 0.25) !important;
-}
-#editor.ace_editor .ace_cursor,
-#sidebar_editor.ace_editor .ace_cursor {
-  color: #eff0f1 !important;
-}
-
-#sidebar_editor.ace_editor .ace_cursor {
-  display: none;
+#chatView .newCommentForm div.message:empty::before {
+  color: #bdc3c7;
 }
 
 /* Audio Player ------------------------------------------------------------- */
@@ -3547,10 +3591,6 @@ button#deleteaccount:hover:not(:disabled):not(.primary):not(#quota) {
 button#deleteaccount:disabled {
   background-color: #4d4d4d;
   border-color: #706f6e;
-}
-
-#oca-spreedme-add-room {
-  border-bottom-color: #706f6e;
 }
 
 /* Weather ------------------------------------------------------------------ */
