@@ -336,7 +336,7 @@ ul.multiselectoptions {
 #select2-drop, .select2-drop {
 	box-shadow: none;
 
-	.select2-search .select2-input {
+	.select2-search, .select2-input {
 		background-color: $background-dark !important;
 	}
 

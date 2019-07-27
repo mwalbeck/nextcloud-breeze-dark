@@ -536,6 +536,18 @@ div.select2-drop .select2-search input {
 	background-image: url('../img/actions/screen-off.svg');
 }
 
+/* Sound  ------------------------------------------------------------------- */
+
+.icon-sound {
+	background-image: url('../img/actions/sound.svg');
+}
+
+/* Sound off ---------------------------------------------------------------- */
+
+.icon-sound-off {
+	background-image: url('../img/actions/sound-off.svg');
+}
+
 /* Address ------------------------------------------------------------------ */
 
 .icon-address {
@@ -619,6 +631,12 @@ div.select2-drop .select2-search input {
 
 .icon-expired {
 	background-image: url("../img/actions/expired.svg");
+}
+
+/* Projects ----------------------------------------------------------------- */
+
+.icon-projects {
+	background-image: url("../img/actions/projects.svg");
 }
 
 /* App Categories ----------------------------------------------------------- */
@@ -830,6 +848,20 @@ div.icon-fulltextsearch-white {
 	background-image: url('../img/circles/circle.svg');
 }
 
+/* Talk --------------------------------------------------------------------- */
+
+.icon-talk {
+	background-image: url('../img/talk/talk.svg');
+}
+
+.icon-menu-people {
+	background-image: url('../img/talk/menu-people.svg');
+}
+
+.icon-no-password {
+	background-image: url('../img/talk/no-password.svg');
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Two Factor App Icon in Personal Settings
@@ -962,5 +994,10 @@ a.impersonate img.svg {
 
 // Annoucement Center
 .app-announcementcenter #app-content .section span img {
+	filter: invert(95%);
+}
+
+// Talk: talk icon under projects tab
+.app-spreed .linked-icons img[src$="/apps/spreed/img/app-dark.svg"] {
 	filter: invert(95%);
 }

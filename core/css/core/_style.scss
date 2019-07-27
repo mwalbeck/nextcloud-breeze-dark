@@ -46,8 +46,6 @@ textarea,
 div[contenteditable="true"],
 .pager li a {
 	background-color: $background-dark;
-	color: $foreground-inactive;
-	border: 1px solid $decoration-normal;
 
 	&:not(:disabled):not(.primary) {
 		
@@ -162,6 +160,12 @@ input[type="button"] {
 			}
 		}
 	}
+}
+
+div[contenteditable="false"] {
+	background-color: $background-alternate;
+	border-color: $decoration-normal;
+	opacity: 1;
 }
 
 // Header buttons
