@@ -18,7 +18,7 @@ To enable the theme, add or change the theme option in your **config.php** to:
     'theme' => 'nextcloud-breeze-dark',
 
 ### Snaps
-I'm currently not aware of a way to get custom themes to work with the Nextcloud snap.
+Custom themes in the snap isn't properly supported, but there is a workaround to get it working, which you can check out here: https://github.com/nextcloud/nextcloud-snap/issues/915
 
 ## Theming app
 You can use the Nextcloud theming app to customize in your nextcloud instance like normal, though there are a few changes. If you have the theming app enabled you will most likely get a white Nextcloud icon instead of the themes default blue, this can be changes by disabling the theming app. The color attribute only changes the color of folders, and does not affect the header bar. Though depending on the color you choose (determined by the contrast with the selected color) you might get black icons in the header bar. This can be fixed by going to back to the default color or choosing a color that has a better contrast with white.
