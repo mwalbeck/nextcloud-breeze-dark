@@ -23,9 +23,9 @@
 
 #app-navigation {
 
-	ul > li > a,
-	li > a,
-	ul > li > ul > li > a {
+	&:not(.vue) > ul > li > a,
+	&:not(.vue) > li > a,
+	&:not(.vue) > ul > li > ul > li > a {
 		opacity: 1;
 
 		&:hover,
