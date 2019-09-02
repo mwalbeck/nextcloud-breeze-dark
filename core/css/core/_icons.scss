@@ -991,6 +991,11 @@ a.impersonate img.svg {
 			filter: invert(95%);
 		}
 	}
+
+	// Support submenu -> system information
+	.system-information div img[src$="/apps/support/img/system-info.svg"] {
+		filter: invert(95%);
+	}
 }
 
 // Annoucement Center
