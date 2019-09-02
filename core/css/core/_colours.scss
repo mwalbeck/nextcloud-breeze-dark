@@ -57,23 +57,29 @@ $icon-normal: rgba(242, 242, 242, 1);
 
 /* Set the nextcloud color variables */
 :root {
-    --color-primary: #{$background-active-alternate} !important;
+    --color-main-text: #{$foreground-normal} !important;
     --color-main-background: #{$background-normal} !important;
+    --color-main-background-translucent: #{$background-normal} !important;
+
     --color-background-dark: #{$background-active-hover} !important;
     --color-background-darker: #{$background-dark} !important;
-    --color-main-background-translucent: #{$background-normal} !important;
-    --color-main-text: #{$foreground-normal} !important;
+
+    --color-primary: #{$background-active-alternate} !important;
     --color-primary-text: #{$foreground-normal} !important;
-    --color-text-light: #{$foreground-normal} !important;
-    --color-text-lighter: #{$foreground-inactive} !important;
-    --color-text-maxcontrast: #{$foreground-inactive} !important;
-    --color-border: #{$decoration-normal} !important;
-    --color-border-dark: #{$decoration-normal} !important;
     --color-primary-element: #{$decoration-active} !important;
+
     --color-error: #{$foreground-negative} !important;
     --color-warning: #{$foreground-neutral} !important;
     --color-success: #{$foreground-positive} !important;
+
+    --color-text-maxcontrast: #{$foreground-inactive} !important;
+    --color-text-light: #{$foreground-normal} !important;
+    --color-text-lighter: #{$foreground-inactive} !important;
+
     --color-box-shadow: #{$background-active-alternate} !important;
+
+    --color-border: #{$decoration-normal} !important;
+    --color-border-dark: #{$decoration-normal} !important;
 }
 
 input, label {
