@@ -74,7 +74,7 @@ $icon-normal: rgba(242, 242, 242, 1);
 
     --color-text-maxcontrast: #{$foreground-inactive} !important;
     --color-text-light: #{$foreground-normal} !important;
-    --color-text-lighter: #{$foreground-inactive} !important;
+    --color-text-lighter: #{$foreground-normal} !important;
 
     --color-box-shadow: #{$background-active-alternate} !important;
 
