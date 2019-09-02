@@ -191,6 +191,23 @@ span {
 	background-color: $background-normal;
 }
 
+// System monitoring
+.infobox {
+	border-color: $decoration-normal;
+	color: $foreground-normal;
+	background-color: $background-normal;
+	box-shadow: none;
+
+	h2,
+	h3 {
+		color: $foreground-normal;
+	}
+}
+
+.smallinfo {
+	color: $foreground-inactive;
+}
+
 /* App Store ---------------------------------------------------------------- */
 
 .app-level {
