@@ -225,6 +225,10 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 	background-image: url('../img/actions/more.svg?v=1');
 }
 
+.icon-more::before {
+	display: none;
+}
+
 /* Files -------------------------------------------------------------------- */
 
 .icon-category-files,
@@ -1011,4 +1015,12 @@ a.impersonate img.svg {
 // Show password icon on login screen
 #body-login main form img[src$="/core/img/actions/toggle.svg"] {
 	filter: invert(95%);
+}
+
+#app-sidebar .tabsContainer #versionsTabView {
+	
+	img[src$="/core/img/actions/download.svg"],
+	img[src$="/core/img/actions/history.svg"] {
+		filter: invert(70%);
+	}
 }
