@@ -1,6 +1,14 @@
 a {
 	color: $foreground-link;
 
+	&.icon {
+		color: $icon-normal;
+
+		&:hover, &:focus {
+			color: $icon-normal;
+		}
+	}
+
 	&:hover, &:focus {
 		color: $foreground-link;
 	}
