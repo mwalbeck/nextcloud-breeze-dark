@@ -56,13 +56,7 @@ div.crumb a,
 div.crumb > span,
 div.crumb.crumbmenu a {
 	color: $foreground-normal;
-	opacity: 0.7;
-}
-
-// Breadcrumb dropdown
-// Display background hover full width
-div.crumb.crumbmenu .popovermenu ul {
-	margin-right: 0;
+	opacity: 0.7 !important;
 }
 
 /* Menues ------------------------------------------------------------------- */
@@ -110,50 +104,7 @@ div.crumb.crumbmenu .popovermenu ul {
 
 /* Info colours ------------------------------------------------------------- */
 
-#postsetupchecks .errors {
-	color: $foreground-negative;
-}
-
-#postsetupchecks .warnings, 
-#security-warning > ul {
-	color: $foreground-neutral;
-}
-
-#body-user .warning {
-	color: $foreground-negative;
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-}
-
-#body-settings .warning {
-	background: $background-negative;
-}
-
-.success {
-	color: $foreground-positive;
-}
-
-span {
-
-	&.warnings {
-		background-color: $background-negative;
-	}
-
-	&.error {
-		background-color: $background-negative;
-	}
-
-	&.success {
-		background-color: $background-positive;
-	}
-}
-
 .msg {
-
-	&.warnings {
-		color: $foreground-active;
-		background-color: $background-negative;
-	}
 
 	&.error {
 		color: $foreground-active;
@@ -184,11 +135,6 @@ span {
 }
 
 /* Admin settings */
-
-// Overview 
-#updatenotification .update-channel-selector .update-menu .menuitem.active {
-	background-color: $background-normal;
-}
 
 // System monitoring
 .infobox {
