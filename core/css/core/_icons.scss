@@ -1007,3 +1007,8 @@ a.impersonate img.svg {
 .app-spreed .linked-icons img[src$="/apps/spreed/img/app-dark.svg"] {
 	filter: invert(95%);
 }
+
+// Show password icon on login screen
+#body-login main form img[src$="/core/img/actions/toggle.svg"] {
+	filter: invert(95%);
+}
