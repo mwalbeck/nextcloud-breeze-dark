@@ -21,11 +21,11 @@
 
 /* App Navigation ----------------------------------------------------------- */
 
-#app-navigation {
+#app-navigation:not(.vue) {
 
-	&:not(.vue) > ul > li > a,
-	&:not(.vue) > li > a,
-	&:not(.vue) > ul > li > ul > li > a {
+	> ul > li > a,
+	> li > a,
+	> ul > li > ul > li > a {
 		opacity: 1;
 
 		&:hover,
@@ -156,7 +156,7 @@
 
 /* App Settings ------------------------------------------------------------- */
 
-.settings-button {
+#app-settings-header .settings-button {
 	opacity: 1;
 
 	&:hover {

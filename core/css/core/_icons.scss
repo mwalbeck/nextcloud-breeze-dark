@@ -219,7 +219,7 @@
 .icon-more,
 .icon-more-white,
 .icon-more.icon-white,
-#app-navigation .app-navigation-entry-utils 
+#app-navigation:not(.vue) .app-navigation-entry-utils 
 .app-navigation-entry-utils-menu-button 
 button:not([class^="icon-"]):not([class*=" icon-"]) {
 	background-image: url('../img/actions/more.svg?v=1');
@@ -249,7 +249,7 @@ button:not([class^="icon-"]):not([class*=" icon-"]) {
 /* Triangle-S --------------------------------------------------------------- */
 
 .icon-triangle-s,
-#app-navigation .collapsible::before,
+#app-navigation:not(.vue) .collapsible::before,
 .sort-contacts .multiselect .multiselect__single {
 	background-image: url('../img/actions/triangle-s.svg?v=1');
 }
