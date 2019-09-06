@@ -86,3 +86,11 @@ input, label {
     --color-checkbox-radio-border: #{$decoration-normal};
     --color-checkbox-radio-disabled: #{$background-alternate};
 }
+
+/* Icon variables */
+$icon-star: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDE2IDE2Ij4KIDxwYXRoIGQ9Im04IDAuNSAyLjIgNS4zIDUuOCAwLjQ1LTQuNSAzLjc1IDEuNSA1LjUtNS0zLjEtNSAzLjEgMS41LTUuNS00LjUtMy43NSA1LjgtMC40NXoiIGZpbGw9IiNmMmYyZjIiLz4KPC9zdmc+Cg==);
+
+:root {
+    --icon-star-dark-000: #{$icon-star} !important;
+    --icon-star-000: #{$icon-star} !important;
+}
