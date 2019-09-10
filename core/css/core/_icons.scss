@@ -49,30 +49,6 @@
 // 	background-image: url('../img/places/link.svg?v=1');
 // }
 
-// /* Toggle ------------------------------------------------------------------- */
-
-// .icon-toggle,
-// #show + label,
-// #dbpassword-toggle + label,
-// #personal-show + label,
-// .icon-knowledge {
-// 	background-image: url('../img/actions/toggle.svg?v=1');
-// }
-
-// /* Toggle Filelist ---------------------------------------------------------- */
-
-// .nav-icon-sessions,
-// .icon-toggle-filelist {
-// 	background-image: url('../img/actions/toggle-filelist.svg?v=1');
-// }
-
-// /* Toggle Pictures ---------------------------------------------------------- */
-
-// .icon-toggle-pictures,
-// #albenoverview li {
-// 	background-image: url('../img/actions/toggle-pictures.svg');
-// }
-
 // /* Settings ----------------------------------------------------------------- */
 
 // #app-navigation .music-nav-settings a,
@@ -705,9 +681,7 @@ a.impersonate img.svg {
 .app-settings {
 
 	#app-navigation img[src$="/img/app-dark.svg"],
-	#app-navigation img[src$="/settings/img/password.svg"],
 	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
-	#app-navigation img[src$="/apps/external/img/external-dark.svg"],
 	#app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"],
 	#app-navigation img[src$="/apps/ojsxc/img/app-black.svg"] {
 		filter: invert(95%);
@@ -725,14 +699,6 @@ a.impersonate img.svg {
 
 		#app-user_saml .app-image image {
 			filter: none;
-		}
-	}
-
-	#personal-settings .federationScopeMenu ul li a {
-		img[src$="/core/img/actions/password.svg"], 
-		img[src$="/core/img/places/contacts-dark.svg"],
-		img[src$="/core/img/places/link.svg"] {
-			filter: invert(95%);
 		}
 	}
 
