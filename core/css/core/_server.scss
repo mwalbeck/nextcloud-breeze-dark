@@ -386,7 +386,8 @@ ul.multiselectoptions {
 		color: $foreground-normal;
 
 		.ui-icon {
-			opacity: 1;
+			opacity: .7;
+			filter: invert(95%);
 		}
 
 		.ui-datepicker-prev, .ui-datepicker-next {
