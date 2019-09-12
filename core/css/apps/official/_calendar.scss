@@ -4,11 +4,6 @@
 		background-color: inherit;
 	}
 
-	> ul > li > .app-navigation-entry-bullet + a:hover, 
-	> ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
-		background-color: $background-active-hover !important;
-	}
-
 	.new-entity {
 		opacity: 0.7;
 
@@ -68,7 +63,7 @@
 			}
 
 			.text-muted {
-				opacity: 0.5;
+				opacity: 0.57;
 			}
 		}
 	}
