@@ -735,3 +735,8 @@ a.impersonate img.svg {
 .icon-timezone {
 	background-image: var(--icon-timezone-000);
 }
+
+// Override Deck apps override of the deck icon
+.icon-deck {
+	background-image: var(--icon-deck-deck-000) !important;
+}
