@@ -730,3 +730,8 @@ a.impersonate img.svg {
 .icon-more::before {
 	display: none;
 }
+
+// Override Calendar apps override of the default timezone icon
+.icon-timezone {
+	background-image: var(--icon-timezone-000);
+}
