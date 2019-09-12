@@ -168,3 +168,22 @@
 .mx-datepicker .mx-input-wrapper .mx-input-append {
 	background-color: $background-dark !important;
 }
+
+/* Misc --------------------------------------------------------------------- */
+
+.delete,
+input[type="submit"].delete,
+input[type="button"].delete,
+button.delete,
+.button.delete {
+	border-color: $decoration-normal;
+	background-color: $background-negative;
+	color: $foreground-normal;
+
+	&:hover,
+	&:focus {
+		border-color: $background-negative !important;
+		background-color: $background-negative;
+		color:  $foreground-active;
+	}
+}
