@@ -19,11 +19,13 @@
 @import 'apps/official/announcement-center';
 @import 'apps/official/calendar';
 @import 'apps/official/contacts';
+@import 'apps/official/deck';
 @import 'apps/official/external-sites';
 @import 'apps/official/file-access-control';
 @import 'apps/official/files';
 @import 'apps/official/first-run-wizard';
 @import 'apps/official/gallery';
+@import 'apps/official/group-folders';
 @import 'apps/official/ldap';
 @import 'apps/official/log-reader';
 @import 'apps/official/mail';
@@ -31,15 +33,15 @@
 @import 'apps/official/retention';
 @import 'apps/official/system-monitoring';
 @import 'apps/official/talk';
+@import 'apps/official/tasks';
 // Third party
 @import 'apps/thirdparty/audio-player';
 @import 'apps/thirdparty/bookmarks';
 @import 'apps/thirdparty/circles';
 @import 'apps/thirdparty/dashboard';
-@import 'apps/thirdparty/deck';
+
 @import 'apps/thirdparty/flow-upload';
 @import 'apps/thirdparty/fulltextsearch';
-@import 'apps/thirdparty/group-folders';
 @import 'apps/thirdparty/files-markdown';
 @import 'apps/thirdparty/files-markdown-syntax';
 @import 'apps/thirdparty/music';
@@ -52,6 +54,5 @@
 @import 'apps/thirdparty/quicknotes';
 @import 'apps/thirdparty/radio';
 @import 'apps/thirdparty/sso-saml';
-@import 'apps/thirdparty/tasks';
 @import 'apps/thirdparty/user-account-deletion';
 @import 'apps/thirdparty/weather';
