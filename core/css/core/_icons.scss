@@ -740,3 +740,8 @@ a.impersonate img.svg {
 .icon-deck {
 	background-image: var(--icon-deck-deck-000) !important;
 }
+
+// Override Deck apps override of the help icon
+.icon-help {
+	background-image: var(--icon-help-000);
+}
