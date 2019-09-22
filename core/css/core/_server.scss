@@ -598,3 +598,9 @@ ul.multiselectoptions {
 .contact .tooltip .tooltip-arrow {
 	right: -4px;
 }
+
+/* Contacts menu ------------------------------------------------------------ */
+
+#contactsmenu .contact a img {
+	filter: invert(95%);
+}
