@@ -1,587 +1,506 @@
-// /* Password ----------------------------------------------------------------- */
+/* Password ----------------------------------------------------------------- */
 
-// .icon-password,
-// .nav-icon-second-factor-backup-codes,
-// .nav-icon-apppasswords,
-// .nav-icon-ransomware-protection {
-// 	background-image: url('../img/actions/password.svg?v=1');
-// }
+.icon-password,
+.nav-icon-second-factor-backup-codes,
+.nav-icon-apppasswords,
+.nav-icon-ransomware-protection {
+	background-image: url('../img/actions/password.svg?v=1');
+}
 
-// /* Auth --------------------------------------------------------------------- */
+/* Auth --------------------------------------------------------------------- */
 
-// .icon-category-auth {
-// 	background-image: url('../img/categories/auth.svg')
-// }
+.icon-category-auth {
+	background-image: url('../img/categories/auth.svg')
+}
 
-// /* Error -------------------------------------------------------------------- */
+/* Error -------------------------------------------------------------------- */
 
-// .icon-junk,
-// .icon-error {
-// 	background-image: url('../img/actions/error.svg');
-// }
+.icon-junk,
+.icon-error {
+	background-image: url('../img/actions/error.svg');
+}
 
-// /* Checkmark ---------------------------------------------------------------- */
+/* Checkmark ---------------------------------------------------------------- */
 
-// .icon-checkmark,
-// .icon-sent,
-// .icon-category-enabled,
-// .multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
-// #two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-// 	background-image: url('../img/actions/checkmark.svg?v=1') !important;
-// }
+.icon-checkmark,
+.icon-sent,
+.icon-category-enabled,
+.multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
+#two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
+	background-image: url('../img/actions/checkmark.svg?v=1') !important;
+}
 
-// /* History ------------------------------------------------------------------ */
+/* History ------------------------------------------------------------------ */
 
-// .icon-history,
-// #app-navigation .icon-updatemode-default {
-// 	background-image: url('../img/actions/history.svg?v=1');
-// }
+.icon-history,
+#app-navigation .icon-updatemode-default {
+	background-image: url('../img/actions/history.svg?v=1');
+}
 
-// #app-navigation .icon-updatemode-unread {
-// 	background-image: url('../img/actions/history.svg');
-// 	opacity: 0.25;
-// }
+#app-navigation .icon-updatemode-unread {
+	background-image: url('../img/actions/history.svg');
+	opacity: 0.25;
+}
 
-// /* Link/World --------------------------------------------------------------- */
+/* Link/World --------------------------------------------------------------- */
 
-// .icon-link,
-// .icon-world {
-// 	background-image: url('../img/places/link.svg?v=1');
-// }
+.icon-link,
+.icon-world {
+	background-image: url('../img/places/link.svg?v=1');
+}
 
-// /* Settings ----------------------------------------------------------------- */
+/* Settings ----------------------------------------------------------------- */
 
-// #app-navigation .music-nav-settings a,
-// .jsxc_settingsicon {
-// 	background-image: url('../img/actions/settings.svg?v=1');
-// }
+#app-navigation .music-nav-settings a,
+.jsxc_settingsicon {
+	background-image: url('../img/actions/settings.svg?v=1');
+}
 
-// /* More --------------------------------------------------------------------- */
+/* More --------------------------------------------------------------------- */
 
-// .icon-more,
-// .icon-more-white,
-// .icon-more.icon-white,
-// #app-navigation:not(.vue) .app-navigation-entry-utils 
-// .app-navigation-entry-utils-menu-button 
-// button:not([class^="icon-"]):not([class*=" icon-"]) {
-// 	background-image: url('../img/actions/more.svg?v=1');
-// }
+.icon-more,
+.icon-more-white,
+.icon-more.icon-white,
+#app-navigation:not(.vue) .app-navigation-entry-utils 
+.app-navigation-entry-utils-menu-button 
+button:not([class^="icon-"]):not([class*=" icon-"]) {
+	background-image: url('../img/actions/more.svg?v=1');
+}
 
-// /* Triangle-S --------------------------------------------------------------- */
+/* Triangle-S --------------------------------------------------------------- */
 
-// .icon-triangle-s,
-// #app-navigation:not(.vue) .collapsible::before,
-// .sort-contacts .multiselect .multiselect__single {
-// 	background-image: url('../img/actions/triangle-s.svg?v=1');
-// }
+.icon-triangle-s,
+#app-navigation:not(.vue) .collapsible::before,
+.sort-contacts .multiselect .multiselect__single {
+	background-image: url('../img/actions/triangle-s.svg?v=1');
+}
 
-// select {
-// 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
-// }
+select {
+	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
+}
 
-// div.select2-container a.select2-choice .select2-arrow b {
-// 	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
-// }
+div.select2-container a.select2-choice .select2-arrow b {
+	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
+}
 
-// /* Contacts ----------------------------------------------------------------- */
+/* Contacts ----------------------------------------------------------------- */
 
-// .icon-contacts-dark, .icon-contacts {
-// 	background-image: url('../img/places/contacts.svg?v=1');
-// }
+.icon-contacts-dark, .icon-contacts {
+	background-image: url('../img/places/contacts.svg?v=1');
+}
 
-// /* Help --------------------------------------------------------------------- */
+/* Help --------------------------------------------------------------------- */
 
-// .icon-help,
-// .jsxc_helpicon {
-// 	background-image: url('../img/help.svg');
-// }
+.icon-help,
+.jsxc_helpicon {
+	background-image: url('../img/help.svg');
+}
 
-// /* Confirm ------------------------------------------------------------------ */
+/* Confirm ------------------------------------------------------------------ */
 
-// .icon-confirm,
-// input[type="text"] + .icon-confirm:disabled, 
-// input[type="password"] + .icon-confirm:disabled, 
-// input[type="email"] + .icon-confirm:disabled {
-// 	background-image: url('../img/actions/confirm.svg?v=2');
-// }
+.icon-confirm,
+input[type="text"] + .icon-confirm:disabled, 
+input[type="password"] + .icon-confirm:disabled, 
+input[type="email"] + .icon-confirm:disabled {
+	background-image: url('../img/actions/confirm.svg?v=2');
+}
 
-// /* Search ------------------------------------------------------------------- */
+/* Search ------------------------------------------------------------------- */
 
-// div.select2-drop .select2-search input {
-// 	background: url('../img/actions/search.svg') no-repeat right center !important;
-// 	background-origin: content-box !important;
-// }
+div.select2-drop .select2-search input {
+	background: url('../img/actions/search.svg') no-repeat right center !important;
+	background-origin: content-box !important;
+}
 
-// /* Caret -------------------------------------------------------------------- */
+/* Caret -------------------------------------------------------------------- */
 
-// .icon-caret-dark {
-// 	background-image: url('../img/actions/caret.svg?v=1');
-// }
+.icon-caret-dark {
+	background-image: url('../img/actions/caret.svg?v=1');
+}
 
-// /* RSS ---------------------------------------------------------------------- */
+/* RSS ---------------------------------------------------------------------- */
 
-// .icon-rss {
-// 	background-image: url('../img/actions/rss.svg') !important;
-// }
+.icon-rss {
+	background-image: url('../img/actions/rss.svg') !important;
+}
 
-// /* Close -------------------------------------------------------------------- */
+/* Close -------------------------------------------------------------------- */
 
-// .icon-close,
-// .icon-category-disabled {
-// 	background-image: url('../img/actions/close.svg?v=1');
-// }
+.icon-close,
+.icon-category-disabled {
+	background-image: url('../img/actions/close.svg?v=1');
+}
 
-// .oc-dialog-close {
-// 	background: url('../img/actions/close.svg') no-repeat center !important;
-// }
+.oc-dialog-close {
+	background: url('../img/actions/close.svg') no-repeat center !important;
+}
 
-// /* Close (no shadow) -------------------------------------------------------- */
+/* Close (no shadow) -------------------------------------------------------- */
 
-// .icon-category-disabled,
-// #newPlaylistBtn_cancel.icon-close {
-// 	background-image: url('../img/actions/close-ns.svg')
-// }
+.icon-category-disabled,
+#newPlaylistBtn_cancel.icon-close {
+	background-image: url('../img/actions/close-ns.svg')
+}
 
-// /* View Close --------------------------------------------------------------- */
+/* View Close --------------------------------------------------------------- */
 
-// .icon-view-close {
-// 	background-image: url('../img/actions/view-close.svg');
-// }
+.icon-view-close {
+	background-image: url('../img/actions/view-close.svg');
+}
 
-// /* Menu --------------------------------------------------------------------- */
+/* Menu --------------------------------------------------------------------- */
 
-// .icon-menu,
-// #jsxc_menu > span {
-// 	background-image: url('../img/actions/menu.svg?v=1');
-// }
+.icon-menu,
+#jsxc_menu > span {
+	background-image: url('../img/actions/menu.svg?v=1');
+}
 
-// /* User --------------------------------------------------------------------- */
+/* User --------------------------------------------------------------------- */
 
-// .icon-user,
-// .nav-icon-personal-settings,
-// .icon-category-installed {
-// 	background-image: url('../img/actions/user.svg?v=1');
-// }
+.icon-user,
+.nav-icon-personal-settings,
+.icon-category-installed {
+	background-image: url('../img/actions/user.svg?v=1');
+}
 
-// /* User admin --------------------------------------------------------------- */
+/* User admin --------------------------------------------------------------- */
 
-// .icon-user-admin {
-// 	background-image: url('../img/actions/user-admin.svg?v=1');
-// }
+.icon-user-admin {
+	background-image: url('../img/actions/user-admin.svg?v=1');
+}
 
-// /* Right Arrow -------------------------------------------------------------- */
+/* Right Arrow -------------------------------------------------------------- */
 
-// .icon-view-next {
-// 	background-image: url('../img/actions/arrow-right.svg');
-// }
+.icon-view-next {
+	background-image: url('../img/actions/arrow-right.svg');
+}
 
-// /* Left Arrow _-------------------------------------------------------------- */
+/* Left Arrow _-------------------------------------------------------------- */
 
-// .icon-view-previous {
-// 	background-image: url('../img/actions/arrow-left.svg');
-// }
+.icon-view-previous {
+	background-image: url('../img/actions/arrow-left.svg');
+}
 
-// /* Right Arrow Big ---------------------------------------------------------- */
+/* Right Arrow Big ---------------------------------------------------------- */
 
-// .glyphicon-chevron-right,
-// .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
-// 	background: url("../img/rightarrow.svg") center center no-repeat;
-// }
+.glyphicon-chevron-right,
+.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
+	background: url("../img/rightarrow.svg") center center no-repeat;
+}
 
-// /* Left Arrow Big--------------------------------------------------------------- */
+/* Left Arrow Big--------------------------------------------------------------- */
 
-// .glyphicon-chevron-left,
-// .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
-// 	background: url("../img/leftarrow.svg") center center no-repeat;
-// }
+.glyphicon-chevron-left,
+.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
+	background: url("../img/leftarrow.svg") center center no-repeat;
+}
 
-// /* Change ------------------------------------------------------------------- */
+/* Change ------------------------------------------------------------------- */
 
-// .nav-icon-clientsbox {
-// 	background-image: url('../img/change.svg?v=1');
-// }
+.nav-icon-clientsbox {
+	background-image: url('../img/change.svg?v=1');
+}
 
-// /* Edit --------------------------------------------------------------------- */
+/* Edit --------------------------------------------------------------------- */
 
-// .icon-edit,
-// .icon-description {
-// 	background-image: url('../img/actions/edit.svg?v=1')
-// }
+.icon-edit,
+.icon-description {
+	background-image: url('../img/actions/edit.svg?v=1')
+}
 
-// /* Mail --------------------------------------------------------------------- */
+/* Mail --------------------------------------------------------------------- */
 
-// .icon-mail,
-// .icon-social-email {
-// 	background-image: url('../img/email.svg');
-// }
+.icon-mail,
+.icon-social-email {
+	background-image: url('../img/email.svg');
+}
 
-// /* Calendar ----------------------------------------------------------------- */
+/* Calendar ----------------------------------------------------------------- */
 
-// .icon-badge,
-// .icon-calendar-dark {
-// 	background-image: url('../img/places/calendar.svg');
-// }
+.icon-badge,
+.icon-calendar-dark {
+	background-image: url('../img/places/calendar.svg');
+}
 
-// /* Play --------------------------------------------------------------------- */
+/* Play --------------------------------------------------------------------- */
 
-// .icon-play {
-// 	background-image: url('../img/actions/play.svg');
-// }
+.icon-play {
+	background-image: url('../img/actions/play.svg');
+}
 
-// /* Pause --------------------------------------------------------------------- */
+/* Pause --------------------------------------------------------------------- */
 
-// .icon-pause {
-// 	background-image: url('../img/actions/pause.svg');
-// }
+.icon-pause {
+	background-image: url('../img/actions/pause.svg');
+}
 
-// /* Folder ------------------------------------------------------------------- */
+/* Folder ------------------------------------------------------------------- */
 
-// .icon-folder, .icon-filetype-folder {
-// 	background-image: url('/core/img/filetypes/folder.svg?v=16');
-// }
+.icon-folder, .icon-filetype-folder {
+	background-image: url('/core/img/filetypes/folder.svg?v=16');
+}
 
-// // Music app
-// .app-music, #music-controls {
+// Music app
+.app-music, #music-controls {
 
-// 	.current.playing .play-pause,
-// 	div:hover > .play-pause,
-// 	#app-view .current:not(.playing) div:hover .play-pause,
-// 	#app-navigation .current:not(.playing) :hover .play-pause {
-// 		background-image: url('../img/actions/play-big.svg');
-// 	}
-// }
+	.current.playing .play-pause,
+	div:hover > .play-pause,
+	#app-view .current:not(.playing) div:hover .play-pause,
+	#app-navigation .current:not(.playing) :hover .play-pause {
+		background-image: url('../img/actions/play-big.svg');
+	}
+}
 
-// /* User Plus ---------------------------------------------------------------- */
+/* User Plus ---------------------------------------------------------------- */
 
-// .icon-add-user {
-// 	background-image: url('../img/actions/user-plus.svg') !important;
-// }
+.icon-add-user {
+	background-image: url('../img/actions/user-plus.svg') !important;
+}
 
-// /* Pause Big ---------------------------------------------------------------- */
+/* Pause Big ---------------------------------------------------------------- */
 
-// // Music app
-// .current:not(.playing) .play-pause,
-// #app-view .current.playing div:hover .play-pause,
-// #app-navigation .current.playing :hover .play-pause {
-// 	background-image: url('../img/actions/pause-big.svg');
-// }
+// Music app
+.current:not(.playing) .play-pause,
+#app-view .current.playing div:hover .play-pause,
+#app-navigation .current.playing :hover .play-pause {
+	background-image: url('../img/actions/pause-big.svg');
+}
 
-// /* Fullscreen --------------------------------------------------------------- */
+/* Fullscreen --------------------------------------------------------------- */
 
-// .icon-fullscreen {
-// 	background-image: url('../img/actions/fullscreen.svg');
-// }
+.icon-fullscreen {
+	background-image: url('../img/actions/fullscreen.svg');
+}
 
-// /* Video -------------------------------------------------------------------- */
+/* Address ------------------------------------------------------------------ */
 
-// .icon-video,
-// .icon-video-white {
-// 	background-image: url('../img/actions/video.svg');
-// }
+.icon-address {
+	background-image: url('../img/actions/address.svg');
+}
 
-// /* Video off ---------------------------------------------------------------- */
+/* Notifications ------------------------------------------------------------ */
 
-// .icon-video-off,
-// .icon-video-off-white {
-// 	background-image: url('../img/actions/video-off.svg');
-// }
+.notification-container .emptycontent .icon-notifications-dark {
+	background-image: url('../img/notifications/notifications.svg');
+}
 
-// /* Audio -------------------------------------------------------------------- */
+/* Clock -------------------------------------------------------------------- */
 
-// .icon-audio,
-// .icon-audio-white {
-// 	background-image: url('../img/actions/audio.svg');
-// }
+.icon-clock {
+	background-image: url('../img/widgets/clock.svg');
+}
 
-// /* Audio off ---------------------------------------------------------------- */
+/* Disk Space --------------------------------------------------------------- */
 
-// .icon-audio-off,
-// .icon-audio-off-white {
-// 	background-image: url('../img/actions/audio-off.svg');
-// }
+.icon-disk-space {
+	background-image: url('../img/widgets/diskspace.svg');
+}
 
-// /* Screen ------------------------------------------------------------------- */
+/* Fortunes ----------------------------------------------------------------- */
 
-// .icon-screen,
-// .icon-screen-white {
-// 	background-image: url('../img/actions/screen.svg');
-// }
+.icon-fortunes {
+	background-image: url('../img/widgets/fortunes.svg');
+}
 
-// /* Screen off --------------------------------------------------------------- */
+/* Freedom ------------------------------------------------------------------ */
 
-// .icon-screen-off,
-// .icon-screen-off-white {
-// 	background-image: url('../img/actions/screen-off.svg');
-// }
+.icon-freedom {
+	background-image: url('../img/privacy/freedom.svg');
+}
 
-// /* Sound  ------------------------------------------------------------------- */
+/* Picture ------------------------------------------------------------------ */
 
-// .icon-sound {
-// 	background-image: url('../img/actions/sound.svg');
-// }
+.icon-picture,
+.icon-gallery {
+	background-image: url('../img/places/picture.svg');
+}
 
-// /* Sound off ---------------------------------------------------------------- */
+/* Qr Code ------------------------------------------------------------------ */
 
-// .icon-sound-off {
-// 	background-image: url('../img/actions/sound-off.svg');
-// }
+.icon-qrcode {
+	background-image: url('../img/actions/qrcode.svg');
+}
 
-// /* Address ------------------------------------------------------------------ */
+/* Address book ------------------------------------------------------------- */
 
-// .icon-address {
-// 	background-image: url('../img/actions/address.svg');
-// }
+.icon-address-book {
+	background-image: url('../img/actions/address-book.svg');
+}
 
-// /* Notifications ------------------------------------------------------------ */
+/* Group -------------------------------------------------------------------- */
 
-// .notification-container .emptycontent .icon-notifications-dark {
-// 	background-image: url('../img/notifications/notifications.svg');
-// }
+.icon-group {
+	background-image: url('../img/users.svg');
+}
 
-// /* Clock -------------------------------------------------------------------- */
+/* Social ------------------------------------------------------------------- */
 
-// .icon-clock {
-// 	background-image: url('../img/widgets/clock.svg');
-// }
+.icon-social {
+	background-image: url('../img/actions/social.svg');
+}
 
-// /* Disk Space --------------------------------------------------------------- */
+/* Up ----------------------------------------------------------------------- */
 
-// .icon-disk-space {
-// 	background-image: url('../img/widgets/diskspace.svg');
-// }
+.icon-up {
+	background-image: url('../img/actions/up.svg');
+}
 
-// /* Fortunes ----------------------------------------------------------------- */
+/* Expired ------------------------------------------------------------------ */
 
-// .icon-fortunes {
-// 	background-image: url('../img/widgets/fortunes.svg');
-// }
+.icon-expired {
+	background-image: url("../img/actions/expired.svg");
+}
 
-// /* Freedom ------------------------------------------------------------------ */
+/* Activity App ------------------------------------------------------------- */
 
-// .icon-freedom {
-// 	background-image: url('../img/privacy/freedom.svg');
-// }
+.icon-activity,
+.nav-icon-activity {
+	background-image: url('../img/activity.svg?v=1');
+}
 
-// /* Picture ------------------------------------------------------------------ */
+/* News App ----------------------------------------------------------------- */
 
-// .icon-picture,
-// .icon-gallery {
-// 	background-image: url('../img/places/picture.svg');
-// }
+// Unpinned
+.icon-unpinned,
+#app-navigation .icon-unpinned {
+	background-image: url('../img/actions/unpinned.svg');
+}
 
-// /* Qr Code ------------------------------------------------------------------ */
+// Pinned
+.icon-pinned,
+#app-navigation .icon-pinned {
+	background-image: url('../img/actions/pinned.svg');
+}
 
-// .icon-qrcode {
-// 	background-image: url('../img/actions/qrcode.svg');
-// }
+// Full text enabled
+.icon-full-text-enabled {
+	background-image: url('../img/actions/fulltext.svg');
+}
 
-// /* Address book ------------------------------------------------------------- */
+// Full text disabled
+.icon-full-text-disabled {
+	background-image: url('../img/actions/nonfulltext.svg');
+}
 
-// .icon-address-book {
-// 	background-image: url('../img/actions/address-book.svg');
-// }
+/* Annoucement Center App --------------------------------------------------- */
 
-// /* Group -------------------------------------------------------------------- */
+.icon-announcement {
+	background-image: url('../img/places/announcementcenter.svg');
+}
 
-// .icon-group {
-// 	background-image: url('../img/users.svg');
-// }
+/* Audio player App --------------------------------------------------------- */
 
-// /* Social ------------------------------------------------------------------- */
+.sm2-inline-button.play-pause,
+.sm2-inline-button.play-pause:hover,
+.paused.sm2-inline-button.play-pause:hover {
+	background-image: none, url('../img/bar-ui/play.svg');
+}
 
-// .icon-social {
-// 	background-image: url('../img/actions/social.svg');
-// }
+.playing .sm2-inline-button.play-pause {
+	background-image: none, url('../img/bar-ui/pause.svg');
+}
 
-// /* Up ----------------------------------------------------------------------- */
+.sm2-inline-button.previous {
+	background-image: none, url('../img/bar-ui/previous.svg');
+}
 
-// .icon-up {
-// 	background-image: url('../img/actions/up.svg');
-// }
+.sm2-inline-button.next {
+	background-image: none, url('../img/bar-ui/next.svg');
+}
 
-// /* File --------------------------------------------------------------------- */
+.sm2-inline-button.repeat {
+	background-image: none, url('../img/bar-ui/repeat.svg');
+}
 
-// .icon-file,
-// .icon-filetype-text {
-// 	background-image: url("../img/actions/edit.svg");
-// }
+.sm2-inline-button.shuffle {
+	background-image: none, url('../img/bar-ui/shuffle.svg');
+}
 
-// /* Expired ------------------------------------------------------------------ */
+.sm2-inline-button.sm2-volume-control,
+.sm2-inline-button.sm2-volume-control.volume-shade {
+	background-image: none, url('../img/bar-ui/volume.svg');
+}
 
-// .icon-expired {
-// 	background-image: url("../img/actions/expired.svg");
-// }
+/* Mail App ----------------------------------------------------------------- */
 
-// /* Projects ----------------------------------------------------------------- */
+.icon-reply {
+	background-image: url('../img/mail/reply.svg');
+}
 
-// .icon-projects {
-// 	background-image: url("../img/actions/projects.svg");
-// }
+.icon-archive {
+	background-image: url('../img/mail/archive.svg');
+}
 
-// /* Activity App ------------------------------------------------------------- */
+/* Music App ---------------------------------------------------------------- */
 
-// .icon-activity,
-// .nav-icon-activity {
-// 	background-image: url('../img/activity.svg?v=1');
-// }
+.nav-icon-music {
+	background-image: url('../img/places/music.svg')
+}
 
-// /* Deck App ----------------------------------------------------------------- */
+/* Notes App ---------------------------------------------------------------- */
 
-// .icon-deck {
-// 	background-image: url("../img/deck.svg") !important;
-// }
+.nav-icon-emptyfolder {
+	background-image: url('../img/notes/folder-empty.svg');
+}
 
-// /* News App ----------------------------------------------------------------- */
+/* Social Sharing App ------------------------------------------------------- */
 
-// // Unpinned
-// .icon-unpinned,
-// #app-navigation .icon-unpinned {
-// 	background-image: url('../img/actions/unpinned.svg');
-// }
+.social-facebook,
+.icon-social-facebook {
+	background-image: url('../img/social/facebook.svg');
+}
 
-// // Pinned
-// .icon-pinned,
-// #app-navigation .icon-pinned {
-// 	background-image: url('../img/actions/pinned.svg');
-// }
+.social-twitter,
+.icon-social-twitter {
+	background-image: url('../img/social/twitter.svg');
+}
 
-// // Full text enabled
-// .icon-full-text-enabled {
-// 	background-image: url('../img/actions/fulltext.svg');
-// }
+.social-googleplus,
+.icon-social-googleplus {
+	background-image: url('../img/social/googleplus.svg');
+}
 
-// // Full text disabled
-// .icon-full-text-disabled {
-// 	background-image: url('../img/actions/nonfulltext.svg');
-// }
+.social-diaspora,
+.icon-social-diaspora {
+	background-image: url('../img/social/diaspora.svg');
+}
 
-// /* Annoucement Center App --------------------------------------------------- */
+/* Two Factor Apps ---------------------------------------------------------- */
 
-// .icon-announcement {
-// 	background-image: url('../img/places/announcementcenter.svg');
-// }
+.nav-icon-totp-second-factor-auth {
+	background-image: url('../img/twofactor-totp.svg?v=1');
+}
 
-// /* Audio player App --------------------------------------------------------- */
+.icon-u2f-device,
+.nav-icon-u2f-second-factor-auth {
+	background-image: url('../img/twofactor-u2f.svg?v=1');
+}
 
-// .sm2-inline-button.play-pause,
-// .sm2-inline-button.play-pause:hover,
-// .paused.sm2-inline-button.play-pause:hover {
-// 	background-image: none, url('../img/bar-ui/play.svg');
-// }
+/* FullTextSearch ----------------------------------------------------------- */
 
-// .playing .sm2-inline-button.play-pause {
-// 	background-image: none, url('../img/bar-ui/pause.svg');
-// }
+div.icon-fulltextsearch-white {
+	background-image: url('../img/fulltextsearch.svg');
+}
 
-// .sm2-inline-button.previous {
-// 	background-image: none, url('../img/bar-ui/previous.svg');
-// }
+/* AppOrder ----------------------------------------------------------------- */
 
-// .sm2-inline-button.next {
-// 	background-image: none, url('../img/bar-ui/next.svg');
-// }
+// Remove filter from icons so they are white
+#app-order #apporder.section #appsorter img {
+	-webkit-filter: none;
+	filter: none;
+	filter: none;
+}
 
-// .sm2-inline-button.repeat {
-// 	background-image: none, url('../img/bar-ui/repeat.svg');
-// }
+// Circle app icon
+.nav-icon-circlesfilter {
+	background-image: url('../img/circles/circle.svg');
+}
 
-// .sm2-inline-button.shuffle {
-// 	background-image: none, url('../img/bar-ui/shuffle.svg');
-// }
+/* Talk --------------------------------------------------------------------- */
 
-// .sm2-inline-button.sm2-volume-control,
-// .sm2-inline-button.sm2-volume-control.volume-shade {
-// 	background-image: none, url('../img/bar-ui/volume.svg');
-// }
-
-// /* Mail App ----------------------------------------------------------------- */
-
-// .icon-reply {
-// 	background-image: url('../img/mail/reply.svg');
-// }
-
-// .icon-archive {
-// 	background-image: url('../img/mail/archive.svg');
-// }
-
-// /* Music App ---------------------------------------------------------------- */
-
-// .nav-icon-music {
-// 	background-image: url('../img/places/music.svg')
-// }
-
-// /* Notes App ---------------------------------------------------------------- */
-
-// .nav-icon-emptyfolder {
-// 	background-image: url('../img/notes/folder-empty.svg');
-// }
-
-// /* Social Sharing App ------------------------------------------------------- */
-
-// .social-facebook,
-// .icon-social-facebook {
-// 	background-image: url('../img/social/facebook.svg');
-// }
-
-// .social-twitter,
-// .icon-social-twitter {
-// 	background-image: url('../img/social/twitter.svg');
-// }
-
-// .social-googleplus,
-// .icon-social-googleplus {
-// 	background-image: url('../img/social/googleplus.svg');
-// }
-
-// .social-diaspora,
-// .icon-social-diaspora {
-// 	background-image: url('../img/social/diaspora.svg');
-// }
-
-// /* Two Factor Apps ---------------------------------------------------------- */
-
-// .nav-icon-totp-second-factor-auth {
-// 	background-image: url('../img/twofactor-totp.svg?v=1');
-// }
-
-// .icon-u2f-device,
-// .nav-icon-u2f-second-factor-auth {
-// 	background-image: url('../img/twofactor-u2f.svg?v=1');
-// }
-
-// /* FullTextSearch ----------------------------------------------------------- */
-
-// div.icon-fulltextsearch-white {
-// 	background-image: url('../img/fulltextsearch.svg');
-// }
-
-// /* AppOrder ----------------------------------------------------------------- */
-
-// // Remove filter from icons so they are white
-// #app-order #apporder.section #appsorter img {
-// 	-webkit-filter: none;
-// 	filter: none;
-// 	filter: none;
-// }
-
-// // Circle app icon
-// .nav-icon-circlesfilter {
-// 	background-image: url('../img/circles/circle.svg');
-// }
-
-// /* Talk --------------------------------------------------------------------- */
-
-// .icon-talk {
-// 	background-image: url('../img/talk/talk.svg');
-// }
-
-// .icon-menu-people {
-// 	background-image: url('../img/talk/menu-people.svg');
-// }
-
-// .icon-no-password {
-// 	background-image: url('../img/talk/no-password.svg');
-// }
+.icon-no-password {
+	background-image: url('../img/talk/no-password.svg');
+}
 
 /* CSS tricks to change icon color ------------------------------------------ */
 

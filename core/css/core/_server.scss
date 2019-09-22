@@ -601,6 +601,6 @@ ul.multiselectoptions {
 
 /* Contacts menu ------------------------------------------------------------ */
 
-#contactsmenu .contact a img {
+#contactsmenu .contact a img[src*="spreed/img/app-dark.svg"] {
 	filter: invert(95%);
 }
