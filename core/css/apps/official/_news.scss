@@ -2,8 +2,16 @@
 
 .app-news #app-navigation {
 	
-	.add-new .heading:hover {
-		background-color: $background-active-hover;
+	.add-new .heading {
+	
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		button:active,
+		button:focus {
+			background-color: transparent;
+		}
 	}
 
 	#app-settings-content a {
