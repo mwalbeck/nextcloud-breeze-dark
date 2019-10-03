@@ -50,8 +50,8 @@ table.grid th, table.grid td {
 // Input Fields
 
 textarea,
-.pager li a {
-	background-color: $background-dark;
+.pager li a,
+div[contenteditable="true"] {
 
 	&:not(:disabled):not(.primary) {
 		
@@ -71,9 +71,8 @@ textarea,
 
 	&:not(:disabled) {
 
-		&:hover {
-			background-color: $background-dark;
-			border-color: $decoration-active;
+		&:hover, &:active, &:focus {
+			border-color: $decoration-active !important;
 		}
 	}
 	
@@ -84,15 +83,6 @@ textarea,
 
 		&:hover, &:focus, &:active {
 			border-color: $decoration-normal;
-		}
-	}
-}
-
-textarea {
-	&:active, &:hover, &:focus {
-		&:not(:disabled) {
-			border-color: $decoration-active !important;
-			background-color: $background-dark !important;
 		}
 	}
 }
