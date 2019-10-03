@@ -507,6 +507,18 @@
 	background-image: var(--icon-unpinned-000) !important;
 }
 
+.icon-pinned {
+	background-image: var(--icon-pinned-000) !important;
+}
+
+.icon-full-text-disabled {
+	background-image: var(--icon-nonfulltext-000) !important;
+}
+
+.icon-full-text-enabled {
+	background-image: var(--icon-fulltext-000) !important;
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Two Factor App Icon in Personal Settings
