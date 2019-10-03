@@ -51,7 +51,6 @@ table.grid th, table.grid td {
 
 input:not([type="range"]),
 textarea,
-div[contenteditable="true"],
 .pager li a {
 	background-color: $background-dark;
 
@@ -87,14 +86,6 @@ div[contenteditable="true"],
 		&:hover, &:focus, &:active {
 			border-color: $decoration-normal;
 		}
-	}
-}
-
-div[contenteditable="true"]:not(:disabled) {
-
-	&:hover, &:active, &:focus {
-		background-color: $background-dark !important;
-		border-color: $decoration-active !important;
 	}
 }
 
