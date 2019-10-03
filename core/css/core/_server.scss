@@ -599,6 +599,11 @@ ul.multiselectoptions {
 	right: -4px;
 }
 
+.menububble {
+	box-shadow: none !important;
+	border: 1px solid $decoration-normal;
+}
+
 /* Contacts menu ------------------------------------------------------------ */
 
 #contactsmenu .contact a img[src*="spreed/img/app-dark.svg"] {
