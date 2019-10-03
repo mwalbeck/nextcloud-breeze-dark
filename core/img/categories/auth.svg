@@ -1,8 +1,0 @@
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 16 16">
- <g stroke="#f2f2f2" fill="none">
-  <circle r="3" cy="10" cx="5" stroke-width="2"/>
-  <path d="m7.7 7.8 5.8-5.8" stroke-width="2"/>
-  <path d="m11.5 3.5 2.5 2.5" stroke-width="1.5"/>
-  <path d="m9.3 5 2.5 2.5" stroke-width="1.5"/>
- </g>
-</svg>
