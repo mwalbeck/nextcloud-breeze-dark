@@ -51,7 +51,8 @@ table.grid th, table.grid td {
 
 textarea,
 .pager li a,
-div[contenteditable="true"] {
+div[contenteditable="true"],
+input:not([type="range"]) {
 
 	&:not(:disabled):not(.primary) {
 		
@@ -60,7 +61,6 @@ div[contenteditable="true"] {
 		}
 		
 		&:focus, &:active {
-			background-color: $background-dark;
 			border-color: $decoration-active;
 		}
 
