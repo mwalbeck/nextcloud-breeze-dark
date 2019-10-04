@@ -1,0 +1,142 @@
+/* Tasks -------------------------------------------------------------------- */
+
+.app-tasks #app-navigation .app-navigation-entry-edit input.action {
+    background-color: $background-dark;
+}
+
+.app-tasks #app-content {
+
+    .sortorder-dropdown-button {
+        background-color: $background-normal;
+    }
+
+    .categories-list span {
+        background-color: $background-normal;
+    }
+
+    .task-body {
+        background-color: $background-dark;
+
+        &:hover {
+            background-color: $background-active-hover;
+        }
+
+        &.active .title {
+            font-weight: 600;
+        }
+
+        .duedate.overdue {
+            color: $foreground-negative;
+        }
+
+        .percentdone {
+            background-color: $background-active-alternate !important;
+        }
+    }
+
+    .task-list .loadmore span {
+        color: $foreground-inactive;
+        background-color: $background-normal;
+    }
+}
+
+.app-tasks #app-sidebar div.content-wrapper {
+
+    .title {
+        background-color: $background-active;
+
+        .expandable-container {
+            background: $background-normal;
+            border-color: $decoration-normal;
+        }
+    }
+
+    .body .section {
+        border-bottom: 1px dashed $decoration-normal;
+
+        .detail-categories-container .multiselect.multiselect-vue .multiselect__tag,
+        .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
+            background-color: $background-normal;
+        }
+    }
+
+    .title .detail-checkbox label:hover::before {
+        border-color: $background-active-alternate;
+    }
+
+    .footer {
+        border-top: none;
+    }
+}
+
+.app-tasks {
+
+    .icon-task-star a::before,
+    .icon-alphabetically,
+    .icon-sort-down,
+    .icon-all a::before,
+    .icon-current a::before,
+    .icon-add a::before,
+    .icon-calendar a::before,
+    .icon-checkmark a::before,
+    .icon-task-star a::before,
+    .icon-list,
+    .icon-note,
+    .icon-hide,
+    .icon-percent,
+    .icon-checkmark,
+    .icon-tag,
+    .icon-add.icon-bw,
+    .icon-trash,
+    .icon-toggle {
+        filter: invert(95%);
+    }
+
+    .action.icon-checkmark,
+    .collection.icon-checkmark {
+        filter: none;
+    }
+
+    #app-settings, .app-navigation-entry-menu {
+        
+        .icon-all,
+        .icon-current,
+        .icon-task-star,
+        .icon-calendar,
+        .icon-subtasks-visible {
+            filter: invert(95%);
+        }
+    }
+
+    #app-content {
+
+        .icon-subtasks-visible,
+        .icon-subtasks-hidden {
+            filter: invert(95%);
+        }
+    }
+
+    #app-sidebar {
+
+        .icon-calendar {
+            filter: invert(95%);
+        }
+
+        .icon-calendar-due {
+            filter: none;
+        }
+    }
+
+    #app-content, #app-sidebar {
+
+        .icon-task-star {
+            filter: invert(95%);
+        }
+
+        .icon-task-star-low,
+        .icon-task-star-medium,
+        .icon-task-star-high {
+            filter: none;
+        }
+    }
+}

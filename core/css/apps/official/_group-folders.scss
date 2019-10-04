@@ -1,0 +1,29 @@
+/* Group folders ------------------------------------------------------------ */
+
+#groupfolders-wrapper #groupfolders-root {
+
+	th {
+		border-bottom-color: $decoration-normal;
+	}
+
+	td .action-rename::after {
+		filter: invert(95%);
+	}
+	
+	.groups .group-edit {
+		background-color: $background-normal !important;
+		border-color: $decoration-normal !important;
+
+		div[class$="control"] {
+			border-color: $decoration-normal !important;
+		}
+	}
+
+	.acl {
+
+		div[class$="control"] {
+			background-color: $background-normal !important;
+			border-color: $decoration-normal !important;
+		}
+	}
+}

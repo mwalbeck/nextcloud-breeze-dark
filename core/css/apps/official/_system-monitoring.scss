@@ -1,0 +1,20 @@
+/* System monitoring -------------------------------------------------------- */
+
+.app-settings #app-content {
+
+    #one,
+    #two,
+    #activeUsersSection,
+    #sharesSection {
+
+        .infobox {
+            background-color: #F9F9F9;
+            color: #555555;
+
+            h2,
+            h3 {
+                color: #555555;
+            }
+        }
+    }
+}

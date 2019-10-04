@@ -11,22 +11,9 @@
     }
 }
 
-.app-mail #app-navigation {
-
-    #app-settings .app-settings-hint a.active {
-        background-color: $background-normal;
-        color: $foreground-inactive;
-        font-weight: 400;
-    }
-}
-
 .app-mail #app-content {
 
     .app-content-list {
-
-        .icon-starred:hover {
-            background-image: url("../img/actions/starred.svg?v=1") !important;
-        }
     
         .app-content-list-item,
         .app-content-list-item-menu a {
@@ -60,27 +47,8 @@
             border-radius: 3px;
         }
 
-        input#to, input#cc, input#bcc, input#subject {
-            border: none;
-            background-color: $background-normal;
-        }
-
-        textarea.message-body {
-            border-bottom: 1px solid $decoration-normal !important;
-            border-right: 1px solid $decoration-normal !important;
-            background-color: $background-dark;
-        }
-
-        .mail-message-attachments .attachments {
-
-            &> div:hover, &> div span:hover {
-                background-color: inherit;
-            }
-        
-            .attachment-download,
-            .attachment-save-to-cloud {
-                border-color: transparent;
-            }
+        .mail-message-attachments .attachments > div span:hover {
+            background-color: unset;
         }
 
         .transparency {

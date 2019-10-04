@@ -1,19 +1,11 @@
 /* File Access Control ------------------------------------------------------ */
 
 .workflowengine {
+
 	.operation {
-		border-bottom-color: $decoration-normal;
 
 		.check:hover {
 			background-color: $background-normal;
 		}
-
-		&.modified {
-			border-left-color: $foreground-neutral;
-		}
-	}
-
-	.invalid-input {
-		border-color: $background-negative;
 	}
 }

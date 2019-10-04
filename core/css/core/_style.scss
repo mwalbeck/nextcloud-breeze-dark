@@ -1,6 +1,14 @@
 a {
 	color: $foreground-link;
 
+	&.icon {
+		color: $icon-normal;
+
+		&:hover, &:focus {
+			color: $icon-normal;
+		}
+	}
+
 	&:hover, &:focus {
 		color: $foreground-link;
 	}
@@ -41,11 +49,10 @@ table.grid th, table.grid td {
 
 // Input Fields
 
-input:not([type="range"]),
 textarea,
+.pager li a,
 div[contenteditable="true"],
-.pager li a {
-	background-color: $background-dark;
+input:not([type="range"]) {
 
 	&:not(:disabled):not(.primary) {
 		
@@ -54,7 +61,6 @@ div[contenteditable="true"],
 		}
 		
 		&:focus, &:active {
-			background-color: $background-dark;
 			border-color: $decoration-active;
 		}
 
@@ -65,9 +71,8 @@ div[contenteditable="true"],
 
 	&:not(:disabled) {
 
-		&:hover {
-			background-color: $background-dark;
-			border-color: $decoration-active;
+		&:hover, &:active, &:focus {
+			border-color: $decoration-active !important;
 		}
 	}
 	
@@ -78,23 +83,6 @@ div[contenteditable="true"],
 
 		&:hover, &:focus, &:active {
 			border-color: $decoration-normal;
-		}
-	}
-}
-
-div[contenteditable="true"]:not(:disabled) {
-
-	&:hover, &:active, &:focus {
-		background-color: $background-dark !important;
-		border-color: $decoration-active !important;
-	}
-}
-
-textarea {
-	&:active, &:hover, &:focus {
-		&:not(:disabled) {
-			border-color: $decoration-active !important;
-			background-color: $background-dark !important;
 		}
 	}
 }

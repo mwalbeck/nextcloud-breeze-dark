@@ -48,7 +48,6 @@
 .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
 	border-color: $decoration-active !important;
-	background-color: $background-dark !important;
 }
 
 /* Breadcrumbs -------------------------------------------------------------- */
@@ -57,13 +56,7 @@ div.crumb a,
 div.crumb > span,
 div.crumb.crumbmenu a {
 	color: $foreground-normal;
-	opacity: 0.7;
-}
-
-// Breadcrumb dropdown
-// Display background hover full width
-div.crumb.crumbmenu .popovermenu ul {
-	margin-right: 0;
+	opacity: 0.7 !important;
 }
 
 /* Menues ------------------------------------------------------------------- */
@@ -109,52 +102,18 @@ div.crumb.crumbmenu .popovermenu ul {
 	border-bottom-color: $decoration-normal;
 }
 
+.action-item__menu {
+	filter: none !important;
+	border: 1px solid $decoration-normal;
+
+	.action-item__menu_arrow {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
 /* Info colours ------------------------------------------------------------- */
 
-#postsetupchecks .errors {
-	color: $foreground-negative;
-}
-
-#postsetupchecks .warnings, 
-#security-warning > ul {
-	color: $foreground-neutral;
-}
-
-#body-user .warning {
-	color: $foreground-negative;
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-}
-
-#body-settings .warning {
-	background: $background-negative;
-}
-
-.success {
-	color: $foreground-positive;
-}
-
-span {
-
-	&.warnings {
-		background-color: $background-negative;
-	}
-
-	&.error {
-		background-color: $background-negative;
-	}
-
-	&.success {
-		background-color: $background-positive;
-	}
-}
-
 .msg {
-
-	&.warnings {
-		color: $foreground-active;
-		background-color: $background-negative;
-	}
 
 	&.error {
 		color: $foreground-active;
@@ -186,9 +145,21 @@ span {
 
 /* Admin settings */
 
-// Overview 
-#updatenotification .update-channel-selector .update-menu .menuitem.active {
+// System monitoring
+.infobox {
+	border-color: $decoration-normal;
+	color: $foreground-normal;
 	background-color: $background-normal;
+	box-shadow: none;
+
+	h2,
+	h3 {
+		color: $foreground-normal;
+	}
+}
+
+.smallinfo {
+	color: $foreground-inactive;
 }
 
 /* App Store ---------------------------------------------------------------- */
@@ -284,11 +255,14 @@ span {
 
 			&:focus,
 			&:active {
-				background-color: $background-active;
 				opacity: 1;
 			}
 		}
 	}
+}
+
+#emptycontent, .emptycontent {
+	background-color: $background-normal;
 }
 
 /* Multiselect -------------------------------------------------------------- */
@@ -335,10 +309,6 @@ ul.multiselectoptions {
 
 #select2-drop, .select2-drop {
 	box-shadow: none;
-
-	.select2-search, .select2-input {
-		background-color: $background-dark !important;
-	}
 
 	&.select2-drop-above.select2-drop-active {
 		border-color: $decoration-normal;
@@ -425,7 +395,8 @@ ul.multiselectoptions {
 		color: $foreground-normal;
 
 		.ui-icon {
-			opacity: 1;
+			opacity: .7;
+			filter: invert(95%);
 		}
 
 		.ui-datepicker-prev, .ui-datepicker-next {
@@ -548,20 +519,6 @@ ul.multiselectoptions {
 	}
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	border-color: $decoration-normal !important;
-	background: $background-normal !important;
-	color: $foreground-normal !important;
-
-	a,
-	a:link,
-	a:visited {
-		color: $foreground-normal;
-	}
-}
-
 .ui-button {
 	background-color: $background-normal !important;
 	color: $foreground-normal !important;
@@ -591,7 +548,8 @@ ul.multiselectoptions {
 
 /* Tooltips ----------------------------------------------------------------- */
 
-.tooltip {
+.tooltip,
+.vue-tooltip {
 	filter: none !important;
 
 	&[x-placement^="right"],
@@ -632,7 +590,13 @@ ul.multiselectoptions {
 	border: none;
 }
 
-// Fix for tooltip arrow not being aligned in contacts dropdown
-.contact .tooltip .tooltip-arrow {
-	right: -4px;
+.menububble {
+	box-shadow: none !important;
+	border: 1px solid $decoration-normal;
+}
+
+/* Contacts menu ------------------------------------------------------------ */
+
+#contactsmenu .contact a img[src*="spreed/img/app-dark.svg"] {
+	filter: invert(95%);
 }

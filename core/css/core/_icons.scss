@@ -1,865 +1,24 @@
-/* Password ----------------------------------------------------------------- */
+/* Apps that haven't moved to variables for icons ---------------------------- */
 
-.icon-password,
-.nav-icon-second-factor-backup-codes,
-.nav-icon-apppasswords,
-.nav-icon-ransomware-protection {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
-/* Auth --------------------------------------------------------------------- */
-
-.icon-category-auth {
-	background-image: url('../img/categories/auth.svg')
-}
-
-/* Home --------------------------------------------------------------------- */
-
-.icon-home,
-.icon-inbox,
-#oc-dialog-filepicker-content .dirtree div:first-child a,
-#controls .breadcrumb .crumb .home {
-	background-image: url('../img/places/home.svg?v=1');
-}
-
-/* Star --------------------------------------------------------------------- */
-
-.icon-flagged,
-.icon-star-dark,
-.nav-icon-favorites {
-	background-image: url('../img/actions/star.svg?v=1');
-}
-
-.icon-star,
-.icon-starred:hover,
-.icon-starred:focus,
-.icon-stationfav {
-	background-image: url('../img/actions/star.svg?v=1');
-	opacity: 0.5;
-}
-
-/* Starred ------------------------------------------------------------------ */
-
-.icon-starred,
-.icon-star:hover,
-.icon-star:focus,
-.app-news #app-navigation .icon-starred,
-.starred {
-	background-image: url('../img/actions/starred.svg?v=1');
-	opacity: 1;
-}
-
-/* Rename ------------------------------------------------------------------- */
-
-.icon-rename,
-.icon-drafts {
-	background-image: url('../img/actions/rename.svg?v=1');
-}
-
-/* Error -------------------------------------------------------------------- */
-
-.icon-junk,
-.icon-error {
-	background-image: url('../img/actions/error.svg');
-}
-
-/* Delete ------------------------------------------------------------------- */
-
-.icon-delete {
-    background-image: url('../img/actions/delete.svg?v=1');
-
-    &:hover, &:focus {
-	    background-image: url('../img/actions/delete-hover.svg?v=1');
-    }
-}
-
-.icon-trash,
-.nav-icon-trashbin,
-.nav-icon-drop-account {
-	background-image: url('../img/actions/delete.svg?v=1');
-}
-
-/* Checkmark ---------------------------------------------------------------- */
-
-.icon-checkmark,
-.icon-sent,
-.icon-category-enabled,
-.multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
-#two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-	background-image: url('../img/actions/checkmark.svg?v=1') !important;
-}
-
-/* History ------------------------------------------------------------------ */
-
-.icon-history,
-#app-navigation .icon-updatemode-default {
-	background-image: url('../img/actions/history.svg?v=1');
-}
-
-#app-navigation .icon-updatemode-unread {
-	background-image: url('../img/actions/history.svg');
-	opacity: 0.25;
-}
-
-/* External ----------------------------------------------------------------- */
-
-.nav-icon-extstoragemounts,
-.nav-icon-external-storage,
-.icon-external {
-	background-image: url('../img/actions/external.svg?v=1');
-}
-
-/* Public ------------------------------------------------------------------- */
-
-.icon-public,
-.nav-icon-sharinglinks {
-	background-image: url('../img/actions/public.svg?v=1');
-}
-
-/* Share -------------------------------------------------------------------- */
-
-.icon-share,
-.icon-shared,
-.nav-icon-federated-cloud,
-.nav-icon-sharingin,
-.nav-icon-sharingout,
-.nav-icon-shareoverview,
-.icon-control {
-	background-image: url('../img/actions/share.svg?v=1');
-}
-
-/* Unshare ------------------------------------------------------------------ */
-
-.nav-icon-deletedshares {
-	background-image: url('../img/actions/unshare.svg?v=1');
-}
-
-/* Phone -------------------------------------------------------------------- */
-
-.icon-phone {
-	background-image: url('../img/clients/phone.svg')
-}
-
-/* Tablet ------------------------------------------------------------------- */
-
-.icon-tablet {
-	background-image: url('../img/clients/tablet.svg')
-}
-
-/* Desktop ------------------------------------------------------------------ */
-
-.icon-desktop {
-	background-image: url('../img/clients/desktop.svg')
-}
-
-/* Tag ---------------------------------------------------------------------- */
-
-.icon-tag,
-.nav-icon-systemtagsfilter {
-	background-image: url('../img/actions/tag.svg?v=1');
-}
-
-/* Link/World --------------------------------------------------------------- */
-
-.icon-link,
-.icon-world {
-	background-image: url('../img/places/link.svg?v=1');
-}
-
-/* Toggle ------------------------------------------------------------------- */
-
-.icon-toggle,
-#show + label,
-#dbpassword-toggle + label,
-#personal-show + label,
-.icon-knowledge {
-	background-image: url('../img/actions/toggle.svg?v=1');
-}
-
-/* Toggle Filelist ---------------------------------------------------------- */
-
-.nav-icon-sessions,
-.icon-toggle-filelist {
-	background-image: url('../img/actions/toggle-filelist.svg?v=1');
-}
-
-/* Toggle Pictures ---------------------------------------------------------- */
-
-.icon-toggle-pictures,
-#albenoverview li {
-	background-image: url('../img/actions/toggle-pictures.svg');
-}
-
-/* Settings ----------------------------------------------------------------- */
-
-.settings-button,
-.icon-settings,
-.icon-settings-dark,
-.icon-category-tools,
-#app-navigation .music-nav-settings a,
-.jsxc_settingsicon {
-	background-image: url('../img/actions/settings.svg?v=1');
-}
-
-/* Add ---------------------------------------------------------------------- */
-
-.icon-add,
-#oc-dialog-filepicker-content .actions.creatable .icon.icon-add {
-	background-image: url('../img/actions/add.svg?v=1');
-}
-
-/* Upload ------------------------------------------------------------------- */
-
-.icon-upload {
-	background-image: url('../img/actions/upload.svg?v=1');
-}
-
-/* More --------------------------------------------------------------------- */
-
-.icon-more,
-.icon-more-white,
-.icon-more.icon-white,
-#app-navigation .app-navigation-entry-utils 
-.app-navigation-entry-utils-menu-button 
-button:not([class^="icon-"]):not([class*=" icon-"]) {
-	background-image: url('../img/actions/more.svg?v=1');
-}
-
-/* Files -------------------------------------------------------------------- */
-
-.icon-category-files,
-.icon-files-dark,
-.nav-icon-files {
-	background-image: url('../img/places/files.svg?v=1');
-}
-
-/* Download ----------------------------------------------------------------- */
-
-.icon-download,
-.icon-category-updates {
-	background-image: url('../img/actions/download.svg?v=1');
-}
-
-/* Triangle-N --------------------------------------------------------------- */
-
-.icon-triangle-n {
-	background-image: url('../img/actions/triangle-n.svg?v=1');
-}
-
-/* Triangle-S --------------------------------------------------------------- */
-
-.icon-triangle-s,
-#app-navigation .collapsible::before,
-.sort-contacts .multiselect .multiselect__single {
-	background-image: url('../img/actions/triangle-s.svg?v=1');
-}
-
-select {
-	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
-}
-
-div.select2-container a.select2-choice .select2-arrow b {
-	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
-}
-
-/* Details ------------------------------------------------------------------ */
-
-.icon-details {
-	background-image: url('../img/actions/details.svg?v=1');
-}
-
-/* Contacts ----------------------------------------------------------------- */
-
-.icon-contacts-dark, .icon-contacts {
-	background-image: url('../img/places/contacts.svg?v=1');
-}
-
-/* Info --------------------------------------------------------------------- */
-
-.icon-info {
-	background-image: url('../img/actions/details.svg?v=1');
-	opacity: 0.5;
-}
-
-/* Help --------------------------------------------------------------------- */
-
-.icon-help,
-.jsxc_helpicon {
-	background-image: url('../img/help.svg');
-}
-
-/* Clippy ------------------------------------------------------------------- */
-
-.icon-clippy {
-	background-image: url('../img/actions/clippy.svg?v=2');
-	opacity: 0.5;
-}
-
-/* Comment ------------------------------------------------------------------ */
-
-.icon-comment {
-	background-image: url('../img/actions/comment.svg?v=1');
-}
-
-/* Confirm ------------------------------------------------------------------ */
-
-.icon-confirm,
-input[type="text"] + .icon-confirm:disabled, 
-input[type="password"] + .icon-confirm:disabled, 
-input[type="email"] + .icon-confirm:disabled {
-	background-image: url('../img/actions/confirm.svg?v=2');
-}
-
-/* Search ------------------------------------------------------------------- */
-
-.icon-search,
-.icon-category-search {
-	background-image: url('../img/actions/search.svg?v=1');
-}
-
-div.select2-drop .select2-search input {
-	background: url('../img/actions/search.svg') no-repeat right center !important;
-	background-origin: content-box !important;
-}
-
-/* Recent ------------------------------------------------------------------- */
-
-.nav-icon-recent {
-	background-image: url('../img/actions/recent.svg?v=1');
-}
-
-/* Caret -------------------------------------------------------------------- */
-
-.icon-caret-dark {
-	background-image: url('../img/actions/caret.svg?v=1');
-}
-
-/* RSS ---------------------------------------------------------------------- */
-
+// News
 .icon-rss {
-	background-image: url('../img/actions/rss.svg') !important;
+	background-image: var(--icon-rss-000) !important;
 }
 
-/* Close -------------------------------------------------------------------- */
-
-.icon-close,
-.icon-category-disabled {
-	background-image: url('../img/actions/close.svg?v=1');
+.icon-unpinned {
+	background-image: var(--icon-unpinned-000) !important;
 }
 
-.oc-dialog-close {
-	background: url('../img/actions/close.svg') no-repeat center !important;
+.icon-pinned {
+	background-image: var(--icon-pinned-000) !important;
 }
 
-/* Close (no shadow) -------------------------------------------------------- */
-
-.icon-category-disabled,
-#newPlaylistBtn_cancel.icon-close {
-	background-image: url('../img/actions/close-ns.svg')
-}
-
-/* View Close --------------------------------------------------------------- */
-
-.icon-view-close {
-	background-image: url('../img/actions/view-close.svg');
-}
-
-/* Menu --------------------------------------------------------------------- */
-
-.icon-menu,
-#jsxc_menu > span {
-	background-image: url('../img/actions/menu.svg?v=1');
-}
-
-/* User --------------------------------------------------------------------- */
-
-.icon-user,
-.nav-icon-personal-settings,
-.icon-category-installed {
-	background-image: url('../img/actions/user.svg?v=1');
-}
-
-/* User admin --------------------------------------------------------------- */
-
-.icon-user-admin {
-	background-image: url('../img/actions/user-admin.svg?v=1');
-}
-
-/* Right Arrow -------------------------------------------------------------- */
-
-.icon-view-next {
-	background-image: url('../img/actions/arrow-right.svg');
-}
-
-/* Left Arrow _-------------------------------------------------------------- */
-
-.icon-view-previous {
-	background-image: url('../img/actions/arrow-left.svg');
-}
-
-/* Right Arrow Big ---------------------------------------------------------- */
-
-.glyphicon-chevron-right,
-.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
-	background: url("../img/rightarrow.svg") center center no-repeat;
-}
-
-/* Left Arrow Big--------------------------------------------------------------- */
-
-.glyphicon-chevron-left,
-.ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
-	background: url("../img/leftarrow.svg") center center no-repeat;
-}
-
-/* Change ------------------------------------------------------------------- */
-
-.nav-icon-clientsbox {
-	background-image: url('../img/change.svg?v=1');
-}
-
-/* Edit --------------------------------------------------------------------- */
-
-.icon-edit,
-.icon-description {
-	background-image: url('../img/actions/edit.svg?v=1')
-}
-
-/* Quota -------------------------------------------------------------------- */
-
-.icon-quota {
-	background-image: url('../img/actions/quota.svg?v=1');
-}
-
-/* Mail --------------------------------------------------------------------- */
-
-.icon-mail,
-.icon-social-email {
-	background-image: url('../img/email.svg');
-}
-
-/* Calendar ----------------------------------------------------------------- */
-
-.icon-badge,
-.icon-calendar-dark {
-	background-image: url('../img/places/calendar.svg');
-}
-
-/* Play --------------------------------------------------------------------- */
-
-.icon-play {
-	background-image: url('../img/actions/play.svg');
-}
-
-/* Pause --------------------------------------------------------------------- */
-
-.icon-pause {
-	background-image: url('../img/actions/pause.svg');
-}
-
-/* Folder ------------------------------------------------------------------- */
-
-.icon-folder, .icon-filetype-folder {
-	background-image: url('/core/img/filetypes/folder.svg?v=16');
-}
-
-// Music app
-.app-music, #music-controls {
-
-	.current.playing .play-pause,
-	div:hover > .play-pause,
-	#app-view .current:not(.playing) div:hover .play-pause,
-	#app-navigation .current:not(.playing) :hover .play-pause {
-		background-image: url('../img/actions/play-big.svg');
-	}
-}
-
-/* User Plus ---------------------------------------------------------------- */
-
-.icon-add-user {
-	background-image: url('../img/actions/user-plus.svg') !important;
-}
-
-/* Pause Big ---------------------------------------------------------------- */
-
-// Music app
-.current:not(.playing) .play-pause,
-#app-view .current.playing div:hover .play-pause,
-#app-navigation .current.playing :hover .play-pause {
-	background-image: url('../img/actions/pause-big.svg');
-}
-
-/* Fullscreen --------------------------------------------------------------- */
-
-.icon-fullscreen {
-	background-image: url('../img/actions/fullscreen.svg');
-}
-
-/* Video -------------------------------------------------------------------- */
-
-.icon-video,
-.icon-video-white {
-	background-image: url('../img/actions/video.svg');
-}
-
-/* Video off ---------------------------------------------------------------- */
-
-.icon-video-off,
-.icon-video-off-white {
-	background-image: url('../img/actions/video-off.svg');
-}
-
-/* Audio -------------------------------------------------------------------- */
-
-.icon-audio,
-.icon-audio-white {
-	background-image: url('../img/actions/audio.svg');
-}
-
-/* Audio off ---------------------------------------------------------------- */
-
-.icon-audio-off,
-.icon-audio-off-white {
-	background-image: url('../img/actions/audio-off.svg');
-}
-
-/* Screen ------------------------------------------------------------------- */
-
-.icon-screen,
-.icon-screen-white {
-	background-image: url('../img/actions/screen.svg');
-}
-
-/* Screen off --------------------------------------------------------------- */
-
-.icon-screen-off,
-.icon-screen-off-white {
-	background-image: url('../img/actions/screen-off.svg');
-}
-
-/* Sound  ------------------------------------------------------------------- */
-
-.icon-sound {
-	background-image: url('../img/actions/sound.svg');
-}
-
-/* Sound off ---------------------------------------------------------------- */
-
-.icon-sound-off {
-	background-image: url('../img/actions/sound-off.svg');
-}
-
-/* Address ------------------------------------------------------------------ */
-
-.icon-address {
-	background-image: url('../img/actions/address.svg');
-}
-
-/* Notifications ------------------------------------------------------------ */
-
-.notification-container .emptycontent .icon-notifications-dark {
-	background-image: url('../img/notifications/notifications.svg');
-}
-
-/* Clock -------------------------------------------------------------------- */
-
-.icon-clock {
-	background-image: url('../img/widgets/clock.svg');
-}
-
-/* Disk Space --------------------------------------------------------------- */
-
-.icon-disk-space {
-	background-image: url('../img/widgets/diskspace.svg');
-}
-
-/* Fortunes ----------------------------------------------------------------- */
-
-.icon-fortunes {
-	background-image: url('../img/widgets/fortunes.svg');
-}
-
-/* Freedom ------------------------------------------------------------------ */
-
-.icon-freedom {
-	background-image: url('../img/privacy/freedom.svg');
-}
-
-/* Picture ------------------------------------------------------------------ */
-
-.icon-picture {
-	background-image: url('../img/places/picture.svg');
-}
-
-/* Qr Code ------------------------------------------------------------------ */
-
-.icon-qrcode {
-	background-image: url('../img/actions/qrcode.svg');
-}
-
-/* Address book ------------------------------------------------------------- */
-
-.icon-address-book {
-	background-image: url('../img/actions/address-book.svg');
-}
-
-/* Group -------------------------------------------------------------------- */
-
-.icon-group {
-	background-image: url('../img/users.svg');
-}
-
-/* Social ------------------------------------------------------------------- */
-
-.icon-social {
-	background-image: url('../img/actions/social.svg');
-}
-
-/* Up ----------------------------------------------------------------------- */
-
-.icon-up {
-	background-image: url('../img/actions/up.svg');
-}
-
-/* File --------------------------------------------------------------------- */
-
-.icon-file,
-.icon-filetype-text {
-	background-image: url("../img/actions/edit.svg");
-}
-
-/* Expired ------------------------------------------------------------------ */
-
-.icon-expired {
-	background-image: url("../img/actions/expired.svg");
-}
-
-/* Projects ----------------------------------------------------------------- */
-
-.icon-projects {
-	background-image: url("../img/actions/projects.svg");
-}
-
-/* App Categories ----------------------------------------------------------- */
-
-// App Bundles
-.icon-category-app-bundles {
-	background-image: url('../img/categories/bundles.svg?v=1');
-}
-
-// Customization
-.icon-category-customization {
-	background-image: url('../img/categories/customization.svg?v=1');
-}
-
-// Games
-.icon-category-games {
-	background-image: url('../img/categories/games.svg?v=1');
-}
-
-// Integration
-.icon-category-integration {
-	background-image: url('../img/categories/integration.svg?v=1');
-}
-
-// Monitoring
-.icon-category-monitoring {
-	background-image: url('../img/categories/monitoring.svg?v=1');
-}
-
-// Multimedia
-.icon-category-multimedia {
-	background-image: url('../img/categories/multimedia.svg?v=1');
-}
-
-// Office & text
-.icon-category-office {
-	background-image: url('../img/categories/office.svg?v=1');
-}
-
-// Organization
-.icon-category-organization {
-	background-image: url('../img/categories/organization.svg?v=1');
-}
-
-// Security
-.icon-category-security {
-	background-image: url('../img/actions/password.svg?v=1');
-}
-
-// Social og communication
-.icon-category-social {
-	background-image: url('../img/categories/social.svg?v=1');
-}
-
-/* Activity App ------------------------------------------------------------- */
-
-.icon-activity,
-.nav-icon-activity {
-	background-image: url('../img/activity.svg?v=1');
-}
-
-/* Calendar App ------------------------------------------------------------- */
-
-.icon-timezone {
-	background: url("../img/actions/timezone.svg") center center no-repeat;
-}
-
-/* Deck App ----------------------------------------------------------------- */
-
-.icon-deck {
-	background-image: url("../img/deck.svg") !important;
-}
-
-/* News App ----------------------------------------------------------------- */
-
-// Unpinned
-.icon-unpinned,
-#app-navigation .icon-unpinned {
-	background-image: url('../img/actions/unpinned.svg');
-}
-
-// Pinned
-.icon-pinned,
-#app-navigation .icon-pinned {
-	background-image: url('../img/actions/pinned.svg');
-}
-
-// Full text enabled
-.icon-full-text-enabled {
-	background-image: url('../img/actions/fulltext.svg');
-}
-
-// Full text disabled
 .icon-full-text-disabled {
-	background-image: url('../img/actions/nonfulltext.svg');
+	background-image: var(--icon-nonfulltext-000) !important;
 }
 
-/* Annoucement Center App --------------------------------------------------- */
-
-.icon-announcement {
-	background-image: url('../img/places/announcementcenter.svg');
-}
-
-/* Audio player App --------------------------------------------------------- */
-
-.sm2-inline-button.play-pause,
-.sm2-inline-button.play-pause:hover,
-.paused.sm2-inline-button.play-pause:hover {
-	background-image: none, url('../img/bar-ui/play.svg');
-}
-
-.playing .sm2-inline-button.play-pause {
-	background-image: none, url('../img/bar-ui/pause.svg');
-}
-
-.sm2-inline-button.previous {
-	background-image: none, url('../img/bar-ui/previous.svg');
-}
-
-.sm2-inline-button.next {
-	background-image: none, url('../img/bar-ui/next.svg');
-}
-
-.sm2-inline-button.repeat {
-	background-image: none, url('../img/bar-ui/repeat.svg');
-}
-
-.sm2-inline-button.shuffle {
-	background-image: none, url('../img/bar-ui/shuffle.svg');
-}
-
-.sm2-inline-button.sm2-volume-control,
-.sm2-inline-button.sm2-volume-control.volume-shade {
-	background-image: none, url('../img/bar-ui/volume.svg');
-}
-
-/* Mail App ----------------------------------------------------------------- */
-
-.icon-reply {
-	background-image: url('../img/mail/reply.svg');
-}
-
-.icon-archive {
-	background-image: url('../img/mail/archive.svg');
-}
-
-/* Music App ---------------------------------------------------------------- */
-
-.nav-icon-music {
-	background-image: url('../img/places/music.svg')
-}
-
-/* Notes App ---------------------------------------------------------------- */
-
-.nav-icon-emptyfolder {
-	background-image: url('../img/notes/folder-empty.svg');
-}
-
-/* Social Sharing App ------------------------------------------------------- */
-
-.social-facebook,
-.icon-social-facebook {
-	background-image: url('../img/social/facebook.svg');
-}
-
-.social-twitter,
-.icon-social-twitter {
-	background-image: url('../img/social/twitter.svg');
-}
-
-.social-googleplus,
-.icon-social-googleplus {
-	background-image: url('../img/social/googleplus.svg');
-}
-
-.social-diaspora,
-.icon-social-diaspora {
-	background-image: url('../img/social/diaspora.svg');
-}
-
-/* Two Factor Apps ---------------------------------------------------------- */
-
-.nav-icon-totp-second-factor-auth {
-	background-image: url('../img/twofactor-totp.svg?v=1');
-}
-
-.icon-u2f-device,
-.nav-icon-u2f-second-factor-auth {
-	background-image: url('../img/twofactor-u2f.svg?v=1');
-}
-
-/* FullTextSearch ----------------------------------------------------------- */
-
-div.icon-fulltextsearch-white {
-	background-image: url('../img/fulltextsearch.svg');
-}
-
-/* AppOrder ----------------------------------------------------------------- */
-
-// Remove filter from icons so they are white
-#app-order #apporder.section #appsorter img {
-	-webkit-filter: none;
-	filter: none;
-	filter: none;
-}
-
-// Circle app icon
-.nav-icon-circlesfilter {
-	background-image: url('../img/circles/circle.svg');
-}
-
-/* Talk --------------------------------------------------------------------- */
-
-.icon-talk {
-	background-image: url('../img/talk/talk.svg');
-}
-
-.icon-menu-people {
-	background-image: url('../img/talk/menu-people.svg');
-}
-
-.icon-no-password {
-	background-image: url('../img/talk/no-password.svg');
+.icon-full-text-enabled {
+	background-image: var(--icon-fulltext-000) !important;
 }
 
 /* CSS tricks to change icon color ------------------------------------------ */
@@ -884,6 +43,12 @@ img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg
 
 // Music app: Play button on album covers
 .app-music img.play.svg {
+	filter: invert(95%);
+}
+
+// Music App: Mini play button
+.current.playing .play-pause,
+#app-view :hover > .play-pause {
 	filter: invert(95%);
 }
 
@@ -960,9 +125,7 @@ a.impersonate img.svg {
 .app-settings {
 
 	#app-navigation img[src$="/img/app-dark.svg"],
-	#app-navigation img[src$="/settings/img/password.svg"],
 	#app-navigation img[src$="/apps/fulltextsearch/img/fulltextsearch_black.svg"],
-	#app-navigation img[src$="/apps/external/img/external-dark.svg"],
 	#app-navigation img[src$="/apps/bookmarks/img/bookmarks-black.svg"],
 	#app-navigation img[src$="/apps/ojsxc/img/app-black.svg"] {
 		filter: invert(95%);
@@ -983,21 +146,56 @@ a.impersonate img.svg {
 		}
 	}
 
-	#personal-settings .federationScopeMenu ul li a {
-		img[src$="/core/img/actions/password.svg"], 
-		img[src$="/core/img/places/contacts-dark.svg"],
-		img[src$="/core/img/places/link.svg"] {
-			filter: invert(95%);
-		}
+	// Support submenu -> system information
+	.system-information div img[src$="/apps/support/img/system-info.svg"] {
+		filter: invert(95%);
 	}
-}
-
-// Annoucement Center
-.app-announcementcenter #app-content .section span img {
-	filter: invert(95%);
 }
 
 // Talk: talk icon under projects tab
 .app-spreed .linked-icons img[src$="/apps/spreed/img/app-dark.svg"] {
+	filter: invert(95%);
+}
+
+// Show password icon on login screen
+#body-login main form img[src$="/core/img/actions/toggle.svg"] {
+	filter: invert(95%);
+}
+
+#app-sidebar .tabsContainer #versionsTabView {
+	
+	img[src$="/core/img/actions/download.svg"],
+	img[src$="/core/img/actions/history.svg"] {
+		filter: invert(70%);
+	}
+}
+
+// disable double more menu, check closer to release of NC17 if this is necessary
+.icon-more::before {
+	display: none;
+}
+
+// Override Calendar apps override of the default timezone icon
+.icon-timezone {
+	background-image: var(--icon-timezone-000);
+}
+
+// Override Deck apps override of the deck icon
+.icon-deck {
+	background-image: var(--icon-deck-deck-000) !important;
+}
+
+// Override Deck apps override of the help icon
+.icon-help {
+	background-image: var(--icon-help-000);
+}
+
+// Remove shadow on icons
+.icon-shadow {
+	filter: none !important;
+}
+
+// Circle: add user
+.icon-add-user {
 	filter: invert(95%);
 }

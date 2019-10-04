@@ -21,11 +21,11 @@
 
 /* App Navigation ----------------------------------------------------------- */
 
-#app-navigation {
+#app-navigation:not(.vue) {
 
-	ul > li > a,
-	li > a,
-	ul > li > ul > li > a {
+	> ul > li > a,
+	> li > a,
+	> ul > li > ul > li > a {
 		opacity: 1;
 
 		&:hover,
@@ -92,8 +92,7 @@
 #app-sidebar {
 
 	#app-details-view .close,
-	.close,
-	.icon-clippy {
+	.close {
 		opacity: 0.7;
 	}
 
@@ -156,7 +155,7 @@
 
 /* App Settings ------------------------------------------------------------- */
 
-.settings-button {
+#app-settings-header .settings-button {
 	opacity: 1;
 
 	&:hover {
@@ -168,4 +167,23 @@
 
 .mx-datepicker .mx-input-wrapper .mx-input-append {
 	background-color: $background-dark !important;
+}
+
+/* Misc --------------------------------------------------------------------- */
+
+.delete,
+input[type="submit"].delete,
+input[type="button"].delete,
+button.delete,
+.button.delete {
+	border-color: $decoration-normal;
+	background-color: $background-negative;
+	color: $foreground-normal;
+
+	&:hover,
+	&:focus {
+		border-color: $background-negative !important;
+		background-color: $background-negative;
+		color:  $foreground-active;
+	}
 }

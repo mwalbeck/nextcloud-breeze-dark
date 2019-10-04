@@ -4,11 +4,6 @@
 		background-color: inherit;
 	}
 
-	> ul > li > .app-navigation-entry-bullet + a:hover, 
-	> ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
-		background-color: $background-active-hover !important;
-	}
-
 	.new-entity {
 		opacity: 0.7;
 
@@ -68,7 +63,7 @@
 			}
 
 			.text-muted {
-				opacity: 0.5;
+				opacity: 0.57;
 			}
 		}
 	}
@@ -79,33 +74,67 @@
 	#fullcalendar {
 		background-color: $background-dark;
 
-		th, td, thead, tbody, .fc-row {
+		th,
+		td,
+		thead,
+		tbody,
+		.fc-row {
 			border-color: $decoration-normal;
 		}
-	
-		table tbody tr td.fc-other-month {
-			background-color: $background-normal;
-			opacity: 1;
 
-			span {
-				opacity: 0.3;
+		.fc-basic-view {
+
+			.fc-today {
+				background-color: $background-active;
+				color: $foreground-active;
 			}
-		}
-		
-		.fc-today {
-			background-color: $background-active;
-			color: $foreground-active;
 
-			> .fc-day-number {
+			.fc-day-number,
+			.fc-week-number {
 				opacity: 1;
 			}
+
+			.fc-sat,
+			.fc-sun {
+
+				.fc-day-number {
+					color: $background-active;
+				}
+			}
+
+			.fc-day-top .fc-week-number {
+				background-color: $background-normal;
+				color: $foreground-normal;
+				border-right: 1px solid $decoration-normal;
+				border-bottom: 1px solid $decoration-normal;
+			}
+
+			.fc-other-month {
+				background-color: $background-normal;
+				opacity: 1;
+	
+				.fc-day-number,
+				.fc-week-number {
+					opacity: 0.57;
+				}
+			}
 		}
 
-		.fc-basic-view .fc-day-top .fc-week-number {
-			background-color: $background-normal;
-			color: $foreground-normal;
-			border-right: 1px solid $decoration-normal;
-			border-bottom: 1px solid $decoration-normal;
+		.fc-agenda-view {
+
+			.fc-divider {
+				border-color: $decoration-normal;
+				background-color: $decoration-normal;
+			}
+
+			.fc-today {
+				background-color: $background-active-hover;
+			}
+		}
+
+		.fc-axis,
+		.fc-day-header {
+			opacity: 1;
 		}
 
 		.fc-highlight {

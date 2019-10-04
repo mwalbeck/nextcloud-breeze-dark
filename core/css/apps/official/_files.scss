@@ -4,7 +4,7 @@ table td.filesize {
 	color: $foreground-inactive !important;
 }
 
-td.date, td.date > span {
+td.date > span {
 	color: $foreground-inactive !important;
 }
 
@@ -55,8 +55,4 @@ tr {
 	&.searchresult {
 		background-color: $background-active-hover;
 	}
-}
-
-#filestable.view-grid:not(.hidden) tbody tr.hidden-file td.filename .name .nametext .extension {
-	display: inline-block;
 }
