@@ -681,3 +681,8 @@ a.impersonate img.svg {
 .icon-help {
 	background-image: var(--icon-help-000);
 }
+
+// Remove shadow on icons
+.icon-shadow {
+	filter: none !important;
+}
