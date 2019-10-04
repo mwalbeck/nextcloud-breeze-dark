@@ -115,8 +115,14 @@
     .icon-checkmark,
     .icon-tag,
     .icon-add.icon-bw,
-    .icon-trash {
+    .icon-trash,
+    .icon-toggle {
         filter: invert(95%);
+    }
+
+    .action.icon-checkmark,
+    .collection.icon-checkmark {
+        filter: none;
     }
 
     #app-settings, .app-navigation-entry-menu {
