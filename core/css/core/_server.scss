@@ -261,6 +261,10 @@ div.crumb.crumbmenu a {
 	}
 }
 
+#emptycontent, .emptycontent {
+	background-color: $background-normal;
+}
+
 /* Multiselect -------------------------------------------------------------- */
 
 div.multiselect.active {

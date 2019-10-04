@@ -210,6 +210,12 @@ img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg
 	filter: invert(95%);
 }
 
+// Music App: Mini play button
+.current.playing .play-pause,
+#app-view :hover > .play-pause {
+	filter: invert(95%);
+}
+
 // Music app: Play option in file action menu in Files App
 .fileActionsMenu .action-music-play img.icon {
 	filter: invert(95%);
