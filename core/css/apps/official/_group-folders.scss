@@ -1,14 +1,29 @@
 /* Group folders ------------------------------------------------------------ */
 
-#groupfolders-wrapper #groupfolders-react-root th {
-	border-bottom-color: $decoration-normal;
-}
+#groupfolders-wrapper #groupfolders-root {
 
-.group-edit {
-	background-color: $background-normal !important;
-	border-color: $decoration-normal !important;
-}
+	th {
+		border-bottom-color: $decoration-normal;
+	}
 
-#groupfolders-react-root td .action-rename::after {
-	filter: invert(95%);
+	td .action-rename::after {
+		filter: invert(95%);
+	}
+	
+	.groups .group-edit {
+		background-color: $background-normal !important;
+		border-color: $decoration-normal !important;
+
+		div[class$="control"] {
+			border-color: $decoration-normal !important;
+		}
+	}
+
+	.acl {
+
+		div[class$="control"] {
+			background-color: $background-normal !important;
+			border-color: $decoration-normal !important;
+		}
+	}
 }

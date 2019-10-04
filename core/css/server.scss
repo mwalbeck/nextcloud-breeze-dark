@@ -1,15 +1,16 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 17.0.0-beta
-* Date 2019-09-26
+* Version: 17.0.0
+* Date 2019-10-04
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
 =============================================================================
 */
 // General and Nextcloud Core
-@import 'core/variables';
+@import 'core/colour-variables';
+@import 'core/icon-variables';
 @import 'core/icons';
 @import 'core/style';
 @import 'core/server';
@@ -29,23 +30,23 @@
 @import 'apps/official/ldap';
 @import 'apps/official/log-reader';
 @import 'apps/official/mail';
+@import 'apps/official/news';
 @import 'apps/official/notifications';
 @import 'apps/official/retention';
 @import 'apps/official/system-monitoring';
 @import 'apps/official/talk';
 @import 'apps/official/tasks';
+@import 'apps/official/text';
 // Third party
 @import 'apps/thirdparty/audio-player';
 @import 'apps/thirdparty/bookmarks';
 @import 'apps/thirdparty/circles';
 @import 'apps/thirdparty/dashboard';
-
 @import 'apps/thirdparty/flow-upload';
 @import 'apps/thirdparty/fulltextsearch';
 @import 'apps/thirdparty/files-markdown';
 @import 'apps/thirdparty/files-markdown-syntax';
 @import 'apps/thirdparty/music';
-@import 'apps/thirdparty/news';
 @import 'apps/thirdparty/ojsxc';
 @import 'apps/thirdparty/passman';
 @import 'apps/thirdparty/passwords';
@@ -53,6 +54,5 @@
 @import 'apps/thirdparty/polls';
 @import 'apps/thirdparty/quicknotes';
 @import 'apps/thirdparty/radio';
-@import 'apps/thirdparty/sso-saml';
 @import 'apps/thirdparty/user-account-deletion';
 @import 'apps/thirdparty/weather';

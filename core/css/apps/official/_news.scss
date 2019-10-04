@@ -2,8 +2,16 @@
 
 .app-news #app-navigation {
 	
-	.add-new .heading:hover {
-		background-color: $background-active-hover;
+	.add-new .heading {
+	
+		&:hover {
+			background-color: $background-active-hover;
+		}
+
+		button:active,
+		button:focus {
+			background-color: transparent;
+		}
 	}
 
 	#app-settings-content a {
@@ -17,17 +25,6 @@
 		background-image: none;
 	}
 
-	.heading a {
-		color: $foreground-normal;
-	}
-
-	.subtitle, .author {
-
-		a {
-			color: $foreground-link;
-		}
-	}
-
     .body {
 		font-size: 15px;
 
@@ -36,25 +33,12 @@
         }
 
         blockquote {
-            border-color: $decoration-active;
+            border-color: $background-active-alternate;
         }
 
         h1, h2, h3 {
             color: $foreground-active;
         }
-	}
-
-	// Styling for compact view
-	.compact {
-	
-		// Heading styling
-		.utils .title h1 a {
-			color: $foreground-active;
-		}
-	
-		.read .utils .title h1 a {
-			color: $foreground-normal;
-		}
 	}
 }
 

@@ -102,6 +102,15 @@ div.crumb.crumbmenu a {
 	border-bottom-color: $decoration-normal;
 }
 
+.action-item__menu {
+	filter: none !important;
+	border: 1px solid $decoration-normal;
+
+	.action-item__menu_arrow {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
 /* Info colours ------------------------------------------------------------- */
 
 .msg {
@@ -252,6 +261,10 @@ div.crumb.crumbmenu a {
 	}
 }
 
+#emptycontent, .emptycontent {
+	background-color: $background-normal;
+}
+
 /* Multiselect -------------------------------------------------------------- */
 
 div.multiselect.active {
@@ -296,10 +309,6 @@ ul.multiselectoptions {
 
 #select2-drop, .select2-drop {
 	box-shadow: none;
-
-	.select2-search, .select2-input {
-		background-color: $background-dark !important;
-	}
 
 	&.select2-drop-above.select2-drop-active {
 		border-color: $decoration-normal;
@@ -510,20 +519,6 @@ ul.multiselectoptions {
 	}
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	border-color: $decoration-normal !important;
-	background: $background-normal !important;
-	color: $foreground-normal !important;
-
-	a,
-	a:link,
-	a:visited {
-		color: $foreground-normal;
-	}
-}
-
 .ui-button {
 	background-color: $background-normal !important;
 	color: $foreground-normal !important;
@@ -553,7 +548,8 @@ ul.multiselectoptions {
 
 /* Tooltips ----------------------------------------------------------------- */
 
-.tooltip {
+.tooltip,
+.vue-tooltip {
 	filter: none !important;
 
 	&[x-placement^="right"],
@@ -594,9 +590,9 @@ ul.multiselectoptions {
 	border: none;
 }
 
-// Fix for tooltip arrow not being aligned in contacts dropdown
-.contact .tooltip .tooltip-arrow {
-	right: -4px;
+.menububble {
+	box-shadow: none !important;
+	border: 1px solid $decoration-normal;
 }
 
 /* Contacts menu ------------------------------------------------------------ */
