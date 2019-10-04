@@ -247,4 +247,12 @@ $icon-text-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQi
     --icon-text-h4-000: #{$icon-h4} !important;
     --icon-text-h5-000: #{$icon-h5} !important;
     --icon-text-h6-000: #{$icon-h6} !important;
+
+    --icon-mail-inbox-000: #{$icon-home} !important;
+    --icon-mail-star-000: #{$icon-star} !important;
+    --icon-mail-drafts-000: #{$icon-rename} !important;
+    --icon-mail-sent-000: #{$icon-checkmark} !important;
+    --icon-mail-trash-000: #{$icon-delete} !important;
+    --icon-mail-junk-000: #{$icon-error} !important;
+    --icon-mail-archive-000: #{$icon-archive} !important;
 }
