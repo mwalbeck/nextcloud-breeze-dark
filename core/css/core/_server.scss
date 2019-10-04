@@ -515,19 +515,19 @@ ul.multiselectoptions {
 	}
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	border-color: $decoration-normal !important;
-	background: $background-normal !important;
-	color: $foreground-normal !important;
+// .ui-state-default,
+// .ui-widget-content .ui-state-default,
+// .ui-widget-header .ui-state-default {
+// 	border-color: $decoration-normal !important;
+// 	background: $background-normal !important;
+// 	color: $foreground-normal !important;
 
-	a,
-	a:link,
-	a:visited {
-		color: $foreground-normal;
-	}
-}
+// 	a,
+// 	a:link,
+// 	a:visited {
+// 		color: $foreground-normal;
+// 	}
+// }
 
 .ui-button {
 	background-color: $background-normal !important;
