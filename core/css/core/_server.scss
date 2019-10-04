@@ -102,6 +102,15 @@ div.crumb.crumbmenu a {
 	border-bottom-color: $decoration-normal;
 }
 
+.action-item__menu {
+	filter: none !important;
+	border: 1px solid $decoration-normal;
+
+	.action-item__menu_arrow {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
 /* Info colours ------------------------------------------------------------- */
 
 .msg {
