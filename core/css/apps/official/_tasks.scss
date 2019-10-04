@@ -2,10 +2,6 @@
 
 .app-tasks #app-navigation .app-navigation-entry-edit input.action {
     background-color: $background-dark;
-
-    &:active, &:focus {
-        background-color: $background-active;
-    }
 }
 
 .app-tasks #app-content {
@@ -16,7 +12,6 @@
 
     .categories-list span {
         background-color: $background-normal;
-        color: $foreground-normal;
     }
 
     .task-body {
@@ -34,22 +29,14 @@
             color: $foreground-negative;
         }
 
-        .percentbar {
-            background-color: $background-active-hover;
-
-            .percentdone {
-                background-color: $background-active-alternate !important;
-            }
+        .percentdone {
+            background-color: $background-active-alternate !important;
         }
     }
 
     .task-list .loadmore span {
         color: $foreground-inactive;
         background-color: $background-normal;
-
-        &:hover {
-            color: $foreground-normal;
-        }
     }
 }
 
@@ -59,7 +46,7 @@
         background-color: $background-active;
 
         .expandable-container {
-            background: $background-dark;
+            background: $background-normal;
             border-color: $decoration-normal;
         }
     }
@@ -67,29 +54,14 @@
     .body .section {
         border-bottom: 1px dashed $decoration-normal;
 
-        input,
-        .note {
-            background-color: $background-dark;
-        }
-
-        &.detail-categories .select2-container-multi .select2-choices .select2-search-choice {
-            color: $foreground-normal;
-            background-color: $background-normal;
-            border-color: $decoration-normal;
-        }
-
         .detail-categories-container .multiselect.multiselect-vue .multiselect__tag,
         .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
             background-color: $background-normal;
         }
     }
 
-    .title .reactive:hover .detail-checkbox:not(.disabled) {
+    .title .detail-checkbox label:hover::before {
         border-color: $background-active-alternate;
-    }
-
-    .reactive:hover .detail-checkbox:not(.disabled) {
-        border-color: $decoration-active;
     }
 
     .footer {
