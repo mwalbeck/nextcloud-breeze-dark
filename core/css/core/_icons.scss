@@ -7,48 +7,6 @@
 // 	background-image: url('../img/actions/password.svg?v=1');
 // }
 
-// /* Auth --------------------------------------------------------------------- */
-
-// .icon-category-auth {
-// 	background-image: url('../img/categories/auth.svg')
-// }
-
-// /* Error -------------------------------------------------------------------- */
-
-// .icon-junk,
-// .icon-error {
-// 	background-image: url('../img/actions/error.svg');
-// }
-
-// /* Checkmark ---------------------------------------------------------------- */
-
-// .icon-checkmark,
-// .icon-sent,
-// .icon-category-enabled,
-// .multiselect.multiselect-vue .multiselect__content-wrapper li > span::before,
-// #two-factor-auth .multiselect.multiselect--above .multiselect__content-wrapper li > span::before {
-// 	background-image: url('../img/actions/checkmark.svg?v=1') !important;
-// }
-
-// /* History ------------------------------------------------------------------ */
-
-// .icon-history,
-// #app-navigation .icon-updatemode-default {
-// 	background-image: url('../img/actions/history.svg?v=1');
-// }
-
-// #app-navigation .icon-updatemode-unread {
-// 	background-image: url('../img/actions/history.svg');
-// 	opacity: 0.25;
-// }
-
-// /* Link/World --------------------------------------------------------------- */
-
-// .icon-link,
-// .icon-world {
-// 	background-image: url('../img/places/link.svg?v=1');
-// }
-
 // /* Settings ----------------------------------------------------------------- */
 
 // #app-navigation .music-nav-settings a,
@@ -67,28 +25,6 @@
 // 	background-image: url('../img/actions/more.svg?v=1');
 // }
 
-// /* Triangle-S --------------------------------------------------------------- */
-
-// .icon-triangle-s,
-// #app-navigation:not(.vue) .collapsible::before,
-// .sort-contacts .multiselect .multiselect__single {
-// 	background-image: url('../img/actions/triangle-s.svg?v=1');
-// }
-
-// select {
-// 	background: url('../img/actions/triangle-s.svg') no-repeat right 8px center;
-// }
-
-// div.select2-container a.select2-choice .select2-arrow b {
-// 	background: url('../img/actions/triangle-s.svg') no-repeat center !important;
-// }
-
-// /* Contacts ----------------------------------------------------------------- */
-
-// .icon-contacts-dark, .icon-contacts {
-// 	background-image: url('../img/places/contacts.svg?v=1');
-// }
-
 // /* Help --------------------------------------------------------------------- */
 
 // .icon-help,
@@ -96,34 +32,7 @@
 // 	background-image: url('../img/help.svg');
 // }
 
-// /* Confirm ------------------------------------------------------------------ */
-
-// .icon-confirm,
-// input[type="text"] + .icon-confirm:disabled, 
-// input[type="password"] + .icon-confirm:disabled, 
-// input[type="email"] + .icon-confirm:disabled {
-// 	background-image: url('../img/actions/confirm.svg?v=2');
-// }
-
-// /* Search ------------------------------------------------------------------- */
-
-// div.select2-drop .select2-search input {
-// 	background: url('../img/actions/search.svg') no-repeat right center !important;
-// 	background-origin: content-box !important;
-// }
-
-// /* Caret -------------------------------------------------------------------- */
-
-// .icon-caret-dark {
-// 	background-image: url('../img/actions/caret.svg?v=1');
-// }
-
 // /* Close -------------------------------------------------------------------- */
-
-// .icon-close,
-// .icon-category-disabled {
-// 	background-image: url('../img/actions/close.svg?v=1');
-// }
 
 // .oc-dialog-close {
 // 	background: url('../img/actions/close.svg') no-repeat center !important;
@@ -136,102 +45,11 @@
 // 	background-image: url('../img/actions/close-ns.svg')
 // }
 
-// /* View Close --------------------------------------------------------------- */
-
-// .icon-view-close {
-// 	background-image: url('../img/actions/view-close.svg');
-// }
-
 // /* Menu --------------------------------------------------------------------- */
 
 // .icon-menu,
 // #jsxc_menu > span {
 // 	background-image: url('../img/actions/menu.svg?v=1');
-// }
-
-// /* User --------------------------------------------------------------------- */
-
-// .icon-user,
-// .nav-icon-personal-settings,
-// .icon-category-installed {
-// 	background-image: url('../img/actions/user.svg?v=1');
-// }
-
-// /* User admin --------------------------------------------------------------- */
-
-// .icon-user-admin {
-// 	background-image: url('../img/actions/user-admin.svg?v=1');
-// }
-
-// /* Right Arrow -------------------------------------------------------------- */
-
-// .icon-view-next {
-// 	background-image: url('../img/actions/arrow-right.svg');
-// }
-
-// /* Left Arrow _-------------------------------------------------------------- */
-
-// .icon-view-previous {
-// 	background-image: url('../img/actions/arrow-left.svg');
-// }
-
-// /* Right Arrow Big ---------------------------------------------------------- */
-
-// .glyphicon-chevron-right,
-// .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-e {
-// 	background: url("../img/rightarrow.svg") center center no-repeat;
-// }
-
-// /* Left Arrow Big--------------------------------------------------------------- */
-
-// .glyphicon-chevron-left,
-// .ui-widget.ui-datepicker .ui-widget-header .ui-icon.ui-icon-circle-triangle-w {
-// 	background: url("../img/leftarrow.svg") center center no-repeat;
-// }
-
-// /* Change ------------------------------------------------------------------- */
-
-// .nav-icon-clientsbox {
-// 	background-image: url('../img/change.svg?v=1');
-// }
-
-// /* Edit --------------------------------------------------------------------- */
-
-// .icon-edit,
-// .icon-description {
-// 	background-image: url('../img/actions/edit.svg?v=1')
-// }
-
-// /* Mail --------------------------------------------------------------------- */
-
-// .icon-mail,
-// .icon-social-email {
-// 	background-image: url('../img/email.svg');
-// }
-
-// /* Calendar ----------------------------------------------------------------- */
-
-// .icon-badge,
-// .icon-calendar-dark {
-// 	background-image: url('../img/places/calendar.svg');
-// }
-
-// /* Play --------------------------------------------------------------------- */
-
-// .icon-play {
-// 	background-image: url('../img/actions/play.svg');
-// }
-
-// /* Pause --------------------------------------------------------------------- */
-
-// .icon-pause {
-// 	background-image: url('../img/actions/pause.svg');
-// }
-
-// /* Folder ------------------------------------------------------------------- */
-
-// .icon-folder, .icon-filetype-folder {
-// 	background-image: url('/core/img/filetypes/folder.svg?v=16');
 // }
 
 // // Music app
@@ -245,141 +63,16 @@
 // 	}
 // }
 
-// /* User Plus ---------------------------------------------------------------- */
-
-// .icon-add-user {
-// 	background-image: url('../img/actions/user-plus.svg') !important;
-// }
-
-// /* Pause Big ---------------------------------------------------------------- */
-
-// // Music app
-// .current:not(.playing) .play-pause,
-// #app-view .current.playing div:hover .play-pause,
-// #app-navigation .current.playing :hover .play-pause {
-// 	background-image: url('../img/actions/pause-big.svg');
-// }
-
-// /* Fullscreen --------------------------------------------------------------- */
-
-// .icon-fullscreen {
-// 	background-image: url('../img/actions/fullscreen.svg');
-// }
-
-// /* Address ------------------------------------------------------------------ */
-
-// .icon-address {
-// 	background-image: url('../img/actions/address.svg');
-// }
-
-// /* Notifications ------------------------------------------------------------ */
-
-// .notification-container .emptycontent .icon-notifications-dark {
-// 	background-image: url('../img/notifications/notifications.svg');
-// }
-
 // /* Clock -------------------------------------------------------------------- */
 
 // .icon-clock {
 // 	background-image: url('../img/widgets/clock.svg');
 // }
 
-// /* Disk Space --------------------------------------------------------------- */
-
-// .icon-disk-space {
-// 	background-image: url('../img/widgets/diskspace.svg');
-// }
-
 // /* Fortunes ----------------------------------------------------------------- */
 
 // .icon-fortunes {
 // 	background-image: url('../img/widgets/fortunes.svg');
-// }
-
-// /* Freedom ------------------------------------------------------------------ */
-
-// .icon-freedom {
-// 	background-image: url('../img/privacy/freedom.svg');
-// }
-
-// /* Picture ------------------------------------------------------------------ */
-
-// .icon-picture,
-// .icon-gallery {
-// 	background-image: url('../img/places/picture.svg');
-// }
-
-// /* Qr Code ------------------------------------------------------------------ */
-
-// .icon-qrcode {
-// 	background-image: url('../img/actions/qrcode.svg');
-// }
-
-// /* Address book ------------------------------------------------------------- */
-
-// .icon-address-book {
-// 	background-image: url('../img/actions/address-book.svg');
-// }
-
-// /* Group -------------------------------------------------------------------- */
-
-// .icon-group {
-// 	background-image: url('../img/users.svg');
-// }
-
-// /* Social ------------------------------------------------------------------- */
-
-// .icon-social {
-// 	background-image: url('../img/actions/social.svg');
-// }
-
-// /* Up ----------------------------------------------------------------------- */
-
-// .icon-up {
-// 	background-image: url('../img/actions/up.svg');
-// }
-
-// /* Expired ------------------------------------------------------------------ */
-
-// .icon-expired {
-// 	background-image: url("../img/actions/expired.svg");
-// }
-
-// /* Activity App ------------------------------------------------------------- */
-
-// .icon-activity,
-// .nav-icon-activity {
-// 	background-image: url('../img/activity.svg?v=1');
-// }
-
-// /* News App ----------------------------------------------------------------- */
-
-// // Unpinned
-// .icon-unpinned,
-// #app-navigation .icon-unpinned {
-// 	background-image: url('../img/actions/unpinned.svg');
-// }
-
-// // Pinned
-// .icon-pinned,
-// #app-navigation .icon-pinned {
-// 	background-image: url('../img/actions/pinned.svg');
-// }
-
-// // Full text enabled
-// .icon-full-text-enabled {
-// 	background-image: url('../img/actions/fulltext.svg');
-// }
-
-// // Full text disabled
-// .icon-full-text-disabled {
-// 	background-image: url('../img/actions/nonfulltext.svg');
-// }
-
-// /* Annoucement Center App --------------------------------------------------- */
-
-// .icon-announcement {
-// 	background-image: url('../img/places/announcementcenter.svg');
 // }
 
 // /* Audio player App --------------------------------------------------------- */
@@ -415,26 +108,10 @@
 // 	background-image: none, url('../img/bar-ui/volume.svg');
 // }
 
-// /* Mail App ----------------------------------------------------------------- */
-
-// .icon-reply {
-// 	background-image: url('../img/mail/reply.svg');
-// }
-
-// .icon-archive {
-// 	background-image: url('../img/mail/archive.svg');
-// }
-
 // /* Music App ---------------------------------------------------------------- */
 
 // .nav-icon-music {
 // 	background-image: url('../img/places/music.svg')
-// }
-
-// /* Notes App ---------------------------------------------------------------- */
-
-// .nav-icon-emptyfolder {
-// 	background-image: url('../img/notes/folder-empty.svg');
 // }
 
 // /* Social Sharing App ------------------------------------------------------- */
@@ -457,17 +134,6 @@
 // .social-diaspora,
 // .icon-social-diaspora {
 // 	background-image: url('../img/social/diaspora.svg');
-// }
-
-// /* Two Factor Apps ---------------------------------------------------------- */
-
-// .nav-icon-totp-second-factor-auth {
-// 	background-image: url('../img/twofactor-totp.svg?v=1');
-// }
-
-// .icon-u2f-device,
-// .nav-icon-u2f-second-factor-auth {
-// 	background-image: url('../img/twofactor-u2f.svg?v=1');
 // }
 
 // /* FullTextSearch ----------------------------------------------------------- */
