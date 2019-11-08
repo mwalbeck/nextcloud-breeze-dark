@@ -3390,7 +3390,7 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-image: url("/core/css/../img/actions/delete.svg?v=1");
 }
 .app-quicknotes .quicknote .icon-delete:hover, .app-quicknotes .quicknote .icon-delete:focus {
-  background-image: url("/core/css/../img/actions/delete-hover.svg?v=1");
+  background-image: url("../img/actions/delete-hover.svg?v=1");
 }
 
 /* Radio -------------------------------------------------------------------- */
