@@ -1,93 +1,24 @@
-/* Bookmarks ---------------------------------------------------------------- */
-
-.app-bookmarks #app-navigation {
-    
-    .add-bookmark .form input {
-        border: none;
-        border-top: 1px solid $decoration-normal;
-    }
-
-    .folders-item.droptarget-folder > a,
-    .folders-item.droptarget-bookmark > a {
-        background-color: $background-normal;
-        border-color: $decoration-active;
-
-        &:hover {
-            background-color: $background-active-hover;
-        }
-    }
-}
+// /* Bookmarks ---------------------------------------------------------------- */
 
 .app-bookmarks #app-content {
-
-    .bulk-actions {
-        box-shadow: none;
+    
+    .folder--gridview,
+    .bookmark--gridview,
+    .bookmarkslist--gridview > .create-folder,
+    .bookmarkslist--gridview > .create-bookmark {
         background: $background-normal;
-        border-bottom: 1px solid $decoration-normal;
+        box-shadow: none;
     }
 
-    .bookmark-card {
+    .bookmark--gridview .bookmark__checkbox {
         background-color: $background-normal;
-        border-color: $decoration-normal;
 
-        .tag-nav-item {
-            background-color: $background-normal;
-        }
-
-        .panel {
-            background-color: $background-dark-opacity;
-            border-top: 1px solid $decoration-normal;
-        }
-
-        h2 {
-            text-shadow: none;
-        }
-
-        .select-mode-checkbox + label {
-            box-shadow: none;
-            background: $background-normal;
+        input.checkbox + label::before {
+            margin: 0 3px 3px 3px;
         }
     }
 
-    .list-view .bookmark-card {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-
-        &:nth-of-type(2) {
-            border-top: 1px solid $decoration-normal;
-        }
-
-        .panel {
-            border: none;
-        }
-    }
-
-    .bookmark-detail {
-        background: $background-normal;
-        color: $foreground-normal;
-        box-shadow: none;
-        border-left: 1px solid $decoration-normal;
-
-        > .close {
-            background-color: unset;
-        }
-
-        h2 {
-            opacity: 0.7;
-        }
-
-        h3 {
-            border-bottom-color: $decoration-normal;
-        }
-
-        .status {
-            opacity: 0.7;
-            
-            .message-saving,
-            .message-saved {
-                background-color: $background-positive;
-            }
-        }
+    .bookmarkslist > :first-child:not(.bookmarkslist__loading):not(.bookmarkslist__empty).active {
+        border-top-color: $decoration-active;
     }
 }
