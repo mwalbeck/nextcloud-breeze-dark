@@ -6,6 +6,13 @@
 	p.info {
 		color: $foreground-inactive;
 	}
+
+	form .grouptop input,
+	form .groupbottom input {
+		background: $background-dark;
+		color: $foreground-normal;
+		box-shadow: none !important;
+	}
 }
 
 // Register button

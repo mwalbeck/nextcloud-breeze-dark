@@ -21,12 +21,20 @@
 	background-image: var(--icon-fulltext-000) !important;
 }
 
+// Circles
+// Circle in files app navbar
+.nav-icon-circlesfilter {
+	background-image: var(--icon-circles-000);
+}
+
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 // Two Factor App Icon in Personal Settings
 
-img.two-factor-provider-settings-icon[src$="/apps/twofactor_totp/img/app-dark.svg"],
-img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg"] {
+img.two-factor-provider-settings-icon[src$="twofactor_totp/img/app-dark.svg"],
+img.two-factor-provider-settings-icon[src$="twofactor_u2f/img/app-dark.svg"],
+.icon-u2f-device {
 	filter: invert(95%);
 }
 
