@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 17.0.0
-* Date 2019-10-04
+* Version: 17.0.1
+* Date 2019-11-17
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -129,6 +129,8 @@ input, label {
   --icon-caret-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Ik00IDZsNCA0IDQtMy45OTR6IiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+Cg==) !important;
   --icon-nonfulltext-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIzNC4xMzMiIHdpZHRoPSIzNC4xMzMiIHZlcnNpb249IjEuMCIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KIDxwYXRoIGQ9Im0zLjIgMi4xMzMzYy0wLjU5MDkgMC0xLjA2NjcgMC40NzU4LTEuMDY2NyAxLjA2Njd2Mi4xMzMzYzAgMC41OTEgMC40NzU4IDEuMDY2NyAxLjA2NjcgMS4wNjY3aDI3LjczM2MwLjU5MSAwIDEuMDY3LTAuNDc1NyAxLjA2Ny0xLjA2Njd2LTIuMTMzM2MwLTAuNTkwOS0wLjQ3Ni0xLjA2NjctMS4wNjctMS4wNjY3eiIgc3Ryb2tlLXdpZHRoPSIxLjA2NjciIGZpbGw9IiNmMmYyZjIiLz4KIDxwYXRoIGQ9Im0zLjIgMTAuNjY3Yy0wLjU5MDkzIDAtMS4wNjY3IDAuNDc1NzMtMS4wNjY3IDEuMDY2N3YyLjEzMzNjMCAwLjU5MDkzIDAuNDc1NzMgMS4wNjY3IDEuMDY2NyAxLjA2NjdoMTkuMmMwLjU5MDkzIDAgMS4wNjY3LTAuNDc1NzMgMS4wNjY3LTEuMDY2N3YtMi4xMzMzYzAtMC41OTA5My0wLjQ3NTczLTEuMDY2Ny0xLjA2NjctMS4wNjY3eiIgc3Ryb2tlLXdpZHRoPSIxLjA2NjciIGZpbGw9IiNmMmYyZjIiLz4KPC9zdmc+Cg==) !important;
   --icon-fulltext-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIzNC4xMzMiIHdpZHRoPSIzNC4xMzMiIHZlcnNpb249IjEuMCIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4KIDxwYXRoIGQ9Im0zLjIgMi4xMzMzYy0wLjU5MDkgMC0xLjA2NjcgMC40NzU4LTEuMDY2NyAxLjA2Njd2Mi4xMzMzYzAgMC41OTEgMC40NzU4IDEuMDY2NyAxLjA2NjcgMS4wNjY3aDI3LjczM2MwLjU5MSAwIDEuMDY3LTAuNDc1NyAxLjA2Ny0xLjA2Njd2LTIuMTMzM2MwLTAuNTkwOS0wLjQ3Ni0xLjA2NjctMS4wNjctMS4wNjY3em0wIDguNTMzM2MtMC41OTA5MyAwLTEuMDY2NyAwLjQ3NTczLTEuMDY2NyAxLjA2Njd2Mi4xMzMzYzAgMC41OTA5MyAwLjQ3NTczIDEuMDY2NyAxLjA2NjcgMS4wNjY3aDE5LjJjMC41OTA5MyAwIDEuMDY2Ny0wLjQ3NTczIDEuMDY2Ny0xLjA2Njd2LTIuMTMzM2MwLTAuNTkwOTMtMC40NzU3My0xLjA2NjctMS4wNjY3LTEuMDY2N3ptMCA4LjUzM2MtMC41OTA5MyAwLTEuMDY2NyAwLjQ3NTczLTEuMDY2NyAxLjA2Njd2Mi4xMzNjMCAwLjU5MDkzIDAuNDc1NzMgMS4wNjY3IDEuMDY2NyAxLjA2NjdoMjUuNmMwLjU5MDkzIDAgMS4wNjY3LTAuNDc1NzMgMS4wNjY3LTEuMDY2N3YtMi4xMzNjMC0wLjU5MS0wLjQ3Ni0xLjA2Ny0xLjA2Ny0xLjA2N3ptMCA4LjUzMzNjLTAuNTkwOTMgMC0xLjA2NjcgMC40NzU3My0xLjA2NjcgMS4wNjY3djIuMTMzM2MwIDAuNTkxIDAuNDc1OCAxLjA2NyAxLjA2NjcgMS4wNjdoMTIuOGMwLjU5MDkzIDAgMS4wNjY3LTAuNDc1NzMgMS4wNjY3LTEuMDY2N3YtMi4xMzNjMC0wLjU5MDkzLTAuNDc1NzMtMS4wNjY3LTEuMDY2Ny0xLjA2Njd6IiBzdHJva2Utd2lkdGg9IjEuMDY2NyIgZmlsbD0iI2YyZjJmMiIvPgo8L3N2Zz4K) !important;
+  --icon-disabled-user-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im04IDFjLTEuNzUgMC0zIDEuNDMwOC0zIDIuODAwOCAwIDEuNCAwLjEwMDc4IDIuNCAwLjgwMDc4IDMuNSAwLjIgMC4yODYgMC40OTkyMiAwLjM0OTYxIDAuNjk5MjIgMC41OTk2MSAwLjAwMzkyNDggMC4wMTQ1MzYgMC4wMDU4OTY4IDAuMDI4NDY1IDAuMDA5NzY1NiAwLjA0Mjk2OWw0LjQ1NTEtNC40NTUxYy0wLjE3NDcxLTEuNDMxMS0xLjUwMDktMi40ODgzLTIuOTY0OC0yLjQ4ODN6bTEuNTQxIDguNDU1MS01LjMyMjMgNS4zMjIzYzEuMTcyOCAwLjE5Mjc3IDIuNjAxOSAwLjIyMjY2IDMuNzgxMiAwLjIyMjY2IDIuNSAwIDYuMTYzLTAuMDk5MjE5IDYtMS42OTkyLTAuMjE1LTItMC4yMy0xLjcxMDgtMS0yLjMwMDgtMS4wNTc1LTAuNjI4NzYtMi4zMzkyLTEuMTIyNi0zLjQ1OS0xLjU0NDl6bS01LjY0ODQgMS4xMDU1Yy0wLjI5ODA5IDAuMTQ2NjItMC42MDc1NyAwLjI4NTQtMC44OTI1OCAwLjQzOTQ1LTAuNjY3NjQgMC40NzEyNy0wLjc3MjkyIDAuNDM0NTItMC44OTA2MiAxLjM0MzhsMS43ODMyLTEuNzgzMnoiIGZpbGw9IiNmMmYyZjIiLz48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSgtNDUpIiB4PSItOC45OTY4IiB5PSIxMS4xMTgiIHdpZHRoPSIxNi45OTkiIGhlaWdodD0iMS40MTY2IiBzdHlsZT0icGFpbnQtb3JkZXI6bm9ybWFsIiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+Cg==) !important;
+  --icon-disabled-users-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im05IDFjLTEuNzQ2IDAtMyAxLjQzMDgtMyAyLjgwMDggMCAxLjQgMC4xMDA3OCAyLjQgMC44MDA3OCAzLjUgMC4wNjY0MjEgMC4wODU5OTEgMC4xMzYyNyAwLjE0ODU4IDAuMjA3MDMgMC4yMDUwOGw0Ljc2MTctNC43NjE3Yy0wLjQ2MzA1LTEuMDM3MS0xLjU3MzMtMS43NDQxLTIuNzY5NS0xLjc0NDF6bS00Ljk4MDUgNGMtMC44NyAwLTEuNSAwLjcyMDM5LTEuNSAxLjQwMDRoLTAuMDE5NTMxYzAgMC43IDAuMDUwMzkxIDEuMiAwLjQwMDM5IDEuNzUgMC4xIDAuMTUgMC4yNDE2MSAwLjE3MzgzIDAuMzQ5NjEgMC4yOTg4MyAwLjA2NzQgMC4yNSAwLjEyMTc4IDAuNSAwLjA1MDc4MSAwLjc1LTAuNjQgMC4yMjMtMS4yNDQ4IDAuNTAwNzgtMS44MDA4IDAuODAwNzgtMC40MiAwLjMtMC4yMzMgMC4xODIzOS0wLjUgMS4xNTA0LTAuMDk3NjMxIDAuMzkzNjcgMC43NjE5OCAwLjYxNDkzIDEuNjMwOSAwLjczMjQybDIuNTEzNy0yLjUxMzdjLTAuMTQyMzgtMC4wNTY3Mi0wLjI4OTYxLTAuMTE3MjktMC40MjM4My0wLjE2OTkyLTAuMDctMC4yOC0wLjAyMTE3Mi0wLjQ4NyAwLjA0ODgyOC0wLjc1IDAuMTItMC4xMjUgMC4yMzEzMy0wLjE3ODgzIDAuMzYxMzMtMC4yOTg4MyAwLjM3LTAuNDUgMC4zODg2Ny0xLjIxIDAuMzg4NjctMS43NSAwLTAuOC0wLjcyLTEuNDAwNC0xLjUtMS40MDA0em02LjMzNTkgMy41ODAxLTUuODUxNiA1Ljg1MTZjMS40MzUxIDAuNDAxMSAzLjUwNjIgMC41NjgzNiA0LjQ5NjEgMC41NjgzNiAyLjQzIDAgNi4zMTM1LTAuNDU1MjIgNS45ODA1LTEuNjk5Mi0wLjUyLTEuOTQtMC4yMDg0Ny0xLjcxMDgtMC45ODA0Ny0yLjMwMDgtMS4wOS0wLjY1NC0yLjQ1MTYtMS4xNjY2LTMuNTk5Ni0xLjU5OTYtMC4wODExNS0wLjMwMTM0LTAuMDc5NTQ4LTAuNTYxOTQtMC4wNDQ5MjItMC44MjAzMXoiIGZpbGw9IiNmMmYyZjIiLz48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSgtNDUpIiB4PSItOC45NTU3IiB5PSIxMS4wNzciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxLjUiIHN0eWxlPSJwYWludC1vcmRlcjpub3JtYWwiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4K) !important;
   --icon-files-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Im0xLjUgMmMtMC4yNSAwLTAuNSAwLjI1LTAuNSAwLjV2MTFjMCAwLjI2IDAuMjQgMC41IDAuNSAwLjVoMTNjMC4yNiAwIDAuNS0wLjI0MSAwLjUtMC41di05YzAtMC4yNS0wLjI1LTAuNS0wLjUtMC41aC02LjVsLTItMnoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4K) !important;
   --icon-files-folder-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Im0xLjUgMmMtMC4yNSAwLTAuNSAwLjI1LTAuNSAwLjV2MTFjMCAwLjI2IDAuMjQgMC41IDAuNSAwLjVoMTNjMC4yNiAwIDAuNS0wLjI0MSAwLjUtMC41di05YzAtMC4yNS0wLjI1LTAuNS0wLjUtMC41aC02LjVsLTItMnoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4K) !important;
   --icon-files-recent-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAxNiAxNiIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiPjxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNmMmYyZjIiIGN5PSI4IiBjeD0iOCIgcj0iNyIgZmlsbD0ibm9uZSIvPjxwYXRoIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Im04IDMuNS0xIDUgMy41IDItMi0yeiIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+Cg==) !important;
@@ -180,6 +182,7 @@ input, label {
   --icon-mail-trash-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Ik02LjUgMUw2IDJIM2MtLjU1NCAwLTEgLjQ0Ni0xIDF2MWgxMlYzYzAtLjU1NC0uNDQ2LTEtMS0xaC0zbC0uNS0xek0zIDVsLjg3NSA5Yy4wNi41NS41NzMgMSAxLjEyNSAxaDZjLjU1MiAwIDEuMDY0LS40NSAxLjEyNS0xTDEzIDV6IiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+Cg==) !important;
   --icon-mail-junk-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Ik01LjUxNiAyTDIgNS41MTZ2NC45NjhMNS41MTYgMTRoNC45NjhMMTQgMTAuNDg0VjUuNTE2TDEwLjQ4NCAySDUuNTE2ek03IDRoMnY1SDdWNHptMCA2aDJ2Mkg3di0yeiIgZmlsbD0iI2YyZjJmMiIvPjwvc3ZnPgo=) !important;
   --icon-mail-archive-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIC0xMDM2LjM2MikiPjxwYXRoIGQ9Ik0xLjkzIDEwNDEuMjk2Yy0uMTg1IDAtLjMzNi4xMzgtLjMzNi4zMXY5Ljg0MmMwIC4xNzIuMTUuMzEzLjMzNi4zMTNoMTIuNTE3Yy4xODUgMCAuMzMzLS4xNC4zMzMtLjMxM3YtOS44NDJjMC0uMTcyLS4xNDgtLjMxLS4zMzMtLjMxSDEuOTN6bTQuMTI0IDEuNTA3aDQuMjIzYy4zOSAwIC43MDUuMzE0LjcwNS43MDR2LjQzYzAgLjM5LS4zMTUuNzA1LS43MDUuNzA1SDYuMDU0YS43MDMuNzAzIDAgMCAxLS43MDUtLjcwNXYtLjQzYzAtLjM5LjMxNC0uNzA0LjcwNS0uNzA0eiIgZmlsbD0iI2YyZjJmMiIvPjxyZWN0IHdpZHRoPSIxNS43NDIiIGhlaWdodD0iMi4yOTYiIHg9Ii4xMzYiIHk9IjEwMzcuNTQzIiByeT0iLjQyIiBmaWxsPSIjZjJmMmYyIi8+PC9nPjwvc3ZnPg==) !important;
+  --icon-circles-000: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NyA1NyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBkPSJNNy4xIDI4LjVBMjEuNCAyMS40IDAgMCAxIDI4LjUgNy4xbTEwLjcgNDBBMjEuNCAyMS40IDAgMCAxIDEwIDM5TTM5LjIgMTBBMjEuNCAyMS40IDAgMCAxIDQ3IDM5LjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2YyZjJmMiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSIyOC41IiBjeT0iNy4xIiByPSI2LjUiIGZpbGw9IiNmMmYyZjIiLz48Y2lyY2xlIGN4PSIzOS4yIiBjeT0iLTEwIiByPSI2LjUiIHRyYW5zZm9ybT0icm90YXRlKDkwKSIgZmlsbD0iI2YyZjJmMiIvPjxjaXJjbGUgY3g9IjM5LjIiIGN5PSItNDciIHI9IjYuNSIgdHJhbnNmb3JtPSJyb3RhdGUoOTApIiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+) !important;
 }
 
 /* Apps that haven't moved to variables for icons ---------------------------- */
@@ -203,9 +206,14 @@ input, label {
   background-image: var(--icon-fulltext-000) !important;
 }
 
+.nav-icon-circlesfilter {
+  background-image: var(--icon-circles-000);
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
-img.two-factor-provider-settings-icon[src$="/apps/twofactor_totp/img/app-dark.svg"],
-img.two-factor-provider-settings-icon[src$="/apps/twofactor_u2f/img/app-dark.svg"] {
+img.two-factor-provider-settings-icon[src$="twofactor_totp/img/app-dark.svg"],
+img.two-factor-provider-settings-icon[src$="twofactor_u2f/img/app-dark.svg"],
+.icon-u2f-device {
   filter: invert(95%);
 }
 
@@ -598,6 +606,12 @@ div[contenteditable=false] {
 }
 #body-login p.info {
   color: #bdc3c7;
+}
+#body-login form .grouptop input,
+#body-login form .groupbottom input {
+  background: #232629;
+  color: #eff0f1;
+  box-shadow: none !important;
 }
 
 #alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
@@ -1661,6 +1675,14 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   border: 1px solid #706f6e;
 }
 
+.notification-container.menu li:hover {
+  background-color: inherit;
+}
+.notification-container.menu .notification:hover,
+.notification-container.menu .dismiss-all:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+
 /* Retention ---------------------------------------------------------------- */
 #retention #retention-list td {
   border-color: #706f6e;
@@ -1882,76 +1904,21 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background-color: #1d99f3;
 }
 
-/* Bookmarks ---------------------------------------------------------------- */
-.app-bookmarks #app-navigation .add-bookmark .form input {
-  border: none;
-  border-top: 1px solid #706f6e;
-}
-.app-bookmarks #app-navigation .folders-item.droptarget-folder > a,
-.app-bookmarks #app-navigation .folders-item.droptarget-bookmark > a {
-  background-color: #31363b;
-  border-color: #3daee9;
-}
-.app-bookmarks #app-navigation .folders-item.droptarget-folder > a:hover,
-.app-bookmarks #app-navigation .folders-item.droptarget-bookmark > a:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-
-.app-bookmarks #app-content .bulk-actions {
-  box-shadow: none;
+.app-bookmarks #app-content .folder--gridview,
+.app-bookmarks #app-content .bookmark--gridview,
+.app-bookmarks #app-content .bookmarkslist--gridview > .create-folder,
+.app-bookmarks #app-content .bookmarkslist--gridview > .create-bookmark {
   background: #31363b;
-  border-bottom: 1px solid #706f6e;
+  box-shadow: none;
 }
-.app-bookmarks #app-content .bookmark-card {
-  background-color: #31363b;
-  border-color: #706f6e;
-}
-.app-bookmarks #app-content .bookmark-card .tag-nav-item {
+.app-bookmarks #app-content .bookmark--gridview .bookmark__checkbox {
   background-color: #31363b;
 }
-.app-bookmarks #app-content .bookmark-card .panel {
-  background-color: rgba(35, 38, 41, 0.9);
-  border-top: 1px solid #706f6e;
+.app-bookmarks #app-content .bookmark--gridview .bookmark__checkbox input.checkbox + label::before {
+  margin: 0 3px 3px 3px;
 }
-.app-bookmarks #app-content .bookmark-card h2 {
-  text-shadow: none;
-}
-.app-bookmarks #app-content .bookmark-card .select-mode-checkbox + label {
-  box-shadow: none;
-  background: #31363b;
-}
-.app-bookmarks #app-content .list-view .bookmark-card {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-}
-.app-bookmarks #app-content .list-view .bookmark-card:nth-of-type(2) {
-  border-top: 1px solid #706f6e;
-}
-.app-bookmarks #app-content .list-view .bookmark-card .panel {
-  border: none;
-}
-.app-bookmarks #app-content .bookmark-detail {
-  background: #31363b;
-  color: #eff0f1;
-  box-shadow: none;
-  border-left: 1px solid #706f6e;
-}
-.app-bookmarks #app-content .bookmark-detail > .close {
-  background-color: unset;
-}
-.app-bookmarks #app-content .bookmark-detail h2 {
-  opacity: 0.7;
-}
-.app-bookmarks #app-content .bookmark-detail h3 {
-  border-bottom-color: #706f6e;
-}
-.app-bookmarks #app-content .bookmark-detail .status {
-  opacity: 0.7;
-}
-.app-bookmarks #app-content .bookmark-detail .status .message-saving,
-.app-bookmarks #app-content .bookmark-detail .status .message-saved {
-  background-color: #27ae60;
+.app-bookmarks #app-content .bookmarkslist > :first-child:not(.bookmarkslist__loading):not(.bookmarkslist__empty).active {
+  border-top-color: #3daee9;
 }
 
 /* Circles ------------------------------------------------------------------ */
@@ -2887,7 +2854,7 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
   background-image: url("/core/css/../img/actions/delete.svg?v=1");
 }
 .app-quicknotes #div-content .icon-delete:hover, .app-quicknotes #div-content .icon-delete:focus {
-  background-image: url("../img/actions/delete-hover.svg");
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld2JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxwYXRoIGQ9Ik02LjUgMUw2IDJIM2MtLjU1NCAwLTEgLjQ0Ni0xIDF2MWgxMlYzYzAtLjU1NC0uNDQ2LTEtMS0xaC0zbC0uNS0xek0zIDVsLjg3NSA5Yy4wNi41NS41NzMgMSAxLjEyNSAxaDZjLjU1MiAwIDEuMDY0LS40NSAxLjEyNS0xTDEzIDV6IiBmaWxsPSIjZGE0NDUzIi8+PC9zdmc+Cg==);
   opacity: 1;
 }
 
