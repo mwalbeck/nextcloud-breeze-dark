@@ -4,3 +4,15 @@
 	box-shadow: none;
 	border: 1px solid $decoration-normal;
 }
+
+.notification-container.menu {
+
+	li:hover {
+		background-color: inherit;
+	}
+
+	.notification:hover,
+	.dismiss-all:hover {
+		background-color: $background-active-hover;
+	}
+}

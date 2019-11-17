@@ -28,7 +28,7 @@
         background-image: url('/core/css/../img/actions/delete.svg?v=1');
     
         &:hover, &:focus {
-            background-image: url('../img/actions/delete-hover.svg');
+            background-image: $icon-delete-color;
             opacity: 1;
         }
     }
