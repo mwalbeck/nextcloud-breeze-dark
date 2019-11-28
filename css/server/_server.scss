@@ -1,0 +1,628 @@
+/* Link ---------------------------------------------------------------------- */
+a {
+    color: $foreground-link;
+
+    &.icon {
+        color: $icon-normal;
+
+        &:hover,
+        &:focus {
+            color: $icon-normal;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $foreground-link;
+    }
+
+    &.button:hover,
+    &.button:focus {
+        color: $foreground-normal;
+    }
+}
+
+/* Login Screen ------------------------------------------------------------- */
+#body-login {
+	background-color: $background-normal !important;
+
+	p.info {
+		color: $foreground-inactive;
+	}
+
+	form .grouptop input,
+	form .groupbottom input {
+		background: $background-dark;
+		color: $foreground-normal;
+		box-shadow: none !important;
+	}
+}
+
+// Register button
+#alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
+	background-color: $background-dark;
+	color: $foreground-normal;
+	border: 1px solid $decoration-normal;
+
+	&:hover, &:focus, &:active {
+		background-color: $background-active-alternate;
+		border-color: $decoration-active;
+	}
+}
+
+/* Header ------------------------------------------------------------------- */
+
+// Header Bar
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+	background-color: $background-dark;
+}
+
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName,
+#settings #expand:hover .avatardiv,
+#settings #expand:focus .avatardiv,
+#settings #expand:active .avatardiv {
+	border: none;
+}
+
+/* Search ------------------------------------------------------------------- */
+
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:active,
+.searchbox input[type="search"]:valid {
+	border-color: $decoration-active !important;
+}
+
+/* Breadcrumbs -------------------------------------------------------------- */
+
+div.crumb a,
+div.crumb > span,
+div.crumb.crumbmenu a {
+	color: $foreground-normal;
+	opacity: 0.7 !important;
+}
+
+/* Menues ------------------------------------------------------------------- */
+
+.menu,
+.popovermenu,
+.bubble {
+	border: 1px solid $decoration-normal;
+	filter: none;
+
+	li:hover {
+		background-color: $background-active-hover;
+	}
+}
+
+.menu,
+.popovermenu {
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+.app-navigation-entry-menu {
+	border: 1px solid $decoration-normal;
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#header .header-left > nav > #navigation.menu, 
+#header .header-right > div > .menu {
+	filter: none;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+}
+
+#body-settings #expand::before {
+	border-bottom-color: $decoration-normal;
+}
+
+.action-item__menu {
+	filter: none !important;
+	border: 1px solid $decoration-normal;
+
+	.action-item__menu_arrow {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
+/* Info colours ------------------------------------------------------------- */
+
+.msg {
+
+	&.error {
+		color: $foreground-active;
+		background-color: $background-negative;
+	}
+
+	&.success {
+		color: $foreground-active;
+		background-color: $background-positive;
+	}
+}
+
+/* Settings ----------------------------------------------------------------- */
+
+/* Section Container */
+// Primarily seems to be used under settings
+.followupsection {
+	color: $foreground-normal !important;
+}
+
+/* Cropper */
+// For cropping images, found under personal settings for adding avatar
+#cropper .inner-container {
+	background-color: $background-normal;
+	color: $foreground-normal;
+	box-shadow: none;
+	border: 1px solid $decoration-normal;
+}
+
+/* Admin settings */
+
+// System monitoring
+.infobox {
+	border-color: $decoration-normal !important;
+	color: $foreground-normal !important;
+	background-color: $background-normal !important;
+	box-shadow: none !important;
+
+	h2,
+	h3 {
+		color: $foreground-normal;
+	}
+}
+
+.smallinfo {
+	color: $foreground-inactive;
+}
+
+/* App Store ---------------------------------------------------------------- */
+
+.app-level {
+
+	span {
+		color: $foreground-normal;
+	}
+
+	.official {
+		border-color: $background-positive;
+	}
+}
+
+#apps-list {
+	&.installed {
+		
+		.app-image-icon svg,
+		.app-image-icon .icon-settings-dark {
+			opacity: 1;
+		}
+	}
+
+	.app-name {
+		font-weight: 600;
+	}
+}
+
+/* Files table -------------------------------------------------------------- */
+// Used by files app and file picker
+
+#filestable tbody {
+	tr {
+
+		&:focus, &:active {
+			background-color: $background-active;
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: $background-active;
+			color: $foreground-active;
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: $background-alternate;
+		}
+
+		&.externalErroredRow {
+			background-color: $background-negative;
+		}
+	}
+
+	.name:focus {
+		background-color: inherit;
+	}
+}
+
+/* File picker -------------------------------------------------------------- */
+
+.oc-dialog {
+	box-shadow: none !important;
+	border: 1px solid $decoration-normal;
+}
+
+#oc-dialog-filepicker-content {
+
+	.filepicker_element_selected {
+		background-color: $background-active;
+
+		td {
+			font-weight: 600;
+		}
+
+		.filename {
+			color: $foreground-active;
+		}
+	}
+
+	.actions.creatable {
+		background-color: $background-normal;
+
+		&:hover {
+			border-color: $decoration-active;
+		}
+
+		a.button {
+			border: none;
+
+			&:focus,
+			&:active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#emptycontent, .emptycontent {
+	background-color: $background-normal;
+}
+
+/* Multiselect -------------------------------------------------------------- */
+
+div.multiselect.active {
+	background-color: $background-normal;
+}
+
+ul.multiselectoptions {
+	background-color: $background-normal;
+	border-color: $decoration-normal;
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Dropdown Selects --------------------------------------------------------- */
+
+// Used for tags in Files app
+.select2-container,
+.select2-container-multi {
+
+	.select2-choices {
+	
+		.select2-search-choice {
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+		}
+
+		.select2-search-field input {
+			color: $foreground-normal !important;
+		}
+	}
+
+	.select2-choice {
+		background: $background-dark;
+		border-color: $decoration-normal;
+		color: $foreground-normal !important;
+	}
+}
+
+#select2-drop, .select2-drop {
+	box-shadow: none;
+
+	&.select2-drop-above.select2-drop-active {
+		border-color: $decoration-normal;
+	}
+
+	.select2-results .select2-result.select2-selected {
+		background-color: $background-normal;
+		box-shadow: inset 4px 0 var(--color-primary);
+
+		&:hover {
+			background-color: $background-active-hover;
+		}
+	}
+}
+
+// Used for nextcloud announcements
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+	border-color: $decoration-normal !important;
+	background: $background-normal !important;
+	border-radius: 0 !important;
+}
+
+// The following has been added for bookmarks tags
+.select2-container--default .select2-selection--multiple {
+    background-color: $background-dark;
+    border-color: $decoration-normal;
+}
+
+.select2-dropdown {
+    background-color: $background-dark;
+	border-color: $decoration-normal;
+	
+	&:hover {
+		border-color: $decoration-active;
+	}
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $background-active-hover;
+    color: $foreground-normal;
+}
+
+.bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bookmark-detail .tag-nav-item {
+    background-color: $background-normal;
+    
+    &:hover {
+        background-color: $background-active-hover;
+    }
+}
+
+.select2-container--default .select2-selection--multiple:hover,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: $decoration-active;
+}
+
+/* Auto suggestion users in comments dropdown ------------------------------- */
+
+.atwho-view {
+	box-shadow: none !important;
+
+	.cur {
+		background: $background-active-hover !important;
+	}
+}
+
+/* UI Widget ---------------------------------------------------------------- */
+// Used by datepicker, timepicker, ldap and others
+
+// Datepicker
+.ui-widget.ui-datepicker {
+	filter: none;
+	border: 1px solid $decoration-normal;
+	background-color: $background-normal;
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
+
+		.ui-icon {
+			opacity: .7;
+			filter: invert(95%);
+		}
+
+		.ui-datepicker-prev, .ui-datepicker-next {
+			border-color: $decoration-normal;
+			background: $background-normal;
+		}
+	}
+
+	.ui-datepicker-calendar {
+
+		th {
+			color: $foreground-normal;
+			opacity: 0.7;
+		}
+		
+		tr td > * {
+			color: $foreground-normal;
+		}
+
+		td .ui-priority-secondary:not(.ui-state-hover) {
+			color: $foreground-inactive;
+			opacity: 0.5;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) :not(.ui-state-hover):not(.ui-state-active) {
+			color: $background-active;
+			opacity: 1;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) .ui-priority-secondary:not(.ui-state-hover) {
+			color: $background-active;
+			opacity: 0.7;
+		}
+
+		td.ui-datepicker-current-day:not(.ui-state-disabled) a.ui-state-active, td .ui-state-hover, 
+		td .ui-state-focus {
+			background-color: $background-active;
+			color: $foreground-active;
+		}
+
+		td.ui-datepicker-today a:not(.ui-state-hover) {
+			background-color: $background-alternate;
+		}
+	}
+}
+
+// Timepicker
+.ui-widget.ui-timepicker {
+	filter: none;
+	background-color: $background-normal;
+	border: 1px solid $decoration-normal;
+
+	.ui-widget-content {
+		background-color: $background-normal;
+	}
+
+	&::after {
+		border-bottom-color: $decoration-normal;
+	}
+
+	.ui-widget-header {
+		background-color: $background-normal;
+		color: $foreground-normal;
+	}
+
+	table.ui-timepicker tr td > * {
+		color: $foreground-normal;
+	}
+
+	.ui-timepicker-table {
+
+		th {
+			color: $foreground-inactive;
+			opacity: 0.7%;
+		}
+
+		td {
+
+			> * {
+				color: $foreground-normal;
+			}
+
+			&.ui-timepicker-hours {
+				border-right-color: $decoration-normal;
+			}
+
+			&.ui-timepicker-hour-cell a.ui-state-active,
+			&.ui-timepicker-minute-cell a.ui-state-active,
+			.ui-state-hover, 
+			.ui-state-focus {
+				background-color: $background-active;
+				color: $foreground-active;
+			}
+		}
+	}
+}
+
+.ui-widget.ui-timepicker .ui-timepicker-table th
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+	background-color: $background-dark;
+	border: 1px solid $decoration-normal;
+	box-shadow: none;
+}
+
+// Ldap
+
+.ui-widget.ui-widget-content {
+	border-color: $decoration-normal !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+
+	.ui-state-default {
+		border-color: transparent !important;
+	}
+
+	.ui-state-hover, .ui-state-active {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
+.ui-button {
+	background-color: $background-normal !important;
+	color: $foreground-normal !important;
+	border: 1px solid $decoration-normal !important;
+
+	&.primary {
+		background-color: $background-dark !important;
+	}
+
+	&.ui-state-active,
+	&.ui-state-hover,
+	&:hover {
+		border-color: $decoration-active !important;
+	}
+
+	&:disabled,
+	&.ui-button-disabled,
+	&.ui-state-disabled {
+		background-color: $background-alternate !important;
+		color: $foreground-inactive !important;
+
+		&:hover {
+			border-color: $decoration-normal !important;
+		}
+	}
+}
+
+/* Tooltips ----------------------------------------------------------------- */
+
+.tooltip,
+.vue-tooltip {
+	filter: none !important;
+
+	&[x-placement^="right"],
+	&.right .tooltip-arrow {
+		border-right-color: $decoration-normal !important;
+	}
+
+	&[x-placement^="left"],
+	&.left .tooltip-arrow {
+		border-left-color: $decoration-normal !important;
+	}
+
+	&[x-placement^="bottom"] .tooltip-arrow,
+	&.bottom .tooltip-arrow,
+	&.bottom-left .tooltip-arrow,
+	&.bottom-right .tooltip-arrow  {
+		border-bottom-color: $decoration-normal !important;
+	}
+}
+
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.top .arrow,
+.tooltip.top-left .arrow,
+.tooltip[x-placement^="top"] .arrow,
+.tooltip.top-right .arrow {
+	border-top-color: var(--color-border) !important;
+}
+
+.tooltip-inner {
+	border: 1px solid $decoration-normal;
+}
+
+#adminaccount .tooltip-inner {
+	background-color: transparent;
+	border: none;
+}
+
+.menububble {
+	box-shadow: none !important;
+	border: 1px solid $decoration-normal;
+}
+
+/* Contacts menu ------------------------------------------------------------ */
+
+#contactsmenu .contact a img[src*="spreed/img/app-dark.svg"] {
+	filter: invert(95%);
+}

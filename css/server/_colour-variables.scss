@@ -1,0 +1,89 @@
+/* 
+ * 
+ * All the colours for the Nextcloud Breeze Dark Theme.
+ *
+*/
+
+/* Default Colors */
+$background-active: rgba(61, 174, 233, 1);
+$background-active-alternate: rgba(29, 153, 243, 1);
+$background-active-hover: rgba(61, 174, 233, 0.25);
+$background-alternate: rgba(77, 77, 77, 1);
+$background-dark: rgba(35, 38, 41, 1);
+$background-dark-opacity: rgba(35, 38, 41, 0.9);
+$background-normal: rgba(49, 54, 59, 1);
+//$background-normal: pink;
+$background-negative: rgba(218, 68, 83, 1);
+$background-neutral: rgba(246, 116, 0, 1);
+$background-positive: rgba(39, 174, 96, 1);
+
+$decoration-normal: rgba(112, 111, 110, 1);
+$decoration-active: rgba(61, 174, 233, 1);
+
+$foreground-active: rgba(252, 252, 252, 1);
+$foreground-inactive: rgba(189, 195, 199, 1);
+$foreground-link: rgba(41, 128, 185, 1);
+$foreground-normal: rgba(239, 240, 241, 1);
+$foreground-background: rgba(189, 195, 199, 0.6);
+
+$foreground-negative: rgba(218, 68, 83, 1);
+$foreground-neutral: rgba(246, 116, 0, 1);
+$foreground-positive: rgba(39, 174, 96, 1);
+$foreground-visited: rgba(127, 140, 141, 1);
+
+$foreground-markdown-marker: rgba(189, 195, 199, 0.4);
+
+/* Buttons */
+$button-background-active: $background-active;
+$button-background-normal: $background-normal;
+$button-background-dark: $background-dark;
+$button-decoration-normal: $decoration-normal;
+$button-decoration-active: $decoration-active;
+$button-foreground-active: $foreground-active;
+$button-foreground-inactive: $foreground-inactive;
+$button-foreground-normal: $foreground-normal;
+
+/* Input */
+$input-background-normal: $background-dark;
+$input-decoration-normal: $decoration-normal;
+$input-decoration-active: $decoration-active;
+$input-foreground-normal: $foreground-normal;
+$input-foreground-active: $foreground-active;
+$input-foreground-inactive: $foreground-inactive;
+
+/*
+ Default white for icons: rgba(242, 242, 242, 1)
+*/
+$icon-normal: rgba(242, 242, 242, 1);
+
+/* Set the nextcloud color variables */
+:root {
+    --color-main-text: #{$foreground-normal} !important;
+    --color-main-background: #{$background-normal} !important;
+    --color-main-background-translucent: #{$background-normal} !important;
+
+    --color-background-dark: #{$background-active-hover} !important;
+    --color-background-darker: #{$background-dark} !important;
+
+    --color-primary: #{$background-active-alternate} !important;
+    --color-primary-text: #{$foreground-normal} !important;
+    --color-primary-element: #{$decoration-active} !important;
+
+    --color-error: #{$foreground-negative} !important;
+    --color-warning: #{$foreground-neutral} !important;
+    --color-success: #{$foreground-positive} !important;
+
+    --color-text-maxcontrast: #{$foreground-inactive} !important;
+    --color-text-light: #{$foreground-normal} !important;
+    --color-text-lighter: #{$foreground-normal} !important;
+
+    --color-box-shadow: #{$background-active-alternate} !important;
+
+    --color-border: #{$decoration-normal} !important;
+    --color-border-dark: #{$decoration-normal} !important;
+}
+
+input, label {
+    --color-checkbox-radio-border: #{$decoration-normal};
+    --color-checkbox-radio-disabled: #{$background-alternate};
+}
