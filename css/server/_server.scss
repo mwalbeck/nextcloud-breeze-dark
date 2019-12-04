@@ -289,6 +289,10 @@ div.crumb.crumbmenu a {
 
 #emptycontent, .emptycontent {
 	background-color: $background-normal;
+
+	&.summary {
+		opacity: 1;
+	}
 }
 
 /* Multiselect -------------------------------------------------------------- */
