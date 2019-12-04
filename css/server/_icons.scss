@@ -70,7 +70,13 @@
 	filter: invert(95%);
 }
 
+// Icons in the global notifications dropdown
 .notification-icon {
+	filter: invert(95%);
+}
+
+// Client icons under Settings > Personal > Mobile & Desktop
+.clientslinks img.appsmall {
 	filter: invert(95%);
 }
 
