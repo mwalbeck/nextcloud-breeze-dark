@@ -74,6 +74,7 @@ a {
 .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
 	border-color: $decoration-active !important;
+	opacity: 1;
 }
 
 /* Breadcrumbs -------------------------------------------------------------- */
