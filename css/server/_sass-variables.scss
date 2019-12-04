@@ -1,4 +1,62 @@
-/* Icon variables */
+/* 
+ * Colour variables
+*/
+
+/* Default Colors */
+$background-active: rgba(61, 174, 233, 1);
+$background-active-alternate: rgba(29, 153, 243, 1);
+$background-active-hover: rgba(61, 174, 233, 0.25);
+$background-alternate: rgba(77, 77, 77, 1);
+$background-dark: rgba(35, 38, 41, 1);
+$background-dark-opacity: rgba(35, 38, 41, 0.9);
+$background-normal: rgba(49, 54, 59, 1);
+//$background-normal: pink;
+$background-negative: rgba(218, 68, 83, 1);
+$background-neutral: rgba(246, 116, 0, 1);
+$background-positive: rgba(39, 174, 96, 1);
+
+$decoration-normal: rgba(112, 111, 110, 1);
+$decoration-active: rgba(61, 174, 233, 1);
+
+$foreground-active: rgba(252, 252, 252, 1);
+$foreground-inactive: rgba(189, 195, 199, 1);
+$foreground-link: rgba(41, 128, 185, 1);
+$foreground-normal: rgba(239, 240, 241, 1);
+$foreground-background: rgba(189, 195, 199, 0.6);
+
+$foreground-negative: rgba(218, 68, 83, 1);
+$foreground-neutral: rgba(246, 116, 0, 1);
+$foreground-positive: rgba(39, 174, 96, 1);
+$foreground-visited: rgba(127, 140, 141, 1);
+
+$foreground-markdown-marker: rgba(189, 195, 199, 0.4);
+
+/* Buttons */
+$button-background-active: $background-active;
+$button-background-normal: $background-normal;
+$button-background-dark: $background-dark;
+$button-decoration-normal: $decoration-normal;
+$button-decoration-active: $decoration-active;
+$button-foreground-active: $foreground-active;
+$button-foreground-inactive: $foreground-inactive;
+$button-foreground-normal: $foreground-normal;
+
+/* Input */
+$input-background-normal: $background-dark;
+$input-decoration-normal: $decoration-normal;
+$input-decoration-active: $decoration-active;
+$input-foreground-normal: $foreground-normal;
+$input-foreground-active: $foreground-active;
+$input-foreground-inactive: $foreground-inactive;
+
+/*
+ Default white for icons: rgba(242, 242, 242, 1)
+*/
+$icon-normal: rgba(242, 242, 242, 1);
+
+/* 
+ * Icon variables
+*/
 
 $icon-home: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE2IDE2IiBoZWlnaHQ9IjE2IiB3aWR0aD0iMTYiPjxwYXRoIGQ9Im04IDFsLTggOGgzdjZoMTB2LTZoM2wtMy0zdi00aC0zdjFsLTItMnoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4K);
 $icon-star: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxzY3JpcHQgeG1sbnM9IiIvPjxwYXRoIGQ9Im04IDAuNSAyLjIgNS4zIDUuOCAwLjQ1LTQuNSAzLjc1IDEuNSA1LjUtNS0zLjEtNSAzLjEgMS41LTUuNS00LjUtMy43NSA1LjgtMC40NXoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4K);
@@ -111,155 +169,3 @@ $icon-facebook: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My
 $icon-contacts-phone: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE2MDAgMTI0MHEwIDI3LTEwIDcwLjV0LTIxIDY4LjVxLTIxIDUwLTEyMiAxMDYtOTQgNTEtMTg2IDUxLTI3IDAtNTMtMy41dC01Ny41LTEyLjUtNDctMTQuNS01NS41LTIwLjUtNDktMThxLTk4LTM1LTE3NS04My0xMjctNzktMjY0LTIxNnQtMjE2LTI2NHEtNDgtNzctODMtMTc1LTMtOS0xOC00OXQtMjAuNS01NS41LTE0LjUtNDctMTIuNS01Ny41LTMuNS01M3EwLTkyIDUxLTE4NiA1Ni0xMDEgMTA2LTEyMiAyNS0xMSA2OC41LTIxdDcwLjUtMTBxMTQgMCAyMSAzIDE4IDYgNTMgNzYgMTEgMTkgMzAgNTR0MzUgNjMuNSAzMSA1My41cTMgNCAxNy41IDI1dDIxLjUgMzUuNSA3IDI4LjVxMCAyMC0yOC41IDUwdC02MiA1NS02MiA1My0yOC41IDQ2cTAgOSA1IDIyLjV0OC41IDIwLjUgMTQgMjQgMTEuNSAxOXE3NiAxMzcgMTc0IDIzNXQyMzUgMTc0cTIgMSAxOSAxMS41dDI0IDE0IDIwLjUgOC41IDIyLjUgNXExOCAwIDQ2LTI4LjV0NTMtNjIgNTUtNjIgNTAtMjguNXExNCAwIDI4LjUgN3QzNS41IDIxLjUgMjUgMTcuNXEyNSAxNSA1My41IDMxdDYzLjUgMzUgNTQgMzBxNzAgMzUgNzYgNTMgMyA3IDMgMjF6IiBmaWxsPSIjZjJmMmYyIi8+PC9zdmc+);
 $icon-contacts-address-book: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3MDMgNDc4cTQwIDU3IDE4IDEyOWwtMjc1IDkwNnEtMTkgNjQtNzYuNSAxMDcuNXQtMTIyLjUgNDMuNWgtOTIzcS03NyAwLTE0OC41LTUzLjV0LTk5LjUtMTMxLjVxLTI0LTY3LTItMTI3IDAtNCAzLTI3dDQtMzdxMS04LTMtMjEuNXQtMy0xOS41cTItMTEgOC0yMXQxNi41LTIzLjUgMTYuNS0yMy41cTIzLTM4IDQ1LTkxLjV0MzAtOTEuNXEzLTEwIC41LTMwdC0uNS0yOHEzLTExIDE3LTI4dDE3LTIzcTIxLTM2IDQyLTkydDI1LTkwcTEtOS0yLjUtMzJ0LjUtMjhxNC0xMyAyMi0zMC41dDIyLTIyLjVxMTktMjYgNDIuNS04NC41dDI3LjUtOTYuNXExLTgtMy0yNS41dC0yLTI2LjVxMi04IDktMTh0MTgtMjMgMTctMjFxOC0xMiAxNi41LTMwLjV0MTUtMzUgMTYtMzYgMTkuNS0zMiAyNi41LTIzLjUgMzYtMTEuNSA0Ny41IDUuNWwtMSAzcTM4LTkgNTEtOWg3NjFxNzQgMCAxMTQgNTZ0MTggMTMwbC0yNzQgOTA2cS0zNiAxMTktNzEuNSAxNTMuNXQtMTI4LjUgMzQuNWgtODY5cS0yNyAwLTM4IDE1LTExIDE2LTEgNDMgMjQgNzAgMTQ0IDcwaDkyM3EyOSAwIDU2LTE1LjV0MzUtNDEuNWwzMDAtOTg3cTctMjIgNS01NyAzOCAxNSA1OSA0M3ptLTEwNjQgMnEtNCAxMyAyIDIyLjV0MjAgOS41aDYwOHExMyAwIDI1LjUtOS41dDE2LjUtMjIuNWwyMS02NHE0LTEzLTItMjIuNXQtMjAtOS41aC02MDhxLTEzIDAtMjUuNSA5LjV0LTE2LjUgMjIuNXptLTgzIDI1NnEtNCAxMyAyIDIyLjV0MjAgOS41aDYwOHExMyAwIDI1LjUtOS41dDE2LjUtMjIuNWwyMS02NHE0LTEzLTItMjIuNXQtMjAtOS41aC02MDhxLTEzIDAtMjUuNSA5LjV0LTE2LjUgMjIuNXoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4=);
 $icon-text-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPnBhZ2luYXRlLWZpbHRlci1waWN0dXJlLWFsdGVybmF0ZTwvdGl0bGU+PGNpcmNsZSBjeD0iOS43NSIgY3k9IjYuMjQ3IiByPSIyLjI1IiBmaWxsPSIjZjJmMmYyIi8+PHBhdGggZD0iTTE2LjkxNiw4LjcxQTEuMDI3LDEuMDI3LDAsMCwwLDE2LDguMTU4YTEuMDA3LDEuMDA3LDAsMCwwLS44OTIuNTg2TDEzLjU1LDEyLjE3OGEuMjQ5LjI0OSwwLDAsMS0uNDIyLjA1M2wtLjgyLTEuMDI0YTEsMSwwLDAsMC0uODEzLS4zNzYsMS4wMDcsMS4wMDcsMCwwLDAtLjc4Ny40MjZMNy41OSwxNS43MUEuNS41LDAsMCwwLDgsMTYuNUgyMGEuNS41LDAsMCwwLC40MjUtLjIzNy41LjUsMCwwLDAsLjAyMi0uNDg2WiIgZmlsbD0iI2YyZjJmMiIvPjxwYXRoIGQ9Ik0yMiwwSDUuNWEyLDIsMCwwLDAtMiwyVjE4LjVhMiwyLDAsMCwwLDIsMkgyMmEyLDIsMCwwLDAsMi0yVjJBMiwyLDAsMCwwLDIyLDBabS0uMTQ1LDE4LjM1NGEuNS41LDAsMCwxLS4zNTQuMTQ2SDZhLjUuNSwwLDAsMS0uNS0uNVYyLjVBLjUuNSwwLDAsMSw2LDJIMjEuNWEuNS41LDAsMCwxLC41LjVWMThBLjUuNSwwLDAsMSwyMS44NTUsMTguMzUxWiIgZmlsbD0iI2YyZjJmMiIvPjxwYXRoIGQ9Ik0xOS41LDIySDIuNWEuNS41LDAsMCwxLS41LS41VjQuNWExLDEsMCwwLDAtMiwwVjIyYTIsMiwwLDAsMCwyLDJIMTkuNWExLDEsMCwwLDAsMC0yWiIgZmlsbD0iI2YyZjJmMiIvPjwvc3ZnPgo=);
-
-:root {
-    --icon-star-dark-000: #{$icon-star} !important;
-    --icon-star-000: #{$icon-star} !important;
-    --icon-home-000: #{$icon-home} !important;
-    --icon-bundles-000: #{$icon-bundles} !important;
-    --icon-customization-000: #{$icon-customization} !important;
-    --icon-games-000: #{$icon-games} !important;
-    --icon-integration-000: #{$icon-integration} !important;
-    --icon-monitoring-000: #{$icon-monitoring} !important;
-    --icon-multimedia-000: #{$icon-picture} !important;
-    --icon-office-000: #{$icon-text} !important;
-    --icon-organization-000: #{$icon-organization} !important;
-    --icon-search-000: #{$icon-search} !important;
-    --icon-search-fffffe: #{$icon-search} !important;
-    --icon-password-000: #{$icon-password} !important;
-    --icon-social-000: #{$icon-social} !important;
-    --icon-settings-000: #{$icon-settings} !important;
-    --icon-settings-dark-000: #{$icon-settings} !important;
-    --icon-rename-000: #{$icon-rename} !important;
-    --icon-delete-000: #{$icon-delete} !important;
-    --icon-delete-e9322d: #{$icon-delete-color} !important;
-    --icon-public-000: #{$icon-public} !important;
-    --icon-public-fff: #{$icon-public} !important;
-    --icon-upload-000: #{$icon-upload} !important;
-    --icon-add-000: #{$icon-add} !important;
-    --icon-share-000: #{$icon-share} !important;
-    --icon-external-000: #{$icon-external} !important;
-    --icon-tag-000: #{$icon-tag} !important;
-    --icon-download-000: #{$icon-download} !important;
-    --icon-details-000: #{$icon-details} !important;
-    --icon-info-000: #{$icon-details} !important;
-    --icon-clippy-000: #{$icon-clippy} !important;
-    --icon-comment-000: #{$icon-comment} !important;
-    --icon-quota-000: #{$icon-quota} !important;
-    --icon-triangle-n-000: #{$icon-triangle-n} !important;
-    --icon-triangle-s-000: #{$icon-triangle-s} !important;
-    --icon-more-000: #{$icon-more} !important;
-    --icon-toggle-filelist-000: #{$icon-list} !important;
-    --icon-toggle-pictures-000: #{$icon-grid} !important;
-    --icon-text-000: #{$icon-text} !important;
-    --icon-folder-000: #{$icon-folder} !important;
-    --icon-history-000: #{$icon-history} !important;
-    --icon-confirm-000: #{$icon-confirm} !important;
-    --icon-edit-000: #{$icon-text} !important;
-    --icon-close-000: #{$icon-close} !important;
-    --icon-fullscreen-000: #{$icon-fullscreen} !important;
-    --icon-contacts-000: #{$icon-contacts} !important;
-    --icon-user-000: #{$icon-user} !important;
-    --icon-link-000: #{$icon-link} !important;
-    --icon-timezone-000: #{$icon-timezone} !important;
-    --icon-toggle-000: #{$icon-toggle} !important;
-    --icon-desktop-000: #{$icon-desktop} !important;
-    --icon-phone-000: #{$icon-phone} !important;
-    --icon-tablet-000: #{$icon-tablet} !important;
-    --icon-error-000: #{$icon-error} !important;
-    --icon-error-fff: #{$icon-error} !important;
-    --icon-checkmark-000: #{$icon-checkmark} !important;
-    --icon-checkmark-fff: #{$icon-checkmark} !important;
-    --icon-user-admin-000: #{$icon-user-admin} !important;
-    --icon-calendar-000: #{$icon-calendar} !important;
-    --icon-arrow-right-000: #{$icon-arrow-right} !important;
-    --icon-arrow-left-000: #{$icon-arrow-left} !important;
-    --icon-mail-000: #{$icon-mail} !important;
-    --icon-address-000: #{$icon-address} !important;
-    --icon-group-000: #{$icon-contacts} !important;
-    --icon-menu-000: #{$icon-menu} !important;
-    --icon-help-000: #{$icon-help} !important;
-    --icon-picture-000: #{$icon-picture} !important;
-    --icon-projects-000: #{$icon-projects} !important;
-    --icon-sound-000: #{$icon-sound} !important;
-    --icon-sound-off-000: #{$icon-sound-off} !important;
-    --icon-audio-000: #{$icon-audio} !important;
-    --icon-audio-off-000: #{$icon-audio-off} !important;
-    --icon-video-000: #{$icon-video} !important;
-    --icon-video-off-000: #{$icon-video-off} !important;
-    --icon-screen-000: #{$icon-screen} !important;
-    --icon-screen-off-000: #{$icon-screen-off} !important;
-    --icon-rss-000: #{$icon-rss} !important;
-    --icon-pinned-000: #{$icon-pinned} !important;
-    --icon-unpinned-000: #{$icon-unpinned} !important;
-    --icon-caret-000: #{$icon-triangle-s} !important;
-    --icon-nonfulltext-000: #{$icon-nonfulltext} !important;
-    --icon-fulltext-000: #{$icon-fulltext} !important;
-    --icon-disabled-user-000: #{$icon-disabled-user} !important;
-    --icon-disabled-users-000: #{$icon-disabled-users} !important;
-
-    --icon-files-000: #{$icon-files} !important;
-    --icon-files-folder-000: #{$icon-files} !important;
-    --icon-files-recent-000: #{$icon-recent} !important;
-    --icon-files-external-000: #{$icon-external} !important;
-    --icon-files-share-000: #{$icon-share} !important;
-    --icon-files-unshare-000: #{$icon-unshare} !important;
-    --icon-files-public-000: #{$icon-public} !important;
-    --icon-files-delete-000: #{$icon-delete} !important;
-
-    --icon-privacy-control-000: #{$icon-share} !important;
-    --icon-privacy-knowledge-000: #{$icon-toggle} !important;
-    --icon-privacy-freedom-000: #{$icon-freedom} !important;
-
-    --icon-activity-activity-dark-000: #{$icon-activity} !important;
-
-    --icon-notifications-notifications-dark-000: #{$icon-notification} !important;
-
-    --icon-federatedfilesharing-social-diaspora-000: #{$icon-diaspora} !important;
-    --icon-federatedfilesharing-social-twitter-000: #{$icon-twitter} !important;
-    --icon-federatedfilesharing-social-facebook-000: #{$icon-facebook} !important;
-
-    --icon-notes-folder-000: #{$icon-files} !important;
-    --icon-notes-recent-000: #{$icon-recent} !important;
-
-    --icon-announcementcenter-notifications-off-000: #{$icon-notification-off} !important;
-
-    --icon-contacts-phone-000: #{$icon-contacts-phone} !important;
-    --icon-contacts-address-book-000: #{$icon-contacts-address-book} !important;
-    --icon-contacts-social-000: #{$icon-heart} !important;
-
-    --icon-deck-deck-000: #{$icon-deck} !important;
-    --icon-deck-archive-000: #{$icon-archive} !important;
-
-    --icon-spreed-app-dark-000: #{$icon-talk} !important;
-    --icon-spreed-menu-people-000: #{$icon-menu-people} !important;
-
-    --icon-text-undo-000: #{$icon-undo} !important;
-    --icon-text-redo-000: #{$icon-redo} !important;
-    --icon-text-bold-000: #{$icon-bold} !important;
-    --icon-text-italic-000: #{$icon-italic} !important;
-    --icon-text-strike-000: #{$icon-strike} !important;
-    --icon-text-paragraph-000: #{$icon-paragraph} !important;
-    --icon-text-ul-000: #{$icon-ul} !important;
-    --icon-text-ol-000: #{$icon-ol} !important;
-    --icon-text-quote-000: #{$icon-quote} !important;
-    --icon-text-code-000: #{$icon-code} !important;
-    --icon-text-image-000: #{$icon-text-image} !important;
-    --icon-text-link-000: #{$icon-public} !important;
-    --icon-text-h1-000: #{$icon-h1} !important;
-    --icon-text-h2-000: #{$icon-h2} !important;
-    --icon-text-h3-000: #{$icon-h3} !important;
-    --icon-text-h4-000: #{$icon-h4} !important;
-    --icon-text-h5-000: #{$icon-h5} !important;
-    --icon-text-h6-000: #{$icon-h6} !important;
-
-    --icon-mail-inbox-000: #{$icon-home} !important;
-    --icon-mail-star-000: #{$icon-star} !important;
-    --icon-mail-drafts-000: #{$icon-rename} !important;
-    --icon-mail-sent-000: #{$icon-checkmark} !important;
-    --icon-mail-trash-000: #{$icon-delete} !important;
-    --icon-mail-junk-000: #{$icon-error} !important;
-    --icon-mail-archive-000: #{$icon-archive} !important;
-
-    --icon-circles-000: #{$icon-circles} !important;
-}
