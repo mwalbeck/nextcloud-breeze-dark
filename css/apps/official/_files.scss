@@ -44,7 +44,7 @@ tr {
 	.name:focus .thumbnail-wrapper,
 	.name:focus .nametext,
 	.name:focus .fileactions {
-		background-color: unset;
+		background-color: unset !important;
 	}
 	
 	&:hover,
@@ -53,6 +53,6 @@ tr {
 	&.selected,
 	&.highlighted,
 	&.searchresult {
-		background-color: $background-active-hover;
+		background-color: $background-active-hover !important;
 	}
 }
