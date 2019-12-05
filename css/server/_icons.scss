@@ -70,10 +70,6 @@
     filter: invert(95%);
 }
 
-.app-activity #app-navigation ul li a img {
-	filter: invert(95%);
-}
-
 // Icons in the global notifications dropdown
 .notification-icon {
 	filter: invert(95%);
@@ -88,6 +84,31 @@
 img.two-factor-provider-settings-icon,
 .icon-u2f-device {
 	filter: invert(95%);
+}
+
+// Home breadcrumb icon in gallery app
+.app-gallery .home img {
+	filter: invert(95%);
+}
+
+// Gallery App: Sorting icons and share button
+.app-gallery .button img.svg {
+	filter: invert(95%);
+}
+
+// Activity App: Navigation sidebar
+.app-activity #app-navigation ul li a img {
+	filter: invert(95%);
+}
+
+// Activity App: Icons in activity feed
+.app-activity .activity-icon {
+
+	img[src$="share.svg"],
+	img[src$="change.svg"],
+	img[src$="calendar.svg"] {
+		filter: invert(95%);
+	}
 }
 
 // // Music app: icons for Music player controls in files and in app
