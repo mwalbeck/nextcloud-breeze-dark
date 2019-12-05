@@ -80,13 +80,11 @@
 	filter: invert(95%);
 }
 
-// // Two Factor App Icon in Personal Settings
-
-// img.two-factor-provider-settings-icon[src$="twofactor_totp/img/app-dark.svg"],
-// img.two-factor-provider-settings-icon[src$="twofactor_u2f/img/app-dark.svg"],
-// .icon-u2f-device {
-// 	filter: invert(95%);
-// }
+// Two Factor Icons in Personal Settings
+img.two-factor-provider-settings-icon,
+.icon-u2f-device {
+	filter: invert(95%);
+}
 
 // // Music app: icons for Music player controls in files and in app
 // #music-controls img.control,
