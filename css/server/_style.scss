@@ -148,12 +148,18 @@ div[contenteditable="false"] {
 
 // Link Buttons
 
-.link-button:active,
-.link-button:hover,
-.link-button:focus {
-	color: $foreground-normal;
-	background-color: $foreground-link;
-	border-color: $decoration-active !important;
+.link-button {
+	background-color: $background-normal !important;
+	border: 1px solid $decoration-normal !important;
+	color: $foreground-normal !important;
+
+	&:active,
+	&:hover,
+	&:focus {
+		color: $foreground-normal !important;
+		background-color: $foreground-link !important;
+		border-color: $decoration-active !important;
+	}
 }
 
 /* General nextcloud -------------------------------------------------------- */
