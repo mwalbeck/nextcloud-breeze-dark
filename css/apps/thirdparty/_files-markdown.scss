@@ -3,38 +3,38 @@
 #app-content-texteditor #editor_container {
 
     #editor_controls #preview_editor_controls button:hover {
-        background-color: $background-active-hover;
+        background-color: var(--color-background-hover);
     }
 
     #editor_wrap #preview_wrap #preview {
-        background-color: $background-normal;
-        color: $foreground-normal;
-        border-left: 1px solid $decoration-normal;
+        background-color: var(--color-main-background);
+        color: var(--color-main-text);
+        border-left: 1px solid var(--color-border);
 
         &.text-markdown {
 
             blockquote {
-                border-left-color: $background-alternate;
-                color: $foreground-inactive;
+                border-left-color: var(--color-background-alternate);
+                color: var(--color-text-inactive);
             }
 
             tt {
-                background-color: $background-normal;
-                border-color: $decoration-normal
+                background-color: var(--color-main-background);
+                border-color: var(--color-border)
             }
 
             code, pre {
-                background-color: $background-dark;
-                border-color: $decoration-normal;
+                background-color: var(--color-background-darker);
+                border-color: var(--color-border);
             }
 
             table tr {
-                border-top-color: $decoration-normal;
-                background-color: $background-normal;
+                border-top-color: var(--color-border);
+                background-color: var(--color-main-background);
 
                 th {
-                    color: $foreground-inactive;
-                    border-bottom-color: $decoration-normal;
+                    color: var(--color-text-inactive);
+                    border-bottom-color: var(--color-border);
                 }
             }
         }

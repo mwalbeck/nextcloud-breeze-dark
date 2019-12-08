@@ -5,11 +5,11 @@
     #volumeslider {
 
         .ui-slider-range {
-            background-color: $background-active;
+            background-color: var(--color-primary-element);
         }
 
         .ui-slider-handle.ui-state-focus {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
         }
     }
 
@@ -27,18 +27,18 @@
 .app-radio #app-content #app-content-files #filestable {
 
     th, td {
-        border-color: $decoration-normal;
+        border-color: var(--color-border);
     }
 
     thead th {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
     }
 
     tbody tr {
-        background-color: $background-normal !important;
+        background-color: var(--color-main-background) !important;
 
         &:hover {
-            background-color: $background-active-hover !important;
+            background-color: var(--color-background-hover) !important;
         }
     }
 }

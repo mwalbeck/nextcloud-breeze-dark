@@ -5,8 +5,8 @@
 	.app-content-list-item {
 
 		&.active {
-			background-color: $background-active;
-			color: $foreground-active;
+			background-color: var(--color-primary-element);
+			color: var(--color-text-active);
 			font-weight: 600;
 		}
 	}
@@ -14,7 +14,7 @@
 	.app-content-details .contact-details {
 
 		.multiselect.property__label input:focus {
-			background-color: $background-normal;
+			background-color: var(--color-main-background);
 		}
 	}
 }

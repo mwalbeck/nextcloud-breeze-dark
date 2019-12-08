@@ -3,11 +3,11 @@
 .app-mail #account-form .tabs-component-tab {
 
     a {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 
     &.is-active {
-        border-bottom-color: $decoration-active;
+        border-bottom-color: var(--color-border-active);
     }
 }
 
@@ -17,7 +17,7 @@
     
         .app-content-list-item,
         .app-content-list-item-menu a {
-            color: $foreground-normal;
+            color: var(--color-main-text);
         }
 
         .app-content-list-item-line-two,
@@ -29,21 +29,21 @@
     .app-content-details {
 
         #mail-message-header {
-            background: $background-normal;
+            background: var(--color-main-background);
         }
         
         #mail-content {
-            background-color: $background-dark;
-            color: $foreground-normal;
+            background-color: var(--color-background-darker);
+            color: var(--color-main-text);
             padding: 1em;
-            border: 1px solid $decoration-normal;
+            border: 1px solid var(--color-border);
             border-radius: 3px;
         }
 
         #mail-content iframe {
             background-color: #EEE;
             padding: 1em;
-            border: 1px solid $decoration-normal;
+            border: 1px solid var(--color-border);
             border-radius: 3px;
         }
 

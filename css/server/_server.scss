@@ -1,52 +1,52 @@
 /* Link ---------------------------------------------------------------------- */
 a {
-    color: $foreground-link;
+    color: var(--color-text-link);
 
     &.icon {
-        color: $icon-normal;
+        color: var(--color-icon);
 
         &:hover,
         &:focus {
-            color: $icon-normal;
+            color: var(--color-icon);
         }
     }
 
     &:hover,
     &:focus {
-        color: $foreground-link;
+        color: var(--color-text-link);
     }
 
     &.button:hover,
     &.button:focus {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 }
 
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
-	background-color: $background-normal !important;
+	background-color: var(--color-main-background) !important;
 
 	p.info {
-		color: $foreground-inactive;
+		color: var(--color-text-inactive);
 	}
 
 	form .grouptop input,
 	form .groupbottom input {
-		background: $background-dark;
-		color: $foreground-normal;
+		background: var(--color-background-darker);
+		color: var(--color-main-text);
 		box-shadow: none !important;
 	}
 }
 
 // Register button
 #alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
-	background-color: $background-dark;
-	color: $foreground-normal;
-	border: 1px solid $decoration-normal;
+	background-color: var(--color-background-darker);
+	color: var(--color-main-text);
+	border: 1px solid var(--color-border);
 
 	&:hover, &:focus, &:active {
-		background-color: $background-active-alternate;
-		border-color: $decoration-active;
+		background-color: var(--color-primary);
+		border-color: var(--color-border-active);
 	}
 }
 
@@ -56,7 +56,7 @@ a {
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	background-color: $background-dark;
+	background-color: var(--color-background-darker);
 }
 
 #settings #expand:hover #expandDisplayName,
@@ -73,7 +73,7 @@ a {
 .searchbox input[type="search"]:focus,
 .searchbox input[type="search"]:active,
 .searchbox input[type="search"]:valid {
-	border-color: $decoration-active !important;
+	border-color: var(--color-border-active) !important;
 	opacity: 1;
 }
 
@@ -82,7 +82,7 @@ a {
 div.crumb a,
 div.crumb > span,
 div.crumb.crumbmenu a {
-	color: $foreground-normal;
+	color: var(--color-main-text);
 	opacity: 0.7 !important;
 }
 
@@ -91,11 +91,11 @@ div.crumb.crumbmenu a {
 .menu,
 .popovermenu,
 .bubble {
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 	filter: none;
 
 	li:hover {
-		background-color: $background-active-hover;
+		background-color: var(--color-background-hover);
 	}
 }
 
@@ -103,16 +103,16 @@ div.crumb.crumbmenu a {
 .popovermenu {
 
 	&::after {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 }
 
 .app-navigation-entry-menu {
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 	filter: none;
 
 	&::after {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 }
 
@@ -121,20 +121,20 @@ div.crumb.crumbmenu a {
 	filter: none;
 
 	&::after {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 }
 
 #body-settings #expand::before {
-	border-bottom-color: $decoration-normal;
+	border-bottom-color: var(--color-border);
 }
 
 .action-item__menu {
 	filter: none !important;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 
 	.action-item__menu_arrow {
-		border-bottom-color: $decoration-normal !important;
+		border-bottom-color: var(--color-border) !important;
 	}
 }
 
@@ -143,13 +143,13 @@ div.crumb.crumbmenu a {
 .msg {
 
 	&.error {
-		color: $foreground-active;
-		background-color: $background-negative;
+		color: var(--color-text-active);
+		background-color: var(--color-error);
 	}
 
 	&.success {
-		color: $foreground-active;
-		background-color: $background-positive;
+		color: var(--color-text-active);
+		background-color: var(--color-success);
 	}
 }
 
@@ -158,35 +158,35 @@ div.crumb.crumbmenu a {
 /* Section Container */
 // Primarily seems to be used under settings
 .followupsection {
-	color: $foreground-normal !important;
+	color: var(--color-main-text) !important;
 }
 
 /* Cropper */
 // For cropping images, found under personal settings for adding avatar
 #cropper .inner-container {
-	background-color: $background-normal;
-	color: $foreground-normal;
+	background-color: var(--color-main-background);
+	color: var(--color-main-text);
 	box-shadow: none;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 }
 
 /* Admin settings */
 
 // System monitoring
 .infobox {
-	border-color: $decoration-normal !important;
-	color: $foreground-normal !important;
-	background-color: $background-normal !important;
+	border-color: var(--color-border) !important;
+	color: var(--color-main-text) !important;
+	background-color: var(--color-main-background) !important;
 	box-shadow: none !important;
 
 	h2,
 	h3 {
-		color: $foreground-normal !important;
+		color: var(--color-main-text) !important;
 	}
 }
 
 .smallinfo {
-	color: $foreground-inactive;
+	color: var(--color-text-inactive);
 }
 
 /* App Store ---------------------------------------------------------------- */
@@ -194,11 +194,11 @@ div.crumb.crumbmenu a {
 .app-level {
 
 	span {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 	}
 
 	.official {
-		border-color: $background-positive;
+		border-color: var(--color-success);
 	}
 }
 
@@ -223,12 +223,12 @@ div.crumb.crumbmenu a {
 	tr {
 
 		&:focus, &:active {
-			background-color: $background-active;
+			background-color: var(--color-primary-element);
 		}
 
 		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
-			background-color: $background-active;
-			color: $foreground-active;
+			background-color: var(--color-primary-element);
+			color: var(--color-text-active);
 
 			.filename, .filesize, .date {
 				font-weight: 600;
@@ -236,11 +236,11 @@ div.crumb.crumbmenu a {
 		}
 
 		&.externalDisabledRow {
-			background-color: $background-alternate;
+			background-color: var(--color-background-alternate);
 		}
 
 		&.externalErroredRow {
-			background-color: $background-negative;
+			background-color: var(--color-error);
 		}
 	}
 
@@ -253,28 +253,28 @@ div.crumb.crumbmenu a {
 
 .oc-dialog {
 	box-shadow: none !important;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 }
 
 #oc-dialog-filepicker-content {
 
 	.filepicker_element_selected {
-		background-color: $background-active;
+		background-color: var(--color-primary-element);
 
 		td {
 			font-weight: 600;
 		}
 
 		.filename {
-			color: $foreground-active;
+			color: var(--color-text-active);
 		}
 	}
 
 	.actions.creatable {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 
 		&:hover {
-			border-color: $decoration-active;
+			border-color: var(--color-border-active);
 		}
 
 		a.button {
@@ -289,7 +289,7 @@ div.crumb.crumbmenu a {
 }
 
 #emptycontent, .emptycontent {
-	background-color: $background-normal;
+	background-color: var(--color-main-background);
 
 	&.summary {
 		opacity: 1;
@@ -299,12 +299,12 @@ div.crumb.crumbmenu a {
 /* Multiselect -------------------------------------------------------------- */
 
 div.multiselect.active {
-	background-color: $background-normal;
+	background-color: var(--color-main-background);
 }
 
 ul.multiselectoptions {
-	background-color: $background-normal;
-	border-color: $decoration-normal;
+	background-color: var(--color-main-background);
+	border-color: var(--color-border);
 
 	&.down {
 		-webkit-box-shadow: none;
@@ -327,14 +327,14 @@ ul.multiselectoptions {
 		}
 
 		.select2-search-field input {
-			color: $foreground-normal !important;
+			color: var(--color-main-text) !important;
 		}
 	}
 
 	.select2-choice {
-		background: $background-dark;
-		border-color: $decoration-normal;
-		color: $foreground-normal !important;
+		background: var(--color-background-darker);
+		border-color: var(--color-border);
+		color: var(--color-main-text) !important;
 	}
 }
 
@@ -342,15 +342,15 @@ ul.multiselectoptions {
 	box-shadow: none;
 
 	&.select2-drop-above.select2-drop-active {
-		border-color: $decoration-normal;
+		border-color: var(--color-border);
 	}
 
 	.select2-results .select2-result.select2-selected {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 		box-shadow: inset 4px 0 var(--color-primary);
 
 		&:hover {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 		}
 	}
 }
@@ -358,44 +358,44 @@ ul.multiselectoptions {
 // Used for nextcloud announcements
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
-	border-color: $decoration-normal !important;
-	background: $background-normal !important;
+	border-color: var(--color-border) !important;
+	background: var(--color-main-background) !important;
 	border-radius: 0 !important;
 }
 
 // The following has been added for bookmarks tags
 .select2-container--default .select2-selection--multiple {
-    background-color: $background-dark;
-    border-color: $decoration-normal;
+    background-color: var(--color-background-darker);
+    border-color: var(--color-border);
 }
 
 .select2-dropdown {
-    background-color: $background-dark;
-	border-color: $decoration-normal;
+    background-color: var(--color-background-darker);
+	border-color: var(--color-border);
 	
 	&:hover {
-		border-color: $decoration-active;
+		border-color: var(--color-border-active);
 	}
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: $background-active-hover;
-    color: $foreground-normal;
+    background-color: var(--color-background-hover);
+    color: var(--color-main-text);
 }
 
 .bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice, 
 .bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice, 
 .bookmark-detail .tag-nav-item {
-    background-color: $background-normal;
+    background-color: var(--color-main-background);
     
     &:hover {
-        background-color: $background-active-hover;
+        background-color: var(--color-background-hover);
     }
 }
 
 .select2-container--default .select2-selection--multiple:hover,
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-	border-color: $decoration-active;
+	border-color: var(--color-border-active);
 }
 
 /* Auto suggestion users in comments dropdown ------------------------------- */
@@ -404,7 +404,7 @@ ul.multiselectoptions {
 	box-shadow: none !important;
 
 	.cur {
-		background: $background-active-hover !important;
+		background: var(--color-background-hover) !important;
 	}
 }
 
@@ -414,16 +414,16 @@ ul.multiselectoptions {
 // Datepicker
 .ui-widget.ui-datepicker {
 	filter: none;
-	border: 1px solid $decoration-normal;
-	background-color: $background-normal;
+	border: 1px solid var(--color-border);
+	background-color: var(--color-main-background);
 
 	&::after {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 
 	.ui-widget-header {
-		background-color: $background-normal;
-		color: $foreground-normal;
+		background-color: var(--color-main-background);
+		color: var(--color-main-text);
 
 		.ui-icon {
 			opacity: .7;
@@ -431,45 +431,45 @@ ul.multiselectoptions {
 		}
 
 		.ui-datepicker-prev, .ui-datepicker-next {
-			border-color: $decoration-normal;
-			background: $background-normal;
+			border-color: var(--color-border);
+			background: var(--color-main-background);
 		}
 	}
 
 	.ui-datepicker-calendar {
 
 		th {
-			color: $foreground-normal;
+			color: var(--color-main-text);
 			opacity: 0.7;
 		}
 		
 		tr td > * {
-			color: $foreground-normal;
+			color: var(--color-main-text);
 		}
 
 		td .ui-priority-secondary:not(.ui-state-hover) {
-			color: $foreground-inactive;
+			color: var(--color-text-inactive);
 			opacity: 0.5;
 		}
 
 		td.ui-datepicker-week-end:not(.ui-state-disabled) :not(.ui-state-hover):not(.ui-state-active) {
-			color: $background-active;
+			color: var(--color-primary-element);
 			opacity: 1;
 		}
 
 		td.ui-datepicker-week-end:not(.ui-state-disabled) .ui-priority-secondary:not(.ui-state-hover) {
-			color: $background-active;
+			color: var(--color-primary-element);
 			opacity: 0.7;
 		}
 
 		td.ui-datepicker-current-day:not(.ui-state-disabled) a.ui-state-active, td .ui-state-hover, 
 		td .ui-state-focus {
-			background-color: $background-active;
-			color: $foreground-active;
+			background-color: var(--color-primary-element);
+			color: var(--color-text-active);
 		}
 
 		td.ui-datepicker-today a:not(.ui-state-hover) {
-			background-color: $background-alternate;
+			background-color: var(--color-background-alternate);
 		}
 	}
 }
@@ -477,49 +477,49 @@ ul.multiselectoptions {
 // Timepicker
 .ui-widget.ui-timepicker {
 	filter: none;
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
+	background-color: var(--color-main-background);
+	border: 1px solid var(--color-border);
 
 	.ui-widget-content {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 	}
 
 	&::after {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 
 	.ui-widget-header {
-		background-color: $background-normal;
-		color: $foreground-normal;
+		background-color: var(--color-main-background);
+		color: var(--color-main-text);
 	}
 
 	table.ui-timepicker tr td > * {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 	}
 
 	.ui-timepicker-table {
 
 		th {
-			color: $foreground-inactive;
+			color: var(--color-text-inactive);
 			opacity: 0.7%;
 		}
 
 		td {
 
 			> * {
-				color: $foreground-normal;
+				color: var(--color-main-text);
 			}
 
 			&.ui-timepicker-hours {
-				border-right-color: $decoration-normal;
+				border-right-color: var(--color-border);
 			}
 
 			&.ui-timepicker-hour-cell a.ui-state-active,
 			&.ui-timepicker-minute-cell a.ui-state-active,
 			.ui-state-hover, 
 			.ui-state-focus {
-				background-color: $background-active;
-				color: $foreground-active;
+				background-color: var(--color-primary-element);
+				color: var(--color-text-active);
 			}
 		}
 	}
@@ -528,15 +528,15 @@ ul.multiselectoptions {
 .ui-widget.ui-timepicker .ui-timepicker-table th
 
 #app-sidebar div.content-wrapper .body .section input.focus {
-	background-color: $background-dark;
-	border: 1px solid $decoration-normal;
+	background-color: var(--color-background-darker);
+	border: 1px solid var(--color-border);
 	box-shadow: none;
 }
 
 // Ldap
 
 .ui-widget.ui-widget-content {
-	border-color: $decoration-normal !important;
+	border-color: var(--color-border) !important;
 }
 
 .ui-tabs .ui-tabs-nav {
@@ -546,33 +546,33 @@ ul.multiselectoptions {
 	}
 
 	.ui-state-hover, .ui-state-active {
-		border-bottom-color: $decoration-normal !important;
+		border-bottom-color: var(--color-border) !important;
 	}
 }
 
 .ui-button {
-	background-color: $background-normal !important;
-	color: $foreground-normal !important;
-	border: 1px solid $decoration-normal !important;
+	background-color: var(--color-main-background) !important;
+	color: var(--color-main-text) !important;
+	border: 1px solid var(--color-border) !important;
 
 	&.primary {
-		background-color: $background-dark !important;
+		background-color: var(--color-background-darker) !important;
 	}
 
 	&.ui-state-active,
 	&.ui-state-hover,
 	&:hover {
-		border-color: $decoration-active !important;
+		border-color: var(--color-border-active) !important;
 	}
 
 	&:disabled,
 	&.ui-button-disabled,
 	&.ui-state-disabled {
-		background-color: $background-alternate !important;
-		color: $foreground-inactive !important;
+		background-color: var(--color-background-alternate) !important;
+		color: var(--color-text-inactive) !important;
 
 		&:hover {
-			border-color: $decoration-normal !important;
+			border-color: var(--color-border) !important;
 		}
 	}
 }
@@ -585,19 +585,19 @@ ul.multiselectoptions {
 
 	&[x-placement^="right"],
 	&.right .tooltip-arrow {
-		border-right-color: $decoration-normal !important;
+		border-right-color: var(--color-border) !important;
 	}
 
 	&[x-placement^="left"],
 	&.left .tooltip-arrow {
-		border-left-color: $decoration-normal !important;
+		border-left-color: var(--color-border) !important;
 	}
 
 	&[x-placement^="bottom"] .tooltip-arrow,
 	&.bottom .tooltip-arrow,
 	&.bottom-left .tooltip-arrow,
 	&.bottom-right .tooltip-arrow  {
-		border-bottom-color: $decoration-normal !important;
+		border-bottom-color: var(--color-border) !important;
 	}
 }
 
@@ -613,7 +613,7 @@ ul.multiselectoptions {
 }
 
 .tooltip-inner {
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 }
 
 #adminaccount .tooltip-inner {
@@ -623,7 +623,7 @@ ul.multiselectoptions {
 
 .menububble {
 	box-shadow: none !important;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 }
 
 /* Contacts menu ------------------------------------------------------------ */

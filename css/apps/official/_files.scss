@@ -1,11 +1,11 @@
 /* Files -------------------------------------------------------------------- */
 
 table td.filesize {
-	color: $foreground-inactive !important;
+	color: var(--color-text-inactive) !important;
 }
 
 td.date > span {
-	color: $foreground-inactive !important;
+	color: var(--color-text-inactive) !important;
 }
 
 tr {
@@ -53,6 +53,6 @@ tr {
 	&.selected,
 	&.highlighted,
 	&.searchresult {
-		background-color: $background-active-hover !important;
+		background-color: var(--color-background-hover) !important;
 	}
 }

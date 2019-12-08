@@ -6,55 +6,55 @@
     input,
     select,
     option {
-        background-color: $background-dark !important;
+        background-color: var(--color-background-darker) !important;
     }
 
     select#circles_filters {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 
     &.selected {
-        background-color: $background-dark !important;
-        border-right: 1px solid $decoration-normal;
+        background-color: var(--color-background-darker) !important;
+        border-right: 1px solid var(--color-border);
     }
 
     &.circles .circle {
-        border-bottom-color: $decoration-normal;
+        border-bottom-color: var(--color-border);
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
 
         .title,
         .type,
         .owner {
-            color: $foreground-normal;
+            color: var(--color-main-text);
         }
 
         &.selected {
-            background-color: $background-active;
+            background-color: var(--color-primary-element);
         }
     }
 
     #circles_list {
 
         div {
-            color: $foreground-normal;
-            border-color: $decoration-normal;
-            background-color: $background-normal;
+            color: var(--color-main-text);
+            border-color: var(--color-border);
+            background-color: var(--color-main-background);
             
             &:hover {
-                background: $background-active-hover;
+                background: var(--color-background-hover);
             }
         }
     
         .selected {
-            background: $background-active !important;
+            background: var(--color-primary-element) !important;
         }
     }
 
     #circles_new_type_definition div {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 }
 
@@ -65,36 +65,36 @@
         #circle_details {
     
             #name {
-                color: $foreground-active;
+                color: var(--color-text-active);
             }
     
             #type {
-                color: $foreground-normal;
+                color: var(--color-main-text);
             }
     
             .lightenbg {
-                background: $background-active;
+                background: var(--color-primary-element);
             }
         }
     
         #memberslist .entry td {
-            color: $foreground-normal;
-            background: $background-normal !important;
-            border-bottom-color: $decoration-normal;
+            color: var(--color-main-text);
+            background: var(--color-main-background) !important;
+            border-bottom-color: var(--color-border);
         }
 
         #members_search_result {
-            border-color: $decoration-normal;
-            color: $foreground-normal;
-            background: $background-normal;
+            border-color: var(--color-border);
+            color: var(--color-main-text);
+            background: var(--color-main-background);
             
             .members_search.exact {
-                background-color: $background-active-hover;
+                background-color: var(--color-background-hover);
             }
         }
 
         #settings-panel #settings-table {
-            color: $foreground-normal;
+            color: var(--color-main-text);
 
             tbody tr {
                 opacity: 1 !important;
@@ -104,6 +104,6 @@
 }
 
 #app-content-circlesfilter .select2-container .select2-choices {
-    background-color: $background-normal;
-    border-color: $decoration-normal;
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
 }

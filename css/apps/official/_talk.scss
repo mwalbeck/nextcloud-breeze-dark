@@ -6,6 +6,6 @@
     }
 
     div.message:empty::before {
-        color: $foreground-inactive;
+        color: var(--color-text-inactive);
     }
 }

@@ -1,13 +1,13 @@
 .app-quicknotes #app-navigation {
 
         #new-note-fixed {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
         }
 
         #colors-folder {
 
             .circle-toolbar.any-color {
-                background-color: $background-alternate;
+                background-color: var(--color-background-alternate);
             }
         }
 }

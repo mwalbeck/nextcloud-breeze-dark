@@ -7,15 +7,15 @@
 	&:focus span,
 	a:focus + span,
 	a:focus span {
-		background-color: $background-dark;
+		background-color: var(--color-background-darker);
 	}
 
 	a.active::before {
-		border-bottom-color: $background-normal;
+		border-bottom-color: var(--color-main-background);
 	}
 
 	&:hover a::before {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 }
 
@@ -31,11 +31,11 @@
 		&:hover,
 		&:hover + div.app-navigation-entry-utils,
 		&:hover + div.app-navigation-entry-edit + div.app-navigation-entry-utils {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 		}
 
 		&.active:hover {
-			background-color: $background-active;
+			background-color: var(--color-primary-element);
 		}
 	}
 
@@ -51,38 +51,38 @@
 	}
 
 	.active {
-		background-color: $background-active;
-		color: $foreground-active;
+		background-color: var(--color-primary-element);
+		color: var(--color-text-active);
 		font-weight: 600;
 
 		> a {
-			color: $foreground-active;
+			color: var(--color-text-active);
 			font-weight: 600;
 		}
 	}
 
 	input {
-		background-color: $background-dark;
+		background-color: var(--color-background-darker);
 	}
 
 	select {
-		background-color: $background-normal !important;
+		background-color: var(--color-main-background) !important;
 	}
 
 	> ul > li > .app-navigation-entry-bullet + a:hover,
 	> ul > li > ul > li > .app-navigation-entry-bullet + a:hover {
-		background: $background-active-hover !important;
+		background: var(--color-background-hover) !important;
 	}
 }
 
 .app-navigation-entry-menu {
 
 	li > button {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 		border-radius: unset;
 
 		&:hover {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 		}
 	}
 }
@@ -97,21 +97,21 @@
 	}
 
 	.thumbnail {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 	}
 
 	#collection-list input:not([type="range"]) {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 	}
 }
 
 .tabHeaders .tabHeader {
 
 	&.selected, &:hover, &:focus {
-		border-bottom: 1px solid $decoration-active;
+		border-bottom: 1px solid var(--color-border-active);
 
 		a {
-			color: $foreground-active;
+			color: var(--color-text-active);
 		}
 	}
 }
@@ -119,8 +119,8 @@
 .shareTabView {
 
 	.error {
-		color: $foreground-negative;
-		border-color: $background-negative;
+		color: var(--color-error);
+		border-color: var(--color-error);
 		box-shadow: none;
 	}
 }
@@ -128,28 +128,28 @@
 .versionsTabView {
 
 	li {
-		border-color: $decoration-normal;
+		border-color: var(--color-border);
 
 		&:hover {
-			background: $background-active-hover;
+			background: var(--color-background-hover);
 		}
 	}
 
 	a {
 		opacity: 1 !important;
-		color: $foreground-inactive;
+		color: var(--color-text-inactive);
 	}
 }
 
 .ui-widget-content {
 	a {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 	}
 
 	.ui-state-focus {
-		border-color: $decoration-active;
-		background: $background-active-hover;
-		color: $foreground-normal;
+		border-color: var(--color-border-active);
+		background: var(--color-background-hover);
+		color: var(--color-main-text);
 	}
 }
 
@@ -159,14 +159,14 @@
 	opacity: 1;
 
 	&:hover {
-		background-color: $background-active-hover;
+		background-color: var(--color-background-hover);
 	}
 }
 
 // Date picker styling fix
 
 .mx-datepicker .mx-input-wrapper .mx-input-append {
-	background-color: $background-dark !important;
+	background-color: var(--color-background-darker) !important;
 }
 
 /* Misc --------------------------------------------------------------------- */
@@ -176,14 +176,14 @@ input[type="submit"].delete,
 input[type="button"].delete,
 button.delete,
 .button.delete {
-	border-color: $decoration-normal;
-	background-color: $background-negative;
-	color: $foreground-normal;
+	border-color: var(--color-border);
+	background-color: var(--color-error);
+	color: var(--color-main-text);
 
 	&:hover,
 	&:focus {
-		border-color: $background-negative !important;
-		background-color: $background-negative;
-		color:  $foreground-active;
+		border-color: var(--color-error) !important;
+		background-color: var(--color-error);
+		color:  var(--color-text-active);
 	}
 }

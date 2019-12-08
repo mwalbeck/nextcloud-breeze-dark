@@ -3,24 +3,24 @@
 .app-dashboard #app-content {
     
     .dashboard-newwidget {
-        border-color: $decoration-normal;
-        color: $foreground-normal;
+        border-color: var(--color-border);
+        color: var(--color-main-text);
     }
 
     .grid-stack-item-content {
         filter: none;
-        border: 1px solid $decoration-normal;
+        border: 1px solid var(--color-border);
     }
 
     .diskspace-text {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 
     .diskspace-progress-limit {
-        background-color: $background-active-hover;
+        background-color: var(--color-background-hover);
     }
 
     #diskspace-progress-used {
-        background-color: $background-active-alternate;
+        background-color: var(--color-primary);
     }
 }

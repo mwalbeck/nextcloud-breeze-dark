@@ -6,6 +6,6 @@
 }
 
 .activitysubject strong.systemtag {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
+	background-color: var(--color-main-background);
+	border: 1px solid var(--color-border);
 }

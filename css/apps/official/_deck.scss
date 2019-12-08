@@ -3,11 +3,11 @@
 .app-deck #app-navigation {
 
     .editing .app-navigation-entry-edit {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
     }
 
     #app-settings-content .ui-select-match-item {
-        border-color: $decoration-normal !important;
+        border-color: var(--color-border) !important;
     }
 
 }
@@ -17,11 +17,11 @@
     #controls {
 
         #stack-add {
-            background-color: $background-dark;
-            border: 1px solid $decoration-normal;
+            background-color: var(--color-background-darker);
+            border: 1px solid var(--color-border);
 
             &:hover {
-                border-color: $decoration-active;
+                border-color: var(--color-border-active);
             }
         }
 
@@ -37,7 +37,7 @@
         }
 
         td {
-            border-bottom-color: $decoration-normal;
+            border-bottom-color: var(--color-border);
         }
 
         .board-create td{
@@ -48,43 +48,43 @@
     #board {
 
         .stack {
-            border-color: $decoration-normal;
+            border-color: var(--color-border);
         }
 
         .card {
-            border: 1px solid $decoration-normal;
+            border: 1px solid var(--color-border);
             box-shadow: none;
 
             &:hover, &.current {
-                border-color: $decoration-active;
+                border-color: var(--color-border-active);
             }
 
             &.create {
-                border-color: $decoration-normal !important;
+                border-color: var(--color-border) !important;
 
                 &:hover {
-                    background-color: $background-active-hover;
-                    border-color: $decoration-active !important;
+                    background-color: var(--color-background-hover);
+                    border-color: var(--color-border-active) !important;
                 }
             }
 
             .card-controls {
-                background-color: $background-dark;
+                background-color: var(--color-background-darker);
 
                 .due {
                     opacity: 0.7;
                     
                     span {
-                        color: $foreground-active;
+                        color: var(--color-text-active);
                     }
 
                     &.overdue {
-                        background-color: $background-negative;
+                        background-color: var(--color-error);
                         opacity: 1;
                     }
 
                     &.now {
-                        background-color: $background-neutral;
+                        background-color: var(--color-warning);
                         opacity: 1;
                     }
 
@@ -111,12 +111,12 @@
         }
 
         li[ng-if$="status.createLabel"] input {
-            color: $foreground-normal !important;
+            color: var(--color-main-text) !important;
         }
     }
 
     #sidebar-header .input-inline {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
         border: none;
     }
 
@@ -127,15 +127,15 @@
     #card-meta {
 
         .save-indicator.unsaved {
-            background-color: $background-alternate;
-            color: $foreground-normal;
+            background-color: var(--color-background-alternate);
+            color: var(--color-main-text);
         }
 
         .attachment-list {
 
             li.attachment .filesize,
             li.attachment .filedate {
-                color: $foreground-inactive;
+                color: var(--color-text-inactive);
             }
         }
     }

@@ -6,60 +6,60 @@
 
 #jsxc_notice span,
 .jsxc_caption .jsxc_lastmsg .jsxc_unread {
-	background-color: $background-neutral;
-	color: $foreground-normal;
+	background-color: var(--color-warning);
+	color: var(--color-main-text);
 }
 
 #jsxc_roster {
-    background-color: $background-normal;
-    border-left-color: $decoration-normal;
+    background-color: var(--color-main-background);
+    border-left-color: var(--color-border);
 
     #jsxc_toggleRoster::before {
-        border-color: transparent $decoration-normal;
+        border-color: transparent var(--color-border);
     }
 
     .jsxc_rosteritem {
-        color: $foreground-normal;
+        color: var(--color-main-text);
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
     }
 
     > .jsxc_bottom {
-        background-color: $background-normal;
-        border-top: 1px solid $decoration-normal;
+        background-color: var(--color-main-background);
+        border-top: 1px solid var(--color-border);
 
         ul {
-            background-color: $background-normal;
-            border-top: 1px solid $decoration-normal;
+            background-color: var(--color-main-background);
+            border-top: 1px solid var(--color-border);
         }
 
         li {
-            background-color: $background-normal;
-            color: $foreground-normal;
+            background-color: var(--color-main-background);
+            color: var(--color-main-text);
 
             &:hover:not(.jsxc_disabled) {
-                background-color: $background-active-hover;
-                color: $foreground-normal;
+                background-color: var(--color-background-hover);
+                color: var(--color-main-text);
             }
         }
     }
 }
 
 #jsxc_dialog {
-    background-color: $background-normal;
-    border: 1px solid $decoration-normal;
+    background-color: var(--color-main-background);
+    border: 1px solid var(--color-border);
 
     form fieldset {
-        border-color: $decoration-normal;
+        border-color: var(--color-border);
 
         h3 {
-            background-color: $background-dark;
-            color: $foreground-normal;
+            background-color: var(--color-background-darker);
+            color: var(--color-main-text);
 
             &.jsxc_experimental::after {
-                background-color: $background-neutral;
+                background-color: var(--color-warning);
             }
         }
     }
@@ -68,72 +68,72 @@
 #jsxc_dialog, #jsxc_webrtc {
 
     .jsxc_btn.jsxc_btn-default {
-        border-color: $decoration-normal;
-        color: $foreground-normal;
-        background-color: $background-normal;
+        border-color: var(--color-border);
+        color: var(--color-main-text);
+        background-color: var(--color-main-background);
     }
 
     .btn-default {
-        color: $foreground-normal;
-        background-color: $background-dark;
-        border-color: $decoration-normal;
+        color: var(--color-main-text);
+        background-color: var(--color-background-darker);
+        border-color: var(--color-border);
 
         &:hover {
-            color: $foreground-active;
+            color: var(--color-text-active);
         }
 
         &:active, &:focus {
-            background-color: $background-active;
+            background-color: var(--color-primary-element);
         }
     }
 
     pre {
-        color: $foreground-normal;
-        background-color: $background-dark;
-        border-color: $decoration-normal;
+        color: var(--color-main-text);
+        background-color: var(--color-background-darker);
+        border-color: var(--color-border);
     }
 
     .form-control {
-        color: $foreground-normal;
-        background-color: $background-dark;
-        border-color: $decoration-normal;
+        color: var(--color-main-text);
+        background-color: var(--color-background-darker);
+        border-color: var(--color-border);
         box-shadow: none;
 
         &[readonly], &[disabled] {
-            background-color: $background-alternate;
+            background-color: var(--color-background-alternate);
         }
 
         &:focus {
             box-shadow: none;
-            border-color: $decoration-active;
+            border-color: var(--color-border-active);
         }
     }
 
     hr {
-        border-top-color: $decoration-normal;
+        border-top-color: var(--color-border);
     }
 }
 
 #jsxc_windowList .jsxc_window {
-    background-color: $background-normal;
-    border-color: $decoration-normal;
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
     
     .jsxc_bar {
-        background-color: $background-active-alternate;
-        color: $foreground-normal;
+        background-color: var(--color-primary);
+        color: var(--color-main-text);
 
         .jsxc_settings .jsxc_menu {
-            background-color: $background-normal;
-            color: $foreground-normal;
+            background-color: var(--color-main-background);
+            color: var(--color-main-text);
             filter: none;
-            border: 1px solid $decoration-normal;
+            border: 1px solid var(--color-border);
 
             a {
-                color: $foreground-normal;
+                color: var(--color-main-text);
                 opacity: 0.7;
 
                 &.jsxc_disabled {
-                    color: $foreground-inactive;
+                    color: var(--color-text-inactive);
 
                     &:hover {
                         opacity: 0.7;
@@ -146,45 +146,45 @@
             }
 
             &::after {
-                border-bottom-color: $decoration-normal;
+                border-bottom-color: var(--color-border);
             }
         }
     }
 
     .jsxc_fade {
-        background-color: $background-dark;
+        background-color: var(--color-background-darker);
     }
 
     .jsxc_textarea {
-        background-color: $background-dark;
+        background-color: var(--color-background-darker);
 
         .jsxc_in {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
 
             &::after {
-                border-color: transparent $background-active-hover;
+                border-color: transparent var(--color-background-hover);
             }
         }
 
         .jsxc_out {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
 
             &::after {
-                border-color: transparent $background-normal;
+                border-color: transparent var(--color-main-background);
             }
         }
 
         .jsxc_timestamp {
-            color: $foreground-normal;
+            color: var(--color-main-text);
             opacity: 0.7;
         }
     }
 
     .jsxc_textinput {
-        //border-top: 1px solid $decoration-normal;
+        //border-top: 1px solid var(--color-border);
 
         &::placeholder {
-            color: $foreground-inactive;
+            color: var(--color-text-inactive);
         }
     }
 
@@ -195,11 +195,11 @@
         }
 
         ul {
-            background-color: $background-normal;
-            border: 1px solid $decoration-normal;
+            background-color: var(--color-main-background);
+            border: 1px solid var(--color-border);
 
             &::after {
-                border-top-color: $decoration-normal;
+                border-top-color: var(--color-border);
             }
         }
     }

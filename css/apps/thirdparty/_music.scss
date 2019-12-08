@@ -3,22 +3,22 @@
 .app-music #app-navigation {
 
     .app-navigation-separator {
-        border-bottom-color: $decoration-normal;
+        border-bottom-color: var(--color-border);
     }
 
     li.drag-hover {
-        background-color: $background-active-hover;
+        background-color: var(--color-background-hover);
     }
 }
 
 .app-music #app-content {
 
     #emptycontent, .emptycontent {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
     }
 
     #toScan:hover * {
-        color: $foreground-active;
+        color: var(--color-text-active);
     }
 
     .alphabet-navigation a {
@@ -34,19 +34,19 @@
     }
 
     #controls {
-        border-bottom: 1px solid $decoration-normal;
+        border-bottom: 1px solid var(--color-border);
 
         .progress, .seek-bar {
-            background-color: $background-dark;
+            background-color: var(--color-background-darker);
         }
 
         .buffer-bar {
             opacity: 1;
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
 
         .play-bar {
-            background-color: $background-active;
+            background-color: var(--color-primary-element);
         }
     }
 
@@ -58,28 +58,28 @@
     }
 
     #music-user .warning a {
-        color: $foreground-link !important;
+        color: var(--color-text-link) !important;
     }
 }
 
 #music-controls {
-    background-color: $background-normal;
-    border-top: 1px solid $decoration-normal;
+    background-color: var(--color-main-background);
+    border-top: 1px solid var(--color-border);
 
     #albumart {
         border: none;
     }
 
     .seek-bar {
-        background-color: $background-dark;
+        background-color: var(--color-background-darker);
     }
 
     .buffer-bar {
         opacity: 1;
-        background-color: $background-active-hover;
+        background-color: var(--color-background-hover);
     }
 
     .play-bar {
-        background-color: $background-active;
+        background-color: var(--color-primary-element);
     }
 }

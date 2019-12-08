@@ -1,6 +1,6 @@
 /* Announcement Center ------------------------------------------------------ */
 
 #announcement_submit_msg.success {
-	color: $foreground-active;
-	background-color: $background-positive;
+	color: var(--color-text-active);
+	background-color: var(--color-success);
 }

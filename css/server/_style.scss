@@ -3,19 +3,19 @@
 table {
 
 	tr {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 	}
 
 	th a, a {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 
 		&:hover, &:focus {
-			color: $foreground-normal;
+			color: var(--color-main-text);
 		}
 	}
 
 	tr.mouseOver {
-		background-color: $background-active-hover;
+		background-color: var(--color-background-hover);
 
 		td {
 			background-color: unset;
@@ -24,7 +24,7 @@ table {
 }
 
 table.grid th, table.grid td {
-	border-bottom-color: $decoration-normal;
+	border-bottom-color: var(--color-border);
 }
 
 // Input Fields
@@ -37,32 +37,32 @@ input:not([type="range"]) {
 	&:not(:disabled):not(.primary) {
 		
 		&:not(#quota):hover {
-			border-color: $decoration-active;
+			border-color: var(--color-border-active);
 		}
 		
 		&:focus, &:active {
-			border-color: $decoration-active;
+			border-color: var(--color-border-active);
 		}
 
 		&.active {
-			border-color: $decoration-active;
+			border-color: var(--color-border-active);
 		}
 	}
 
 	&:not(:disabled) {
 
 		&:hover, &:active, &:focus {
-			border-color: $decoration-active !important;
+			border-color: var(--color-border-active) !important;
 		}
 	}
 	
 	&:disabled {
-		background-color: $background-alternate;
-		color: $foreground-inactive;
+		background-color: var(--color-background-alternate);
+		color: var(--color-text-inactive);
 		opacity: 1;
 
 		&:hover, &:focus, &:active {
-			border-color: $decoration-normal;
+			border-color: var(--color-border);
 		}
 	}
 }
@@ -72,93 +72,93 @@ button,
 .button,
 input[type="submit"],
 input[type="button"] {
-	background-color: $background-normal;
-	border: 1px solid $decoration-normal;
-	color: $foreground-normal;
+	background-color: var(--color-main-background);
+	border: 1px solid var(--color-border);
+	color: var(--color-main-text);
 
 	&:not(:disabled):not(.primary):not(#quota) {
 		
 		&:hover {
-			border-color: $decoration-active;
+			border-color: var(--color-border-active);
 		}
 		
 		&:focus, &:active, &.active {
-			background-color: $background-active;
-			border-color: $decoration-active;
+			background-color: var(--color-primary-element);
+			border-color: var(--color-border-active);
 		}
 	}
 
 	&:disabled {
-		background-color: $background-alternate;
-		color: $foreground-inactive;
+		background-color: var(--color-background-alternate);
+		color: var(--color-text-inactive);
 		opacity: 1;
 
 		&:hover, &:focus, &:active {
-			background-color: $background-alternate;
-			border-color: $decoration-normal;
+			background-color: var(--color-background-alternate);
+			border-color: var(--color-border);
 		}
 	}
 
 	&.primary {
 		&:not(:disabled) {
-			border-color: $decoration-normal;
-			background-color: $background-dark;
-			color: $foreground-active;
+			border-color: var(--color-border);
+			background-color: var(--color-background-darker);
+			color: var(--color-text-active);
 
 			&:hover {
-				border-color: $button-decoration-active;
-				background-color: $background-active-alternate;
+				border-color: var(--color-border-active);
+				background-color: var(--color-primary);
 			}
 
 			&:focus, &:active {
-				background-color: $background-active;
-				border-color: $decoration-active;
+				background-color: var(--color-primary-element);
+				border-color: var(--color-border-active);
 			}
 		}
 
 		&:disabled {
-			background-color: $background-alternate;
-			color: $foreground-inactive;
-			border-color: $decoration-normal;
+			background-color: var(--color-background-alternate);
+			color: var(--color-text-inactive);
+			border-color: var(--color-border);
 
 			&:hover, &:focus, &:active {
-				background-color: $background-alternate;
-				color: $foreground-inactive;
-				border-color: $decoration-normal;
+				background-color: var(--color-background-alternate);
+				color: var(--color-text-inactive);
+				border-color: var(--color-border);
 			}
 		}
 	}
 }
 
 div[contenteditable="false"] {
-	background-color: $background-alternate;
-	border-color: $decoration-normal;
+	background-color: var(--color-background-alternate);
+	border-color: var(--color-border);
 	opacity: 1;
 }
 
 // Header buttons
 
 #header .button.primary, #header button.primary {
-	border-color: $decoration-normal;
+	border-color: var(--color-border);
 
 	&:hover, &:active, &:focus {
-		border-color: $decoration-active;
+		border-color: var(--color-border-active);
 	}
 }
 
 // Link Buttons
 
 .link-button {
-	background-color: $background-normal !important;
-	border: 1px solid $decoration-normal !important;
-	color: $foreground-normal !important;
+	background-color: var(--color-main-background) !important;
+	border: 1px solid var(--color-border) !important;
+	color: var(--color-main-text) !important;
 
 	&:active,
 	&:hover,
 	&:focus {
-		color: $foreground-normal !important;
-		background-color: $foreground-link !important;
-		border-color: $decoration-active !important;
+		color: var(--color-main-text) !important;
+		background-color: var(--color-text-link) !important;
+		border-color: var(--color-border-active) !important;
 	}
 }
 
@@ -171,15 +171,15 @@ div[contenteditable="false"] {
 	&:focus,
 	&.selected {
 		filter: none;
-		border-color: $decoration-active;
+		border-color: var(--color-border-active);
 	}
 }
 
 .dropdown,
 #dropdown {
-	background-color: $background-normal;
+	background-color: var(--color-main-background);
 	box-shadow: none;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 
 	input[type="text"] + .icon-confirm {
 		height: 32px;
@@ -193,5 +193,5 @@ div[contenteditable="false"] {
 }
 
 #link {
-	border-top-color: $decoration-normal;
+	border-top-color: var(--color-border);
 }

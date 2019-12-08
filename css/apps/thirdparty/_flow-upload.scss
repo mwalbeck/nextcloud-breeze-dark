@@ -1,36 +1,36 @@
 .app-flowupload {
     
     hr {
-        border-top-color: $decoration-normal;
-        border-bottom-color: $decoration-normal;    
+        border-top-color: var(--color-border);
+        border-bottom-color: var(--color-border);    
     }
 
     .alert {
-        color: $foreground-normal;
-        background-color: $background-active-hover;
+        color: var(--color-main-text);
+        background-color: var(--color-background-hover);
         text-shadow: none;
-        border-color: $decoration-active;
+        border-color: var(--color-border-active);
     }
 
     .table-bordered {
-        border-color: $decoration-normal;
+        border-color: var(--color-border);
 
         th, td {
-            border-color: $decoration-normal;
+            border-color: var(--color-border);
         }
     }
 
     .table-striped {
         
         tbody > tr:nth-child(2n+1) > td {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
         }
     }
 
     .table-hover {
         
         tbody tr:hover > td {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
     }
 }

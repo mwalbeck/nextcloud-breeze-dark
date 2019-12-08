@@ -3,7 +3,7 @@
 #groupfolders-wrapper #groupfolders-root {
 
 	th {
-		border-bottom-color: $decoration-normal;
+		border-bottom-color: var(--color-border);
 	}
 
 	td .action-rename::after {
@@ -11,19 +11,19 @@
 	}
 	
 	.groups .group-edit {
-		background-color: $background-normal !important;
-		border-color: $decoration-normal !important;
+		background-color: var(--color-main-background) !important;
+		border-color: var(--color-border) !important;
 
 		div[class$="control"] {
-			border-color: $decoration-normal !important;
+			border-color: var(--color-border) !important;
 		}
 	}
 
 	.acl {
 
 		div[class$="control"] {
-			background-color: $background-normal !important;
-			border-color: $decoration-normal !important;
+			background-color: var(--color-main-background) !important;
+			border-color: var(--color-border) !important;
 		}
 	}
 }

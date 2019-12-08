@@ -2,7 +2,7 @@
 
 .toastify.toast {
 	box-shadow: none;
-	border: 1px solid $decoration-normal;
+	border: 1px solid var(--color-border);
 }
 
 .notification-container.menu {
@@ -13,6 +13,6 @@
 
 	.notification:hover,
 	.dismiss-all:hover {
-		background-color: $background-active-hover;
+		background-color: var(--color-background-hover);
 	}
 }

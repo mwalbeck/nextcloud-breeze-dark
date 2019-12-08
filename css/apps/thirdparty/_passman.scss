@@ -5,27 +5,27 @@
     li {
 
         .bullet-color-red {
-            background-color: $background-negative;
+            background-color: var(--color-error);
         }
 
         .bullet-color-yellow {
-            background-color: $background-neutral;
+            background-color: var(--color-warning);
         }
 
         .bullet-color-green {
-            background-color: $background-positive;
+            background-color: var(--color-success);
         }
     }
 
     .nav-trashbin a {
-        background-color: $background-normal !important;
+        background-color: var(--color-main-background) !important;
 
         &:hover {
-            background-color: $background-active-hover !important;
+            background-color: var(--color-background-hover) !important;
         }
 
         &.active {
-            background-color: $background-active !important;
+            background-color: var(--color-primary-element) !important;
         }
     }
 }
@@ -37,60 +37,60 @@
         .credential-table tr {
 
             &:hover {
-                background-color: $background-active-hover;
+                background-color: var(--color-background-hover);
             }
 
             &.selected {
-                background-color: $background-active;
+                background-color: var(--color-primary-element);
             }
 
             td {
-                border-bottom-color: $decoration-normal;
+                border-bottom-color: var(--color-border);
             }
         }
 
         .viewModes .view-mode {
-            background-color: $background-normal;
-            border-color: $decoration-normal;
+            background-color: var(--color-main-background);
+            border-color: var(--color-border);
 
             &.active {
-                background-color: $background-active;
+                background-color: var(--color-primary-element);
             }
         }
 
         .grid-view .credential {
-            border-color: $decoration-normal !important;
+            border-color: var(--color-border) !important;
 
             .credential_content .tags .tag {
-                color: $foreground-normal !important;
+                color: var(--color-main-text) !important;
             }
         }
 
         .tags .tag,
         .app_sidebar .credential-data .tags .tag {
-            background-color: $background-dark;
-            border: 1px solid $decoration-normal;
+            background-color: var(--color-background-darker);
+            border: 1px solid var(--color-border);
         }
 
         #passman-controls {
             background-color: inherit;
-            border-bottom: 1px solid $decoration-normal;
+            border-bottom: 1px solid var(--color-border);
         }
 
         .searchboxContainer .searchOptions {
-            background: $background-normal;
-            border-color: $decoration-normal;
+            background: var(--color-main-background);
+            border-color: var(--color-border);
             box-shadow: none;
         }
 
         .edit_credential .compromised-button {
-            background-color: $background-negative;
-            color: $foreground-normal;
+            background-color: var(--color-error);
+            color: var(--color-main-text);
 
             &:hover,
             &:active,
             &:focus {
-                border-color: $background-neutral;
+                border-color: var(--color-warning);
             }
         }
     }
@@ -108,12 +108,12 @@
         }
 
         &.tab {
-            border-right-color: $decoration-normal;
-            color: $foreground-normal !important;
-            background-color: $background-normal !important;
+            border-right-color: var(--color-border);
+            color: var(--color-main-text) !important;
+            background-color: var(--color-main-background) !important;
 
             &:hover {
-                background-color: $background-active-hover !important;
+                background-color: var(--color-background-hover) !important;
             }
         }
     }
@@ -124,46 +124,46 @@
 
     .pass-meter .details,
     .pass-meter .pass-meter-message {
-        color: $foreground-inactive;
+        color: var(--color-text-inactive);
     }
 
     .pass-meter-col .indicator {
-        background-color: $background-dark;
+        background-color: var(--color-background-darker);
     }
 
     .pass-meter-col.poor .indicator {
-        background-color: $background-negative;
+        background-color: var(--color-error);
     }
 
     .pass-meter-col.weak .indicator {
-        background-color: $background-neutral;
+        background-color: var(--color-warning);
     }
 
     .pass-meter-col.good .indicator,
     .pass-meter-col.strong .indicator {
-        background-color: $background-positive;
+        background-color: var(--color-success);
     }
 
     .pw-gen .generate_pw .cell {
-        border-color: $decoration-normal;
-        background-color: $background-normal;
+        border-color: var(--color-border);
+        background-color: var(--color-main-background);
     }
 
     .inputfile + label {
-        background-color: $background-dark;
-        border: 1px solid $decoration-normal;
+        background-color: var(--color-background-darker);
+        border: 1px solid var(--color-border);
 
         &:hover {
-            border-color: $decoration-active;
+            border-color: var(--color-border-active);
         }
     }
 
     .icon-label .icon-picker .cell {
-        border-color: $decoration-normal;
-        background-color: $background-normal;
+        border-color: var(--color-border);
+        background-color: var(--color-main-background);
 
         &:hover {
-            border-color: $decoration-active;
+            border-color: var(--color-border-active);
         }
     }
 
@@ -171,33 +171,33 @@
         text-shadow: none;
         background-image: none;
         box-shadow: none;
-        color: $foreground-normal;
-        background-color: $background-negative;
-        border-color: $background-negative;
+        color: var(--color-main-text);
+        background-color: var(--color-error);
+        border-color: var(--color-error);
         
         &:hover {
-            border-color: $background-neutral !important;
-            background-color: $background-negative;
+            border-color: var(--color-warning) !important;
+            background-color: var(--color-error);
         }
     
         &:focus,
         &:active {
-            border-color: $background-neutral !important;
-            background-color: $background-neutral !important;
+            border-color: var(--color-warning) !important;
+            background-color: var(--color-warning) !important;
         }
     }
 }
 
 .app-passman .vault_wrapper {
 	box-shadow: none;
-	background: $background-dark;
-    border: 1px solid $decoration-normal;
+	background: var(--color-background-darker);
+    border: 1px solid var(--color-border);
 
     .vaultlist li {
-        border-bottom-color: $decoration-normal;
+        border-bottom-color: var(--color-border);
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
 
         &.ng-scope:last-child {
@@ -209,20 +209,20 @@
 tags-input {
 
     .tags {
-        background-color: $background-dark;
-        border: 1px solid $decoration-normal;
+        background-color: var(--color-background-darker);
+        border: 1px solid var(--color-border);
         box-shadow: none;
 
         &.focused {
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             box-shadow: none;
-            border-color: $decoration-active;
+            border-color: var(--color-border-active);
         }
 
         .tag-item {
-            border-color: $decoration-normal;
-            color: $foreground-normal;
+            border-color: var(--color-border);
+            color: var(--color-main-text);
         }
     }
 
@@ -230,42 +230,42 @@ tags-input {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-        border-color: $background-negative;
+        border-color: var(--color-error);
     }
 
     .autocomplete {
-        background-color: $background-dark;
-        border: 1px solid $decoration-normal;
+        background-color: var(--color-background-darker);
+        border: 1px solid var(--color-border);
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
 
         .suggestion-item.selected, .suggestion-item.selected em {
-            color: $foreground-normal;
-	        background-color: $background-active-hover;
+            color: var(--color-main-text);
+	        background-color: var(--color-background-hover);
         }
     }
 }
 
 .angularjs-datetime-picker {
-	color: $foreground-normal;
-	border-color: $decoration-normal;
-	background: $background-normal;
+	color: var(--color-main-text);
+	border-color: var(--color-border);
+	background: var(--color-main-background);
 
     .adp-month {
-        background: $background-normal;
-        border-bottom-color: $decoration-normal;
+        background: var(--color-main-background);
+        border-bottom-color: var(--color-border);
 
         > button {
-            color: $foreground-normal;
+            color: var(--color-main-text);
 
             &:hover {
-                color: $background-active;
+                color: var(--color-primary-element);
             }
 
             &:active,
             &:focus {
-                color: $background-active;
+                color: var(--color-primary-element);
                 background-color: transparent !important;
             }
         }
@@ -274,12 +274,12 @@ tags-input {
     .adp-days {
 
         > .adp-day.selected {
-            background: $background-active-hover;
-            border-color: $decoration-active;
+            background: var(--color-background-hover);
+            border-color: var(--color-border-active);
         }
 
         > .adp-day.selectable:hover {
-            background: $background-active-hover;
+            background: var(--color-background-hover);
         }
     }
 }

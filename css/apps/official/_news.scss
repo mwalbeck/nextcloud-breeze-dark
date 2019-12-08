@@ -5,7 +5,7 @@
 	.add-new .heading {
 	
 		&:hover {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 		}
 
 		button:active,
@@ -15,7 +15,7 @@
 	}
 
 	#app-settings-content a {
-		color: $foreground-link;
+		color: var(--color-text-link);
 	}
 }
 
@@ -29,15 +29,15 @@
 		font-size: 15px;
 
         a {
-		    color: $foreground-link;
+		    color: var(--color-text-link);
         }
 
         blockquote {
-            border-color: $background-active-alternate;
+            border-color: var(--color-primary);
         }
 
         h1, h2, h3 {
-            color: $foreground-active;
+            color: var(--color-text-active);
         }
 	}
 }
@@ -45,10 +45,10 @@
 .app-news #explore {
 
 	.grid-item {
-		border-color: $decoration-normal;
+		border-color: var(--color-border);
 	}
 
 	.explore-footer a {
-		color: $foreground-link;
+		color: var(--color-text-link);
 	}
 }

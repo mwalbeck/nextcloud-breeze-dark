@@ -7,28 +7,28 @@
     }
 
     .table-row a {
-        color: $foreground-normal;
+        color: var(--color-main-text);
     }
 
     .toggle-cell {
 
         &.yes, &.maybe, &.no {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
         }
     }
 
     .poll-cell {
 
         &.yes {
-            color: $foreground-positive;
+            color: var(--color-success);
         }
 
         &.maybe {
-            color: $foreground-neutral;
+            color: var(--color-warning);
         }
 
         &.no {
-            color: $foreground-negative;
+            color: var(--color-error);
         }
     }
 }
@@ -36,11 +36,11 @@
 .app-polls #app-sidebar {
 
     &.detailsView .pollInformation .cloud .open {
-        background-color: $foreground-positive;
+        background-color: var(--color-success);
     }
 
     &.detailsView .pollInformation .cloud .information {
-        background-color: $foreground-neutral;
+        background-color: var(--color-warning);
     }
 
     .pollActions li a {
@@ -57,18 +57,18 @@
     &.selected,
     &:hover,
     &:focus {
-        border-bottom-color: $decoration-normal;
+        border-bottom-color: var(--color-border);
     }
 }
 
 /* Datepicker */
 .app-polls .mx-datepicker .mx-datepicker-popup {
-    border-color: $decoration-normal !important;
-    background-color: $background-normal !important;
+    border-color: var(--color-border) !important;
+    background-color: var(--color-main-background) !important;
 }
 
 // Shift dates
 .app-polls .modal-dialog {
     box-shadow: none !important;
-    border: 1px solid $decoration-normal !important;
+    border: 1px solid var(--color-border) !important;
 }

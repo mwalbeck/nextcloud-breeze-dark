@@ -1,24 +1,24 @@
 /* Tasks -------------------------------------------------------------------- */
 
 .app-tasks #app-navigation .app-navigation-entry-edit input.action {
-    background-color: $background-dark;
+    background-color: var(--color-background-darker);
 }
 
 .app-tasks #app-content {
 
     .sortorder-dropdown-button {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
     }
 
     .categories-list span {
-        background-color: $background-normal;
+        background-color: var(--color-main-background);
     }
 
     .task-body {
-        background-color: $background-dark;
+        background-color: var(--color-background-darker);
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
 
         &.active .title {
@@ -26,42 +26,42 @@
         }
 
         .duedate.overdue {
-            color: $foreground-negative;
+            color: var(--color-error);
         }
 
         .percentdone {
-            background-color: $background-active-alternate !important;
+            background-color: var(--color-primary) !important;
         }
     }
 
     .task-list .loadmore span {
-        color: $foreground-inactive;
-        background-color: $background-normal;
+        color: var(--color-text-inactive);
+        background-color: var(--color-main-background);
     }
 }
 
 .app-tasks #app-sidebar div.content-wrapper {
 
     .title {
-        background-color: $background-active;
+        background-color: var(--color-primary-element);
 
         .expandable-container {
-            background: $background-normal;
-            border-color: $decoration-normal;
+            background: var(--color-main-background);
+            border-color: var(--color-border);
         }
     }
 
     .body .section {
-        border-bottom: 1px dashed $decoration-normal;
+        border-bottom: 1px dashed var(--color-border);
 
         .detail-categories-container .multiselect.multiselect-vue .multiselect__tag,
         .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
         }
     }
 
     .title .detail-checkbox label:hover::before {
-        border-color: $background-active-alternate;
+        border-color: var(--color-primary);
     }
 
     .footer {

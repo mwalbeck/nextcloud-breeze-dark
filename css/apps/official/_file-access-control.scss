@@ -5,7 +5,7 @@
 	.operation {
 
 		.check:hover {
-			background-color: $background-normal;
+			background-color: var(--color-main-background);
 		}
 	}
 }

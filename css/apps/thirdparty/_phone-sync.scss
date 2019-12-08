@@ -3,14 +3,14 @@
 }
 
 #app-mailbox-peers {
-    border-color: $decoration-normal;
-    background-color: $background-dark;
+    border-color: var(--color-border);
+    background-color: var(--color-background-darker);
     
     li {
-        border-top-color: $decoration-normal;
+        border-top-color: var(--color-border);
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
 
             & > a {
                 background: none;
@@ -19,10 +19,10 @@
     }
 
     .selected {
-        background-color: $background-active;
+        background-color: var(--color-primary-element);
 
         &:hover {
-            background-color: $background-active;
+            background-color: var(--color-primary-element);
         }
 
         a {
@@ -32,34 +32,34 @@
 }
 
 .ocsms-plname {
-    color: $foreground-normal;
+    color: var(--color-main-text);
 }
 
 #ocsms-phone-msg-nb {
-	color: $foreground-normal;
+	color: var(--color-main-text);
 }
 
 #ocsms-phone-label {
 	font-weight: bold;
-	color: $foreground-active;
+	color: var(--color-text-active);
 }
 
 .msg-date {
-	color: $foreground-inactive;
+	color: var(--color-text-inactive);
     opacity: 0.5;
 }
 
 .msg-sent, .msg-recv {
-    background-color: $background-dark;
-	border-color: $decoration-normal;
+    background-color: var(--color-background-darker);
+	border-color: var(--color-border);
     box-shadow: none;
 
     &:hover .msg-date {
         opacity: 1;
-        color: $foreground-inactive;
+        color: var(--color-text-inactive);
     }
 }
 
 .msg-sent {
-	border-color: $foreground-positive;
+	border-color: var(--color-success);
 }

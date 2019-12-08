@@ -8,57 +8,57 @@
 		opacity: 0.7;
 
 		&:hover {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 			opacity: 1;
 		}
 	}
 
 	.togglebuttons .button.active {
-		color: $foreground-normal;
+		color: var(--color-main-text);
 	}
 
 	#datepickercontainer {
 
 		.datepicker-heading .button {
-			background-color: $background-normal;
+			background-color: var(--color-main-background);
 		}
 
 		#datepicker table td {
 
 			&.highlight-today button {
-				background-color: $background-alternate;
+				background-color: var(--color-background-alternate);
 				border-radius: 50%;
 
 				&.active {
-					background-color: $background-active;
+					background-color: var(--color-primary-element);
 				}
 			}
 
 			&.highlight-weekend button {
-				color: $decoration-active;
+				color: var(--color-border-active);
 
 				.text-muted {
-					color: $decoration-active;
+					color: var(--color-border-active);
 				}
 
 				&:hover {
-					color: $foreground-active;
+					color: var(--color-text-active);
 				}
 
 				&.active:hover {
-					background-color: $background-active;
+					background-color: var(--color-primary-element);
 				}
 			}
 			
 			button {
 			
 				&:hover {
-					background-color: $background-active-hover;
+					background-color: var(--color-background-hover);
 					border-radius: 50%;
 				}
 
 				&.active {
-					color: $foreground-active;
+					color: var(--color-text-active);
 				}
 			}
 
@@ -72,21 +72,21 @@
 .app-calendar #app-content {
 
 	#fullcalendar {
-		background-color: $background-dark;
+		background-color: var(--color-background-darker);
 
 		th,
 		td,
 		thead,
 		tbody,
 		.fc-row {
-			border-color: $decoration-normal;
+			border-color: var(--color-border);
 		}
 
 		.fc-basic-view {
 
 			.fc-today {
-				background-color: $background-active;
-				color: $foreground-active;
+				background-color: var(--color-primary-element);
+				color: var(--color-text-active);
 			}
 
 			.fc-day-number,
@@ -98,19 +98,19 @@
 			.fc-sun {
 
 				.fc-day-number {
-					color: $background-active;
+					color: var(--color-primary-element);
 				}
 			}
 
 			.fc-day-top .fc-week-number {
-				background-color: $background-normal;
-				color: $foreground-normal;
-				border-right: 1px solid $decoration-normal;
-				border-bottom: 1px solid $decoration-normal;
+				background-color: var(--color-main-background);
+				color: var(--color-main-text);
+				border-right: 1px solid var(--color-border);
+				border-bottom: 1px solid var(--color-border);
 			}
 
 			.fc-other-month {
-				background-color: $background-normal;
+				background-color: var(--color-main-background);
 				opacity: 1;
 	
 				.fc-day-number,
@@ -123,12 +123,12 @@
 		.fc-agenda-view {
 
 			.fc-divider {
-				border-color: $decoration-normal;
-				background-color: $decoration-normal;
+				border-color: var(--color-border);
+				background-color: var(--color-border);
 			}
 
 			.fc-today {
-				background-color: $background-active-hover;
+				background-color: var(--color-background-hover);
 			}
 		}
 
@@ -138,7 +138,7 @@
 		}
 
 		.fc-highlight {
-			background-color: $background-active-hover;
+			background-color: var(--color-background-hover);
 			opacity: 1;
 		}
 	}
@@ -149,17 +149,17 @@
 
 			// Force location field in app sidebar to be dark
 			.advanced--input {
-				background: $background-dark !important;
+				background: var(--color-background-darker) !important;
 			}
 		
 			.advanced--button-area {
-				border-color: $decoration-normal;
+				border-color: var(--color-border);
 			}
 		}
 		
 		.advanced--fieldset-attendeelist .advanced--toggler:hover, 
 		.advanced--fieldset-reminderlist .advanced--toggler:hover {
-			background: $background-active-hover;
+			background: var(--color-background-hover);
 		}
 	}
 }
@@ -168,6 +168,6 @@
 		
 	.modal.popover, .modal.import {
 		box-shadow: none;
-		border: 1px solid $decoration-normal;
+		border: 1px solid var(--color-border);
 	}
 }

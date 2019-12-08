@@ -1,44 +1,44 @@
 /* Weather ------------------------------------------------------------------ */
 
 .app-weather #city-list-left {
-    background-color: $background-normal;
+    background-color: var(--color-main-background);
     border-left: none;
-    border-right-color: $decoration-normal;
+    border-right-color: var(--color-border);
 
     .city-list {
         
         li {
         
             a {
-                color: $foreground-normal;
+                color: var(--color-main-text);
             }
 
             &:hover, &:hover > a {
-                background-color: $background-active-hover;
+                background-color: var(--color-background-hover);
                 box-shadow: inset 4px 0 var(--color-primary);
             }
 
             &.selected, &.selected a {
-                background-color: $background-active;
-                color: $foreground-active;
+                background-color: var(--color-primary-element);
+                color: var(--color-text-active);
                 font-weight: 600;
                 box-shadow: inset 4px 0 var(--color-primary);
             }
         }
 
         #create-city {
-            background-color: $background-normal;
+            background-color: var(--color-main-background);
             border-left: none;
             border-right: none;
-            border-top-color: $decoration-active;
-            border-bottom-color: $decoration-active;
+            border-top-color: var(--color-border-active);
+            border-bottom-color: var(--color-border-active);
 
             h1 {
-                color: $foreground-active;
+                color: var(--color-text-active);
             }
 
             hr {
-                background: $decoration-normal;
+                background: var(--color-border);
             }
         }
     }

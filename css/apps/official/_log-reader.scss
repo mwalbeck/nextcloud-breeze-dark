@@ -3,20 +3,20 @@
 #logreader-root table {
 
 	.menu {
-		background-color: $background-normal;
+		background-color: var(--color-main-background);
 
 		h4 {
-			border-bottom-color: $decoration-normal;
+			border-bottom-color: var(--color-border);
 		}
 	}
 
 	thead th {
-		color: $foreground-normal;
-		border-bottom-color: $decoration-normal;
+		color: var(--color-main-text);
+		border-bottom-color: var(--color-border);
 	}
 
 	tbody tr td {
-		border-bottom-color: $decoration-normal;
-		background-color: $background-normal !important;
+		border-bottom-color: var(--color-border);
+		background-color: var(--color-main-background) !important;
 	}
 }
