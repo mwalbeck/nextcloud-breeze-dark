@@ -3,7 +3,7 @@
 :root {
     --icon-star-dark-000: #{$icon-star} !important;
     --icon-star-000: #{$icon-star} !important;
-    --icon-home-000: #{$icon-home} !important;
+    @include icon-color-theming('home', 'places', $icon-normal, '000', 1, true);
     --icon-bundles-000: #{$icon-bundles} !important;
     --icon-customization-000: #{$icon-customization} !important;
     --icon-games-000: #{$icon-games} !important;
