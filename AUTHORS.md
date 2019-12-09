@@ -1,0 +1,3 @@
+- Magnus Walbeck <mw@mwalbeck.org>
+- georgeto <georgeto@mailbox.org>
+- cyrosy <github@cyrosy.fr>

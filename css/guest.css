@@ -1,3 +1,9 @@
+/***
+ * @copyright Copyright (c) 2019, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
 :root {
     --color-main-text: rgba(239, 240, 241, 1) !important;
     --color-main-background: rgba(49, 54, 59, 1) !important;
