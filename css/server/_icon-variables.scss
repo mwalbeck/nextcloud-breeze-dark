@@ -1,0 +1,159 @@
+/* Icon variables */
+// Color variables for icons
+$icon-normal: #f2f2f2;
+$icon-error: #da4453;
+$icon-success: #27ae60;
+
+:root {
+    @include icon-color-theming('home', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('contacts', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('link', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('calendar', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('picture', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('files', 'places', $icon-normal, '000', 1, true);
+
+    @include icon-color-theming('desktop', 'clients', $icon-normal, '000', 1, true);
+    @include icon-color-theming('phone', 'clients', $icon-normal, '000', 1, true);
+    @include icon-color-theming('tablet', 'clients', $icon-normal, '000', 1, true);  
+
+    @include icon-color-theming('bundles', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('customization', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('games', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('integration', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('monitoring', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('multimedia', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('office', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('organization', 'categories', $icon-normal, '000', 1, true);
+
+    @include icon-color-theming('star', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('star-dark', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('search', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('search', 'actions', $icon-normal, 'fffffe', 1, true);
+    @include icon-color-theming('password', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('settings', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('settings-dark', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('rename', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('delete', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('delete', 'actions', $icon-error, 'e9322d', 1, true);
+    @include icon-color-theming('public', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('public', 'actions', $icon-normal, 'fff', 1, true);
+    @include icon-color-theming('upload', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('add', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('share', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('external', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('tag', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('download', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('details', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('info', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('clippy', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('comment', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('quota', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('triangle-n', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('triangle-s', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('more', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('toggle-filelist', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('toggle-pictures', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('history', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('edit', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('close', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('fullscreen', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('user', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('timezone', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('toggle', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('error', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('error', 'actions', $icon-normal, 'fff', 1, true);
+    @include icon-color-theming('checkmark', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('checkmark', 'actions', $icon-normal, 'fff', 1, true);
+    @include icon-color-theming('user-admin', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('arrow-right', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('arrow-left', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('mail', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('address', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('group', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('menu', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('projects', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('sound', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('sound-off', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('audio', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('audio-off', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('video', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('video-off', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('screen', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('screen-off', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('caret', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('disabled-user', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('disabled-users', 'actions', $icon-normal, '000', 1, true);
+
+    @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('external', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('share', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('unshare', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('public', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('delete', 'files', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('control', 'privacy', $icon-normal, '000', 1, false);
+    @include icon-color-theming('knowledge', 'privacy', $icon-normal, '000', 1, false);
+    @include icon-color-theming('freedom', 'privacy', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('activity', 'activity', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('notifications', 'notifications', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('undo', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('redo', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('bold', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('italic', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('strike', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('paragraph', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('ul', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('ol', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('quote', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h1', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h2', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h3', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h4', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h5', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('h6', 'text', $icon-normal, '000', 1, false);
+
+    --icon-rss-000: #{$icon-rss} !important;
+    --icon-pinned-000: #{$icon-pinned} !important;
+    --icon-unpinned-000: #{$icon-unpinned} !important;
+    --icon-nonfulltext-000: #{$icon-nonfulltext} !important;
+    --icon-fulltext-000: #{$icon-fulltext} !important;
+
+    --icon-federatedfilesharing-social-diaspora-000: #{$icon-diaspora} !important;
+    --icon-federatedfilesharing-social-twitter-000: #{$icon-twitter} !important;
+    --icon-federatedfilesharing-social-facebook-000: #{$icon-facebook} !important;
+
+    --icon-notes-folder-000: #{$icon-files} !important;
+    --icon-notes-recent-000: #{$icon-recent} !important;
+
+    --icon-announcementcenter-notifications-off-000: #{$icon-notification-off} !important;
+
+    --icon-contacts-phone-000: #{$icon-contacts-phone} !important;
+    --icon-contacts-address-book-000: #{$icon-contacts-address-book} !important;
+    --icon-contacts-social-000: #{$icon-heart} !important;
+
+    --icon-deck-deck-000: #{$icon-deck} !important;
+    --icon-deck-archive-000: #{$icon-archive} !important;
+
+    --icon-spreed-app-dark-000: #{$icon-talk} !important;
+    --icon-spreed-menu-people-000: #{$icon-menu-people} !important;
+
+    --icon-mail-inbox-000: #{$icon-home} !important;
+    --icon-mail-star-000: #{$icon-star} !important;
+    --icon-mail-drafts-000: #{$icon-rename} !important;
+    --icon-mail-sent-000: #{$icon-checkmark} !important;
+    --icon-mail-trash-000: #{$icon-delete} !important;
+    --icon-mail-junk-000: #{$icon-error} !important;
+    --icon-mail-archive-000: #{$icon-archive} !important;
+
+    --icon-circles-000: #{$icon-circles} !important;
+
+    --icon-social-000: #{$icon-social} !important;
+    --icon-text-000: #{$icon-text} !important;
+    --icon-folder-000: #{$icon-folder} !important;
+    --icon-confirm-000: #{$icon-confirm} !important;
+    --icon-help-000: #{$icon-help} !important;
+}
