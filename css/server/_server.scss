@@ -226,6 +226,7 @@ div.crumb.crumbmenu a {
 // Used by files app and file picker
 
 #filestable tbody {
+
 	tr {
 
 		&:focus, &:active {
@@ -252,6 +253,15 @@ div.crumb.crumbmenu a {
 
 	.name:focus {
 		background-color: inherit;
+	}
+}
+
+#filestable	a {
+	
+	&,
+	&:hover,
+	&:focus {
+		color: var(--color-main-text);
 	}
 }
 
