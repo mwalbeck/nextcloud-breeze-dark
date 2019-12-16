@@ -30,7 +30,7 @@
 // Circles
 // Circle in files app navbar
 .nav-icon-circlesfilter {
-	background-image: var(--icon-circles-000);
+	background-image: var(--icon-circles-circles-000) !important;
 }
 
 // Override Calendar apps override of the default timezone icon
@@ -48,6 +48,26 @@
 	background-image: var(--icon-help-000);
 }
 
+// Share by email
+.icon-social-email {
+	background-image: var(--icon-mail-000) !important;
+}
+
+// Share by Diaspora
+.icon-social-diaspora {
+	background-image: var(--icon-federatedfilesharing-social-diaspora-000) !important;
+}
+
+// Share by Twitter
+.icon-social-twitter {
+	background-image: var(--icon-federatedfilesharing-social-twitter-000) !important;
+}
+
+// Share by Facebook
+.icon-social-facebook {
+	background-image: var(--icon-federatedfilesharing-social-facebook-000) !important;
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 .app-settings {
@@ -58,6 +78,7 @@
 	}
 
 	#apps-list .section .app-image .app-icon,
+	#apps-list-search .section .app-image .app-icon,
 	#app-sidebar #app-details-view image.app-icon {
 		filter: invert(5%);
 	}
@@ -218,14 +239,6 @@ img.two-factor-provider-settings-icon,
 // // Talk: talk icon under projects tab
 // .app-spreed .linked-icons img[src$="/apps/spreed/img/app-dark.svg"] {
 // 	filter: invert(95%);
-// }
-
-// #app-sidebar .tabsContainer #versionsTabView {
-	
-// 	img[src$="/core/img/actions/download.svg"],
-// 	img[src$="/core/img/actions/history.svg"] {
-// 		filter: invert(70%);
-// 	}
 // }
 
 // // disable double more menu, check closer to release of NC17 if this is necessary

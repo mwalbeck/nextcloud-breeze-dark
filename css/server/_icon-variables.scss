@@ -24,6 +24,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('multimedia', 'categories', $icon-normal, '000', 1, true);
     @include icon-color-theming('office', 'categories', $icon-normal, '000', 1, true);
     @include icon-color-theming('organization', 'categories', $icon-normal, '000', 1, true);
+    @include icon-color-theming('social', 'categories', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('star', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('star-dark', 'actions', $icon-normal, '000', 1, true);
@@ -83,6 +84,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('caret', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('disabled-user', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('disabled-users', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('confirm', 'actions', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
     @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
@@ -97,6 +99,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('freedom', 'privacy', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('activity', 'activity', $icon-normal, '000', 1, false);
+    @include icon-color-theming('activity-dark', 'activity', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('notifications', 'notifications', $icon-normal, '000', 1, false);
 
@@ -116,44 +119,39 @@ $icon-success: #27ae60;
     @include icon-color-theming('h5', 'text', $icon-normal, '000', 1, false);
     @include icon-color-theming('h6', 'text', $icon-normal, '000', 1, false);
 
-    --icon-rss-000: #{$icon-rss} !important;
-    --icon-pinned-000: #{$icon-pinned} !important;
-    --icon-unpinned-000: #{$icon-unpinned} !important;
-    --icon-nonfulltext-000: #{$icon-nonfulltext} !important;
-    --icon-fulltext-000: #{$icon-fulltext} !important;
+    @include icon-color-theming('rss', 'news', $icon-normal, '000', 1, false);
+    @include icon-color-theming('pinned', 'news', $icon-normal, '000', 1, false);
+    @include icon-color-theming('unpinned', 'news', $icon-normal, '000', 1, false);
+    @include icon-color-theming('nonfulltext', 'news', $icon-normal, '000', 1, false);
+    @include icon-color-theming('fulltext', 'news', $icon-normal, '000', 1, false);
 
-    --icon-federatedfilesharing-social-diaspora-000: #{$icon-diaspora} !important;
-    --icon-federatedfilesharing-social-twitter-000: #{$icon-twitter} !important;
-    --icon-federatedfilesharing-social-facebook-000: #{$icon-facebook} !important;
+    @include icon-color-theming('folder', 'notes', $icon-normal, '000', 1, false);
+    @include icon-color-theming('recent', 'notes', $icon-normal, '000', 1, false);
 
-    --icon-notes-folder-000: #{$icon-files} !important;
-    --icon-notes-recent-000: #{$icon-recent} !important;
+    @include icon-color-theming('phone', 'contacts', $icon-normal, '000', 1, false);
+    @include icon-color-theming('address-book', 'contacts', $icon-normal, '000', 1, false);
+    @include icon-color-theming('social', 'contacts', $icon-normal, '000', 1, false);
+    @include icon-color-theming('qrcode', 'contacts', $icon-normal, '000', 1, false);
 
-    --icon-announcementcenter-notifications-off-000: #{$icon-notification-off} !important;
+    @include icon-color-theming('deck', 'deck', $icon-normal, '000', 1, false);
+    @include icon-color-theming('archive', 'deck', $icon-normal, '000', 1, false);
 
-    --icon-contacts-phone-000: #{$icon-contacts-phone} !important;
-    --icon-contacts-address-book-000: #{$icon-contacts-address-book} !important;
-    --icon-contacts-social-000: #{$icon-heart} !important;
+    @include icon-color-theming('app-dark', 'spreed', $icon-normal, '000', 1, false);
+    @include icon-color-theming('menu-people', 'spreed', $icon-normal, '000', 1, false);
 
-    --icon-deck-deck-000: #{$icon-deck} !important;
-    --icon-deck-archive-000: #{$icon-archive} !important;
+    @include icon-color-theming('inbox', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('drafts', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('sent', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('trash', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('junk', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('archive', 'mail', $icon-normal, '000', 1, false);
 
-    --icon-spreed-app-dark-000: #{$icon-talk} !important;
-    --icon-spreed-menu-people-000: #{$icon-menu-people} !important;
+    @include icon-color-theming('notifications-off', 'announcementcenter', $icon-normal, '000', 1, false);
 
-    --icon-mail-inbox-000: #{$icon-home} !important;
-    --icon-mail-star-000: #{$icon-star} !important;
-    --icon-mail-drafts-000: #{$icon-rename} !important;
-    --icon-mail-sent-000: #{$icon-checkmark} !important;
-    --icon-mail-trash-000: #{$icon-delete} !important;
-    --icon-mail-junk-000: #{$icon-error} !important;
-    --icon-mail-archive-000: #{$icon-archive} !important;
+    @include icon-color-theming('social-diaspora', 'federatedfilesharing', $icon-normal, '000', 1, false);
+    @include icon-color-theming('social-twitter', 'federatedfilesharing', $icon-normal, '000', 1, false);
+    @include icon-color-theming('social-facebook', 'federatedfilesharing', $icon-normal, '000', 1, false);
 
-    --icon-circles-000: #{$icon-circles} !important;
-
-    --icon-social-000: #{$icon-social} !important;
-    --icon-text-000: #{$icon-text} !important;
-    --icon-folder-000: #{$icon-folder} !important;
-    --icon-confirm-000: #{$icon-confirm} !important;
-    --icon-help-000: #{$icon-help} !important;
+    @include icon-color-theming('circles', 'circles', $icon-normal, '000', 1, false);
 }
