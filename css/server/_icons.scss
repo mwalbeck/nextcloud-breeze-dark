@@ -108,7 +108,8 @@ img.two-factor-provider-settings-icon,
 }
 
 // Activity App: Icons in activity feed
-.app-activity .activity-icon {
+.app-activity .activity-icon,
+.activity .activity-icon {
 
 	img[src$="share.svg"],
 	img[src$="change.svg"],
