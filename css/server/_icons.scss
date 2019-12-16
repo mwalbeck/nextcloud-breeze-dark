@@ -118,6 +118,12 @@ img.two-factor-provider-settings-icon,
 	}
 }
 
+// Invert icon for version history in app sidebar
+.downloadVersion img[src$="download.svg"],
+.revertVersion img[src$="history.svg"] {
+	filter: invert(95%);
+}
+
 // // Music app: icons for Music player controls in files and in app
 // #music-controls img.control,
 // .app-music img.control {
