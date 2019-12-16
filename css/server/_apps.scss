@@ -122,6 +122,18 @@
 	}
 }
 
+.commentsTabView {
+
+	.newCommentForm .message {
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: var(--color-primary-element) !important;
+		}
+	}
+}
+
 .shareTabView {
 
 	.error {
