@@ -151,6 +151,13 @@ img.two-factor-provider-settings-icon,
 	filter: none;
 }
 
+// Arrow in advanved ldap settings and
+// Little help icon
+#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
+#ldapSettings img[src$="info.svg"] {
+	filter: invert(95%);
+}
+
 // // Music app: icons for Music player controls in files and in app
 // #music-controls img.control,
 // .app-music img.control {
