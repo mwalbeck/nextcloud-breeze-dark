@@ -234,6 +234,10 @@ a {
     }
 }
 
+.button a {
+	color: var(--color-main-text);
+}
+
 /* Login Screen ------------------------------------------------------------- */
 #body-login {
 	background-color: var(--color-main-background) !important;
