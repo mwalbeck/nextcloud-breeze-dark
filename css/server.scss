@@ -12,15 +12,13 @@
 // General and Nextcloud Core
 @import 'server/functions';
 @import 'server/color-variables';
-@import 'server/sass-variables';
 @import 'server/icon-variables';
-@import 'server/style';
 @import 'server/server';
 @import 'server/apps';
 @import 'server/icons';
 // Official
 @import 'apps/official/activity';
-// @import 'apps/official/announcement-center';
+@import 'apps/official/announcement-center';
 // @import 'apps/official/calendar';
 // @import 'apps/official/contacts';
 // @import 'apps/official/deck';
