@@ -35,7 +35,7 @@
 
 // Override Calendar apps override of the default timezone icon
 .icon-timezone {
-	background-image: var(--icon-timezone-000);
+	background-image: var(--icon-timezone-000) !important;
 }
 
 // Override Deck apps override of the deck icon
