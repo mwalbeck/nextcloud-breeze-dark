@@ -1,20 +1,7 @@
 /* Contacts ----------------------------------------------------------------- */
 
-.app-contacts #app-content {
-
-	.app-content-list-item {
-
-		&.active {
-			background-color: var(--color-primary-element);
-			color: var(--color-text-active);
-			font-weight: 600;
-		}
-	}
-
-	.app-content-details .contact-details {
-
-		.multiselect.property__label input:focus {
-			background-color: var(--color-main-background);
-		}
-	}
+.app-contacts #app-content .app-content-list-item.active {
+	background-color: var(--color-primary-element);
+	color: var(--color-text-active);
+	font-weight: 600;
 }
