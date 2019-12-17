@@ -146,6 +146,11 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
+// Change the app icons in the navigation menu to white
+#navigation .app-icon {
+	filter: none;
+}
+
 // // Music app: icons for Music player controls in files and in app
 // #music-controls img.control,
 // .app-music img.control {
@@ -195,15 +200,6 @@ img.two-factor-provider-settings-icon,
 
 // 	&.icon-shadow {
 // 		filter: unset;
-// 	}
-// }
-
-// // Change the app icons in the navigation menu to white
-// #navigation .app-icon {
-// 	filter: none;
-
-// 	image {
-// 		filter: none;
 // 	}
 // }
 
