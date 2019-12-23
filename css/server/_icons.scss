@@ -191,6 +191,11 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
+// Info icon in contacts menu
+#contactsmenu-menu .content .contact img[src$="info.svg"] {
+	filter: invert(95%);
+}
+
 // // Deck app: deck icon in activity tab for individual card
 // .activity-icon img[src$="/apps/deck/img/deck-dark.svg"] {
 // 	filter: invert(95%);
