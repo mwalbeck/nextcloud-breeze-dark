@@ -196,6 +196,11 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
+// Audio player: Play option in right click menu in files
+.menuitem.action.action-audio img[src$="sound.svg"] {
+	filter: invert(95%);
+}
+
 // // Deck app: deck icon in activity tab for individual card
 // .activity-icon img[src$="/apps/deck/img/deck-dark.svg"] {
 // 	filter: invert(95%);
