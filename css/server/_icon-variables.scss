@@ -157,4 +157,12 @@ $icon-success: #27ae60;
     @include icon-color-theming('social-facebook', 'federatedfilesharing', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('circles', 'circles', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('previous', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('play', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('pause', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('next', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('volume', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('repeat', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('shuffle', 'audioplayer', $icon-normal, '000', 1, false);
 }
