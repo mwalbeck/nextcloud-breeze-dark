@@ -63,23 +63,23 @@
 }
 
 #music-controls {
-    background-color: var(--color-main-background);
+    background-color: var(--color-main-background) !important;
     border-top: 1px solid var(--color-border);
 
     #albumart {
-        border: none;
+        border: none !important;
     }
 
     .seek-bar {
-        background-color: var(--color-background-darker);
+        background-color: var(--color-background-darker) !important;
     }
 
     .buffer-bar {
         opacity: 1;
-        background-color: var(--color-background-hover);
+        background-color: var(--color-background-hover) !important;
     }
 
     .play-bar {
-        background-color: var(--color-primary-element);
+        background-color: var(--color-primary-element) !important;
     }
 }

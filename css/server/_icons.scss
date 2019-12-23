@@ -162,32 +162,34 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
-// // Music app: icons for Music player controls in files and in app
-// #music-controls img.control,
-// .app-music img.control {
-// 	filter: invert(95%);
-// }
+// Music app: icons for Music player controls in files and in app
+#music-controls img.control,
+.app-music img.control {
+	filter: invert(95%);
+}
 
-// // Music app: follow-playback icon
-// .app-music #app-sidebar #follow-playback {
-// 	filter: invert(95%);
-// }
+// Music app: follow-playback icon
+.app-music #app-sidebar #follow-playback {
+	filter: invert(95%);
+}
 
-// // Music app: Play button on album covers
-// .app-music img.play.svg {
-// 	filter: invert(95%);
-// }
+// Music app: Play button on album covers
+.app-music img.play.svg {
+	filter: invert(95%);
+}
 
-// // Music App: Mini play button
-// .current.playing .play-pause,
-// #app-view :hover > .play-pause {
-// 	filter: invert(95%);
-// }
+// Music App: Mini play button
+.current.playing .play-pause,
+.current:not(.playing) .play-pause,
+#app-view :hover > .play-pause,
+#app-view .current.playing div:hover .play-pause {
+	filter: invert(95%);
+}
 
-// // Music app: Play option in file action menu in Files App
-// .fileActionsMenu .action-music-play img.icon {
-// 	filter: invert(95%);
-// }
+// Music app: Play option in file action menu in Files App
+.fileActionsMenu .action-music-play img.icon {
+	filter: invert(95%);
+}
 
 // // Deck app: deck icon in activity tab for individual card
 // .activity-icon img[src$="/apps/deck/img/deck-dark.svg"] {
