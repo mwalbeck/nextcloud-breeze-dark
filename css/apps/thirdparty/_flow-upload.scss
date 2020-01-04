@@ -1,36 +1,8 @@
 .app-flowupload {
+    background-color: var(--color-main-background);
     
     hr {
         border-top-color: var(--color-border);
         border-bottom-color: var(--color-border);    
-    }
-
-    .alert {
-        color: var(--color-main-text);
-        background-color: var(--color-background-hover);
-        text-shadow: none;
-        border-color: var(--color-border-active);
-    }
-
-    .table-bordered {
-        border-color: var(--color-border);
-
-        th, td {
-            border-color: var(--color-border);
-        }
-    }
-
-    .table-striped {
-        
-        tbody > tr:nth-child(2n+1) > td {
-            background-color: var(--color-main-background);
-        }
-    }
-
-    .table-hover {
-        
-        tbody tr:hover > td {
-            background-color: var(--color-background-hover);
-        }
     }
 }

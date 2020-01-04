@@ -85,6 +85,8 @@ $icon-success: #27ae60;
     @include icon-color-theming('disabled-user', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('disabled-users', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('confirm', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('play', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('pause', 'actions', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
     @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
