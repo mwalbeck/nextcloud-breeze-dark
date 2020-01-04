@@ -1,5 +1,57 @@
 /* Passman ------------------------------------------------------------------ */
 
+.app-passman .vault_wrapper {
+	box-shadow: none;
+	background: var(--color-background-darker);
+    border: 1px solid var(--color-border);
+
+    .vaultlist li {
+        border-bottom-color: var(--color-border);
+
+        &:hover {
+            background-color: var(--color-background-hover);
+        }
+
+        &.ng-scope:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .login_form {
+
+        .button-geen {
+            background-color: var(--color-success);
+            color: var(--color-main-text);
+            border-color: var(--color-success);
+
+            &:hover {
+                border-color: var(--color-success) !important;
+            }
+
+            &:active,
+            &:focus {
+                border-color: var(--color-border-active) !important;
+            }
+        }
+
+        .button-red {
+            background-color: var(--color-error);
+            color: var(--color-main-text);
+            border-color: var(--color-error);
+
+            &:hover {
+                border-color: var(--color-warning) !important;
+            }
+
+            &:active,
+            &:focus {
+                border-color: var(--color-warning) !important;
+                background-color: var(--color-warning) !important;
+            }
+        }
+    }
+}
+
 .app-passman #app-navigation {
 
     li {
@@ -51,7 +103,7 @@
 
         .viewModes .view-mode {
             background-color: var(--color-main-background);
-            border-color: var(--color-border);
+            border-color: var(--color-border) !important;
 
             &.active {
                 background-color: var(--color-primary-element);
@@ -77,15 +129,10 @@
             border-bottom: 1px solid var(--color-border);
         }
 
-        .searchboxContainer .searchOptions {
-            background: var(--color-main-background);
-            border-color: var(--color-border);
-            box-shadow: none;
-        }
-
         .edit_credential .compromised-button {
             background-color: var(--color-error);
             color: var(--color-main-text);
+            border-color: var(--color-error);
 
             &:hover,
             &:active,
@@ -144,6 +191,13 @@
         background-color: var(--color-success);
     }
 
+    .icon-label input,
+    .pw-gen input {
+        background-color: var(--color-main-background);
+        color: var(--color-main-text);
+        border-color: var(--color-border);
+    }
+
     .pw-gen .generate_pw .cell {
         border-color: var(--color-border);
         background-color: var(--color-main-background);
@@ -188,84 +242,66 @@
     }
 }
 
-.app-passman .vault_wrapper {
-	box-shadow: none;
-	background: var(--color-background-darker);
-    border: 1px solid var(--color-border);
-
-    .vaultlist li {
-        border-bottom-color: var(--color-border);
-
-        &:hover {
-            background-color: var(--color-background-hover);
-        }
-
-        &.ng-scope:last-child {
-            border-bottom: none;
-        }
-    }
-}
-
 tags-input {
 
     .tags {
-        background-color: var(--color-background-darker);
-        border: 1px solid var(--color-border);
-        box-shadow: none;
+        background-color: var(--color-main-background) !important;
+        border: 1px solid var(--color-border) !important;
+        box-shadow: none !important;
 
         &.focused {
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            border-color: var(--color-border-active);
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+            border-color: var(--color-border-active) !important;
         }
 
         .tag-item {
-            border-color: var(--color-border);
-            color: var(--color-main-text);
+            border-color: var(--color-border) !important;
+            color: var(--color-main-text) !important;
         }
     }
 
     &.ng-invalid .tags {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        border-color: var(--color-error);
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        border-color: var(--color-error) !important;
     }
 
     .autocomplete {
-        background-color: var(--color-background-darker);
-        border: 1px solid var(--color-border);
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
+        background-color: var(--color-background-darker) !important;
+        border: 1px solid var(--color-border) !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
 
-        .suggestion-item.selected, .suggestion-item.selected em {
-            color: var(--color-main-text);
-	        background-color: var(--color-background-hover);
+        .suggestion-item.selected {
+            color: var(--color-main-text) !important;
+	        background-color: var(--color-background-hover) !important;
         }
     }
 }
 
 .angularjs-datetime-picker {
-	color: var(--color-main-text);
-	border-color: var(--color-border);
-	background: var(--color-main-background);
+	color: var(--color-main-text) !important;
+	border-color: var(--color-border) !important;
+	background: var(--color-main-background) !important;
 
     .adp-month {
-        background: var(--color-main-background);
-        border-bottom-color: var(--color-border);
+        background: var(--color-main-background) !important;
+        border-bottom-color: var(--color-border) !important;
 
         > button {
-            color: var(--color-main-text);
+            color: var(--color-main-text) !important;
 
             &:hover {
-                color: var(--color-primary-element);
+                color: var(--color-primary-element) !important;
             }
 
             &:active,
             &:focus {
-                color: var(--color-primary-element);
+                color: var(--color-primary-element) !important;
                 background-color: transparent !important;
             }
         }
@@ -274,26 +310,31 @@ tags-input {
     .adp-days {
 
         > .adp-day.selected {
-            background: var(--color-background-hover);
-            border-color: var(--color-border-active);
+            background: var(--color-background-hover) !important;
+            border-color: var(--color-border-active) !important;
         }
 
         > .adp-day.selectable:hover {
-            background: var(--color-background-hover);
+            background: var(--color-background-hover) !important;
         }
     }
 }
 
 .sequence code {
-	border: none;
+	border: none !important;
 }
 
 .iconpicker-dialog,
-.shareincoming-dialog {
+.shareincoming-dialog,
+.custom-search-dialog {
 
     &, .ui-dialog {
-        box-shadow: none;
+        box-shadow: none !important;
     }
+}
+
+.iconpicker-dialog .ui-button.ui-button-icon-only {
+    background-color: var(--color-main-background) !important;
 }
 
 #passman-settings {
