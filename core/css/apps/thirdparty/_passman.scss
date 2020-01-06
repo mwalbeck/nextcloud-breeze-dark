@@ -1,5 +1,57 @@
 /* Passman ------------------------------------------------------------------ */
 
+.app-passman .vault_wrapper {
+	box-shadow: none;
+	background: $background-dark;
+    border: 1px solid $decoration-normal;
+
+    .vaultlist li {
+        border-bottom-color: $decoration-normal;
+
+        &:hover {
+            background-color: $background-active-hover;
+        }
+
+        &.ng-scope:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .login_form {
+
+        .button-geen {
+            background-color: $background-positive;
+            color: $foreground-normal;
+            border-color: $background-positive;
+
+            &:hover {
+                border-color: $background-positive !important;
+            }
+
+            &:active,
+            &:focus {
+                border-color: $decoration-active !important;
+            }
+        }
+
+        .button-red {
+            background-color: $background-negative;
+            color: $foreground-normal;
+            border-color: $background-negative;
+
+            &:hover {
+                border-color: $background-neutral !important;
+            }
+
+            &:active,
+            &:focus {
+                border-color: $background-neutral !important;
+                background-color: $background-neutral !important;
+            }
+        }
+    }
+}
+
 .app-passman #app-navigation {
 
     li {
@@ -77,12 +129,6 @@
             border-bottom: 1px solid $decoration-normal;
         }
 
-        .searchboxContainer .searchOptions {
-            background: $background-normal;
-            border-color: $decoration-normal;
-            box-shadow: none;
-        }
-
         .edit_credential .compromised-button {
             background-color: $background-negative;
             color: $foreground-normal;
@@ -100,7 +146,7 @@
     .tab_header li {
     
         &.active {
-            box-shadow: inset 0 -4px var(--color-primary);
+            box-shadow: inset 0 -4px $background-active-alternate;
 
             .indicator {
                 display: none;
@@ -144,6 +190,13 @@
         background-color: $background-positive;
     }
 
+    .icon-label input,
+    .pw-gen input {
+        background-color: var(--color-main-background);
+        color: $foreground-normal;
+        border-color: $decoration-normal;
+    }
+
     .pw-gen .generate_pw .cell {
         border-color: $decoration-normal;
         background-color: $background-normal;
@@ -184,24 +237,6 @@
         &:active {
             border-color: $background-neutral !important;
             background-color: $background-neutral !important;
-        }
-    }
-}
-
-.app-passman .vault_wrapper {
-	box-shadow: none;
-	background: $background-dark;
-    border: 1px solid $decoration-normal;
-
-    .vaultlist li {
-        border-bottom-color: $decoration-normal;
-
-        &:hover {
-            background-color: $background-active-hover;
-        }
-
-        &.ng-scope:last-child {
-            border-bottom: none;
         }
     }
 }
@@ -289,11 +324,16 @@ tags-input {
 }
 
 .iconpicker-dialog,
-.shareincoming-dialog {
+.shareincoming-dialog,
+.custom-search-dialog {
 
     &, .ui-dialog {
         box-shadow: none;
     }
+}
+
+.iconpicker-dialog .ui-button.ui-button-icon-only {
+    background-color: $background-normal !important;
 }
 
 #passman-settings {
