@@ -12,33 +12,38 @@ button,
 input[type="submit"],
 input[type="button"] {
 
-	&.primary {
-		&:not(:disabled) {
-			border-color: var(--color-border);
-			background-color: var(--color-background-darker);
-			color: var(--color-text-active);
+	&.primary:disabled {
+		background-color: var(--color-background-alternate);
+		color: var(--color-text-inactive);
+		border-color: var(--color-border);
 
-			&:hover {
-				border-color: var(--color-border-active);
-				background-color: var(--color-primary);
-			}
-
-			&:focus, &:active {
-				background-color: var(--color-primary-element);
-				border-color: var(--color-border-active);
-			}
-		}
-
-		&:disabled {
+		&:hover, &:focus, &:active {
 			background-color: var(--color-background-alternate);
 			color: var(--color-text-inactive);
 			border-color: var(--color-border);
+		}
+	}
+}
 
-			&:hover, &:focus, &:active {
-				background-color: var(--color-background-alternate);
-				color: var(--color-text-inactive);
-				border-color: var(--color-border);
-			}
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+
+	&.primary:not(:disabled) {
+		border-color: var(--color-border);
+		background-color: var(--color-background-darker);
+		color: var(--color-text-active);
+
+		&:hover {
+			border-color: var(--color-border-active);
+			background-color: var(--color-primary);
+		}
+
+		&:focus, &:active {
+			background-color: var(--color-primary-element);
+			border-color: var(--color-border-active);
 		}
 	}
 }
