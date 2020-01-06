@@ -1,3 +1,5 @@
+## PSA: This theme will transistion to an app, which means in the future you should get it from the nextcloud app store instead. NC17 will be the last release where I support the current theming method. master will be switched over to contain the app code when the theme for NC18 is released.
+
 # Nextcloud Breeze Dark Theme
 This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the Breeze Dark theme made by the KDE Project.
 
@@ -9,6 +11,12 @@ The icons are from the default Nextcloud theme and the individual apps, with the
 The first number is the Nextcloud version. The second number is the Nextcloud major point release version. The third number is the theme version.
 
 ## Installation
+This theme is now in the nextcloud app store under the name Breeze Dark, go check it out.
+
+[https://apps.nextcloud.com/apps/breezedark](https://apps.nextcloud.com/apps/breezedark)
+
+### Old and manual way
+
 The master branch will always be the current stable release so you can clone that for easy installation and updates. Using git is currently the recommended way of installing the theme. You can also download it as a zip file either straight from the master branch, or on the release page.
 
 Next, git clone or unzip it into your **nextcloud/themes** folder.

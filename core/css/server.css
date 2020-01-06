@@ -1,8 +1,8 @@
 /*
 =============================================================================
 * Nextcloud Breeze Dark
-* Version: 17.0.1
-* Date 2019-11-17
+* Version: 17.0.2
+* Date 2020-01-06
 * Copyright (C) Magnus Walbeck and other contributors
 * License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/LICENSE
 * Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
@@ -344,6 +344,10 @@ a.impersonate img.svg {
 
 .icon-add-user {
   filter: invert(95%);
+}
+
+.icon-expired {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PHBhdGggZD0nTTEzIDNjLTQuOTcgMC05IDQuMDMtOSA5SDFsMy44OSAzLjg5LjA3LjE0TDkgMTJINmMwLTMuODcgMy4xMy03IDctN3M3IDMuMTMgNyA3LTMuMTMgNy03IDdjLTEuOTMgMC0zLjY4LS43OS00Ljk0LTIuMDZsLTEuNDIgMS40MkM4LjI3IDE5Ljk5IDEwLjUxIDIxIDEzIDIxYzQuOTcgMCA5LTQuMDMgOS05cy00LjAzLTktOS05em0tMSA1djVsNC4yOCAyLjU0LjcyLTEuMjEtMy41LTIuMDhWOEgxMnonIGZpbGw9JyNmMmYyZjInLz48L3N2Zz4=");
 }
 
 a {
@@ -2417,6 +2421,44 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 }
 
 /* Passman ------------------------------------------------------------------ */
+.app-passman .vault_wrapper {
+  box-shadow: none;
+  background: #232629;
+  border: 1px solid #706f6e;
+}
+.app-passman .vault_wrapper .vaultlist li {
+  border-bottom-color: #706f6e;
+}
+.app-passman .vault_wrapper .vaultlist li:hover {
+  background-color: rgba(61, 174, 233, 0.25);
+}
+.app-passman .vault_wrapper .vaultlist li.ng-scope:last-child {
+  border-bottom: none;
+}
+.app-passman .vault_wrapper .login_form .button-geen {
+  background-color: #27ae60;
+  color: #eff0f1;
+  border-color: #27ae60;
+}
+.app-passman .vault_wrapper .login_form .button-geen:hover {
+  border-color: #27ae60 !important;
+}
+.app-passman .vault_wrapper .login_form .button-geen:active, .app-passman .vault_wrapper .login_form .button-geen:focus {
+  border-color: #3daee9 !important;
+}
+.app-passman .vault_wrapper .login_form .button-red {
+  background-color: #da4453;
+  color: #eff0f1;
+  border-color: #da4453;
+}
+.app-passman .vault_wrapper .login_form .button-red:hover {
+  border-color: #f67400 !important;
+}
+.app-passman .vault_wrapper .login_form .button-red:active, .app-passman .vault_wrapper .login_form .button-red:focus {
+  border-color: #f67400 !important;
+  background-color: #f67400 !important;
+}
+
 .app-passman #app-navigation li .bullet-color-red {
   background-color: #da4453;
 }
@@ -2467,11 +2509,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   background-color: inherit;
   border-bottom: 1px solid #706f6e;
 }
-.app-passman #app-content #app-content-wrapper .searchboxContainer .searchOptions {
-  background: #31363b;
-  border-color: #706f6e;
-  box-shadow: none;
-}
 .app-passman #app-content #app-content-wrapper .edit_credential .compromised-button {
   background-color: #da4453;
   color: #eff0f1;
@@ -2480,7 +2517,7 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
   border-color: #f67400;
 }
 .app-passman #app-content .tab_header li.active {
-  box-shadow: inset 0 -4px var(--color-primary);
+  box-shadow: inset 0 -4px #1d99f3;
 }
 .app-passman #app-content .tab_header li.active .indicator {
   display: none;
@@ -2512,6 +2549,12 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-passman #app-content .pass-meter-col.good .indicator,
 .app-passman #app-content .pass-meter-col.strong .indicator {
   background-color: #27ae60;
+}
+.app-passman #app-content .icon-label input,
+.app-passman #app-content .pw-gen input {
+  background-color: var(--color-main-background);
+  color: #eff0f1;
+  border-color: #706f6e;
 }
 .app-passman #app-content .pw-gen .generate_pw .cell {
   border-color: #706f6e;
@@ -2546,21 +2589,6 @@ tr span.extension, tr:hover span.extension, tr:active span.extension, tr:focus s
 .app-passman #app-content .btn-danger:focus, .app-passman #app-content .btn-danger:active {
   border-color: #f67400 !important;
   background-color: #f67400 !important;
-}
-
-.app-passman .vault_wrapper {
-  box-shadow: none;
-  background: #232629;
-  border: 1px solid #706f6e;
-}
-.app-passman .vault_wrapper .vaultlist li {
-  border-bottom-color: #706f6e;
-}
-.app-passman .vault_wrapper .vaultlist li:hover {
-  background-color: rgba(61, 174, 233, 0.25);
-}
-.app-passman .vault_wrapper .vaultlist li.ng-scope:last-child {
-  border-bottom: none;
 }
 
 tags-input .tags {
@@ -2629,8 +2657,14 @@ tags-input .autocomplete .suggestion-item.selected, tags-input .autocomplete .su
 
 .iconpicker-dialog, .iconpicker-dialog .ui-dialog,
 .shareincoming-dialog,
-.shareincoming-dialog .ui-dialog {
+.shareincoming-dialog .ui-dialog,
+.custom-search-dialog,
+.custom-search-dialog .ui-dialog {
   box-shadow: none;
+}
+
+.iconpicker-dialog .ui-button.ui-button-icon-only {
+  background-color: #31363b !important;
 }
 
 #passman-settings #mover table tr:hover {
