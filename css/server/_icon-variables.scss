@@ -167,4 +167,18 @@ $icon-success: #27ae60;
     @include icon-color-theming('volume', 'audioplayer', $icon-normal, '000', 1, false);
     @include icon-color-theming('repeat', 'audioplayer', $icon-normal, '000', 1, false);
     @include icon-color-theming('shuffle', 'audioplayer', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('leftarrow', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('rightarrow', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-module', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-day', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-week', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('embed', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('new-calendar', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('new-calendar-with-task-list', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('eye', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('briefcase', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('reminder', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('repeat', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('timezone', 'calendar', $icon-normal, '000', 1, false);
 }

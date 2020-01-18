@@ -1,173 +1,53 @@
-.app-calendar #app-navigation {
-
-	.active {
-		background-color: inherit;
-	}
-
-	.new-entity {
-		opacity: 0.7;
-
-		&:hover {
-			background-color: var(--color-background-hover);
-			opacity: 1;
-		}
-	}
-
-	.togglebuttons .button.active {
-		color: var(--color-main-text);
-	}
-
-	#datepickercontainer {
-
-		.datepicker-heading .button {
-			background-color: var(--color-main-background);
-		}
-
-		#datepicker table td {
-
-			&.highlight-today button {
-				background-color: var(--color-background-alternate);
-				border-radius: 50%;
-
-				&.active {
-					background-color: var(--color-primary-element);
-				}
-			}
-
-			&.highlight-weekend button {
-				color: var(--color-border-active);
-
-				.text-muted {
-					color: var(--color-border-active);
-				}
-
-				&:hover {
-					color: var(--color-text-active);
-				}
-
-				&.active:hover {
-					background-color: var(--color-primary-element);
-				}
-			}
-			
-			button {
-			
-				&:hover {
-					background-color: var(--color-background-hover);
-					border-radius: 50%;
-				}
-
-				&.active {
-					color: var(--color-text-active);
-				}
-			}
-
-			.text-muted {
-				opacity: 0.57;
-			}
-		}
-	}
-}
-
 .app-calendar #app-content {
 
-	#fullcalendar {
-		background-color: var(--color-background-darker);
+	.fc-view-container {
 
-		th,
-		td,
-		thead,
-		tbody,
-		.fc-row {
-			border-color: var(--color-border);
+		.fc-day {
+			background-color: var(--color-background-darker);
+
+			&.fc-other-month {
+				background-color: var(--color-main-background);
+			}
 		}
 
-		.fc-basic-view {
+		.fc-day-top {
 
-			.fc-today {
-				background-color: var(--color-primary-element);
-				color: var(--color-text-active);
-			}
-
-			.fc-day-number,
-			.fc-week-number {
-				opacity: 1;
-			}
-
-			.fc-sat,
-			.fc-sun {
+			&.fc-sat,
+			&.fc-sun {
 
 				.fc-day-number {
 					color: var(--color-primary-element);
 				}
-			}
 
-			.fc-day-top .fc-week-number {
-				background-color: var(--color-main-background);
-				color: var(--color-main-text);
-				border-right: 1px solid var(--color-border);
-				border-bottom: 1px solid var(--color-border);
-			}
+				&.fc-today {
 
-			.fc-other-month {
-				background-color: var(--color-main-background);
-				opacity: 1;
-	
-				.fc-day-number,
-				.fc-week-number {
-					opacity: 0.57;
+					&:not(.fc-day-header) {
+						background-color: inherit !important;
+					}
+				
+					.fc-day-number {
+						color: var(--color-main-text);
+					}
 				}
 			}
-		}
 
-		.fc-agenda-view {
-
-			.fc-divider {
-				border-color: var(--color-border);
-				background-color: var(--color-border);
+			&.fc-other-month {
+				opacity: 0.7;
 			}
-
-			.fc-today {
-				background-color: var(--color-background-hover);
-			}
-		}
-
-		.fc-axis,
-		.fc-day-header {
-			opacity: 1;
-		}
-
-		.fc-highlight {
-			background-color: var(--color-background-hover);
-			opacity: 1;
-		}
-	}
-
-	#app-sidebar {
-		
-		&.advanced {
-
-			// Force location field in app sidebar to be dark
-			.advanced--input {
-				background: var(--color-background-darker) !important;
-			}
-		
-			.advanced--button-area {
-				border-color: var(--color-border);
-			}
-		}
-		
-		.advanced--fieldset-attendeelist .advanced--toggler:hover, 
-		.advanced--fieldset-reminderlist .advanced--toggler:hover {
-			background: var(--color-background-hover);
 		}
 	}
 }
 
-.modal-open {
-		
-	.modal.popover, .modal.import {
-		box-shadow: none;
-		border: 1px solid var(--color-border);
+.app-calendar #app-sidebar .app-sidebar-tabs__nav .app-sidebar-tabs__tab a.active {
+	border-bottom-color: var(--color-primary-element);
+	box-shadow: inset 0 -1px 0 var(--color-primary-element);
+}
+
+.app-calendar #app-sidebar {
+
+	.app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):hover,
+	.app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):focus {
+		box-shadow: inset 0 -1px 0 var(--color-background-dark);
+		border-bottom-color: var(--color-background-dark);
 	}
 }
