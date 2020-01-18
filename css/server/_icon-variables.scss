@@ -104,6 +104,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('activity-dark', 'activity', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('notifications', 'notifications', $icon-normal, '000', 1, false);
+    @include icon-color-theming('notifications-dark', 'notifications', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('undo', 'text', $icon-normal, '000', 1, false);
     @include icon-color-theming('redo', 'text', $icon-normal, '000', 1, false);
