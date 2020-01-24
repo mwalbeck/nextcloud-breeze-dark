@@ -271,7 +271,11 @@ a {
 	}
 }
 
-/* Header ------------------------------------------------------------------- */
+/* Header and body ---------------------------------------------------------- */
+
+#body-user {
+	background-color: var(--color-main-background);
+}
 
 // Header Bar
 #body-user #header,
