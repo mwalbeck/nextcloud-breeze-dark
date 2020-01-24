@@ -10,6 +10,10 @@
 			}
 		}
 
+		.fc-day.fc-today {
+			background-color: var(--color-background-darker) !important;
+		}
+
 		.fc-day-top {
 
 			&.fc-sat,
