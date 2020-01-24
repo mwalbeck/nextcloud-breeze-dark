@@ -1,0 +1,24 @@
+// /* Bookmarks ---------------------------------------------------------------- */
+
+.app-bookmarks #app-content {
+    
+    .folder--gridview,
+    .bookmark--gridview,
+    .bookmarkslist--gridview > .create-folder,
+    .bookmarkslist--gridview > .create-bookmark {
+        background: var(--color-main-background);
+        box-shadow: none;
+    }
+
+    .bookmark--gridview .bookmark__checkbox {
+        background-color: var(--color-main-background);
+
+        input.checkbox + label::before {
+            margin: 0 3px 3px 3px;
+        }
+    }
+
+    .bookmarkslist > :first-child:not(.bookmarkslist__loading):not(.bookmarkslist__empty).active {
+        border-top-color: var(--color-border-active);
+    }
+}

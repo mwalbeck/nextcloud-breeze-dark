@@ -1,0 +1,19 @@
+/* User account deletion ---------------------------------------------------- */
+
+#delete-account-settings .warnings {
+    color: var(--color-error);
+}
+
+button#deleteaccount {
+    border-color: var(--color-error);
+
+    &:hover:not(:disabled):not(.primary):not(#quota) {
+        background-color: var(--color-error);
+        border-color: var(--color-error);
+    }
+
+    &:disabled {
+        background-color: var(--color-background-alternate);
+        border-color: var(--color-border);
+    }
+}

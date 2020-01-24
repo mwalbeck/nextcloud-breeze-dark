@@ -1,0 +1,85 @@
+/* Music -------------------------------------------------------------------- */
+
+.app-music #app-navigation {
+
+    .app-navigation-separator {
+        border-bottom-color: var(--color-border);
+    }
+
+    li.drag-hover {
+        background-color: var(--color-background-hover);
+    }
+}
+
+.app-music #app-content {
+
+    #emptycontent, .emptycontent {
+        background-color: var(--color-main-background);
+    }
+
+    #toScan:hover * {
+        color: var(--color-text-active);
+    }
+
+    .alphabet-navigation a {
+        opacity: 0.2;
+
+        &.available {
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    #controls {
+        border-bottom: 1px solid var(--color-border);
+
+        .progress, .seek-bar {
+            background-color: var(--color-background-darker);
+        }
+
+        .buffer-bar {
+            opacity: 1;
+            background-color: var(--color-background-hover);
+        }
+
+        .play-bar {
+            background-color: var(--color-primary-element);
+        }
+    }
+
+    #app-sidebar {
+
+        .close, #follow-playback {
+            background-color: unset;
+        }
+    }
+
+    #music-user .warning a {
+        color: var(--color-text-link) !important;
+    }
+}
+
+#music-controls {
+    background-color: var(--color-main-background) !important;
+    border-top: 1px solid var(--color-border);
+
+    #albumart {
+        border: none !important;
+    }
+
+    .seek-bar {
+        background-color: var(--color-background-darker) !important;
+    }
+
+    .buffer-bar {
+        opacity: 1;
+        background-color: var(--color-background-hover) !important;
+    }
+
+    .play-bar {
+        background-color: var(--color-primary-element) !important;
+    }
+}

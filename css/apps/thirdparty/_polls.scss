@@ -1,0 +1,74 @@
+/* Polls -------------------------------------------------------------------- */
+
+.app-polls #app-content {
+
+    .table-row.table-header {
+        opacity: 1;
+    }
+
+    .table-row a {
+        color: var(--color-main-text);
+    }
+
+    .toggle-cell {
+
+        &.yes, &.maybe, &.no {
+            background-color: var(--color-main-background);
+        }
+    }
+
+    .poll-cell {
+
+        &.yes {
+            color: var(--color-success);
+        }
+
+        &.maybe {
+            color: var(--color-warning);
+        }
+
+        &.no {
+            color: var(--color-error);
+        }
+    }
+}
+
+.app-polls #app-sidebar {
+
+    &.detailsView .pollInformation .cloud .open {
+        background-color: var(--color-success);
+    }
+
+    &.detailsView .pollInformation .cloud .information {
+        background-color: var(--color-warning);
+    }
+
+    .pollActions li a {
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.app-polls .tabHeaders .tabHeader {
+
+    &.selected,
+    &:hover,
+    &:focus {
+        border-bottom-color: var(--color-border);
+    }
+}
+
+/* Datepicker */
+.app-polls .mx-datepicker .mx-datepicker-popup {
+    border-color: var(--color-border) !important;
+    background-color: var(--color-main-background) !important;
+}
+
+// Shift dates
+.app-polls .modal-dialog {
+    box-shadow: none !important;
+    border: 1px solid var(--color-border) !important;
+}

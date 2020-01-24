@@ -1,0 +1,865 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
+/* Input Fields -------------------------------------------------------------- */
+
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+
+	&.primary:disabled {
+		background-color: var(--color-background-alternate);
+		color: var(--color-text-inactive);
+		border-color: var(--color-border);
+
+		&:hover, &:focus, &:active {
+			background-color: var(--color-background-alternate);
+			color: var(--color-text-inactive);
+			border-color: var(--color-border);
+		}
+	}
+}
+
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+
+	&.primary:not(:disabled) {
+		border-color: var(--color-border);
+		background-color: var(--color-background-darker);
+		color: var(--color-text-active);
+
+		&:hover {
+			border-color: var(--color-border-active);
+			background-color: var(--color-primary);
+		}
+
+		&:focus, &:active {
+			background-color: var(--color-primary-element);
+			border-color: var(--color-border-active);
+		}
+	}
+}
+
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+	background-color: var(--color-main-background);
+	border: 1px solid var(--color-border);
+	color: var(--color-main-text);
+
+	&:not(:disabled):not(.primary):not(#quota) {
+		
+		&:hover {
+			border-color: var(--color-border-active);
+		}
+		
+		&:focus, &:active, &.active {
+			background-color: var(--color-primary-element);
+			border-color: var(--color-border-active);
+		}
+	}
+}
+
+select,
+button,
+.button,
+input[type="submit"],
+input[type="button"],
+textarea,
+.pager li a,
+div[contenteditable="true"],
+input:not([type="range"]) {
+
+	&:disabled {
+		background-color: var(--color-background-alternate);
+		color: var(--color-text-inactive);
+		opacity: 1;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: var(--color-background-alternate);
+			border-color: var(--color-border);
+		}
+	}
+}
+
+textarea,
+.pager li a,
+div[contenteditable="true"],
+input:not([type="range"]) {
+
+	&:not(:disabled) {
+
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: var(--color-border-active) !important;
+		}
+	}
+
+	&:not(:disabled):not(.primary) {
+		
+		&:not(#quota):hover,
+		&:focus,
+		&:active,
+		&.active {
+			border-color: var(--color-border-active);
+		}
+	}
+}
+
+div[contenteditable="false"] {
+	background-color: var(--color-background-alternate);
+	border-color: var(--color-border);
+	opacity: 1;
+}
+
+// Header buttons
+
+#header .button.primary, #header button.primary {
+	border-color: var(--color-border);
+
+	&:hover, &:active, &:focus {
+		border-color: var(--color-border-active);
+	}
+}
+
+// Link Buttons
+
+.link-button {
+	background-color: var(--color-main-background) !important;
+	border: 1px solid var(--color-border) !important;
+	color: var(--color-main-text) !important;
+
+	&:active,
+	&:hover,
+	&:focus {
+		color: var(--color-main-text) !important;
+		background-color: var(--color-text-link) !important;
+		border-color: var(--color-border-active) !important;
+	}
+}
+
+/* General nextcloud -------------------------------------------------------- */
+
+.preview {
+	filter: none;
+
+	&:hover,
+	&:focus,
+	&.selected {
+		filter: none;
+		border-color: var(--color-border-active);
+	}
+}
+
+.dropdown,
+#dropdown {
+	background-color: var(--color-main-background);
+	box-shadow: none;
+	border: 1px solid var(--color-border);
+
+	input[type="text"] + .icon-confirm {
+		height: 32px;
+		width: 32px;
+	}
+
+	.shareWithConfirm.icon-confirm {
+		padding: 16px !important;
+		top: 20px;
+	}
+}
+
+#link {
+	border-top-color: var(--color-border);
+}
+
+/* Tables -------------------------------------------------------------------- */
+
+table {
+
+	tr {
+		background-color: var(--color-main-background);
+	}
+
+	th a, a {
+		color: var(--color-main-text);
+
+		&:hover, &:focus {
+			color: var(--color-main-text);
+		}
+	}
+
+	tr.mouseOver {
+		background-color: var(--color-background-hover);
+
+		td {
+			background-color: unset;
+		}
+	}
+}
+
+table.grid th, table.grid td {
+	border-bottom-color: var(--color-border);
+}
+
+/* Link ---------------------------------------------------------------------- */
+
+a {
+    color: var(--color-text-link);
+
+    &.icon {
+        color: var(--color-icon);
+
+        &:hover,
+        &:focus {
+            color: var(--color-icon);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-text-link);
+    }
+
+    &.button:hover,
+    &.button:focus {
+        color: var(--color-main-text);
+    }
+}
+
+.button a {
+	color: var(--color-main-text);
+}
+
+/* Login Screen ------------------------------------------------------------- */
+#body-login {
+	background-color: var(--color-main-background) !important;
+
+	p.info {
+		color: var(--color-text-inactive);
+	}
+
+	form .grouptop input,
+	form .groupbottom input {
+		background: var(--color-background-darker);
+		color: var(--color-main-text);
+		box-shadow: none !important;
+	}
+}
+
+// Register button
+#alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
+	background-color: var(--color-background-darker);
+	color: var(--color-main-text);
+	border: 1px solid var(--color-border);
+
+	&:hover, &:focus, &:active {
+		background-color: var(--color-primary);
+		border-color: var(--color-border-active);
+	}
+}
+
+/* Header ------------------------------------------------------------------- */
+
+// Header Bar
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+	background-color: var(--color-background-darker);
+}
+
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName,
+#settings #expand:hover .avatardiv,
+#settings #expand:focus .avatardiv,
+#settings #expand:active .avatardiv {
+	border: none;
+}
+
+/* Search ------------------------------------------------------------------- */
+
+.searchbox input[type="search"]:focus,
+.searchbox input[type="search"]:active,
+.searchbox input[type="search"]:valid {
+	border-color: var(--color-border-active) !important;
+	opacity: 1;
+}
+
+/* Breadcrumbs -------------------------------------------------------------- */
+
+div.crumb a,
+div.crumb > span,
+div.crumb.crumbmenu a {
+	color: var(--color-main-text);
+	opacity: 0.7 !important;
+}
+
+/* Menues ------------------------------------------------------------------- */
+
+.menu,
+.popovermenu,
+.bubble {
+	border: 1px solid var(--color-border);
+	filter: none;
+
+	li:hover {
+		background-color: var(--color-background-hover);
+	}
+}
+
+.menu,
+.popovermenu {
+
+	&::after {
+		border-bottom-color: var(--color-border);
+	}
+}
+
+.app-navigation-entry-menu {
+	border: 1px solid var(--color-border);
+	filter: none;
+
+	&::after {
+		border-bottom-color: var(--color-border);
+	}
+}
+
+#header .header-left > nav > #navigation.menu, 
+#header .header-right > div > .menu {
+	filter: none;
+
+	&::after {
+		border-bottom-color: var(--color-border);
+	}
+}
+
+#body-settings #expand::before {
+	border-bottom-color: var(--color-border);
+}
+
+.action-item__menu {
+	filter: none !important;
+	border: 1px solid var(--color-border);
+
+	.action-item__menu_arrow {
+		border-bottom-color: var(--color-border) !important;
+	}
+}
+
+/* Info colours ------------------------------------------------------------- */
+
+.msg {
+
+	&.error {
+		color: var(--color-text-active);
+		background-color: var(--color-error);
+	}
+
+	&.success {
+		color: var(--color-text-active);
+		background-color: var(--color-success);
+	}
+}
+
+/* Settings ----------------------------------------------------------------- */
+
+/* Section Container */
+// Primarily seems to be used under settings
+.followupsection {
+	color: var(--color-main-text) !important;
+}
+
+/* Cropper */
+// For cropping images, found under personal settings for adding avatar
+#cropper .inner-container {
+	background-color: var(--color-main-background);
+	color: var(--color-main-text);
+	box-shadow: none;
+	border: 1px solid var(--color-border);
+}
+
+/* Admin settings */
+
+// System monitoring
+.infobox {
+	border-color: var(--color-border) !important;
+	color: var(--color-main-text) !important;
+	background-color: var(--color-main-background) !important;
+	box-shadow: none !important;
+
+	h2,
+	h3 {
+		color: var(--color-main-text) !important;
+	}
+}
+
+.smallinfo {
+	color: var(--color-text-inactive);
+}
+
+/* App Store ---------------------------------------------------------------- */
+
+.app-level {
+
+	span {
+		color: var(--color-main-text);
+	}
+
+	.official {
+		border-color: var(--color-success);
+	}
+}
+
+#apps-list {
+	&.installed {
+		
+		.app-image-icon svg,
+		.app-image-icon .icon-settings-dark {
+			opacity: 1;
+		}
+	}
+
+	.app-name {
+		font-weight: 600;
+	}
+}
+
+/* Files table -------------------------------------------------------------- */
+// Used by files app and file picker
+
+#filestable tbody {
+
+	tr {
+
+		&:focus, &:active {
+			background-color: var(--color-primary-element);
+		}
+
+		&.highlighted, &.highlighted .name:focus, &.selected, &.searchresult {
+			background-color: var(--color-primary-element);
+			color: var(--color-text-active);
+
+			.filename, .filesize, .date {
+				font-weight: 600;
+			}
+		}
+
+		&.externalDisabledRow {
+			background-color: var(--color-background-alternate);
+		}
+
+		&.externalErroredRow {
+			background-color: var(--color-error);
+		}
+	}
+
+	.name:focus {
+		background-color: inherit;
+	}
+}
+
+#filestable	a {
+	
+	&,
+	&:hover,
+	&:focus {
+		color: var(--color-main-text);
+	}
+}
+
+/* File picker -------------------------------------------------------------- */
+
+.oc-dialog {
+	box-shadow: none !important;
+	border: 1px solid var(--color-border);
+	padding-bottom: 16px !important;
+}
+
+#oc-dialog-filepicker-content {
+
+	.filepicker_element_selected {
+		background-color: var(--color-primary-element);
+
+		td {
+			font-weight: 600;
+		}
+
+		.filename {
+			color: var(--color-text-active);
+		}
+	}
+
+	.actions.creatable {
+		background-color: var(--color-main-background);
+
+		&:hover {
+			border-color: var(--color-border-active);
+		}
+
+		a.button {
+			border: none;
+
+			&:focus,
+			&:active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#emptycontent, .emptycontent {
+	background-color: var(--color-main-background);
+
+	&.summary {
+		opacity: 1;
+	}
+}
+
+/* Multiselect -------------------------------------------------------------- */
+
+div.multiselect.active {
+	background-color: var(--color-main-background);
+}
+
+ul.multiselectoptions {
+	background-color: var(--color-main-background);
+	border-color: var(--color-border);
+
+	&.down {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+/* Dropdown Selects --------------------------------------------------------- */
+
+// Used for tags in Files app
+.select2-container,
+.select2-container-multi {
+
+	.select2-choices {
+	
+		.select2-search-choice {
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+		}
+
+		.select2-search-field input {
+			color: var(--color-main-text) !important;
+		}
+	}
+
+	.select2-choice {
+		background: var(--color-background-darker);
+		border-color: var(--color-border);
+		color: var(--color-main-text) !important;
+	}
+}
+
+#select2-drop, .select2-drop {
+	box-shadow: none;
+
+	&.select2-drop-above.select2-drop-active {
+		border-color: var(--color-border);
+	}
+
+	.select2-results .select2-result.select2-selected {
+		background-color: var(--color-main-background);
+		box-shadow: inset 4px 0 var(--color-primary);
+
+		&:hover {
+			background-color: var(--color-background-hover);
+		}
+	}
+}
+
+// Used for nextcloud announcements
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+	border-color: var(--color-border) !important;
+	background: var(--color-main-background) !important;
+	border-radius: 0 !important;
+}
+
+// The following has been added for bookmarks tags
+.select2-container--default .select2-selection--multiple {
+    background-color: var(--color-background-darker);
+    border-color: var(--color-border);
+}
+
+.select2-dropdown {
+    background-color: var(--color-background-darker);
+	border-color: var(--color-border);
+	
+	&:hover {
+		border-color: var(--color-border-active);
+	}
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--color-background-hover);
+    color: var(--color-main-text);
+}
+
+.bookmark-detail .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bulk-actions .select2-container--default .select2-selection--multiple .select2-selection__choice, 
+.bookmark-detail .tag-nav-item {
+    background-color: var(--color-main-background);
+    
+    &:hover {
+        background-color: var(--color-background-hover);
+    }
+}
+
+.select2-container--default .select2-selection--multiple:hover,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: var(--color-border-active);
+}
+
+/* Auto suggestion users in comments dropdown ------------------------------- */
+
+.atwho-view {
+	box-shadow: none !important;
+
+	.cur {
+		background: var(--color-background-hover) !important;
+	}
+}
+
+/* UI Widget ---------------------------------------------------------------- */
+// Used by datepicker, timepicker, ldap and others
+
+// Datepicker
+.ui-widget.ui-datepicker {
+	filter: none;
+	border: 1px solid var(--color-border);
+	background-color: var(--color-main-background);
+
+	&::after {
+		border-bottom-color: var(--color-border);
+	}
+
+	.ui-widget-header {
+		background-color: var(--color-main-background);
+		color: var(--color-main-text);
+
+		.ui-icon {
+			opacity: .7;
+			filter: invert(95%);
+		}
+
+		.ui-datepicker-prev, .ui-datepicker-next {
+			border-color: var(--color-border);
+			background: var(--color-main-background);
+		}
+	}
+
+	.ui-datepicker-calendar {
+
+		th {
+			color: var(--color-main-text);
+			opacity: 0.7;
+		}
+		
+		tr td > * {
+			color: var(--color-main-text);
+		}
+
+		td .ui-priority-secondary:not(.ui-state-hover) {
+			color: var(--color-text-inactive);
+			opacity: 0.5;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) :not(.ui-state-hover):not(.ui-state-active) {
+			color: var(--color-primary-element);
+			opacity: 1;
+		}
+
+		td.ui-datepicker-week-end:not(.ui-state-disabled) .ui-priority-secondary:not(.ui-state-hover) {
+			color: var(--color-primary-element);
+			opacity: 0.7;
+		}
+
+		td.ui-datepicker-current-day:not(.ui-state-disabled) a.ui-state-active, td .ui-state-hover, 
+		td .ui-state-focus {
+			background-color: var(--color-primary-element);
+			color: var(--color-text-active);
+		}
+
+		td.ui-datepicker-today a:not(.ui-state-hover) {
+			background-color: var(--color-background-alternate);
+		}
+	}
+}
+
+// Timepicker
+.ui-widget.ui-timepicker {
+	filter: none;
+	background-color: var(--color-main-background);
+	border: 1px solid var(--color-border);
+
+	.ui-widget-content {
+		background-color: var(--color-main-background);
+	}
+
+	&::after {
+		border-bottom-color: var(--color-border);
+	}
+
+	.ui-widget-header {
+		background-color: var(--color-main-background);
+		color: var(--color-main-text);
+	}
+
+	table.ui-timepicker tr td > * {
+		color: var(--color-main-text);
+	}
+
+	.ui-timepicker-table {
+
+		th {
+			color: var(--color-text-inactive);
+			opacity: 0.7%;
+		}
+
+		td {
+
+			> * {
+				color: var(--color-main-text);
+			}
+
+			&.ui-timepicker-hours {
+				border-right-color: var(--color-border);
+			}
+
+			&.ui-timepicker-hour-cell a.ui-state-active,
+			&.ui-timepicker-minute-cell a.ui-state-active,
+			.ui-state-hover, 
+			.ui-state-focus {
+				background-color: var(--color-primary-element);
+				color: var(--color-text-active);
+			}
+		}
+	}
+}
+
+.ui-widget.ui-timepicker .ui-timepicker-table th
+
+#app-sidebar div.content-wrapper .body .section input.focus {
+	background-color: var(--color-background-darker);
+	border: 1px solid var(--color-border);
+	box-shadow: none;
+}
+
+// Ldap
+
+.ui-widget.ui-widget-content {
+	border-color: var(--color-border) !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+
+	.ui-state-default {
+		border-color: transparent !important;
+	}
+
+	.ui-state-hover, .ui-state-active {
+		border-bottom-color: var(--color-border) !important;
+	}
+}
+
+.ui-button {
+	background-color: var(--color-main-background) !important;
+	color: var(--color-main-text) !important;
+	border: 1px solid var(--color-border) !important;
+
+	&.primary {
+		background-color: var(--color-background-darker) !important;
+	}
+
+	&.ui-state-active,
+	&.ui-state-hover,
+	&:hover {
+		border-color: var(--color-border-active) !important;
+	}
+
+	&:disabled,
+	&.ui-button-disabled,
+	&.ui-state-disabled {
+		background-color: var(--color-background-alternate) !important;
+		color: var(--color-text-inactive) !important;
+
+		&:hover {
+			border-color: var(--color-border) !important;
+		}
+	}
+}
+
+/* Tooltips ----------------------------------------------------------------- */
+
+.tooltip,
+.vue-tooltip {
+	filter: none !important;
+
+	&[x-placement^="right"],
+	&.right .tooltip-arrow {
+		border-right-color: var(--color-border) !important;
+	}
+
+	&[x-placement^="left"],
+	&.left .tooltip-arrow {
+		border-left-color: var(--color-border) !important;
+	}
+
+	&[x-placement^="bottom"] .tooltip-arrow,
+	&.bottom .tooltip-arrow,
+	&.bottom-left .tooltip-arrow,
+	&.bottom-right .tooltip-arrow  {
+		border-bottom-color: var(--color-border) !important;
+	}
+}
+
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.top .arrow,
+.tooltip.top-left .arrow,
+.tooltip[x-placement^="top"] .arrow,
+.tooltip.top-right .arrow {
+	border-top-color: var(--color-border) !important;
+}
+
+.tooltip-inner {
+	border: 1px solid var(--color-border);
+}
+
+#adminaccount .tooltip-inner {
+	background-color: transparent;
+	border: none;
+}
+
+.menububble {
+	box-shadow: none !important;
+	border: 1px solid var(--color-border);
+}
+
+/* Contacts menu ------------------------------------------------------------ */
+
+#contactsmenu .contact a img[src*="spreed/img/app-dark.svg"] {
+	filter: invert(95%);
+}

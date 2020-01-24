@@ -1,0 +1,65 @@
+.app-ocsms #app-content-header {
+    margin-top: 1px;
+}
+
+#app-mailbox-peers {
+    border-color: var(--color-border);
+    background-color: var(--color-background-darker);
+    
+    li {
+        border-top-color: var(--color-border);
+
+        &:hover {
+            background-color: var(--color-background-hover);
+
+            & > a {
+                background: none;
+            }
+        }
+    }
+
+    .selected {
+        background-color: var(--color-primary-element);
+
+        &:hover {
+            background-color: var(--color-primary-element);
+        }
+
+        a {
+            background: none;
+        }
+    }
+}
+
+.ocsms-plname {
+    color: var(--color-main-text);
+}
+
+#ocsms-phone-msg-nb {
+	color: var(--color-main-text);
+}
+
+#ocsms-phone-label {
+	font-weight: bold;
+	color: var(--color-text-active);
+}
+
+.msg-date {
+	color: var(--color-text-inactive);
+    opacity: 0.5;
+}
+
+.msg-sent, .msg-recv {
+    background-color: var(--color-background-darker);
+	border-color: var(--color-border);
+    box-shadow: none;
+
+    &:hover .msg-date {
+        opacity: 1;
+        color: var(--color-text-inactive);
+    }
+}
+
+.msg-sent {
+	border-color: var(--color-success);
+}

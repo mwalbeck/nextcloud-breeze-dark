@@ -1,0 +1,49 @@
+/* Weather ------------------------------------------------------------------ */
+
+.app-weather #city-list-left {
+    background-color: var(--color-main-background);
+    border-left: none;
+    border-right-color: var(--color-border);
+
+    .city-list {
+        
+        li {
+        
+            a {
+                color: var(--color-main-text);
+            }
+
+            &:hover, &:hover > a {
+                background-color: var(--color-background-hover);
+                box-shadow: inset 4px 0 var(--color-primary);
+            }
+
+            &.selected, &.selected a {
+                background-color: var(--color-primary-element);
+                color: var(--color-text-active);
+                font-weight: 600;
+                box-shadow: inset 4px 0 var(--color-primary);
+            }
+        }
+
+        #create-city {
+            background-color: var(--color-main-background);
+            border-left: none;
+            border-right: none;
+            border-top-color: var(--color-border-active);
+            border-bottom-color: var(--color-border-active);
+
+            h1 {
+                color: var(--color-text-active);
+            }
+
+            hr {
+                background: var(--color-border);
+            }
+        }
+    }
+}
+
+.app-weather #city-right table tr {
+    background-color: unset;
+}

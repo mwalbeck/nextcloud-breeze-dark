@@ -1,0 +1,18 @@
+.app-gallery #app-content {
+	background-color: var(--color-main-background) !important;
+}
+
+#controls .actions > div > .button {
+	padding: 8px 5px;
+}
+
+#slideshow input[type="button"]:not(:disabled):not(.primary):not(#quota) {
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		background-color: transparent;
+		border: none;
+	}
+}

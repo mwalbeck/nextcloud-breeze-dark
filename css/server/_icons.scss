@@ -1,0 +1,209 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
+/* Apps that haven't moved to variables for icons ---------------------------- */
+
+// News
+.icon-rss {
+	background-image: var(--icon-rss-000) !important;
+}
+
+.icon-unpinned {
+	background-image: var(--icon-unpinned-000) !important;
+}
+
+.icon-pinned {
+	background-image: var(--icon-pinned-000) !important;
+}
+
+.icon-full-text-disabled {
+	background-image: var(--icon-nonfulltext-000) !important;
+}
+
+.icon-full-text-enabled {
+	background-image: var(--icon-fulltext-000) !important;
+}
+
+// Circles
+// Circle in files app navbar
+.nav-icon-circlesfilter {
+	background-image: var(--icon-circles-circles-000) !important;
+}
+
+// Override Deck apps override of the deck icon
+.icon-deck {
+	background-image: var(--icon-deck-deck-000) !important;
+}
+
+// Override Deck apps override of the help icon
+.icon-help {
+	background-image: var(--icon-help-000);
+}
+
+// Share by email
+.icon-social-email {
+	background-image: var(--icon-mail-000) !important;
+}
+
+// Share by Diaspora
+.social-diaspora {
+	background-image: var(--icon-federatedfilesharing-social-diaspora-000) !important;
+}
+
+// Share by Twitter
+.social-twitter {
+	background-image: var(--icon-federatedfilesharing-social-twitter-000) !important;
+}
+
+// Share by Facebook
+.social-facebook {
+	background-image: var(--icon-federatedfilesharing-social-facebook-000) !important;
+}
+
+// Passman icon expired
+//source https://material.io/tools/icons/?icon=restore&style=baseline
+.icon-expired {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNCcgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PHBhdGggZD0nTTEzIDNjLTQuOTcgMC05IDQuMDMtOSA5SDFsMy44OSAzLjg5LjA3LjE0TDkgMTJINmMwLTMuODcgMy4xMy03IDctN3M3IDMuMTMgNyA3LTMuMTMgNy03IDdjLTEuOTMgMC0zLjY4LS43OS00Ljk0LTIuMDZsLTEuNDIgMS40MkM4LjI3IDE5Ljk5IDEwLjUxIDIxIDEzIDIxYzQuOTcgMCA5LTQuMDMgOS05cy00LjAzLTktOS05em0tMSA1djVsNC4yOCAyLjU0LjcyLTEuMjEtMy41LTIuMDhWOEgxMnonIGZpbGw9JyNmMmYyZjInLz48L3N2Zz4=");
+}
+
+// Flow upload
+.app-flowupload .icon-file.select-file-icon {
+	background-image: var(--icon-text-000) !important;
+}
+
+/* CSS tricks to change icon color ------------------------------------------ */
+
+.app-settings {
+
+	// Navigation in settings
+	#app-navigation li a img {
+		filter: invert(95%) !important;
+	}
+
+	#apps-list .section .app-image .app-icon,
+	#apps-list-search .section .app-image .app-icon,
+	#app-sidebar #app-details-view image.app-icon {
+		filter: invert(5%);
+	}
+
+	// Support submenu -> system information
+	.system-information div img[src$="/apps/support/img/system-info.svg"] {
+		filter: invert(95%);
+	}
+
+	.infoicon {
+		filter: invert(95%);
+	}
+}
+
+#settings #expanddiv li a img {
+    filter: invert(95%);
+}
+
+// Icons in the global notifications dropdown
+.notification-icon {
+	filter: invert(95%);
+}
+
+// Client icons under Settings > Personal > Mobile & Desktop
+.clientslinks img.appsmall {
+	filter: invert(95%);
+}
+
+// Two Factor Icons in Personal Settings
+img.two-factor-provider-settings-icon,
+.icon-u2f-device {
+	filter: invert(95%);
+}
+
+// Home breadcrumb icon in gallery app
+.app-gallery .home img {
+	filter: invert(95%);
+}
+
+// Gallery App: Sorting icons and share button
+.app-gallery .button img.svg {
+	filter: invert(95%);
+}
+
+// Activity App: Navigation sidebar
+.app-activity #app-navigation ul li a img {
+	filter: invert(95%);
+}
+
+// Activity App: Icons in activity feed
+.app-activity .activity-icon,
+.activity .activity-icon {
+
+	img[src$="share.svg"],
+	img[src$="change.svg"],
+	img[src$="calendar.svg"],
+	img[src$="comment.svg"],
+	img[src$="announcementcenter-dark.svg"],
+	img[src$="archive.svg"],
+	img[src$="tag.svg"],
+	img[src$="checkmark.svg"],
+	img[src$="personal.svg"] {
+		filter: invert(95%);
+	}
+}
+
+// Invert icon for version history in app sidebar
+.downloadVersion img[src$="download.svg"],
+.revertVersion img[src$="history.svg"] {
+	filter: invert(95%);
+}
+
+// Change the app icons in the navigation menu to white
+#navigation .app-icon {
+	filter: none;
+}
+
+// Arrow in advanved ldap settings and
+// Little help icon
+#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
+#ldapSettings img[src$="info.svg"] {
+	filter: invert(95%);
+}
+
+// Music app: icons for Music player controls in files and in app
+#music-controls img.control,
+.app-music img.control {
+	filter: invert(95%);
+}
+
+// Music app: follow-playback icon
+.app-music #app-sidebar #follow-playback {
+	filter: invert(95%);
+}
+
+// Music app: Play button on album covers
+.app-music img.play.svg {
+	filter: invert(95%);
+}
+
+// Music App: Mini play button
+.current.playing .play-pause,
+.current:not(.playing) .play-pause,
+#app-view :hover > .play-pause,
+#app-view .current.playing div:hover .play-pause {
+	filter: invert(95%);
+}
+
+// Music app: Play option in file action menu in Files App
+.fileActionsMenu .action-music-play img.icon {
+	filter: invert(95%);
+}
+
+// Info icon in contacts menu
+#contactsmenu-menu .content .contact img[src$="info.svg"] {
+	filter: invert(95%);
+}
+
+// Audio player: Play option in right click menu in files
+.menuitem.action.action-audio img[src$="sound.svg"] {
+	filter: invert(95%);
+}

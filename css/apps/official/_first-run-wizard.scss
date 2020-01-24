@@ -1,0 +1,9 @@
+/* First Run Wizard --------------------------------------------------------- */
+
+#firstrunwizard p a {
+	color: var(--color-text-link) !important;
+
+	&:hover, &:focus {
+		color: var(--color-text-link) !important;
+	}
+}

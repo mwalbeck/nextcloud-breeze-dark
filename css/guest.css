@@ -1,0 +1,80 @@
+/***
+ * @copyright Copyright (c) 2019, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
+:root {
+    --color-main-text: rgba(239, 240, 241, 1) !important;
+    --color-main-background: rgba(49, 54, 59, 1) !important;
+    --color-main-background-translucent: var(--color-main-background) !important;
+
+    --color-background-dark: var(--color-background-hover) !important;
+    --color-background-darker: rgba(35, 38, 41, 1) !important;
+    --color-background-alternate: rgba(77, 77, 77, 1);
+    --color-background-hover: rgba(61, 174, 233, 0.25) !important;
+
+    --color-primary: rgba(29, 153, 243, 1) !important;
+    --color-primary-text: var(--color-main-text) !important;
+    --color-primary-element: rgba(61, 174, 233, 1) !important;
+
+    --color-error: rgba(218, 68, 83, 1) !important;
+    --color-warning: rgba(246, 116, 0, 1) !important;
+    --color-success: rgba(39, 174, 96, 1) !important;
+
+    --color-text-maxcontrast: var(--color-text-inactive) !important;
+    --color-text-light: var(--color-main-text) !important;
+    --color-text-lighter: var(--color-main-text) !important;
+    --color-text-active: rgba(252, 252, 252, 1);
+    --color-text-inactive: rgba(189, 195, 199, 1);
+    --color-text-link: rgba(41, 128, 185, 1);
+    --color-text-background: rgba(189, 195, 199, 0.6);
+
+    --color-box-shadow: var(--color-primary) !important;
+
+    --color-border: rgba(112, 111, 110, 1) !important;
+    --color-border-dark: var(--color-border) !important;
+    --color-border-active: var(--color-primary-element);
+
+    --color-icon: rgba(242, 242, 242, 1);
+}
+
+input, label {
+    --color-checkbox-radio-border: var(--color-border);
+    --color-checkbox-radio-disabled: var(--color-background-alternate);
+}
+
+
+/* Login Screen ------------------------------------------------------------- */
+#body-login {
+    background-color: var(--color-main-background) !important;
+}
+#body-login p.info {
+    color: var(--color-text-inactive);
+}
+
+#body-login form .grouptop input,
+#body-login form .groupbottom input,
+#body-login .lost-password-container form input {
+    background: var(--color-background-darker);
+    color: var(--color-main-text);
+    box-shadow: none !important;
+}
+
+#body-login form img[src$="/core/img/actions/toggle.svg"] {
+	filter: invert(95%);
+}
+
+input.primary {
+	border: 1px solid var(--color-border) !important;
+	background-color: var(--color-main-background) !important;
+    color: var(--color-main-text) !important;
+}
+
+input.primary:hover,
+input.primary:focus,
+input.primary:active {
+    background-color: var(--color-primary-element) !important;
+    color: var(--color-text-active) !important;
+    border-color: var(--color-border-active) !important;
+}

@@ -1,0 +1,54 @@
+/* News --------------------------------------------------------------------- */
+
+.app-news #app-navigation {
+	
+	.add-new .heading {
+	
+		&:hover {
+			background-color: var(--color-background-hover);
+		}
+
+		button:active,
+		button:focus {
+			background-color: transparent;
+		}
+	}
+
+	#app-settings-content a {
+		color: var(--color-text-link);
+	}
+}
+
+.app-news #app-content {
+
+	.item.active {
+		background-image: none;
+	}
+
+    .body {
+		font-size: 15px;
+
+        a {
+		    color: var(--color-text-link);
+        }
+
+        blockquote {
+            border-color: var(--color-primary);
+        }
+
+        h1, h2, h3 {
+            color: var(--color-text-active);
+        }
+	}
+}
+
+.app-news #explore {
+
+	.grid-item {
+		border-color: var(--color-border);
+	}
+
+	.explore-footer a {
+		color: var(--color-text-link);
+	}
+}
