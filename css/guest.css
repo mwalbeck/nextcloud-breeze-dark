@@ -46,9 +46,11 @@ input, label {
 
 
 /* Login Screen ------------------------------------------------------------- */
+
 #body-login {
-    background-color: var(--color-main-background) !important;
+	background-image: url('/core/img/background.png?v=0'), linear-gradient(40deg, var(--color-background-darker) 0%, var(--color-main-background) 100%);
 }
+
 #body-login p.info {
     color: var(--color-text-inactive);
 }
