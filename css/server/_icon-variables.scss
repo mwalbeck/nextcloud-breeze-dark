@@ -122,6 +122,8 @@ $icon-success: #27ae60;
     @include icon-color-theming('h4', 'text', $icon-normal, '000', 1, false);
     @include icon-color-theming('h5', 'text', $icon-normal, '000', 1, false);
     @include icon-color-theming('h6', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('code', 'text', $icon-normal, '000', 1, false);
+    @include icon-color-theming('image', 'text', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('rss', 'news', $icon-normal, '000', 1, false);
     @include icon-color-theming('pinned', 'news', $icon-normal, '000', 1, false);
