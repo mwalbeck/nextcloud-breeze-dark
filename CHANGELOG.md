@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased]
+### Added
+- Support for photos
+- Added missing icons introduced with NC18
+
+### Fixed
+- Remove background-color rule for project sharing as to not block text
+- Add global background colors to prevent white backgrounds
+- Updated Calendar styling for NC18
+- Updated Contacts styling for NC18
+- Unset header background-image
+- Use dark colours for background on login page
+
+### Removed
+- Styling for Gallery
+
 ## 17.0.3 - 2020-01-18
 ### Added
 - Website and screenshot metadata to info.xml
