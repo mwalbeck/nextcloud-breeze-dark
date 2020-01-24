@@ -18,21 +18,27 @@
 				.fc-day-number {
 					color: var(--color-primary-element);
 				}
+			}
 
-				&.fc-today {
+			&.fc-today {
 
-					&:not(.fc-day-header) {
-						background-color: inherit !important;
-					}
-				
-					.fc-day-number {
-						color: var(--color-main-text);
-					}
+				&:not(.fc-day-header) {
+					background-color: inherit !important;
+				}
+			
+				.fc-day-number {
+					color: var(--color-main-text);
 				}
 			}
 
 			&.fc-other-month {
 				opacity: 0.7;
+			}
+
+			.fc-week-number {
+				background-color: var(--color-background-darker) !important;
+				border-right: 1px solid var(--color-border);
+				border-bottom: 1px solid var(--color-border);
 			}
 		}
 	}
