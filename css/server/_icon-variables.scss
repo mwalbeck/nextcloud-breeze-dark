@@ -186,4 +186,6 @@ $icon-success: #27ae60;
     @include icon-color-theming('reminder', 'calendar', $icon-normal, '000', 1, false);
     @include icon-color-theming('repeat', 'calendar', $icon-normal, '000', 1, false);
     @include icon-color-theming('timezone', 'calendar', $icon-normal, '000', 1, false);
+
+    @include icon-color-theming('yourphotos', 'photos', $icon-normal, '000', 1, false);
 }
