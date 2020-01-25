@@ -207,3 +207,12 @@ img.two-factor-provider-settings-icon,
 .menuitem.action.action-audio img[src$="sound.svg"] {
 	filter: invert(95%);
 }
+
+// Fix icon colors for workflow page
+#workflowengine .actions__item:not(.colored) .icon:not(.icon-invert) {
+	filter: invert(5%) !important;
+}
+
+#workflowengine .section.rule .trigger .event .option__icon {
+	filter: invert(95%);
+}
