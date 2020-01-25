@@ -148,11 +148,9 @@ $icon-success: #27ae60;
     @include icon-color-theming('reply', 'spreed', $icon-normal, '000', 1, false);
     @include icon-color-theming('lobby', 'spreed', $icon-normal, '000', 1, false);
 
-    @include icon-color-theming('inbox', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('drafts', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('sent', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('trash', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('junk', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('archive', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('forward', 'mail', $icon-normal, '000', 1, false);
@@ -190,6 +188,12 @@ $icon-success: #27ae60;
     @include icon-color-theming('yourphotos', 'photos', $icon-normal, '000', 1, false);
 
     // Manual icons
+
+    // Mail
+    --icon-mail-inbox-000: var(--icon-home-000);
+    --icon-mail-trash-000: var(--icon-delete-000);
+
+    // News
     --icon-news-unpinned-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI4LjYxMDUiIHdpZHRoPSIuOTYzNCIgaGVpZ2h0PSI3LjMxNzQiLz4KIDwvZz4KPC9zdmc+Cg==);
     --icon-news-pinned-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI5Ljc4NiIgd2lkdGg9Ii45NjM0IiBoZWlnaHQ9IjQuOTY2NSIvPgogIDxyZWN0IHg9IjEuMTc0NCIgeT0iMTIuMTgiIHdpZHRoPSIxMy42NTEiIGhlaWdodD0iMS4zODkyIi8+CiA8L2c+Cjwvc3ZnPgo=);
     --icon-news-nonfulltext-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZlcnNpb249IjEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGQ9Im0zIDJjLTAuNTU0IDAtMSAwLjQ0Ni0xIDF2MmMwIDAuNTU0IDAuNDQ2IDEgMSAxaDI2YzAuNTU0IDAgMS0wLjQ0NiAxLTF2LTJjMC0wLjU1NC0wLjQ0Ni0xLTEtMWgtMjZ6IiBmaWxsPSIjZjJmMmYyIi8+CiA8cGF0aCBkPSJtMyAxMGMtMC41NTQgMC0xIDAuNDQ2LTEgMXYyYzAgMC41NTQgMC40NDYgMSAxIDFoMThjMC41NTQgMCAxLTAuNDQ2IDEtMXYtMmMwLTAuNTU0LTAuNDQ2LTEtMS0xaC0xOHoiIGZpbGw9IiNmMmYyZjIiLz4KPC9zdmc+Cg==);
