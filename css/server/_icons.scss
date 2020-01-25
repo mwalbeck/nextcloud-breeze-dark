@@ -7,24 +7,32 @@
 /* Apps that haven't moved to variables for icons ---------------------------- */
 
 // News
-.icon-rss {
-	background-image: var(--icon-rss-000) !important;
+.app-news .icon-rss {
+	background-image: var(--icon-news-rss-000) !important;
 }
 
 .icon-unpinned {
-	background-image: var(--icon-unpinned-000) !important;
+	background-image: var(--icon-news-unpinned-000) !important;
 }
 
 .icon-pinned {
-	background-image: var(--icon-pinned-000) !important;
+	background-image: var(--icon-news-pinned-000) !important;
 }
 
 .icon-full-text-disabled {
-	background-image: var(--icon-nonfulltext-000) !important;
+	background-image: var(--icon-news-nonfulltext-000) !important;
 }
 
 .icon-full-text-enabled {
-	background-image: var(--icon-fulltext-000) !important;
+	background-image: var(--icon-news-fulltext-000) !important;
+}
+
+.icon-updatemode-default {
+	background-image: var(--icon-news-updatemodedefault-000) !important;
+}
+
+.icon-updatemode-unread {
+	background-image: var(--icon-news-updatemodeunread-000) !important;
 }
 
 // Circles
