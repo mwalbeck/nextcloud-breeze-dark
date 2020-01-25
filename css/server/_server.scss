@@ -526,14 +526,6 @@ div.crumb.crumbmenu a {
 	}
 }
 
-#emptycontent, .emptycontent {
-	background-color: var(--color-main-background);
-
-	&.summary {
-		opacity: 1;
-	}
-}
-
 /* Multiselect -------------------------------------------------------------- */
 
 div.multiselect.active {
