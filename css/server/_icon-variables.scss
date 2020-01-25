@@ -86,6 +86,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('disabled-user', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('disabled-users', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('confirm', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('confirm-fade', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('play', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('pause', 'actions', $icon-normal, '000', 1, true);
 
@@ -147,6 +148,8 @@ $icon-success: #27ae60;
 
     @include icon-color-theming('app-dark', 'spreed', $icon-normal, '000', 1, false);
     @include icon-color-theming('menu-people', 'spreed', $icon-normal, '000', 1, false);
+    @include icon-color-theming('reply', 'spreed', $icon-normal, '000', 1, false);
+    @include icon-color-theming('lobby', 'spreed', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('inbox', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
