@@ -12,6 +12,8 @@ $icon-success: #27ae60;
     @include icon-color-theming('picture', 'places', $icon-normal, '000', 1, true);
     @include icon-color-theming('files', 'places', $icon-normal, '000', 1, true);
 
+    @include icon-color-theming('text', 'filetypes', $icon-normal, '000', 1, true);
+
     @include icon-color-theming('desktop', 'clients', $icon-normal, '000', 1, true);
     @include icon-color-theming('phone', 'clients', $icon-normal, '000', 1, true);
     @include icon-color-theming('tablet', 'clients', $icon-normal, '000', 1, true);  
