@@ -139,4 +139,15 @@
             }
         }
     }
+
+    .tabHeaders .tabHeader {
+
+        &.selected, &:hover, &:focus {
+            border-bottom: 1px solid var(--color-border-active);
+
+            a {
+                color: var(--color-text-active);
+            }
+        }
+    }
 }
