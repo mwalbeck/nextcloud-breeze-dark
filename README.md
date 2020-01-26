@@ -8,7 +8,7 @@ The first number is the Nextcloud version. The second number is the Nextcloud ma
 
 ## Installation
 
-Go to the Nextcloud app store and search for Breeze Dark.
+It's available in the [nextcloud app store](https://apps.nextcloud.com/apps/breezedark), just search for Breeze Dark, or look under customizations.
 
 or you can clone this repo into your app folder and enalbe it in the app menu in Nextcloud.
 
@@ -18,8 +18,6 @@ You need no special tools to contribute to this theme. It's uses Nextcloud for e
 As nextcloud caches all sass your changes won't show up immediately. To force nextcloud to recompile it and easy trick is to disable the theme, refresh the page and then enable it again.
 
 You're always welcome to open an issue and talk about the changes, you would like to make, before starting.
-
-Please make all contributions to the develop branch.
 
 ## Donations
 If you like the theme and would like to donate you can use the following ways:
