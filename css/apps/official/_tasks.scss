@@ -58,6 +58,10 @@
         .detail-calendar-container .multiselect.multiselect-vue .multiselect__tag {
             background-color: var(--color-main-background);
         }
+
+        input[type="number"] {
+            background-color: var(--color-background-darker);
+        }
     }
 
     .title .detail-checkbox label:hover::before {
