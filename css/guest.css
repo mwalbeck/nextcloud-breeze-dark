@@ -48,7 +48,7 @@ input, label {
 /* Login Screen ------------------------------------------------------------- */
 
 #body-login {
-	background-image: url('/core/img/background.png?v=0'), linear-gradient(40deg, var(--color-background-darker) 0%, var(--color-main-background) 100%);
+	background-image: url('/core/img/background.png?v=0'), linear-gradient(40deg, var(--color-background-darker) 0%, var(--color-main-background) 100%) !important;
 }
 
 #body-login p.info {
