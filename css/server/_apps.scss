@@ -95,19 +95,45 @@
 
 /* App Sidebar -------------------------------------------------------------- */
 
-#app-sidebar .app-sidebar-tabs__tab a {
+#app-sidebar {
 
-	&:not(.active):hover,
-	&:not(.active):focus {
-		box-shadow: inset 0 -1px 0 var(--color-background-dark) !important;
-		border-bottom-color: var(--color-background-dark) !important;
+	.app-sidebar-tabs__tab a {
+
+		&:not(.active):hover,
+		&:not(.active):focus {
+			box-shadow: inset 0 -1px 0 var(--color-background-dark) !important;
+			border-bottom-color: var(--color-background-dark) !important;
+		}
+
+		&.active,
+		&.active:focus {
+			border-bottom-color: var(--color-primary-element) !important;
+			box-shadow: inset 0 -1px 0 var(--color-primary-element) !important;
+		}
 	}
 
-	&.active,
-	&.active:focus {
-		border-bottom-color: var(--color-primary-element) !important;
-		box-shadow: inset 0 -1px 0 var(--color-primary-element) !important;
+	.versionsTabView {
+
+		li {
+			border-color: var(--color-border);
+
+			&:hover {
+				background: var(--color-background-hover);
+			}
+		}
+
+		a {
+			opacity: 1 !important;
+			color: var(--color-text-inactive);
+		}
 	}
+
+	.shareTabView .error {
+		color: var(--color-error);
+		border-color: var(--color-error);
+		box-shadow: none;
+	}
+
 }
 
 /* App Settings ------------------------------------------------------------- */
