@@ -35,8 +35,8 @@
     }
 
     .task-list .loadmore span {
-        color: var(--color-text-inactive);
-        background-color: var(--color-main-background);
+        color: var(--color-text-inactive) !important;
+        background-color: var(--color-background-darker) !important;
     }
 }
 
