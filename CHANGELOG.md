@@ -1,7 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## 18.0.0 - 2020-01-26
 ### Added
+- Support for NC18
 - Support for photos
 - Added missing icons introduced with NC18
 
