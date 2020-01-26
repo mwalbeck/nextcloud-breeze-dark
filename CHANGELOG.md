@@ -12,6 +12,8 @@
 - Updated Contacts styling for NC18
 - Unset header background-image
 - Use dark colours for background on login page
+- Actually apply styling for load all completed tasks button
+- Fix background-color for number inputs in tasks
 
 ### Removed
 - Styling for Gallery
