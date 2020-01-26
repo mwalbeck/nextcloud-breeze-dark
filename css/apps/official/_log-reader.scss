@@ -1,0 +1,23 @@
+/* Log reader --------------------------------------------------------------- */
+
+#logreader-root table {
+
+	.menu {
+		background-color: var(--color-main-background);
+		border-color: var(--color-border);
+
+		h4 {
+			border-bottom-color: var(--color-border);
+		}
+	}
+
+	thead th {
+		color: var(--color-main-text);
+		border-bottom-color: var(--color-border);
+	}
+
+	tbody tr td {
+		border-bottom-color: var(--color-border);
+		background-color: var(--color-main-background) !important;
+	}
+}

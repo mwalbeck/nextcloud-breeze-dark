@@ -1,0 +1,35 @@
+.app-quicknotes #app-navigation {
+
+        #new-note-fixed {
+            background-color: var(--color-main-background);
+        }
+
+        #colors-folder {
+
+            .circle-toolbar.any-color {
+                background-color: var(--color-background-alternate);
+            }
+        }
+}
+
+.app-quicknotes .quicknote {
+    color: #000000;
+    box-shadow: none;
+}
+
+// Change icons to black as the contrast with white is really bad
+.app-quicknotes {
+
+    .icon-checkmark {
+        background-image: url('/core/css/../img/actions/checkmark.svg?v=1');
+    }
+    
+    #div-content .icon-delete {
+        background-image: url('/core/css/../img/actions/delete.svg?v=1');
+    
+        &:hover, &:focus {
+            background-image: $icon-delete-color;
+            opacity: 1;
+        }
+    }
+}

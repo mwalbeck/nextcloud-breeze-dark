@@ -1,0 +1,32 @@
+.app-settings #app-content {
+
+    #fns, #elastic_search, #files {
+
+        .div-table .div-table-row .div-table-col {
+
+            select, input {
+                background-color: var(--color-background-darker) !important;
+            }
+        }
+    }
+}
+
+.provider_navigation {
+	color: var(--color-main-text);
+	background: var(--color-main-background);
+}
+
+.result_entry_default {
+	background: var(--color-main-background);
+}
+
+#fts-popup {
+
+    .div-table-col-left {
+        color: var(--color-main-text);
+    }
+}
+
+#fulltextsearch .menutoggle:hover {
+	opacity: 1 !important;
+}

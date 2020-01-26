@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>breezedark</id>
+    <name>Breeze Dark</name>
+    <summary>Breeze Dark theme for Nextcloud, based on the theme by KDE</summary>
+    <description><![CDATA[This is a breeze dark theme for Nextcloud, based on the theme by the KDE project.]]></description>
+    <version>18.0.0</version>
+    <licence>agpl</licence>
+    <author mail="mw@mwalbeck.org" homepage="https://github.com/mwalbeck/nextcloud-breeze-dark">Magnus Walbeck</author>
+    <namespace>BreezeDark</namespace>
+    <category>customization</category>
+    <website>https://github.com/mwalbeck/nextcloud-breeze-dark</website>
+    <bugs>https://github.com/mwalbeck/nextcloud-breeze-dark/issues</bugs>
+    <screenshot>https://raw.githubusercontent.com/mwalbeck/nextcloud-breeze-dark/master/screenshot.png</screenshot>
+    <dependencies>
+        <nextcloud min-version="18" max-version="18"/>
+    </dependencies>
+</info>

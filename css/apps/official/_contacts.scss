@@ -1,0 +1,7 @@
+/* Contacts ----------------------------------------------------------------- */
+
+.app-contacts #app-content .app-content-list-item.active {
+	background-color: var(--color-primary-element);
+	color: var(--color-text-active);
+	font-weight: 600;
+}

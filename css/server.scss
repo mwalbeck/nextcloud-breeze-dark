@@ -1,0 +1,57 @@
+/*
+=============================================================================
+* Breeze Dark for Nextcloud
+* Version: 18.0.0
+* Date 2020-01-26
+* Copyright (C) 2017, Magnus Walbeck <mw@mwalbeck.org>
+* License: AGPLv3 - https://github.com/mwalbeck/nextcloud-breeze-dark/blob/master/COPYING
+* Source code: https://github.com/mwalbeck/nextcloud-breeze-dark
+* Made with the help of contributors! See AUTHORS.md
+=============================================================================
+*/
+// General and Nextcloud Core
+@import 'server/functions';
+@import 'server/color-variables';
+@import 'server/icon-variables';
+@import 'server/server';
+@import 'server/apps';
+@import 'server/icons';
+// Official
+@import 'apps/official/activity';
+@import 'apps/official/announcement-center';
+@import 'apps/official/calendar';
+@import 'apps/official/contacts';
+@import 'apps/official/deck';
+@import 'apps/official/external-sites';
+@import 'apps/official/files';
+@import 'apps/official/first-run-wizard';
+@import 'apps/official/group-folders';
+@import 'apps/official/ldap';
+@import 'apps/official/log-reader';
+@import 'apps/official/mail';
+@import 'apps/official/news';
+@import 'apps/official/notifications';
+@import 'apps/official/photos';
+@import 'apps/official/retention';
+@import 'apps/official/system-monitoring';
+@import 'apps/official/tasks';
+@import 'apps/official/text';
+// // Third party
+@import 'apps/thirdparty/audio-player';
+@import 'apps/thirdparty/bookmarks';
+@import 'apps/thirdparty/circles';
+@import 'apps/thirdparty/dashboard';
+@import 'apps/thirdparty/flow-upload';
+@import 'apps/thirdparty/fulltextsearch';
+@import 'apps/thirdparty/files-markdown';
+@import 'apps/thirdparty/files-markdown-syntax';
+@import 'apps/thirdparty/music';
+@import 'apps/thirdparty/ojsxc';
+@import 'apps/thirdparty/passman';
+@import 'apps/thirdparty/passwords';
+@import 'apps/thirdparty/phone-sync';
+@import 'apps/thirdparty/polls';
+@import 'apps/thirdparty/quicknotes';
+@import 'apps/thirdparty/radio';
+@import 'apps/thirdparty/user-account-deletion';
+@import 'apps/thirdparty/weather';

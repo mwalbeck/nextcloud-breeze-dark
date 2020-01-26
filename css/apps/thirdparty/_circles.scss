@@ -1,0 +1,109 @@
+/* Circles ------------------------------------------------------------------ */
+
+.app-circles #circle-navigation {
+    border: none;
+
+    input,
+    select,
+    option {
+        background-color: var(--color-background-darker) !important;
+    }
+
+    select#circles_filters {
+        color: var(--color-main-text);
+    }
+
+    &.selected {
+        background-color: var(--color-background-darker) !important;
+        border-right: 1px solid var(--color-border);
+    }
+
+    &.circles .circle {
+        border-bottom-color: var(--color-border);
+
+        &:hover {
+            background-color: var(--color-background-hover);
+        }
+
+        .title,
+        .type,
+        .owner {
+            color: var(--color-main-text);
+        }
+
+        &.selected {
+            background-color: var(--color-primary-element);
+        }
+    }
+
+    #circles_list {
+
+        div {
+            color: var(--color-main-text);
+            border-color: var(--color-border);
+            background-color: var(--color-main-background);
+            
+            &:hover {
+                background: var(--color-background-hover);
+            }
+        }
+    
+        .selected {
+            background: var(--color-primary-element) !important;
+        }
+    }
+
+    #circles_new_type_definition div {
+        color: var(--color-main-text);
+    }
+}
+
+.app-circles #app-content {
+
+    #mainui {
+
+        #circle_details {
+    
+            #name {
+                color: var(--color-text-active);
+            }
+    
+            #type {
+                color: var(--color-main-text);
+            }
+    
+            .lightenbg {
+                background: var(--color-primary-element);
+            }
+        }
+    
+        #memberslist .entry td {
+            color: var(--color-main-text);
+            background: var(--color-main-background) !important;
+            border-bottom-color: var(--color-border);
+        }
+
+        #members_search_result {
+            border-color: var(--color-border);
+            color: var(--color-main-text);
+            background: var(--color-main-background);
+            
+            .members_search.exact {
+                background-color: var(--color-background-hover);
+            }
+        }
+
+        #settings-panel #settings-table {
+            color: var(--color-main-text);
+
+            tbody tr {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+#app-content-circlesfilter .select2-container .select2-choices {
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
+}

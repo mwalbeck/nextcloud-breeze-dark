@@ -1,0 +1,153 @@
+/* Deck --------------------------------------------------------------------- */
+
+.app-deck #app-navigation {
+
+    .editing .app-navigation-entry-edit {
+        background-color: var(--color-main-background);
+    }
+
+    #app-settings-content .ui-select-match-item {
+        border-color: var(--color-border) !important;
+    }
+
+}
+
+.app-deck #app-content {
+
+    #controls {
+
+        #stack-add {
+            background-color: var(--color-background-darker);
+            border: 1px solid var(--color-border);
+
+            &:hover {
+                border-color: var(--color-border-active);
+            }
+        }
+
+        .board-header-controls > button i.icon-archive {
+            opacity: 1 !important;
+        }
+    }
+
+    #boardlist {
+
+        thead td {
+            opacity: 1;
+        }
+
+        td {
+            border-bottom-color: var(--color-border);
+        }
+
+        .board-create td{
+            border-bottom: none;
+        }
+    }
+
+    #board {
+
+        .stack {
+            border-color: var(--color-border);
+        }
+
+        .card {
+            border: 1px solid var(--color-border);
+            box-shadow: none;
+
+            &:hover, &.current {
+                border-color: var(--color-border-active);
+            }
+
+            &.create {
+                border-color: var(--color-border) !important;
+
+                &:hover {
+                    background-color: var(--color-background-hover);
+                    border-color: var(--color-border-active) !important;
+                }
+            }
+
+            .card-controls {
+                background-color: var(--color-background-darker);
+
+                .due {
+                    opacity: 0.7;
+                    
+                    span {
+                        color: var(--color-text-active);
+                    }
+
+                    &.overdue {
+                        background-color: var(--color-error);
+                        opacity: 1;
+                    }
+
+                    &.now {
+                        background-color: var(--color-warning);
+                        opacity: 1;
+                    }
+
+                    &.next {
+                        background-color: unset;
+                        opacity: 1;
+                    }
+                }
+
+                .card-files {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.app-deck #app-sidebar {
+
+    #board-detail-labels {
+
+        input {
+            border: none;
+        }
+
+        li[ng-if$="status.createLabel"] input {
+            color: var(--color-main-text) !important;
+        }
+    }
+
+    #sidebar-header .input-inline {
+        background-color: var(--color-main-background);
+        border: none;
+    }
+
+    #card-dates {
+        opacity: 0.7;
+    }
+
+    #card-meta {
+
+        .save-indicator.unsaved {
+            background-color: var(--color-background-alternate);
+            color: var(--color-main-text);
+        }
+
+        .attachment-list {
+
+            li.attachment .filesize,
+            li.attachment .filedate {
+                color: var(--color-text-inactive);
+            }
+        }
+    }
+
+    .tabHeaders .tabHeader {
+
+        &.selected, &:hover, &:focus {
+            border-bottom: 1px solid var(--color-border-active);
+
+            a {
+                color: var(--color-text-active);
+            }
+        }
+    }
+}

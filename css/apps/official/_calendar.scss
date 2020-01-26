@@ -1,0 +1,63 @@
+.app-calendar #app-content {
+
+	.fc-view-container {
+
+		.fc-day {
+			background-color: var(--color-background-darker);
+
+			&.fc-other-month {
+				background-color: var(--color-main-background);
+			}
+		}
+
+		.fc-day.fc-today {
+			background-color: var(--color-background-darker) !important;
+		}
+
+		.fc-day-top {
+
+			&.fc-sat,
+			&.fc-sun {
+
+				.fc-day-number {
+					color: var(--color-primary-element);
+				}
+			}
+
+			&.fc-today {
+
+				&:not(.fc-day-header) {
+					background-color: inherit !important;
+				}
+			
+				.fc-day-number {
+					color: var(--color-main-text);
+				}
+			}
+
+			&.fc-other-month {
+				opacity: 0.7;
+			}
+
+			.fc-week-number {
+				background-color: var(--color-background-darker) !important;
+				border-right: 1px solid var(--color-border);
+				border-bottom: 1px solid var(--color-border);
+			}
+		}
+	}
+}
+
+.app-calendar #app-sidebar .app-sidebar-tabs__nav .app-sidebar-tabs__tab a.active {
+	border-bottom-color: var(--color-primary-element);
+	box-shadow: inset 0 -1px 0 var(--color-primary-element);
+}
+
+.app-calendar #app-sidebar {
+
+	.app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):hover,
+	.app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):focus {
+		box-shadow: inset 0 -1px 0 var(--color-background-dark);
+		border-bottom-color: var(--color-background-dark);
+	}
+}

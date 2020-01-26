@@ -1,0 +1,44 @@
+/* Radio -------------------------------------------------------------------- */
+
+.app-radio #app-navigation #app-settings {
+
+    #volumeslider {
+
+        .ui-slider-range {
+            background-color: var(--color-primary-element);
+        }
+
+        .ui-slider-handle.ui-state-focus {
+            background-color: var(--color-main-background);
+        }
+    }
+
+    #playbutton {
+        
+        &:hover, &:active, &:focus {
+            &:not(:disabled):not(.primary):not(#quota) {
+                border: none;
+                background-color: inherit;
+            }
+        }
+    }
+}
+
+.app-radio #app-content #app-content-files #filestable {
+
+    th, td {
+        border-color: var(--color-border);
+    }
+
+    thead th {
+        background-color: var(--color-main-background);
+    }
+
+    tbody tr {
+        background-color: var(--color-main-background) !important;
+
+        &:hover {
+            background-color: var(--color-background-hover) !important;
+        }
+    }
+}

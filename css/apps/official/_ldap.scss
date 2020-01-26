@@ -1,0 +1,37 @@
+/* LDAP --------------------------------------------------------------------- */
+
+#ldapSettings {
+    background-color: var(--color-main-background) !important;
+
+    > fieldset {
+        background-color: var(--color-main-background) !important;
+    }
+
+    ul.ui-tabs-nav .ui-tabs-active,
+    ul.ui-tabs-nav .ui-tabs-active > a {
+        background-color: var(--color-background-darker) !important;
+        color: var(--color-text-active) !important;
+    }
+
+    div.ui-accordion-content {
+        background: var(--color-main-background) !important;
+    }
+
+    .ldap_grey {
+        color: var(--color-main-text) !important;
+    }
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default {
+        border-color: var(--color-border) !important;
+        background: var(--color-main-background) !important;
+        color: var(--color-main-text) !important;
+
+        a,
+        a:link,
+        a:visited {
+            color: var(--color-main-text) !important;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/* Announcement Center ------------------------------------------------------ */
+.app-announcementcenter {
+
+	#announcement_submit_msg.success {
+		color: var(--color-text-active) !important;
+		background-color: var(--color-success) !important;
+	}
+
+	.section > span {
+		color: var(--color-text-inactive);
+	}
+
+}
