@@ -207,3 +207,8 @@ img.two-factor-provider-settings-icon,
 .menuitem.action.action-audio img[src$="sound.svg"] {
 	filter: invert(95%);
 }
+
+// Force folder icon in app settings to be default blue, when theming app is disabled
+.app-settings .icon-folder {
+	background-image: var(--icon-folder-0082c9) !important;
+}
