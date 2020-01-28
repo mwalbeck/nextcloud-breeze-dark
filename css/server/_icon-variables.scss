@@ -6,6 +6,7 @@ $icon-success: #27ae60;
 
 :root {
     @include icon-color-theming('home', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('home', 'places', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('contacts', 'places', $icon-normal, '000', 1, true);
     @include icon-color-theming('link', 'places', $icon-normal, '000', 1, true);
     @include icon-color-theming('calendar', 'places', $icon-normal, '000', 1, true);
@@ -38,6 +39,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('settings-dark', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('rename', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('delete', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('delete', 'actions', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('delete', 'actions', $icon-error, 'e9322d', 1, true);
     @include icon-color-theming('public', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('public', 'actions', $icon-normal, 'fff', 1, true);
@@ -158,10 +160,15 @@ $icon-success: #27ae60;
     @include icon-color-theming('lobby', 'spreed', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('star', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('drafts', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('drafts', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('sent', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('sent', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('junk', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('junk', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('archive', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('archive', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('forward', 'mail', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('notifications-off', 'announcementcenter', $icon-normal, '000', 1, false);
@@ -199,8 +206,10 @@ $icon-success: #27ae60;
     // Manual icons
 
     // Mail
-    --icon-mail-inbox-000: var(--icon-home-000);
-    --icon-mail-trash-000: var(--icon-delete-000);
+    --icon-mail-inbox-000: var(--icon-home-f2f2f2);
+    --icon-mail-trash-000: var(--icon-delete-f2f2f2);
+    --icon-mail-inbox-f2f2f2: var(--icon-home-f2f2f2);
+    --icon-mail-trash-f2f2f2: var(--icon-delete-f2f2f2);
 
     // News
     --icon-news-unpinned-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI4LjYxMDUiIHdpZHRoPSIuOTYzNCIgaGVpZ2h0PSI3LjMxNzQiLz4KIDwvZz4KPC9zdmc+Cg==);
