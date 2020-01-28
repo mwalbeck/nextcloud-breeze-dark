@@ -59,30 +59,33 @@
 
 /* Manual icon variable definitions for icons to prevent black icons -------- */
 
-.icon-inbox {
-	background-image: var(--icon-mail-inbox-f2f2f2) !important;
-}
+.app-mail {
 
-.icon-flagged {
-	background-image: var(--icon-mail-star-f2f2f2) !important;
-}
+    .icon-inbox {
+        background-image: var(--icon-mail-inbox-f2f2f2) !important;
+    }
 
-.icon-drafts {
-	background-image: var(--icon-mail-drafts-f2f2f2) !important;
-}
+    .icon-flagged {
+        background-image: var(--icon-mail-star-f2f2f2) !important;
+    }
 
-.icon-sent {
-	background-image: var(--icon-mail-sent-f2f2f2) !important;
-}
+    .icon-drafts {
+        background-image: var(--icon-mail-drafts-f2f2f2) !important;
+    }
 
-.icon-archive {
-	background-image: var(--icon-mail-archive-f2f2f2) !important;
-}
+    .icon-sent {
+        background-image: var(--icon-mail-sent-f2f2f2) !important;
+    }
 
-.icon-junk {
-	background-image: var(--icon-mail-junk-f2f2f2) !important;
-}
+    .icon-archive {
+        background-image: var(--icon-mail-archive-f2f2f2) !important;
+    }
 
-.icon-trash {
-	background-image: var(--icon-mail-trash-f2f2f2) !important;
+    .icon-junk {
+        background-image: var(--icon-mail-junk-f2f2f2) !important;
+    }
+
+    .icon-trash {
+        background-image: var(--icon-mail-trash-f2f2f2) !important;
+    }
 }
