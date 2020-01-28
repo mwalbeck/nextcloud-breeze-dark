@@ -56,3 +56,36 @@ tr {
 		background-color: var(--color-background-hover) !important;
 	}
 }
+
+/* Manual icon variable definitions for icons to prevent black icons -------- */
+
+.nav-icon-files {
+	background-image: var(--icon-files-folder-f2f2f2) !important;
+}
+
+.nav-icon-recent {
+	background-image: var(--icon-files-recent-f2f2f2) !important;
+}
+
+.nav-icon-sharingin,
+.nav-icon-sharingout,
+.nav-icon-pendingshares,
+.nav-icon-shareoverview {
+	background-image: var(--icon-files-share-f2f2f2) !important;
+}
+
+.nav-icon-sharinglinks {
+	background-image: var(--icon-files-public-f2f2f2) !important;
+}
+
+.nav-icon-deletedshares {
+	background-image: var(--icon-files-unshare-f2f2f2) !important;
+}
+
+.nav-icon-extstoragemounts {
+	background-image: var(--icon-files-external-f2f2f2) !important;
+}
+
+.nav-icon-trashbin {
+	background-image: var(--icon-files-delete-f2f2f2) !important;
+}

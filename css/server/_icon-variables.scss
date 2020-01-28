@@ -93,12 +93,19 @@ $icon-success: #27ae60;
     @include icon-color-theming('pause', 'actions', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('folder', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('recent', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('external', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('external', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('share', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('share', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('unshare', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('unshare', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('public', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('public', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('delete', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('delete', 'files', $icon-normal, 'f2f2f2', 1, false);
 
     @include icon-color-theming('control', 'privacy', $icon-normal, '000', 1, false);
     @include icon-color-theming('knowledge', 'privacy', $icon-normal, '000', 1, false);
