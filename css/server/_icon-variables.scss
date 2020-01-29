@@ -3,6 +3,7 @@
 $icon-normal: #f2f2f2;
 $icon-error: #da4453;
 $icon-success: #27ae60;
+#0082c9
 
 :root {
     @include icon-color-theming('home', 'places', $icon-normal, '000', 1, true);
@@ -14,6 +15,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('files', 'places', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('text', 'filetypes', $icon-normal, '000', 1, true);
+    @include icon-color-theming('folder', 'filetypes', #0082c9, '0082c9', 1, true);
 
     @include icon-color-theming('desktop', 'clients', $icon-normal, '000', 1, true);
     @include icon-color-theming('phone', 'clients', $icon-normal, '000', 1, true);

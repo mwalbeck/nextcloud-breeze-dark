@@ -225,3 +225,8 @@ img.two-factor-provider-settings-icon,
 #workflowengine .section.rule .trigger .event .option__icon {
 	filter: invert(95%);
 }
+
+// Force folder icon in app settings to be default blue, when theming app is disabled
+.app-settings .icon-folder {
+	background-image: var(--icon-folder-0082c9) !important;
+}
