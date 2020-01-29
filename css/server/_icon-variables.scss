@@ -3,9 +3,11 @@
 $icon-normal: #f2f2f2;
 $icon-error: #da4453;
 $icon-success: #27ae60;
+#0082c9
 
 :root {
     @include icon-color-theming('home', 'places', $icon-normal, '000', 1, true);
+    @include icon-color-theming('home', 'places', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('contacts', 'places', $icon-normal, '000', 1, true);
     @include icon-color-theming('link', 'places', $icon-normal, '000', 1, true);
     @include icon-color-theming('calendar', 'places', $icon-normal, '000', 1, true);
@@ -13,6 +15,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('files', 'places', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('text', 'filetypes', $icon-normal, '000', 1, true);
+    @include icon-color-theming('folder', 'filetypes', #0082c9, '0082c9', 1, true);
 
     @include icon-color-theming('desktop', 'clients', $icon-normal, '000', 1, true);
     @include icon-color-theming('phone', 'clients', $icon-normal, '000', 1, true);
@@ -38,6 +41,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('settings-dark', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('rename', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('delete', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('delete', 'actions', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('delete', 'actions', $icon-error, 'e9322d', 1, true);
     @include icon-color-theming('public', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('public', 'actions', $icon-normal, 'fff', 1, true);
@@ -93,12 +97,19 @@ $icon-success: #27ae60;
     @include icon-color-theming('pause', 'actions', $icon-normal, '000', 1, true);
 
     @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('folder', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('recent', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('external', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('external', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('share', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('share', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('unshare', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('unshare', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('public', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('public', 'files', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('delete', 'files', $icon-normal, '000', 1, false);
+    @include icon-color-theming('delete', 'files', $icon-normal, 'f2f2f2', 1, false);
 
     @include icon-color-theming('control', 'privacy', $icon-normal, '000', 1, false);
     @include icon-color-theming('knowledge', 'privacy', $icon-normal, '000', 1, false);
@@ -151,10 +162,15 @@ $icon-success: #27ae60;
     @include icon-color-theming('lobby', 'spreed', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('star', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('drafts', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('drafts', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('sent', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('sent', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('junk', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('junk', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('archive', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color-theming('archive', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('forward', 'mail', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('notifications-off', 'announcementcenter', $icon-normal, '000', 1, false);
@@ -166,34 +182,55 @@ $icon-success: #27ae60;
     @include icon-color-theming('circles', 'circles', $icon-normal, '000', 1, false);
 
     @include icon-color-theming('previous', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('previous', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('play', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('play', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('pause', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('pause', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('next', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('next', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('volume', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('volume', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('repeat', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('repeat', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('shuffle', 'audioplayer', $icon-normal, '000', 1, false);
+    @include icon-color-theming('shuffle', 'audioplayer', $icon-normal, 'f2f2f2', 1, false);
 
     @include icon-color-theming('leftarrow', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('leftarrow', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('rightarrow', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('rightarrow', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('view-module', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-module', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('view-day', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-day', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('view-week', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('view-week', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('embed', 'calendar', $icon-normal, '000', 1, false);
     @include icon-color-theming('new-calendar', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('new-calendar', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('new-calendar-with-task-list', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('new-calendar-with-task-list', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('eye', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('eye', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('briefcase', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('briefcase', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('reminder', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('reminder', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('repeat', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('repeat', 'calendar', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('timezone', 'calendar', $icon-normal, '000', 1, false);
+    @include icon-color-theming('timezone', 'calendar', $icon-normal, 'f2f2f2', 1, false);
 
     @include icon-color-theming('yourphotos', 'photos', $icon-normal, '000', 1, false);
 
     // Manual icons
 
     // Mail
-    --icon-mail-inbox-000: var(--icon-home-000);
-    --icon-mail-trash-000: var(--icon-delete-000);
+    --icon-mail-inbox-000: var(--icon-home-f2f2f2);
+    --icon-mail-trash-000: var(--icon-delete-f2f2f2);
+    --icon-mail-inbox-f2f2f2: var(--icon-home-f2f2f2);
+    --icon-mail-trash-f2f2f2: var(--icon-delete-f2f2f2);
 
     // News
     --icon-news-unpinned-000: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI4LjYxMDUiIHdpZHRoPSIuOTYzNCIgaGVpZ2h0PSI3LjMxNzQiLz4KIDwvZz4KPC9zdmc+Cg==);
