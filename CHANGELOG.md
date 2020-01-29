@@ -1,5 +1,13 @@
 # Changelog
 
+## 18.0.1 - 2020-01-29
+### Fixed
+- Fix [#82](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/82), App version showing some icons as black
+- Bookmarks: Use color-main-text for folder names in breadcrumbs instead of color-text-link
+- Music: invert settings and play-pause icons in nav sidebar
+- Passman: make icon definition important
+- Polls: Use color-main-text for list of polls instead of color-text-link
+
 ## 18.0.0 - 2020-01-26
 ### Added
 - Support for NC18
