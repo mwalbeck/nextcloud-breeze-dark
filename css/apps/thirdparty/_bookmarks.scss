@@ -21,4 +21,8 @@
     .bookmarkslist > :first-child:not(.bookmarkslist__loading):not(.bookmarkslist__empty).active {
         border-top-color: var(--color-border-active);
     }
+
+    .breadcrumbs .breadcrumbs__path a {
+        color: var(--color-main-text);
+    }
 }
