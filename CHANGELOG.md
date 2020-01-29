@@ -1,5 +1,9 @@
 # Changelog
 
+## 17.0.4 - 2020-01-29
+### Fixed
+- Fix [#82](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/82) Some icons are showing up black
+
 ## 17.0.3 - 2020-01-18
 ### Added
 - Website and screenshot metadata to info.xml
