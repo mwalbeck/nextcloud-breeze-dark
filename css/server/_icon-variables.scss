@@ -35,6 +35,7 @@ $icon-success: #27ae60;
 
     @include icon-color-theming('star', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('star-dark', 'actions', $icon-normal, '000', 1, true);
+    @include icon-color-theming('star-dark', 'actions', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('search', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('search', 'actions', $icon-normal, 'fffffe', 1, true);
     @include icon-color-theming('password', 'actions', $icon-normal, '000', 1, true);
