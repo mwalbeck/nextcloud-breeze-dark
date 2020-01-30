@@ -170,3 +170,8 @@ button.delete,
 		color:  var(--color-text-active);
 	}
 }
+
+// Fix share icon in nav not being hidden on hover, because of maunal icon override to prevent black icons
+#app-navigation:not(.vue) .collapsible:hover > a {
+	background-image: none !important;
+}
