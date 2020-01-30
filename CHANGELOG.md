@@ -1,5 +1,10 @@
 # Changelog
 
+## 18.0.2 - 2020-01-30
+### Fixed
+- [#82](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/82) Fix favorites icon still showing up as black.
+- Hide share icon on hover in files nav, as intended.
+
 ## 18.0.1 - 2020-01-29
 ### Fixed
 - Fix [#82](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/82), App version showing some icons as black
