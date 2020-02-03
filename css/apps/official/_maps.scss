@@ -1,0 +1,103 @@
+/* Maps --------------------------------------------------------------------- */
+
+.app-maps #app-navigation {
+
+    #navigation-favorites:not(.active),
+    #navigation-routing:not(.active),
+    #navigation-photos:not(.active),
+    #navigation-contacts:not(.active),
+    #navigation-tracks:not(.active),
+    #navigation-devices:not(.active) {
+        
+        > a,
+        > .app-navigation-entry-utils {
+            opacity: 0.57 !important;
+        }
+        
+        > .app-navigation-entry-menu {
+            opacity: 1 !important;
+
+            > * {
+                opacity: 0.57 !important;
+            }
+        }
+    }
+}
+
+.app-maps #app-content {
+
+    .leaflet-control-container .leaflet-routing-container {
+
+        .leaflet-routing-geocoders input {
+            border-color: var(--color-border);
+        }
+
+        #routing-close:hover {
+            background-color: var(--color-background-hover) !important;
+        }
+
+        .leaflet-bar button.exportCurrentRoute {
+            border-bottom: 1px solid var(--color-border);
+        }
+    }
+
+    .leaflet-contextmenu {
+        background-color: var(--color-main-background);
+        box-shadow: none;
+        border: 1px solid var(--color-border);
+
+        .leaflet-contextmenu-item.over {
+            background-color: var(--color-background-hover);
+            border-color: var(--color-background-hover);
+        }
+
+        .leaflet-contextmenu-separator {
+            border-bottom-color: var(--color-border);
+        }
+    }
+
+    .leaflet-routing-alt {
+
+        tr:hover {
+            background-color: var(--color-background-hover);
+        }
+
+        tr:nth-child(2n+1) {
+            background-color: var(--color-background-darker);
+        }
+    }
+
+    .leaflet-routing-alt,
+    .leaflet-routing-geocoders,
+    .leaflet-routing-error {
+        border-bottom-color: var(--color-border);
+    }
+}
+
+.leaflet-routing-geocoder-result table {
+	border-color: var(--color-border) !important;
+    background-color: var(--color-main-background) !important;
+    
+    tr:hover,
+    .leaflet-routing-geocoder-selected {
+        background-color: var(--color-background-hover);
+    }
+}
+
+// Filtered images
+
+.app-maps #app-content {
+
+    img[src$="star-dark?color=000000"],
+    img[src$="picture?color=000000"],
+    img[src$="user?color=000000"],
+    img[src$="share?color=000000"],
+    img[src$="recent.svg"],
+    img[src$="triangle-s.svg"],
+    img[src$="triangle-e.svg"],
+    img[src$="poi_place_town.p.20.png"],
+    img[src$="poi_place_village.p.20.png"],
+    .leaflet-routing-icon {
+        filter: invert(95%);
+    }
+}
