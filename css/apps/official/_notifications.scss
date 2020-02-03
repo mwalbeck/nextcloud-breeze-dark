@@ -16,3 +16,9 @@
 		background-color: var(--color-background-hover);
 	}
 }
+
+/* Manual icon variable definitions for icons to prevent black icons -------- */
+
+.notification-container .emptycontent .icon-notifications-dark {
+	background-image: var(--icon-notifications-notifications-dark-f2f2f2) !important;
+}
