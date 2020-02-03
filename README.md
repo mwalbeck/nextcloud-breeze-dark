@@ -10,7 +10,7 @@ The first number is the Nextcloud version. The second number is the Nextcloud ma
 
 Go to the Nextcloud app store and search for Breeze Dark.
 
-or you can clone this repo into your app folder and enalbe it in the app menu in Nextcloud.
+or you can clone this repo into your app folder and enable it in the app menu in Nextcloud.
 
 ## Contributions
 You need no special tools to contribute to this theme. It's uses Nextcloud for everything include sass compilation. You can just clone the theme into app folder, enable it and get started.
