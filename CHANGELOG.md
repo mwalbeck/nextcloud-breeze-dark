@@ -1,5 +1,12 @@
 # Changelog
 
+## 18.0.3 - 2020-02-04
+### Fixed
+- [#84](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/84) Add styling support for Maps
+- [#85](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/85) Make styling rule for avatar cropper important
+- [#86](https://github.com/mwalbeck/nextcloud-breeze-dark/pull/86) Fix typo in README.
+- Fix dark icon in notifications dropdown when empty
+
 ## 18.0.2 - 2020-01-30
 ### Fixed
 - [#82](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/82) Fix favorites icon still showing up as black.
