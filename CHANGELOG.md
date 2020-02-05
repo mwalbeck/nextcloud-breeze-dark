@@ -1,5 +1,11 @@
 # Changelog
 
+## 18.0.4 - 2020-02-05
+### Fixed
+- [#87](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/87) Fix custom background for login screen, set in theming app, not showing
+- [#88](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/88) Change background and border behaviour on error and success on public poll page
+- [#89](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/89) Fix icon color for icons in text, photos and activity icon in sidebar
+
 ## 18.0.3 - 2020-02-04
 ### Fixed
 - [#84](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/84) Add styling support for Maps
