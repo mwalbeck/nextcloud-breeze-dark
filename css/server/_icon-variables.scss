@@ -74,6 +74,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('error', 'actions', $icon-normal, 'fff', 1, true);
     @include icon-color-theming('checkmark', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('checkmark', 'actions', $icon-normal, 'fff', 1, true);
+    @include icon-color-theming('checkmark', 'actions', $icon-normal, 'f2f2f2', 1, true);
     @include icon-color-theming('user-admin', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('arrow-right', 'actions', $icon-normal, '000', 1, true);
     @include icon-color-theming('arrow-left', 'actions', $icon-normal, '000', 1, true);
