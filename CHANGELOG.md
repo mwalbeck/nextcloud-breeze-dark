@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+### Fixed
+- [#90](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/90) Add icon variable definition for --icon-checkmark-f2f2f2
+- Fix icons in calendar basic editor not being correct colour.
+
+### Added
+- [#91](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/91) Added styling support for Terms of Service app.
+
 ## 18.0.4 - 2020-02-05
 ### Fixed
 - [#87](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/87) Fix custom background for login screen, set in theming app, not showing
