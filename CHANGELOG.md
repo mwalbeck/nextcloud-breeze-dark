@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 18.0.5 - 2020-02-11
 ### Fixed
 - [#90](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/90) Add icon variable definition for --icon-checkmark-f2f2f2
 - Fix icons in calendar basic editor not being correct colour.
