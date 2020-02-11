@@ -1,5 +1,13 @@
 # Changelog
 
+## 17.0.8 - 2020-02-11
+### Fixed
+- [#90](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/90) Add icon variable definition for --icon-checkmark-f2f2f2
+- Fix icons in calendar basic editor not being correct colour.
+
+### Added
+- [#91](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/91) Added styling support for Terms of Service app.
+
 ## 17.0.7 - 2020-02-05
 ### Fixed
 - [#88](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/88) Change background and border behaviour on error and success on public poll page
