@@ -29,6 +29,7 @@
     .v--modal.v--modal-box {
         background-color: var(--color-main-background);
         border: 1px solid var(--color-border);
+        box-shadow: none;
         padding: 1em;
 
         #tos-overlay button.primary {
