@@ -2,7 +2,7 @@
 name: Styling request
 about: Suggest a new app to be styled
 title: ''
-labels: enhancement
+labels: styling request
 assignees: ''
 
 ---
