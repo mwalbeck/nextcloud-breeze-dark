@@ -54,7 +54,8 @@
 
 /* Manual icon variable definitions for icons to prevent black icons -------- */
 
-.app-calendar {
+.app-calendar,
+.event-popover {
 
 	.icon-rightarrow {
 		background-image: var(--icon-calendar-rightarrow-f2f2f2) !important;
