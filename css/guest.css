@@ -67,11 +67,19 @@ input, label {
     box-shadow: none !important;
 }
 
+#body-login .totp-form input[type="tel"] {
+    background: var(--color-background-darker);
+    color: var(--color-main-text);
+    border: 1px solid var(--color-border);
+    margin-bottom: 1em;
+}
+
 #body-login form img[src$="/core/img/actions/toggle.svg"] {
 	filter: invert(95%);
 }
 
-input.primary {
+input.primary,
+button.primary {
 	border: 1px solid var(--color-border) !important;
 	background-color: var(--color-main-background) !important;
     color: var(--color-main-text) !important;
@@ -79,7 +87,10 @@ input.primary {
 
 input.primary:hover,
 input.primary:focus,
-input.primary:active {
+input.primary:active,
+button.primary:hover,
+button.primary:focus,
+button.primary:active {
     background-color: var(--color-primary-element) !important;
     color: var(--color-text-active) !important;
     border-color: var(--color-border-active) !important;
