@@ -1,5 +1,9 @@
 # Changelog
 
+## 17.0.9 - 2020-02-16
+### Fixed
+- [#95](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/95) Fix styling for Two-factor TOTP and 2fa selection screen on login when having multiple 2fa's enabled
+
 ## 17.0.8 - 2020-02-11
 ### Fixed
 - [#90](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/90) Add icon variable definition for --icon-checkmark-f2f2f2
