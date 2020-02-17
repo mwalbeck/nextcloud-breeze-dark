@@ -1,6 +1,7 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: For any issues related to the theme in general, or styling issues with already
+  styled apps. Have a look at the wiki for a list of styled apps.
 title: ''
 labels: bug
 assignees: ''
