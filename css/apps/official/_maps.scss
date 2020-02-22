@@ -26,18 +26,38 @@
 
 .app-maps #app-content {
 
+    .leaflet-container {
+        background-color: var(--color-main-background);
+    }
+
     .leaflet-control-container .leaflet-routing-container {
+        background-color: var(--color-main-background);
+        border: 1px solid var(--color-border);
 
-        .leaflet-routing-geocoders input {
-            border-color: var(--color-border);
+        .leaflet-routing-geocoders {
+            border-bottom: none;
+
+            input {
+                border-color: var(--color-border);
+            }
+
+            button {
+                background-color: var(--color-main-background);
+                border-color: var(--color-border);
+            }
+
+            .exportCurrentRoute {
+                border-bottom: 1px solid var(--color-border);
+            }
         }
 
-        #routing-close:hover {
-            background-color: var(--color-background-hover) !important;
-        }
+        &.leaflet-bar button {
+            background-color: var(--color-main-background) !important;
+            color: var(--color-main-text) !important;
 
-        .leaflet-bar button.exportCurrentRoute {
-            border-bottom: 1px solid var(--color-border);
+            &:hover {
+                background-color: var(--color-background-hover) !important;
+            }
         }
     }
 
@@ -68,7 +88,6 @@
     }
 
     .leaflet-routing-alt,
-    .leaflet-routing-geocoders,
     .leaflet-routing-error {
         border-bottom-color: var(--color-border);
     }
