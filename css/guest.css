@@ -47,12 +47,12 @@ input, label {
 
 /* Login Screen ------------------------------------------------------------- */
 
-#body-login {
+body#body-login {
     background-image:
-        url('/apps/theming/image/background'),
-        url('/core/img/background.png') !important;
+        url('../../../apps/theming/image/background'),
+        url('../../../core/img/background.png');
+    background-size: cover, 275px;
     background-color: var(--color-main-background);
-    background-size: 275px;
 }
 
 #body-login a {
