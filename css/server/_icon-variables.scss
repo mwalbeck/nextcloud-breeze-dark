@@ -37,10 +37,10 @@ $icon-success: #27ae60;
     @include icon-color2('social', 'categories', $icon-normal, 1, true);
     @include icon-color2('workflow', 'categories', $icon-normal, 1, true);
 
-    @include icon-color2('star', 'actions', $icon-normal, 1, true);
+    @include icon-color2('star-dark', 'actions', $icon-normal, 1, true);
     @include icon-color2('search', 'actions', $icon-normal, 1, true);
     @include icon-color2('password', 'actions', $icon-normal, 1, true);
-    @include icon-color2('settings', 'actions', $icon-normal, 1, true);
+    @include icon-color2('settings-dark', 'actions', $icon-normal, 1, true);
     @include icon-color2('rename', 'actions', $icon-normal, 1, true);
     @include icon-color2('delete', 'actions', $icon-normal, 1, true);
     @include icon-color2('delete', 'actions', $icon-error, 1, true);
@@ -194,7 +194,8 @@ $icon-success: #27ae60;
     @include icon-color-theming('archive', 'mail', $icon-normal, 'f2f2f2', 1, false);
     @include icon-color-theming('forward', 'mail', $icon-normal, '000', 1, false);
 
-    @include icon-color-theming('notifications-off', 'announcementcenter', $icon-normal, '000', 1, false);
+    @include icon-color2('announcementcenter', 'announcementcenter', $icon-normal, 1, false);
+    @include icon-color2('notifications-off', 'announcementcenter', $icon-normal, 1, false);
 
     @include icon-color-theming('social-diaspora', 'federatedfilesharing', $icon-normal, '000', 1, false);
     @include icon-color-theming('social-twitter', 'federatedfilesharing', $icon-normal, '000', 1, false);

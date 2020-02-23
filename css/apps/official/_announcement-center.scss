@@ -18,3 +18,17 @@
 	}
 
 }
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-announcementcenter {
+
+	.icon-announcementcenter,
+	.icon-announcementcenter-dark {
+		background-image: var(--icon-announcementcenter-announcementcenter-f2f2f2) !important;
+	}
+
+	.icon-notifications-off {
+		background-image: var(--icon-announcementcenter-notifications-off-f2f2f2) !important;
+	}
+}
