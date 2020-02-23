@@ -1,5 +1,9 @@
 # Changelog
 
+## 17.0.10 - 2020-02-23
+### Fixed
+- [#96](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/96) Fix styling for routing dialog in maps
+
 ## 17.0.9 - 2020-02-16
 ### Fixed
 - [#95](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/95) Fix styling for Two-factor TOTP and 2fa selection screen on login when having multiple 2fa's enabled
