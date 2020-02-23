@@ -38,11 +38,9 @@ $icon-success: #27ae60;
     @include icon-color2('workflow', 'categories', $icon-normal, 1, true);
 
     @include icon-color2('star', 'actions', $icon-normal, 1, true);
-    @include icon-color2('star-dark', 'actions', $icon-normal, 1, true);
     @include icon-color2('search', 'actions', $icon-normal, 1, true);
     @include icon-color2('password', 'actions', $icon-normal, 1, true);
     @include icon-color2('settings', 'actions', $icon-normal, 1, true);
-    @include icon-color2('settings-dark', 'actions', $icon-normal, 1, true);
     @include icon-color2('rename', 'actions', $icon-normal, 1, true);
     @include icon-color2('delete', 'actions', $icon-normal, 1, true);
     @include icon-color2('delete', 'actions', $icon-error, 1, true);
@@ -120,9 +118,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('knowledge', 'privacy', $icon-normal, '000', 1, false);
     @include icon-color-theming('freedom', 'privacy', $icon-normal, '000', 1, false);
 
-    @include icon-color-theming('activity', 'activity', $icon-normal, '000', 1, false);
-    @include icon-color-theming('activity-dark', 'activity', $icon-normal, '000', 1, false);
-    @include icon-color-theming('activity-dark', 'activity', $icon-normal, 'f2f2f2', 1, false);
+    @include icon-color2('activity', 'activity', $icon-normal, 1, false);
 
     @include icon-color-theming('notifications', 'notifications', $icon-normal, '000', 1, false);
     @include icon-color-theming('notifications-dark', 'notifications', $icon-normal, '000', 1, false);
