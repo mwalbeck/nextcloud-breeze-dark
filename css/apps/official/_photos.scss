@@ -1,8 +1,14 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
 .app-photos {
 	background-color: var(--color-main-background);
 }
 
-/* Manual icon variable definitions for icons to prevent black icons -------- */
+/* Icons -------------------------------------------------------------------- */
 
 .icon-yourphotos {
 	background-image: var(--icon-photos-yourphotos-f2f2f2) !important;
