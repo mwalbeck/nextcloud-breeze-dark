@@ -145,7 +145,8 @@
 	background-image: var(--icon-settings-f2f2f2) !important;
 }
 
-.icon-settings-dark {
+.icon-settings-dark,
+#app-settings-header .settings-button {
 	background-image: var(--icon-settings-dark-f2f2f2);
 }
 
@@ -155,6 +156,11 @@
 
 .icon-delete {
 	background-image: var(--icon-delete-f2f2f2) !important;
+
+	&:hover,
+	&:focus {
+		background-image: var(--icon-delete-da4453) !important;
+	}
 }
 
 .icon-public {
@@ -169,7 +175,8 @@
 	background-image: var(--icon-add-f2f2f2) !important;
 }
 
-.icon-share {
+.icon-share,
+.icon-shared {
 	background-image: var(--icon-share-f2f2f2) !important;
 }
 
@@ -209,7 +216,8 @@
 	background-image: var(--icon-triangle-n-f2f2f2) !important;
 }
 
-.icon-triangle-s {
+.icon-triangle-s,
+#app-navigation:not(.vue) .collapsible::before {
 	background-image: var(--icon-triangle-s-f2f2f2) !important;
 }
 
