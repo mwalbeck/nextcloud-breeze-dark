@@ -114,9 +114,9 @@ $icon-success: #27ae60;
     @include icon-color-theming('delete', 'files', $icon-normal, '000', 1, false);
     @include icon-color-theming('delete', 'files', $icon-normal, 'f2f2f2', 1, false);
 
-    @include icon-color-theming('control', 'privacy', $icon-normal, '000', 1, false);
-    @include icon-color-theming('knowledge', 'privacy', $icon-normal, '000', 1, false);
-    @include icon-color-theming('freedom', 'privacy', $icon-normal, '000', 1, false);
+    @include icon-color2('control', 'privacy', $icon-normal, 1, false);
+    @include icon-color2('knowledge', 'privacy', $icon-normal, 1, false);
+    @include icon-color2('freedom', 'privacy', $icon-normal, 1, false);
 
     @include icon-color2('activity', 'activity', $icon-normal, 1, false);
 
@@ -197,9 +197,9 @@ $icon-success: #27ae60;
     @include icon-color2('announcementcenter', 'announcementcenter', $icon-normal, 1, false);
     @include icon-color2('notifications-off', 'announcementcenter', $icon-normal, 1, false);
 
-    @include icon-color-theming('social-diaspora', 'federatedfilesharing', $icon-normal, '000', 1, false);
-    @include icon-color-theming('social-twitter', 'federatedfilesharing', $icon-normal, '000', 1, false);
-    @include icon-color-theming('social-facebook', 'federatedfilesharing', $icon-normal, '000', 1, false);
+    @include icon-color2('social-diaspora', 'federatedfilesharing', $icon-normal, 1, false);
+    @include icon-color2('social-twitter', 'federatedfilesharing', $icon-normal, 1, false);
+    @include icon-color2('social-facebook', 'federatedfilesharing', $icon-normal, 1, false);
 
     @include icon-color-theming('circles', 'circles', $icon-normal, '000', 1, false);
 

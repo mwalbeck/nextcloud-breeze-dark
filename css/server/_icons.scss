@@ -5,7 +5,9 @@
  ***/
 
 /* Places ------------------------------------------------------------------- */
-.icon-home {
+
+.icon-home,
+#oc-dialog-filepicker-content .dirtree div:first-child a {
 	background-image: var(--icon-home-f2f2f2) !important;
 }
 
@@ -214,6 +216,7 @@
 }
 
 .icon-triangle-s,
+select,
 #app-navigation:not(.vue) .collapsible::before {
 	background-image: var(--icon-triangle-s-f2f2f2) !important;
 }
@@ -238,7 +241,8 @@
 	background-image: var(--icon-edit-f2f2f2) !important;
 }
 
-.icon-close {
+.icon-close,
+.oc-dialog-close {
 	background-image: var(--icon-close-f2f2f2) !important;
 }
 
@@ -254,7 +258,9 @@
 	background-image: var(--icon-timezone-f2f2f2) !important;
 }
 
-.icon-toggle {
+.icon-toggle,
+#personal-show + label,
+#show + label, #dbpassword + label {
 	background-image: var(--icon-toggle-f2f2f2) !important;
 }
 
@@ -358,6 +364,34 @@
 	background-image: var(--icon-pause-f2f2f2) !important;
 }
 
+/* Privacy ------------------------------------------------------------------ */
+
+.icon-control {
+	background-image: var(--icon-privacy-control-f2f2f2) !important;
+}
+
+.icon-knowledge {
+	background-image: var(--icon-privacy-knowledge-f2f2f2) !important;
+}
+
+.icon-freedom {
+	background-image: var(--icon-privacy-freedom-f2f2f2) !important;
+}
+
+/* Federated file sharing --------------------------------------------------- */
+
+.social-facebook {
+	background-image: var(--icon-federatedfilesharing-social-facebook-f2f2f2) !important;
+}
+
+.social-twitter {
+	background-image: var(--icon-federatedfilesharing-social-twitter-f2f2f2) !important;
+}
+
+.social-diaspora {
+	background-image: var(--icon-federatedfilesharing-social-diaspora-f2f2f2) !important;
+}
+
 /* Apps that haven't moved to variables for icons ---------------------------- */
 
 // News
@@ -408,21 +442,6 @@
 // Share by email
 .icon-social-email {
 	background-image: var(--icon-mail-000) !important;
-}
-
-// Share by Diaspora
-.social-diaspora {
-	background-image: var(--icon-federatedfilesharing-social-diaspora-000) !important;
-}
-
-// Share by Twitter
-.social-twitter {
-	background-image: var(--icon-federatedfilesharing-social-twitter-000) !important;
-}
-
-// Share by Facebook
-.social-facebook {
-	background-image: var(--icon-federatedfilesharing-social-facebook-000) !important;
 }
 
 // Passman icon expired
