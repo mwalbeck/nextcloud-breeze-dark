@@ -512,7 +512,10 @@ img.two-factor-provider-settings-icon,
 	img[src$="tag.svg"],
 	img[src$="checkmark.svg"],
 	img[src$="personal.svg"],
-	img[src$="deck-dark.svg"] {
+	img[src$="deck-dark.svg"],
+	img[src$="app-dark.svg"],
+	img[src$="password.svg"],
+	img[src$="star.svg"] {
 		filter: invert(95%);
 	}
 }
