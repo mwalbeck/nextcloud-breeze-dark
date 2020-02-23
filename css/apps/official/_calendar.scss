@@ -1,3 +1,5 @@
+/* Calendar ----------------------------------------------------------------- */
+
 .app-calendar #app-content {
 
 	.fc-view-container {
@@ -62,7 +64,7 @@
 	}
 }
 
-/* Manual icon variable definitions for icons to prevent black icons -------- */
+/* Icons -------------------------------------------------------------------- */
 
 .app-calendar,
 .event-popover {
@@ -113,5 +115,9 @@
 
 	.icon-repeat {
 		background-image: var(--icon-calendar-repeat-f2f2f2) !important;
+	}
+
+	.icon-embed {
+		background-image: var(--icon-calendar-embed-f2f2f2) !important;
 	}
 }
