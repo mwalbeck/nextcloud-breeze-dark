@@ -152,9 +152,9 @@ $icon-success: #27ae60;
 
     @include icon-color2('rss', 'news', $icon-normal, 1, false);
 
-    @include icon-color-theming('folder', 'notes', $icon-normal, '000', 1, false);
-    @include icon-color-theming('recent', 'notes', $icon-normal, '000', 1, false);
-    @include icon-color-theming('folder-empty', 'notes', $icon-normal, '000', 1, false);
+    @include icon-color2('folder', 'notes', $icon-normal, 1, false);
+    @include icon-color2('recent', 'notes', $icon-normal, 1, false);
+    @include icon-color2('folder-empty', 'notes', $icon-normal, 1, false);
 
     @include icon-color2('phone', 'contacts', $icon-normal, 1, false);
     @include icon-color2('address-book', 'contacts', $icon-normal, 1, false);

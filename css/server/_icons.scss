@@ -246,7 +246,8 @@ div.select2-container a.select2-choice .select2-arrow b {
 }
 
 .icon-close,
-.oc-dialog-close {
+.oc-dialog-close,
+.toastify.toast .toast-close {
 	background-image: var(--icon-close-f2f2f2) !important;
 }
 
@@ -413,6 +414,24 @@ div.select2-container a.select2-choice .select2-arrow b {
 // Flow upload
 .app-flowupload .icon-file.select-file-icon {
 	background-image: var(--icon-text-000) !important;
+}
+
+/* Apps that currently don't have stylesheets ------------------------------- */
+
+// Notes
+.app-notes {
+
+	.icon-recent {
+		background-image: var(--icon-notes-recent-f2f2f2) !important;
+	}
+
+	.icon-emptyfolder {
+		background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
+	}
+
+	.icon-files {
+		background-image: var(--icon-notes-folder-f2f2f2) !important;
+	}
 }
 
 /* CSS tricks to change icon color ------------------------------------------ */
