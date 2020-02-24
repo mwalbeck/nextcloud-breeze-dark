@@ -99,20 +99,13 @@ $icon-success: #27ae60;
     @include icon-color-theming('public', 'actions', $icon-normal, 'fff', 1, true);
     @include icon-color-theming('error', 'actions', $icon-normal, 'fff', 1, true);
 
-    @include icon-color-theming('folder', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('folder', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('recent', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('recent', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('external', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('external', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('share', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('share', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('unshare', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('unshare', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('public', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('public', 'files', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('delete', 'files', $icon-normal, '000', 1, false);
-    @include icon-color-theming('delete', 'files', $icon-normal, 'f2f2f2', 1, false);
+    @include icon-color2('folder', 'files', $icon-normal, 1, false);
+    @include icon-color2('recent', 'files', $icon-normal, 1, false);
+    @include icon-color2('external', 'files', $icon-normal, 1, false);
+    @include icon-color2('share', 'files', $icon-normal, 1, false);
+    @include icon-color2('unshare', 'files', $icon-normal, 1, false);
+    @include icon-color2('public', 'files', $icon-normal, 1, false);
+    @include icon-color2('delete', 'files', $icon-normal, 1, false);
 
     @include icon-color2('control', 'privacy', $icon-normal, 1, false);
     @include icon-color2('knowledge', 'privacy', $icon-normal, 1, false);
@@ -120,9 +113,7 @@ $icon-success: #27ae60;
 
     @include icon-color2('activity', 'activity', $icon-normal, 1, false);
 
-    @include icon-color-theming('notifications', 'notifications', $icon-normal, '000', 1, false);
-    @include icon-color-theming('notifications-dark', 'notifications', $icon-normal, '000', 1, false);
-    @include icon-color-theming('notifications-dark', 'notifications', $icon-normal, 'f2f2f2', 1, false);
+    @include icon-color2('notifications-dark', 'notifications', $icon-normal, 1, false);
 
     @include icon-color-theming('undo', 'text', $icon-normal, '000', 1, false);
     @include icon-color-theming('undo', 'text', $icon-normal, 'f2f2f2', 1, false);
