@@ -172,10 +172,10 @@ $icon-success: #27ae60;
     @include icon-color2('language', 'contacts', $icon-normal, 1, false);
     @include icon-color2('up', 'contacts', $icon-normal, 1, false);
 
-    @include icon-color-theming('deck', 'deck', $icon-normal, '000', 1, false);
-    @include icon-color-theming('archive', 'deck', $icon-normal, '000', 1, false);
-    @include icon-color-theming('toggle-view-collapse', 'deck', $icon-normal, '000', 1, false);
-    @include icon-color-theming('toggle-view-expand', 'deck', $icon-normal, '000', 1, false);
+    @include icon-color2('deck', 'deck', $icon-normal, 1, false);
+    @include icon-color2('archive', 'deck', $icon-normal, 1, false);
+    @include icon-color2('toggle-view-collapse', 'deck', $icon-normal, 1, false);
+    @include icon-color2('toggle-view-expand', 'deck', $icon-normal, 1, false);
 
     @include icon-color-theming('app-dark', 'spreed', $icon-normal, '000', 1, false);
     @include icon-color-theming('menu-people', 'spreed', $icon-normal, '000', 1, false);

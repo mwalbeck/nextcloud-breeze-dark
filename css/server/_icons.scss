@@ -36,7 +36,8 @@
 
 /* Filetypes ---------------------------------------------------------------- */
 
-.icon-text {
+.icon-text,
+.icon-description {
 	background-image: var(--icon-text-f2f2f2) !important;
 }
 
@@ -427,11 +428,6 @@ select,
 // Circle in files app navbar
 .nav-icon-circlesfilter {
 	background-image: var(--icon-circles-circles-000) !important;
-}
-
-// Override Deck apps override of the deck icon
-.icon-deck {
-	background-image: var(--icon-deck-deck-000) !important;
 }
 
 // Override Deck apps override of the help icon
