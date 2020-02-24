@@ -136,7 +136,8 @@
 	background-image: var(--icon-star-dark-f2f2f2) !important;
 }
 
-.icon-search {
+.icon-search,
+div.select2-drop .select2-search input {
 	background-image: var(--icon-search-f2f2f2) !important;
 }
 
@@ -218,11 +219,13 @@
 
 .icon-triangle-s,
 select,
-#app-navigation:not(.vue) .collapsible::before {
+#app-navigation:not(.vue) .collapsible::before,
+div.select2-container a.select2-choice .select2-arrow b {
 	background-image: var(--icon-triangle-s-f2f2f2) !important;
 }
 
-.icon-more {
+.icon-more,
+#app-navigation:not(.vue) .app-navigation-entry-utils .app-navigation-entry-utils-menu-button button:not([class^="icon-"]):not([class*=" icon-"]) {
 	background-image: var(--icon-more-f2f2f2) !important;
 }
 
@@ -395,46 +398,6 @@ select,
 }
 
 /* Apps that haven't moved to variables for icons ---------------------------- */
-
-// News
-.app-news .icon-rss {
-	background-image: var(--icon-news-rss-000) !important;
-}
-
-.icon-unpinned {
-	background-image: var(--icon-news-unpinned-000) !important;
-}
-
-.icon-pinned {
-	background-image: var(--icon-news-pinned-000) !important;
-}
-
-.icon-full-text-disabled {
-	background-image: var(--icon-news-nonfulltext-000) !important;
-}
-
-.icon-full-text-enabled {
-	background-image: var(--icon-news-fulltext-000) !important;
-}
-
-.icon-updatemode-default {
-	background-image: var(--icon-news-updatemodedefault-000) !important;
-}
-
-.icon-updatemode-unread {
-	background-image: var(--icon-news-updatemodeunread-000) !important;
-}
-
-// Circles
-// Circle in files app navbar
-.nav-icon-circlesfilter {
-	background-image: var(--icon-circles-circles-000) !important;
-}
-
-// Override Deck apps override of the help icon
-.icon-help {
-	background-image: var(--icon-help-000);
-}
 
 // Share by email
 .icon-social-email {

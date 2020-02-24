@@ -58,3 +58,36 @@
 		color: var(--color-text-link);
 	}
 }
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-news {
+
+	.icon-rss {
+		background-image: var(--icon-news-rss-f2f2f2) !important;
+	}
+
+	.icon-unpinned {
+		background-image: var(--icon-news-unpinned-f2f2f2) !important;
+	}
+
+	.icon-pinned {
+		background-image: var(--icon-news-pinned-f2f2f2) !important;
+	}
+
+	.icon-full-text-disabled {
+		background-image: var(--icon-news-nonfulltext-f2f2f2) !important;
+	}
+
+	.icon-full-text-enabled {
+		background-image: var(--icon-news-fulltext-f2f2f2) !important;
+	}
+
+	.icon-updatemode-default {
+		background-image: var(--icon-news-updatemodedefault-f2f2f2) !important;
+	}
+
+	.icon-updatemode-unread {
+		background-image: var(--icon-news-updatemodeunread-f2f2f2) !important;
+	}
+}
