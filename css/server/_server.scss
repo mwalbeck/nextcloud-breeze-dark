@@ -493,9 +493,8 @@ div.crumb.crumbmenu a {
 /* File picker -------------------------------------------------------------- */
 
 .oc-dialog {
-	box-shadow: none !important;
+	box-shadow: 0 0 1px var(--color-border) !important;
 	border: 1px solid var(--color-border);
-	padding-bottom: 16px !important;
 }
 
 #oc-dialog-filepicker-content {
