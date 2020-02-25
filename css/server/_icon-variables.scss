@@ -94,11 +94,6 @@ $icon-success: #27ae60;
     @include icon-color2('play', 'actions', $icon-normal, 1, true);
     @include icon-color2('pause', 'actions', $icon-normal, 1, true);
 
-    @include icon-color-theming('search', 'actions', $icon-normal, 'fffffe', 1, true);
-    @include icon-color-theming('checkmark', 'actions', $icon-normal, 'fff', 1, true);
-    @include icon-color-theming('public', 'actions', $icon-normal, 'fff', 1, true);
-    @include icon-color-theming('error', 'actions', $icon-normal, 'fff', 1, true);
-
     @include icon-color2('folder', 'files', $icon-normal, 1, false);
     @include icon-color2('recent', 'files', $icon-normal, 1, false);
     @include icon-color2('external', 'files', $icon-normal, 1, false);
@@ -115,40 +110,23 @@ $icon-success: #27ae60;
 
     @include icon-color2('notifications-dark', 'notifications', $icon-normal, 1, false);
 
-    @include icon-color-theming('undo', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('undo', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('redo', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('redo', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('bold', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('bold', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('italic', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('italic', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('strike', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('strike', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('paragraph', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('paragraph', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('ul', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('ul', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('ol', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('ol', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('quote', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('quote', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h1', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h1', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h2', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h2', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h3', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h3', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h4', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h4', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h5', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h5', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('h6', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('h6', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('code', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('code', 'text', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('image', 'text', $icon-normal, '000', 1, false);
-    @include icon-color-theming('image', 'text', $icon-normal, 'f2f2f2', 1, false);
+    @include icon-color2('undo', 'text', $icon-normal, 1, false);
+    @include icon-color2('redo', 'text', $icon-normal, 1, false);
+    @include icon-color2('bold', 'text', $icon-normal, 1, false);
+    @include icon-color2('italic', 'text', $icon-normal, 1, false);
+    @include icon-color2('strike', 'text', $icon-normal, 1, false);
+    @include icon-color2('paragraph', 'text', $icon-normal, 1, false);
+    @include icon-color2('ul', 'text', $icon-normal, 1, false);
+    @include icon-color2('ol', 'text', $icon-normal, 1, false);
+    @include icon-color2('quote', 'text', $icon-normal, 1, false);
+    @include icon-color2('h1', 'text', $icon-normal, 1, false);
+    @include icon-color2('h2', 'text', $icon-normal, 1, false);
+    @include icon-color2('h3', 'text', $icon-normal, 1, false);
+    @include icon-color2('h4', 'text', $icon-normal, 1, false);
+    @include icon-color2('h5', 'text', $icon-normal, 1, false);
+    @include icon-color2('h6', 'text', $icon-normal, 1, false);
+    @include icon-color2('code', 'text', $icon-normal, 1, false);
+    @include icon-color2('image', 'text', $icon-normal, 1, false);
 
     @include icon-color2('rss', 'news', $icon-normal, 1, false);
 
@@ -168,10 +146,9 @@ $icon-success: #27ae60;
     @include icon-color2('toggle-view-collapse', 'deck', $icon-normal, 1, false);
     @include icon-color2('toggle-view-expand', 'deck', $icon-normal, 1, false);
 
-    @include icon-color-theming('app-dark', 'spreed', $icon-normal, '000', 1, false);
-    @include icon-color-theming('menu-people', 'spreed', $icon-normal, '000', 1, false);
-    @include icon-color-theming('reply', 'spreed', $icon-normal, '000', 1, false);
-    @include icon-color-theming('lobby', 'spreed', $icon-normal, '000', 1, false);
+    @include icon-color2('app-dark', 'spreed', $icon-normal, 1, false);
+    @include icon-color2('reply', 'spreed', $icon-normal, 1, false);
+    @include icon-color2('lobby', 'spreed', $icon-normal, 1, false);
 
     @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
     @include icon-color-theming('star', 'mail', $icon-normal, 'f2f2f2', 1, false);

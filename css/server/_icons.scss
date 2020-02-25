@@ -434,6 +434,22 @@ div.select2-container a.select2-choice .select2-arrow b {
 	}
 }
 
+// Talk
+.app-Talk {
+
+	.icon-talk {
+		background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
+	}
+
+	.icon-lobby {
+		background-image: var(--icon-spreed-lobby-f2f2f2) !important;
+	}
+
+	.icon-reply {
+		background-image: var(--icon-spreed-reply-f2f2f2) !important;
+	}
+}
+
 /* CSS tricks to change icon color ------------------------------------------ */
 
 .app-settings {
