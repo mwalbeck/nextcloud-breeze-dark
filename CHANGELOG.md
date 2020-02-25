@@ -1,5 +1,16 @@
 # Changelog
 
+## 18.0.7 - 2020-02-25
+### Fixed
+- [#96](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/96) Fix styling for routing dialog in maps
+- [#97](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/97) Use relativ paths for backgrounds, and when using custom backgrounds don't use colour from theming app as background
+- [#93](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/93) Fix icons staying light after deactivating the theme
+- Invert app-dark, password and star icons on activity list
+- Fix missing bottom-border on .oc-dialog boxes
+
+### Removed
+- Old icons rules for Gallery app
+
 ## 18.0.6 - 2020-02-16
 ### Fixed
 - [#95](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/95) Fix styling for Two-factor TOTP and 2fa selection screen on login when having multiple 2fa's enabled
