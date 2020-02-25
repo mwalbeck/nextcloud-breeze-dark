@@ -14,3 +14,12 @@
         border-bottom-color: var(--color-border);    
     }
 }
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-flowupload {
+
+    .icon-file.select-file-icon {
+        background-image: var(--icon-text-f2f2f2) !important;
+    }
+}
