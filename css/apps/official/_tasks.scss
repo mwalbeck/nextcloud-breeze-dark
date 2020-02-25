@@ -70,6 +70,11 @@
         }
     }
 
+    input[type="checkbox"].checkbox:checked + label::before {
+        background-color: var(--color-primary-element);
+        border-color: var(--color-primary-element);
+    }
+
     .title .detail-checkbox label:hover::before {
         border-color: var(--color-primary);
     }
@@ -148,5 +153,47 @@
         .icon-task-star-high {
             filter: none;
         }
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-tasks {
+
+    .icon-calendar,
+    .icon-calendar-dark {
+        background-image: unset !important;
+        
+        &.icon-bw {
+            background-image: var(--icon-tasks-bw-000) !important;
+        }
+    }
+
+    .icon-checkmark {
+        background-image: unset !important;
+
+        &.icon-bw {
+            background-image: var(--icon-tasks-bw-000) !important;
+        }
+    }
+
+    .icon-add {
+        background-image: unset !important;
+
+        &.icon-bw {
+            background-image: var(--icon-tasks-bw-000) !important;
+        }
+    }
+
+    .icon-tag {
+        background-image: unset !important;
+
+        &.icon-bw {
+            background-image: var(--icon-tasks-bw-000) !important;
+        }
+    }
+
+    input[type="checkbox"].checkbox:checked + label::before {
+        background-image: var(--icon-checkmark-f2f2f2) !important;
     }
 }
