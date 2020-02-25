@@ -150,17 +150,12 @@ $icon-success: #27ae60;
     @include icon-color2('reply', 'spreed', $icon-normal, 1, false);
     @include icon-color2('lobby', 'spreed', $icon-normal, 1, false);
 
-    @include icon-color-theming('star', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('star', 'mail', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('drafts', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('drafts', 'mail', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('sent', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('sent', 'mail', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('junk', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('junk', 'mail', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('archive', 'mail', $icon-normal, '000', 1, false);
-    @include icon-color-theming('archive', 'mail', $icon-normal, 'f2f2f2', 1, false);
-    @include icon-color-theming('forward', 'mail', $icon-normal, '000', 1, false);
+    @include icon-color2('star', 'mail', $icon-normal, 1, false);
+    @include icon-color2('drafts', 'mail', $icon-normal, 1, false);
+    @include icon-color2('sent', 'mail', $icon-normal, 1, false);
+    @include icon-color2('junk', 'mail', $icon-normal, 1, false);
+    @include icon-color2('archive', 'mail', $icon-normal, 1, false);
+    @include icon-color2('forward', 'mail', $icon-normal, 1, false);
 
     @include icon-color2('announcementcenter', 'announcementcenter', $icon-normal, 1, false);
     @include icon-color2('notifications-off', 'announcementcenter', $icon-normal, 1, false);
@@ -205,8 +200,6 @@ $icon-success: #27ae60;
     // Manual icons
 
     // Mail
-    --icon-mail-inbox-000: var(--icon-home-f2f2f2);
-    --icon-mail-trash-000: var(--icon-delete-f2f2f2);
     --icon-mail-inbox-f2f2f2: var(--icon-home-f2f2f2);
     --icon-mail-trash-f2f2f2: var(--icon-delete-f2f2f2);
 

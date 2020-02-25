@@ -94,4 +94,12 @@
     .icon-trash {
         background-image: var(--icon-mail-trash-f2f2f2) !important;
     }
+
+    .icon-forward {
+        background-image: var(--icon-mail-forward-f2f2f2) !important;
+    }
+
+    .icon-starred[data-starred="false"]:not(:hover) {
+        background-image: var(--icon-star-dark-f2f2f2) !important;
+    }
 }

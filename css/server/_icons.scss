@@ -132,7 +132,9 @@
 /* Actions ------------------------------------------------------------------ */
 
 .icon-star,
-.icon-star-dark {
+.icon-star-dark,
+.icon-starred:hover,
+.icon-starred:focus {
 	background-image: var(--icon-star-dark-f2f2f2) !important;
 }
 
@@ -452,6 +454,10 @@ div.select2-container a.select2-choice .select2-arrow b {
 }
 
 /* CSS tricks to change icon color ------------------------------------------ */
+
+.icon-collapse {
+	color: var(--color-icon) !important;
+}
 
 .app-settings {
 
