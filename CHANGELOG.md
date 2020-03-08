@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 18.0.8 - 2020-03-08
 ### Fixed
 - [#100](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/100) Fix theming for account registration
 
