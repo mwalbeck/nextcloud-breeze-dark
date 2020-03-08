@@ -65,7 +65,10 @@ body#body-login {
 
 #body-login form .grouptop input,
 #body-login form .groupbottom input,
-#body-login .lost-password-container form input {
+#body-login .lost-password-container form input,
+#body-login #email,
+#body-login #username,
+#body-login #password {
     background: var(--color-background-darker);
     color: var(--color-main-text);
     box-shadow: none !important;
@@ -85,12 +88,17 @@ body#body-login {
     margin-bottom: 1em;
 }
 
+#email-icon,
+#username-icon,
+#password-icon,
 #body-login form img[src$="/core/img/actions/toggle.svg"] {
 	filter: invert(95%);
 }
 
 input.primary,
-button.primary {
+button.primary,
+input[type="submit"],
+#alternative-logins .button {
 	border: 1px solid var(--color-border) !important;
 	background-color: var(--color-main-background) !important;
     color: var(--color-main-text) !important;
@@ -101,8 +109,18 @@ input.primary:focus,
 input.primary:active,
 button.primary:hover,
 button.primary:focus,
-button.primary:active {
+button.primary:active,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:active,
+#alternative-logins .button:hover,
+#alternative-logins .button:focus,
+#alternative-logins .button:active {
     background-color: var(--color-primary-element) !important;
     color: var(--color-text-active) !important;
     border-color: var(--color-border-active) !important;
+}
+
+#body-login .groupbottom input#show {
+    border: none;
 }

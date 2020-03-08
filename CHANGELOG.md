@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Fixed
+- [#100](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/100) Fix theming for account registration
+
 ## 18.0.7 - 2020-02-25
 ### Fixed
 - [#96](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/96) Fix styling for routing dialog in maps
