@@ -1,0 +1,68 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
+/* Analytics ---------------------------------------------------------------- */
+
+.app-analytics #app-navigation:not(.vue) > ul > li > a.active + div.app-navigation-entry-utils {
+    background-color: var(--color-primary-element);
+}
+
+.app-analytics #app-content .dataTables_wrapper {
+
+    .dataTables_length,
+    .dataTables_filter,
+    .dataTables_info,
+    .dataTables_processing,
+    .dataTables_paginate {
+	    color: var(--color-main-text);
+    }
+
+    .dataTable {
+
+        thead th {
+            border-bottom-color: var(--color-border);
+        }
+
+        &.no-footer {
+            border-bottom-color: var(--color-border);
+        }
+    }
+    
+    .dataTables_paginate .paginate_button {
+        color: var(--color-main-text) !important;
+        border-color: var(--color-border);
+
+        &:hover {
+            background: var(--color-main-background);
+            border-color: var(--color-border-active);
+        }
+
+        &.current {
+            color: var(--color-text-active) !important;
+            background: var(--color-primary-element);
+            border-color: var(--color-border-active);
+        }
+
+        &.disabled {
+            color: var(--color-text-inactive) !important;
+            background-color: var(--color-background-alternate);
+
+            &:hover {
+                border-color: var(--color-border);
+            }
+        }
+    }
+}
+
+.app-analytics #app-sidebar .tabHeaders .tabHeader {
+
+    &.selected,
+    &:hover,
+    &:focus,
+    &:active {
+        border-bottom-color: var(--color-border-active);
+    }
+}
