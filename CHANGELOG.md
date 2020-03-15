@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Fixed
+- [#101](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/101) Fix icons for Tasks 0.12.0+
+
 ## 18.0.8 - 2020-03-08
 ### Fixed
 - [#100](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/100) Fix theming for account registration

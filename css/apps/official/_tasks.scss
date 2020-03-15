@@ -84,113 +84,45 @@
     }
 }
 
-.app-tasks {
-
-    .icon-task-star a::before,
-    .icon-alphabetically,
-    .icon-sort-down,
-    .icon-all a::before,
-    .icon-current a::before,
-    .icon-add a::before,
-    .icon-calendar a::before,
-    .icon-checkmark a::before,
-    .icon-task-star a::before,
-    .icon-list,
-    .icon-note,
-    .icon-hide,
-    .icon-percent,
-    .icon-checkmark,
-    .icon-tag,
-    .icon-add.icon-bw,
-    .icon-trash,
-    .icon-toggle {
-        filter: invert(95%);
-    }
-
-    .action.icon-checkmark,
-    .collection.icon-checkmark {
-        filter: none;
-    }
-
-    #app-settings, .app-navigation-entry-menu {
-        
-        .icon-all,
-        .icon-current,
-        .icon-task-star,
-        .icon-calendar,
-        .icon-subtasks-visible {
-            filter: invert(95%);
-        }
-    }
-
-    #app-content {
-
-        .icon-subtasks-visible,
-        .icon-subtasks-hidden {
-            filter: invert(95%);
-        }
-    }
-
-    #app-sidebar {
-
-        .icon-calendar {
-            filter: invert(95%);
-        }
-
-        .icon-calendar-due {
-            filter: none;
-        }
-    }
-
-    #app-content, #app-sidebar {
-
-        .icon-task-star {
-            filter: invert(95%);
-        }
-
-        .icon-task-star-low,
-        .icon-task-star-medium,
-        .icon-task-star-high {
-            filter: none;
-        }
-    }
-}
-
 /* Icons -------------------------------------------------------------------- */
 
 .app-tasks {
 
-    .icon-calendar,
-    .icon-calendar-dark {
-        background-image: unset !important;
-        
-        &.icon-bw {
-            background-image: var(--icon-tasks-bw-000) !important;
-        }
+    .sprt-startdate,
+    .sprt-duedate,
+    .sprt-current,
+    .sprt-task-star,
+    .sprt-percent,
+    .sprt-tag,
+    .sprt-trash,
+    .sprt-hide,
+    .sprt-pinned,
+    .sprt-pinned-off,
+    .sprt-all,
+    .sprt-checkmark,
+    .sprt-add,
+    .sprt-calendar {
+        filter: invert(95%);
     }
 
-    .icon-checkmark {
-        background-image: unset !important;
-
-        &.icon-bw {
-            background-image: var(--icon-tasks-bw-000) !important;
-        }
+    .icon-list {
+        background-image: var(--icon-tasks-icon-list-f2f2f2) !important;
     }
 
-    .icon-add {
-        background-image: unset !important;
-
-        &.icon-bw {
-            background-image: var(--icon-tasks-bw-000) !important;
-        }
+    .icon-start {
+	    background-image: var(--icon-tasks-icon-start-f2f2f2) !important;
     }
 
-    .icon-tag {
-        background-image: unset !important;
+    .icon-due {
+	    background-image: var(--icon-tasks-icon-due-f2f2f2) !important;
+    }
 
-        &.icon-bw {
-            background-image: var(--icon-tasks-bw-000) !important;
-        }
+    .icon-task-star {
+	    background-image: var(--icon-tasks-icon-task-star-f2f2f2) !important;
+    }
+
+    .icon-alphabetically {
+	    background-image: var(--icon-tasks-icon-alphabetically-f2f2f2) !important;
     }
 
     input[type="checkbox"].checkbox:checked + label::before {
