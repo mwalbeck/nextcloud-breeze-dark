@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 18.0.9 - 2020-03-15
 ### Fixed
 - [#101](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/101) Fix icons for Tasks 0.12.0+
 
