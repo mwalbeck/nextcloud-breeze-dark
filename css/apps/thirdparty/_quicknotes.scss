@@ -23,21 +23,28 @@
 .app-quicknotes .quicknote {
     color: #000000;
     box-shadow: none;
+
+    &:hover {
+        box-shadow: none;
+    }
 }
+
+/* Icons -------------------------------------------------------------------- */
 
 // Change icons to black as the contrast with white is really bad
 .app-quicknotes {
 
     .icon-checkmark {
-        background-image: url('/core/css/../img/actions/checkmark.svg?v=1');
+        background-image: var(--icon-checkmark-000) !important;
     }
     
-    #div-content .icon-delete {
-        background-image: url('/core/css/../img/actions/delete.svg?v=1');
-    
-        &:hover, &:focus {
-            background-image: $icon-delete-color;
-            opacity: 1;
+    .quicknote .icon-delete {
+        background-image: var(--icon-delete-000) !important;
+
+        &:hover,
+        &:focus {
+            background-image: var(--icon-delete-da4453) !important;
+            opacity: 1 !important;
         }
     }
 }
