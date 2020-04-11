@@ -6,8 +6,15 @@
 
 /* Analytics ---------------------------------------------------------------- */
 
-.app-analytics #app-navigation:not(.vue) > ul > li > a.active + div.app-navigation-entry-utils {
-    background-color: var(--color-primary-element);
+.app-analytics #app-navigation {
+
+    &:not(.vue) > ul > li > a.active + div.app-navigation-entry-utils {
+        background-color: var(--color-primary-element);
+    }
+
+    #data-settings li.data-settings-item {
+        opacity: 1;
+    }
 }
 
 .app-analytics #app-content .dataTables_wrapper {
