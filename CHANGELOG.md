@@ -5,6 +5,7 @@
 - [#106](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/106) Fix styling for Full text search
 - Tasks: Fix subtask and note icons
 - Data Analytics: Change opacity of links in settings
+- Maps: Fix search button visually extending beyond the search bar
 
 ### Added
 - Calendar: Add styling for new event color picker

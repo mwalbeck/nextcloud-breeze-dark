@@ -32,6 +32,11 @@
 
 .app-maps #app-content {
 
+    #search-form #search-submit {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
     .leaflet-container {
         background-color: var(--color-main-background);
     }
