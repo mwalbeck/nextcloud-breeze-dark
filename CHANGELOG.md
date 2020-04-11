@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.11 - 2020-04-11
 ### Fixed
 - [#106](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/106) Fix styling for Full text search
 - Tasks: Fix subtask and note icons
