@@ -101,7 +101,9 @@
     .sprt-all,
     .sprt-checkmark,
     .sprt-add,
-    .sprt-calendar {
+    .sprt-calendar,
+    .sprt-note,
+    .sprt-subtasks-hidden {
         filter: invert(95%);
     }
 
@@ -127,5 +129,16 @@
 
     input[type="checkbox"].checkbox:checked + label::before {
         background-image: var(--icon-checkmark-f2f2f2) !important;
+    }
+
+    #app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons {
+
+        .icon-subtasks-visible {
+            background-image: var(--icon-tasks-icon-subtasks-visible-f2f2f2) !important;
+        }
+
+        .icon-subtasks-hidden {
+            background-image: var(--icon-tasks-icon-subtasks-hidden-f2f2f2) !important;
+        }
     }
 }

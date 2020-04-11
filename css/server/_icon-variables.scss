@@ -197,6 +197,8 @@ $icon-success: #27ae60;
     @include icon-color-theming('icon-task-star', 'tasks', $icon-normal, 1, false);
     @include icon-color-theming('icon-due', 'tasks', $icon-normal, 1, false);
     @include icon-color-theming('icon-alphabetically', 'tasks', $icon-normal, 1, false);
+    @include icon-color-theming('icon-subtasks-visible', 'tasks', $icon-normal, 1, false);
+    @include icon-color-theming('icon-subtasks-hidden', 'tasks', $icon-normal, 1, false);
 
     // Manual icons
 

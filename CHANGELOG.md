@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - [#106](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/106) Fix styling for Full text search
+- Tasks: Fix subtask and note icons
 
 ## 18.0.10 - 2020-03-22
 ### Fixed
