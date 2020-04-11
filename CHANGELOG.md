@@ -5,6 +5,9 @@
 - [#106](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/106) Fix styling for Full text search
 - Tasks: Fix subtask and note icons
 
+### Added
+- Calendar: Add styling for new event color picker
+
 ## 18.0.10 - 2020-03-22
 ### Fixed
 - [#102](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/102) Set .icon-talk globally as it is used by other apps than just Talk
