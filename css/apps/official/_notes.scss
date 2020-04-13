@@ -1,0 +1,32 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3
+ ***/
+
+/* Notes -------------------------------------------------------------------- */
+
+.app-notes #app-content {
+
+    .CodeMirror .cm-formatting {
+        opacity: 0.5;
+    }
+
+    .cm-s-easymde .cm-url,
+    .cm-s-easymde .cm-string {
+	    color: var(--color-text-inactive);
+    }
+
+    .CodeMirror .CodeMirror-selectedtext {
+        background-color: var(--color-text-selection) !important;
+    }
+
+    .CodeMirror .cm-link {
+        color: var(--color-text-link);
+    }
+
+    .note-preview pre,
+    .note-preview code {
+        background: var(--color-background-darker);
+    }
+}
