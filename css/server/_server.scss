@@ -185,6 +185,12 @@ div[contenteditable="false"] {
 	border-top-color: var(--color-border);
 }
 
+// Text selection
+
+::selection {
+	background-color: var(--color-text-selection) !important;
+}
+
 /* Tables -------------------------------------------------------------------- */
 
 table {
