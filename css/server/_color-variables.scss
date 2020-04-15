@@ -22,6 +22,7 @@
     --color-error: rgba(218, 68, 83, 1) !important;
     --color-warning: rgba(246, 116, 0, 1) !important;
     --color-success: rgba(39, 174, 96, 1) !important;
+    --color-neutral: rgba(201, 206, 59, 1) !important;
 
     --color-text-maxcontrast: var(--color-text-inactive) !important;
     --color-text-light: var(--color-main-text) !important;
@@ -31,6 +32,7 @@
     --color-text-link: rgba(41, 128, 185, 1);
     --color-text-background: rgba(189, 195, 199, 0.6);
     --color-text-selection: rgba(61, 174, 233, 0.50);
+    --color-text-dark: rgba(0, 0, 0, 1) !important;
 
     --color-box-shadow: var(--color-primary) !important;
 

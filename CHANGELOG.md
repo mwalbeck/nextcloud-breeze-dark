@@ -4,6 +4,7 @@
 ### Fixed
 - [#110](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/110) Mail: Change email content view to more closely assemble upstream and improve visual of attachments
 - [#111](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/111) Change default text selection colour
+- [#112](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/112) Deck: Make due date icon colour and background consistent
 
 ## 18.0.11 - 2020-04-11
 ### Fixed

@@ -78,8 +78,12 @@
                 background-color: var(--color-background-darker);
 
                 .due {
-                    opacity: 0.7;
-                    
+                    opacity: 1;
+
+                    i.icon-badge {
+                        filter: invert(100%);
+                    }
+
                     span {
                         color: var(--color-text-active);
                     }
@@ -87,16 +91,36 @@
                     &.overdue {
                         background-color: var(--color-error);
                         opacity: 1;
+
+                        i.icon-badge {
+                            filter: none;
+                        }
                     }
 
                     &.now {
                         background-color: var(--color-warning);
                         opacity: 1;
+
+                        span {
+                            color: var(--color-text-dark);
+                        }
+
+                        i.icon-badge {
+                            filter: none;
+                        }
                     }
 
                     &.next {
-                        background-color: unset;
+                        background-color: var(--color-neutral);
                         opacity: 1;
+
+                        span {
+                            color: var(--color-text-dark);
+                        }
+
+                        i.icon-badge {
+                            filter: none;
+                        }
                     }
                 }
 
