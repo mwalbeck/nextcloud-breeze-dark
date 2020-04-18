@@ -1,8 +1,11 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.12 - 2020-04-18
 ### Fixed
 - [#110](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/110) Mail: Change email content view to more closely assemble upstream and improve visual of attachments
+- Mail: Adjust font colour for mail sender and subject in email list and reapply attachment styling for Mail 1.3
 - [#111](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/111) Change default text selection colour
 - [#112](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/112) Deck: Make due date icon colour and background consistent
 
