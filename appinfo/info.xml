@@ -16,4 +16,7 @@
     <dependencies>
         <nextcloud min-version="18" max-version="18"/>
     </dependencies>
+    <settings>
+        <personal>OCA\BreezeDark\Settings\Personal</personal>
+    </settings>
 </info>

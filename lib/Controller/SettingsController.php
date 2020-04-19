@@ -24,5 +24,36 @@
  */
 
 
-$app = new \OCA\BreezeDark\AppInfo\Application();
-$app->doTheming();
+namespace OCA\BreezeDark\Controller;
+
+use OCP\AppFramework\Controller;
+use OCP\IConfig;
+use OCP\IUserSession;
+use OCP\IRequest;
+
+class SettingsController extends Controller {
+
+    /** @var string */
+    protected $appName;
+
+    /** @var IConfig */
+    private $config;
+
+    /** @var string */
+	private $userId;
+
+
+    public function __construct($appName, IConfig $config, IUserSession $userSession, IRequest $request) {
+        parent::__construct($appName, $request);
+        $this->config = $config;
+        $this->userId = $userSession->getUser()->getUID();
+    }
+
+    public function personal() {
+        if ($this->request->getParam("enabled")) {
+            $this->config->setUserValue($this->userId, $this->appName, "enabled", "1");
+        } else {
+            $this->config->setUserValue($this->userId, $this->appName, "enabled", "0");
+        }
+    }
+}
