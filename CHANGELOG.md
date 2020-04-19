@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Fixed
+- Make text colour in Users section white again after adding variable --color-text-dark
 
 ## 18.0.12 - 2020-04-18
 ### Fixed

@@ -392,6 +392,20 @@ div.crumb.crumbmenu a {
 	opacity: 1 !important;
 }
 
+/* Users */
+#body-settings .app-settings #app-content.user-list-grid .row {
+
+	.name,
+	.password,
+	.mailAddress,
+	.languages,
+	.storageLocation,
+	.userBackend,
+	.lastLogin {
+		color: var(--color-main-text);
+	}
+}
+
 /* Section Container */
 // Primarily seems to be used under settings
 .followupsection {
