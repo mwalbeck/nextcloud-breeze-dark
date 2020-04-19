@@ -1,216 +1,77 @@
 /***
- * @copyright Copyright (c) 2019, Magnus Walbeck <mw@mwalbeck.org>
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
  *
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 
 /* JavaScript XMPP Chat ----------------------------------------------------- */
 
-#jsxc_submit:hover {
-    opacity: 1;
-}
-
-#jsxc_notice span,
-.jsxc_caption .jsxc_lastmsg .jsxc_unread {
-	background-color: var(--color-warning);
-	color: var(--color-main-text);
-}
-
-#jsxc_roster {
+#jsxc-roster {
     background-color: var(--color-main-background);
     border-left-color: var(--color-border);
 
-    #jsxc_toggleRoster::before {
-        border-color: transparent var(--color-border);
-    }
-
-    .jsxc_rosteritem {
-        color: var(--color-main-text);
-
-        &:hover {
-            background-color: var(--color-background-hover);
-        }
-    }
-
-    > .jsxc_bottom {
-        background-color: var(--color-main-background);
-        border-top: 1px solid var(--color-border);
-
-        ul {
-            background-color: var(--color-main-background);
-            border-top: 1px solid var(--color-border);
-        }
-
-        li {
-            background-color: var(--color-main-background);
-            color: var(--color-main-text);
-
-            &:hover:not(.jsxc_disabled) {
-                background-color: var(--color-background-hover);
-                color: var(--color-main-text);
-            }
-        }
-    }
-}
-
-#jsxc_dialog {
-    background-color: var(--color-main-background);
-    border: 1px solid var(--color-border);
-
-    form fieldset {
-        border-color: var(--color-border);
-
-        h3 {
-            background-color: var(--color-background-darker);
-            color: var(--color-main-text);
-
-            &.jsxc_experimental::after {
-                background-color: var(--color-warning);
-            }
-        }
-    }
-}
-
-#jsxc_dialog, #jsxc_webrtc {
-
-    .jsxc_btn.jsxc_btn-default {
-        border-color: var(--color-border);
-        color: var(--color-main-text);
-        background-color: var(--color-main-background);
-    }
-
-    .btn-default {
-        color: var(--color-main-text);
+    .jsxc-roster-toggle {
         background-color: var(--color-background-darker);
-        border-color: var(--color-border);
-
-        &:hover {
-            color: var(--color-text-active);
-        }
-
-        &:active, &:focus {
-            background-color: var(--color-primary-element);
-        }
-    }
-
-    pre {
-        color: var(--color-main-text);
-        background-color: var(--color-background-darker);
-        border-color: var(--color-border);
-    }
-
-    .form-control {
-        color: var(--color-main-text);
-        background-color: var(--color-background-darker);
-        border-color: var(--color-border);
-        box-shadow: none;
-
-        &[readonly], &[disabled] {
-            background-color: var(--color-background-alternate);
-        }
-
-        &:focus {
-            box-shadow: none;
-            border-color: var(--color-border-active);
-        }
-    }
-
-    hr {
-        border-top-color: var(--color-border);
-    }
-}
-
-#jsxc_windowList .jsxc_window {
-    background-color: var(--color-main-background);
-    border-color: var(--color-border);
-    
-    .jsxc_bar {
-        background-color: var(--color-primary);
-        color: var(--color-main-text);
-
-        .jsxc_settings .jsxc_menu {
-            background-color: var(--color-main-background);
-            color: var(--color-main-text);
-            filter: none;
-            border: 1px solid var(--color-border);
-
-            a {
-                color: var(--color-main-text);
-                opacity: 0.7;
-
-                &.jsxc_disabled {
-                    color: var(--color-text-inactive);
-
-                    &:hover {
-                        opacity: 0.7;
-                    }
-                }
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-
-            &::after {
-                border-bottom-color: var(--color-border);
-            }
-        }
-    }
-
-    .jsxc_fade {
-        background-color: var(--color-background-darker);
-    }
-
-    .jsxc_textarea {
-        background-color: var(--color-background-darker);
-
-        .jsxc_in {
-            background-color: var(--color-background-hover);
-
-            &::after {
-                border-color: transparent var(--color-background-hover);
-            }
-        }
-
-        .jsxc_out {
-            background-color: var(--color-main-background);
-
-            &::after {
-                border-color: transparent var(--color-main-background);
-            }
-        }
-
-        .jsxc_timestamp {
-            color: var(--color-main-text);
-            opacity: 0.7;
-        }
-    }
-
-    .jsxc_textinput {
-        //border-top: 1px solid var(--color-border);
-
-        &::placeholder {
-            color: var(--color-text-inactive);
-        }
-    }
-
-    .jsxc_emoticons {
+        border: 1px solid var(--color-border);
 
         &::after {
-            filter: invert(95%);
+            border-right-color: var(--color-border);
+        }
+    }
+
+    .jsxc-roster-item {
+        color: var(--color-main-text);
+
+        &:hover {
+            background-color: var(--color-background-hover);
+        }
+    }
+
+    .jsxc-menu {
+        color: var(--color-main-text);
+
+        &.jsxc-menu--light li {
+            color: var(--color-main-text);
+            opacity: 0.7;
+
+            &:hover,
+            > span:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
         }
 
-        ul {
+        .jsxc-menu__content {
             background-color: var(--color-main-background);
             border: 1px solid var(--color-border);
+            filter: none;
 
             &::after {
-                border-top-color: var(--color-border);
+                color: var(--color-border);
             }
         }
     }
+}
 
-    .jsxc_transfer {
-        filter: invert(95%);
+/* Icons -------------------------------------------------------------------- */
+
+.jsxc-icon--more-dark {
+    background-image: var(--icon-more-f2f2f2);
+    transform: rotate(0.25turn);
+}
+
+.jsxc-icon--delete {
+    background-image: var(--icon-delete-f2f2f2);
+    
+    &:hover {
+        background-image: var(--icon-delete-da4453);
     }
+}
+
+.jsxc-icon--edit {
+	background-image: var(--icon-rename-f2f2f2);
+}
+
+.jsxc-icon--info {
+	background-image: var(--icon-info-f2f2f2);
 }
