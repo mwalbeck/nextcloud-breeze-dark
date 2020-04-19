@@ -16,9 +16,7 @@
     <dependencies>
         <nextcloud min-version="18" max-version="18"/>
     </dependencies>
-    <repair-steps>
-        <install>
-            <step>OCA\BreezeDark\Migration\Install</step>
-        </install>
-    </repair-steps>
+    <settings>
+        <personal>OCA\BreezeDark\Settings\Personal</personal>
+    </settings>
 </info>

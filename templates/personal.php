@@ -3,7 +3,7 @@
  * Breeze Dark theme for Nextcloud
  * 
  * @copyright Copyright (C) 2020  Magnus Walbeck <mw@mwalbeck.org>
- * 
+ *
  * @author Magnus Walbeck <mw@mwalbeck.org>
  * 
  * @license GNU AGPL version 3 or any later version
@@ -24,5 +24,12 @@
  */
 
 
-$app = new \OCA\BreezeDark\AppInfo\Application();
-$app->doTheming();
+script('breezedark', 'breezedark_settings');
+?>
+
+<div id="breezedark" class="section">
+    <h2>Breeze Dark</h2>
+    <p>A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.</p>
+    <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
+    <label for="breezedark-enabled">Enable Breeze Dark theme</label>
+</div>

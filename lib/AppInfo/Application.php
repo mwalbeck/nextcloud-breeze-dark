@@ -24,5 +24,32 @@
  */
 
 
-$app = new \OCA\BreezeDark\AppInfo\Application();
-$app->doTheming();
+namespace OCA\BreezeDark\AppInfo;
+
+use OCP\AppFramework\App;
+use OCP\IConfig;
+use OCP\IUserSession;
+use OCP\Util;
+
+class Application extends App {
+
+    /** @var IConfig */
+	private $config;
+
+	/** @var IUserSession */
+	private $userSession;
+
+    public function __construct() {
+        parent::__construct("breezedark");
+        $this->config       = \OC::$server->getConfig();
+        $this->userSession  = \OC::$server->getUserSession();
+    }
+
+    public function doTheming() {
+        $userId = $this->userSession->getUser()->getUID();
+        if ($this->config->getUserValue($userId, "breezedark", "enabled")) {
+            Util::addStyle('breezedark', 'guest');
+            Util::addStyle('breezedark', 'server');
+        }
+    }
+}
