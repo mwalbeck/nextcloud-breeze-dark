@@ -68,6 +68,29 @@
 		box-shadow: inset 0 -1px 0 var(--color-background-dark);
 		border-bottom-color: var(--color-background-dark);
 	}
+
+	#tab-app-sidebar-tab-repeat .repeat-option-set-section__grid .repeat-option-set-section-grid-item {
+
+		&:active,
+		&:focus {
+			background-color: var(--color-main-background);
+			border-color: var(--color-border);
+		}
+
+		&:hover {
+			background-color: var(--color-background-hover);
+			border-color: var(--color-border-active);
+		}
+
+		&.primary {
+			background-color: var(--color-primary-element) !important;
+			border-color: var(--color-border-active) !important;
+
+			&:hover {
+				background-color: var(--color-background-hover) !important;
+			}
+		}
+	}
 }
 
 .color-picker .vc-chrome {
