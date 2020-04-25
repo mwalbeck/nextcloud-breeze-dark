@@ -60,56 +60,73 @@
         border-top: 1px solid var(--color-border);
     }
 
-    .jsxc-menu {
+    &[data-mute="yes"] .jsxc-js-presence-menu .jsxc-menu__button::after {
+        opacity: 0.7;
+        filter: invert(95%);
+    }
+}
+
+.jsxc-menu {
+    color: var(--color-main-text);
+
+    &.jsxc-menu--light li {
         color: var(--color-main-text);
+        opacity: 0.7;
 
-        &.jsxc-menu--light li {
-            color: var(--color-main-text);
-            opacity: 0.7;
-
-            &:hover,
-            > span:hover {
-                opacity: 1;
-                cursor: pointer;
-            }
+        &:hover,
+        > span:hover {
+            opacity: 1;
+            cursor: pointer;
         }
 
-        .jsxc-menu__content {
-            background-color: var(--color-main-background);
-            filter: none;
-            box-shadow: none;
+        &.jsxc-disabled {
+            color: var(--color-text-inactive);
+            opacity: 0.5;
+            
 
-            &::after {
-                color: var(--color-border);
-            }
-        }
-
-        &.jsxc-menu--pushup ul {
-            background-color: var(--color-background-darker);
-            border-top-color: var(--color-border);
-
-            li {
-                color: var(--color-main-text);
-
-                &:hover:not(.jsxc-disabled) {
-                    background-color: var(--color-background-hover);
-                    opacity: 1;
-                }
-
-                &:last-child {
-                    border-bottom-color: var(--color-border);
-                }
-
-                a {
-                    color: var(--color-main-text);
-                }
+            &:hover {
+                cursor: default;
             }
         }
     }
 
-    &[data-mute="yes"] .jsxc-js-presence-menu .jsxc-menu__button::after {
-        opacity: 0.7;
-        filter: invert(95%);
+    &.jsxc-menu--dark li:hover {
+        background-color: var(--color-background-hover);
+        color: var(--color-text-active);
+        box-shadow: 0 0 0 1px var(--color-border-active) inset;
+    }
+
+    .jsxc-menu__content {
+        background-color: var(--color-main-background);
+        filter: none;
+        box-shadow: none;
+
+        &::after {
+            color: var(--color-border);
+        }
+    }
+
+    &.jsxc-menu--pushup ul {
+        background-color: var(--color-background-darker);
+        border-top-color: var(--color-border);
+
+        li {
+            color: var(--color-main-text);
+
+            &:hover:not(.jsxc-disabled) {
+                background-color: var(--color-background-hover);
+                color: var(--color-text-active);
+                opacity: 1;
+            }
+
+            &:last-child {
+                border-bottom-color: var(--color-border);
+            }
+
+            a {
+                color: var(--color-main-text);
+            }
+        }
     }
 }
 
@@ -148,7 +165,72 @@
     }
 }
 
+.jsxc-window-item {
+
+    &.jsxc-normal .jsxc-bar--window {
+        background-color: var(--color-primary-element);
+        color: var(--color-text-active);
+    }
+
+    &.jsxc-minimized .jsxc-bar--window {
+        background-color: var(--color-main-background);
+        color: var(--color-main-text);
+    }
+
+    .jsxc-menu__content {
+        border: 1px solid var(--color-border);
+    }
+}
+
+.jsxc-window {
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
+
+    .jsxc-message-area {
+
+        .jsxc-out {
+            background-color: var(--color-background-darker);
+        }
+
+        .jsxc-in {
+            background-color: var(--color-text-selection);
+        }
+    }
+
+    .jsxc-timestamp {
+        color: var(--color-text-inactive);
+    }
+
+    .jsxc-send-area {
+        background-color: var(--color-background-darker);
+
+        .jsxc-message-input {
+            background-color: var(--color-background-darker);
+
+            &::placeholder {
+                color: var(--color-text-inactive);
+                opacity: 0.7;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: var(--color-background-darker) !important;
+            }
+        }
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
+
+.jsxc-icon--clickable,
+.jsxc-file-transfer {
+    opacity: 0.7 !important;
+    
+    &:hover {
+        opacity: 1 !important;
+    }
+}
 
 .jsxc-icon--more-dark {
     background-image: var(--icon-more-f2f2f2);
@@ -172,6 +254,9 @@
 }
 
 .jsxc-icon--menu-dark,
-.jsxc-waiting::before {
+.jsxc-waiting::before,
+.jsxc-icon--emoticon,
+.jsxc-file-transfer,
+div.jsxc-transfer .jsxc-transfer-icon {
 	filter: invert(95%);
 }
