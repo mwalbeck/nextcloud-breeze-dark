@@ -10,6 +10,11 @@
     background-color: var(--color-main-background);
     border-left-color: var(--color-border);
 
+    input {
+        background-color: var(--color-background-darker);
+        border-color: var(--color-border);
+    }
+
     .jsxc-roster-toggle {
         background-color: var(--color-background-darker);
         border: 1px solid var(--color-border);
@@ -25,6 +30,15 @@
         &:hover {
             background-color: var(--color-background-hover);
         }
+
+        .jsxc-menu__content {
+            border: 1px solid var(--color-border);
+        }
+    }
+
+    > .jsxc-bottom {
+        background-color: var(--color-main-background);
+        border-top: 1px solid var(--color-border);
     }
 
     .jsxc-menu {
@@ -43,13 +57,40 @@
 
         .jsxc-menu__content {
             background-color: var(--color-main-background);
-            border: 1px solid var(--color-border);
             filter: none;
+            box-shadow: none;
 
             &::after {
                 color: var(--color-border);
             }
         }
+
+        &.jsxc-menu--pushup ul {
+            background-color: var(--color-background-darker);
+            border-top-color: var(--color-border);
+
+            li {
+                color: var(--color-main-text);
+
+                &:hover:not(.jsxc-disabled) {
+                    background-color: var(--color-background-hover);
+                    opacity: 1;
+                }
+
+                &:last-child {
+                    border-bottom-color: var(--color-border);
+                }
+
+                a {
+                    color: var(--color-main-text);
+                }
+            }
+        }
+    }
+
+    &[data-mute="yes"] .jsxc-js-presence-menu .jsxc-menu__button::after {
+        opacity: 0.7;
+        filter: invert(95%);
     }
 }
 
@@ -74,4 +115,8 @@
 
 .jsxc-icon--info {
 	background-image: var(--icon-info-f2f2f2);
+}
+
+.jsxc-icon--menu-dark {
+	filter: invert(95%);
 }
