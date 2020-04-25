@@ -4,6 +4,7 @@
 ### Fixed
 - Make text colour in Users section white again after adding variable --color-text-dark
 - [#117](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/117) Calendar: Highlight selected items in repeat section
+- [#118](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/118) Change filter rule for icons in contactsmenu to a generic one
 
 ## 18.0.12 - 2020-04-18
 ### Fixed

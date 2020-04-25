@@ -581,8 +581,8 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
-// Info icon in contacts menu
-#contactsmenu-menu .content .contact img[src$="info.svg"] {
+// Icons in contacts menu
+#contactsmenu-menu #contactsmenu-contacts .contact > a > img {
 	filter: invert(95%);
 }
 
