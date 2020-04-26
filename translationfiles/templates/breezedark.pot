@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Nextcloud package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nextcloud 3.14159\n"
+"Report-Msgid-Bugs-To: translations\\@example.com\n"
+"POT-Creation-Date: 2020-04-26 16:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/specialAppInfoFakeDummyForL10nScript.php:2
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/admin.php:31
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/personal.php:31
+msgid "Breeze Dark"
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/specialAppInfoFakeDummyForL10nScript.php:3
+msgid "Breeze Dark theme for Nextcloud, based on the theme by KDE"
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/specialAppInfoFakeDummyForL10nScript.php:4
+msgid ""
+"This is a breeze dark theme for Nextcloud, based on the theme by the KDE "
+"project."
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/admin.php:32
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/personal.php:32
+msgid ""
+"A Dark theme based on Breeze Dark by the KDE project. Please refresh the "
+"page for changes to take effect."
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/admin.php:33
+msgid ""
+"This setting will enable the theme by default, for any unauthenticated users "
+"and users who haven't set a preference"
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/admin.php:35
+msgid "Enable Breeze Dark theme by default"
+msgstr ""
+
+#: /home/magnus/projects/personal/nextcloud/breezedark/templates/personal.php:34
+msgid "Enable Breeze Dark theme"
+msgstr ""

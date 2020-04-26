@@ -1,0 +1,12 @@
+OC.L10N.register(
+    "breezedark",
+    {
+    "Breeze Dark" : "Breeze Dark",
+    "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Breeze Dark theme for Nextcloud, based on the theme by KDE",
+    "This is a breeze dark theme for Nextcloud, based on the theme by the KDE project." : "This is a breeze dark theme for Nextcloud, based on the theme by the KDE project.",
+    "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.",
+    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference" : "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference",
+    "Enable Breeze Dark theme by default" : "Enable Breeze Dark theme by default",
+    "Enable Breeze Dark theme" : "Enable Breeze Dark theme"
+},
+"");
