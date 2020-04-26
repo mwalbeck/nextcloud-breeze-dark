@@ -6,6 +6,9 @@
 - [#117](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/117) Calendar: Highlight selected items in repeat section
 - [#118](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/118) Change filter rule for icons in contactsmenu to a generic one
 
+### Added
+- [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) Add styling for jsxc v4.0
+
 ## 18.0.12 - 2020-04-18
 ### Fixed
 - [#110](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/110) Mail: Change email content view to more closely assemble upstream and improve visual of attachments
