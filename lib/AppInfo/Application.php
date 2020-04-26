@@ -33,6 +33,12 @@ use OCP\Util;
 
 class Application extends App {
 
+    /** @var string */
+	public const APP_NAME = 'breezedark';
+
+    /** @var string */
+    protected $appName;
+
     /** @var IConfig */
 	private $config;
 
@@ -40,16 +46,31 @@ class Application extends App {
 	private $userSession;
 
     public function __construct() {
-        parent::__construct("breezedark");
+        parent::__construct(self::APP_NAME);
+        $this->appName = self::APP_NAME;
         $this->config       = \OC::$server->getConfig();
         $this->userSession  = \OC::$server->getUserSession();
     }
 
+    /**
+     * Check if the theme should be applied
+     */
     public function doTheming() {
-        $userId = $this->userSession->getUser()->getUID();
-        if ($this->config->getUserValue($userId, "breezedark", "enabled")) {
-            Util::addStyle('breezedark', 'guest');
-            Util::addStyle('breezedark', 'server');
+        $user = $this->userSession->getUser();
+        $default = $this->config->getAppValue($this->appName, "theme_enabled", "0");
+
+        if (!is_null($user) AND $this->config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
+            $this->addStyling();
+        } else if (is_null($user) AND $default) {
+            $this->addStyling();
         }
+    }
+
+    /**
+     * Add stylesheets to the nextcloud
+     */
+    public function addStyling() {
+        Util::addStyle($this->appName, 'guest');
+        Util::addStyle($this->appName, 'server');
     }
 }

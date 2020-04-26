@@ -42,18 +42,42 @@ class SettingsController extends Controller {
     /** @var string */
 	private $userId;
 
-
-    public function __construct($appName, IConfig $config, IUserSession $userSession, IRequest $request) {
+    /**
+	 * @param string $appName
+	 * @param IConfig $config
+	 * @param IUserSession $userSession
+     * @param IRequest $request
+	 */
+    public function __construct(string $appName,
+                                IConfig $config,
+                                IUserSession $userSession,
+                                IRequest $request) {
         parent::__construct($appName, $request);
         $this->config = $config;
         $this->userId = $userSession->getUser()->getUID();
     }
 
+    /**
+     * @NoAdminRequired
+     * 
+     * Set user theme option
+     */
     public function personal() {
-        if ($this->request->getParam("enabled")) {
-            $this->config->setUserValue($this->userId, $this->appName, "enabled", "1");
+        if ($this->request->getParam("theme_enabled")) {
+            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
         } else {
-            $this->config->setUserValue($this->userId, $this->appName, "enabled", "0");
+            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
+        }
+    }
+
+    /**
+     * Set global theme option
+     */
+    public function admin() {
+        if ($this->request->getParam("theme_enabled")) {
+            $this->config->setAppValue($this->appName, "theme_enabled", "1");
+        } else {
+            $this->config->setAppValue($this->appName, "theme_enabled", "0");
         }
     }
 }

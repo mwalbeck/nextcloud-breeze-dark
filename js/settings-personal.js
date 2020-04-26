@@ -25,6 +25,6 @@
 
 $(document).ready(function () {
     $('#breezedark-enabled').change(function () {
-        $.post("/apps/breezedark/settings", ({enabled: this.checked ? 1 : 0}));
+        $.post("/apps/breezedark/settings", ({theme_enabled: this.checked ? 1 : 0}));
     });
 });

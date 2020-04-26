@@ -29,9 +29,8 @@ namespace OCA\BreezeDark\Settings;
 use OCP\Settings\ISettings;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
-use OCP\IUserSession;
 
-class Personal implements ISettings {
+class Admin implements ISettings {
 
 	/** @var string */
 	protected $appName;
@@ -39,29 +38,22 @@ class Personal implements ISettings {
 	/** @var IConfig */
 	private $config;
 
-	/** @var IUserSession */
-	private $userId;
-
 	/**
 	 * @param string $appName
 	 * @param IConfig $config
-	 * @param IUserSession $userSession
 	 */
 	public function __construct(string $appName,
-								IConfig $config,
-								IUserSession $userSession) {
-		$this->appName = $appName;
+                                IConfig $config) {
+        $this->appName = $appName;
 		$this->config = $config;
-		$this->userId = $userSession->getUser()->getUID();
 	}
 
 	/**
 	 * @return TemplateResponse
 	 */
 	public function getForm() {
-		$default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
-		$themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
-		return new TemplateResponse('breezedark', 'personal', [ 
+		$themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+		return new TemplateResponse('breezedark', 'admin', [ 
 			"themeEnabled" => $themeEnabled
 		]);
 	}
@@ -70,7 +62,7 @@ class Personal implements ISettings {
 	 * @return string
 	 */
 	public function getSection() {
-		return 'accessibility';
+		return 'theming';
 	}
 
 	/**
@@ -79,5 +71,4 @@ class Personal implements ISettings {
 	public function getPriority() {
 		return 50;
 	}
-
 }
