@@ -18,5 +18,6 @@
     </dependencies>
     <settings>
         <personal>OCA\BreezeDark\Settings\Personal</personal>
+        <admin>OCA\BreezeDark\Settings\Admin</admin>
     </settings>
 </info>

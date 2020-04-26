@@ -24,12 +24,13 @@
  */
 
 
-script('breezedark', 'settings-personal');
+script('breezedark', 'settings-admin');
 ?>
 
 <div id="breezedark" class="section">
     <h2>Breeze Dark</h2>
     <p>A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.</p>
+    <p>This toggle will enable the theme by default, for any unauthenticated users or for users who haven't set a preference</p>
     <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
-    <label for="breezedark-enabled">Enable Breeze Dark theme</label>
+    <label for="breezedark-enabled">Enable Breeze Dark theme by default</label>
 </div>
