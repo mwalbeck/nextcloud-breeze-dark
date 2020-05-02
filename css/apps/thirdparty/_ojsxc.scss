@@ -180,6 +180,14 @@
     .jsxc-menu__content {
         border: 1px solid var(--color-border);
     }
+
+    .jsxc-memberlist {
+        background-color: var(--color-primary);
+
+        ul {
+            color: var(--color-text-active);
+        }
+    }
 }
 
 .jsxc-window {
@@ -193,7 +201,7 @@
         }
 
         .jsxc-in {
-            background-color: var(--color-text-selection);
+            background-color: var(--color-text-selection) !important;
         }
     }
 
