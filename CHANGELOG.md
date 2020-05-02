@@ -4,6 +4,9 @@
 ### Added
 - Add repair step to allow anyone who install this release to have the theme enabled by default going forward, will be off by default in future releases
 
+### Fixed
+- [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix colour of icons in hamburger menu
+
 ## 18.0.13 - 2020-04-26
 ### Fixed
 - Make text colour in Users section white again after adding variable --color-text-dark
