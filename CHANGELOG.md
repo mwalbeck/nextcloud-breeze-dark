@@ -1,5 +1,9 @@
 # Changelog
 
+## 17.0.11 - 2020-05-02
+### Fixed
+- Update certificate
+
 ## 17.0.10 - 2020-02-23
 ### Fixed
 - [#96](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/96) Fix styling for routing dialog in maps
