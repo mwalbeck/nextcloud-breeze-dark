@@ -6,6 +6,7 @@
 
 ### Fixed
 - [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix colour of icons in hamburger menu
+- [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix background colour for readonly input in settings
 
 ## 18.0.13 - 2020-04-26
 ### Fixed
