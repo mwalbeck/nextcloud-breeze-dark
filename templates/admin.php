@@ -3,7 +3,7 @@
  * Breeze Dark theme for Nextcloud
  * 
  * @copyright Copyright (C) 2020  Magnus Walbeck <mw@mwalbeck.org>
- * 
+ *
  * @author Magnus Walbeck <mw@mwalbeck.org>
  * 
  * @license GNU AGPL version 3 or any later version
@@ -24,32 +24,13 @@
  */
 
 
-namespace OCA\BreezeDark\Migration;
+script('breezedark', 'settings-admin');
+?>
 
-use OCP\Migration\IOutput;
-use OCP\Migration\IRepairStep;
-use OCP\IConfig;
-
-class Install implements IRepairStep {
-
-    /** @var IConfig */
-    private $config;
-
-    public function __construct(IConfig $config) {
-        $this->config = $config;
-    }
-
-    /**
-     * Returns the step's name
-     */
-    public function getName() {
-        return 'Set theme_enabled for breezedark';
-    }
-
-    /**
-     * Set global theme option to enabled
-     */
-    public function run(IOutput $output) {
-        $this->config->setAppValue("breezedark", "theme_enabled", "1");
-    }
-}
+<div id="breezedark" class="section">
+    <h2><?php p($l->t("Breeze Dark")); ?></h2>
+    <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
+    <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference")); ?></p>
+    <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
+    <label for="breezedark-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
+</div>

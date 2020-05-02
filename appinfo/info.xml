@@ -5,7 +5,7 @@
     <name>Breeze Dark</name>
     <summary>Breeze Dark theme for Nextcloud, based on the theme by KDE</summary>
     <description><![CDATA[This is a breeze dark theme for Nextcloud, based on the theme by the KDE project.]]></description>
-    <version>18.0.14</version>
+    <version>18.0.15-beta3</version>
     <licence>agpl</licence>
     <author mail="mw@mwalbeck.org" homepage="https://github.com/mwalbeck/nextcloud-breeze-dark">Magnus Walbeck</author>
     <namespace>BreezeDark</namespace>
@@ -16,9 +16,8 @@
     <dependencies>
         <nextcloud min-version="18" max-version="18"/>
     </dependencies>
-    <repair-steps>
-        <install>
-            <step>OCA\BreezeDark\Migration\Install</step>
-        </install>
-    </repair-steps>
+    <settings>
+        <personal>OCA\BreezeDark\Settings\Personal</personal>
+        <admin>OCA\BreezeDark\Settings\Admin</admin>
+    </settings>
 </info>

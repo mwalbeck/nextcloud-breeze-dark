@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- [#104](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/104) Implement per user theming 
 
 ## 18.0.14 - 2020-05-02
 ### Added
