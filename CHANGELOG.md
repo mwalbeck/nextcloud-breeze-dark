@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- Add repair step to allow anyone who install this release to have the theme enabled by default going forward, will be off by default in future releases
 
 ## 18.0.13 - 2020-04-26
 ### Fixed
