@@ -31,6 +31,9 @@ You're always welcome to open an issue and talk about the changes, you would lik
 ## Donations
 If you like the theme and would like to donate you can use the following ways:
 
+**Liberapay:**
+https://liberapay.com/mwalbeck/
+
 **PayPal:**  
 https://www.paypal.me/magnuswalbeck
 
