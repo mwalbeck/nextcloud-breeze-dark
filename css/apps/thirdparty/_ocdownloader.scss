@@ -1,0 +1,101 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* ocDownloader ------------------------------------------------------------- */
+
+.app-ocdownloader #app-navigation {
+
+    li > div > a {
+        color: var(--color-main-text);
+    }
+
+    li[data-id="all"] {
+        border-color: var(--color-border);
+    }
+
+    li:hover > div > a,
+    li:focus > div > a,
+    a:focus {
+        background-color: unset;
+    }
+
+    li:hover {
+        background-color: var(--color-background-hover);
+    }
+}
+
+.app-ocdownloader #app-content #app-content-wrapper {
+
+    #controls {
+	    background-color: var(--color-main-background);
+    }
+
+    .content-page {
+	    border-bottom-color: var(--color-border);
+    }
+
+    .actions > div.button > ul {
+        background: var(--color-main-background);
+        border-color: var(--color-border);
+        box-shadow: none;
+    }
+
+    .jumbotron {
+        background-color: var(--color-main-background);
+        border-bottom-color: var(--color-border);
+    }
+
+    #TorrentsList > ul > li > p > a {
+        color: var(--color-text-link);
+    }
+
+    .content-queue > table {
+    
+        > thead > tr {
+            background-color: var(--color-background-darker);
+            
+            > th {
+                border-bottom-color: var(--color-border);
+            }
+
+            > th.border {
+                border-left-color: var(--color-border);
+            }
+        }
+
+        > tbody > tr {
+
+            > td {
+                border-bottom-color: var(--color-border);
+                
+                &.border {
+	                border-left-color: var(--color-border);
+                }
+
+                .pb-value {
+                    background: var(--color-background-hover) top left no-repeat;
+                }
+
+                > a {
+                    color: var(--color-text-link);
+                }
+            }
+        }
+    }
+}
+
+.app-settings #ocdownloader {
+
+    form#ocdownloader > p > span.info {
+        color: var(--color-main-text);
+        font-weight: 600;
+    }
+
+    form#ocdownloader hr {
+        color: var(--color-border);
+        background-color: none;
+    }
+}

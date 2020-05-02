@@ -2,7 +2,8 @@
 
 ## [Unreleased]
 ### Added
-- Add repair step to allow anyone who install this release to have the theme enabled by default going forward, will be off by default in future releases
+- Add repair step to set the theme to be enabled by default going forward, will be off by default starting with 18.0.15
+- [#119](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/119) Add styling for ocDownloader
 
 ### Fixed
 - [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix colour of icons in hamburger menu
