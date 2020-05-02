@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.14 - 2020-05-02
 ### Added
 - Add repair step to set the theme to be enabled by default going forward, will be off by default starting with 18.0.15
 - [#119](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/119) Add styling for ocDownloader
