@@ -7,6 +7,7 @@
 ### Fixed
 - [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix colour of icons in hamburger menu
 - [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Fix background colour for readonly input in settings
+- [#113](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/113) jsxc: Force background colour for incoming messages to fix messages in muc's
 - [#124](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/124) jsxc: Fix load more messages button in chat window
 
 ## 18.0.13 - 2020-04-26
