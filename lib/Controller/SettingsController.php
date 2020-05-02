@@ -40,14 +40,14 @@ class SettingsController extends Controller {
     private $config;
 
     /** @var string */
-	private $userId;
+    private $userId;
 
     /**
-	 * @param string $appName
-	 * @param IConfig $config
-	 * @param IUserSession $userSession
+     * @param string $appName
+     * @param IConfig $config
+     * @param IUserSession $userSession
      * @param IRequest $request
-	 */
+     */
     public function __construct(string $appName,
                                 IConfig $config,
                                 IUserSession $userSession,

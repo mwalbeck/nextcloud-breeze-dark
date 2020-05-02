@@ -32,43 +32,43 @@ use OCP\IConfig;
 
 class Admin implements ISettings {
 
-	/** @var string */
-	protected $appName;
+    /** @var string */
+    protected $appName;
 
-	/** @var IConfig */
-	private $config;
+    /** @var IConfig */
+    private $config;
 
-	/**
-	 * @param string $appName
-	 * @param IConfig $config
-	 */
-	public function __construct(string $appName,
+    /**
+     * @param string $appName
+     * @param IConfig $config
+     */
+    public function __construct(string $appName,
                                 IConfig $config) {
         $this->appName = $appName;
-		$this->config = $config;
-	}
+        $this->config = $config;
+    }
 
-	/**
-	 * @return TemplateResponse
-	 */
-	public function getForm() {
-		$themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
-		return new TemplateResponse('breezedark', 'admin', [ 
-			"themeEnabled" => $themeEnabled
-		]);
-	}
+    /**
+     * @return TemplateResponse
+     */
+    public function getForm() {
+        $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+        return new TemplateResponse('breezedark', 'admin', [ 
+            "themeEnabled" => $themeEnabled
+        ]);
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getSection() {
-		return 'theming';
-	}
+    /**
+     * @return string
+     */
+    public function getSection() {
+        return 'theming';
+    }
 
-	/**
-	 * @return int
-	 */
-	public function getPriority() {
-		return 50;
-	}
+    /**
+     * @return int
+     */
+    public function getPriority() {
+        return 50;
+    }
 }

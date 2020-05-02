@@ -33,51 +33,51 @@ use OCP\IUserSession;
 
 class Personal implements ISettings {
 
-	/** @var string */
-	protected $appName;
+    /** @var string */
+    protected $appName;
 
-	/** @var IConfig */
-	private $config;
+    /** @var IConfig */
+    private $config;
 
-	/** @var IUserSession */
-	private $userId;
+    /** @var IUserSession */
+    private $userId;
 
-	/**
-	 * @param string $appName
-	 * @param IConfig $config
-	 * @param IUserSession $userSession
-	 */
-	public function __construct(string $appName,
-								IConfig $config,
-								IUserSession $userSession) {
-		$this->appName = $appName;
-		$this->config = $config;
-		$this->userId = $userSession->getUser()->getUID();
-	}
+    /**
+     * @param string $appName
+     * @param IConfig $config
+     * @param IUserSession $userSession
+     */
+    public function __construct(string $appName,
+                                IConfig $config,
+                                IUserSession $userSession) {
+        $this->appName = $appName;
+        $this->config = $config;
+        $this->userId = $userSession->getUser()->getUID();
+    }
 
-	/**
-	 * @return TemplateResponse
-	 */
-	public function getForm() {
-		$default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
-		$themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
-		return new TemplateResponse('breezedark', 'personal', [ 
-			"themeEnabled" => $themeEnabled
-		]);
-	}
+    /**
+     * @return TemplateResponse
+     */
+    public function getForm() {
+        $default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+        $themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
+        return new TemplateResponse('breezedark', 'personal', [ 
+            "themeEnabled" => $themeEnabled
+        ]);
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getSection() {
-		return 'accessibility';
-	}
+    /**
+     * @return string
+     */
+    public function getSection() {
+        return 'accessibility';
+    }
 
-	/**
-	 * @return int
-	 */
-	public function getPriority() {
-		return 50;
-	}
+    /**
+     * @return int
+     */
+    public function getPriority() {
+        return 50;
+    }
 
 }

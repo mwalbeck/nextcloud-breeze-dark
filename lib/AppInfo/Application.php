@@ -34,16 +34,16 @@ use OCP\Util;
 class Application extends App {
 
     /** @var string */
-	public const APP_NAME = 'breezedark';
+    public const APP_NAME = 'breezedark';
 
     /** @var string */
     protected $appName;
 
     /** @var IConfig */
-	private $config;
+    private $config;
 
-	/** @var IUserSession */
-	private $userSession;
+    /** @var IUserSession */
+    private $userSession;
 
     public function __construct() {
         parent::__construct(self::APP_NAME);
