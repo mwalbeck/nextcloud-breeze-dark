@@ -431,24 +431,6 @@ div.select2-container a.select2-choice .select2-arrow b {
 	}
 }
 
-// Talk
-
-// Used by other apps so set it globally
-.icon-talk {
-	background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
-}
-
-.app-Talk {
-
-	.icon-lobby {
-		background-image: var(--icon-spreed-lobby-f2f2f2) !important;
-	}
-
-	.icon-reply {
-		background-image: var(--icon-spreed-reply-f2f2f2) !important;
-	}
-}
-
 /* CSS tricks to change icon color ------------------------------------------ */
 
 .icon-collapse {
@@ -603,4 +585,12 @@ img.two-factor-provider-settings-icon,
 // Force folder icon in app settings to be default blue, when theming app is disabled
 .app-settings .icon-folder {
 	background-image: var(--icon-folder-0082c9) !important;
+}
+
+/* Random CSS fixes for icons ----------------------------------------------- */
+
+// Fix avatars with dot menu being covered in dots. The dot icon is being handled
+// by vue iconfont instead
+.avatardiv--with-menu .icon-more {
+	background-image: none !important;
 }
