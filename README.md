@@ -7,11 +7,23 @@ This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the 
 The first number is the Nextcloud version. The second number is the Nextcloud major point release version. The third number is the theme version.
 
 ## Installation
-
 It's available in the [nextcloud app store](https://apps.nextcloud.com/apps/breezedark), just search for Breeze Dark, or look under customizations.
 
 or you can clone this repo into your app folder and enable it in the app menu in Nextcloud.
 
+## Usage
+After you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.
+
+#### Global
+The global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. You can find there global option here:
+```
+Admin settings > Theming > Breeze Dark
+```
+#### Personal
+The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:
+```
+Personal settings > Accessibility > Breeze Dark
+```
 ## Contributions
 
 ### Issues
@@ -31,7 +43,7 @@ You're always welcome to open an issue and talk about the changes, you would lik
 ## Donations
 If you like the theme and would like to donate you can use the following ways:
 
-**Liberapay:**
+**Liberapay:**  
 https://liberapay.com/mwalbeck/
 
 **PayPal:**  
@@ -42,4 +54,4 @@ BTC: 1Pp3UG9k6ZkwrVXrhr9kwwvjwDk5Vchu3f
 BCH: 1C7dQLqMU6Kucxx9GcFDMnTTTsBpeNT9vo  
 LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx
 
-Thank you.
+Thank you!
