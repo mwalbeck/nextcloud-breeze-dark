@@ -413,24 +413,6 @@ div.select2-container a.select2-choice .select2-arrow b {
 	background-image: var(--icon-mail-000) !important;
 }
 
-/* Apps that currently don't have stylesheets ------------------------------- */
-
-// Notes
-.app-notes {
-
-	.icon-recent {
-		background-image: var(--icon-notes-recent-f2f2f2) !important;
-	}
-
-	.icon-emptyfolder {
-		background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
-	}
-
-	.icon-files {
-		background-image: var(--icon-notes-folder-f2f2f2) !important;
-	}
-}
-
 /* CSS tricks to change icon color ------------------------------------------ */
 
 .icon-collapse {
@@ -480,32 +462,6 @@ img.two-factor-provider-settings-icon,
 	filter: invert(95%);
 }
 
-// Activity App: Navigation sidebar
-.app-activity #app-navigation ul li a img {
-	filter: invert(95%);
-}
-
-// Activity App: Icons in activity feed
-.app-activity .activity-icon,
-.activity .activity-icon {
-
-	img[src$="share.svg"],
-	img[src$="change.svg"],
-	img[src$="calendar.svg"],
-	img[src$="comment.svg"],
-	img[src$="announcementcenter-dark.svg"],
-	img[src$="archive.svg"],
-	img[src$="tag.svg"],
-	img[src$="checkmark.svg"],
-	img[src$="personal.svg"],
-	img[src$="deck-dark.svg"],
-	img[src$="app-dark.svg"],
-	img[src$="password.svg"],
-	img[src$="star.svg"] {
-		filter: invert(95%);
-	}
-}
-
 // Invert icon for version history in app sidebar
 .downloadVersion img[src$="download.svg"],
 .revertVersion img[src$="history.svg"] {
@@ -521,45 +477,6 @@ img.two-factor-provider-settings-icon,
 // Little help icon
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
 #ldapSettings img[src$="info.svg"] {
-	filter: invert(95%);
-}
-
-// Music app: icons for Music player controls in files and in app
-#music-controls img.control,
-.app-music img.control {
-	filter: invert(95%);
-}
-
-// Music app: follow-playback icon
-.app-music #app-sidebar #follow-playback {
-	filter: invert(95%);
-}
-
-// Music app: Play button on album covers
-.app-music img.play.svg {
-	filter: invert(95%);
-}
-
-// Music App: Mini play button
-.current.playing .play-pause,
-.current:not(.playing) .play-pause,
-#app-view :hover > .play-pause,
-#app-view .current.playing div:hover .play-pause {
-	filter: invert(95%);
-}
-
-// Music app: Play option in file action menu in Files App
-.fileActionsMenu .action-music-play img.icon {
-	filter: invert(95%);
-}
-
-// Music app: Settings icon
-.app-music .music-nav-settings img.svg {
-	filter: invert(95%);
-}
-
-// play-pause button on hover in nav sidebar
-.app-music #app-navigation .play-pause {
 	filter: invert(95%);
 }
 

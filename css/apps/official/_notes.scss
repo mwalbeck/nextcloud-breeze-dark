@@ -30,3 +30,20 @@
         background: var(--color-background-darker);
     }
 }
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-notes {
+
+	.icon-recent {
+		background-image: var(--icon-notes-recent-f2f2f2) !important;
+	}
+
+	.icon-emptyfolder {
+		background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
+	}
+
+	.icon-files {
+		background-image: var(--icon-notes-folder-f2f2f2) !important;
+	}
+}

@@ -22,3 +22,29 @@
 .icon-activity-dark {
 	background-image: var(--icon-activity-activity-f2f2f2) !important;
 }
+
+// Activity App: Navigation sidebar
+.app-activity #app-navigation ul li a img {
+	filter: invert(95%);
+}
+
+// Activity App: Icons in activity feed
+.app-activity .activity-icon,
+.activity .activity-icon {
+
+	img[src$="share.svg"],
+	img[src$="change.svg"],
+	img[src$="calendar.svg"],
+	img[src$="comment.svg"],
+	img[src$="announcementcenter-dark.svg"],
+	img[src$="archive.svg"],
+	img[src$="tag.svg"],
+	img[src$="checkmark.svg"],
+	img[src$="personal.svg"],
+	img[src$="deck-dark.svg"],
+	img[src$="app-dark.svg"],
+	img[src$="password.svg"],
+	img[src$="star.svg"] {
+		filter: invert(95%);
+	}
+}
