@@ -25,7 +25,7 @@ The personal option allows each user to set their own preference independent of 
 Personal settings > Accessibility > Breeze Dark
 ```
     ]]></description>
-    <version>18.0.15-beta3</version>
+    <version>18.0.15</version>
     <licence>agpl</licence>
     <author mail="mw@mwalbeck.org" homepage="https://github.com/mwalbeck/nextcloud-breeze-dark">Magnus Walbeck</author>
     <namespace>BreezeDark</namespace>

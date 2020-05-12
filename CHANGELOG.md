@@ -1,8 +1,13 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.15 - 2020-05-12
 ### Added
 - [#104](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/104) Implement per user theming 
+
+### Fixed
+- [#125](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/125) Fix avatars with dot menus being covered in dots
 
 ## 18.0.14 - 2020-05-02
 ### Added
