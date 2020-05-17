@@ -78,6 +78,7 @@ $icon-success: #27ae60;
     @include icon-color-theming('address', 'actions', $icon-normal, 1, true);
     @include icon-color-theming('group', 'actions', $icon-normal, 1, true);
     @include icon-color-theming('menu', 'actions', $icon-normal, 1, true);
+    @include icon-color-theming('menu-sidebar', 'actions', $icon-normal, 1, true);
     @include icon-color-theming('projects', 'actions', $icon-normal, 1, true);
     @include icon-color-theming('sound', 'actions', $icon-normal, 1, true);
     @include icon-color-theming('sound-off', 'actions', $icon-normal, 1, true);
@@ -146,6 +147,9 @@ $icon-success: #27ae60;
     @include icon-color-theming('archive', 'deck', $icon-normal, 1, false);
     @include icon-color-theming('toggle-view-collapse', 'deck', $icon-normal, 1, false);
     @include icon-color-theming('toggle-view-expand', 'deck', $icon-normal, 1, false);
+    @include icon-color-theming('attach', 'deck', $icon-normal, 1, false);
+    @include icon-color-theming('filter', 'deck', $icon-normal, 1, false);
+    @include icon-color-theming('clone', 'deck', $icon-normal, 1, false);
 
     @include icon-color-theming('app-dark', 'spreed', $icon-normal, 1, false);
     @include icon-color-theming('reply', 'spreed', $icon-normal, 1, false);

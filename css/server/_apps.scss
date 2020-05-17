@@ -134,6 +134,15 @@
 		box-shadow: none;
 	}
 
+	#tab-comments input[type="submit"].icon-confirm {
+		border: none !important;
+		opacity: 0.7;
+		background-color: transparent !important;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 /* App Settings ------------------------------------------------------------- */
@@ -174,4 +183,33 @@ button.delete,
 // Fix share icon in nav not being hidden on hover, because of maunal icon override to prevent black icons
 #app-navigation:not(.vue) .collapsible:hover > a {
 	background-image: none !important;
+}
+
+// CodeMirror
+
+.CodeMirror {
+	background-color: var(--color-main-background) !important;
+	color: var(--color-main-text);
+
+	.cm-formatting {
+		opacity: 0.5;
+	}
+
+	.cm-link {
+		color: var(--color-text-link) !important;
+	}
+
+	.cm-s-easymde .cm-url,
+	.cm-s-easymde .cm-string {
+		color: var(--color-text-inactive) !important;
+	}
+
+	.CodeMirror-selected {
+		background-color: var(--color-main-background) !important;
+	}
+
+	.CodeMirror-selectedtext {
+		background-color: var(--color-text-selection) !important;
+		color: var(--color-main-text);
+	}
 }

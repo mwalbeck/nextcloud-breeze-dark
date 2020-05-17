@@ -6,199 +6,116 @@
 
 /* Deck --------------------------------------------------------------------- */
 
-.app-deck #app-navigation {
-
-    .editing .app-navigation-entry-edit {
-        background-color: var(--color-main-background);
-    }
-
-    #app-settings-content .ui-select-match-item {
-        border-color: var(--color-border) !important;
-    }
-
+.board-list .board-list-row {
+    border-bottom-color: var(--color-border) !important;
 }
 
-.app-deck #app-content {
+.board-wrapper .controls {
+        
+    .board-title h2 a {
+        color: var(--color-text-active);
+    }
+}
 
-    #controls {
+.board-wrapper .board {
 
-        #stack-add {
-            background-color: var(--color-background-darker);
-            border: 1px solid var(--color-border);
+    .stack {
 
-            &:hover {
-                border-color: var(--color-border-active);
+        .stack--card-add form {
+            box-shadow: none;
+
+            input {
+                border: 1px solid var(--color-border);
             }
-        }
-
-        .board-header-controls > button i.icon-archive {
-            opacity: 1 !important;
-        }
-    }
-
-    #boardlist {
-
-        thead td {
-            opacity: 1;
-        }
-
-        td {
-            border-bottom-color: var(--color-border);
-        }
-
-        .board-create td{
-            border-bottom: none;
-        }
-    }
-
-    #board {
-
-        .stack {
-            border-color: var(--color-border);
         }
 
         .card {
-            border: 1px solid var(--color-border);
             box-shadow: none;
-
-            &:hover, &.current {
+            border: 1px solid var(--color-border);
+            background-color: var(--color-background-darker);
+            
+            &:hover,
+            .current-card {
+                box-shadow: none;
                 border-color: var(--color-border-active);
             }
 
-            &.create {
-                border-color: var(--color-border) !important;
+            .due {
+                opacity: 1;
 
-                &:hover {
-                    background-color: var(--color-background-hover);
-                    border-color: var(--color-border-active) !important;
+                span {
+                    color: var(--color-text-active);
                 }
-            }
 
-            .card-controls {
-                background-color: var(--color-background-darker);
-
-                .due {
+                &.next {
+                    background-color: var(--color-neutral);
                     opacity: 1;
 
-                    i.icon-badge {
-                        filter: invert(100%);
+                    span {
+                        color: var(--color-text-dark);
                     }
+                }
+
+                &.now {
+                    background-color: var(--color-warning);
+                    opacity: 1;
 
                     span {
-                        color: var(--color-text-active);
-                    }
-
-                    &.overdue {
-                        background-color: var(--color-error);
-                        opacity: 1;
-
-                        i.icon-badge {
-                            filter: none;
-                        }
-                    }
-
-                    &.now {
-                        background-color: var(--color-warning);
-                        opacity: 1;
-
-                        span {
-                            color: var(--color-text-dark);
-                        }
-
-                        i.icon-badge {
-                            filter: none;
-                        }
-                    }
-
-                    &.next {
-                        background-color: var(--color-neutral);
-                        opacity: 1;
-
-                        span {
-                            color: var(--color-text-dark);
-                        }
-
-                        i.icon-badge {
-                            filter: none;
-                        }
+                        color: var(--color-text-dark);
                     }
                 }
 
-                .card-files {
-                    opacity: 0.7;
+                &.overdue {
+                    background-color: var(--color-error);
+                    opacity: 1;
                 }
-            }
+            }   
         }
+    }
+
+    .badges .icon {
+        opacity: 0.7 !important;
     }
 }
 
-.app-deck #app-sidebar {
+#app-sidebar {
 
-    #board-detail-labels {
-
-        input {
-            border: none;
-        }
-
-        li[ng-if$="status.createLabel"] input {
-            color: var(--color-main-text) !important;
-        }
-    }
-
-    #sidebar-header .input-inline {
-        background-color: var(--color-main-background);
-        border: none;
-    }
-
-    #card-dates {
-        opacity: 0.7;
-    }
-
-    #card-meta {
-
-        .save-indicator.unsaved {
-            background-color: var(--color-background-alternate);
-            color: var(--color-main-text);
-        }
-
-        .attachment-list {
-
-            li.attachment .filesize,
-            li.attachment .filedate {
-                color: var(--color-text-inactive);
-            }
-        }
-    }
-
-    .tabHeaders .tabHeader {
-
-        &.selected, &:hover, &:focus {
-            border-bottom: 1px solid var(--color-border-active);
-
-            a {
-                color: var(--color-text-active);
-            }
-        }
+    #description-preview a {
+        opacity: 1;
     }
 }
 
 /* Icons -------------------------------------------------------------------- */
 
-.app-deck {
+.icon-deck {
+    background-image: var(--icon-deck-deck-f2f2f2) !important;
+}
 
-    .icon-deck {
-	    background-image: var(--icon-deck-deck-f2f2f2) !important;
-    }
+.icon-archive {
+    background-image: var(--icon-deck-archive-f2f2f2) !important;
+}
 
-    .icon-archive {
-        background-image: var(--icon-deck-archive-f2f2f2) !important;
-    }
+.icon-toggle-compact-expanded {
+    background-image: var(--icon-deck-toggle-view-collapse-f2f2f2) !important;
+}
 
-    .icon-toggle-compact-expanded {
-        background-image: var(--icon-deck-toggle-view-collapse-f2f2f2) !important;
-    }
+.icon-toggle-compact-collapsed {
+    background-image: var(--icon-deck-toggle-view-expand-f2f2f2) !important;
+}
 
-    .icon-toggle-compact-collapsed {
-        background-image: var(--icon-deck-toggle-view-expand-f2f2f2) !important;
-    }
+.icon-clone {
+	background-image: var(--icon-deck-clone-f2f2f2) !important;
+}
+
+.icon-filter {
+	background-image: var(--icon-deck-filter-f2f2f2) !important;
+}
+
+.icon-attach {
+	background-image: var(--icon-deck-attach-f2f2f2) !important;
+}
+
+.icon-calendar-dark.now,
+.icon-calendar-dark.next {
+    background-image: var(--icon-calendar-000) !important;
 }

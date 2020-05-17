@@ -30,7 +30,8 @@
 
 // Activity App: Icons in activity feed
 .app-activity .activity-icon,
-.activity .activity-icon {
+.activity .activity-icon,
+.activity .activity--header {
 
 	img[src$="share.svg"],
 	img[src$="change.svg"],
@@ -44,7 +45,8 @@
 	img[src$="deck-dark.svg"],
 	img[src$="app-dark.svg"],
 	img[src$="password.svg"],
-	img[src$="star.svg"] {
+	img[src$="star.svg"],
+	img[src$="files.svg"] {
 		filter: invert(95%);
 	}
 }

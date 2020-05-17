@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Fixed
+- [#126](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/126) Fix styling for Deck v1.0
 
 ## 18.0.15 - 2020-05-12
 ### Added
