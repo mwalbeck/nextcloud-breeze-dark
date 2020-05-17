@@ -6,11 +6,11 @@
 
 /* Tasks -------------------------------------------------------------------- */
 
-.app-tasks #app-navigation .app-navigation-entry-edit input.action {
+.app-tasks .app-navigation .app-navigation-entry-edit input.action {
     background-color: var(--color-background-darker);
 }
 
-.app-tasks #app-content {
+.app-tasks .app-content {
 
     .sortorder-dropdown-button {
         background-color: var(--color-main-background);
@@ -131,7 +131,7 @@
         background-image: var(--icon-checkmark-f2f2f2) !important;
     }
 
-    #app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons {
+    .app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons {
 
         .icon-subtasks-visible {
             background-image: var(--icon-tasks-icon-subtasks-visible-f2f2f2) !important;
@@ -139,6 +139,21 @@
 
         .icon-subtasks-hidden {
             background-image: var(--icon-tasks-icon-subtasks-hidden-f2f2f2) !important;
+        }
+    }
+
+    .app-content .header .sortorder {
+
+        .icon-list__up {
+            background-image: var(--icon-tasks-icon-list-up-f2f2f2) !important;
+        }
+
+        .icon-list__down {
+            background-image: var(--icon-tasks-icon-list-down-f2f2f2) !important;
+        }
+
+        .icon-manual {
+            background-image: var(--icon-tasks-icon-manual-f2f2f2) !important;
         }
     }
 }

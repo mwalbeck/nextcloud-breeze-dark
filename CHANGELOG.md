@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - [#126](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/126) Fix styling for Deck v1.0
+- [#128](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/128) Fix styling for Tasks v0.13
 
 ## 18.0.15 - 2020-05-12
 ### Added
