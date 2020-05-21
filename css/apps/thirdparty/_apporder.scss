@@ -1,0 +1,12 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* AppOrder ----------------------------------------------------------------- */
+
+.app-settings #app-content #appsorter img.app-icon {
+    filter: invert(5%);
+    opacity: 1;
+}

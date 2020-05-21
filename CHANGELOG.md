@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- [#136](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/136) Add support for App Order
 
 ## 18.0.16 - 2020-05-17
 ### Fixed
