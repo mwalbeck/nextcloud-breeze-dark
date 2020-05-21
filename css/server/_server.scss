@@ -393,20 +393,6 @@ div.crumb.crumbmenu a {
 	opacity: 1 !important;
 }
 
-/* Users */
-#body-settings .app-settings #app-content.user-list-grid .row {
-
-	.name,
-	.password,
-	.mailAddress,
-	.languages,
-	.storageLocation,
-	.userBackend,
-	.lastLogin {
-		color: var(--color-main-text);
-	}
-}
-
 /* Section Container */
 // Primarily seems to be used under settings
 .followupsection {
@@ -439,6 +425,19 @@ div.crumb.crumbmenu a {
 
 .smallinfo {
 	color: var(--color-text-inactive);
+}
+
+
+.app-settings #app-navigation {
+
+	#usergrouplist #addgroup {
+		
+		// Remove icon spam in addgroup form under user section
+		button.icon-confirm,
+		button.icon-close {
+			background-image: none !important;
+		}
+	} 
 }
 
 /* App Store ---------------------------------------------------------------- */
