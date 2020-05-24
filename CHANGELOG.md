@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## 19.0.0 - 2020-05-24
+### Added
+- [#120](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/120) Initial support for Nextcloud 19
+
 ## 18.0.17 - 2020-05-24
 ### Added
 - [#136](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/136) Add support for App Order

@@ -3,6 +3,19 @@ This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the 
 
 ![screenshot of theme](screenshot.png)
 
+## Supported versions
+The currently supported and maintained Nextcloud releases are:
+
+* Nextcloud 19
+* Nextcloud 18
+
+I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transistions, but for various reason I might decide to drop support for older releases early.
+
+Previous unmaintained releases:
+
+* Nextcloud 17
+* Nextcloud 11-16
+
 ## Version number
 The first number is the Nextcloud version. The second number is the Nextcloud major point release version. The third number is the theme version.
 
