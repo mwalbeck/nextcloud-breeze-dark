@@ -119,3 +119,19 @@
 .icon-calendar-dark.next {
     background-image: var(--icon-calendar-000) !important;
 }
+
+.icon-filter_set {
+	background-image: var(--icon-deck-filter_set-f2f2f2) !important;
+}
+
+.resource-type-deck {
+    
+    img[src$="deck-dark.svg"] {
+        filter: invert(95%);
+        opacity: .7 !important;
+    }
+
+    &:hover img[src$="deck-dark.svg"] {
+        opacity: 1 !important;
+    }
+}

@@ -189,7 +189,7 @@ button.delete,
 
 .CodeMirror {
 	background-color: var(--color-main-background) !important;
-	color: var(--color-main-text);
+	color: var(--color-main-text) !important;
 
 	.cm-formatting {
 		opacity: 0.5;
@@ -212,4 +212,35 @@ button.delete,
 		background-color: var(--color-text-selection) !important;
 		color: var(--color-main-text);
 	}
+
+	.CodeMirror-cursor {
+		border-left-color: var(--color-main-text);
+	}
+}
+
+// CodeMirror Markdown preview
+// For Deck and Notes
+
+#description-preview,
+.note-preview {
+
+	pre {
+		background-color: var(--color-background-darker) !important;
+		border: 1px solid var(--color-border);
+		border-radius: 3px;
+		padding: 16px !important;
+	}
+
+	code {
+		background-color: var(--color-background-darker) !important;
+	}
+
+	blockquote {
+		font-style: italic;
+		border-left: 4px solid var(--color-border);
+		padding-left: 2ex;
+		color: var(--color-main-text);
+	}
+
+	
 }
