@@ -3,6 +3,8 @@ This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the 
 
 ![screenshot of theme](screenshot.png)
 
+If you have any questions, problems or any thing else you're welcome to come hangout in the dedicated matrix room: #nextcloud-breeze-dark:mwalbeck.org
+
 ## Supported versions
 The currently supported and maintained Nextcloud releases are:
 
