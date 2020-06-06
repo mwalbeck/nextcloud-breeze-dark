@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- [#139](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/139) Add support for BigBlueButton
 
 ## 18.0.18 - 2020-05-31
 ### Fixed
