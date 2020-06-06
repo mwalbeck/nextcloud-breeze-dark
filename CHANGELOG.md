@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - [#144](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/144) Deck: Text colour and cursour is black while editing description, and fix filter_set icon and fix resource-type-deck icon in projects. Improve styling of code and blockquotes in card description.
+- Change name of root class for talk, to fix styling
 
 ## 19.0.0 - 2020-05-24
 ### Added
