@@ -1,0 +1,71 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Cookbook ----------------------------------------------------------------- */
+
+.app-cookbook #app-navigation {
+    
+    .download .action-input {
+        opacity: 1;
+    }
+
+    #app-settings {
+
+        .action-button {
+            opacity: 1;
+        }
+    }
+}
+
+.app-cookbook #app-content {
+
+    ul li a {
+        box-shadow: inset 0 0 0 1px var(--color-border);
+        color: var(--color-main-text);
+
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: inset 0 0 0 1px var(--color-border-active);
+        }
+    }
+
+    .times .time h4 {
+        background-color: var(--color-background-darker);
+    }
+
+    section {
+
+        h3 {
+            font-weight: 600;
+        }
+
+        main .instructions li::before {
+            background-color: var(--color-background-darker);
+        }
+    }
+
+    button > span[class^="icon-"] {
+        opacity: 1;
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-cookbook {
+    
+    .app-navigation-new button {
+        background-image: var(--icon-add-f2f2f2) !important;
+    }
+
+    .icon-arrow-up {
+        background-image: var(--icon-triangle-n-f2f2f2) !important;
+    }
+
+    .icon-arrow-down {
+        background-image: var(--icon-triangle-s-f2f2f2) !important;
+    }
+}
