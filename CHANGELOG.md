@@ -1,8 +1,11 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.19 - 2020-06-07
 ### Added
 - [#139](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/139) Add support for BigBlueButton
+- [#116](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/116) Add support for Cookbook
 
 ## 18.0.18 - 2020-05-31
 ### Fixed
