@@ -1,8 +1,11 @@
 # Changelog
 
 ## [Unreleased]
+
+## 19.0.1 - 2020-06-07
 ### Added
 - [#139](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/139) Add support for BigBlueButton
+- [#116](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/116) Add support for Cookbook
 
 ### Fixed
 - [#144](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/144) Deck: Text colour and cursour is black while editing description, and fix filter_set icon and fix resource-type-deck icon in projects. Improve styling of code and blockquotes in card description.
