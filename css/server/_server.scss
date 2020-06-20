@@ -440,6 +440,11 @@ div.crumb.crumbmenu a {
 	} 
 }
 
+.app-settings #suspicious-login-admin-settings canvas {
+	background-color: var(--color-icon);
+	border-radius: 3px;
+}
+
 /* App Store ---------------------------------------------------------------- */
 
 .app-level {
