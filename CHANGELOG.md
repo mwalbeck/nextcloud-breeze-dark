@@ -1,6 +1,9 @@
 # Changelog
 
 ## [Unreleased]
+### Fixed
+- [#153](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/153) Make suspicious login chart background white to make it more readable
+- [#154](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/154) Fix text colour in file conflict dialog
 
 ## 18.0.19 - 2020-06-07
 ### Added
