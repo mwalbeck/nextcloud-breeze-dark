@@ -289,7 +289,7 @@ a {
 #body-user #header,
 #body-settings #header,
 #body-public #header {
-	background-color: var(--color-background-darker);
+	background-color: var(--color-background-darker) !important;
 	background-image: unset !important;
 }
 
