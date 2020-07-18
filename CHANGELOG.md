@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## 18.0.21 - 2020-07-18
 ### Fixed
 - Remove background-size rule for login page to mimic upstream behaviour
 - Make header background-color important to fix blue header
