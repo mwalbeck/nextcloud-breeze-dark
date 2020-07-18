@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Fixed
+- Remove background-size rule for login page to mimic upstream behaviour
 
 ## 18.0.20 - 2020-06-21
 ### Fixed
