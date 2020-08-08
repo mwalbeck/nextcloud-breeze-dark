@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## 19.0.4 - 2020-08-08
+### Fixed
+- #157 Notes: Fix background icon being redundant when renaming and cleanup unused styling
+
 ## 19.0.3 - 2020-07-18
 ### Fixed
 - Remove background-size rule for login page to mimic upstream behaviour
