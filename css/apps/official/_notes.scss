@@ -6,12 +6,12 @@
 
 /* Notes -------------------------------------------------------------------- */
 
-.app-notes #app-content {
+.app-notes .app-navigation {
 
-    .note-preview pre,
-    .note-preview code {
-        background: var(--color-background-darker);
-    }
+	button.icon-confirm,
+	button.icon-close {
+        background-image: none !important;
+	}
 }
 
 /* Icons -------------------------------------------------------------------- */
