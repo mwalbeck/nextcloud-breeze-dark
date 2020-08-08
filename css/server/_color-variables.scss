@@ -32,7 +32,7 @@
     --color-text-inactive: rgba(189, 195, 199, 1);
     --color-text-link: rgba(41, 128, 185, 1);
     --color-text-background: rgba(189, 195, 199, 0.6);
-    --color-text-selection: rgba(61, 174, 233, 0.50);
+    --color-text-selection: rgba(61, 174, 233, 0.5);
     --color-text-dark: rgba(0, 0, 0, 1) !important;
 
     --color-box-shadow: var(--color-primary) !important;
@@ -44,7 +44,8 @@
     --color-icon: rgba(242, 242, 242, 1);
 }
 
-input, label {
+input,
+label {
     --color-checkbox-radio-border: var(--color-border);
     --color-checkbox-radio-disabled: var(--color-background-alternate);
 }
