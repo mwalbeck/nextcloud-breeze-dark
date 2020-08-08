@@ -6,22 +6,12 @@
         {
             "label": "create release",
             "type": "shell",
-            "command": "make appstore & make sign_release",
+            "command": "./create_release.sh",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "appstore",
-            "type": "shell",
-            "command": "make appstore",
-        },
-        {
-            "label": "sign release",
-            "type": "shell",
-            "command": "make sign_release",
         }
     ]
 }
