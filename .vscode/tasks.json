@@ -6,7 +6,7 @@
         {
             "label": "create release",
             "type": "shell",
-            "command": "make appstore & make sign_release",
+            "command": "make create_release",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

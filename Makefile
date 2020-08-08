@@ -1,6 +1,10 @@
 app_name=breezedark
 appstore_dir=$(CURDIR)/appstore
 
+create_release:
+	make appstore
+	make sign_release
+
 appstore:
 	rm -rf $(appstore_dir)
 	mkdir -p $(appstore_dir)
