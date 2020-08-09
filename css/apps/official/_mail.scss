@@ -7,7 +7,6 @@
 /* Mail --------------------------------------------------------------------- */
 
 .app-mail #account-form .tabs-component-tab {
-
     a {
         color: var(--color-main-text);
     }
@@ -18,9 +17,7 @@
 }
 
 .app-mail #app-content {
-
     .app-content-list {
-    
         .app-content-list-item,
         .app-content-list-item-menu a {
             color: var(--color-main-text);
@@ -28,19 +25,18 @@
 
         .app-content-list-item-line-two,
         .app-content-list-item .app-content-list-item-details {
-            opacity: 1;
             color: var(--color-text-inactive);
+            opacity: 1;
         }
     }
 
     .app-content-details {
-
         #mail-message-header {
             background: var(--color-main-background);
         }
 
         #mail-content iframe {
-            background-color: #EEE;
+            background-color: #eee;
             border-radius: 3px;
         }
 
@@ -51,7 +47,6 @@
 }
 
 .mail-message-attachments .attachments .attachment {
-
     .attachment-name:hover {
         background-color: unset;
     }
@@ -76,7 +71,6 @@
 /* Icons -------------------------------------------------------------------- */
 
 .app-mail {
-
     .icon-inbox {
         background-image: var(--icon-mail-inbox-f2f2f2) !important;
     }

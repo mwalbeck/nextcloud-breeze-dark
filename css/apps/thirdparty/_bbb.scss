@@ -7,18 +7,18 @@
 /* BigBlueButton ------------------------------------------------------------ */
 
 #bbb-react-root th {
-	border-bottom-color: var(--color-border) !important;
+    border-bottom-color: var(--color-border) !important;
 }
 
 #bbb-warning {
-	background-color: var(--color-warning) !important;
+    background-color: var(--color-warning) !important;
 }
 
 /* Icons -------------------------------------------------------------------- */
 
 #bbb-react-root td .action-rename::after,
 #bbb-react-root th .action-rename::after {
-	background-image: var(--icon-bbb-rename-f2f2f2) !important;
+    background-image: var(--icon-bbb-rename-f2f2f2) !important;
 }
 
 .icon-add-shortcut {
@@ -26,5 +26,5 @@
 }
 
 .fileActionsMenu img[src$="/bbb/img/app-dark.svg"] {
-	filter: invert(95%);
+    filter: invert(95%);
 }

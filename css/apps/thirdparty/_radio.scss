@@ -7,9 +7,7 @@
 /* Radio -------------------------------------------------------------------- */
 
 .app-radio #app-navigation #app-settings {
-
     #volumeslider {
-
         .ui-slider-range {
             background-color: var(--color-primary-element);
         }
@@ -20,19 +18,20 @@
     }
 
     #playbutton {
-        
-        &:hover, &:active, &:focus {
+        &:hover,
+        &:active,
+        &:focus {
             &:not(:disabled):not(.primary):not(#quota) {
-                border: none;
                 background-color: inherit;
+                border: none;
             }
         }
     }
 }
 
 .app-radio #app-content #app-content-files #filestable {
-
-    th, td {
+    th,
+    td {
         border-color: var(--color-border);
     }
 

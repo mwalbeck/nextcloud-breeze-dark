@@ -11,9 +11,9 @@
 }
 
 #app-mailbox-peers {
-    border-color: var(--color-border);
     background-color: var(--color-background-darker);
-    
+    border-color: var(--color-border);
+
     li {
         border-top-color: var(--color-border);
 
@@ -44,30 +44,31 @@
 }
 
 #ocsms-phone-msg-nb {
-	color: var(--color-main-text);
+    color: var(--color-main-text);
 }
 
 #ocsms-phone-label {
-	font-weight: bold;
-	color: var(--color-text-active);
+    color: var(--color-text-active);
+    font-weight: bold;
 }
 
 .msg-date {
-	color: var(--color-text-inactive);
+    color: var(--color-text-inactive);
     opacity: 0.5;
 }
 
-.msg-sent, .msg-recv {
+.msg-sent,
+.msg-recv {
     background-color: var(--color-background-darker);
-	border-color: var(--color-border);
+    border-color: var(--color-border);
     box-shadow: none;
 
     &:hover .msg-date {
-        opacity: 1;
         color: var(--color-text-inactive);
+        opacity: 1;
     }
 }
 
 .msg-sent {
-	border-color: var(--color-success);
+    border-color: var(--color-success);
 }

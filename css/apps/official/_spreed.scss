@@ -7,7 +7,6 @@
 /* Spreed ------------------------------------------------------------------- */
 
 .app-Talk #app-navigation {
-    
     .avatardiv--with-menu .icon-more::before {
         color: var(--color-text-active);
     }
@@ -17,16 +16,15 @@
 
 // Used by other apps so set it globally
 .icon-talk {
-	background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
+    background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
 }
 
 .app-talk {
+    .icon-lobby {
+        background-image: var(--icon-spreed-lobby-f2f2f2) !important;
+    }
 
-	.icon-lobby {
-		background-image: var(--icon-spreed-lobby-f2f2f2) !important;
-	}
-
-	.icon-reply {
-		background-image: var(--icon-spreed-reply-f2f2f2) !important;
-	}
+    .icon-reply {
+        background-image: var(--icon-spreed-reply-f2f2f2) !important;
+    }
 }

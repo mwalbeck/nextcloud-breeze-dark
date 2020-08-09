@@ -20,7 +20,7 @@
 
 .jsxc-button[disabled],
 .jsxc-button[disabled]:hover {
-	background-color: var(--color-background-alternate);
+    background-color: var(--color-background-alternate);
     border: 1px solid var(--color-border);
     color: var(--color-main-text);
 }
@@ -61,8 +61,8 @@
     }
 
     &[data-mute="yes"] .jsxc-js-presence-menu .jsxc-menu__button::after {
-        opacity: 0.7;
         filter: invert(95%);
+        opacity: 0.7;
     }
 }
 
@@ -75,14 +75,13 @@
 
         &:hover,
         > span:hover {
-            opacity: 1;
             cursor: pointer;
+            opacity: 1;
         }
 
         &.jsxc-disabled {
             color: var(--color-text-inactive);
             opacity: 0.5;
-            
 
             &:hover {
                 cursor: default;
@@ -92,14 +91,14 @@
 
     &.jsxc-menu--dark li:hover {
         background-color: var(--color-background-hover);
-        color: var(--color-text-active);
         box-shadow: 0 0 0 1px var(--color-border-active) inset;
+        color: var(--color-text-active);
     }
 
     .jsxc-menu__content {
         background-color: var(--color-main-background);
-        filter: none;
         box-shadow: none;
+        filter: none;
 
         &::after {
             color: var(--color-border);
@@ -138,7 +137,6 @@
         border-color: var(--color-border);
 
         .jsxc-page {
-
             section {
                 border-top-color: var(--color-border);
             }
@@ -154,9 +152,9 @@
 
         .form-group input {
             background-color: var(--color-background-darker);
-            color: var(--color-main-text);
             border-color: var(--color-border);
             box-shadow: none;
+            color: var(--color-main-text);
 
             &:invalid {
                 border-color: var(--color-error);
@@ -166,7 +164,6 @@
 }
 
 .jsxc-window-item {
-
     &.jsxc-normal .jsxc-bar--window {
         background-color: var(--color-primary-element);
         color: var(--color-text-active);
@@ -195,7 +192,6 @@
     border-color: var(--color-border);
 
     .jsxc-message-area {
-
         .jsxc-out {
             background-color: var(--color-background-darker);
         }
@@ -252,9 +248,8 @@
 }
 
 .app-settings #ojsxc-admin.ojsxc {
-
     form.ojsxc input[readonly] {
-	    background-color: var(--color-main-background);
+        background-color: var(--color-main-background);
     }
 
     h3 {
@@ -267,7 +262,7 @@
 .jsxc-icon--clickable,
 .jsxc-file-transfer {
     opacity: 0.7 !important;
-    
+
     &:hover {
         opacity: 1 !important;
     }
@@ -280,22 +275,22 @@
 
 .jsxc-icon--delete {
     background-image: var(--icon-delete-f2f2f2);
-    
+
     &:hover {
         background-image: var(--icon-delete-da4453);
     }
 }
 
 .jsxc-icon--edit {
-	background-image: var(--icon-rename-f2f2f2);
+    background-image: var(--icon-rename-f2f2f2);
 }
 
 .jsxc-icon--info {
-	background-image: var(--icon-info-f2f2f2);
+    background-image: var(--icon-info-f2f2f2);
 }
 
 .jsxc-icon--help {
-	background-image: var(--icon-ojsxc-help-f2f2f2);
+    background-image: var(--icon-ojsxc-help-f2f2f2);
 }
 
 .jsxc-icon--contact {
@@ -307,7 +302,7 @@
 }
 
 .jsxc-icon--setting {
-	background-image: var(--icon-ojsxc-gear-f2f2f2);
+    background-image: var(--icon-ojsxc-gear-f2f2f2);
 }
 
 .jsxc-icon--menu-dark,
@@ -315,5 +310,5 @@
 .jsxc-icon--emoticon,
 .jsxc-file-transfer,
 div.jsxc-transfer .jsxc-transfer-icon {
-	filter: invert(95%);
+    filter: invert(95%);
 }

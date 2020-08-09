@@ -7,41 +7,39 @@
 /* Contacts ----------------------------------------------------------------- */
 
 .app-contacts #app-content .app-content-list-item.active {
-	background-color: var(--color-primary-element);
-	color: var(--color-text-active);
-	font-weight: 600;
+    background-color: var(--color-primary-element);
+    color: var(--color-text-active);
+    font-weight: 600;
 }
 
 /* Icons -------------------------------------------------------------------- */
 
 .app-contacts {
+    .icon-phone {
+        background-image: var(--icon-contacts-phone-f2f2f2) !important;
+    }
 
-	.icon-phone {
-		background-image: var(--icon-contacts-phone-f2f2f2) !important;
-	}
+    .icon-address-book {
+        background-image: var(--icon-contacts-address-book-f2f2f2) !important;
+    }
 
-	.icon-address-book {
-		background-image: var(--icon-contacts-address-book-f2f2f2) !important;
-	}
+    .icon-social {
+        background-image: var(--icon-contacts-social-f2f2f2) !important;
+    }
 
-	.icon-social {
-		background-image: var(--icon-contacts-social-f2f2f2) !important;
-	}
+    .icon-qrcode {
+        background-image: var(--icon-contacts-qrcode-f2f2f2) !important;
+    }
 
-	.icon-qrcode {
-		background-image: var(--icon-contacts-qrcode-f2f2f2) !important;
-	}
+    .icon-language {
+        background-image: var(--icon-contacts-language-f2f2f2) !important;
+    }
 
-	.icon-language {
-		background-image: var(--icon-contacts-language-f2f2f2) !important;
-	}
+    .icon-up {
+        background-image: var(--icon-contacts-up-f2f2f2) !important;
+    }
 
-	.icon-up {
-		background-image: var(--icon-contacts-up-f2f2f2) !important;
-	}
-
-	.sort-contacts .multiselect .multiselect__single {
-		background-image: var(--icon-triangle-s-f2f2f2) !important;
-	}
+    .sort-contacts .multiselect .multiselect__single {
+        background-image: var(--icon-triangle-s-f2f2f2) !important;
+    }
 }
-

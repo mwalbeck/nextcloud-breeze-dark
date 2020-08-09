@@ -7,26 +7,24 @@
 /* Notes -------------------------------------------------------------------- */
 
 .app-notes .app-navigation {
-
-	button.icon-confirm,
-	button.icon-close {
+    button.icon-confirm,
+    button.icon-close {
         background-image: none !important;
-	}
+    }
 }
 
 /* Icons -------------------------------------------------------------------- */
 
 .app-notes {
+    .icon-recent {
+        background-image: var(--icon-notes-recent-f2f2f2) !important;
+    }
 
-	.icon-recent {
-		background-image: var(--icon-notes-recent-f2f2f2) !important;
-	}
+    .icon-emptyfolder {
+        background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
+    }
 
-	.icon-emptyfolder {
-		background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
-	}
-
-	.icon-files {
-		background-image: var(--icon-notes-folder-f2f2f2) !important;
-	}
+    .icon-files {
+        background-image: var(--icon-notes-folder-f2f2f2) !important;
+    }
 }

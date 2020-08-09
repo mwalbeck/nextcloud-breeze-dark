@@ -1,9 +1,0 @@
-{
-    "extends": ["stylelint-config-sass-guidelines", "stylelint-prettier/recommended"],
-    "rules": {
-        "prettier/prettier": [true, { "tabWidth": 4, "singleQuote": false, "printWidth": 100 }],
-        "string-quotes": "double",
-        "selector-max-id": null,
-        "selector-no-qualifying-type": null
-    }
-}

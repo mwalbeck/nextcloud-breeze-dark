@@ -7,28 +7,25 @@
 /* Announcement Center ------------------------------------------------------ */
 
 .app-announcementcenter {
+    #announcement_submit_msg.success {
+        background-color: var(--color-success) !important;
+        color: var(--color-text-active) !important;
+    }
 
-	#announcement_submit_msg.success {
-		color: var(--color-text-active) !important;
-		background-color: var(--color-success) !important;
-	}
-
-	.section > span {
-		color: var(--color-text-inactive);
-	}
-
+    .section > span {
+        color: var(--color-text-inactive);
+    }
 }
 
 /* Icons -------------------------------------------------------------------- */
 
 .app-announcementcenter {
+    .icon-announcementcenter,
+    .icon-announcementcenter-dark {
+        background-image: var(--icon-announcementcenter-announcementcenter-f2f2f2) !important;
+    }
 
-	.icon-announcementcenter,
-	.icon-announcementcenter-dark {
-		background-image: var(--icon-announcementcenter-announcementcenter-f2f2f2) !important;
-	}
-
-	.icon-notifications-off {
-		background-image: var(--icon-announcementcenter-notifications-off-f2f2f2) !important;
-	}
+    .icon-notifications-off {
+        background-image: var(--icon-announcementcenter-notifications-off-f2f2f2) !important;
+    }
 }

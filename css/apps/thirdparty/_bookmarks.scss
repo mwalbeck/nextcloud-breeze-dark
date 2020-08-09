@@ -7,7 +7,6 @@
 /* Bookmarks ---------------------------------------------------------------- */
 
 .app-bookmarks #app-content {
-    
     .folder--gridview,
     .bookmark--gridview,
     .bookmarkslist--gridview > .create-folder,
@@ -20,7 +19,7 @@
         background-color: var(--color-main-background);
 
         input.checkbox + label::before {
-            margin: 0 3px 3px 3px;
+            margin: 0 3px 3px;
         }
     }
 

@@ -7,19 +7,17 @@
 /* System monitoring -------------------------------------------------------- */
 
 .app-settings #app-content {
-
     #one,
     #two,
     #activeUsersSection,
     #sharesSection {
-
         .infobox {
-            background-color: #F9F9F9 !important;
-            color: #555555 !important;
+            background-color: #f9f9f9 !important;
+            color: #555 !important;
 
             h2,
             h3 {
-                color: #555555 !important;
+                color: #555 !important;
             }
         }
     }

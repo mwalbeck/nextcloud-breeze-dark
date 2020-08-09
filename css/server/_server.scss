@@ -13,15 +13,15 @@ input[type="submit"],
 input[type="button"] {
     &.primary:disabled {
         background-color: var(--color-background-alternate);
-        color: var(--color-text-inactive);
         border-color: var(--color-border);
+        color: var(--color-text-inactive);
 
         &:hover,
         &:focus,
         &:active {
             background-color: var(--color-background-alternate);
-            color: var(--color-text-inactive);
             border-color: var(--color-border);
+            color: var(--color-text-inactive);
         }
     }
 }
@@ -32,13 +32,13 @@ button,
 input[type="submit"],
 input[type="button"] {
     &.primary:not(:disabled) {
-        border-color: var(--color-border);
         background-color: var(--color-background-darker);
+        border-color: var(--color-border);
         color: var(--color-text-active);
 
         &:hover {
-            border-color: var(--color-border-active);
             background-color: var(--color-primary);
+            border-color: var(--color-border-active);
         }
 
         &:focus,
@@ -146,9 +146,9 @@ div[contenteditable="false"] {
     &:active,
     &:hover,
     &:focus {
-        color: var(--color-main-text) !important;
         background-color: var(--color-text-link) !important;
         border-color: var(--color-border-active) !important;
+        color: var(--color-main-text) !important;
     }
 }
 
@@ -160,16 +160,16 @@ div[contenteditable="false"] {
     &:hover,
     &:focus,
     &.selected {
-        filter: none;
         border-color: var(--color-border-active);
+        filter: none;
     }
 }
 
 .dropdown,
 #dropdown {
     background-color: var(--color-main-background);
-    box-shadow: none;
     border: 1px solid var(--color-border);
+    box-shadow: none;
 
     input[type="text"] + .icon-confirm {
         height: 32px;
@@ -263,16 +263,16 @@ a {
     form .grouptop input,
     form .groupbottom input {
         background: var(--color-background-darker);
-        color: var(--color-main-text);
         box-shadow: none !important;
+        color: var(--color-main-text);
     }
 }
 
 // Register button
 #alternative-logins li a.button:not(:disabled):not(.primary):not(#quota) {
     background-color: var(--color-background-darker);
-    color: var(--color-main-text);
     border: 1px solid var(--color-border);
+    color: var(--color-main-text);
 
     &:hover,
     &:focus,
@@ -368,8 +368,8 @@ div.crumb.crumbmenu a {
 }
 
 .action-item__menu {
-    filter: none !important;
     border: 1px solid var(--color-border);
+    filter: none !important;
 
     .action-item__menu_arrow {
         border-bottom-color: var(--color-border) !important;
@@ -380,13 +380,13 @@ div.crumb.crumbmenu a {
 
 .msg {
     &.error {
-        color: var(--color-text-active);
         background-color: var(--color-error);
+        color: var(--color-text-active);
     }
 
     &.success {
-        color: var(--color-text-active);
         background-color: var(--color-success);
+        color: var(--color-text-active);
     }
 }
 
@@ -406,19 +406,19 @@ div.crumb.crumbmenu a {
 // For cropping images, found under personal settings for adding avatar
 #cropper .inner-container {
     background-color: var(--color-main-background) !important;
-    color: var(--color-main-text) !important;
-    box-shadow: none !important;
     border: 1px solid var(--color-border);
+    box-shadow: none !important;
+    color: var(--color-main-text) !important;
 }
 
 /* Admin settings */
 
 // System monitoring
 .infobox {
-    border-color: var(--color-border) !important;
-    color: var(--color-main-text) !important;
     background-color: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
     box-shadow: none !important;
+    color: var(--color-main-text) !important;
 
     h2,
     h3 {
@@ -519,8 +519,8 @@ div.crumb.crumbmenu a {
 /* File picker -------------------------------------------------------------- */
 
 .oc-dialog {
-    box-shadow: 0 0 1px var(--color-border) !important;
     border: 1px solid var(--color-border);
+    box-shadow: 0 0 1px var(--color-border) !important;
 
     .fileexists {
         th label,
@@ -622,8 +622,8 @@ ul.multiselectoptions {
 // Used for nextcloud announcements
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
-    border-color: var(--color-border) !important;
     background: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
     border-radius: 0 !important;
 }
 
@@ -680,9 +680,9 @@ ul.multiselectoptions {
 
 // Datepicker
 .ui-widget.ui-datepicker {
-    filter: none;
-    border: 1px solid var(--color-border);
     background-color: var(--color-main-background);
+    border: 1px solid var(--color-border);
+    filter: none;
 
     &::after {
         border-bottom-color: var(--color-border);
@@ -693,14 +693,14 @@ ul.multiselectoptions {
         color: var(--color-main-text);
 
         .ui-icon {
-            opacity: 0.7;
             filter: invert(95%);
+            opacity: 0.7;
         }
 
         .ui-datepicker-prev,
         .ui-datepicker-next {
-            border-color: var(--color-border);
             background: var(--color-main-background);
+            border-color: var(--color-border);
         }
     }
 
@@ -746,9 +746,9 @@ ul.multiselectoptions {
 
 // Timepicker
 .ui-widget.ui-timepicker {
-    filter: none;
     background-color: var(--color-main-background);
     border: 1px solid var(--color-border);
+    filter: none;
 
     .ui-widget-content {
         background-color: var(--color-main-background);
@@ -825,8 +825,8 @@ ul.multiselectoptions {
 
 .ui-button {
     background-color: var(--color-main-background) !important;
-    color: var(--color-main-text) !important;
     border: 1px solid var(--color-border) !important;
+    color: var(--color-main-text) !important;
 
     &.primary {
         background-color: var(--color-background-darker) !important;
@@ -895,6 +895,6 @@ ul.multiselectoptions {
 }
 
 .menububble {
-    box-shadow: none !important;
     border: 1px solid var(--color-border);
+    box-shadow: none !important;
 }

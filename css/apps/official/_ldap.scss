@@ -30,8 +30,8 @@
     .ui-state-default,
     .ui-widget-content .ui-state-default,
     .ui-widget-header .ui-state-default {
-        border-color: var(--color-border) !important;
         background: var(--color-main-background) !important;
+        border-color: var(--color-border) !important;
         color: var(--color-main-text) !important;
 
         a,
