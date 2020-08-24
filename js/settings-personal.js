@@ -22,7 +22,7 @@
  *
  */
 
-$(document).ready(function () {
+window.addEventListener("DOMContentLoaded", function () {
     $("#breezedark-enabled").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings"), { theme_enabled: this.checked ? 1 : 0 });
     });
