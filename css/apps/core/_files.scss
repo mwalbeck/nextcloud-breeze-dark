@@ -6,27 +6,23 @@
 
 /* Files -------------------------------------------------------------------- */
 
-table td.filesize {
-    color: var(--color-text-inactive) !important;
-}
-
-td.date > span {
-    color: var(--color-text-inactive) !important;
-}
-
-tr {
-    &,
+.recommendation {
     &:hover,
-    &:active,
     &:focus {
-        span.extension {
-            opacity: 0.7;
-        }
+        background: var(--color-background-hover) !important;
     }
 }
 
-#fileList tr td.selection > .selectCheckBox + label::before {
-    opacity: 0.5;
+.filesize {
+    color: var(--color-text-maxcontrast) !important;
+}
+
+.date > span {
+    color: var(--color-text-maxcontrast) !important;
+}
+
+table tr[data-has-preview="true"] .thumbnail {
+    border: unset !important;
 }
 
 #filestable .filename .favorite-mark .icon-star {
@@ -34,7 +30,7 @@ tr {
 }
 
 #filestable.view-grid:not(.hidden) tbody tr:not(.hidden) {
-    background-color: unset;
+    background-color: unset !important;
 
     &:hover .thumbnail-wrapper,
     &:hover .nametext,

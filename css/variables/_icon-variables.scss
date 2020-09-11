@@ -1,0 +1,239 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Icon variables ----------------------------------------------------------- */
+
+// Color variables for icons
+$icon-normal: #f2f2f2;
+$icon-error: #da4453;
+$icon-success: #27ae60;
+
+:root {
+    @include icon-color-theming("home", "places", $icon-normal, 1, true);
+    @include icon-color-theming("contacts", "places", $icon-normal, 1, true);
+    @include icon-color-theming("link", "places", $icon-normal, 1, true);
+    @include icon-color-theming("calendar", "places", $icon-normal, 1, true);
+    @include icon-color-theming("picture", "places", $icon-normal, 1, true);
+    @include icon-color-theming("files", "places", $icon-normal, 1, true);
+
+    @include icon-color-theming("text", "filetypes", $icon-normal, 1, true);
+    @include icon-color-theming("folder", "filetypes", #0082c9, 1, true);
+
+    @include icon-color-theming("desktop", "clients", $icon-normal, 1, true);
+    @include icon-color-theming("phone", "clients", $icon-normal, 1, true);
+    @include icon-color-theming("tablet", "clients", $icon-normal, 1, true);
+
+    @include icon-color-theming("bundles", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("customization", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("games", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("integration", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("monitoring", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("multimedia", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("office", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("organization", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("social", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("workflow", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("auth", "categories", $icon-normal, 1, true);
+
+    @include icon-color-theming("star-dark", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("search", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("password", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("settings-dark", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("rename", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("delete", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("delete", "actions", $icon-error, 1, true);
+    @include icon-color-theming("public", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("upload", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("add", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("share", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("external", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("tag", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("download", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("details", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("info", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("clippy", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("comment", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("quota", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("triangle-n", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("triangle-s", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("more", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("toggle-filelist", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("toggle-pictures", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("history", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("edit", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("close", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("fullscreen", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("user", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("timezone", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("toggle", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("error", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("checkmark", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("user-admin", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("arrow-right", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("arrow-left", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("mail", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("address", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("group", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("menu", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("menu-sidebar", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("projects", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("sound", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("sound-off", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("audio", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("audio-off", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("video", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("video-off", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("screen", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("screen-off", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("caret", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("disabled-user", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("disabled-users", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("confirm", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("confirm-fade", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("play", "actions", $icon-normal, 1, true);
+    @include icon-color-theming("pause", "actions", $icon-normal, 1, true);
+
+    @include icon-color-theming("folder", "files", $icon-normal, 1, false);
+    @include icon-color-theming("recent", "files", $icon-normal, 1, false);
+    @include icon-color-theming("external", "files", $icon-normal, 1, false);
+    @include icon-color-theming("share", "files", $icon-normal, 1, false);
+    @include icon-color-theming("unshare", "files", $icon-normal, 1, false);
+    @include icon-color-theming("public", "files", $icon-normal, 1, false);
+    @include icon-color-theming("delete", "files", $icon-normal, 1, false);
+
+    @include icon-color-theming("control", "privacy", $icon-normal, 1, false);
+    @include icon-color-theming("knowledge", "privacy", $icon-normal, 1, false);
+    @include icon-color-theming("freedom", "privacy", $icon-normal, 1, false);
+
+    @include icon-color-theming("activity", "activity", $icon-normal, 1, false);
+
+    @include icon-color-theming("notifications-dark", "notifications", $icon-normal, 1, false);
+
+    @include icon-color-theming("undo", "text", $icon-normal, 1, false);
+    @include icon-color-theming("redo", "text", $icon-normal, 1, false);
+    @include icon-color-theming("bold", "text", $icon-normal, 1, false);
+    @include icon-color-theming("italic", "text", $icon-normal, 1, false);
+    @include icon-color-theming("strike", "text", $icon-normal, 1, false);
+    @include icon-color-theming("paragraph", "text", $icon-normal, 1, false);
+    @include icon-color-theming("ul", "text", $icon-normal, 1, false);
+    @include icon-color-theming("ol", "text", $icon-normal, 1, false);
+    @include icon-color-theming("quote", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h1", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h2", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h3", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h4", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h5", "text", $icon-normal, 1, false);
+    @include icon-color-theming("h6", "text", $icon-normal, 1, false);
+    @include icon-color-theming("code", "text", $icon-normal, 1, false);
+    @include icon-color-theming("image", "text", $icon-normal, 1, false);
+
+    @include icon-color-theming("rss", "news", $icon-normal, 1, false);
+
+    @include icon-color-theming("folder", "notes", $icon-normal, 1, false);
+    @include icon-color-theming("recent", "notes", $icon-normal, 1, false);
+    @include icon-color-theming("folder-empty", "notes", $icon-normal, 1, false);
+
+    @include icon-color-theming("phone", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("address-book", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("social", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("qrcode", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("language", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("up", "contacts", $icon-normal, 1, false);
+
+    @include icon-color-theming("deck", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("archive", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("toggle-view-collapse", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("toggle-view-expand", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("attach", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("filter", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("clone", "deck", $icon-normal, 1, false);
+
+    @include icon-color-theming("app-dark", "spreed", $icon-normal, 1, false);
+    @include icon-color-theming("reply", "spreed", $icon-normal, 1, false);
+    @include icon-color-theming("lobby", "spreed", $icon-normal, 1, false);
+
+    @include icon-color-theming("star", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("drafts", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("sent", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("junk", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("archive", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("forward", "mail", $icon-normal, 1, false);
+
+    @include icon-color-theming("announcementcenter", "announcementcenter", $icon-normal, 1, false);
+    @include icon-color-theming("notifications-off", "announcementcenter", $icon-normal, 1, false);
+
+    @include icon-color-theming("social-diaspora", "federatedfilesharing", $icon-normal, 1, false);
+    @include icon-color-theming("social-twitter", "federatedfilesharing", $icon-normal, 1, false);
+    @include icon-color-theming("social-facebook", "federatedfilesharing", $icon-normal, 1, false);
+
+    @include icon-color-theming("circles", "circles", $icon-normal, 1, false);
+
+    @include icon-color-theming("previous", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("play", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("pause", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("next", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("volume", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("repeat", "audioplayer", $icon-normal, 1, false);
+    @include icon-color-theming("shuffle", "audioplayer", $icon-normal, 1, false);
+
+    @include icon-color-theming("leftarrow", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("rightarrow", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("view-module", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("view-day", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("view-week", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("embed", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("new-calendar", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("new-calendar-with-task-list", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("eye", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("briefcase", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("reminder", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("repeat", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("timezone", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("color-picker", "calendar", $icon-normal, 1, false);
+
+    @include icon-color-theming("yourphotos", "photos", $icon-normal, 1, false);
+
+    @include icon-color-theming("icon-start", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-due", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-list", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-task-star", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-due", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-alphabetically", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-subtasks-visible", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-subtasks-hidden", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-list-down", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-list-up", "tasks", $icon-normal, 1, false);
+    @include icon-color-theming("icon-manual", "tasks", $icon-normal, 1, false);
+
+    @include icon-color-theming("rename", "bbb", $icon-normal, 1, false);
+
+    // Manual icons
+
+    // Mail
+    --icon-mail-inbox-f2f2f2: var(--icon-home-f2f2f2);
+    --icon-mail-trash-f2f2f2: var(--icon-delete-f2f2f2);
+
+    // // News
+    // --icon-news-unpinned-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI4LjYxMDUiIHdpZHRoPSIuOTYzNCIgaGVpZ2h0PSI3LjMxNzQiLz4KIDwvZz4KPC9zdmc+Cg==");
+    // --icon-news-pinned-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIGZpbGw9IiNmMmYyZjIiPgogIDxyZWN0IHg9IjIuODI1MSIgeT0iLjQxMjU1IiB3aWR0aD0iMTAuMzUiIGhlaWdodD0iMS4xODgxIiByeT0iLjE4ODkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjZjJmMmYyIiBzdHJva2Utd2lkdGg9Ii42ODA4NHB4Ii8+CiAgPHBhdGggZD0ibTUuMTI4NyAxLjkxMzNoNS43NDI2bC0wLjE4ODkgNi44MDA1aC01LjM0NTl6Ii8+CiAgPHBhdGggZD0ibTMuMTM1OCA4LjQzMDVoOS43Mjg1YzEuMjI3OSAwLjQ1MzM2IDEuMzAzNCAxLjQzNTcgMS4zMDM0IDEuNDM1N2gtMTIuMzM1czAuMDM3NzgtMC45NjM0IDEuMzAzNC0xLjQzNTd6Ii8+CiAgPHJlY3QgeD0iNy41MTgzIiB5PSI5Ljc4NiIgd2lkdGg9Ii45NjM0IiBoZWlnaHQ9IjQuOTY2NSIvPgogIDxyZWN0IHg9IjEuMTc0NCIgeT0iMTIuMTgiIHdpZHRoPSIxMy42NTEiIGhlaWdodD0iMS4zODkyIi8+CiA8L2c+Cjwvc3ZnPgo=");
+    // --icon-news-nonfulltext-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZlcnNpb249IjEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGQ9Im0zIDJjLTAuNTU0IDAtMSAwLjQ0Ni0xIDF2MmMwIDAuNTU0IDAuNDQ2IDEgMSAxaDI2YzAuNTU0IDAgMS0wLjQ0NiAxLTF2LTJjMC0wLjU1NC0wLjQ0Ni0xLTEtMWgtMjZ6IiBmaWxsPSIjZjJmMmYyIi8+CiA8cGF0aCBkPSJtMyAxMGMtMC41NTQgMC0xIDAuNDQ2LTEgMXYyYzAgMC41NTQgMC40NDYgMSAxIDFoMThjMC41NTQgMCAxLTAuNDQ2IDEtMXYtMmMwLTAuNTU0LTAuNDQ2LTEtMS0xaC0xOHoiIGZpbGw9IiNmMmYyZjIiLz4KPC9zdmc+Cg==");
+    // --icon-news-fulltext-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZlcnNpb249IjEuMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGQ9Im0zIDJjLTAuNTU0IDAtMSAwLjQ0Ni0xIDF2MmMwIDAuNTU0IDAuNDQ2IDEgMSAxaDI2YzAuNTU0IDAgMS0wLjQ0NiAxLTF2LTJjMC0wLjU1NC0wLjQ0Ni0xLTEtMWgtMjZ6bTAgOGMtMC41NTQgMC0xIDAuNDQ2LTEgMXYyYzAgMC41NTQgMC40NDYgMSAxIDFoMThjMC41NTQgMCAxLTAuNDQ2IDEtMXYtMmMwLTAuNTU0LTAuNDQ2LTEtMS0xaC0xOHptMCA4Yy0wLjU1NCAwLTEgMC40NDYtMSAxdjJjMCAwLjU1NCAwLjQ0NiAxIDEgMWgyNGMwLjU1NCAwIDEtMC40NDYgMS0xdi0yYzAtMC41NTQtMC40NDYtMS0xLTFoLTI0em0wIDhjLTAuNTU0IDAtMSAwLjQ0Ni0xIDF2MmMwIDAuNTU0IDAuNDQ2IDEgMSAxaDEyYzAuNTU0IDAgMS0wLjQ0NiAxLTF2LTJjMC0wLjU1NC0wLjQ0Ni0xLTEtMWgtMTJ6IiBmaWxsPSIjZjJmMmYyIi8+Cjwvc3ZnPgo=");
+    // --icon-news-updatemodedefault-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkzLjQyMiAtNDY2LjY2KSIgZmlsbD0iI2YyZjJmMiI+CiAgPHBhdGggZD0ibS04My44OTcgNDY4Ljc0Yy0zLjk1MDIgMC02LjUzNDkgMy40NDY5LTYuMzY0MyA2LjcyMTNoLTIuMTYwOGwzLjkwNCAzLjkxNzQgNC4wODEzLTMuODcyMmgtMi4xNDg5Yy0wLjIzNzA1LTEuNzAwOSAxLjE2MzUtMy4xMTQ1IDIuNjg4Ny0zLjA5MjEgMS41OTY1IDAuMDIzNSAyLjgwMDYgMS4yMjkyIDIuODAwNiAyLjczMzQgMC4wODk2MSAxLjU5MzgtMS42Mjk0IDMuNDI3OS0zLjk2NTQgMi41MzE3LTguM2UtNSAxLjIyODEgMC4wMDI3IDIuNTQzOSAwIDMuNzY0IDQuMTg5NCAwLjgyODk2IDcuNjM5OC0yLjUwOTUgNy42Mzk4LTYuMjUwOSAwLTMuNTYyMS0yLjkxODgtNi40NTI1LTYuNDc0OS02LjQ1MjV6IiBmaWxsPSIjZjJmMmYyIi8+CiA8L2c+Cjwvc3ZnPgo=");
+    --icon-news-updatemodeunread-f2f2f2: var(--icon-news-updatemodedefault-000);
+
+    // Deck
+    --icon-deck-filter_set-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0LjIzMyA0LjIzMyIgaGVpZ2h0PSIxNiIgd2lkdGg9IjE2Ij48cGF0aCBkPSJNLjUyLjQ2NWgzLjI4M0wyLjYzMSAxLjkxOGgtLjk5em0xLjEyMiAxLjQ1M2guOTkydjEuODY2bC0uOTk2LS40NTV6IiBwYWludC1vcmRlcj0ic3Ryb2tlIGZpbGwgbWFya2VycyIgZmlsbD0iI2YyZjJmMiIvPjxlbGxpcHNlIHJ5PSIuNjkxIiByeD0iLjY3NCIgY3k9IjMuNDYxIiBjeD0iMy40NSIgZmlsbD0iI2YyZjJmMiIvPjwvc3ZnPgo=");
+
+    // ojsxc - icons from here https://github.com/jsxc/jsxc
+    // color changed to #f2f2f2 and convert to base64
+    // --icon-ojsxc-help-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHRleHQgc3R5bGU9ImxpbmUtaGVpZ2h0OjEyNSU7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBYnlzc2luaWNhIFNJTCIgeD0iMi40NDQiIHk9IjEwNTEuNzM5IiBmb250LXNpemU9IjEuODA4IiBmb250LXdlaWdodD0iNDAwIiBsZXR0ZXItc3BhY2luZz0iMCIgd29yZC1zcGFjaW5nPSIwIiBmb250LWZhbWlseT0iQWJ5c3NpbmljYSBTSUwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTEwMzYuMzYyKSIgZmlsbD0iI2YyZjJmMiI+PHRzcGFuIHg9IjIuNDQ0IiB5PSIxMDUxLjczOSIgZm9udC1zaXplPSIyMi41OTkiPj88L3RzcGFuPjwvdGV4dD48L3N2Zz4=");
+    // --icon-ojsxc-contact-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDAwMCA0NDAwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0Ij48cGF0aCBkPSJNMjIwMDYuMTEyIDBjLTIzMTUuODIzIDEyOC42NzgtNDMwOS4yMDMgOTk3LjM5NS01OTgxLjc0MyAyNjA1LjY2NC0xNjcyLjUzOSAxNjA4LjIyNS0yODMwLjg4OCAzNTA1LjAzNC0zNDc0LjE3MyA1NjkyLjE5Ny03NzEuOTQxIDI5NTkuMTQtNTE0LjUzIDU5ODIuMTUzIDc3Mi4wMzggOTA2OS45MjYgMTAyOS4yNTUgMTkyOS44NTIgMjM4MC42NjQgMzQ3NC4yOTMgNDA1My4yMDMgNDYzMi4yMTNsLTM2NjcuMTgzIDE3MzcuMDgtOTY0OC45MjYgNDQzOS4yMTljLTEwMjkuMjU1IDUxNC42MjEtMTU0NC4wNzggMTM0OS42NzQtMTU0NC4wNzggMjUwNy41OTR2OTA3MS40MzJDMjM4Ni41OTQgNDI0NTcuMTEgMzE1OC44MjYgNDM4NzEuMzIyIDQ4MzEuMzY2IDQ0MDAwaDM0NTQ0LjA1OGM3NzEuOTQxLTI1Ny4zMTEgMTMxOC45MDctNjQzLjQzMiAxNjQwLjU4Mi0xMTU4LjA1MyAzMjEuNjc0LTUxNC42NjYgNDgyLjUyNC05MzIuOTkgNDgyLjUyNC0xMjU0LjU3M1YzMDY4My44OTNjMC0xMTU3LjkyLTQ1MC40Ny0xOTI4LjYxMi0xMzUxLjA2Ny0yMzE0LjU1NmwtOTI2Mi45MDctNDYzMi4yNTctNDA1My4yMDMtMTkzMC4wNzRjMjQ0NC40ODEtMTQxNS4yMzEgNDA1My4zLTM4NTkuMDg1IDQ4MjUuMjQxLTczMzIuODQ2IDUxNC42MjgtMTkyOS44NTMgNTE0LjYyOC0zOTI0Ljc3NSAwLTU5ODMuMjYtNjQzLjI4My0yMzE1Ljg0MS0xODMzLjg0My00Mjc3LjAxLTM1NzAuNjc4LTU4ODUuMjM2QzI2MzQ5LjA4MiA5OTcuMzk0IDI0MzIyLjAwMiAxMjguNjc4IDIyMDA2LjExMiAwem0tMTYyNi41NzMgMjYxMTcuMDE2aDMxMzcuOTYzdjUzNTQuNDQ2aDU0NTcuMTkydjMxNjcuNTQ4aC01NDU3LjE5MnY1MzcwLjAzOGgtMzEzNy45NjNWMzQ2MzkuMDFoLTUzNTQuNDYxdi0zMTY3LjU0OGg1MzU0LjQ2MXoiIGZpbGw9IiNmMmYyZjIiLz48L3N2Zz4=");
+    // --icon-ojsxc-groupcontact-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHN0eWxlPSJ3aWR0aDo1MTJweDtoZWlnaHQ6NTEycHgiPjxwYXRoIGQ9Ik00OTcuNjg4IDE3Mi40NjljLTM2LjM0NyAyLjAxOS02Ny42NTYgMTUuNjMzLTkzLjkwNyA0MC44NzUtMjYuMjUgMjUuMjQxLTQ0LjQwMyA1NS4wNDctNTQuNSA4OS4zNzUtMTIuMTE1IDQ2LjQ0My04LjA5OSA5My44OCAxMi4wOTQgMTQyLjM0NCAxNi4xNTQgMzAuMjg5IDM3LjM3NCA1NC41MTQgNjMuNjI1IDcyLjY4N2wtNTcuNTYzIDI3LjI4MUwyMTYgNjE0LjY4OGMtMTYuMTU0IDguMDc3LTI0LjIxOSAyMS4yMDEtMjQuMjE5IDM5LjM3NXYxNDIuMzQzYy0yLjAxOSA0Mi40MDUgMTAuMDkzIDY0LjYzNyAzNi4zNDQgNjYuNjU3aDU0Mi4xNTZjMTIuMTE2LTQuMDM5IDIwLjcwMi0xMC4xMSAyNS43NS0xOC4xODggNS4wNDktOC4wNzcgNy41OTQtMTQuNjQgNy41OTQtMTkuNjg4VjY1NC4wNjNjMC0xOC4xNzMtNy4wODQtMzAuMjg1LTIxLjIxOS0zNi4zNDNMNjM3LjAzMSA1NDUuMDNsLTYzLjYyNS0zMC4zMTJjMzguMzY2LTIyLjIxMiA2My42MDMtNjAuNTc0IDc1LjcxOS0xMTUuMDk0IDguMDc3LTMwLjI5IDguMDc3LTYxLjU5OCAwLTkzLjkwNi0xMC4wOTYtMzYuMzQ3LTI4Ljc3Mi02Ny4xMzQtNTYuMDMxLTkyLjM3NS0yNy4yNi0yNS4yNDItNTkuMDU5LTM4Ljg1Ni05NS40MDctNDAuODc1ek0yNDYuMjggMjM5LjA5NGMtMzguMzY2IDIuMDE5LTY4LjYzMSAxNy42NTgtOTAuODQ0IDQ2LjkzNy0yMi4yMTIgMjkuMjgtMzMuMzQzIDYyLjA5LTMzLjM0MyA5OC40MzggMi4wMTkgNjIuNTk3IDI0LjI1MSAxMDcuMDMgNjYuNjU2IDEzMy4yODFMMTYuMDk0IDU5Ni41QzUuOTk3IDYwMi41NTguOTM3IDYxMi42NDYuOTM3IDYyNi43ODF2MTM2LjMxM2MwIDIyLjIxMiA5LjEwOCAzMy4zMTIgMjcuMjgyIDMzLjMxMkgxNDAuMjhWNjU0LjA2M2MwLTE4LjE3NCA0LjUzOC0zNC44MjUgMTMuNjI1LTQ5Ljk3IDkuMDg3LTE1LjE0MyAyMS43MjEtMjYuNzY1IDM3Ljg3NS0zNC44NDNsMTE1LjA5NC01NC41MzFjMTAuMDk2LTYuMDU4IDE4LjE2LTEzLjExIDI0LjIxOS0yMS4xODgtMTIuMTE2LTE4LjE3My0yMi4yMDQtMzkuMzkzLTMwLjI4MS02My42MjUtOC4wNzgtMjQuMjMxLTEyLjEyNS00OS40NjgtMTIuMTI1LTc1LjcxOSAwLTE2LjE1NCAyLjAyMy0zMi4zMTQgNi4wNjItNDguNDY4IDQuMDM5LTE2LjE1NCA5LjA5OC0zMS4yNzIgMTUuMTU2LTQ1LjQwNi0yMC4xOTItMTQuMTM1LTQxLjQxMy0yMS4yMi02My42MjUtMjEuMjJ6bTUwOC44NzUgMGMtMjIuMjEyIDAtNDQuNDQ0IDcuMDg0LTY2LjY1NiAyMS4yMTkgMTIuMTE2IDMwLjI4OSAxOC4xODggNjEuNTY2IDE4LjE4OCA5My44NzUgMCA1MC40ODEtMTMuMTI1IDk2LjkzOC0zOS4zNzUgMTM5LjM0MyA4LjA3NyA4LjA3NyAxOC4xNjUgMTYuMTQyIDMwLjI4IDI0LjIxOSAxMi4xMTYgOC4wNzcgMjMuMjE3IDE0LjE0OSAzMy4zMTMgMTguMTg4IDEwLjA5NyA0LjAzOCAyMy4yMjEgOS41ODggMzkuMzc1IDE2LjY1NnMyOC4yNjcgMTIuNjE3IDM2LjM0NCAxNi42NTZjMTYuMTU0IDguMDc3IDI4Ljc4OCAxOS42OTkgMzcuODc1IDM0Ljg0NHMxMy42MjUgMzEuNzk2IDEzLjYyNSA0OS45Njh2MTQyLjM0NGgxMTUuMDk0YzE4LjE3My0yLjAxOSAyNy4yODEtMTMuMTIgMjcuMjgxLTMzLjMxMlY2MjYuNzhjMC0xNC4xMzUtNS4wNi0yNC4yMjMtMTUuMTU2LTMwLjI4MWwtMTY5LjYyNS04MS43ODFjNDIuNDA1LTMwLjI5IDYzLjYyNS03My43MSA2My42MjUtMTMwLjI1IDAtMzguMzY2LTEyLjExMy03Mi4xNTktMzYuMzQ0LTEwMS40MzgtMjQuMjMxLTI5LjI3OS01My41MTYtNDMuOTM2LTg3Ljg0NC00My45Mzd6TTQ3NC42MjUgNTg0Ljg3NWg0OS4xNTZ2ODMuOTA2aDg1LjQ2OXY0OS41OTRoLTg1LjQ2OXY4NC4wOTRoLTQ5LjE1NnYtODQuMDk0SDM5MC43NXYtNDkuNTk0aDgzLjg3NXYtODMuOTA2eiIgZmlsbD0iI2YyZjJmMiIvPjwvc3ZnPg==");
+    // --icon-ojsxc-gear-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCI+PHBhdGggZD0iTTIxLjk2MSA0Mi45OTFjLS4yMjYtLjU2Ni0uNDEzLTEuNzQ2LS40MTUtMi42MjMtLjAwNS0yLjQ1Mi0uMTItMi42NzUtMS41MTktMi45NzUtLjY2Ny0uMTQ0LTEuOTUxLS4zMzYtMi44NTMtLjQyN2wtMS42MzktLjE2Ni0uNzIyIDEuOTA0Yy0uNyAxLjg0Ni0xLjY4OCAzLjI2OC0yLjI3MSAzLjI2OC0uMzExIDAtMy4xMTQtMS41NTgtMy44ODQtMi4xNTktLjc1My0uNTg3LS4zNDYtMS44MjYgMS4yNS0zLjgxbDEuNDA2LTEuNzQ1LTEuMTQ0LTEuNDUzYy0uNjMtLjgtMS40NzctMS44NDctMS44ODUtMi4zMjhsLS43NC0uODc0LTIuMjA5IDEuMTk0Yy0xLjIxNS42NTctMi40NDcgMS4xOTQtMi43MzcgMS4xOTQtLjU4NiAwLTEuNDk0LTEuNzEtMi4wOC0zLjkyMi0uMzE3LTEuMTkzLS4zMDctMS4yNS4zMDYtMS43MTMuMzQ5LS4yNjMgMS42NDItLjY4MyAyLjg3My0uOTMybDIuMjQtLjQ1M3YtNS45ODZsLTEuODU2LS4zMmMtMS4wMi0uMTc2LTIuMy0uNTQxLTIuODQ1LS44MTItLjktLjQ0Ni0uOTc4LS41NjUtLjg1OC0xLjMwNC4wNzItLjQ0Ny40NTYtMS42NDcuODUzLTIuNjY2LjY0NC0xLjY1NS43OTQtMS44NTQgMS40LTEuODU0LjM3NCAwIDEuNjMuNTM5IDIuNzkzIDEuMTk3bDIuMTE0IDEuMTk4Ljc0Ny0uODc4YzEuNjI4LTEuOTE0IDIuNzctMy41MDEgMi43Ny0zLjg0OSAwLS4yLS40Ny0uOTM0LTEuMDQ0LTEuNjNDOC43OTQgNi41OTYgOC4yNCA1LjYwNCA4LjI0IDQuODk1YzAtLjU3NiAzLjQtMi44NDcgNC4yNi0yLjg0Ny42NSAwIDEuNDE1IDEuMDQ0IDIuMjcyIDMuMTAxLjM3NS44OTkuNzggMS43MzcuOSAxLjg2My4xMjcuMTM0IDEuMzkxLjA0IDMuMDQ3LS4yMjdsMi44My0uNDU1VjQuMTk0YzAtMS4zNjYuMTQ4LTIuNTA3LjQxMS0zLjE2NUMyMi4zNDcuMDY0IDIyLjQzOCAwIDIzLjQxMSAwYy41NzIgMCAxLjc2OS4xMjcgMi42Ni4yODJsMS42Mi4yODJ2MS4yNGMwIC42ODMtLjI5NiAyLjE3OS0uNjU4IDMuMzI1LS4zNjIgMS4xNDctLjYyMSAyLjEyLS41NzYgMi4xNjIuMDQ2LjA0MiAxLjIyMy42ODQgMi42MTYgMS40MjdsMi41MzQgMS4zNSAxLjU2MS0xLjY5YzEuNDc2LTEuNTk4IDIuNzUyLTIuNDkyIDMuNTU5LTIuNDkyLjMyIDAgMy4yNSAzLjIyOSAzLjI1IDMuNTgxIDAgLjQ3Ni0xLjg4NSAyLjI3Ni0zLjM5NSAzLjI0NC0xLjYzIDEuMDQ2LTEuNzYgMS4xOTItMS42IDEuODIzLjI4IDEuMTIyIDEuNjg0IDQuNjQxIDEuOTA1IDQuNzc3LjExMi4wNyAxLjE3NC0uMDA0IDIuMzYtLjE2MiAxLjc5LS4yNCAyLjM1LS4yMjQgMy4yOTguMDkybDEuMTQyLjM4djQuNzk4bC0xLjE1Mi4zNGMtLjkyNy4yNzItMS41OS4yOC0zLjQwNC4wMzYtMS4zMjktLjE3OC0yLjMzOS0uMjA4LTIuNDYzLS4wNzItLjM1LjM4Mi0xLjg2IDUuMTktMS43MDYgNS40MzguMDc4LjEyNy45MzEuNyAxLjg5NSAxLjI3MiAxLjEyLjY2NSAyLjAwMyAxLjQyIDIuNDQ2IDIuMDlsLjY5NCAxLjA0OC0uNTEzLjY1MmMtLjc4NiAxLTIuMjI2IDIuNTY0LTIuNTM1IDIuNzU1LS41OTEuMzY2LTIuMjc0LS42ODMtMy44ODMtMi40MTlsLTEuNjYzLTEuNzk1LTIuNDMyIDEuNDU3Yy0xLjMzNy44LTIuNDcyIDEuNDg5LTIuNTIxIDEuNTI4LS4wNS4wNC4yMTYuOTkzLjU5IDIuMTE3LjQ1OCAxLjM3NS42NTUgMi40NS42MDIgMy4yOGwtLjA3OCAxLjIzNC0xLjQwOC4yOTVjLS43NzQuMTYzLTEuOTQyLjMwNy0yLjU5NS4zMi0xLjE1Ni4wMjQtMS4yLS4wMDMtMS42LTEuMDA0em0zLjUxMy0xMy4xNDNjNi4xMDEtMi45ODUgNi40MzUtMTIuMDI3LjU2OS0xNS4zNzctMi4yNTQtMS4yODgtNS41OTgtMS40NTUtNy45OTQtLjQtMS40NzUuNjUtMy4zMjMgMi40Mi00LjEzNyAzLjk2Mi0uNjEyIDEuMTYtLjY4IDEuNTYxLS42OCAzLjk3NyAwIDIuMzEyLjA4MiAyLjg0LjU4NyAzLjc4NiAxLjI1IDIuMzQ0IDMuMzcyIDQuMDI0IDUuODc0IDQuNjUzIDEuNjY4LjQyIDQuMjQyLjE1MiA1Ljc4MS0uNjAxeiIgZmlsbD0iI2YyZjJmMiIvPjwvc3ZnPg==");
+
+    // BBB
+    // --icon-bbb-chain-plus-f2f2f2: url("data:image/svg+xml;base64,PHN2ZyB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIiB2ZXJzaW9uPSIxLjEiIGlkPSJFYmVuZV8yIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiB2aWV3Qm94PSIwIDAgMTYgMTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBzb2RpcG9kaTpkb2NuYW1lPSJjaGFpbi1wbHVzLnN2ZyIgaW5rc2NhcGU6dmVyc2lvbj0iMC45Mi41ICgyMDYwZWMxZjlmLCAyMDIwLTA0LTA4KSIgZmlsbD0iI2YyZjJmMiI+PG1ldGFkYXRhIGlkPSJtZXRhZGF0YTE2Ij48cmRmOlJERj48Y2M6V29yayByZGY6YWJvdXQ9IiI+PGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+PGRjOnR5cGUgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIvPjxkYzp0aXRsZS8+PC9jYzpXb3JrPjwvcmRmOlJERj48L21ldGFkYXRhPjxkZWZzIGlkPSJkZWZzMTQiPgoJCgkKCQoJCjwvZGVmcz48c29kaXBvZGk6bmFtZWR2aWV3IHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgYm9yZGVyY29sb3I9IiM2NjY2NjYiIGJvcmRlcm9wYWNpdHk9IjEiIG9iamVjdHRvbGVyYW5jZT0iMTAiIGdyaWR0b2xlcmFuY2U9IjEwIiBndWlkZXRvbGVyYW5jZT0iMTAiIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIiBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzMjciIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijk4NiIgaWQ9Im5hbWVkdmlldzEyIiBzaG93Z3JpZD0iZmFsc2UiIGlua3NjYXBlOnpvb209IjcuMzc1IiBpbmtzY2FwZTpjeD0iLTEwLjQ0MDY3OCIgaW5rc2NhcGU6Y3k9IjIyLjUzNjY5NiIgaW5rc2NhcGU6d2luZG93LXg9IjIwNzkiIGlua3NjYXBlOndpbmRvdy15PSI3NTQiIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9IkViZW5lXzIiLz4KPHBhdGggaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgaWQ9InBhdGg0IiBkPSJNIDEuNjEwNjQ3NywxNC4zMDQ2OTEgQyAwLjM3NjQ2NTY5LDEzLjY5Njc2MSAtMC4yMzE0NjQ3MywxMi4yMDI3NTEgMC4wODExMDU4OSwxMC41MTYwOTEgMC4yMTk5MDI3OSw5Ljc2ODgwODUgMi40NDQ1Mzk1LDcuMzM1OTc2NCAzLjM4MzM2MTcsNi44ODQ2MDg5IDMuOTkxMjkyMiw2LjYwNjQ1OTkgNS45MjA1NjkxLDYuNTAyNjM5OCA1LjkyMDU2OTEsNi43NDUyNTY4IGMgMCwwLjIyNTk2MTMgLTEuMjg2MzY5NywxLjM3Mjk3ODkgLTEuNjY4MzM4OCwxLjQ5NDU2NSBDIDQuMDQ0MDM1LDguMzA5MjIwMyAzLjM2NjE1MDksOC44ODI3MjkgMi43MjI2ODg1LDkuNTQzNDAyMyAxLjY4MDYwMTQsMTAuNjM4Nzg3IDEuNTc2MjI2MSwxMC44MTIwMDYgMS41NzYyMjYxLDExLjQ3MjY3OSBjIDAsMC45MzgyNjcgMC42MjU2OTY0LDEuNTYzOTY0IDEuNTgxNzI5NSwxLjU2Mzk2NCAwLjU5MDcxOTYsMCAwLjgxNjY4MDksLTAuMTM4Nzk3IDEuODc3MDg5MiwtMS4xNDcwMTggMC42NzczMjg5LC0wLjYyNTY5NiAxLjI2ODA0ODUsLTEuMzAzNTggMS4zMzgwMDIyLC0xLjUxMTc3NiAwLjEyMTU4NiwtMC40MDAyOSAxLjI1MDgzNzYsLTEuNjg1NTQ5MyAxLjQ5NDU2NSwtMS42ODU1NDkzIDAuMjA4NzUwNSwwIDAuMTc0MzI4OSwxLjgwNzEzNTMgLTAuMDM0OTc3LDIuMzYyMzIzMyAtMC4yNDMxNzIsMC42MjY4MDcgLTIuNTAyNzg1NSwyLjkzNzQ5OCAtMy4yMTU2NDY0LDMuMjY4Mzg5IC0wLjc0NjcyNzMsMC4zNjQ3NTkgLTIuMjc2MjY5MiwwLjM0NzU0OCAtMy4wMDYzNDA5LC0wLjAxODMyIHoiIHN0eWxlPSIiLz48cGF0aCBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiBpZD0icGF0aDYiIGQ9Ik0gNC43MDQxNTMsOS45MDgxNjA1IEMgNC41MTMxNjg1LDkuNzE3MTc2IDQuMzU2NjA1Niw5LjQ3MzQ0ODcgNC4zNTY2MDU2LDkuMzUyNDE3OCBjIDAsLTAuMTIyMTQxMyAxLjA3NzYxOTEsLTEuMjg2MzY5NyAyLjM5ODQxMDQsLTIuNjA3MTYxIEMgOC43NTI1ODEsNC43NDY1ODE0IDkuMjA1NjE0MSw0LjM4MTgyMzIgOS41MzUzOTU1LDQuNDY4NDMyNCAxMC4wMjIyOTUsNC41OTAwMTg1IDEwLjI2NDM1Nyw1LjAyNDczMDQgMTAuMDkxMTM4LDUuNDc2MDk3OSA5LjkxNzM2NDYsNS45MTAyNTQ2IDUuNTIwODM0LDEwLjI1NTE1MyA1LjI1OTg5NTgsMTAuMjU1MTUzIDUuMTM4MzA5NywxMC4yNTU3MDggNC44OTUxMzc2LDEwLjA5OTE0NSA0LjcwNDE1Myw5LjkwODE2MDUgWiIgc3R5bGU9IiIvPjxwYXRoIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiIGlkPSJwYXRoOCIgZD0ibSA4LjcwMjA1ODksNy44NTc4NTI3IGMgMCwtMC4yNDM3MjczIDEuMjg1MjU5MywtMS4zNzI5Nzg5IDEuNjg0OTk0MSwtMS40OTQ1NjUgMC4yMDg3NTEsLTAuMDY5Mzk4IDAuODg2NjM1LC0wLjY2MDExOCAxLjUxMjMzMSwtMS4zMzgwMDIxIDEuMDA3NjY2LC0xLjA2MDQwODMgMS4xNDcwMTgsLTEuMjg1ODE0NSAxLjE0NzAxOCwtMS44NzcwODkzIDAsLTAuOTU1NDc3OCAtMC42MjU2OTcsLTEuNTgxNzI5NCAtMS41NjQ1MTksLTEuNTgxNzI5NCAtMC42NjA2NzMsMCAtMC44MzMzMzYsMC4xMDQzNzUyIC0xLjkyOTI3NjcsMS4xNDcwMTc1IEMgOC44OTMwNDM1LDMuMzU2MzkxNyA4LjMxODk3OTUsNC4wMzQyNzU3IDguMjQ5NTgxLDQuMjQzMDI2MyA4LjEyNzk5NSw0LjYyNDk5NTMgNi45ODA0MjIyLDUuOTEwODA5OCA2Ljc1NTAxNiw1LjkxMDgwOTggNi41MTEyODg3LDUuOTEwODA5OCA2LjYxNTY2MzksMy45ODIwODgxIDYuODkzODEyOSwzLjM5MDgxMzMgNy4yMjQxNDk2LDIuNjc4NTA3NiA5LjUzNTM5NTUsMC40MTg4OTQwOSAxMC4xNjA1MzcsMC4xNzU3MjE5MiAxMC44NzI4NDIsLTAuMDg1MjE2MjUgMTIuMzE1Nzc1LC0wLjAzMzAyODYyIDEyLjk5MzY1OSwwLjI4MDA5NzE5IDE0LjI0NTA1MiwwLjg4ODU4MjggMTQuODUzNTM4LDIuMzgzMTQ3OCAxNC41NDA0MTIsNC4wODU5MDgyIDE0LjQwMTA2LDQuODMzMTkwNyAxMi4xNzY0MjMsNy4yNjY1Nzc5IDExLjIzODcxMSw3LjcxODUwMDcgMTAuNjI5NjcsNy45OTcyMDQ4IDguNzAyMDU4OSw4LjEwMTAyNDkgOC43MDIwNTg5LDcuODU3ODUyNyBaIiBzdHlsZT0iIi8+Cjx0ZXh0IHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSIiIHg9IjkuMDQyMjM4MiIgeT0iMTcuMDA2NDY4IiBpZD0idGV4dDQ1NjAiPjx0c3BhbiBzb2RpcG9kaTpyb2xlPSJsaW5lIiBpZD0idHNwYW40NTU4IiB4PSI5LjA0MjIzODIiIHk9IjE3LjAwNjQ2OCIgc3R5bGU9IiI+KzwvdHNwYW4+PC90ZXh0Pgo8L3N2Zz4=");
+}

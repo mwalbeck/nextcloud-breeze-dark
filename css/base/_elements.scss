@@ -1,0 +1,53 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Buttons ------------------------------------------------------------------- */
+
+button,
+.button,
+input[type="button"],
+input[type="submit"] {
+    &.primary {
+        background-color: var(--color-main-background) !important;
+        border-color: var(--color-border);
+        color: var(--color-main-text) !important;
+    }
+
+    &:focus,
+    &:active,
+    &.primary:focus,
+    &.primary:active {
+        background-color: var(--color-primary) !important;
+    }
+}
+
+/* Input Fields -------------------------------------------------------------- */
+
+// div.select2-drop .select2-search input:not(:disabled):not(.primary):active,
+// textarea:not(:disabled):not(.primary):active,
+// div[contenteditable="true"]:not(:disabled):not(.primary):active,
+// .pager li a:not(:disabled):not(.primary):active {
+// }
+
+input:not([type="range"]):not([type="button"]):not([type="submit"]) {
+    background-color: var(--color-background-darker);
+
+    &:active {
+        background-color: var(--color-background-darker);
+    }
+}
+
+/* Table --------------------------------------------------------------------- */
+
+table tbody {
+    --color-background-dark: var(--color-background-hover) !important;
+}
+
+/* Progress ------------------------------------------------------------------ */
+
+progress {
+    background-color: var(--color-loading-dark);
+}

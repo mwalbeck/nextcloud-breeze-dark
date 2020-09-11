@@ -11,45 +11,36 @@
     --color-main-background: rgba(49, 54, 59, 1) !important;
     --color-main-background-translucent: var(--color-main-background) !important;
 
-    --color-background-dark: var(--color-background-hover) !important;
+    --color-background-hover: rgba(61, 174, 233, 0.4) !important;
+    --color-background-dark: rgba(35, 38, 41, 1) !important;
     --color-background-darker: rgba(35, 38, 41, 1) !important;
-    --color-background-alternate: rgba(77, 77, 77, 1);
-    --color-background-hover: rgba(61, 174, 233, 0.25) !important;
 
-    --color-primary: rgba(29, 153, 243, 1) !important;
-    --color-primary-text: var(--color-main-text) !important;
-    --color-primary-element: rgba(61, 174, 233, 1) !important;
+    --color-primary: rgba(61, 174, 233, 1) !important;
+    --color-primary-light: var(--color-primary) !important;
+    --color-primary-text: rgba(252, 252, 252, 1) !important;
+    --color-primary-text-dark: var(--color-main-text) !important;
+    --color-primary-element: var(--color-primary) !important;
+    --color-primary-element-light: var(--color-primary) !important;
 
     --color-error: rgba(218, 68, 83, 1) !important;
     --color-warning: rgba(246, 116, 0, 1) !important;
     --color-success: rgba(39, 174, 96, 1) !important;
 
-    --color-text-maxcontrast: var(--color-text-inactive) !important;
+    --color-text-maxcontrast: rgba(189, 195, 199, 1) !important;
     --color-text-light: var(--color-main-text) !important;
-    --color-text-lighter: var(--color-main-text) !important;
-    --color-text-active: rgba(252, 252, 252, 1);
-    --color-text-inactive: rgba(189, 195, 199, 1);
-    --color-text-link: rgba(41, 128, 185, 1);
-    --color-text-background: rgba(189, 195, 199, 0.6);
+    --color-text-lighter: var(--color-text-maxcontrast) !important;
 
-    --color-box-shadow: var(--color-primary) !important;
+    --color-box-shadow: rgba(0, 0, 0, 0) !important;
 
     --color-border: rgba(112, 111, 110, 1) !important;
     --color-border-dark: var(--color-border) !important;
-    --color-border-active: var(--color-primary-element);
 
     --color-icon: rgba(242, 242, 242, 1);
 }
 
-input,
-label {
-    --color-checkbox-radio-border: var(--color-border);
-    --color-checkbox-radio-disabled: var(--color-background-alternate);
-}
-
 /* Login Screen ------------------------------------------------------------- */
 
-body#body-login {
+/* body#body-login {
     background-color: var(--color-main-background);
     background-image: url("../../../apps/theming/image/background"),
         url("../../../core/img/background.png");
@@ -123,4 +114,4 @@ input[type="submit"]:active,
 
 #body-login .groupbottom input#show {
     border: none;
-}
+} */
