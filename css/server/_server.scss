@@ -13,6 +13,20 @@
     background-image: unset !important;
 }
 
+#header .header-left > nav > .menu::after,
+#header .header-right > div > .menu::after {
+    border-bottom-color: var(--color-border);
+}
+
+#settings #expand:hover #expandDisplayName,
+#settings #expand:focus #expandDisplayName,
+#settings #expand:active #expandDisplayName,
+#settings #expand:hover .avatardiv,
+#settings #expand:focus .avatardiv,
+#settings #expand:active .avatardiv {
+    border: none;
+}
+
 /* Menues -------------------------------------------------------------------- */
 
 .menu,
@@ -38,6 +52,16 @@
 
     .action-item__menu_arrow {
         border-bottom-color: var(--color-border) !important;
+    }
+}
+
+/* Search ------------------------------------------------------------------- */
+
+.searchbox input[type="search"] {
+    &:focus,
+    &:active,
+    &:valid {
+        border-color: var(--color-primary-element) !important;
     }
 }
 
@@ -134,5 +158,44 @@
     button.icon-confirm,
     button.icon-close {
         background-image: none !important;
+    }
+}
+
+/* Tooltips ----------------------------------------------------------------- */
+
+.tooltip,
+.vue-tooltip {
+    filter: none !important;
+
+    .tooltip-inner {
+        border: 1px solid var(--color-border);
+    }
+
+    &[x-placement^="right"],
+    &.right .tooltip-arrow {
+        border-right-color: var(--color-border) !important;
+    }
+
+    &[x-placement^="left"],
+    &.left .tooltip-arrow {
+        border-left-color: var(--color-border) !important;
+    }
+
+    &[x-placement^="bottom"] .tooltip-arrow,
+    &.bottom .tooltip-arrow,
+    &.bottom-left .tooltip-arrow,
+    &.bottom-right .tooltip-arrow {
+        border-bottom-color: var(--color-border) !important;
+    }
+
+    &[x-placement^="top"] .arrow,
+    &[x-placement^="top"] .tooltip-arrow,
+    &.top .arrow,
+    &.top .tooltip-arrow,
+    &.top-left .arrow,
+    &.top-left .tooltip-arrow,
+    &.top-right .arrow,
+    &.top-right .tooltip-arrow {
+        border-top-color: var(--color-border) !important;
     }
 }

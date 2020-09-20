@@ -27,8 +27,6 @@ input[type="submit"] {
 /* Input Fields -------------------------------------------------------------- */
 
 // div.select2-drop .select2-search input:not(:disabled):not(.primary):active,
-// textarea:not(:disabled):not(.primary):active,
-// div[contenteditable="true"]:not(:disabled):not(.primary):active,
 // .pager li a:not(:disabled):not(.primary):active {
 // }
 
@@ -38,6 +36,41 @@ input:not([type="range"]):not([type="button"]):not([type="submit"]) {
     &:active {
         background-color: var(--color-background-darker);
     }
+}
+
+div[contenteditable="true"]:not(:disabled),
+textarea:not(:disabled) {
+    background-color: var(--color-background-darker);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--color-background-darker) !important;
+        border-color: var(--color-primary-element) !important;
+    }
+}
+
+.multiselect {
+    .multiselect__input {
+        background-color: inherit !important;
+    }
+
+    &.multiselect--active {
+        background-color: var(--color-background-darker) !important;
+    }
+}
+
+/* Action items -------------------------------------------------------------- */
+
+.action-input .action-input__label,
+.action-text-editable .action-text-editable__label {
+    background-color: var(--color-background-darker);
+}
+
+/* select2 ------------------------------------------------------------------- */
+.select2-choices .select2-search-choice {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
 }
 
 /* Table --------------------------------------------------------------------- */

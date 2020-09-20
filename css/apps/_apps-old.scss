@@ -4,26 +4,6 @@
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 
-/* App menu ----------------------------------------------------------------- */
-
-#appmenu li {
-    &:hover a + span,
-    &:hover span,
-    &:focus span,
-    a:focus + span,
-    a:focus span {
-        background-color: var(--color-background-darker);
-    }
-
-    a.active::before {
-        border-bottom-color: var(--color-main-background);
-    }
-
-    &:hover a::before {
-        border-bottom-color: var(--color-border);
-    }
-}
-
 /* App Navigation ----------------------------------------------------------- */
 
 #app-navigation:not(.vue) {
@@ -89,64 +69,7 @@
     }
 }
 
-/* App Sidebar -------------------------------------------------------------- */
-
-#app-sidebar {
-    .app-sidebar-tabs__tab a {
-        &:not(.active):hover,
-        &:not(.active):focus {
-            border-bottom-color: var(--color-background-dark) !important;
-            box-shadow: inset 0 -1px 0 var(--color-background-dark) !important;
-        }
-
-        &.active,
-        &.active:focus {
-            border-bottom-color: var(--color-primary-element) !important;
-            box-shadow: inset 0 -1px 0 var(--color-primary-element) !important;
-        }
-    }
-
-    .versionsTabView {
-        li {
-            border-color: var(--color-border);
-
-            &:hover {
-                background: var(--color-background-hover);
-            }
-        }
-
-        a {
-            color: var(--color-text-inactive);
-            opacity: 1 !important;
-        }
-    }
-
-    .shareTabView .error {
-        border-color: var(--color-error);
-        box-shadow: none;
-        color: var(--color-error);
-    }
-
-    #tab-comments input[type="submit"].icon-confirm {
-        background-color: transparent !important;
-        border: none !important;
-        opacity: 0.7;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
 /* App Settings ------------------------------------------------------------- */
-
-#app-settings-header .settings-button {
-    opacity: 1;
-
-    &:hover {
-        background-color: var(--color-background-hover);
-    }
-}
 
 // Date picker styling fix
 
@@ -155,23 +78,6 @@
 }
 
 /* Misc --------------------------------------------------------------------- */
-
-.delete,
-input[type="submit"].delete,
-input[type="button"].delete,
-button.delete,
-.button.delete {
-    background-color: var(--color-error);
-    border-color: var(--color-border);
-    color: var(--color-main-text);
-
-    &:hover,
-    &:focus {
-        background-color: var(--color-error);
-        border-color: var(--color-error) !important;
-        color: var(--color-text-active);
-    }
-}
 
 // Fix share icon in nav not being hidden on hover, because of maunal icon override to prevent black icons
 #app-navigation:not(.vue) .collapsible:hover > a {
