@@ -10,12 +10,6 @@
     border-bottom-color: var(--color-border) !important;
 }
 
-.board-wrapper .controls {
-    .board-title h2 a {
-        color: var(--color-text-active);
-    }
-}
-
 .board-wrapper .board {
     .stack {
         .stack--card-add form {
@@ -33,16 +27,12 @@
 
             &:hover,
             .current-card {
-                border-color: var(--color-border-active);
+                border-color: var(--color-primary-element);
                 box-shadow: none;
             }
 
             .due {
                 opacity: 1;
-
-                span {
-                    color: var(--color-text-active);
-                }
 
                 &.next {
                     background-color: var(--color-neutral);

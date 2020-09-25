@@ -6,6 +6,14 @@
 
 /* Text --------------------------------------------------------------------- */
 
+#editor-wrapper div.ProseMirror[contenteditable="true"] {
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent !important;
+    }
+}
+
 #editor-wrapper .ProseMirror pre {
     background-color: var(--color-background-darker) !important;
 }

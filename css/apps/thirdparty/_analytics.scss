@@ -41,18 +41,18 @@
 
         &:hover {
             background: var(--color-main-background);
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
 
         &.current {
             background: var(--color-primary-element);
-            border-color: var(--color-border-active);
-            color: var(--color-text-active) !important;
+            border-color: var(--color-primary-element);
+            color: var(--color-main-text) !important;
         }
 
         &.disabled {
             background-color: var(--color-background-alternate);
-            color: var(--color-text-inactive) !important;
+            color: var(--color-text-maxcontrast) !important;
 
             &:hover {
                 border-color: var(--color-border);
@@ -66,6 +66,6 @@
     &:hover,
     &:focus,
     &:active {
-        border-bottom-color: var(--color-border-active);
+        border-bottom-color: var(--color-primary-element);
     }
 }

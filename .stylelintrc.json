@@ -13,7 +13,6 @@
         "max-nesting-depth": 2,
         "selector-no-qualifying-type": null,
         "selector-max-compound-selectors": null,
-        "selector-class-pattern": null,
-        "property-no-vendor-prefix": null
+        "selector-class-pattern": null
     }
 }

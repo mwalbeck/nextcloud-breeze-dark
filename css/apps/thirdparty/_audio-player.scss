@@ -15,7 +15,7 @@
         }
 
         &.active span {
-            color: var(--color-text-active);
+            color: var(--color-main-text);
         }
 
         i.ioc {
@@ -42,7 +42,7 @@
         }
 
         &.activeHover {
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
 
         &.dropHover {

@@ -48,12 +48,12 @@
 }
 
 #ocsms-phone-label {
-    color: var(--color-text-active);
+    color: var(--color-main-text);
     font-weight: bold;
 }
 
 .msg-date {
-    color: var(--color-text-inactive);
+    color: var(--color-text-maxcontrast);
     opacity: 0.5;
 }
 
@@ -64,7 +64,7 @@
     box-shadow: none;
 
     &:hover .msg-date {
-        color: var(--color-text-inactive);
+        color: var(--color-text-maxcontrast);
         opacity: 1;
     }
 }

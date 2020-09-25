@@ -35,7 +35,7 @@
 
             &:active,
             &:focus {
-                border-color: var(--color-border-active) !important;
+                border-color: var(--color-primary-element) !important;
             }
         }
 
@@ -170,7 +170,7 @@
 
     .pass-meter .details,
     .pass-meter .pass-meter-message {
-        color: var(--color-text-inactive);
+        color: var(--color-text-maxcontrast);
     }
 
     .pass-meter-col .indicator {
@@ -207,7 +207,7 @@
         border: 1px solid var(--color-border);
 
         &:hover {
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
     }
 
@@ -216,7 +216,7 @@
         border-color: var(--color-border);
 
         &:hover {
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
     }
 
@@ -248,7 +248,7 @@ tags-input {
         box-shadow: none !important;
 
         &.focused {
-            border-color: var(--color-border-active) !important;
+            border-color: var(--color-primary-element) !important;
             -webkit-box-shadow: none !important;
             -moz-box-shadow: none !important;
             box-shadow: none !important;
@@ -308,7 +308,7 @@ tags-input {
     .adp-days {
         > .adp-day.selected {
             background: var(--color-background-hover) !important;
-            border-color: var(--color-border-active) !important;
+            border-color: var(--color-primary-element) !important;
         }
 
         > .adp-day.selectable:hover {

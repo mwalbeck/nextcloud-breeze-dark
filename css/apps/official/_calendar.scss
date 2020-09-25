@@ -74,12 +74,12 @@
 
         &:hover {
             background-color: var(--color-background-hover);
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
 
         &.primary {
             background-color: var(--color-primary-element) !important;
-            border-color: var(--color-border-active) !important;
+            border-color: var(--color-primary-element) !important;
 
             &:hover {
                 background-color: var(--color-background-hover) !important;

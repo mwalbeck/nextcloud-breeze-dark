@@ -9,11 +9,10 @@
 .app-announcementcenter {
     #announcement_submit_msg.success {
         background-color: var(--color-success) !important;
-        color: var(--color-text-active) !important;
     }
 
     .section > span {
-        color: var(--color-text-inactive);
+        color: var(--color-text-maxcontrast);
     }
 }
 

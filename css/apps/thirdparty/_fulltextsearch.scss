@@ -21,7 +21,7 @@
 .provider_header {
     .provider_navigation {
         border-bottom-color: var(--color-border);
-        color: var(--color-text-inactive);
+        color: var(--color-text-maxcontrast);
     }
 
     .provider_result .result_entry {
@@ -32,7 +32,7 @@
         }
 
         .result_extract {
-            color: var(--color-text-inactive);
+            color: var(--color-text-maxcontrast);
         }
     }
 }
@@ -43,7 +43,7 @@
         border-bottom-color: var(--color-border);
 
         .files_header_div {
-            color: var(--color-text-inactive);
+            color: var(--color-text-maxcontrast);
         }
     }
 
@@ -56,13 +56,13 @@
             }
 
             .files_result_extract {
-                color: var(--color-text-inactive);
+                color: var(--color-text-maxcontrast);
             }
         }
 
         .files_result_item {
             background: var(--color-main-background);
-            color: var(--color-text-inactive);
+            color: var(--color-text-maxcontrast);
         }
     }
 }

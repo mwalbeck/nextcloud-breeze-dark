@@ -31,7 +31,9 @@
 
 .menu,
 .popovermenu,
-.bubble {
+.bubble,
+.popover,
+.app-navigation-entry-menu {
     border: 1px solid var(--color-border);
 
     li:hover {
@@ -39,11 +41,10 @@
     }
 }
 
-.menu,
-.popovermenu {
-    &::after {
-        border-bottom-color: var(--color-border);
-    }
+.menu::after,
+.popovermenu::after,
+.popover__arrow {
+    border-bottom-color: var(--color-border) !important;
 }
 
 // Menu used for devices & sessions under Settings > Personal > Security
@@ -170,4 +171,10 @@
     &.top-right .tooltip-arrow {
         border-top-color: var(--color-border) !important;
     }
+}
+
+/* App Store ---------------------------------------------------------------- */
+
+.app-level .official {
+    border-color: var(--color-success);
 }
