@@ -74,40 +74,12 @@
         background-color: var(--color-primary);
         color: var(--color-primary-text);
     }
+
+    .fileexists label,
+    .fileexists .conflict .filename {
+        color: var(--color-main-text) !important;
+    }
 }
-
-//     .fileexists {
-//         th label,
-//         .conflict .filename {
-//             color: var(--color-main-text) !important;
-//         }
-//     }
-// }
-
-// #oc-dialog-filepicker-content {
-//     .filepicker_element_selected {
-//         td {
-//             font-weight: 600;
-//         }
-//     }
-
-//     .actions.creatable {
-//         background-color: var(--color-main-background);
-
-//         &:hover {
-//             border-color: var(--color-border-active);
-//         }
-
-//         a.button {
-//             border: none;
-
-//             &:focus,
-//             &:active {
-//                 opacity: 1;
-//             }
-//         }
-//     }
-// }
 
 /* Settings ------------------------------------------------------------------ */
 

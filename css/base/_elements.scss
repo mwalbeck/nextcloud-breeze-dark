@@ -67,10 +67,24 @@ textarea:not(:disabled) {
     background-color: var(--color-background-darker);
 }
 
-/* select2 ------------------------------------------------------------------- */
+/* select -------------------------------------------------------------------- */
 .select2-choices .select2-search-choice {
     -webkit-box-shadow: unset;
     box-shadow: unset;
+}
+
+.select2-dropdown-open .select2-choice,
+.select2-dropdown-open .select2-choices {
+    background: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
+}
+
+.select2-drop .select2-drop-active {
+    border-top-color: var(--color-border) !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__option--highlight {
+    background-color: var(--color-background-hover) !important;
 }
 
 /* Table --------------------------------------------------------------------- */
