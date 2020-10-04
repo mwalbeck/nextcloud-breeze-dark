@@ -7,32 +7,64 @@
  */
 
 :root {
-    --color-main-text: rgba(239, 240, 241, 1) !important;
-    --color-main-background: rgba(49, 54, 59, 1) !important;
+    /* Primary Breeze colours */
+    --color-paper-white: rgba(252, 252, 252, 1);
+    --color-cardboard-gray: rgba(239, 240, 241, 1);
+    --color-icon-gray: rgba(77, 77, 77, 1);
+    --color-charcoal-gray: rgba(49, 54, 59, 1);
+    --color-shade-black: rgba(35, 38, 41, 1);
+    --color-plasma-blue: rgba(61, 174, 233, 1);
+
+    /* Secondary Breeze colours */
+    --color-icon-red: rgba(218, 68, 83, 1);
+    --color-danger-red: rgba(237, 21, 21, 1);
+    --color-beware-orange: rgba(246, 116, 0, 1);
+    --color-icon-yellow: rgba(253, 188, 75, 1);
+    --color-sunbeam-yellow: rgba(201, 206, 59, 1);
+    --color-verdant-green: rgba(17, 209, 22, 1);
+    --color-icon-blue: rgba(29, 153, 243, 1);
+
+    /* Other Breeze Colours */
+    --color-noble-fir: rgba(39, 174, 96, 1);
+    --color-abyss-blue: rgba(41, 128, 185, 1);
+    --color-coastal-fog: rgba(127, 140, 141, 1);
+    --color-alternate-gray: rgba(189, 195, 199, 1);
+
+    /* An approximation of the blue hover colour seen in breeze dark */
+    --color-hover-blue: rgba(61, 174, 233, 0.4);
+    /* An approximation of the grey border colour seen in breeze dark */
+    --color-border-grey: rgba(103, 107, 110, 1);
+
+    --color-main-text: var(--color-cardboard-gray) !important;
+    --color-main-background: var(--color-charcoal-gray) !important;
     --color-main-background-translucent: var(--color-main-background) !important;
 
-    --color-background-hover: rgba(61, 174, 233, 0.4) !important;
-    --color-background-dark: rgba(35, 38, 41, 1) !important;
-    --color-background-darker: rgba(35, 38, 41, 1) !important;
+    --color-background-hover: var(--color-hover-blue) !important;
+    --color-background-dark: var(--color-main-background) !important;
+    --color-background-darker: var(--color-shade-black) !important;
 
-    --color-primary: rgba(61, 174, 233, 1) !important;
+    --color-primary: var(--color-plasma-blue) !important;
     --color-primary-light: var(--color-primary) !important;
-    --color-primary-text: rgba(252, 252, 252, 1) !important;
+    --color-primary-text: var(--color-paper-white) !important;
     --color-primary-text-dark: var(--color-main-text) !important;
     --color-primary-element: var(--color-primary) !important;
     --color-primary-element-light: var(--color-primary) !important;
 
-    --color-error: rgba(218, 68, 83, 1) !important;
-    --color-warning: rgba(246, 116, 0, 1) !important;
-    --color-success: rgba(39, 174, 96, 1) !important;
+    --color-error: var(--color-icon-red) !important;
+    --color-warning: var(--color-beware-orange) !important;
+    --color-success: var(--color-noble-fir) !important;
 
-    --color-text-maxcontrast: rgba(189, 195, 199, 1) !important;
+    --color-text-maxcontrast: var(--color-alternate-gray) !important;
     --color-text-light: var(--color-main-text) !important;
     --color-text-lighter: var(--color-text-maxcontrast) !important;
+    --color-text-dark: rgba(0, 0, 0, 1) !important;
+
+    --color-loading-light: var(--color-alternate-gray) !important;
+    --color-loading-dark: var(--color-coastal-fog) !important;
 
     --color-box-shadow: rgba(0, 0, 0, 0) !important;
 
-    --color-border: rgba(112, 111, 110, 1) !important;
+    --color-border: var(--color-border-grey) !important;
     --color-border-dark: var(--color-border) !important;
 
     --color-icon: rgba(242, 242, 242, 1);
@@ -40,78 +72,56 @@
 
 /* Login Screen ------------------------------------------------------------- */
 
-/* body#body-login {
-    background-color: var(--color-main-background);
+#body-login {
+    background-color: var(--color-main-background) !important;
     background-image: url("../../../apps/theming/image/background"),
-        url("../../../core/img/background.png");
+        url("../../../core/img/background.png") !important;
 }
 
-#body-login a {
+#body-login a,
+#body-login p.info {
     color: var(--color-main-text) !important;
 }
 
-#body-login p.info {
-    color: var(--color-text-inactive);
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"] {
+    background: var(--color-background-darker) !important;
+    color: var(--color-main-text) !important;
 }
 
-#body-login form .grouptop input,
-#body-login form .groupbottom input,
-#body-login .lost-password-container form input,
-#body-login #email,
-#body-login #username,
-#body-login #password {
-    background: var(--color-background-darker);
-    box-shadow: none !important;
-    color: var(--color-main-text);
+#body-login .groupbottom input {
+    box-shadow: unset !important;
+}
+
+.toggle-password {
+    filter: invert(95%);
+}
+
+input.primary,
+button.primary {
+    background-color: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-main-text) !important;
+}
+
+input.primary:hover,
+button.primary:hover {
+    border-color: var(--color-primary-element) !important;
+}
+
+input.primary:active,
+input.primary:focus,
+button.primary:active,
+button.primary:focus {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary-element) !important;
 }
 
 .two-factor-provider:hover,
 .two-factor-provider:focus,
 .two-factor-provider:active {
     background-color: var(--color-background-hover);
-    border-color: var(--color-background-hover) !important;
+    border-color: var(--color-primary-element) !important;
 }
-
-#body-login .totp-form input[type="tel"] {
-    background: var(--color-background-darker);
-    border: 1px solid var(--color-border);
-    color: var(--color-main-text);
-    margin-bottom: 1em;
-}
-
-#email-icon,
-#username-icon,
-#password-icon,
-#body-login form img[src$="/core/img/actions/toggle.svg"] {
-    filter: invert(95%);
-}
-
-input.primary,
-button.primary,
-input[type="submit"],
-#alternative-logins .button {
-    background-color: var(--color-main-background) !important;
-    border: 1px solid var(--color-border) !important;
-    color: var(--color-main-text) !important;
-}
-
-input.primary:hover,
-input.primary:focus,
-input.primary:active,
-button.primary:hover,
-button.primary:focus,
-button.primary:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="submit"]:active,
-#alternative-logins .button:hover,
-#alternative-logins .button:focus,
-#alternative-logins .button:active {
-    background-color: var(--color-primary-element) !important;
-    border-color: var(--color-border-active) !important;
-    color: var(--color-text-active) !important;
-}
-
-#body-login .groupbottom input#show {
-    border: none;
-} */
