@@ -12,8 +12,12 @@ input[type="button"],
 input[type="submit"] {
     &.primary {
         background-color: var(--color-main-background) !important;
-        border-color: var(--color-border);
+        border-color: var(--color-border) !important;
         color: var(--color-main-text) !important;
+    }
+
+    &.primary:hover {
+        border-color: var(--color-primary-element) !important;
     }
 
     &:focus,
