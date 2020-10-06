@@ -59,7 +59,7 @@ textarea:not(:disabled) {
         background-color: inherit !important;
     }
 
-    &.multiselect--active {
+    &.multiselect--active .multiselect__input {
         background-color: var(--color-background-darker) !important;
     }
 }
