@@ -45,7 +45,8 @@
     img[src$="app-dark.svg"],
     img[src$="password.svg"],
     img[src$="star.svg"],
-    img[src$="files.svg"] {
+    img[src$="files.svg"],
+    img[src$="download.svg"] {
         filter: invert(95%);
     }
 }
