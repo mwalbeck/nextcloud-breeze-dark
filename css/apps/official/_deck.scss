@@ -6,69 +6,40 @@
 
 /* Deck --------------------------------------------------------------------- */
 
-.board-list .board-list-row {
-    border-bottom-color: var(--color-border) !important;
-}
+.card {
+    background-color: var(--color-background-darker) !important;
+    border: 1px solid var(--color-border);
 
-.board-wrapper .board {
-    .stack {
-        .stack--card-add form {
-            box-shadow: none;
+    &:hover,
+    &.current-card {
+        border-color: var(--color-primary-element);
+    }
 
-            input {
-                border: 1px solid var(--color-border);
-            }
-        }
+    .due,
+    .due.overdue {
+        opacity: 1 !important;
+    }
 
-        .card {
-            background-color: var(--color-background-darker);
-            border: 1px solid var(--color-border);
-            box-shadow: none;
+    .due.next {
+        background-color: var(--color-neutral) !important;
+        opacity: 1 !important;
 
-            &:hover,
-            .current-card {
-                border-color: var(--color-primary-element);
-                box-shadow: none;
-            }
-
-            .due {
-                opacity: 1;
-
-                &.next {
-                    background-color: var(--color-neutral);
-                    opacity: 1;
-
-                    span {
-                        color: var(--color-text-dark);
-                    }
-                }
-
-                &.now {
-                    background-color: var(--color-warning);
-                    opacity: 1;
-
-                    span {
-                        color: var(--color-text-dark);
-                    }
-                }
-
-                &.overdue {
-                    background-color: var(--color-error);
-                    opacity: 1;
-                }
-            }
+        span {
+            color: var(--color-text-dark);
         }
     }
 
-    .badges .icon {
-        opacity: 0.7 !important;
+    .due.now {
+        opacity: 1 !important;
+
+        span {
+            color: var(--color-text-dark);
+        }
     }
 }
 
-#app-sidebar {
-    #description-preview a {
-        opacity: 1;
-    }
+.modal-wrapper .modal-container {
+    box-shadow: unset !important;
 }
 
 /* Icons -------------------------------------------------------------------- */

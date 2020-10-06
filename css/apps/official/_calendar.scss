@@ -71,6 +71,11 @@
     }
 }
 
+.popover.event-popover,
+.popover.event-popover .popover {
+    border: unset;
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .app-calendar,
