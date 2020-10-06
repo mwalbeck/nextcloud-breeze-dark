@@ -4,7 +4,7 @@
  * @copyright Copyright (C) 2020  Magnus Walbeck <mw@mwalbeck.org>
  *
  * @author Magnus Walbeck <mw@mwalbeck.org>
- * 
+ *
  * @license GNU AGPL version 3 or any later version
  *
  * This program is free software: you can redistribute it and/or modify
@@ -22,9 +22,10 @@
  *
  */
 
-
-$(document).ready(function () {
-    $('#breezedark-enabled').change(function () {
-        $.post(OC.generateUrl('apps/breezedark/settings/admin'), ({theme_enabled: this.checked ? 1 : 0}));
+window.addEventListener("DOMContentLoaded", function () {
+    $("#breezedark-enabled").change(function () {
+        $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
+            theme_enabled: this.checked ? 1 : 0,
+        });
     });
 });

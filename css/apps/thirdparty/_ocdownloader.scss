@@ -7,7 +7,6 @@
 /* ocDownloader ------------------------------------------------------------- */
 
 .app-ocdownloader #app-navigation {
-
     li > div > a {
         color: var(--color-main-text);
     }
@@ -28,13 +27,12 @@
 }
 
 .app-ocdownloader #app-content #app-content-wrapper {
-
     #controls {
-	    background-color: var(--color-main-background);
+        background-color: var(--color-main-background);
     }
 
     .content-page {
-	    border-bottom-color: var(--color-border);
+        border-bottom-color: var(--color-border);
     }
 
     .actions > div.button > ul {
@@ -53,10 +51,9 @@
     }
 
     .content-queue > table {
-    
         > thead > tr {
             background-color: var(--color-background-darker);
-            
+
             > th {
                 border-bottom-color: var(--color-border);
             }
@@ -67,12 +64,11 @@
         }
 
         > tbody > tr {
-
             > td {
                 border-bottom-color: var(--color-border);
-                
+
                 &.border {
-	                border-left-color: var(--color-border);
+                    border-left-color: var(--color-border);
                 }
 
                 .pb-value {
@@ -88,14 +84,13 @@
 }
 
 .app-settings #ocdownloader {
-
     form#ocdownloader > p > span.info {
         color: var(--color-main-text);
         font-weight: 600;
     }
 
     form#ocdownloader hr {
-        color: var(--color-border);
         background-color: none;
+        color: var(--color-border);
     }
 }

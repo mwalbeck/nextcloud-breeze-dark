@@ -8,129 +8,129 @@
 
 .icon-home,
 #oc-dialog-filepicker-content .dirtree div:first-child a {
-	background-image: var(--icon-home-f2f2f2) !important;
+    background-image: var(--icon-home-f2f2f2) !important;
 }
 
 .icon-contacts,
 .icon-contacts-dark {
-	background-image: var(--icon-contacts-f2f2f2) !important;
+    background-image: var(--icon-contacts-f2f2f2) !important;
 }
 
 .icon-link {
-	background-image: var(--icon-link-f2f2f2) !important;
+    background-image: var(--icon-link-f2f2f2) !important;
 }
 
 .icon-calendar,
 .icon-calendar-dark {
-	background-image: var(--icon-calendar-f2f2f2) !important;
+    background-image: var(--icon-calendar-f2f2f2) !important;
 }
 
 .icon-picture {
-	background-image: var(--icon-picture-f2f2f2) !important;
+    background-image: var(--icon-picture-f2f2f2) !important;
 }
 
 .icon-files,
 .icon-files-dark {
-	background-image: var(--icon-files-f2f2f2) !important;
+    background-image: var(--icon-files-f2f2f2) !important;
 }
 
 /* Filetypes ---------------------------------------------------------------- */
 
 .icon-text,
 .icon-description {
-	background-image: var(--icon-text-f2f2f2) !important;
+    background-image: var(--icon-text-f2f2f2) !important;
 }
 
 .icon-folder {
-	background-image: var(--icon-folder-0082c9) !important;
+    background-image: var(--icon-folder-0082c9) !important;
 }
 
 /* Clients ------------------------------------------------------------------ */
 
 .icon-desktop {
-	background-image: var(--icon-desktop-f2f2f2) !important;
+    background-image: var(--icon-desktop-f2f2f2) !important;
 }
 
 .icon-phone {
-	background-image: var(--icon-phone-f2f2f2) !important;
+    background-image: var(--icon-phone-f2f2f2) !important;
 }
 
 .icon-tablet {
-	background-image: var(--icon-tablet-f2f2f2) !important;
+    background-image: var(--icon-tablet-f2f2f2) !important;
 }
 
 /* Categories --------------------------------------------------------------- */
 
 .icon-category-installed {
-	background-image: var(--icon-user-f2f2f2) !important;
+    background-image: var(--icon-user-f2f2f2) !important;
 }
 
 .icon-category-enabled {
-	background-image: var(--icon-checkmark-f2f2f2) !important;
+    background-image: var(--icon-checkmark-f2f2f2) !important;
 }
 
 .icon-category-disabled {
-	background-image: var(--icon-close-f2f2f2) !important;
+    background-image: var(--icon-close-f2f2f2) !important;
 }
 
 .icon-category-app-bundles {
-	background-image: var(--icon-bundles-f2f2f2) !important;
+    background-image: var(--icon-bundles-f2f2f2) !important;
 }
 
 .icon-category-customization {
-	background-image: var(--icon-customization-f2f2f2) !important;
+    background-image: var(--icon-customization-f2f2f2) !important;
 }
 
 .icon-category-files {
-	background-image: var(--icon-files-f2f2f2) !important;
+    background-image: var(--icon-files-f2f2f2) !important;
 }
 
 .icon-category-games {
-	background-image: var(--icon-games-f2f2f2) !important;
+    background-image: var(--icon-games-f2f2f2) !important;
 }
 
 .icon-category-integration {
-	background-image: var(--icon-integration-f2f2f2) !important;
+    background-image: var(--icon-integration-f2f2f2) !important;
 }
 
 .icon-category-monitoring {
-	background-image: var(--icon-monitoring-f2f2f2) !important;
+    background-image: var(--icon-monitoring-f2f2f2) !important;
 }
 
 .icon-category-multimedia {
-	background-image: var(--icon-multimedia-f2f2f2) !important;
+    background-image: var(--icon-multimedia-f2f2f2) !important;
 }
 
 .icon-category-office {
-	background-image: var(--icon-office-f2f2f2) !important;
+    background-image: var(--icon-office-f2f2f2) !important;
 }
 
 .icon-category-organization {
-	background-image: var(--icon-organization-f2f2f2) !important;
+    background-image: var(--icon-organization-f2f2f2) !important;
 }
 
 .icon-category-search {
-	background-image: var(--icon-search-f2f2f2) !important;
+    background-image: var(--icon-search-f2f2f2) !important;
 }
 
 .icon-category-security {
-	background-image: var(--icon-password-f2f2f2) !important;
+    background-image: var(--icon-password-f2f2f2) !important;
 }
 
 .icon-category-social {
-	background-image: var(--icon-social-f2f2f2) !important;
+    background-image: var(--icon-social-f2f2f2) !important;
 }
 
 .icon-category-tools {
-	background-image: var(--icon-settings-dark-f2f2f2) !important;
+    background-image: var(--icon-settings-dark-f2f2f2) !important;
 }
 
 .icon-category-workflow {
-	background-image: var(--icon-workflow-f2f2f2) !important;
+    background-image: var(--icon-workflow-f2f2f2) !important;
 }
 
 .icon-category-auth {
-	background-image: var(--icon-auth-f2f2f2) !important;
+    background-image: var(--icon-auth-f2f2f2) !important;
 }
 
 /* Actions ------------------------------------------------------------------ */
@@ -138,312 +138,316 @@
 .icon-star,
 .icon-star-dark,
 .icon-starred:hover,
-.icon-starred:focus {
-	background-image: var(--icon-star-dark-f2f2f2) !important;
+.icon-starred:focus,
+.icon-favorite {
+    background-image: var(--icon-star-dark-f2f2f2) !important;
 }
 
 .icon-search,
 div.select2-drop .select2-search input {
-	background-image: var(--icon-search-f2f2f2) !important;
+    background-image: var(--icon-search-f2f2f2) !important;
 }
 
 .icon-password {
-	background-image: var(--icon-password-f2f2f2) !important;
+    background-image: var(--icon-password-f2f2f2) !important;
 }
 
 .icon-settings,
 .icon-settings-dark,
 #app-settings-header .settings-button {
-	background-image: var(--icon-settings-dark-f2f2f2);
+    background-image: var(--icon-settings-dark-f2f2f2);
 }
 
 .icon-rename {
-	background-image: var(--icon-rename-f2f2f2) !important;
+    background-image: var(--icon-rename-f2f2f2) !important;
 }
 
 .icon-delete {
-	background-image: var(--icon-delete-f2f2f2) !important;
+    background-image: var(--icon-delete-f2f2f2) !important;
 
-	&:hover,
-	&:focus {
-		background-image: var(--icon-delete-da4453) !important;
-	}
+    &:hover,
+    &:focus {
+        background-image: var(--icon-delete-da4453) !important;
+    }
 }
 
 .icon-public {
-	background-image: var(--icon-public-f2f2f2) !important;
+    background-image: var(--icon-public-f2f2f2) !important;
 }
 
 .icon-upload {
-	background-image: var(--icon-upload-f2f2f2) !important;
+    background-image: var(--icon-upload-f2f2f2) !important;
 }
 
 .icon-add {
-	background-image: var(--icon-add-f2f2f2) !important;
+    background-image: var(--icon-add-f2f2f2) !important;
 }
 
 .icon-share,
 .icon-shared {
-	background-image: var(--icon-share-f2f2f2) !important;
+    background-image: var(--icon-share-f2f2f2) !important;
 }
 
 .icon-external {
-	background-image: var(--icon-external-f2f2f2) !important;
+    background-image: var(--icon-external-f2f2f2) !important;
 }
 
 .icon-tag {
-	background-image: var(--icon-tag-f2f2f2) !important;
+    background-image: var(--icon-tag-f2f2f2) !important;
 }
 
 .icon-download {
-	background-image: var(--icon-download-f2f2f2) !important;
+    background-image: var(--icon-download-f2f2f2) !important;
 }
 
 .icon-details {
-	background-image: var(--icon-details-f2f2f2) !important;
+    background-image: var(--icon-details-f2f2f2) !important;
 }
 
 .icon-info {
-	background-image: var(--icon-info-f2f2f2) !important;
+    background-image: var(--icon-info-f2f2f2) !important;
 }
 
 .icon-clippy {
-	background-image: var(--icon-clippy-f2f2f2) !important;
+    background-image: var(--icon-clippy-f2f2f2) !important;
 }
 
 .icon-comment {
-	background-image: var(--icon-comment-f2f2f2) !important;
+    background-image: var(--icon-comment-f2f2f2) !important;
 }
 
 .icon-quota {
-	background-image: var(--icon-quota-f2f2f2) !important;
+    background-image: var(--icon-quota-f2f2f2) !important;
 }
 
 .icon-triangle-n {
-	background-image: var(--icon-triangle-n-f2f2f2) !important;
+    background-image: var(--icon-triangle-n-f2f2f2) !important;
 }
 
 .icon-triangle-s,
 select,
 #app-navigation:not(.vue) .collapsible::before,
 div.select2-container a.select2-choice .select2-arrow b {
-	background-image: var(--icon-triangle-s-f2f2f2) !important;
+    background-image: var(--icon-triangle-s-f2f2f2) !important;
 }
 
 .icon-more,
-#app-navigation:not(.vue) .app-navigation-entry-utils .app-navigation-entry-utils-menu-button button:not([class^="icon-"]):not([class*=" icon-"]) {
-	background-image: var(--icon-more-f2f2f2) !important;
+#app-navigation:not(.vue)
+    .app-navigation-entry-utils
+    .app-navigation-entry-utils-menu-button
+    button:not([class^="icon-"]):not([class*=" icon-"]) {
+    background-image: var(--icon-more-f2f2f2) !important;
 }
 
 .icon-toggle-filelist {
-	background-image: var(--icon-toggle-filelist-f2f2f2) !important;
+    background-image: var(--icon-toggle-filelist-f2f2f2) !important;
 }
 
 .icon-toggle-pictures {
-	background-image: var(--icon-toggle-pictures-f2f2f2) !important;
+    background-image: var(--icon-toggle-pictures-f2f2f2) !important;
 }
 
 .icon-history {
-	background-image: var(--icon-history-f2f2f2) !important;
+    background-image: var(--icon-history-f2f2f2) !important;
 }
 
 .icon-edit {
-	background-image: var(--icon-edit-f2f2f2) !important;
+    background-image: var(--icon-edit-f2f2f2) !important;
 }
 
 .icon-close,
 .oc-dialog-close,
 .toastify.toast .toast-close {
-	background-image: var(--icon-close-f2f2f2) !important;
+    background-image: var(--icon-close-f2f2f2) !important;
 }
 
 .icon-fullscreen {
-	background-image: var(--icon-fullscreen-f2f2f2) !important;
+    background-image: var(--icon-fullscreen-f2f2f2) !important;
 }
 
 .icon-user {
-	background-image: var(--icon-user-f2f2f2) !important;
+    background-image: var(--icon-user-f2f2f2) !important;
 }
 
 .icon-timezone {
-	background-image: var(--icon-timezone-f2f2f2) !important;
+    background-image: var(--icon-timezone-f2f2f2) !important;
 }
 
 .icon-toggle,
 #personal-show + label,
-#show + label, #dbpassword + label {
-	background-image: var(--icon-toggle-f2f2f2) !important;
+#show + label,
+#dbpassword + label {
+    background-image: var(--icon-toggle-f2f2f2) !important;
 }
 
 .icon-error {
-	background-image: var(--icon-error-f2f2f2) !important;
+    background-image: var(--icon-error-f2f2f2) !important;
 }
 
 .icon-checkmark,
 .multiselect.multiselect--multiple .multiselect__content-wrapper li > span::before {
-	background-image: var(--icon-checkmark-f2f2f2) !important;
+    background-image: var(--icon-checkmark-f2f2f2) !important;
 }
 
 .icon-user-admin {
-	background-image: var(--icon-user-admin-f2f2f2) !important;
+    background-image: var(--icon-user-admin-f2f2f2) !important;
 }
 
 .icon-arrow-right,
 .icon-view-next {
-	background-image: var(--icon-arrow-right-f2f2f2) !important;
+    background-image: var(--icon-arrow-right-f2f2f2) !important;
 }
 
 .icon-arrow-left {
-	background-image: var(--icon-arrow-left-f2f2f2) !important;
+    background-image: var(--icon-arrow-left-f2f2f2) !important;
 }
 
 .icon-mail {
-	background-image: var(--icon-mail-f2f2f2) !important;
+    background-image: var(--icon-mail-f2f2f2) !important;
 }
 
 .icon-address {
-	background-image: var(--icon-address-f2f2f2) !important;
+    background-image: var(--icon-address-f2f2f2) !important;
 }
 
 .icon-group {
-	background-image: var(--icon-group-f2f2f2) !important;
+    background-image: var(--icon-group-f2f2f2) !important;
 }
 
 .icon-menu {
-	background-image: var(--icon-menu-f2f2f2) !important;
+    background-image: var(--icon-menu-f2f2f2) !important;
 }
 
 .icon-menu-sidebar {
-	background-image: var(--icon-menu-sidebar-f2f2f2) !important;
+    background-image: var(--icon-menu-sidebar-f2f2f2) !important;
 }
 
 .icon-projects {
-	background-image: var(--icon-projects-f2f2f2) !important;
+    background-image: var(--icon-projects-f2f2f2) !important;
 }
 
 .icon-sound {
-	background-image: var(--icon-sound-f2f2f2) !important;
+    background-image: var(--icon-sound-f2f2f2) !important;
 }
 
 .icon-sound-off {
-	background-image: var(--icon-sound-off-f2f2f2) !important;
+    background-image: var(--icon-sound-off-f2f2f2) !important;
 }
 
 .icon-audio {
-	background-image: var(--icon-audio-f2f2f2) !important;
+    background-image: var(--icon-audio-f2f2f2) !important;
 }
 
 .icon-audio-off {
-	background-image: var(--icon-audio-off-f2f2f2) !important;
+    background-image: var(--icon-audio-off-f2f2f2) !important;
 }
 
 .icon-video {
-	background-image: var(--icon-video-f2f2f2) !important;
+    background-image: var(--icon-video-f2f2f2) !important;
 }
 
 .icon-video-off {
-	background-image: var(--icon-video-off-f2f2f2) !important;
+    background-image: var(--icon-video-off-f2f2f2) !important;
 }
 
 .icon-screen {
-	background-image: var(--icon-screen-f2f2f2) !important;
+    background-image: var(--icon-screen-f2f2f2) !important;
 }
 
 .icon-screen-off {
-	background-image: var(--icon-screen-off-f2f2f2) !important;
+    background-image: var(--icon-screen-off-f2f2f2) !important;
 }
 
 .icon-caret,
 .icon-caret-dark {
-	background-image: var(--icon-caret-f2f2f2) !important;
+    background-image: var(--icon-caret-f2f2f2) !important;
 }
 
 .icon-disabled-user {
-	background-image: var(--icon-disabled-user-f2f2f2) !important;
+    background-image: var(--icon-disabled-user-f2f2f2) !important;
 }
 
 .icon-disabled-users {
-	background-image: var(--icon-disabled-users-f2f2f2) !important;
+    background-image: var(--icon-disabled-users-f2f2f2) !important;
 }
 
 .icon-confirm {
-	background-image: var(--icon-confirm-f2f2f2) !important;
+    background-image: var(--icon-confirm-f2f2f2) !important;
 }
 
 .icon-confirm-fade {
-	background-image: var(--icon-confirm-fade-f2f2f2) !important;
+    background-image: var(--icon-confirm-fade-f2f2f2) !important;
 }
 
 .icon-play {
-	background-image: var(--icon-play-f2f2f2) !important;
+    background-image: var(--icon-play-f2f2f2) !important;
 }
 
 .icon-pause {
-	background-image: var(--icon-pause-f2f2f2) !important;
+    background-image: var(--icon-pause-f2f2f2) !important;
 }
 
 /* Privacy ------------------------------------------------------------------ */
 
 .icon-control {
-	background-image: var(--icon-privacy-control-f2f2f2) !important;
+    background-image: var(--icon-privacy-control-f2f2f2) !important;
 }
 
 .icon-knowledge {
-	background-image: var(--icon-privacy-knowledge-f2f2f2) !important;
+    background-image: var(--icon-privacy-knowledge-f2f2f2) !important;
 }
 
 .icon-freedom {
-	background-image: var(--icon-privacy-freedom-f2f2f2) !important;
+    background-image: var(--icon-privacy-freedom-f2f2f2) !important;
 }
 
 /* Federated file sharing --------------------------------------------------- */
 
 .social-facebook {
-	background-image: var(--icon-federatedfilesharing-social-facebook-f2f2f2) !important;
+    background-image: var(--icon-federatedfilesharing-social-facebook-f2f2f2) !important;
 }
 
 .social-twitter {
-	background-image: var(--icon-federatedfilesharing-social-twitter-f2f2f2) !important;
+    background-image: var(--icon-federatedfilesharing-social-twitter-f2f2f2) !important;
 }
 
 .social-diaspora {
-	background-image: var(--icon-federatedfilesharing-social-diaspora-f2f2f2) !important;
+    background-image: var(--icon-federatedfilesharing-social-diaspora-f2f2f2) !important;
 }
 
 /* Apps that haven't moved to variables for icons ---------------------------- */
 
 // Share by email
 .icon-social-email {
-	background-image: var(--icon-mail-000) !important;
+    background-image: var(--icon-mail-000) !important;
 }
 
 /* CSS tricks to change icon color ------------------------------------------ */
 
 .icon-collapse {
-	color: var(--color-icon) !important;
+    color: var(--color-icon) !important;
 }
 
 .app-settings {
+    // Navigation in settings
+    #app-navigation li a img {
+        filter: invert(95%) !important;
+    }
 
-	// Navigation in settings
-	#app-navigation li a img {
-		filter: invert(95%) !important;
-	}
+    #apps-list .section .app-image .app-icon,
+    #apps-list-search .section .app-image .app-icon,
+    #app-sidebar #app-details-view image.app-icon {
+        filter: invert(5%);
+    }
 
-	#apps-list .section .app-image .app-icon,
-	#apps-list-search .section .app-image .app-icon,
-	#app-sidebar #app-details-view image.app-icon {
-		filter: invert(5%);
-	}
+    // Support submenu -> system information
+    .system-information div img[src$="/apps/support/img/system-info.svg"] {
+        filter: invert(95%);
+    }
 
-	// Support submenu -> system information
-	.system-information div img[src$="/apps/support/img/system-info.svg"] {
-		filter: invert(95%);
-	}
-
-	.infoicon {
-		filter: invert(95%);
-	}
+    .infoicon {
+        filter: invert(95%);
+    }
 }
 
 #settings #expanddiv li a img {
@@ -452,60 +456,60 @@ div.select2-container a.select2-choice .select2-arrow b {
 
 // Icons in the global notifications dropdown
 .notification-icon {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Client icons under Settings > Personal > Mobile & Desktop
 .clientslinks img.appsmall {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Two Factor Icons in Personal Settings
 img.two-factor-provider-settings-icon,
 .icon-u2f-device {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Invert icon for version history in app sidebar
 .downloadVersion img[src$="download.svg"],
 .revertVersion img[src$="history.svg"] {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Change the app icons in the navigation menu to white
 #navigation .app-icon {
-	filter: none;
+    filter: none;
 }
 
 // Arrow in advanved ldap settings and
 // Little help icon
 #ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
 #ldapSettings img[src$="info.svg"] {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Icons in contacts menu
 #contactsmenu-menu #contactsmenu-contacts .contact > a > img {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Audio player: Play option in right click menu in files
 .menuitem.action.action-audio img[src$="sound.svg"] {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Fix icon colors for workflow page
 #workflowengine .actions__item:not(.colored) .icon:not(.icon-invert) {
-	filter: invert(5%) !important;
+    filter: invert(5%) !important;
 }
 
 #workflowengine .section.rule .trigger .event .option__icon {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Force folder icon in app settings to be default blue, when theming app is disabled
 .app-settings .icon-folder {
-	background-image: var(--icon-folder-0082c9) !important;
+    background-image: var(--icon-folder-0082c9) !important;
 }
 
 /* Random CSS fixes for icons ----------------------------------------------- */
@@ -513,5 +517,5 @@ img.two-factor-provider-settings-icon,
 // Fix avatars with dot menu being covered in dots. The dot icon is being handled
 // by vue iconfont instead
 .avatardiv--with-menu .icon-more {
-	background-image: none !important;
+    background-image: none !important;
 }

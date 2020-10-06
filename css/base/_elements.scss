@@ -1,0 +1,103 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Buttons ------------------------------------------------------------------- */
+
+button,
+.button,
+input[type="button"],
+input[type="submit"] {
+    &.primary {
+        background-color: var(--color-main-background) !important;
+        border-color: var(--color-border) !important;
+        color: var(--color-main-text) !important;
+    }
+
+    &.primary:hover {
+        border-color: var(--color-primary-element) !important;
+    }
+
+    &:focus,
+    &:active,
+    &.primary:focus,
+    &.primary:active {
+        background-color: var(--color-primary) !important;
+    }
+}
+
+/* Input Fields -------------------------------------------------------------- */
+
+// div.select2-drop .select2-search input:not(:disabled):not(.primary):active,
+// .pager li a:not(:disabled):not(.primary):active {
+// }
+
+input:not([type="range"]):not([type="button"]):not([type="submit"]) {
+    background-color: var(--color-background-darker);
+
+    &:active {
+        background-color: var(--color-background-darker);
+    }
+}
+
+div[contenteditable="true"]:not(:disabled),
+textarea:not(:disabled) {
+    background-color: var(--color-background-darker);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--color-background-darker) !important;
+        border-color: var(--color-primary-element) !important;
+    }
+}
+
+.multiselect {
+    .multiselect__input {
+        background-color: inherit !important;
+    }
+
+    &.multiselect--active {
+        background-color: var(--color-background-darker) !important;
+    }
+}
+
+/* Action items -------------------------------------------------------------- */
+
+.action-input .action-input__label,
+.action-text-editable .action-text-editable__label {
+    background-color: var(--color-background-darker);
+}
+
+/* select -------------------------------------------------------------------- */
+.select2-choices .select2-search-choice {
+    box-shadow: unset;
+}
+
+.select2-dropdown-open .select2-choice,
+.select2-dropdown-open .select2-choices {
+    background: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
+}
+
+.select2-drop .select2-drop-active {
+    border-top-color: var(--color-border) !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__option--highlight {
+    background-color: var(--color-background-hover) !important;
+}
+
+/* Table --------------------------------------------------------------------- */
+
+table tbody {
+    --color-background-dark: var(--color-background-hover) !important;
+}
+
+/* Progress ------------------------------------------------------------------ */
+
+progress {
+    background-color: var(--color-loading-dark);
+}

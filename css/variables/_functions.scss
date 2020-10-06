@@ -24,9 +24,9 @@
 @mixin icon-color-theming($icon, $dir, $color, $version: 1, $core: false) {
     $color: remove-hash-from-color($color);
     /* $dir is the app name, so we add this to the icon var to avoid conflicts between apps */
-	$varName: "--icon-#{$dir}-#{$icon}-#{$color}";
-	@if $core {
-		$varName: "--icon-#{$icon}-#{$color}";
-	}
-	#{$varName}: url(icon-color-path($icon, $dir, $color, $version, $core));
+    $varName: "--icon-#{$dir}-#{$icon}-#{$color}";
+    @if $core {
+        $varName: "--icon-#{$icon}-#{$color}";
+    }
+    #{$varName}: url(icon-color-path($icon, $dir, $color, $version, $core));
 }

@@ -11,7 +11,6 @@
 }
 
 .app-tasks .app-content {
-
     .sortorder-dropdown-button {
         background-color: var(--color-main-background);
     }
@@ -41,13 +40,12 @@
     }
 
     .task-list .loadmore span {
-        color: var(--color-text-inactive) !important;
         background-color: var(--color-background-darker) !important;
+        color: var(--color-text-maxcontrast) !important;
     }
 }
 
 .app-tasks #app-sidebar div.content-wrapper {
-
     .title {
         background-color: var(--color-primary-element);
 
@@ -87,7 +85,6 @@
 /* Icons -------------------------------------------------------------------- */
 
 .app-tasks {
-
     .sprt-startdate,
     .sprt-duedate,
     .sprt-current,
@@ -112,19 +109,19 @@
     }
 
     .icon-start {
-	    background-image: var(--icon-tasks-icon-start-f2f2f2) !important;
+        background-image: var(--icon-tasks-icon-start-f2f2f2) !important;
     }
 
     .icon-due {
-	    background-image: var(--icon-tasks-icon-due-f2f2f2) !important;
+        background-image: var(--icon-tasks-icon-due-f2f2f2) !important;
     }
 
     .icon-task-star {
-	    background-image: var(--icon-tasks-icon-task-star-f2f2f2) !important;
+        background-image: var(--icon-tasks-icon-task-star-f2f2f2) !important;
     }
 
     .icon-alphabetically {
-	    background-image: var(--icon-tasks-icon-alphabetically-f2f2f2) !important;
+        background-image: var(--icon-tasks-icon-alphabetically-f2f2f2) !important;
     }
 
     input[type="checkbox"].checkbox:checked + label::before {
@@ -132,7 +129,6 @@
     }
 
     .app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons {
-
         .icon-subtasks-visible {
             background-image: var(--icon-tasks-icon-subtasks-visible-f2f2f2) !important;
         }
@@ -143,7 +139,6 @@
     }
 
     .app-content .header .sortorder {
-
         .icon-list__up {
             background-image: var(--icon-tasks-icon-list-up-f2f2f2) !important;
         }

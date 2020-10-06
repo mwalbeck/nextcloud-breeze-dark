@@ -12,35 +12,35 @@
     border-right-color: var(--color-border);
 
     .city-list {
-        
         li {
-        
             a {
                 color: var(--color-main-text);
             }
 
-            &:hover, &:hover > a {
+            &:hover,
+            &:hover > a {
                 background-color: var(--color-background-hover);
                 box-shadow: inset 4px 0 var(--color-primary);
             }
 
-            &.selected, &.selected a {
+            &.selected,
+            &.selected a {
                 background-color: var(--color-primary-element);
-                color: var(--color-text-active);
-                font-weight: 600;
                 box-shadow: inset 4px 0 var(--color-primary);
+                color: var(--color-main-text);
+                font-weight: 600;
             }
         }
 
         #create-city {
             background-color: var(--color-main-background);
+            border-bottom-color: var(--color-primary-element);
             border-left: none;
             border-right: none;
-            border-top-color: var(--color-border-active);
-            border-bottom-color: var(--color-border-active);
+            border-top-color: var(--color-primary-element);
 
             h1 {
-                color: var(--color-text-active);
+                color: var(--color-main-text);
             }
 
             hr {

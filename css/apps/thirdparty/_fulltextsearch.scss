@@ -8,22 +8,20 @@
 
 // Search popup
 #fts-popup {
-
     .div-table-col-left {
         color: var(--color-main-text);
     }
 
     .fts_options_input {
-	    opacity: 1;
+        opacity: 1;
     }
 }
 
 // Generic Search
 .provider_header {
-
     .provider_navigation {
-        color: var(--color-text-inactive);
         border-bottom-color: var(--color-border);
+        color: var(--color-text-maxcontrast);
     }
 
     .provider_result .result_entry {
@@ -34,52 +32,47 @@
         }
 
         .result_extract {
-            color: var(--color-text-inactive);
+            color: var(--color-text-maxcontrast);
         }
     }
 }
 
 // Files specific Search
 .provider_header {
-
     .files_header {
         border-bottom-color: var(--color-border);
 
         .files_header_div {
-            color: var(--color-text-inactive);
+            color: var(--color-text-maxcontrast);
         }
     }
-    
+
     .files_result {
         border-bottom-color: var(--color-border);
 
         .files_div_name .files_result_file {
-            
             .files_result_title {
                 color: var(--color-main-text);
             }
 
             .files_result_extract {
-                color: var(--color-text-inactive);
+                color: var(--color-text-maxcontrast);
             }
         }
 
         .files_result_item {
-            color: var(--color-text-inactive);
             background: var(--color-main-background);
+            color: var(--color-text-maxcontrast);
         }
     }
 }
 
 // Settings
 .app-settings #app-content {
-
     #fns,
     #elastic_search,
     #files {
-
         .div-table .div-table-row .div-table-col {
-
             select,
             input {
                 background-color: var(--color-background-darker) !important;

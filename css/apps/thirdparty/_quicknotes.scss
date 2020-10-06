@@ -7,22 +7,20 @@
 /* Quick Notes -------------------------------------------------------------- */
 
 .app-quicknotes #app-navigation {
+    #new-note-fixed {
+        background-color: var(--color-main-background);
+    }
 
-        #new-note-fixed {
-            background-color: var(--color-main-background);
+    #colors-folder {
+        .circle-toolbar.any-color {
+            background-color: var(--color-background-alternate);
         }
-
-        #colors-folder {
-
-            .circle-toolbar.any-color {
-                background-color: var(--color-background-alternate);
-            }
-        }
+    }
 }
 
 .app-quicknotes .quicknote {
-    color: #000000;
     box-shadow: none;
+    color: #000;
 
     &:hover {
         box-shadow: none;
@@ -33,11 +31,10 @@
 
 // Change icons to black as the contrast with white is really bad
 .app-quicknotes {
-
     .icon-checkmark {
         background-image: var(--icon-checkmark-000) !important;
     }
-    
+
     .quicknote .icon-delete {
         background-image: var(--icon-delete-000) !important;
 

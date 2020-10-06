@@ -10,17 +10,8 @@
     border-bottom-color: var(--color-border) !important;
 }
 
-.board-wrapper .controls {
-        
-    .board-title h2 a {
-        color: var(--color-text-active);
-    }
-}
-
 .board-wrapper .board {
-
     .stack {
-
         .stack--card-add form {
             box-shadow: none;
 
@@ -30,22 +21,18 @@
         }
 
         .card {
-            box-shadow: none;
-            border: 1px solid var(--color-border);
             background-color: var(--color-background-darker);
-            
+            border: 1px solid var(--color-border);
+            box-shadow: none;
+
             &:hover,
             .current-card {
+                border-color: var(--color-primary-element);
                 box-shadow: none;
-                border-color: var(--color-border-active);
             }
 
             .due {
                 opacity: 1;
-
-                span {
-                    color: var(--color-text-active);
-                }
 
                 &.next {
                     background-color: var(--color-neutral);
@@ -69,7 +56,7 @@
                     background-color: var(--color-error);
                     opacity: 1;
                 }
-            }   
+            }
         }
     }
 
@@ -79,7 +66,6 @@
 }
 
 #app-sidebar {
-
     #description-preview a {
         opacity: 1;
     }
@@ -104,15 +90,15 @@
 }
 
 .icon-clone {
-	background-image: var(--icon-deck-clone-f2f2f2) !important;
+    background-image: var(--icon-deck-clone-f2f2f2) !important;
 }
 
 .icon-filter {
-	background-image: var(--icon-deck-filter-f2f2f2) !important;
+    background-image: var(--icon-deck-filter-f2f2f2) !important;
 }
 
 .icon-attach {
-	background-image: var(--icon-deck-attach-f2f2f2) !important;
+    background-image: var(--icon-deck-attach-f2f2f2) !important;
 }
 
 .icon-calendar-dark.now,
@@ -121,14 +107,13 @@
 }
 
 .icon-filter_set {
-	background-image: var(--icon-deck-filter_set-f2f2f2) !important;
+    background-image: var(--icon-deck-filter_set-f2f2f2) !important;
 }
 
 .resource-type-deck {
-    
     img[src$="deck-dark.svg"] {
         filter: invert(95%);
-        opacity: .7 !important;
+        opacity: 0.7 !important;
     }
 
     &:hover img[src$="deck-dark.svg"] {

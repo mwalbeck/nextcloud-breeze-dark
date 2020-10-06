@@ -7,7 +7,6 @@
 /* Music -------------------------------------------------------------------- */
 
 .app-music #app-navigation {
-
     .app-navigation-separator {
         border-bottom-color: var(--color-border);
     }
@@ -18,13 +17,13 @@
 }
 
 .app-music #app-content {
-
-    #emptycontent, .emptycontent {
+    #emptycontent,
+    .emptycontent {
         background-color: var(--color-main-background);
     }
 
     #toScan:hover * {
-        color: var(--color-text-active);
+        color: var(--color-main-text);
     }
 
     .alphabet-navigation a {
@@ -42,13 +41,14 @@
     #controls {
         border-bottom: 1px solid var(--color-border);
 
-        .progress, .seek-bar {
+        .progress,
+        .seek-bar {
             background-color: var(--color-background-darker);
         }
 
         .buffer-bar {
-            opacity: 1;
             background-color: var(--color-background-hover);
+            opacity: 1;
         }
 
         .play-bar {
@@ -57,8 +57,8 @@
     }
 
     #app-sidebar {
-
-        .close, #follow-playback {
+        .close,
+        #follow-playback {
             background-color: unset;
         }
     }
@@ -81,8 +81,8 @@
     }
 
     .buffer-bar {
-        opacity: 1;
         background-color: var(--color-background-hover) !important;
+        opacity: 1;
     }
 
     .play-bar {
@@ -93,10 +93,9 @@
 /* Icons -------------------------------------------------------------------- */
 
 .app-music {
-
     //follow-playback icon
     #app-sidebar #follow-playback {
-	    filter: invert(95%);
+        filter: invert(95%);
     }
 
     // Play button on album covers
@@ -118,7 +117,7 @@
 // Music app: icons for Music player controls in files and in app
 #music-controls img.control,
 .app-music img.control {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Music App: Mini play button
@@ -126,10 +125,10 @@
 .current:not(.playing) .play-pause,
 #app-view :hover > .play-pause,
 #app-view .current.playing div:hover .play-pause {
-	filter: invert(95%);
+    filter: invert(95%);
 }
 
 // Music app: Play option in file action menu in Files App
 .fileActionsMenu .action-music-play img.icon {
-	filter: invert(95%);
+    filter: invert(95%);
 }

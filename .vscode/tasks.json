@@ -12,6 +12,27 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "lint:scss",
+            "problemMatcher": [],
+            "label": "npm: lint:scss",
+            "detail": "stylelint css/"
+        },
+        {
+            "type": "npm",
+            "script": "prettier",
+            "problemMatcher": [],
+            "label": "npm: prettier",
+            "detail": "prettier -c css/ js/"
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "problemMatcher": [],
+            "label": "npm: install",
+            "detail": "install dependencies from package"
         }
     ]
 }

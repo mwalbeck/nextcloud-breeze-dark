@@ -1,0 +1,17 @@
+{
+    "name": "breezedark",
+    "version": "1.0.0",
+    "description": "Breeze Dark theme for Nextcloud",
+    "author": "Magnus Walbeck",
+    "devDependencies": {
+        "prettier": "^2.0.5",
+        "stylelint": "^13.6.1",
+        "stylelint-config-prettier": "^8.0.2",
+        "stylelint-config-sass-guidelines": "^7.0.0",
+        "stylelint-prettier": "^1.1.2"
+    },
+    "scripts": {
+        "prettier": "prettier -c css/ js/",
+        "lint:scss": "stylelint css/"
+    }
+}

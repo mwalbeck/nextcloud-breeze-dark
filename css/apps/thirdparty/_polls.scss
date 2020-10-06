@@ -7,7 +7,6 @@
 /* Polls -------------------------------------------------------------------- */
 
 .app-polls #app-content {
-
     .table-row.table-header {
         opacity: 1;
     }
@@ -17,14 +16,14 @@
     }
 
     .toggle-cell {
-
-        &.yes, &.maybe, &.no {
+        &.yes,
+        &.maybe,
+        &.no {
             background-color: var(--color-main-background);
         }
     }
 
     .poll-cell {
-
         &.yes {
             color: var(--color-success);
         }
@@ -50,7 +49,6 @@
     }
 
     .vote-row .counter {
-
         .yes {
             background-color: var(--color-success);
         }
@@ -62,7 +60,6 @@
 }
 
 .app-polls #app-sidebar {
-
     &.detailsView .pollInformation .cloud .open {
         background-color: var(--color-success);
     }
@@ -81,7 +78,6 @@
 }
 
 .app-polls .tabHeaders .tabHeader {
-
     &.selected,
     &:hover,
     &:focus {
@@ -91,12 +87,12 @@
 
 /* Datepicker */
 .app-polls .mx-datepicker .mx-datepicker-popup {
-    border-color: var(--color-border) !important;
     background-color: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
 }
 
 // Shift dates
 .app-polls .modal-dialog {
-    box-shadow: none !important;
     border: 1px solid var(--color-border) !important;
+    box-shadow: none !important;
 }

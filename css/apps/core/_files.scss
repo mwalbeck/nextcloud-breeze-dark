@@ -1,0 +1,108 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Files -------------------------------------------------------------------- */
+
+.recommendation {
+    &:hover,
+    &:focus {
+        background: var(--color-background-hover) !important;
+    }
+}
+
+.filesize {
+    color: var(--color-text-maxcontrast) !important;
+}
+
+.date > span {
+    color: var(--color-text-maxcontrast) !important;
+}
+
+table tr[data-has-preview="true"] .thumbnail {
+    border: unset !important;
+}
+
+#filestable .filename .favorite-mark .icon-star {
+    background-image: none !important;
+}
+
+#filestable.view-grid:not(.hidden) tbody tr:not(.hidden) {
+    background-color: unset !important;
+
+    &:hover .thumbnail-wrapper,
+    &:hover .nametext,
+    &:hover .fileactions,
+    &:focus .thumbnail-wrapper,
+    &:focus .nametext,
+    &:focus .fileactions,
+    &:active .thumbnail-wrapper,
+    &:active .nametext,
+    &:active .fileactions,
+    &.selected .thumbnail-wrapper,
+    &.selected .nametext,
+    &.selected .fileactions,
+    &.highlighted .thumbnail-wrapper,
+    &.highlighted .nametext,
+    &.highlighted .fileactions,
+    &.searchresult .thumbnail-wrapper,
+    &.searchresult .nametext,
+    &.searchresult .fileactions,
+    .name:focus .thumbnail-wrapper,
+    .name:focus .nametext,
+    .name:focus .fileactions {
+        background-color: unset !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.selected,
+    &.highlighted,
+    &.searchresult {
+        background-color: var(--color-background-hover) !important;
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.nav-icon-files {
+    background-image: var(--icon-files-folder-f2f2f2) !important;
+}
+
+.nav-icon-recent {
+    background-image: var(--icon-files-recent-f2f2f2) !important;
+}
+
+.nav-icon-sharingin,
+.nav-icon-sharingout,
+.nav-icon-pendingshares,
+.nav-icon-shareoverview {
+    background-image: var(--icon-files-share-f2f2f2) !important;
+}
+
+.nav-icon-sharinglinks {
+    background-image: var(--icon-files-public-f2f2f2) !important;
+}
+
+.nav-icon-deletedshares {
+    background-image: var(--icon-files-unshare-f2f2f2) !important;
+}
+
+.nav-icon-extstoragemounts {
+    background-image: var(--icon-files-external-f2f2f2) !important;
+}
+
+.nav-icon-trashbin {
+    background-image: var(--icon-files-delete-f2f2f2) !important;
+}
+
+.nav-icon-favorites {
+    background-image: var(--icon-star-dark-f2f2f2) !important;
+}
+
+.nav-icon-systemtagsfilter {
+    background-image: var(--icon-tag-f2f2f2) !important;
+}

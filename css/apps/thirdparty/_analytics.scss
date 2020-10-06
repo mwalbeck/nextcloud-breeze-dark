@@ -7,7 +7,6 @@
 /* Analytics ---------------------------------------------------------------- */
 
 .app-analytics #app-navigation {
-
     &:not(.vue) > ul > li > a.active + div.app-navigation-entry-utils {
         background-color: var(--color-primary-element);
     }
@@ -18,17 +17,15 @@
 }
 
 .app-analytics #app-content .dataTables_wrapper {
-
     .dataTables_length,
     .dataTables_filter,
     .dataTables_info,
     .dataTables_processing,
     .dataTables_paginate {
-	    color: var(--color-main-text);
+        color: var(--color-main-text);
     }
 
     .dataTable {
-
         thead th {
             border-bottom-color: var(--color-border);
         }
@@ -37,25 +34,25 @@
             border-bottom-color: var(--color-border);
         }
     }
-    
+
     .dataTables_paginate .paginate_button {
-        color: var(--color-main-text) !important;
         border-color: var(--color-border);
+        color: var(--color-main-text) !important;
 
         &:hover {
             background: var(--color-main-background);
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
         }
 
         &.current {
-            color: var(--color-text-active) !important;
             background: var(--color-primary-element);
-            border-color: var(--color-border-active);
+            border-color: var(--color-primary-element);
+            color: var(--color-main-text) !important;
         }
 
         &.disabled {
-            color: var(--color-text-inactive) !important;
             background-color: var(--color-background-alternate);
+            color: var(--color-text-maxcontrast) !important;
 
             &:hover {
                 border-color: var(--color-border);
@@ -65,11 +62,10 @@
 }
 
 .app-analytics #app-sidebar .tabHeaders .tabHeader {
-
     &.selected,
     &:hover,
     &:focus,
     &:active {
-        border-bottom-color: var(--color-border-active);
+        border-bottom-color: var(--color-primary-element);
     }
 }
