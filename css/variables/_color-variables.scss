@@ -32,6 +32,8 @@
     --color-hover-blue: rgba(61, 174, 233, 0.4);
     // An approximation of the grey border colour seen in breeze dark
     --color-border-grey: rgba(103, 107, 110, 1);
+    // Grey translucent colour for dashboard
+    --color-dashboard-grey: rgba(49, 54, 59, 0.8);
 
     --color-main-text: var(--color-cardboard-gray) !important;
     --color-main-background: var(--color-charcoal-gray) !important;
@@ -40,6 +42,7 @@
     --color-background-hover: var(--color-hover-blue) !important;
     --color-background-dark: var(--color-main-background) !important;
     --color-background-darker: var(--color-shade-black) !important;
+    --color-background-translucent: var(--color-dashboard-grey) !important;
 
     --color-primary: var(--color-plasma-blue) !important;
     --color-primary-light: var(--color-primary) !important;

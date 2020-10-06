@@ -1,0 +1,24 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Dashboard ---------------------------------------------------------------- */
+
+#app-dashboard {
+    --color-background-translucent: var(--color-dashboard-grey) !important;
+    background-color: var(--color-background-darker) !important;
+}
+
+.background-selector .background.color {
+    background-color: var(--color-background-darker) !important;
+}
+
+/* Deck */
+.app-dashboard .card {
+    background-color: inherit !important;
+    border: unset;
+}
+
+/* Icons -------------------------------------------------------------------- */

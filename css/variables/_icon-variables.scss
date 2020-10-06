@@ -97,6 +97,9 @@ $icon-success: #27ae60;
     @include icon-color-theming("play", "actions", $icon-normal, 1, true);
     @include icon-color-theming("pause", "actions", $icon-normal, 1, true);
 
+    @include icon-color-theming("app", "user_status", $icon-normal, 1, false);
+    @include icon-color-theming("user-status-invisible", "user_status", $icon-normal, 1, false);
+
     @include icon-color-theming("folder", "files", $icon-normal, 1, false);
     @include icon-color-theming("recent", "files", $icon-normal, 1, false);
     @include icon-color-theming("external", "files", $icon-normal, 1, false);
