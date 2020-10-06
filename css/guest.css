@@ -83,10 +83,10 @@
     color: var(--color-main-text) !important;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="password"],
-input[type="email"] {
+#body-login input[type="text"],
+#body-login input[type="tel"],
+#body-login input[type="password"],
+#body-login input[type="email"] {
     background: var(--color-background-darker) !important;
     color: var(--color-main-text) !important;
 }
@@ -95,33 +95,42 @@ input[type="email"] {
     box-shadow: unset !important;
 }
 
-.toggle-password {
+#body-login .toggle-password,
+#body-login #email-icon {
     filter: invert(95%);
 }
 
-input.primary,
-button.primary {
+#body-login input[type="submit"],
+#body-login input[type="submit"].primary,
+#body-login button.primary,
+#body-login .button {
     background-color: var(--color-main-background) !important;
-    border-color: var(--color-border) !important;
+    border: 1px solid var(--color-border) !important;
     color: var(--color-main-text) !important;
 }
 
-input.primary:hover,
-button.primary:hover {
+#body-login input[type="submit"]:hover,
+#body-login input[type="submit"].primary:hover,
+#body-login button.primary:hover,
+#body-login .button:hover {
     border-color: var(--color-primary-element) !important;
 }
 
-input.primary:active,
-input.primary:focus,
-button.primary:active,
-button.primary:focus {
+#body-login input[type="submit"]:active,
+#body-login input[type="submit"]:focus,
+#body-login input[type="submit"].primary:active,
+#body-login input[type="submit"].primary:focus,
+#body-login button.primary:active,
+#body-login button.primary:focus,
+#body-login .button:active,
+#body-login .button:focus {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary-element) !important;
 }
 
-.two-factor-provider:hover,
-.two-factor-provider:focus,
-.two-factor-provider:active {
+#body-login .two-factor-provider:hover,
+#body-login .two-factor-provider:focus,
+#body-login .two-factor-provider:active {
     background-color: var(--color-background-hover);
     border-color: var(--color-primary-element) !important;
 }
