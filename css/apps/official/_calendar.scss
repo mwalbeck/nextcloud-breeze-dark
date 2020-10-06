@@ -6,61 +6,28 @@
 
 /* Calendar ----------------------------------------------------------------- */
 
-.app-calendar #app-content {
-    .fc-view-container {
-        .fc-day {
-            background-color: var(--color-background-darker);
+.app-calendar .app-content {
+    .fc td.fc-day.nc-calendar-fc-day-of-weekend {
+        background-color: var(--color-background-darker);
+    }
 
-            &.fc-other-month {
-                background-color: var(--color-main-background);
-            }
-        }
+    .fc-highlight {
+        background: var(--color-background-hover);
+        opacity: unset;
+    }
 
-        .fc-day.fc-today {
-            background-color: var(--color-background-darker) !important;
-        }
-
-        .fc-day-top {
-            &.fc-sat,
-            &.fc-sun {
-                .fc-day-number {
-                    color: var(--color-primary-element);
-                }
-            }
-
-            &.fc-today {
-                &:not(.fc-day-header) {
-                    background-color: inherit !important;
-                }
-
-                .fc-day-number {
-                    color: var(--color-main-text);
-                }
-            }
-
-            &.fc-other-month {
-                opacity: 0.7;
-            }
-
-            .fc-week-number {
-                background-color: var(--color-background-darker) !important;
-                border-bottom: 1px solid var(--color-border);
-                border-right: 1px solid var(--color-border);
-            }
-        }
+    .fc-dayGrid-view .fc-day-top .fc-week-number {
+        background-color: var(--color-background-darker);
+        border-bottom: 1px solid var(--color-border);
+        border-right: 1px solid var(--color-border);
+        color: var(--color-main-text);
     }
 }
 
-.app-calendar #app-sidebar .app-sidebar-tabs__nav .app-sidebar-tabs__tab a.active {
-    border-bottom-color: var(--color-primary-element);
-    box-shadow: inset 0 -1px 0 var(--color-primary-element);
-}
-
-.app-calendar #app-sidebar {
-    .app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):hover,
-    .app-sidebar-tabs__nav .app-sidebar-tabs__tab a:not(.active):focus {
-        border-bottom-color: var(--color-background-dark);
-        box-shadow: inset 0 -1px 0 var(--color-background-dark);
+.app-calendar .app-sidebar {
+    .app-sidebar-tabs__nav .app-sidebar-tabs__tab a.active {
+        border-bottom-color: var(--color-primary-element);
+        box-shadow: inset 0 -1px 0 var(--color-primary-element);
     }
 
     #tab-app-sidebar-tab-repeat
