@@ -52,6 +52,7 @@
 
     --color-error: var(--color-icon-red) !important;
     --color-warning: var(--color-beware-orange) !important;
+    --color-neutral: var(--color-sunbeam-yellow) !important;
     --color-success: var(--color-noble-fir) !important;
 
     --color-text-maxcontrast: var(--color-alternate-gray) !important;
