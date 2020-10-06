@@ -37,6 +37,7 @@ $icon-success: #27ae60;
     @include icon-color-theming("social", "categories", $icon-normal, 1, true);
     @include icon-color-theming("workflow", "categories", $icon-normal, 1, true);
     @include icon-color-theming("auth", "categories", $icon-normal, 1, true);
+    @include icon-color-theming("dashboard", "categories", $icon-normal, 1, true);
 
     @include icon-color-theming("star-dark", "actions", $icon-normal, 1, true);
     @include icon-color-theming("search", "actions", $icon-normal, 1, true);
