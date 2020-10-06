@@ -9,6 +9,7 @@
 -   #133 Rewrite core styling
 -   Deck: Fix up styling in latest release of Deck
 -   Calendar: Fix up styling in latest release of Calendar
+-   Small fixes and changes for NC20 release
 
 ## 19.0.4 - 2020-08-08
 
