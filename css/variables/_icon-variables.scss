@@ -214,6 +214,26 @@ $icon-success: #27ae60;
 
     @include icon-color-theming("rename", "bbb", $icon-normal, 1, false);
 
+    @include icon-color-theming("app", "integration_gitlab", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_github", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_reddit", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_google", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_zammad", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_twitter", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_jira", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_mastodon", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_discourse", $icon-normal, 1, false);
+
+    @include icon-color-theming("app", "integration_moodle", $icon-normal, 1, false);
+
     // Manual icons
 
     // Mail

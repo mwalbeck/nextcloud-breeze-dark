@@ -15,10 +15,56 @@
     background-color: var(--color-background-darker) !important;
 }
 
+.modal__content li label {
+    background-color: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
+
+    &:hover {
+        border-color: var(--color-primary-element) !important;
+    }
+}
+
 /* Deck */
 .app-dashboard .card {
     background-color: inherit !important;
     border: unset;
+
+    &:hover {
+        background-color: var(--color-background-hover) !important;
+    }
 }
 
 /* Icons -------------------------------------------------------------------- */
+
+.icon-github,
+.icon-github-settings {
+    background-image: var(--icon-integration_github-app-f2f2f2) !important;
+}
+
+.icon-reddit {
+    background-image: var(--icon-integration_reddit-app-f2f2f2) !important;
+}
+
+.icon-discourse {
+    background-image: var(--icon-integration_discourse-app-f2f2f2) !important;
+}
+
+.icon-gitlab {
+    background-image: var(--icon-integration_gitlab-app-f2f2f2) !important;
+}
+
+.icon-mastodon {
+    background-image: var(--icon-integration_mastodon-app-f2f2f2) !important;
+}
+
+.icon-moodle {
+    background-image: var(--icon-integration_moodle-app-f2f2f2) !important;
+}
+
+.icon-twitter {
+    background-image: var(--icon-integration_twitter-app-f2f2f2) !important;
+}
+
+.icon-zammad {
+    background-image: var(--icon-integration_zammad-app-f2f2f2) !important;
+}
