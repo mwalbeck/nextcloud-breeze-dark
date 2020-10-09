@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+-   [#169](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/169) Fix JSXC login buttons no longer being themed after last update
+-   Uncomment commented icon variables to fix missing icons
+
 ## 19.0.5 - 2020-10-06
 
 ### Fixed
