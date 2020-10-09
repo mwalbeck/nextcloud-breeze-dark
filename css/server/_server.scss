@@ -60,12 +60,20 @@
 
 /* Search ------------------------------------------------------------------- */
 
-.searchbox input[type="search"] {
-    &:focus,
-    &:active,
-    &:valid {
-        border-color: var(--color-primary-element) !important;
-    }
+.header-menu__wrapper {
+    border: 1px solid var(--color-border);
+}
+
+.header-menu__carret {
+    border-bottom-color: var(--color-border) !important;
+}
+
+.unified-search__form-reset {
+    background-color: transparent !important;
+}
+
+.unified-search__result-icon img[src$="integration_discourse/img/app-dark.svg"] {
+    filter: invert(95%);
 }
 
 /* File picker --------------------------------------------------------------- */
