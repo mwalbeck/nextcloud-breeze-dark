@@ -69,3 +69,12 @@
         border-bottom-color: var(--color-primary-element);
     }
 }
+
+.app-analytics .analyticsWidgetItem {
+    background-color: var(--color-background-darker) !important;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-background-hover) !important;
+    }
+}
