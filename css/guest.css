@@ -92,6 +92,10 @@
     color: var(--color-main-text) !important;
 }
 
+#body-login input[type="tel"] {
+    border: 1px solid var(--color-border);
+}
+
 #body-login .groupbottom input {
     box-shadow: unset !important;
 }

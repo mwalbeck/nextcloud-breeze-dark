@@ -2,8 +2,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
 -   [#169](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/169) Fix JSXC login buttons no longer being themed after last update
 -   Uncomment commented icon variables to fix missing icons
+-   [#172](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/172) Readd missing border on TOTP input field
 
 ## 19.0.5 - 2020-10-06
 
