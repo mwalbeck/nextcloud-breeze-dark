@@ -2,13 +2,17 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Add play-next icon
+
 ## 19.0.6 - 2020-10-17
 
 ### Fixed
 
 -   [#169](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/169) Fix JSXC login buttons no longer being themed after last update
 -   Uncomment commented icon variables to fix missing icons
--   [#172](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/172) Read missing border on TOTP input field
+-   [#172](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/172) Re-add missing border on TOTP input field
 -   Analytics: Change background-colour of favorites widgets and fix colour of ::after arrow in dropdown app-navigation menu
 -   Contacts: Add highlighting to the contact list and adjust styling for contact header inputs
 
