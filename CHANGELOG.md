@@ -8,6 +8,7 @@
 -   Uncomment commented icon variables to fix missing icons
 -   [#172](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/172) Readd missing border on TOTP input field
 -   Analytics: Change background-colour of favorites widgets and fix colour of ::after arrow in dropdown app-navigation menu
+-   Contacts: Add highlighting to the contact list and adjust styling for contact header inputs
 
 ## 19.0.5 - 2020-10-06
 

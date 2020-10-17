@@ -6,10 +6,26 @@
 
 /* Contacts ----------------------------------------------------------------- */
 
-.app-contacts #app-content .app-content-list-item.active {
-    background-color: var(--color-primary-element);
-    color: var(--color-main-text);
-    font-weight: 600;
+.app-contacts .app-content-list-item {
+    &:hover {
+        background-color: var(--color-background-hover);
+    }
+
+    &:active,
+    &.active,
+    &:focus {
+        background-color: var(--color-primary);
+        color: var(--color-primary-text);
+    }
+}
+
+.app-contacts .contact-header__infos input {
+    background-color: var(--color-main-background) !important;
+
+    &:active,
+    &:focus {
+        background-color: var(--color-background-darker) !important;
+    }
 }
 
 /* Icons -------------------------------------------------------------------- */
@@ -27,10 +43,6 @@
         background-image: var(--icon-contacts-social-f2f2f2) !important;
     }
 
-    .icon-qrcode {
-        background-image: var(--icon-contacts-qrcode-f2f2f2) !important;
-    }
-
     .icon-language {
         background-image: var(--icon-contacts-language-f2f2f2) !important;
     }
@@ -42,4 +54,9 @@
     .sort-contacts .multiselect .multiselect__single {
         background-image: var(--icon-triangle-s-f2f2f2) !important;
     }
+}
+
+// In popup outside the .app-contacts div
+.icon-qrcode {
+    background-image: var(--icon-contacts-qrcode-f2f2f2) !important;
 }
