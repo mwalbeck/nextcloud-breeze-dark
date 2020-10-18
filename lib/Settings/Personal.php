@@ -30,6 +30,7 @@ use OCP\Settings\ISettings;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
 use OCP\IUserSession;
+use OCP\App\IAppManager;
 
 class Personal implements ISettings {
 
@@ -39,20 +40,26 @@ class Personal implements ISettings {
     /** @var IConfig */
     private $config;
 
-    /** @var IUserSession */
+    /** @var string */
     private $userId;
+
+    /** @var string */
+    private $appPath;
 
     /**
      * @param string $appName
      * @param IConfig $config
      * @param IUserSession $userSession
+     * @param IAppManager $appManager
      */
     public function __construct(string $appName,
                                 IConfig $config,
-                                IUserSession $userSession) {
+                                IUserSession $userSession,
+                                IAppManager $appManager) {
         $this->appName = $appName;
         $this->config = $config;
         $this->userId = $userSession->getUser()->getUID();
+        $this->appWebPath = $appManager->getAppWebPath($appName);
     }
 
     /**
@@ -62,7 +69,8 @@ class Personal implements ISettings {
         $default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
         $themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
         return new TemplateResponse('breezedark', 'personal', [ 
-            "themeEnabled" => $themeEnabled
+            "themeEnabled" => $themeEnabled,
+            "appWebPath" => $this->appWebPath
         ]);
     }
 
