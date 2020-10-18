@@ -5,6 +5,7 @@
 ### Added
 
 -   Add play-next icon
+-   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings
 
 ## 19.0.6 - 2020-10-17
 

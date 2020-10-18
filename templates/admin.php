@@ -30,7 +30,7 @@ script('breezedark', 'settings-admin');
 <div id="breezedark" class="section">
     <h2><?php p($l->t("Breeze Dark")); ?></h2>
     <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
-    <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference")); ?></p>
+    <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference.")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
     <label for="breezedark-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
 </div>
