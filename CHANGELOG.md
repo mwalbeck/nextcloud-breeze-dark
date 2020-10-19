@@ -6,6 +6,7 @@
 
 -   Add play-next icon
 -   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings
+-   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
 
 ## 19.0.6 - 2020-10-17
 
