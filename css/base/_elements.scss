@@ -72,6 +72,13 @@ textarea:not(:disabled) {
 }
 
 /* select -------------------------------------------------------------------- */
+
+// To prevent white text on white background on windows
+select option {
+    background-color: var(--color-main-background);
+    color: var(--color-main-text);
+}
+
 .select2-choices .select2-search-choice {
     box-shadow: unset;
 }
