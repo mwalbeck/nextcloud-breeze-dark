@@ -6,6 +6,7 @@
 
 -   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings
 -   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
+-   Add weather_status app icon and notes app icon
 
 ## 20.0.0 - 2020-10-17
 

@@ -101,6 +101,8 @@ $icon-success: #27ae60;
     @include icon-color-theming("app", "user_status", $icon-normal, 1, false);
     @include icon-color-theming("user-status-invisible", "user_status", $icon-normal, 1, false);
 
+    @include icon-color-theming("app", "weather_status", $icon-normal, 1, false);
+
     @include icon-color-theming("folder", "files", $icon-normal, 1, false);
     @include icon-color-theming("recent", "files", $icon-normal, 1, false);
     @include icon-color-theming("external", "files", $icon-normal, 1, false);
@@ -137,6 +139,7 @@ $icon-success: #27ae60;
 
     @include icon-color-theming("rss", "news", $icon-normal, 1, false);
 
+    @include icon-color-theming("notes", "notes", $icon-normal, 1, false);
     @include icon-color-theming("folder", "notes", $icon-normal, 1, false);
     @include icon-color-theming("recent", "notes", $icon-normal, 1, false);
     @include icon-color-theming("folder-empty", "notes", $icon-normal, 1, false);
