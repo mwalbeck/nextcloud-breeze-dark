@@ -250,6 +250,10 @@ $icon-success: #27ae60;
     @include icon-color-theming("reply", "social", $icon-normal, 1, false);
     @include icon-color-theming("emoji", "social", $icon-normal, 1, false);
 
+    @include icon-color-theming("filteradd", "analytics", $icon-normal, 1, false);
+    @include icon-color-theming("options", "analytics", $icon-normal, 1, false);
+    @include icon-color-theming("column", "analytics", $icon-normal, 1, false);
+
     // Manual icons
 
     // Mail

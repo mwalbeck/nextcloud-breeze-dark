@@ -12,6 +12,7 @@
 ### Fixed
 
 -   Fix issue where some styling imported right after icon variables would get ignored and removed during NC stylesheet compilation
+-   Remove unneeded styling, add three new icons and switch a dark close icon out with a light one in Analytics
 
 ## 20.0.0 - 2020-10-17
 
