@@ -1,0 +1,66 @@
+/***
+ * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Forms -------------------------------------------------------------------- */
+
+.app-forms {
+    input:not([type="range"]):not([type="button"]):not([type="submit"]) {
+        background-color: var(--color-main-background);
+    }
+
+    .question-summary__statistic li meter {
+        background: var(--color-loading-dark) !important;
+    }
+
+    .response-actions__radio__item {
+        border: 1px solid var(--color-border) !important;
+    }
+
+    .response-actions__radio__item--active {
+        border-color: var(--color-primary-element) !important;
+    }
+
+    .action-item__menutoggle--primary {
+        background-color: var(--color-main-background) !important;
+        border: 1px solid var(--color-border) !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: var(--color-primary-element) !important;
+        }
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.icon-forms {
+    background-image: var(--icon-forms-forms-f2f2f2) !important;
+}
+
+.icon-answer-checkbox {
+    background-image: var(--icon-forms-answer-checkbox-f2f2f2) !important;
+}
+
+.icon-answer-multiple {
+    background-image: var(--icon-forms-answer-multiple-f2f2f2) !important;
+}
+
+.icon-answer-dropdown {
+    background-image: var(--icon-forms-answer-dropdown-f2f2f2) !important;
+}
+
+.icon-answer-short {
+    background-image: var(--icon-forms-answer-short-f2f2f2) !important;
+}
+
+.icon-answer-long {
+    background-image: var(--icon-forms-answer-long-f2f2f2) !important;
+}
+
+.icon-drag-handle {
+    background-image: var(--icon-forms-drag-handle-f2f2f2) !important;
+}

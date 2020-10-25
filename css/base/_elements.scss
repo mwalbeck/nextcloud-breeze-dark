@@ -44,12 +44,9 @@ input:not([type="range"]):not([type="button"]):not([type="submit"]) {
 
 div[contenteditable="true"]:not(:disabled),
 textarea:not(:disabled) {
-    background-color: var(--color-background-darker);
-
     &:hover,
     &:focus,
     &:active {
-        background-color: var(--color-background-darker) !important;
         border-color: var(--color-primary-element) !important;
     }
 }
