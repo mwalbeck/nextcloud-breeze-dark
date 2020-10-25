@@ -9,6 +9,10 @@
 -   Add weather_status app icon and notes app icon
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
 
+### Fixed
+
+-   Fix issue where some styling imported right after icon variables would get ignored and removed during NC stylesheet compilation
+
 ## 20.0.0 - 2020-10-17
 
 ### Added
