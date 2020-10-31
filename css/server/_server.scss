@@ -6,9 +6,7 @@
 
 /* Header -------------------------------------------------------------------- */
 
-#body-user #header,
-#body-settings #header,
-#body-public #header {
+#header {
     background-color: var(--color-background-darker) !important;
     background-image: unset !important;
 }

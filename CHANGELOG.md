@@ -15,6 +15,7 @@
 -   Remove unneeded styling, add three new icons and switch a dark close icon out with a light one in Analytics
 -   Add a border to toasts to make them more visible, and switch the dark close icon out with a light one
 -   [#160](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/160) Passman: Unset .icon-image background-image when under .icon-label
+-   [#179](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/179) Dashboard: Make header transparent on dashboard screen to mimic default behavior.
 
 ## 20.0.0 - 2020-10-17
 
