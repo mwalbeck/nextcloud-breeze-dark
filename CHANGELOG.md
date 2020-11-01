@@ -18,6 +18,7 @@
 -   [#160](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/160) Passman: Unset .icon-image background-image when under .icon-label
 -   [#179](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/179) Dashboard: Make header transparent on dashboard screen to mimic default behavior.
 -   Calendar: Fix missing border on new event popup, fix styling for week numbers in monthly view and fix dark icons in view selector.
+-   mx-input active background-color has been changed to --color-main-background instead of --color-background-darker
 
 ## 20.0.0 - 2020-10-17
 

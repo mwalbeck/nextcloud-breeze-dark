@@ -89,3 +89,9 @@
         padding-left: 2ex;
     }
 }
+
+/* mx-datepicker ------------------------------------------------------------ */
+
+.mx-datepicker .mx-input-wrapper .mx-input:active {
+    background-color: var(--color-main-background) !important;
+}
