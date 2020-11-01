@@ -193,6 +193,7 @@ $icon-success: #27ae60;
     @include icon-color-theming("view-module", "calendar", $icon-normal, 1, false);
     @include icon-color-theming("view-day", "calendar", $icon-normal, 1, false);
     @include icon-color-theming("view-week", "calendar", $icon-normal, 1, false);
+    @include icon-color-theming("view-list", "calendar", $icon-normal, 1, false);
     @include icon-color-theming("embed", "calendar", $icon-normal, 1, false);
     @include icon-color-theming("new-calendar", "calendar", $icon-normal, 1, false);
     @include icon-color-theming("new-calendar-with-task-list", "calendar", $icon-normal, 1, false);

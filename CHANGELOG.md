@@ -8,6 +8,7 @@
 -   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
 -   Add weather_status app icon and notes app icon
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
+-   Add icon-view-list icon for Calendar
 
 ### Fixed
 
@@ -16,6 +17,7 @@
 -   Add a border to toasts to make them more visible, and switch the dark close icon out with a light one
 -   [#160](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/160) Passman: Unset .icon-image background-image when under .icon-label
 -   [#179](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/179) Dashboard: Make header transparent on dashboard screen to mimic default behavior.
+-   Calendar: Fix missing border on new event popup, fix styling for week numbers in monthly view and fix dark icons in view selector.
 
 ## 20.0.0 - 2020-10-17
 

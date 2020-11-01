@@ -16,11 +16,11 @@
         opacity: unset;
     }
 
-    .fc-dayGrid-view .fc-day-top .fc-week-number {
+    .fc-daygrid-week-number {
         background-color: var(--color-background-darker);
         border-bottom: 1px solid var(--color-border);
         border-right: 1px solid var(--color-border);
-        color: var(--color-main-text);
+        color: var(--color-text-maxcontrast);
     }
 }
 
@@ -71,15 +71,10 @@
     }
 }
 
-.popover.event-popover,
-.popover.event-popover .popover {
-    border: unset;
-}
-
 /* Icons -------------------------------------------------------------------- */
 
 .app-calendar,
-.event-popover {
+.popover {
     .icon-rightarrow {
         background-image: var(--icon-calendar-rightarrow-f2f2f2) !important;
     }
@@ -98,6 +93,10 @@
 
     .icon-view-day {
         background-image: var(--icon-calendar-view-day-f2f2f2) !important;
+    }
+
+    .icon-view-list {
+        background-image: var(--icon-calendar-view-list-f2f2f2) !important;
     }
 
     .icon-new-calendar {
