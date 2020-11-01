@@ -12,6 +12,7 @@
 ### Fixed
 
 -   Fix issue where some styling imported right after icon variables would get ignored and removed during NC stylesheet compilation
+-   BigBlueButton: Fix background-color in dropdown under admin settings
 
 ## 19.0.6 - 2020-10-17
 
