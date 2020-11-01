@@ -13,6 +13,7 @@
 
 -   Fix issue where some styling imported right after icon variables would get ignored and removed during NC stylesheet compilation
 -   BigBlueButton: Fix background-color in dropdown under admin settings
+-   mx-input active background-color has been changed to --color-main-background instead of --color-background-darker
 
 ## 19.0.6 - 2020-10-17
 
