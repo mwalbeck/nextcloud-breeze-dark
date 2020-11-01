@@ -19,6 +19,7 @@
 -   [#179](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/179) Dashboard: Make header transparent on dashboard screen to mimic default behavior.
 -   Calendar: Fix missing border on new event popup, fix styling for week numbers in monthly view and fix dark icons in view selector.
 -   mx-input active background-color has been changed to --color-main-background instead of --color-background-darker
+-   BigBlueButton: Fix background-color in dropdown under admin settings
 
 ## 20.0.0 - 2020-10-17
 
