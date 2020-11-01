@@ -9,6 +9,10 @@
 -   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
 
+### Fixed
+
+-   Fix issue where some styling imported right after icon variables would get ignored and removed during NC stylesheet compilation
+
 ## 19.0.6 - 2020-10-17
 
 ### Fixed
