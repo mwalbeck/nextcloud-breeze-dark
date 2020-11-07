@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 19.0.7 - 2020-11-07
+
 ### Added
 
 -   Add play-next icon
