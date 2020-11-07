@@ -53,8 +53,10 @@ class Admin implements ISettings {
      */
     public function getForm() {
         $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+        $themeLoginPage = $this->config->getAppValue($this->appName, 'theme_login_page', "1");
         return new TemplateResponse('breezedark', 'admin', [ 
-            "themeEnabled" => $themeEnabled
+            "themeEnabled" => $themeEnabled,
+            "themeLoginPage" => $themeLoginPage
         ]);
     }
 

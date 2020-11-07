@@ -27,7 +27,7 @@
 script('breezedark', 'settings-personal');
 ?>
 
-<div id="breezedark" class="section">
+<div id="breezedark" class="breezedark-personal section">
     <h2><?php p($l->t("Breeze Dark")); ?></h2>
     <p><?php p($l->t("A Breeze Dark theme for Nextcloud.")); ?></p>
     <div class="preview-list">
