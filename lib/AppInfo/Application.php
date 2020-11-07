@@ -27,8 +27,6 @@
 namespace OCA\BreezeDark\AppInfo;
 
 use OCP\AppFramework\App;
-use OCP\IConfig;
-use OCP\IUserSession;
 use OCP\Util;
 
 class Application extends App {
@@ -42,35 +40,41 @@ class Application extends App {
     /** @var IConfig */
     private $config;
 
-    /** @var IUserSession */
-    private $userSession;
+    /** @var IUser */
+    private $user;
 
     public function __construct() {
         parent::__construct(self::APP_NAME);
-        $this->appName = self::APP_NAME;
-        $this->config       = \OC::$server->getConfig();
-        $this->userSession  = \OC::$server->getUserSession();
+        $this->appName  = self::APP_NAME;
+        $this->config   = \OC::$server->getConfig();
+        $this->user     = \OC::$server->getUserSession()->getUser();
     }
 
     /**
      * Check if the theme should be applied
      */
     public function doTheming() {
-        $user = $this->userSession->getUser();
         $default = $this->config->getAppValue($this->appName, "theme_enabled", "0");
+        $loginPage = $this->config->getAppValue($this->appName, "theme_login_page", "1");
 
-        if (!is_null($user) AND $this->config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
-            $this->addStyling();
-        } else if (is_null($user) AND $default) {
-            $this->addStyling();
+        if (!is_null($this->user) AND $this->config->getUserValue($this->user->getUID(), $this->appName, "theme_enabled", $default)) {
+            $this->addStyling("0"); // A logged in user won't see the login page, so there is not need to load the styling
+        } else if (is_null($this->user) AND $default) {
+            $this->addStyling($loginPage);
         }
     }
 
     /**
-     * Add stylesheets to the nextcloud
+     * Add stylesheet(s) to nextcloud
+     * 
+     * @param string $loginPage
      */
-    public function addStyling() {
-        Util::addStyle($this->appName, 'guest');
+    public function addStyling($loginPage) {
         Util::addStyle($this->appName, 'server');
+
+        // If the styling for the login page is wanted, load the stylesheet.
+        if ($loginPage) {
+            Util::addStyle($this->appName, 'guest');
+        }
     }
 }
