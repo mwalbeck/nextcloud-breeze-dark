@@ -9,6 +9,7 @@
 -   Add weather_status app icon and notes app icon
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
 -   Add icon-view-list icon for Calendar
+-   [#155](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/155) Allow Breeze Dark theming of the login page to be disabled.
 
 ### Fixed
 
