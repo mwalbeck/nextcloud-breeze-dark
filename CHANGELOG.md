@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.1 - 2020-11-07
+
 ### Added
 
 -   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings

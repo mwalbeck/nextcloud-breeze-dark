@@ -19,6 +19,7 @@ tar cvzf $RELEASE_DIR/$APP_NAME.tar.gz \
 --exclude="../$APP_NAME/package-lock.json" \
 --exclude="../$APP_NAME/package.json" \
 --exclude="../$APP_NAME/screenshot.png" \
+--exclude="../$APP_NAME/translationtool.phar" \
 ../$APP_NAME
 
 openssl dgst -sha512 -sign $HOME/.nextcloud/certificates/breezedark.key $RELEASE_DIR/$APP_NAME.tar.gz | openssl base64

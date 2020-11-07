@@ -37,7 +37,7 @@ After you install the theme, you need to enable it. There a 2 options for this, 
 
 #### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this options stuff like the login and sharing pages won't be styled. You can find there global option here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find there global options here:
 
 ```
 Admin settings > Theming > Breeze Dark
