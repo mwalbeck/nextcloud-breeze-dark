@@ -26,14 +26,16 @@ window.addEventListener("DOMContentLoaded", function () {
     $("#breezedark-theme-enabled").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
             theme_enabled: this.checked ? 1 : 0,
-            theme_login_page: $("#breezedark-theme-login-page").attr("checked") ? 1 : 0,
+            theme_login_page: $("#breezedark-theme-login-page").prop("checked") ? 1 : 0,
         });
+
+        $("#breezedark-theme-login-page").prop("disabled", !$("#breezedark-theme-enabled").prop("checked"))
     });
 
     $("#breezedark-theme-login-page").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
             theme_login_page: this.checked ? 1 : 0,
-            theme_enabled: $("#breezedark-theme-enabled").attr("checked") ? 1 : 0,
+            theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
         });
     });
 });
