@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Breeze Dark theme for Nextcloud
  * 
@@ -23,12 +26,11 @@
  * 
  */
 
-
 namespace OCA\BreezeDark\Settings;
 
-use OCP\Settings\ISettings;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
+use OCP\Settings\ISettings;
 
 class Admin implements ISettings {
 
@@ -51,7 +53,7 @@ class Admin implements ISettings {
     /**
      * @return TemplateResponse
      */
-    public function getForm() {
+    public function getForm(): TemplateResponse {
         $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
         $themeLoginPage = $this->config->getAppValue($this->appName, 'theme_login_page', "1");
         return new TemplateResponse('breezedark', 'admin', [ 
@@ -63,14 +65,14 @@ class Admin implements ISettings {
     /**
      * @return string
      */
-    public function getSection() {
+    public function getSection(): string {
         return 'theming';
     }
 
     /**
      * @return int
      */
-    public function getPriority() {
+    public function getPriority(): int {
         return 50;
     }
 }

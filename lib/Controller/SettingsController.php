@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Breeze Dark theme for Nextcloud
  * 
@@ -23,13 +26,12 @@
  * 
  */
 
-
 namespace OCA\BreezeDark\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\IConfig;
-use OCP\IUserSession;
 use OCP\IRequest;
+use OCP\IUserSession;
 
 class SettingsController extends Controller {
 
@@ -62,7 +64,7 @@ class SettingsController extends Controller {
      * 
      * Set user theme option
      */
-    public function personal() {
+    public function personal(): void {
         if ($this->request->getParam("theme_enabled")) {
             $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
         } else {
@@ -73,7 +75,7 @@ class SettingsController extends Controller {
     /**
      * Set global theme option
      */
-    public function admin() {
+    public function admin(): void {
         if ($this->request->getParam("theme_enabled")) {
             $this->config->setAppValue($this->appName, "theme_enabled", "1");
         } else {

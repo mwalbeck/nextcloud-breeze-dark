@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 /**
  * Breeze Dark theme for Nextcloud
  * 
@@ -23,13 +26,17 @@
  * 
  */
 
-
 namespace OCA\BreezeDark\AppInfo;
 
 use OCP\AppFramework\App;
+use OCP\AppFramework\Bootstrap\IBootContext;
+use OCP\AppFramework\Bootstrap\IBootstrap;
+use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\IConfig;
+use OCP\IUserSession;
 use OCP\Util;
 
-class Application extends App {
+class Application extends App implements IBootstrap {
 
     /** @var string */
     public const APP_NAME = 'breezedark';
@@ -37,29 +44,29 @@ class Application extends App {
     /** @var string */
     protected $appName;
 
-    /** @var IConfig */
-    private $config;
-
-    /** @var IUser */
-    private $user;
-
     public function __construct() {
         parent::__construct(self::APP_NAME);
         $this->appName  = self::APP_NAME;
-        $this->config   = \OC::$server->getConfig();
-        $this->user     = \OC::$server->getUserSession()->getUser();
     }
+
+    public function register(IRegistrationContext $context): void {
+	}
+
+    public function boot(IBootContext $context): void {
+		$context->injectFn([$this, 'doTheming']);
+	}
 
     /**
      * Check if the theme should be applied
      */
-    public function doTheming() {
-        $default = $this->config->getAppValue($this->appName, "theme_enabled", "0");
-        $loginPage = $this->config->getAppValue($this->appName, "theme_login_page", "1");
+    public function doTheming(IConfig $config, IUserSession $userSession): void {
+        $user = $userSession->getUser();
+        $default = $config->getAppValue($this->appName, "theme_enabled", "0");
+        $loginPage = $config->getAppValue($this->appName, "theme_login_page", "1");
 
-        if (!is_null($this->user) AND $this->config->getUserValue($this->user->getUID(), $this->appName, "theme_enabled", $default)) {
+        if (!is_null($user) AND $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
             $this->addStyling("0"); // A logged in user won't see the login page, so there is not need to load the styling
-        } else if (is_null($this->user) AND $default) {
+        } else if (is_null($user) AND $default) {
             $this->addStyling($loginPage);
         }
     }
@@ -69,7 +76,7 @@ class Application extends App {
      * 
      * @param string $loginPage
      */
-    public function addStyling($loginPage) {
+    public function addStyling(string $loginPage): void {
         Util::addStyle($this->appName, 'server');
 
         // If the styling for the login page is wanted, load the stylesheet.
