@@ -8,6 +8,7 @@
 -   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings
 -   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
+-   [#155](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/155) Allow Breeze Dark theming of the login page to be disabled.
 
 ### Fixed
 

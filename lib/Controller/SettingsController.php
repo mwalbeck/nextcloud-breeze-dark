@@ -79,5 +79,11 @@ class SettingsController extends Controller {
         } else {
             $this->config->setAppValue($this->appName, "theme_enabled", "0");
         }
+
+        if ($this->request->getParam("theme_login_page")) {
+            $this->config->setAppValue($this->appName, "theme_login_page", "1");
+        } else {
+            $this->config->setAppValue($this->appName, "theme_login_page", "0");
+        }
     }
 }
