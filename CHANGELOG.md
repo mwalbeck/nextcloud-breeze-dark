@@ -2,12 +2,16 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#191](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/191) Uncomment --color-text-selection and change to --color-hover-blue to keep amount of colours low. Unset border in Deck description when editing.
+
 ## 19.0.7 - 2020-11-07
 
 ### Added
 
 -   Add play-next icon
--   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/164) Add thumbnail image in personal settings
+-   [#161](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/161) Add thumbnail image in personal settings
 -   [#170](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/170) Define background and text color for select options to prevent white text on white background
 -   [#173](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/173) Add support for Forms
 -   [#155](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/155) Allow Breeze Dark theming of the login page to be disabled.
