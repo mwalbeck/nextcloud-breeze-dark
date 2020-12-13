@@ -35,9 +35,10 @@
 
 /* CodeMirror --------------------------------------------------------------- */
 
-.CodeMirror {
-    background-color: var(--color-main-background) !important;
-    color: var(--color-main-text) !important;
+.EasyMDEContainer .CodeMirror {
+    background-color: var(--color-main-background);
+    border: unset !important;
+    color: var(--color-main-text);
 
     .cm-formatting {
         opacity: 0.5;
