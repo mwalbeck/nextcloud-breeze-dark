@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#191](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/191) Uncomment --color-text-selection and change to --color-hover-blue to keep amount of colours low. Unset border in Deck description when editing.
+-   [#185](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/185) 2FA login page is unstyled even when login page theming is enabled.
 
 ## 20.0.1 - 2020-11-07
 

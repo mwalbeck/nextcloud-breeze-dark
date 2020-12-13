@@ -65,7 +65,9 @@ class Application extends App implements IBootstrap {
         $loginPage = $config->getAppValue($this->appName, "theme_login_page", "1");
 
         if (!is_null($user) AND $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
-            $this->addStyling("0"); // A logged in user won't see the login page, so there is not need to load the styling
+            // When shown the 2FA login page you are logged in while also being on a login page, 
+            // so a logged in user still needs the guests.css stylesheet
+            $this->addStyling($loginPage);
         } else if (is_null($user) AND $default) {
             $this->addStyling($loginPage);
         }
