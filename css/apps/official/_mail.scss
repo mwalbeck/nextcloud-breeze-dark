@@ -16,7 +16,7 @@
     }
 }
 
-.app-mail #app-content {
+.app-mail .app-content {
     .app-content-list {
         .app-content-list-item,
         .app-content-list-item-menu a {
@@ -35,8 +35,8 @@
             background: var(--color-main-background);
         }
 
-        #mail-content iframe {
-            background-color: #eee;
+        #mail-content .message-frame {
+            background-color: var(--color-cardboard-gray);
             border-radius: 3px;
         }
 
