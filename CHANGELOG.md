@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.2 - 2020-12-20
+
 ### Added
 
 -   Mail: Important icon
