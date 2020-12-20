@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 19.0.8 - 2020-12-20
+
 ### Fixed
 
 -   [#191](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/191) Uncomment --color-text-selection and change to --color-hover-blue to keep amount of colours low. Unset border in Deck description when editing.
