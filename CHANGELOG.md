@@ -2,11 +2,16 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Mail: Important icon
+
 ### Fixed
 
 -   [#191](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/191) Uncomment --color-text-selection and change to --color-hover-blue to keep amount of colours low. Unset border in Deck description when editing.
 -   [#185](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/185) 2FA login page is unstyled even when login page theming is enabled.
 -   [#190](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/190) Mail: change #app-content to .app-content so styling is applied properly to newer mail versions.
+-   Mail: Move forward and junk icons out of .app-mail class to apply globally, fixes black icons in dropdowns in Mail. Cleanup code.
 
 ## 20.0.1 - 2020-11-07
 

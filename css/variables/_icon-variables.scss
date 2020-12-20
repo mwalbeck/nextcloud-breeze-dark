@@ -170,6 +170,7 @@ $icon-success: #27ae60;
     @include icon-color-theming("junk", "mail", $icon-normal, 1, false);
     @include icon-color-theming("archive", "mail", $icon-normal, 1, false);
     @include icon-color-theming("forward", "mail", $icon-normal, 1, false);
+    @include icon-color-theming("important", "mail", $icon-normal, 1, false);
 
     @include icon-color-theming("announcementcenter", "announcementcenter", $icon-normal, 1, false);
     @include icon-color-theming("notifications-off", "announcementcenter", $icon-normal, 1, false);

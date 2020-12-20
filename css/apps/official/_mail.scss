@@ -6,43 +6,22 @@
 
 /* Mail --------------------------------------------------------------------- */
 
-.app-mail #account-form .tabs-component-tab {
-    a {
-        color: var(--color-main-text);
-    }
-
-    &.is-active {
-        border-bottom-color: var(--color-primary-element);
-    }
+.app-mail #account-form .tabs-component-tab.is-active {
+    border-bottom-color: var(--color-primary-element);
 }
 
 .app-mail .app-content {
     .app-content-list {
-        .app-content-list-item,
-        .app-content-list-item-menu a {
-            color: var(--color-main-text);
-        }
-
         .app-content-list-item-line-two,
-        .app-content-list-item .app-content-list-item-details {
+        .app-content-list-item-details {
             color: var(--color-text-maxcontrast);
             opacity: 1;
         }
     }
 
-    .app-content-details {
-        #mail-message-header {
-            background: var(--color-main-background);
-        }
-
-        #mail-content .message-frame {
-            background-color: var(--color-cardboard-gray);
-            border-radius: 3px;
-        }
-
-        .transparency {
-            opacity: 1;
-        }
+    .mail-message-body-html .message-frame {
+        background-color: var(--color-cardboard-gray);
+        border-radius: 3px;
     }
 }
 
@@ -59,10 +38,7 @@
         }
     }
 
-    button:hover {
-        opacity: 1;
-    }
-
+    button:hover,
     .mail-attached-image:hover {
         opacity: 1;
     }
@@ -91,19 +67,29 @@
         background-image: var(--icon-mail-archive-f2f2f2) !important;
     }
 
-    .icon-junk {
-        background-image: var(--icon-mail-junk-f2f2f2) !important;
-    }
-
     .icon-trash {
         background-image: var(--icon-mail-trash-f2f2f2) !important;
-    }
-
-    .icon-forward {
-        background-image: var(--icon-mail-forward-f2f2f2) !important;
     }
 
     .icon-starred[data-starred="false"]:not(:hover) {
         background-image: var(--icon-star-dark-f2f2f2) !important;
     }
+}
+
+// Icons used by Mail inside and outside the .app-mail class
+
+.icon-forward {
+    background-image: var(--icon-mail-forward-f2f2f2) !important;
+}
+
+.icon-junk {
+    background-image: var(--icon-mail-junk-f2f2f2) !important;
+}
+
+// Specify which places to exactly to use the white mail-important icon.
+// This is to prevent the important icon, on the avatar of emails
+// marked as important, having a white background.
+.popover .icon-important,
+#mailbox-priority .icon-important {
+    background-image: var(--icon-mail-important-f2f2f2) !important;
 }

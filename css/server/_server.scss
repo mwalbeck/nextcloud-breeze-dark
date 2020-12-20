@@ -42,9 +42,12 @@
 .bubble::after,
 .app-navigation-entry-menu::after,
 .menu::after,
-.popovermenu::after,
-.popover__arrow {
+.popovermenu::after {
     border-bottom-color: var(--color-border) !important;
+}
+
+.popover__arrow {
+    border-color: var(--color-border) !important;
 }
 
 // Menu used for devices & sessions under Settings > Personal > Security
