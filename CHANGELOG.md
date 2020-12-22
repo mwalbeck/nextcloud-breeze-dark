@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#193](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/193) Use the correct variables when determining if the theme should be applied.
+
 ## 19.0.8 - 2020-12-20
 
 ### Fixed

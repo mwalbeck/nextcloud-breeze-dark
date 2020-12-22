@@ -57,11 +57,11 @@ class Application extends App {
         $default = $this->config->getAppValue($this->appName, "theme_enabled", "0");
         $loginPage = $this->config->getAppValue($this->appName, "theme_login_page", "1");
 
-        if (!is_null($user) AND $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
+        if (!is_null($this->user) AND $this->config->getUserValue($this->user->getUID(), $this->appName, "theme_enabled", $default)) {
             // When shown the 2FA login page you are logged in while also being on a login page, 
             // so a logged in user still needs the guests.css stylesheet
             $this->addStyling($loginPage);
-        } else if (is_null($user) AND $default) {
+        } else if (is_null($this->user) AND $default) {
             $this->addStyling($loginPage);
         }
     }
