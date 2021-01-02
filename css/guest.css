@@ -149,3 +149,12 @@
     background-color: var(--color-background-hover);
     border-color: var(--color-primary-element) !important;
 }
+
+#body-login .warning input[type="password"] {
+    border: 1px solid var(--color-border);
+}
+
+#body-login .warning input[type="submit"] {
+    background-color: inherit !important;
+    border: unset !important;
+}
