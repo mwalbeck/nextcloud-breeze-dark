@@ -27,7 +27,7 @@ The first number is the Nextcloud version. The second number is the Nextcloud ma
 
 ## Installation
 
-It's available in the [nextcloud app store](https://apps.nextcloud.com/apps/breezedark), just search for Breeze Dark, or look under customizations.
+It's available in the [Nextcloud app store](https://apps.nextcloud.com/apps/breezedark), just search for Breeze Dark, or look under customizations.
 
 or you can clone this repo into your app folder and enable it in the app menu in Nextcloud.
 
@@ -37,11 +37,13 @@ After you install the theme, you need to enable it. There a 2 options for this, 
 
 #### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find there global options here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:
 
 ```
 Admin settings > Theming > Breeze Dark
 ```
+
+Please note that you need the Theming app enabled in Nextcloud to access the global settings.
 
 #### Personal
 
@@ -50,6 +52,8 @@ The personal option allows each user to set their own preference independent of 
 ```
 Personal settings > Accessibility > Breeze Dark
 ```
+
+Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
 
 ## Contributions
 
