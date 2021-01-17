@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.3 - 2021-01-17
+
 ### Fixed
 
 -   [#195](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/195) Limit #header rule so it doesn't apply to #body-login. Slight change look of password input for password protected shares.
