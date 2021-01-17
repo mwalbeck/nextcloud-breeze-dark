@@ -6,69 +6,45 @@
 
 /* Phone Sync --------------------------------------------------------------- */
 
-.app-ocsms #app-content-header {
-    margin-top: 1px;
-}
+.app-ocsms #app-navigation {
+    border-left: unset;
 
-#app-mailbox-peers {
-    background-color: var(--color-background-darker);
-    border-color: var(--color-border);
+    .ocsms-plname {
+        color: var(--color-main-text);
+    }
 
-    li {
-        border-top-color: var(--color-border);
+    #app-mailbox-peers li {
+        border-top: 1px solid var(--color-border);
 
         &:hover {
             background-color: var(--color-background-hover);
 
-            & > a {
-                background: none;
+            a {
+                background: unset;
             }
         }
     }
+}
 
-    .selected {
-        background-color: var(--color-primary-element);
-
-        &:hover {
-            background-color: var(--color-primary-element);
-        }
-
-        a {
-            background: none;
-        }
+.app-ocsms #app-content {
+    #app-content-header {
+        box-shadow: unset;
     }
-}
 
-.ocsms-plname {
-    color: var(--color-main-text);
-}
+    .msg-recv {
+        background-color: var(--color-background-darker);
+        border-color: var(--color-border);
+        box-shadow: none;
+    }
 
-#ocsms-phone-msg-nb {
-    color: var(--color-main-text);
-}
+    .msg-sent {
+        background-color: var(--color-background-darker);
+        border-color: var(--color-success);
+        box-shadow: none;
+    }
 
-#ocsms-phone-label {
-    color: var(--color-main-text);
-    font-weight: bold;
-}
-
-.msg-date {
-    color: var(--color-text-maxcontrast);
-    opacity: 0.5;
-}
-
-.msg-sent,
-.msg-recv {
-    background-color: var(--color-background-darker);
-    border-color: var(--color-border);
-    box-shadow: none;
-
-    &:hover .msg-date {
+    .msg-date {
         color: var(--color-text-maxcontrast);
         opacity: 1;
     }
-}
-
-.msg-sent {
-    border-color: var(--color-success);
 }
