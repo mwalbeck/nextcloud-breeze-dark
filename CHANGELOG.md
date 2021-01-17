@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#194](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/194) Add clarification to usage instructions that the Theming and Accessibility apps need to be enabled to access the settings.
+-   [#188](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/188) Phone Sync: Make messages readable again and general style improvements
 
 ## 19.0.9 - 2020-12-22
 
