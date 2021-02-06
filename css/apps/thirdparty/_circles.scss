@@ -103,6 +103,10 @@
             }
         }
     }
+
+    #circle_desc {
+        background-color: var(--color-main-background);
+    }
 }
 
 #app-content-circlesfilter .select2-container .select2-choices {
@@ -115,4 +119,14 @@
 // Circle in files app navbar
 .nav-icon-circlesfilter {
     background-image: var(--icon-circles-circles-f2f2f2) !important;
+}
+
+.app-circles {
+    select.status-select {
+        background: var(--icon-triangle-s-f2f2f2) no-repeat right 4px center;
+    }
+
+    .icon-add-user {
+        filter: invert(95%);
+    }
 }
