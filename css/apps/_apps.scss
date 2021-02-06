@@ -4,6 +4,15 @@
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 
+/* App navigation ----------------------------------------------------------- */
+
+#app-navigation:not(.vue) > ul > li {
+    > a,
+    > ul > li > a {
+        opacity: 1;
+    }
+}
+
 /* App Sidebar -------------------------------------------------------------- */
 
 .app-sidebar-tabs__tab a {
