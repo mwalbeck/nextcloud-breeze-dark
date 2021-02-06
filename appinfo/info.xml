@@ -32,7 +32,7 @@ Personal settings > Accessibility > Breeze Dark
 
 Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
     ]]></description>
-    <version>19.0.9</version>
+    <version>19.0.10</version>
     <licence>agpl</licence>
     <author mail="mw@mwalbeck.org" homepage="https://github.com/mwalbeck/nextcloud-breeze-dark">Magnus Walbeck</author>
     <namespace>BreezeDark</namespace>
