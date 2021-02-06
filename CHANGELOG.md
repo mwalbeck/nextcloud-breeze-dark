@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.4 - 2021-02-06
+
 ### Fixed
 
 -   [#188](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/188) Phone Sync: Make messages readable again and general style improvements
