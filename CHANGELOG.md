@@ -2,9 +2,23 @@
 
 ## [Unreleased]
 
+## 21.0.0 - 2021-02-20
+
+### Added
+
+-   [#202](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/202) Support for Nextcloud 21
+
+### Changed
+
+-   Added new screenshot of Nextcloud 21
+
 ### Fixed
 
 -   [#213](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/213) Deck: Use light icon for .icon-reply
+
+### Removed
+
+-   Support for Nextcloud 19
 
 ## 20.0.5 - 2021-02-20
 
