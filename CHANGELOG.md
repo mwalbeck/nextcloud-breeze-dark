@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#188](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/188) Phone Sync: Make messages readable again and general style improvements
+-   [#201](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/201) Cirlces: Fix background-colour on description. Invert colour of add user icon. Fix icon repeat on status field.
 
 ## 20.0.3 - 2021-01-17
 
