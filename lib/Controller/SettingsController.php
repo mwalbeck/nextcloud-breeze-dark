@@ -29,6 +29,8 @@ declare(strict_types=1);
 namespace OCA\BreezeDark\Controller;
 
 use OCP\AppFramework\Controller;
+use OCP\AppFramework\Http;
+use OCP\AppFramework\Http\DataDisplayResponse;
 use OCP\IConfig;
 use OCP\IRequest;
 use OCP\IUserSession;
@@ -87,5 +89,31 @@ class SettingsController extends Controller {
         } else {
             $this->config->setAppValue($this->appName, "theme_login_page", "0");
         }
+    }
+
+    /**
+     * Set custom styling option
+     */
+    public function customStyling(): void {
+        if ($this->request->getParam("theme_custom_styling")) {
+            $this->config->setAppValue($this->appName, "theme_custom_styling", $this->request->getParam("theme_custom_styling"));
+            $this->config->setAppValue($this->appName, "theme_cachebuster", time());
+        } else {
+            $this->config->setAppValue($this->appName, "theme_custom_styling", "");
+        }
+    }
+
+    /**
+	 * @NoCSRFRequired
+	 * @PublicPage
+	 * @NoSameSiteCookieRequired
+	 *
+	 * @return DataDisplayResponse|NotFoundResponse
+	 */
+    public function getCustomStyling(): DataDisplayResponse {
+        $customStyling = $this->config->getAppValue($this->appName, 'theme_custom_styling', '');
+        $response = new DataDisplayResponse($customStyling, Http::STATUS_OK, ['Content-Type' => 'text/css']);
+		$response->cacheFor(86400);
+        return $response;
     }
 }

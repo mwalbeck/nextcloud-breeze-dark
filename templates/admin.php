@@ -36,4 +36,8 @@ script('breezedark', 'settings-admin');
     <p><?php p($l->t("This setting will allow you to choose if the login page should be themed when the theme is enabled by default")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-theme-login-page" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeLoginPage ? "checked" : "");?>>
     <label for="breezedark-theme-login-page"><?php p($l->t("Theme the login page")); ?></label>
+
+    <h3><?php p($l->t("Custom Styling")); ?></h3>
+    <textarea id="breezedark-theme-custom-styling" style="width: 100%; height: 200px; font-family: monospace;" placeholder="Insert custom styling here..."><?php p($themeCustomStyling); ?></textarea>
+    <button id="breezedark-theme-custom-styling-button">Save</button>
 </div>
