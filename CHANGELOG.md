@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#207](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/207) Deck: Missing border when hovering over board list in app navigation
+
 ## 20.0.4 - 2021-02-06
 
 ### Fixed
