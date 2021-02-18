@@ -8,6 +8,10 @@
 -   [#196](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/196) Mail: Remove HTML email background as it is now applied by Mail itself.
 -   [#209](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/209) Mail: Fix styling of vue-treeselect dropdown in settings
 
+### Removed
+
+-   Version and date from stylesheet
+
 ## 20.0.4 - 2021-02-06
 
 ### Fixed
