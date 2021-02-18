@@ -105,3 +105,27 @@
 .mx-datepicker .mx-input-wrapper .mx-input:active {
     background-color: var(--color-main-background) !important;
 }
+
+/* vue-treeselect ----------------------------------------------------------- */
+
+.vue-treeselect__menu {
+    background-color: var(--color-main-background) !important;
+    border-color: var(--color-border) !important;
+}
+
+.vue-treeselect__input-container,
+.vue-treeselect__input {
+    background-color: var(--color-main-background) !important;
+}
+
+.vue-treeselect__single-value {
+    color: var(--color-main-text) !important;
+}
+
+.vue-treeselect__option--highlight {
+    background-color: var(--color-background-hover) !important;
+}
+
+.vue-treeselect--single .vue-treeselect__option--selected {
+    background-color: var(--color-primary) !important;
+}

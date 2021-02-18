@@ -6,6 +6,7 @@
 
 -   [#207](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/207) Deck: Missing border when hovering over board list in app navigation
 -   [#196](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/196) Mail: Remove HTML email background as it is now applied by Mail itself.
+-   [#209](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/209) Mail: Fix styling of vue-treeselect dropdown in settings
 
 ## 20.0.4 - 2021-02-06
 
