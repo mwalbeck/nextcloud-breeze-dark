@@ -111,8 +111,8 @@ https://ko-fi.com/mwalbeck
 https://www.paypal.me/magnuswalbeck
 
 **Crypto:**  
-BTC: bc1ql59kgyrhx0l252d8xan2rrvrtz64j2zr8zucmf
-LTC: ltc1qzn9appss8ecadz9yts46u4vacm9ehwhc29uq4d
+BTC: bc1ql59kgyrhx0l252d8xan2rrvrtz64j2zr8zucmf  
+LTC: ltc1qzn9appss8ecadz9yts46u4vacm9ehwhc29uq4d  
 XMR: 84eXmuNS5RKWnn3YqAmk71U8EkHi2dqLRZN87si5UUdoQp9YPCwL4WFVz84j5hcDmZPkHzFVwM1aGDTfpdaFqQ64PuuLUj2
 
 Thank you!
