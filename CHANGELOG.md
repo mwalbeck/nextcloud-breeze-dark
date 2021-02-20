@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#213](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/213) Deck: Use light icon for .icon-reply
+
 ## 20.0.5 - 2021-02-20
 
 ### Added

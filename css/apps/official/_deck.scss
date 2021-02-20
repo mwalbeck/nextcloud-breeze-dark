@@ -85,6 +85,10 @@
     background-image: var(--icon-deck-filter_set-f2f2f2) !important;
 }
 
+.icon-reply {
+    background-image: var(--icon-deck-reply-f2f2f2) !important;
+}
+
 .resource-type-deck {
     img[src$="deck-dark.svg"] {
         filter: invert(95%);

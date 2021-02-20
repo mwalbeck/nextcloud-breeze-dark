@@ -158,6 +158,7 @@ $icon-success: #27ae60;
     @include icon-color-theming("attach", "deck", $icon-normal, 1, false);
     @include icon-color-theming("filter", "deck", $icon-normal, 1, false);
     @include icon-color-theming("clone", "deck", $icon-normal, 1, false);
+    @include icon-color-theming("reply", "deck", $icon-normal, 1, false);
 
     @include icon-color-theming("app-dark", "spreed", $icon-normal, 1, false);
     @include icon-color-theming("reply", "spreed", $icon-normal, 1, false);
