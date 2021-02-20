@@ -35,6 +35,7 @@ use OCP\AppFramework\Bootstrap\IRegistrationContext;
 use OCP\IConfig;
 use OCP\IUserSession;
 use OCP\Util;
+use OCP\IURLGenerator;
 
 class Application extends App implements IBootstrap {
 
@@ -58,32 +59,51 @@ class Application extends App implements IBootstrap {
 
     /**
      * Check if the theme should be applied
+     * 
+     * @param IConfig $config
+     * @param IUserSession $userSession
+     * @param IURLGenerator $urlGenerator
      */
-    public function doTheming(IConfig $config, IUserSession $userSession): void {
+    public function doTheming(IConfig $config, IUserSession $userSession, IURLGenerator $urlGenerator): void {
         $user = $userSession->getUser();
         $default = $config->getAppValue($this->appName, "theme_enabled", "0");
         $loginPage = $config->getAppValue($this->appName, "theme_login_page", "1");
+        $cachebuster = $config->getAppValue($this->appName, "theme_cachebuster", "0");
 
         if (!is_null($user) AND $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
             // When shown the 2FA login page you are logged in while also being on a login page, 
             // so a logged in user still needs the guests.css stylesheet
-            $this->addStyling($loginPage);
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster);
         } else if (is_null($user) AND $default) {
-            $this->addStyling($loginPage);
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster);
         }
     }
 
     /**
      * Add stylesheet(s) to nextcloud
      * 
+     * @param IURLGenerator $urlGenerator
      * @param string $loginPage
+     * @param string $cachebuster
      */
-    public function addStyling(string $loginPage): void {
+    public function addStyling(IURLGenerator $urlGenerator, string $loginPage, string $cachebuster): void {
         Util::addStyle($this->appName, 'server');
 
         // If the styling for the login page is wanted, load the stylesheet.
         if ($loginPage) {
             Util::addStyle($this->appName, 'guest');
         }
+
+        $linkToCustomStyling = $urlGenerator->linkToRoute(
+			'breezedark.Settings.getCustomStyling', 
+            ['v' => $cachebuster,]
+		);
+		Util::addHeader(
+			'link',
+			[
+				'rel' => 'stylesheet',
+				'href' => $linkToCustomStyling,
+			]
+		);
     }
 }

@@ -26,7 +26,9 @@
 
 return [
     'routes' => [
-        ['name' => 'settings#personal', 'url' => '/settings', 'verb' => 'POST'],
-        ['name' => 'settings#admin', 'url' => '/settings/admin', 'verb' => 'POST'],
+        ['name' => 'Settings#personal', 'url' => '/settings', 'verb' => 'POST'],
+        ['name' => 'Settings#admin', 'url' => '/settings/admin', 'verb' => 'POST'],
+        ['name' => 'Settings#customStyling', 'url' => '/settings/custom-styling', 'verb' => 'POST'],
+        ['name' => 'Settings#getCustomStyling', 'url' => '/custom-styling', 'verb' => 'GET'],
     ],
 ];

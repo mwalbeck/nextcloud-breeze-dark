@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   [#204](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/204) Support for custom styling
+
 ### Fixed
 
 -   [#207](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/207) Deck: Missing border when hovering over board list in app navigation

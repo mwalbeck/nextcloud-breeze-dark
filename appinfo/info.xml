@@ -12,7 +12,7 @@ This is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made b
 
 After you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.
 
-#### Global
+### Global
 
 The global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:
 
@@ -22,7 +22,7 @@ Admin settings > Theming > Breeze Dark
 
 Please note that you need the Theming app enabled in Nextcloud to access the global settings.
 
-#### Personal
+### Personal
 
 The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:
 
@@ -31,6 +31,10 @@ Personal settings > Accessibility > Breeze Dark
 ```
 
 Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
+
+### Custom styling
+
+Under the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.
     ]]></description>
     <version>20.0.5</version>
     <licence>agpl</licence>

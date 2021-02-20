@@ -24,6 +24,18 @@
 
 window.addEventListener("DOMContentLoaded", function () {
     $("#breezedark-enabled").change(function () {
-        $.post(OC.generateUrl("apps/breezedark/settings"), { theme_enabled: this.checked ? 1 : 0 });
+        $.post(OC.generateUrl("apps/breezedark/settings"), {
+            theme_enabled: this.checked ? 1 : 0
+        }).done(function() {
+            $("label[for='breezedark-enabled']").append(" <span id='breezedark-enabled-msg' class='msg success'>Saved</span>");
+            setTimeout(function(){
+                $("#breezedark-enabled-msg").remove()
+            }, 3000);
+        }).fail(function() {
+            $("label[for='breezedark-enabled']").append(" <span id='breezedark-enabled-msg' class='msg error'>Error</span>");
+            setTimeout(function(){
+                $("#breezedark-enabled-msg").remove()
+            }, 3000);
+        });
     });
 });
