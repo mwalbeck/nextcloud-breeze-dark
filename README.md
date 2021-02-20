@@ -80,12 +80,15 @@ If you like the theme and would like to donate you can use the following ways:
 **Liberapay:**  
 https://liberapay.com/mwalbeck/
 
+**Ko-fi:**  
+https://ko-fi.com/mwalbeck
+
 **PayPal:**  
 https://www.paypal.me/magnuswalbeck
 
 **Crypto:**  
-BTC: 1Pp3UG9k6ZkwrVXrhr9kwwvjwDk5Vchu3f  
-BCH: 1C7dQLqMU6Kucxx9GcFDMnTTTsBpeNT9vo  
-LTC: LLii6QbQiHnkjq2TNcNYC3JafV4mWYXWnx
+BTC: bc1ql59kgyrhx0l252d8xan2rrvrtz64j2zr8zucmf
+LTC: ltc1qzn9appss8ecadz9yts46u4vacm9ehwhc29uq4d
+XMR: 84eXmuNS5RKWnn3YqAmk71U8EkHi2dqLRZN87si5UUdoQp9YPCwL4WFVz84j5hcDmZPkHzFVwM1aGDTfpdaFqQ64PuuLUj2
 
 Thank you!
