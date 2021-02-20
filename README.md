@@ -55,6 +55,26 @@ Personal settings > Accessibility > Breeze Dark
 
 Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
 
+## Known issues
+
+### Login image not shown when theme is enabled
+
+This is caused by the way this theme accesses custom login images. There are 2 workarounds to fix the issue:
+
+#### First workaround (recommended)
+
+Switch to using pretty urls. Pretty urls are urls where the index.php isn't present. For apache you can follow [these steps](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html#pretty-urls) from the documentation and for Nginx I recommend having a look at the [example config](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html) from the documentation
+
+#### Second workaround
+
+You can use the custom styling functionality and add the following CSS rule
+
+```
+body#body-login {
+	background-image: url('../../../index.php/apps/theming/image/background'), url('../../../core/img/background.png');
+}
+```
+
 ## Contributions
 
 ### Issues
