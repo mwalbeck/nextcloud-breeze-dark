@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#213](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/213) Deck: Use light icon for .icon-reply
+-   Move getCustomStyling to own controller so we don't call getUID when no user is active
 
 ## 20.0.5 - 2021-02-20
 
