@@ -95,7 +95,7 @@ class Application extends App implements IBootstrap {
         }
 
         $linkToCustomStyling = $urlGenerator->linkToRoute(
-			'breezedark.Settings.getCustomStyling', 
+			'breezedark.Theming.getCustomStyling', 
             ['v' => $cachebuster,]
 		);
 		Util::addHeader(
