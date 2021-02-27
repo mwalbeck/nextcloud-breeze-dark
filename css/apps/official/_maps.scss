@@ -31,7 +31,7 @@
 .app-maps #app-content {
     #search-form #search-submit {
         background-color: transparent !important;
-        border: none !important;
+        border: unset !important;
     }
 
     .leaflet-container {
@@ -43,7 +43,7 @@
         border: 1px solid var(--color-border);
 
         .leaflet-routing-geocoders {
-            border-bottom: none;
+            border-bottom: unset;
 
             input {
                 border-color: var(--color-border);

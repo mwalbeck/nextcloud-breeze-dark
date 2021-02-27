@@ -23,7 +23,7 @@
         &:focus {
             &:not(:disabled):not(.primary):not(#quota) {
                 background-color: inherit;
-                border: none;
+                border: unset;
             }
         }
     }

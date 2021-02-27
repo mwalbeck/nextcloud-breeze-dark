@@ -19,7 +19,7 @@
         }
 
         &.ng-scope:last-child {
-            border-bottom: none;
+            border-bottom: unset;
         }
     }
 
@@ -165,7 +165,7 @@
     }
 
     .tab_container {
-        border: none;
+        border: unset;
     }
 
     .pass-meter .details,
@@ -249,8 +249,6 @@ tags-input {
 
         &.focused {
             border-color: var(--color-primary-element) !important;
-            -webkit-box-shadow: none !important;
-            -moz-box-shadow: none !important;
             box-shadow: none !important;
         }
 
@@ -262,16 +260,12 @@ tags-input {
 
     &.ng-invalid .tags {
         border-color: var(--color-error) !important;
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
         box-shadow: none !important;
     }
 
     .autocomplete {
         background-color: var(--color-background-darker) !important;
         border: 1px solid var(--color-border) !important;
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
         box-shadow: none !important;
 
         .suggestion-item.selected {
@@ -318,7 +312,7 @@ tags-input {
 }
 
 .sequence code {
-    border: none !important;
+    border: unset !important;
 }
 
 .iconpicker-dialog,

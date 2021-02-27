@@ -8,7 +8,7 @@
 
 .app-weather #city-list-left {
     background-color: var(--color-main-background);
-    border-left: none;
+    border-left: unset;
     border-right-color: var(--color-border);
 
     .city-list {
@@ -35,8 +35,8 @@
         #create-city {
             background-color: var(--color-main-background);
             border-bottom-color: var(--color-primary-element);
-            border-left: none;
-            border-right: none;
+            border-left: unset;
+            border-right: unset;
             border-top-color: var(--color-primary-element);
 
             h1 {
