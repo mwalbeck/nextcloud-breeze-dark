@@ -30,7 +30,8 @@
         border-bottom-color: var(--color-border);
     }
 
-    .toplink:link {
-        color: var(--color-main-text);
+    .toplink:link,
+    .toplink:visited {
+        color: var(--color-text-link);
     }
 }
