@@ -11,7 +11,8 @@
         "stylelint-prettier": "^1.1.2"
     },
     "scripts": {
-        "prettier": "prettier -c css/ js/",
+        "prettier": "prettier --check css/ js/",
+        "prettier-write": "prettier --write css/ js/",
         "lint:scss": "stylelint css/"
     }
 }

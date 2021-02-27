@@ -1,0 +1,18 @@
+name: Lint
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run prettier
+        if: ${{ always() }}
+        run: npm run prettier
+      - name: Run stylelint
+        continue-on-error: true
+        if: ${{ always() }}
+        run: npm run lint:scss
