@@ -1,0 +1,36 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Phonetrack --------------------------------------------------------------- */
+
+.app-phonetrack {
+    hr {
+        background-color: var(--color-border);
+    }
+
+    .dropdown-content {
+        border: 1px solid var(--color-border);
+        filter: unset;
+    }
+
+    .session {
+        border-color: var(--color-border);
+    }
+
+    button,
+    .leaflet-control-measure {
+        background-color: var(--color-main-background);
+    }
+
+    .leaflet-control-measure h3,
+    .leaflet-measure-resultpopup h3 {
+        border-bottom-color: var(--color-border);
+    }
+
+    .toplink:link {
+        color: var(--color-main-text);
+    }
+}
