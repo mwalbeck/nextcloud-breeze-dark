@@ -6,18 +6,18 @@ rm -rf $RELEASE_DIR
 mkdir -p $RELEASE_DIR
 tar cvzf $RELEASE_DIR/$APP_NAME.tar.gz \
 --exclude-vcs \
---exclude="./.github" \
---exclude="./.vscode" \
---exclude="./node_modules" \
---exclude="./release" \
---exclude="./.gitignore" \
---exclude="./.prettierignore" \
---exclude="./.prettierrc" \
---exclude="./.stylelintignore" \
---exclude="./.stylelintrc.json" \
---exclude="./create_release.sh" \
---exclude="./package-lock.json" \
---exclude="./package.json" \
---exclude="./screenshot.png" \
---exclude="./translationtool.phar" \
-./
+--exclude="../$APP_NAME/.github" \
+--exclude="../$APP_NAME/.vscode" \
+--exclude="../$APP_NAME/node_modules" \
+--exclude="../$APP_NAME/release" \
+--exclude="../$APP_NAME/.gitignore" \
+--exclude="../$APP_NAME/.prettierignore" \
+--exclude="../$APP_NAME/.prettierrc" \
+--exclude="../$APP_NAME/.stylelintignore" \
+--exclude="../$APP_NAME/.stylelintrc.json" \
+--exclude="../$APP_NAME/create_release.sh" \
+--exclude="../$APP_NAME/package-lock.json" \
+--exclude="../$APP_NAME/package.json" \
+--exclude="../$APP_NAME/screenshot.png" \
+--exclude="../$APP_NAME/translationtool.phar" \
+../$APP_NAME
