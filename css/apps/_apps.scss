@@ -42,6 +42,12 @@
     box-shadow: none !important;
 }
 
+/* App Store ---------------------------------------------------------------- */
+
+.app-settings #app-sidebar-vue .app-sidebar-header__figure {
+    filter: invert(5%);
+}
+
 /* CodeMirror --------------------------------------------------------------- */
 
 .EasyMDEContainer .CodeMirror {
