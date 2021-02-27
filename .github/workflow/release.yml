@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  release:
+    types: [released]
+
+env:
+  APP_NAME: breezedark
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: Release new version
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create tarball
+        run: ./create_release.sh
+
+      - name: Upload tarball to release
+        uses: svenstaro/upload-release-action@v2
+        id: attach_to_release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: release/${{ env.APP_NAME }}.tar.gz
+          asset_name: ${{ env.APP_NAME }}.tar.gz
+          tag: ${{ github.ref }}
+          overwrite: true
+
+      - name: Upload app to Nextcloud appstore
+        uses: R0Wi/nextcloud-appstore-push-action@v1
+        env:
+          app_name: ${{ env.APP_NAME }}
+          appstore_token: ${{ secrets.APPSTORE_TOKEN }}
+          download_url: ${{ steps.attach_to_release.outputs.browser_download_url }}
+          app_private_key: ${{ secrets.APP_PRIVATE_KEY }}
