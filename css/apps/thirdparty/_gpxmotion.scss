@@ -1,0 +1,14 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* GpxMotion ---------------------------------------------------------------- */
+
+.app-gpxmotion {
+    .toplink:link,
+    .toplink:visited {
+        color: var(--color-text-link);
+    }
+}

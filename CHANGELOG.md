@@ -5,6 +5,7 @@
 ### Added
 
 -   [#152](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/152) Styling for PhoneTrack
+-   [#166](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/166) Styling for GpxMotion and adjust link colour for PhoneTrack
 
 ## 20.0.6 - 2021-02-23
 
