@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   [#152](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/152) Styling for PhoneTrack
+
 ## 21.0.1 - 2021-02-23
 
 ### Fixed
