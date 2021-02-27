@@ -7,6 +7,10 @@
 -   [#152](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/152) Styling for PhoneTrack
 -   [#166](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/166) Styling for GpxMotion and adjust link colour for PhoneTrack
 
+### Fixed
+
+-   [#218](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/218) Don't invert app icons in app store sidebar
+
 ## 20.0.6 - 2021-02-23
 
 ### Fixed
