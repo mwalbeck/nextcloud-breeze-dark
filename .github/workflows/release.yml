@@ -12,17 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     name: Release new version
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout app
+        uses: actions/checkout@v2
+        with:
+          path: ${{ env.APP_NAME }}
 
       - name: Create tarball
-        run: ./create_release.sh
+        run: cd ${{ env.APP_NAME }} && ./create_release.sh
 
       - name: Upload tarball to release
         uses: svenstaro/upload-release-action@v2
         id: attach_to_release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: release/${{ env.APP_NAME }}.tar.gz
+          file: ${{ env.APP_NAME }}/release/${{ env.APP_NAME }}.tar.gz
           asset_name: ${{ env.APP_NAME }}.tar.gz
           tag: ${{ github.ref }}
           overwrite: true
