@@ -94,16 +94,19 @@ class Application extends App implements IBootstrap {
             Util::addStyle($this->appName, 'guest');
         }
 
-        $linkToCustomStyling = $urlGenerator->linkToRoute(
-			'breezedark.Theming.getCustomStyling', 
-            ['v' => $cachebuster,]
-		);
-		Util::addHeader(
-			'link',
-			[
-				'rel' => 'stylesheet',
-				'href' => $linkToCustomStyling,
-			]
-		);
+        // Only request the stylesheet if there is any styling to request
+        if ($cachebuster) {
+            $linkToCustomStyling = $urlGenerator->linkToRoute(
+                'breezedark.Theming.getCustomStyling', 
+                ['v' => $cachebuster,]
+            );
+            Util::addHeader(
+                'link',
+                [
+                    'rel' => 'stylesheet',
+                    'href' => $linkToCustomStyling,
+                ]
+            );
+        }
     }
 }
