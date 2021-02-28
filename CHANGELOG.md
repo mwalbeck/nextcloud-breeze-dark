@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+-   Only load custom styling when there actually is custom styling to get
+
 ## 20.0.7 - 2021-02-27
 
 ### Added

@@ -99,21 +99,10 @@ class SettingsController extends Controller {
             $this->config->setAppValue($this->appName, "theme_custom_styling", $this->request->getParam("theme_custom_styling"));
             $this->config->setAppValue($this->appName, "theme_cachebuster", time());
         } else {
+            // If the request is empty set custom_styling to empty string and
+            // set cachebuster to 0 to indicate that no custom styling is available
             $this->config->setAppValue($this->appName, "theme_custom_styling", "");
+            $this->config->setAppValue($this->appName, "theme_cachebuster", 0);
         }
-    }
-
-    /**
-	 * @NoCSRFRequired
-	 * @PublicPage
-	 * @NoSameSiteCookieRequired
-	 *
-	 * @return DataDisplayResponse|NotFoundResponse
-	 */
-    public function getCustomStyling(): DataDisplayResponse {
-        $customStyling = $this->config->getAppValue($this->appName, 'theme_custom_styling', '');
-        $response = new DataDisplayResponse($customStyling, Http::STATUS_OK, ['Content-Type' => 'text/css']);
-		$response->cacheFor(86400);
-        return $response;
     }
 }
