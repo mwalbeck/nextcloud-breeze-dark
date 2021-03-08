@@ -10,6 +10,10 @@
 
 -   Only load custom styling when there actually is custom styling to get
 
+### Fixed
+
+-   [#222](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/222) Override announcement center icon globally
+
 ## 20.0.7 - 2021-02-27
 
 ### Added
