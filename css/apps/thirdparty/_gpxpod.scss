@@ -1,0 +1,27 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* GpxPod ------------------------------------------------------------------- */
+
+.app-gpxpod {
+    #stattable td.statnamecol {
+        background-color: unset;
+    }
+
+    .popuptable tr:nth-child(2n + 1) {
+        background-color: var(--color-background-darker);
+    }
+
+    .popuptable tr:hover {
+        background-color: var(--color-background-hover);
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.icon-gpxpod-black {
+    filter: invert(95%);
+}
