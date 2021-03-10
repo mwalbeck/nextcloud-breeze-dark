@@ -172,6 +172,7 @@ $icon-success: #27ae60;
     @include icon-color-theming("folder", "notes", $icon-normal, 1, false);
     @include icon-color-theming("recent", "notes", $icon-normal, 1, false);
     @include icon-color-theming("folder-empty", "notes", $icon-normal, 1, false);
+    @include icon-color-theming("notes-trans", "notes", $icon-normal, 1, false);
 
     @include icon-color-theming("phone", "contacts", $icon-normal, 1, false);
     @include icon-color-theming("address-book", "contacts", $icon-normal, 1, false);
