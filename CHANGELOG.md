@@ -5,6 +5,7 @@
 ### Add
 
 -   [#165](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/165) Add styling for GpxPod and invert gpxpod icon in files right click menu
+-   [#225](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/225) Notes: Add notes transparent icon
 
 ### Changed
 
