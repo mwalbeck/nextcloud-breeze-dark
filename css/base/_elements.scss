@@ -102,6 +102,6 @@ table tbody {
 
 /* Progress ------------------------------------------------------------------ */
 
-progress {
-    background-color: var(--color-loading-dark);
+progress:not(.vue) {
+    background-color: var(--color-border);
 }
