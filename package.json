@@ -12,7 +12,8 @@
     },
     "scripts": {
         "prettier": "prettier --check css/ js/",
-        "prettier-write": "prettier --write css/ js/",
-        "lint:scss": "stylelint css/"
+        "prettier:fix": "prettier --write css/ js/",
+        "stylelint": "stylelint css/",
+        "stylelint:fix": "stylelint css/ --fix"
     }
 }

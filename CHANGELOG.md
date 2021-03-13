@@ -6,6 +6,7 @@
 
 -   [#165](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/165) Add styling for GpxPod and invert gpxpod icon in files right click menu
 -   [#225](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/225) Notes: Add notes transparent icon
+-   [#229](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/229) Sign code in release pipeline and switch shell script out with Makefile
 
 ### Changed
 

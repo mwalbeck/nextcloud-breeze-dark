@@ -6,26 +6,46 @@ on:
 
 env:
   APP_NAME: breezedark
+  CERT_DIRECTORY: $HOME/.nextcloud/certificates
 
 jobs:
   release:
     runs-on: ubuntu-latest
     name: Release new version
     steps:
+      - name: Checkout NC server
+        uses: actions/checkout@v2
+        with:
+          repository: nextcloud/server
+          ref: "master"
+
+      - name: Checkout NC submodules
+        shell: bash
+        run: |
+          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+          git submodule sync --recursive
+          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
+
       - name: Checkout app
         uses: actions/checkout@v2
         with:
           path: ${{ env.APP_NAME }}
 
-      - name: Create tarball
-        run: cd ${{ env.APP_NAME }} && ./create_release.sh
+      - name: Run build
+        run: |
+          mkdir -p ${{ env.CERT_DIRECTORY }}
+          echo "${{ secrets.APP_PRIVATE_KEY }}" > ${{ env.CERT_DIRECTORY }}/${{ env.APP_NAME }}.key
+          echo "${{ secrets.APP_CERT }}" > ${{ env.CERT_DIRECTORY }}/${{ env.APP_NAME }}.crt
+          cd ${{ env.APP_NAME }}
+          make appstore
+          rm -rf ${{ env.CERT_DIRECTORY }}
 
       - name: Upload tarball to release
         uses: svenstaro/upload-release-action@v2
         id: attach_to_release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ env.APP_NAME }}/release/${{ env.APP_NAME }}.tar.gz
+          file: ${{ env.APP_NAME }}/build/${{ env.APP_NAME }}.tar.gz
           asset_name: ${{ env.APP_NAME }}.tar.gz
           tag: ${{ github.ref }}
           overwrite: true
