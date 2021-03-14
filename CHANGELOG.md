@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 21.0.3 - 2021-03-14
+
 ### Add
 
 -   [#165](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/165) Add styling for GpxPod and invert gpxpod icon in files right click menu
