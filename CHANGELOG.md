@@ -15,6 +15,7 @@
 ### Fixed
 
 -   [#222](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/222) Override announcement center icon globally
+-   [#224](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/224) Change background colour for quota progress bar to --color-border.
 
 ## 20.0.7 - 2021-02-27
 
