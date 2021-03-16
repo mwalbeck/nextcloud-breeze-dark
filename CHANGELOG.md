@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#231](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/231) Fix icon spam when creating new project in Cospend
+
 ## 20.0.8 - 2021-03-14
 
 ### Add
