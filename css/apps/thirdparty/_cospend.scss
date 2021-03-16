@@ -1,0 +1,14 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Cookbook ----------------------------------------------------------------- */
+
+.app-cospend .app-navigation {
+    .newItemContainer .icon-confirm,
+    .newItemContainer .icon-close {
+        background-image: unset;
+    }
+}
