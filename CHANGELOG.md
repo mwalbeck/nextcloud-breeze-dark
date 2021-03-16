@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#231](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/231) Fix icon spam when creating new project in Cospend
+-   [#233](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/233) Fix missing certificate in signature.json
 
 ## 20.0.8 - 2021-03-14
 
