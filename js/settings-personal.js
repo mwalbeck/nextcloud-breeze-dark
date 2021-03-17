@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
         })
             .done(function () {
                 $("label[for='breezedark-enabled']").append(
-                    " <span id='breezedark-enabled-msg' class='msg success'>Saved</span>"
+                    " <span id='breezedark-enabled-msg' class='msg success'>" + t('breezedark', 'Saved') + "</span>"
                 );
                 setTimeout(function () {
                     $("#breezedark-enabled-msg").remove();
@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
             })
             .fail(function () {
                 $("label[for='breezedark-enabled']").append(
-                    " <span id='breezedark-enabled-msg' class='msg error'>Error</span>"
+                    " <span id='breezedark-enabled-msg' class='msg error'>" + t('breezedark', 'Error') + "</span>"
                 );
                 setTimeout(function () {
                     $("#breezedark-enabled-msg").remove();
