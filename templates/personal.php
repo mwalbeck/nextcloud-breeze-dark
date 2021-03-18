@@ -35,7 +35,7 @@ script('breezedark', 'settings-personal');
             <div class="preview-image" style='background-image: url("<?php p($appWebPath); ?>/img/theme-breeze-dark.png");'></div>
             <div class="preview-description">
                 <h3><?php p($l->t("Breeze Dark theme")); ?></h3>
-                <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. After enabling, refresh the page for changes to take effect.")); ?></p>
+                <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
                 <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
                 <label for="breezedark-enabled"><?php p($l->t("Enable Breeze Dark theme")); ?></label>
             </div>
