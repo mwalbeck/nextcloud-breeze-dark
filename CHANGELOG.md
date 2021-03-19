@@ -11,6 +11,10 @@
 
 -   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Fix translation support. Thanks @Valdnet
 
+### Removed
+
+-   [#238](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/238) Styling for logreader as it was redundant.
+
 ## 21.0.5 - 2021-03-16
 
 -   Re-release of 21.0.4
