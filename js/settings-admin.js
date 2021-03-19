@@ -23,14 +23,18 @@
  */
 
 function postSuccess(selector, id) {
-    $(selector).after(" <span id='" + id + "' class='msg success'>Saved</span>");
+    $(selector).after(
+        " <span id='" + id + "' class='msg success'>" + t("breezedark", "Saved") + "</span>"
+    );
     setTimeout(function () {
         $("#" + id).remove();
     }, 3000);
 }
 
 function postError(selector, id) {
-    $(selector).after(" <span id='" + id + "' class='msg error'>Error</span>");
+    $(selector).after(
+        " <span id='" + id + "' class='msg error'>" + t("breezedark", "Error") + "</span>"
+    );
     setTimeout(function () {
         $("#" + id).remove();
     }, 3000);
