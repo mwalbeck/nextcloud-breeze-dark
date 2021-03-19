@@ -1,3 +1,5 @@
 -   Magnus Walbeck <mw@mwalbeck.org>
 -   georgeto <georgeto@mailbox.org>
 -   cyrosy <github@cyrosy.fr>
+-   Esteban Flores <esflores@microsoft.com>
+-   Valdnet <47037905+Valdnet@users.noreply.github.com>
