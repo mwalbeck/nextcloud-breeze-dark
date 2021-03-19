@@ -88,6 +88,7 @@ class Application extends App implements IBootstrap {
      */
     public function addStyling(IURLGenerator $urlGenerator, string $loginPage, string $cachebuster): void {
         Util::addStyle($this->appName, 'server');
+        Util::addScript($this->appName, 'breezedark');
 
         // If the styling for the login page is wanted, load the stylesheet.
         if ($loginPage) {
