@@ -11,7 +11,7 @@ OC.L10N.register(
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Questa impostazione ti permette di scegliere se la pagina di accesso debba rispettare il tema quando esso è attivo in modo predefinito.",
     "Theme the login page" : "Pagina di accesso con tema",
     "Custom Styling" : "Stile personalizzato",
-    "Insert custom styling here …" : "Inserisci lo stile personalizzato qui …",
+    "Insert custom styling here …" : "Inserisci lo stile personalizzato qui…",
     "Save" : "Salva",
     "A Breeze Dark theme for Nextcloud." : "Un tema Brezza scuro per Nextcloud.",
     "Breeze Dark theme" : "Tema Brezza scuro",

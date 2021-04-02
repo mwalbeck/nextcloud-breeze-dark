@@ -1,0 +1,21 @@
+OC.L10N.register(
+    "breezedark",
+    {
+    "Saved" : "Spremljeno",
+    "Error" : "Pogreška",
+    "Breeze Dark" : "Breeze Dark",
+    "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Tema Breeze Dark za Nextcloud, temeljena na temi KDE-a",
+    "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings > Theming > Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings > Accessibility > Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme." : "# Breeze Dark\nOvo je tamna tema za Nextcloud, temeljena na temi Breeze Dark koji je izradio KDE Project.\n\n## Uporaba\n\nNakon što instalirate temu trebate je omogućiti. Za to postoje dva načina: globalno i osobno.\n\n### Globalno\n\nGlobalni način postavlja temu kao zadanu za sve korisnike i neovlaštene posjete. Ako nije postavljena ova mogućnost, stavke kao što je stranica za prijavu i dijeljenje neće biti stilizirane. Također postoji mogućnost izuzimanja određene stranice na koju ne želite da se primjenjuje tema. Globalne mogućnosti možete pronaći ovdje:\n\n```\nAdministratorske postavke > Teme > Breeze Dark\n```\n\nImajte na umu da vam je potrebna aplikacija za teme Theming u Nextcloudu za pristupanje globalnim postavkama.\n\n### Osobno\n\nOsobni način omogućuje svakom korisniku da odabere željene postavke neovisno o tome kako je postavljena globalna postavka. Ako korisnik još nije postavio osobni način, primjenjivat će se globalni način. Osobne mogućnosti možete pronaći ovdje:\n\n```\nOsobne postavke > Pristupačnost > Breeze Dark\n`` `\n\nImajte na umu da je potrebno omogućiti aplikaciju Accessibility u Nextcloudu za pristupanje osobnoj postavci.\n\n### Prilagođeni stil\n\nU odjeljku Theming u administratorskim postavkama možete dodati vlastiti prilagođeni stil temi. Može se koristiti samo standardni CSS. Ovaj prilagođeni stil primijenit će se uvijek nakon omogućavanja teme i utječe samo na temu Breeze Dark.",
+    "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Tamna tema temeljena na temi Breeze Dark KDE Projecta. Osvježite stranicu za prikaz promjena.",
+    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Ova postavka omogućuje temu kao zadanu za sve neovlaštene korisnike i korisnike koji nisu odabrali vlastite postavke.",
+    "Enable Breeze Dark theme by default" : "Omogući temu Breeze Dark kao zadanu",
+    "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Ova postavka omogućuje vam da odaberete hoće li se tema primjenjivati na stranici za prijavu kada je omogućena kao zadana.",
+    "Theme the login page" : "Primijeni temu na stranici za prijavu",
+    "Custom Styling" : "Prilagođeni stil",
+    "Insert custom styling here …" : "Umetni prilagođeni stil ovdje…",
+    "Save" : "Spremi",
+    "A Breeze Dark theme for Nextcloud." : "Tema Breeze Dark za Nextcloud.",
+    "Breeze Dark theme" : "Tema Breeze Dark",
+    "Enable Breeze Dark theme" : "Omogući temu Breeze Dark"
+},
+"nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");
