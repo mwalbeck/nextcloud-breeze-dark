@@ -7,6 +7,7 @@
 -   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Polish translation. Thanks @Valdnet
 -   [#236](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/236) Transifex config
 -   [#228](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/228) Switch body class from theme--light to theme--dark and theme--breezedark when theme is active.
+-   A lot of new translations. Thanks to the Nextcloud Transifex community.
 
 ### Changed
 
