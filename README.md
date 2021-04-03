@@ -33,11 +33,11 @@ or you can clone this repo into your app folder and enable it in the app menu in
 
 ## Usage
 
-After you install the theme, you need to enable it. There a 2 options for this, a global and a personal one.
+After you install the theme, you need to enable it. There a two options for this, a global and a personal one.
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option stuff like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed while the rest is. You can find the global options here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:
 
 ```
 Admin settings > Theming > Breeze Dark
