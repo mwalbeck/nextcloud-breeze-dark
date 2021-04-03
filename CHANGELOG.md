@@ -8,6 +8,10 @@
 -   [#236](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/236) Transifex config
 -   [#228](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/228) Switch body class from theme--light to theme--dark and theme--breezedark when theme is active.
 
+### Changed
+
+-   Set opacity of --color-hover-blue to 0.3 instead of 0.4 as it was a bit too bright
+
 ### Fixed
 
 -   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Fix translation support. Thanks @Valdnet
