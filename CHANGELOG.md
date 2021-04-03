@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 21.0.6 - 2021-04-03
+
 ### Added
 
 -   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Polish translation. Thanks @Valdnet
