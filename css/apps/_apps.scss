@@ -6,10 +6,24 @@
 
 /* App navigation ----------------------------------------------------------- */
 
-#app-navigation:not(.vue) > ul > li {
-    > a,
-    > ul > li > a {
+#app-navigation:not(.vue) {
+    > ul > li > a,
+    > ul > li > ul > li > a {
         opacity: 1;
+    }
+
+    > ul > li > ul > li:hover > a,
+    > ul > li > ul > li:focus > a {
+        background-color: unset;
+    }
+
+    .collapsible::before {
+        background-color: unset;
+    }
+
+    .collapsible:hover > .svg {
+        background-color: var(--color-background-hover);
+        background-image: none !important;
     }
 }
 

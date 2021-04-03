@@ -21,6 +21,15 @@
     #app-settings-content a {
         color: var(--color-text-link);
     }
+
+    .collapsible:hover > .icon-folder {
+        background-color: var(--color-background-hover);
+        background-image: none !important;
+    }
+
+    > ul > .with-counter:hover > .app-navigation-entry-utils {
+        background-color: var(--color-background-hover);
+    }
 }
 
 .app-news #app-content {
