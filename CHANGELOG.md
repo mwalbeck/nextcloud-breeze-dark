@@ -2,6 +2,27 @@
 
 ## [Unreleased]
 
+## 20.0.10 - 2021-04-03
+
+### Added
+
+-   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Polish translation. Thanks @Valdnet
+-   [#228](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/228) Switch body class from theme--light to theme--dark and theme--breezedark when theme is active.
+-   A lot of new translations. Thanks to the Nextcloud Transifex community.
+
+### Changed
+
+-   Set opacity of --color-hover-blue to 0.3 instead of 0.4 as it was a bit too bright
+
+### Fixed
+
+-   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Fix translation support. Thanks @Valdnet
+-   [#241](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/241) Fix showing sharing icon under triangle in Files when hovering over Sharing in left app-navigation. Improve styling for app-navigation in News and Cospend.
+
+### Removed
+
+-   [#238](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/238) Styling for logreader as it was redundant.
+
 ## 20.0.9 - 2021-03-16
 
 ### Fixed
