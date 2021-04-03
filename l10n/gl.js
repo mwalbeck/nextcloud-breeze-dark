@@ -1,0 +1,21 @@
+OC.L10N.register(
+    "breezedark",
+    {
+    "Saved" : "Gardado",
+    "Error" : "Erro",
+    "Breeze Dark" : "Breeze Dark",
+    "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Tema Breeze Dark para Nextcloud, baseado no tema de KDE",
+    "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings > Theming > Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings > Accessibility > Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme." : "# Breeze Dark\nEste é un tema escuro de «breeze» para Nextcloud, baseado no tema Breeze Dark feito polo Proxecto KDE\n\n## Uso\n\nApós instalar o tema, cómpre activalo. Hai dúas opcións para iso, unha global e outra persoal.\n\n### Global\n\nA opción global activa o tema de xeito predeterminado para todos os usuarios e visitas non autenticadas. Sen esta opción, non se definiran elementos como as páxinas de inicio de sesión e compartir non terán estilo. Tamén hai unha opción para excluír a páxina de inicio de sesión do tema. Aquí pode atopar as opcións globais:\n\n```\nAxustes de administrador > Temas > Breeze Dark\n```\n\nTeña en conta que necesita a aplicación Temas activada en Nextcloud para acceder á configuración global.\n\n### Persoal\n\nA opción persoal permite a cada usuario estabelecer a súa propia preferencia independentemente de como configure a opción global. Se o usuario aínda non definiu unha opción, seguirá a opción global. Aquí pode atopar a opción persoal:\n\n```\nAxustes persoais > Accesibilidade > Breeze Dark\n```\n\nTeña en conta que necesita a aplicación Accesibilidade activada en Nextcloud para acceder aos axustes persoais.\n\n### Estilo personalizado\n\nNa sección de Temas nos axustes de administrador pode engadir o seu propio estilo personalizado ao tema. Só se pode usar o CSS estándar. Este estilo personalizado aplicarase sempre que o tema estea activado e só afecta ao tema Breeze Dark.",
+    "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Un tema escuro baseado no Breeze Dark do proxecto KDE. Actualice a páxina para que os cambios teñan efecto.",
+    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Este axuste activará o tema de xeito predeterminado para os usuarios non autenticados e os usuarios que non definiron ningunha preferencia.",
+    "Enable Breeze Dark theme by default" : "Activar o tema Breeze Dark de xeito predeterminado",
+    "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Este axuste permitiralle escoller se a páxina de acceso debería ser tematizada cando o tema está activado como predeterminado.",
+    "Theme the login page" : "Tema da páxina de acceso",
+    "Custom Styling" : "Estilo personalizado",
+    "Insert custom styling here …" : "Insira o estilo personalizado aquí…",
+    "Save" : "Gardar",
+    "A Breeze Dark theme for Nextcloud." : "Un tema Breeze Dark para Nextcloud.",
+    "Breeze Dark theme" : "Tema Breeze Dark",
+    "Enable Breeze Dark theme" : "Activar o tema Breeze Dark"
+},
+"nplurals=2; plural=(n != 1);");

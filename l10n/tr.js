@@ -1,0 +1,21 @@
+OC.L10N.register(
+    "breezedark",
+    {
+    "Saved" : "Kaydedildi",
+    "Error" : "Hata",
+    "Breeze Dark" : "Breeze Dark",
+    "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Nextcloud için KDE temasını temel alan Breeze Dark teması",
+    "# Breeze Dark\nThis is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made by the KDE Project.\n\n## Usage\n\nAfter you install the theme, you need to enable it. There a two options for this, a global and a personal one.\n\n### Global\n\nThe global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:\n\n```\nAdmin settings > Theming > Breeze Dark\n```\n\nPlease note that you need the Theming app enabled in Nextcloud to access the global settings.\n\n### Personal\n\nThe personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:\n\n```\nPersonal settings > Accessibility > Breeze Dark\n```\n\nPlease note that you need the Accessibility app enabled in Nextcloud to access the personal setting.\n\n### Custom styling\n\nUnder the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme." : "# Breeze Dark\nNextcloud için Breeze Dark teması. Nextcloud için KDE temasını temel alan Breeze Dark teması.\n\n## Kullanım\n\nTemayı kurduktan sonra etkinleştirmeniz gerekir. Genel ve kişisel olarak iki kurulum seçeneği var.\n\n### Genel\n\nGenel seçeneği, kimliğini doğrulamamış konuklar ve için temayı varsayılan olarak ayarlar. Bu seçenek etkinleştirilmeden, oturum açma ve paylaşım sayfaları gibi seçeneklere biçem uygulanmaz. Ayrıca oturum açma sayfasına temanın uygulanmaması için de bir seçenek vardır. Genel ayarları şurada bulabilirsiniz:\n\n```\nYönetici ayarları > Tema > Breeze Dark\n```\n\nGenel ayarlara erişebilmek için Tema uygulamasının etkinleştirilmesi gerektiğini unutmayın.\n\n### Kişisel\n\nKişisel seçeneği, genel ayarlardan bağımsız olarak her kullanıcının kendi ayarlarını yapabilmesini sağlar. Kullanıcı herhangi bir ayar yapmamışsa, genel ayarlar uygulanır. Kişisel ayarları şurada bulabilirsiniz:\n\n```\nKişisel ayarlar > Erişilebilirlik > Breeze Dark\n```\n\nKişisel ayarlara erişebilmek için Erişilebilirlik uygulamasının etkinleştirilmesi gerektiğini unutmayın.\n\n### Özel biçem\n\nYönetici bölümündeki Tema bölümünden özel tema biçemi ekleyebilirsiniz. Yalnız standart CSS biçemleri kullanılabilir. Bu özel biçem tema etkinleştirildiğinde uygulanır ve yalnız Breeze Dark temasını etkiler.",
+    "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "KDE projesi tarafından hazırlanmış Breeze Dark temel alınarak geliştirilmiş bir koyu tema. Lütfen değişikliklerin etkili olması için sayfayı yeniden yükleyin.",
+    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Bu seçenek, kimliğini doğrulamamış konuklar ve bir ayar yapmamış kullanıcılar için temayı varsayılan olarak ayarlar. ",
+    "Enable Breeze Dark theme by default" : "Breeze Dark temasını varsayılan olarak ayarla",
+    "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Bu seçenek, tema varsayılan olarak ayarlandığında, oturum açma sayfasının temaya uygun olmasının seçilebilmesini sağlar.",
+    "Theme the login page" : "Oturum açma sayfası temaya uygun olsun",
+    "Custom Styling" : "Özel Biçem",
+    "Insert custom styling here …" : "Özel biçemi buraya yazın …",
+    "Save" : "Kaydet",
+    "A Breeze Dark theme for Nextcloud." : "Nextcloud için Breeze Dark teması.",
+    "Breeze Dark theme" : "Breeze Dark teması",
+    "Enable Breeze Dark theme" : "Breeze Dark temasını etkinleştir"
+},
+"nplurals=2; plural=(n > 1);");
