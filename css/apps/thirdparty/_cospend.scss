@@ -11,4 +11,9 @@
     .newItemContainer .icon-close {
         background-image: unset !important;
     }
+
+    .selectedproject > a,
+    .selectedproject > div {
+        background-color: var(--color-primary);
+    }
 }

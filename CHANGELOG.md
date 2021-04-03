@@ -15,6 +15,7 @@
 ### Fixed
 
 -   [#235](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/235) Fix translation support. Thanks @Valdnet
+-   [#241](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/241) Fix showing sharing icon under triangle in Files when hovering over Sharing in left app-navigation. Improve styling for app-navigation in News and Cospend.
 
 ### Removed
 
