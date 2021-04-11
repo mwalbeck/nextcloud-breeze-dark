@@ -16,7 +16,7 @@
 
     &:hover,
     &.current-card {
-        border-color: var(--color-primary-element);
+        border-color: var(--color-primary-element) !important;
     }
 
     .due,
