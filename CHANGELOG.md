@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Talk: menu-people icon.
+
 ### Fixed
 
 -   Deck: Border colour change on hover or current card no longer present after body class .theme--dark was added.
