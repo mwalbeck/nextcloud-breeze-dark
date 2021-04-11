@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   Deck: Border colour change on hover or current card no longer present after body class .theme--dark was added.
+
 ## 20.0.10 - 2021-04-03
 
 ### Added
