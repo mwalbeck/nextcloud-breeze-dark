@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.11 - 2021-04-25
+
 ### Added
 
 -   Talk: menu-people icon.
