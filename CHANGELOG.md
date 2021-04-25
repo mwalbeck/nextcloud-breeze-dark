@@ -5,6 +5,7 @@
 ### Added
 
 -   Talk: menu-people icon.
+-   More translations from the Nextcloud Transifex community
 
 ### Fixed
 
