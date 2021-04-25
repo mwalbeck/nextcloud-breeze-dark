@@ -12,7 +12,7 @@ OC.L10N.register(
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Toto nastavení umožňuje zvolit zda má být přihlašovací stránka opatřena motivem vzhledu v případě, že je tento zapnutý jako výchozí.",
     "Theme the login page" : "Opatřit přihlašovací stránku motivem vzhledu",
     "Custom Styling" : "Uživatelsky určené opatření styly",
-    "Insert custom styling here …" : "Sem vložte své vlastní styly ...",
+    "Insert custom styling here …" : "Sem vložte své vlastní styly…",
     "Save" : "Uložit",
     "A Breeze Dark theme for Nextcloud." : "Motiv vzhledu Breeze Dark pro Nextcloud.",
     "Breeze Dark theme" : "Motiv vzhledu Breeze Dark",
