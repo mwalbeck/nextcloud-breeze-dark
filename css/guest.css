@@ -158,3 +158,32 @@
     background-color: inherit !important;
     border: unset !important;
 }
+
+/* SAML Login */
+#saml-select-user-back-end {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 260px;
+}
+
+#saml-select-user-back-end .login-option {
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
+    border-radius: 100px;
+    box-sizing: border-box;
+    height: 50px;
+    min-width: 260px;
+}
+
+#saml-select-user-back-end .login-option:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-element);
+}
+
+#saml-select-user-back-end .login-option a {
+    line-height: 50px;
+}
+
+#saml-select-user-back-end .login-option a:hover {
+    text-decoration: none;
+}
