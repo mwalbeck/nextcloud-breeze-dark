@@ -11,9 +11,9 @@
         "stylelint-prettier": "^1.2.0"
     },
     "scripts": {
-        "prettier": "prettier --check css/ js/",
-        "prettier:fix": "prettier --write css/ js/",
-        "stylelint": "stylelint css/",
-        "stylelint:fix": "stylelint css/ --fix"
+        "prettier": "prettier --check css js",
+        "prettier:fix": "prettier --write css js",
+        "stylelint": "stylelint css",
+        "stylelint:fix": "stylelint css --fix"
     }
 }
