@@ -36,3 +36,13 @@
         background-image: var(--icon-spreed-menu-people-f2f2f2) !important;
     }
 }
+
+// Handle situations where a custom colour is used in the theming app that has a bad contrast with white
+.app-talk .icon-start-call,
+.talk-modal .icon-start-call,
+#talk-panel .icon-start-call,
+#talk-sidebar .icon-start-call,
+#call-container .icon-start-call,
+.talkChatTab .icon-start-call {
+    background-image: url("/svg/core/actions/video?color=ffffff&v=1") !important;
+}
