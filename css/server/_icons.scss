@@ -446,7 +446,7 @@ div.select2-container a.select2-choice .select2-arrow b {
     background-image: var(--icon-mail-000) !important;
 }
 
-/* CSS tricks to change icon color ------------------------------------------ */
+/* CSS tricks to change icon color ------------------------------------------- */
 
 .icon-collapse {
     color: var(--color-icon) !important;
@@ -542,4 +542,16 @@ img.two-factor-provider-settings-icon,
 // by vue iconfont instead
 .avatardiv--with-menu .icon-more {
     background-image: none !important;
+}
+
+/* CSS to handle inverting icons when a Theming app colour that has a bad 
+   contrast with white is used ------------------------------------------------*/
+
+// Header appmenu icons
+#appmenu.inverted svg image {
+    filter: none;
+}
+
+.header-right .notifications-button img[src$="notifications-dark.svg"] {
+    filter: invert(1);
 }
