@@ -5,6 +5,9 @@
 ### Added
 
 -   Improve compatibility with the theming app when using a custom colour that has a better contrast with black than white.
+-   [#245](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/245) Add new link colour and set note preview to use the new link colour instead of colour primary-element.
+-   [#247](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/247) Add styling for SAML login buttons
+-   Contacts: Add eye and recent-actors icons
 
 ## 20.0.11 - 2021-04-25
 

@@ -180,6 +180,8 @@ $icon-success: #27ae60;
     @include icon-color-theming("qrcode", "contacts", $icon-normal, 1, false);
     @include icon-color-theming("language", "contacts", $icon-normal, 1, false);
     @include icon-color-theming("up", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("eye", "contacts", $icon-normal, 1, false);
+    @include icon-color-theming("recent-actors", "contacts", $icon-normal, 1, false);
 
     @include icon-color-theming("deck", "deck", $icon-normal, 1, false);
     @include icon-color-theming("archive", "deck", $icon-normal, 1, false);
