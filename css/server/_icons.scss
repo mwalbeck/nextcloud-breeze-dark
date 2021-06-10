@@ -560,10 +560,18 @@ img.two-factor-provider-settings-icon,
    contrast with white is used ------------------------------------------------*/
 
 // Header appmenu icons
-#appmenu.inverted svg image {
+body:not([data-dashboard-background]) #appmenu.inverted svg image {
     filter: none;
 }
 
 .header-right .notifications-button img[src$="notifications-dark.svg"] {
     filter: invert(1);
+}
+
+body.dashboard--inverted .header-right > div:not(#settings) > :first-child {
+    filter: invert(0) hue-rotate(180deg) !important;
+}
+
+body.dashboard--inverted.dashboard--dark .header-right > div:not(#settings) > :first-child {
+    filter: invert(1) hue-rotate(180deg) !important;
 }
