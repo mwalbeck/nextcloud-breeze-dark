@@ -54,6 +54,14 @@
     .sort-contacts .multiselect .multiselect__single {
         background-image: var(--icon-triangle-s-f2f2f2) !important;
     }
+
+    .icon-eye {
+        background-image: var(--icon-contacts-eye-f2f2f2) !important;
+    }
+
+    .icon-recent-actors {
+        background-image: var(--icon-contacts-recent-actors-f2f2f2) !important;
+    }
 }
 
 // In popup outside the .app-contacts div
