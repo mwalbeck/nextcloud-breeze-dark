@@ -22,9 +22,13 @@
 
 /* Icons -------------------------------------------------------------------- */
 
-// Used by other apps so set it globally
+// Used by other apps or just used globally, so it should be available globally
 .icon-talk {
     background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
+}
+
+.icon-clip-add-file {
+    background-image: var(--icon-spreed-clip-add-file-f2f2f2) !important;
 }
 
 .app-talk {
@@ -34,10 +38,6 @@
 
     .icon-reply {
         background-image: var(--icon-spreed-reply-f2f2f2) !important;
-    }
-
-    .icon-clip-add-file {
-        background-image: var(--icon-spreed-clip-add-file-f2f2f2) !important;
     }
 
     .icon-menu-people {
