@@ -10,6 +10,15 @@
 -   Contacts: Add eye and recent-actors icons
 -   Social sharing: Invert icons for the different social sharing apps
 
+### Fixed
+
+-   [#250](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/250) Talk: Fix double hover on files / images sent in chat.
+-   [#251](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/251) Talk: Fix dark attachment icon when joining talk conversation in file sidebar.
+
+### Removed
+
+-   Remove unused styling rule from Talk stylesheet
+
 ## 21.0.7 - 2021-04-25
 
 ### Added
