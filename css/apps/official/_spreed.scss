@@ -12,6 +12,14 @@
     }
 }
 
+.app-talk,
+.talkChatTab {
+    .file-preview:hover,
+    .file-preview:focus {
+        background-color: inherit !important;
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 // Used by other apps so set it globally
