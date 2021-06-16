@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 21.0.8 - 2021-06-16
+
 ### Added
 
 -   Improve compatibility with the theming app when using a custom colour that has a better contrast with black than white.
@@ -9,6 +11,7 @@
 -   [#247](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/247) Add styling for SAML login buttons
 -   Contacts: Add eye and recent-actors icons
 -   Social sharing: Invert icons for the different social sharing apps
+-   More translations improvements thanks to the Nextcloud Transifex community.
 
 ### Fixed
 
