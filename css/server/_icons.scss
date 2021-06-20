@@ -564,8 +564,13 @@ body:not([data-dashboard-background]) #appmenu.inverted svg image {
     filter: none;
 }
 
-.header-right .notifications-button img[src$="notifications-dark.svg"] {
+.header-right .notifications-button img[src$="notifications-dark.svg"],
+.header-right .notifications-button img[src$="notifications-new-dark.svg"] {
     filter: invert(1);
+}
+
+.dashboard--dark .header-right .notifications-button img[src$="notifications-new-dark.svg"] {
+    filter: invert(1) hue-rotate(180deg);
 }
 
 body.dashboard--inverted .header-right > div:not(#settings) > :first-child {

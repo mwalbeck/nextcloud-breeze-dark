@@ -15,6 +15,7 @@
 
 -   [#250](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/250) Talk: Fix double hover on files / images sent in chat.
 -   [#251](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/251) Talk: Fix dark attachment icon when joining talk conversation in file sidebar.
+-   Dashboard: Fix inversion of notifications icon when there are new notifications
 
 ### Removed
 
