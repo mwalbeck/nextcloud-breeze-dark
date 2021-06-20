@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## Fixed
+
+-   Dashboard: Fix inversion of notifications icon when there are new notifications
+
 ## 21.0.8 - 2021-06-16
 
 ### Added
