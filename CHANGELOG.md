@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.12 - 2021-06-20
+
 ### Added
 
 -   Improve compatibility with the theming app when using a custom colour that has a better contrast with black than white.
