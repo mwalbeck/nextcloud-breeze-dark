@@ -9,6 +9,7 @@
 -   [#247](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/247) Add styling for SAML login buttons
 -   Contacts: Add eye and recent-actors icons
 -   Social sharing: Invert icons for the different social sharing apps
+-   More translations improvements thanks to the Nextcloud Transifex community.
 
 ### Fixed
 

@@ -11,7 +11,7 @@ OC.L10N.register(
     "Enable Breeze Dark theme by default" : "Breeze Dark temasını varsayılan olarak ayarla",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Bu seçenek, tema varsayılan olarak ayarlandığında, oturum açma sayfasının temaya uygun olmasının seçilebilmesini sağlar.",
     "Theme the login page" : "Oturum açma sayfası temaya uygun olsun",
-    "Custom Styling" : "Özel Biçem",
+    "Custom Styling" : "Özel biçem",
     "Insert custom styling here …" : "Özel biçemi buraya yazın …",
     "Save" : "Kaydet",
     "A Breeze Dark theme for Nextcloud." : "Nextcloud için Breeze Dark teması.",
