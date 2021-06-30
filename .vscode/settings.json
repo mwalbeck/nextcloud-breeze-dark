@@ -1,3 +1,11 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+        "ko-fi",
+        "liberapay",
+        "nextcloud-breeze-dark",
+        "occ",
+        "sass",
+        "xmr"
+    ]
 }
