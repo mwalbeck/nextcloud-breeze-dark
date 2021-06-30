@@ -5,6 +5,7 @@
 ## Fixed
 
 -   Dashboard: Fix inversion of notifications icon when there are new notifications
+-   Use primary colours for the "Start using Nextcloud" button in the first run wizard
 
 ## 20.0.12 - 2021-06-20
 

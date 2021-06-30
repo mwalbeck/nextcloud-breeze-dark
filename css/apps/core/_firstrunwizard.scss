@@ -1,0 +1,13 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* First Run Wizard --------------------------------------------------------- */
+
+#firstrunwizard button.primary {
+    background-color: var(--color-primary-element) !important;
+    border-color: var(--color-primary-element) !important;
+    color: var(--color-primary-text) !important;
+}
