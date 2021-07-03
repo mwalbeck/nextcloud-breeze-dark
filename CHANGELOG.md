@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 20.0.13 - 2021-07-03
+
 ## Added
 
 -   New translations from the Nextcloud Transifex community
