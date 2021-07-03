@@ -4,19 +4,20 @@ This is a Breeze Dark Theme for [Nextcloud](https://nextcloud.com) based on the 
 
 ![screenshot of theme](screenshot.png)
 
-If you have any questions, problems or any thing else you're welcome to come hangout in the dedicated matrix room: #nextcloud-breeze-dark:mwalbeck.org
+If you have any questions, problems or anything else you're welcome to come hangout in the dedicated matrix room: #nextcloud-breeze-dark:mwalbeck.org
 
 ## Supported versions
 
 The currently supported and maintained Nextcloud releases are:
 
+-   Nextcloud 22
 -   Nextcloud 21
--   Nextcloud 20
 
-I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transistions, but for various reason I might decide to drop support for older releases early.
+I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transitions, but for various reason I might decide to drop support for older releases early.
 
 Previous unmaintained releases:
 
+-   Nextcloud 20
 -   Nextcloud 19
 -   Nextcloud 18
 -   Nextcloud 17
@@ -30,11 +31,11 @@ The first number is the Nextcloud version. The second number is the Nextcloud ma
 
 It's available in the [Nextcloud app store](https://apps.nextcloud.com/apps/breezedark), just search for Breeze Dark, or look under customizations.
 
-or you can clone this repo into your app folder and enable it in the app menu in Nextcloud.
+Or you can clone this repo into your app folder and enable it in the app menu in Nextcloud.
 
 ## Usage
 
-After you install the theme, you need to enable it. There a two options for this, a global and a personal one.
+After you install the theme, you need to enable it. There are two options for this, a global and a personal one.
 
 ### Global
 
@@ -68,7 +69,7 @@ This is caused by the way this theme accesses custom login images. There are 2 w
 
 #### First workaround (recommended)
 
-Switch to using pretty urls. Pretty urls are urls where the index.php isn't present. For apache you can follow [these steps](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html#pretty-urls) from the documentation and for Nginx I recommend having a look at the [example config](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html) from the documentation
+Switch to using pretty URLs. Pretty URLs are URLs where the index.php isn't present. For Apache, you can follow [these steps](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html#pretty-urls) from the documentation and for Nginx I recommend having a look at the [example config](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html) from the documentation
 
 #### Second workaround
 
@@ -84,7 +85,7 @@ body#body-login {
 
 ### Issues
 
-If you find an issue with the theme I would grealy appreciate it if you opened a bug report, so it can be fixed.
+If you find an issue with the theme I would greatly appreciate it if you opened a bug report, so it can be fixed.
 
 You're also very welcome to open a styling request, if there is an app you would like to see supported by this theme.
 
@@ -92,9 +93,9 @@ A full list of supported apps can be found on the [wiki](https://github.com/mwal
 
 ### Pull requests
 
-If you would like to contribute to the theme, all you need is a working Nextcloud setup and a text editor. Nextcloud is going to handle all the sass compilation on it's own. When you have you have Nextcloud setup, you can simply clone this repo into the app folder.
+If you would like to contribute to the theme, all you need is a working Nextcloud setup and a text editor. Nextcloud is going to handle all the Sass compilation on its own. When you have Nextcloud setup, you can simply clone this repo into the app folder.
 
-As nextcloud caches all sass, your changes won't show up immediately. To have your changes show up an easy trick is to disable the theme, refresh the page and then enable it again. This isn't perfect, but works most of time. If your changes don't show up, you can either wait a couple of minutes and then try again, or you can try running an **occ maintenance:repair**.
+As Nextcloud caches all sass, your changes won't show up immediately. To have your changes show up an easy trick is to disable the theme, refresh the page and then enable it again. This isn't perfect, but works most of the time. If your changes don't show up, you can either wait a couple of minutes and then try again, or you can try running an **occ maintenance:repair**.
 
 You're always welcome to open an issue and talk about the changes, you would like to make, before starting.
 

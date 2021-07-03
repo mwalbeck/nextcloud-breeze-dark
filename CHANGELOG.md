@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 22.0.0 - 2021-07-03
+
+## Added
+
+-   Add support for Nextcloud 22
+
 ## 21.0.9 - 2021-07-03
 
 ## Added
