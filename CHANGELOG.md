@@ -4,6 +4,10 @@
 
 ## 21.0.9 - 2021-07-03
 
+## Added
+
+-   New translations from the Nextcloud Transifex community
+
 ## Fixed
 
 -   Dashboard: Fix inversion of notifications icon when there are new notifications
