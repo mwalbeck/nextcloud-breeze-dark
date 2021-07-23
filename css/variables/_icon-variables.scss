@@ -290,6 +290,11 @@ $icon-success: #27ae60;
     @include icon-color-theming("options", "analytics", $icon-normal, 1, false);
     @include icon-color-theming("column", "analytics", $icon-normal, 1, false);
 
+    @include icon-color-theming("app", "collectives", $icon-normal, 1, false);
+    @include icon-color-theming("pages", "collectives", $icon-normal, 1, false);
+    @include icon-color-theming("access-time", "collectives", $icon-normal, 1, false);
+    @include icon-color-theming("sort-by-alpha", "collectives", $icon-normal, 1, false);
+
     // This rule being here fixes an issue with some styling imported right after this file with get removed during NC's sass compilation
     color: var(--color-main-text);
 }

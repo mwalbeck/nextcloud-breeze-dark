@@ -1,0 +1,45 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Collectives -------------------------------------------------------------- */
+
+.app-collectives {
+    .app-navigation-caption__title {
+        opacity: 1 !important;
+    }
+
+    #titleform input[type="text"] {
+        background-color: var(--color-main-background);
+        opacity: 1;
+
+        &:focus,
+        &:focus-within {
+            background-color: var(--color-background-darker);
+        }
+    }
+}
+
+.popover .action {
+    margin-top: 0;
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.icon-collectives {
+    background-image: var(--icon-collectives-app-f2f2f2) !important;
+}
+
+.icon-access-time {
+    background-image: var(--icon-collectives-access-time-f2f2f2) !important;
+}
+
+.icon-sort-by-alpha {
+    background-image: var(--icon-collectives-sort-by-alpha-f2f2f2) !important;
+}
+
+.icon-pages {
+    filter: invert(95%);
+}
