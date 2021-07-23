@@ -5,6 +5,7 @@
 ## Fixed
 
 -   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
+-   [#258](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/258) Deck: Remove opacity from links in description in preview mode
 
 ## 22.0.0 - 2021-07-03
 
