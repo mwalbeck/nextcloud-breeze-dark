@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## Added
+
+-   [#261](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/261) Add support for Collectives
+
 ## Fixed
 
 -   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
