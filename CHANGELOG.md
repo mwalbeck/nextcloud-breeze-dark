@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## Fixed
+
+-   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
+
 ## 21.0.9 - 2021-07-03
 
 ## Added
