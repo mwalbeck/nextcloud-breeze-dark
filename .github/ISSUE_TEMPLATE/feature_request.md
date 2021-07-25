@@ -7,7 +7,7 @@ assignees: ""
 ---
 
 **What feature would you like to see added to the theme?**:
-The name of the app and a link to the Nextcloud app store
+
 
 **Your setup (please complete the following information):**
 
