@@ -5,11 +5,16 @@
 ## Added
 
 -   [#261](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/261) Add support for Collectives
+-   [#262](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/262) Add support for new Circles
 
 ## Fixed
 
 -   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
 -   [#258](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/258) Deck: Remove opacity from links in description in preview mode
+
+## Removed
+
+-   [#262](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/262) Removed styling for old Circles app
 
 ## 22.0.0 - 2021-07-03
 

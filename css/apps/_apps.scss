@@ -27,6 +27,12 @@
     }
 }
 
+.app-navigation {
+    .app-navigation-caption__title {
+        opacity: 1 !important;
+    }
+}
+
 /* App Sidebar -------------------------------------------------------------- */
 
 .app-sidebar-tabs__tab a {
