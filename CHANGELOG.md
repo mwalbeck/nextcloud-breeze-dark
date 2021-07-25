@@ -15,6 +15,7 @@
 ## Removed
 
 -   [#262](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/262) Removed styling for old Circles app
+-   Removed styling for old Dashboard
 
 ## 22.0.0 - 2021-07-03
 

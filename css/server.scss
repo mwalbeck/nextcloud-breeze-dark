@@ -41,6 +41,7 @@
 @import "apps/core/firstrunwizard";
 @import "apps/core/notifications";
 @import "apps/core/photos";
+@import "apps/core/text";
 // Official
 @import "apps/official/announcement-center";
 @import "apps/official/calendar";
@@ -59,7 +60,6 @@
 @import "apps/official/social";
 @import "apps/official/spreed";
 @import "apps/official/tasks";
-@import "apps/official/text";
 // Third party
 @import "apps/thirdparty/analytics";
 @import "apps/thirdparty/apporder";
@@ -69,7 +69,6 @@
 @import "apps/thirdparty/collectives";
 @import "apps/thirdparty/cookbook";
 @import "apps/thirdparty/cospend";
-@import "apps/thirdparty/dashboard";
 @import "apps/thirdparty/flow-upload";
 @import "apps/thirdparty/fulltextsearch";
 @import "apps/thirdparty/gpxmotion";
