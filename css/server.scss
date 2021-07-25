@@ -41,9 +41,10 @@
 @import "apps/core/firstrunwizard";
 @import "apps/core/notifications";
 @import "apps/core/photos";
-// // Official
+// Official
 @import "apps/official/announcement-center";
 @import "apps/official/calendar";
+@import "apps/official/circles";
 @import "apps/official/contacts";
 @import "apps/official/deck";
 @import "apps/official/external-sites";
@@ -59,13 +60,12 @@
 @import "apps/official/spreed";
 @import "apps/official/tasks";
 @import "apps/official/text";
-// // Third party
+// Third party
 @import "apps/thirdparty/analytics";
 @import "apps/thirdparty/apporder";
 @import "apps/thirdparty/audio-player";
 @import "apps/thirdparty/bbb";
 @import "apps/thirdparty/bookmarks";
-@import "apps/thirdparty/circles";
 @import "apps/thirdparty/collectives";
 @import "apps/thirdparty/cookbook";
 @import "apps/thirdparty/cospend";
