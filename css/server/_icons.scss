@@ -476,6 +476,13 @@ div.select2-container a.select2-choice .select2-arrow b {
         filter: invert(5%);
     }
 
+    #apps-list .section .app-image .app-icon[*|href$="circles.svg"],
+    #app-sidebar #app-details-view image.app-icon[*|href$="circles.svg"],
+    #apps-list .section .app-image .app-icon[*|href$="contacts.svg"],
+    #app-sidebar #app-details-view image.app-icon[*|href$="contacts.svg"] {
+        filter: invert(1);
+    }
+
     // Support submenu -> system information
     .system-information div img[src$="/apps/support/img/system-info.svg"] {
         filter: invert(95%);
