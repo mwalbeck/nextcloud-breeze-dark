@@ -11,6 +11,7 @@
 -   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
 -   [#258](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/258) Deck: Remove opacity from links in description in preview mode
 -   [#260](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/260) Mail: Improve general styling
+-   Contacts and Circles app icon being black in apps settings.
 
 ## Removed
 
