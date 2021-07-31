@@ -10,18 +10,44 @@
     border-bottom-color: var(--color-primary-element);
 }
 
-.app-mail .app-content {
-    .app-content-list {
-        .app-content-list-item-line-two,
-        .app-content-list-item-details {
-            color: var(--color-text-maxcontrast);
-            opacity: 1;
-        }
+.app-mail .app-content-list .list-item__wrapper.active {
+    .line-one__title {
+        color: var(--color-primary-text);
     }
 
-    #mail-content {
-        border-radius: 3px;
+    .line-one__details,
+    .line-two__subtitle,
+    .line-two__counter {
+        color: var(--color-main-text);
     }
+}
+
+.app-mail #mail-content {
+    border-radius: 3px;
+
+    #mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title {
+        background-color: var(--color-main-background) !important;
+    }
+
+    #mail-message-has-blocked-content
+        .action-item--open
+        button.action-item__menutoggle--with-title {
+        background-color: var(--color-primary) !important;
+        border-color: var(--color-primary-element) !important;
+    }
+}
+
+.app-mail .attachment-popover button.action-item--single.icon-attachment {
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--color-background-hover) !important;
+    }
+}
+
+.app-mail .attachment-popover.open button.action-item--single.icon-attachment {
+    background-color: var(--color-primary) !important;
+    opacity: 1;
 }
 
 .mail-message-attachments .attachments .attachment {
@@ -41,6 +67,10 @@
     .mail-attached-image:hover {
         opacity: 1;
     }
+}
+
+.popover.open button.action-button {
+    opacity: 1;
 }
 
 /* Icons -------------------------------------------------------------------- */
@@ -91,4 +121,9 @@
 .popover .icon-important,
 #mailbox-priority .icon-important {
     background-image: var(--icon-mail-important-f2f2f2) !important;
+}
+
+#mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title,
+.popover.open .action-button .action-button__icon.icon-toggle {
+    background-image: var(--icon-toggle-f2f2f2) !important;
 }
