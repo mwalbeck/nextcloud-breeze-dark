@@ -14,6 +14,7 @@
 -   Contacts and Circles app icon being black in apps settings.
 -   Invert dark OnlyOffice icons
 -   Files: Remove opacity from summary section at the bottom
+-   Improved translations from the Nextcloud Transifex community
 
 ## Removed
 
