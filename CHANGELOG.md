@@ -2,6 +2,28 @@
 
 ## [Unreleased]
 
+## 22.0.1 - 2021-08-05
+
+## Added
+
+-   [#261](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/261) Add support for Collectives
+-   [#262](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/262) Add support for new Circles
+
+## Fixed
+
+-   [#259](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/259) Text: Highlighting of inline code blocks and links.
+-   [#258](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/258) Deck: Remove opacity from links in description in preview mode
+-   [#260](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/260) Mail: Improve general styling
+-   Contacts and Circles app icon being black in apps settings.
+-   Invert dark OnlyOffice icons
+-   Files: Remove opacity from summary section at the bottom
+-   Improved translations from the Nextcloud Transifex community
+
+## Removed
+
+-   [#262](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/262) Removed styling for old Circles app
+-   Removed styling for old Dashboard
+
 ## 22.0.0 - 2021-07-03
 
 ## Added

@@ -14,8 +14,21 @@
     }
 }
 
-#editor-wrapper .ProseMirror pre {
+#editor-wrapper .ProseMirror pre,
+#editor-wrapper .ProseMirror code,
+#text-wrapper .ProseMirror pre,
+#text-wrapper .ProseMirror code {
     background-color: var(--color-background-darker) !important;
+}
+
+#editor-wrapper .ProseMirror a,
+#text-wrapper .ProseMirror a,
+#editor-wrapper:not(.show-color-annotations) .ProseMirror a {
+    color: var(--color-text-link) !important;
+
+    span.author-annotation {
+        color: var(--color-text-link) !important;
+    }
 }
 
 /* Icons -------------------------------------------------------------------- */

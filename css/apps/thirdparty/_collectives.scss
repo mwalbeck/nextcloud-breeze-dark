@@ -1,0 +1,95 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Collectives -------------------------------------------------------------- */
+
+.app-collectives {
+    #titleform input[type="text"] {
+        background-color: var(--color-main-background);
+        opacity: 1;
+
+        &:focus,
+        &:focus-within {
+            background-color: var(--color-background-darker);
+        }
+    }
+
+    .app-content-list-item .update {
+        color: var(--color-text-maxcontrast);
+        opacity: 1;
+    }
+}
+
+.app-collectives .app-sidebar #versions {
+    .openVersion,
+    .size {
+        color: var(--color-text-maxcontrast);
+        opacity: 1;
+    }
+
+    li:hover,
+    li:focus {
+        background-color: var(--color-background-hover);
+    }
+
+    li:hover,
+    li:focus {
+        .openVersion,
+        .size {
+            color: var(--color-main-text);
+        }
+    }
+
+    li.active,
+    li:active {
+        background-color: var(--color-primary);
+
+        .icon-container .icon {
+            filter: brightness(161.5%);
+        }
+    }
+
+    li.active,
+    li:active {
+        .openVersion,
+        .size {
+            color: var(--color-primary-text);
+        }
+    }
+}
+
+.popover .action {
+    margin-top: 0;
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.icon-collectives {
+    background-image: var(--icon-collectives-app-f2f2f2) !important;
+}
+
+.icon-access-time {
+    background-image: var(--icon-collectives-access-time-f2f2f2) !important;
+}
+
+.icon-sort-by-alpha {
+    background-image: var(--icon-collectives-sort-by-alpha-f2f2f2) !important;
+}
+
+.icon-pages-template,
+.icon-pages-template-grey,
+.icon-pages-template-dark-grey {
+    background-image: var(--icon-collectives-pages-template-000) !important;
+    filter: invert(95%);
+}
+
+.icon-pages-template-dark-grey {
+    opacity: 1 !important;
+}
+
+.icon-pages {
+    filter: invert(95%);
+}

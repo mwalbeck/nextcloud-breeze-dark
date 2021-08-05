@@ -458,6 +458,13 @@ div.select2-container a.select2-choice .select2-arrow b {
     background-image: var(--icon-mail-000) !important;
 }
 
+// OnlyOffice
+.icon-onlyoffice-open,
+.icon-onlyoffice-convert,
+.icon-onlyoffice-download {
+    filter: invert(95%);
+}
+
 /* CSS tricks to change icon color ------------------------------------------- */
 
 .icon-collapse {
@@ -474,6 +481,13 @@ div.select2-container a.select2-choice .select2-arrow b {
     #apps-list-search .section .app-image .app-icon,
     #app-sidebar #app-details-view image.app-icon {
         filter: invert(5%);
+    }
+
+    #apps-list .section .app-image .app-icon[*|href$="circles.svg"],
+    #app-sidebar #app-details-view image.app-icon[*|href$="circles.svg"],
+    #apps-list .section .app-image .app-icon[*|href$="contacts.svg"],
+    #app-sidebar #app-details-view image.app-icon[*|href$="contacts.svg"] {
+        filter: invert(1);
     }
 
     // Support submenu -> system information

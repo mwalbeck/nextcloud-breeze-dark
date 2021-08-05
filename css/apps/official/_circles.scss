@@ -1,0 +1,30 @@
+/***
+ * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Circles ------------------------------------------------------------------ */
+
+.app-contacts {
+    .checkbox-radio-switch__icon {
+        color: var(--color-primary-text) !important;
+
+        &.checkbox-marked-icon {
+            color: var(--color-primary-element) !important;
+        }
+    }
+
+    .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) {
+        .checkbox-radio-switch__input:hover + .checkbox-radio-switch__label,
+        .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label {
+            background-color: var(--color-background-hover) !important;
+        }
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.icon-circles {
+    background-image: var(--icon-circles-circles-f2f2f2) !important;
+}
