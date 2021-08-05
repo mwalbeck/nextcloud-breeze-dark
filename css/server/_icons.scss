@@ -458,6 +458,13 @@ div.select2-container a.select2-choice .select2-arrow b {
     background-image: var(--icon-mail-000) !important;
 }
 
+// OnlyOffice
+.icon-onlyoffice-open,
+.icon-onlyoffice-convert,
+.icon-onlyoffice-download {
+    filter: invert(95%);
+}
+
 /* CSS tricks to change icon color ------------------------------------------- */
 
 .icon-collapse {
