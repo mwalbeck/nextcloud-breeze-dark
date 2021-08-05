@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 22.0.1 - 2021-08-05
+
 ## Added
 
 -   [#261](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/261) Add support for Collectives
