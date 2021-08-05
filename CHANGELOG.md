@@ -13,6 +13,7 @@
 -   [#260](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/260) Mail: Improve general styling
 -   Contacts and Circles app icon being black in apps settings.
 -   Invert dark OnlyOffice icons
+-   Files: Remove opacity from summary section at the bottom
 
 ## Removed
 
