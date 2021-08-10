@@ -1,4 +1,4 @@
-build
-node_modules
-translationfiles
-translationtool.phar
+/build
+/node_modules
+/vendor
+/.php_cs.cache
