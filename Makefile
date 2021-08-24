@@ -31,19 +31,24 @@ appstore:
 	rsync -a \
 	--exclude=".git" \
 	--exclude=".github" \
+	--exclude=".tx" \
 	--exclude=".vscode" \
-	--exclude="node_modules" \
 	--exclude="build" \
+	--exclude="node_modules" \
+	--exclude="vendor" \
 	--exclude=".gitignore" \
+	--exclude=".php_cs.cache" \
+	--exclude=".php_cs.dist" \
 	--exclude=".prettierignore" \
 	--exclude=".prettierrc" \
 	--exclude=".stylelintignore" \
 	--exclude=".stylelintrc.json" \
+	--exclude="composer.json" \
+	--exclude="composer.lock" \
 	--exclude="Makefile" \
 	--exclude="package-lock.json" \
 	--exclude="package.json" \
 	--exclude="screenshot.png" \
-	--exclude="translationtool.phar" \
 	../$(app_name)/ $(sign_directory)/$(app_name)
 	@if [ -f $(cert_directory)/$(app_name).key ]; then \
 		echo "Signing app files…"; \
