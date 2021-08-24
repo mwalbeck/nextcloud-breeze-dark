@@ -25,6 +25,7 @@ input[type="submit"] {
     &.primary:focus,
     &.primary:active {
         background-color: var(--color-primary) !important;
+        border-color: var(--color-primary-element) !important;
     }
 }
 

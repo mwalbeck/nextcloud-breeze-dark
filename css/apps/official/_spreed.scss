@@ -14,6 +14,14 @@
     }
 }
 
+.app-talk .app-settings #settings-section_Dangerzone button {
+    border: 1px solid var(--color-border);
+
+    &:hover {
+        border: 1px solid var(--color-primary-element);
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 // Used by other apps or just used globally, so it should be available globally

@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#268](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/268) Fix missing border on Leave conversation button in Talk room settings and wrong border colour on Delete conversation button when active.
+
 ## 22.0.1 - 2021-08-05
 
 ## Added
