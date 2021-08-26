@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Add support for TimeManager
+
 ## 21.0.10 - 2021-08-05
 
 ## Added
