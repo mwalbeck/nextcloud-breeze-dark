@@ -1,0 +1,55 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck (mw@mwalbeck.org)
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* TimeManager -------------------------------------------------------------- */
+
+.app-timemanager {
+    --border: 1px solid var(--color-border);
+    --borderHoverColor: var(--color-primary-element);
+    --borderFocusColor: var(--color-primary-element);
+    --itemHoverBG: var(--color-background-hover);
+    --itemIsActiveBG: var(--color-primary);
+    --inputColor: var(--color-main-text);
+    --listEmptyColor: var(--color-text-maxcontrast);
+    --multiItemBG: var(--color-background-darker);
+    --multiItemActiveBG: var(--color-background-hover);
+    --itemFirstBorderRadius: 0;
+
+    .tm_summary {
+        background-color: var(--color-main-background);
+    }
+
+    .listContainer {
+        border: 1px solid var(--color-border);
+    }
+
+    .selectContainer input:not([type="range"]):not([type="button"]):not([type="submit"]):active {
+        background-color: transparent;
+    }
+
+    .tm_item-date {
+        font-weight: inherit;
+    }
+
+    .tm_item-row:hover {
+        background-color: var(--color-background-hover);
+    }
+
+    .tm_item-row a:hover {
+        background-color: transparent;
+    }
+
+    .tm_item-row a:active,
+    .tm_item-row a:focus {
+        background-color: var(--color-primary);
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-timemanager #app-navigation ul li img {
+    filter: invert(95%);
+}
