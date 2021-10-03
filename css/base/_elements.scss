@@ -62,6 +62,12 @@ textarea:not(:disabled) {
     }
 }
 
+input[type="text"] + .icon-confirm,
+input[type="password"] + .icon-confirm,
+input[type="email"] + .icon-confirm {
+    background-color: var(--color-background-darker) !important;
+}
+
 /* Action items -------------------------------------------------------------- */
 
 .action-input .action-input__label,
