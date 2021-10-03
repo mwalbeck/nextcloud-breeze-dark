@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 22.0.2 - 2021-10-03
+
 ### Added
 
 -   Add support for TimeManager
