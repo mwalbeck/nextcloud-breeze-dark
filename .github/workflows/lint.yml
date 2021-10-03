@@ -15,4 +15,4 @@ jobs:
       - name: Run stylelint
         continue-on-error: true
         if: ${{ always() }}
-        run: npm run lint:scss
+        run: npm run stylelint

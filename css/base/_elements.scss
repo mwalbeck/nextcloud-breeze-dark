@@ -25,6 +25,7 @@ input[type="submit"] {
     &.primary:focus,
     &.primary:active {
         background-color: var(--color-primary) !important;
+        border-color: var(--color-primary-element) !important;
     }
 }
 
@@ -59,6 +60,12 @@ textarea:not(:disabled) {
     &.multiselect--active .multiselect__input {
         background-color: var(--color-background-darker) !important;
     }
+}
+
+input[type="text"] + .icon-confirm,
+input[type="password"] + .icon-confirm,
+input[type="email"] + .icon-confirm {
+    background-color: var(--color-background-darker) !important;
 }
 
 /* Action items -------------------------------------------------------------- */

@@ -34,7 +34,7 @@
 @import "server/server";
 @import "apps/apps";
 @import "server/icons";
-// Core
+// Core Apps
 @import "apps/core/activity";
 @import "apps/core/dashboard";
 @import "apps/core/files";
@@ -42,7 +42,7 @@
 @import "apps/core/notifications";
 @import "apps/core/photos";
 @import "apps/core/text";
-// Official
+// Official Apps
 @import "apps/official/announcement-center";
 @import "apps/official/calendar";
 @import "apps/official/circles";
@@ -60,7 +60,7 @@
 @import "apps/official/social";
 @import "apps/official/spreed";
 @import "apps/official/tasks";
-// Third party
+// Third party apps
 @import "apps/thirdparty/analytics";
 @import "apps/thirdparty/apporder";
 @import "apps/thirdparty/audio-player";
@@ -86,5 +86,6 @@
 @import "apps/thirdparty/quicknotes";
 @import "apps/thirdparty/radio";
 @import "apps/thirdparty/terms-of-service";
+@import "apps/thirdparty/timemanager";
 @import "apps/thirdparty/user-account-deletion";
 @import "apps/thirdparty/weather";
