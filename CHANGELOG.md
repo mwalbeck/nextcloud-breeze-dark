@@ -6,6 +6,12 @@
 
 -   Add support for TimeManager
 
+### Fixed
+
+-   Make confirm button in app sidebar comment field more visible.
+-   Make background colour of confirm button in text input have same background colour as the text input.
+-   Add border to "Add link | Link file" hover box that appears in text, also fix the styling for the text input when adding a link.
+
 ## 21.0.10 - 2021-08-05
 
 ## Added

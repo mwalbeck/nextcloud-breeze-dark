@@ -31,6 +31,17 @@
     }
 }
 
+#editor-wrapper .menububble {
+    border: 1px solid var(--color-border);
+
+    .menububble__form {
+        .menububble__input,
+        .menububble__button {
+            height: 44px;
+        }
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .icon-undo {
