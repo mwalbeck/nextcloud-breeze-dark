@@ -62,6 +62,14 @@
     box-shadow: none !important;
 }
 
+#tab-comments .comment-form form input[type="submit"] {
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 /* App Store ---------------------------------------------------------------- */
 
 .app-settings #app-sidebar-vue .app-sidebar-header__figure {

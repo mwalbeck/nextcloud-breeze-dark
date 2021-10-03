@@ -9,6 +9,9 @@
 ### Fixed
 
 -   [#268](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/268) Fix missing border on Leave conversation button in Talk room settings and wrong border colour on Delete conversation button when active.
+-   Make confirm button in app sidebar comment field more visible.
+-   Make background colour of confirm button in text input have same background colour as the text input.
+-   Add border to "Add link | Link file" hover box that appears in text, also fix the styling for the text input when adding a link.
 
 ## 22.0.1 - 2021-08-05
 
