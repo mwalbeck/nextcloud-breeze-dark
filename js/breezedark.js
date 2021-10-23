@@ -21,7 +21,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("theme--dark", "theme--breezedark");
-    document.body.classList.remove("theme--light");
-});
+
+const cssMediaDark = window.matchMedia('(prefers-color-scheme: dark)');
+function updateColorSheme() {
+	if (getComputedStyle(document.body).getPropertyValue("--theme-automatic-activation-enabled") == 0 || cssMediaDark.matches) {
+		document.body.classList.add("theme--dark", "theme--breezedark");
+		document.body.classList.remove("theme--light");
+	} else {
+		document.body.classList.remove("theme--dark", "theme--breezedark");
+		document.body.classList.add("theme--light");
+	}
+}
+
+cssMediaDark.addEventListener("change", updateColorSheme);
+document.addEventListener("DOMContentLoaded", updateColorSheme);

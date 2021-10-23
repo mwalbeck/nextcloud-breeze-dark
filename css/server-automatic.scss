@@ -25,6 +25,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * 
  */
+
+:root {
+	--theme-automatic-activation-enabled: 1;
+}
 @media (prefers-color-scheme: dark) {
 // General and Nextcloud Core
 @import "variables/functions";
