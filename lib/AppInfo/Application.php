@@ -74,13 +74,14 @@ class Application extends App implements IBootstrap
         $default = $config->getAppValue($this->appName, "theme_enabled", "0");
         $loginPage = $config->getAppValue($this->appName, "theme_login_page", "1");
         $cachebuster = $config->getAppValue($this->appName, "theme_cachebuster", "0");
-
-        if (!is_null($user) and $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
+        $automaticActivation = $config->getAppValue($this->appName, "theme_automatic_activation_enabled", "0");
+        $automaticActivationUser = $config->getUserValue($user->getUID(), $this->appName, "theme_automatic_activation_enabled", $automaticSelection);
+        if (!is_null($user) and ($config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default) or $automaticActivationUser)) {
             // When shown the 2FA login page you are logged in while also being on a login page,
             // so a logged in user still needs the guests.css stylesheet
-            $this->addStyling($urlGenerator, $loginPage, $cachebuster);
-        } elseif (is_null($user) and $default) {
-            $this->addStyling($urlGenerator, $loginPage, $cachebuster);
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivationUser);
+        } elseif (is_null($user) and ($default or $automaticActivation)) {
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivation);
         }
     }
 
@@ -91,14 +92,22 @@ class Application extends App implements IBootstrap
      * @param string $loginPage
      * @param string $cachebuster
      */
-    public function addStyling(IURLGenerator $urlGenerator, string $loginPage, string $cachebuster): void
+    public function addStyling(IURLGenerator $urlGenerator, string $loginPage, string $cachebuster, string $automaticActivation): void
     {
-        Util::addStyle($this->appName, 'server');
+        if ($automaticActivation) {
+            Util::addStyle($this->appName, 'server-automatic');
+        } else {
+            Util::addStyle($this->appName, 'server');
+        }
         Util::addScript($this->appName, 'breezedark');
 
         // If the styling for the login page is wanted, load the stylesheet.
         if ($loginPage) {
-            Util::addStyle($this->appName, 'guest');
+            if ($automaticActivation) {
+                Util::addStyle($this->appName, 'guest-automatic');
+            } else {
+                Util::addStyle($this->appName, 'guest');
+            }
         }
 
         // Only request the stylesheet if there is any styling to request

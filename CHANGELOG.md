@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Add option to use Breeze Dark only if the client's dark mode is enabled
+
 ## 22.0.2 - 2021-10-03
 
 ### Added

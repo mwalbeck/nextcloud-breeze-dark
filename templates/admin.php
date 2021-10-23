@@ -33,6 +33,9 @@ script('breezedark', 'settings-admin');
     <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference.")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-theme-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
     <label for="breezedark-theme-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
+	<p><?php p($l->t("This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who haven't set a preference.")); ?></p>
+    <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
+    <label for="breezedark-automatic-activation-enabled"><?php p($l->t("Enable Breeze Dark automated activation by the clients system settings by default")); ?></label>
     <p><?php p($l->t("This setting will allow you to choose if the login page should be themed when the theme is enabled by default.")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-theme-login-page" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeLoginPage ? "checked" : "");?>>
     <label for="breezedark-theme-login-page"><?php p($l->t("Theme the login page")); ?></label>
