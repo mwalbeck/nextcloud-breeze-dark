@@ -48,6 +48,10 @@ window.addEventListener("DOMContentLoaded", function () {
                     $("#breezedark-enabled-msg").remove();
                 }, 3000);
             });
+		$("#breezedark-automatic-activation-enabled").prop(
+            "disabled",
+            !$("#breezedark-enabled").prop("checked")
+        );
     });
 	
 	$("#breezedark-automatic-activation-enabled").change(function () {

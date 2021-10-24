@@ -38,7 +38,7 @@ script('breezedark', 'settings-personal');
                 <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
                 <input type="checkbox" class="checkbox" id="breezedark-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
                 <label for="breezedark-enabled"><?php p($l->t("Enable Breeze Dark theme")); ?></label>
-                <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
+                <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
                 <label for="breezedark-automatic-activation-enabled"><?php p($l->t("Enable Breeze Dark automated activation by clients system settings")); ?></label>
             </div>
         </div>

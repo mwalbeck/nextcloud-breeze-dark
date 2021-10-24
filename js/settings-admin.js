@@ -61,6 +61,10 @@ window.addEventListener("DOMContentLoaded", function () {
             "disabled",
             !$("#breezedark-theme-enabled").prop("checked")
         );
+		$("#breezedark-automatic-activation-enabled").prop(
+            "disabled",
+            !$("#breezedark-theme-enabled").prop("checked")
+        );
     });
 	
 	$("#breezedark-automatic-activation-enabled").change(function () {

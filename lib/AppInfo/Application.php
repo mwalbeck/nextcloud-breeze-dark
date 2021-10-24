@@ -77,11 +77,11 @@ class Application extends App implements IBootstrap
         $automaticActivation = $config->getAppValue($this->appName, "theme_automatic_activation_enabled", "0");
         $automaticActivationUser = $config->getUserValue($user->getUID(), $this->appName, "theme_automatic_activation_enabled", $automaticActivation);
 		
-        if (!is_null($user) and ($config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default) or $automaticActivationUser)) {
+        if (!is_null($user) and $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
             // When shown the 2FA login page you are logged in while also being on a login page,
             // so a logged in user still needs the guests.css stylesheet
             $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivationUser);
-        } elseif (is_null($user) and ($default or $automaticActivation)) {
+        } elseif (is_null($user) and $default) {
             $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivation);
         }
     }
