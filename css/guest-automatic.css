@@ -6,185 +6,185 @@
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 @media (prefers-color-scheme: dark) {
-:root {
-    /* Primary Breeze colours */
-    --color-paper-white: rgba(252, 252, 252, 1);
-    --color-cardboard-gray: rgba(239, 240, 241, 1);
-    --color-icon-gray: rgba(77, 77, 77, 1);
-    --color-charcoal-gray: rgba(49, 54, 59, 1);
-    --color-shade-black: rgba(35, 38, 41, 1);
-    --color-plasma-blue: rgba(61, 174, 233, 1);
+    :root {
+        /* Primary Breeze colours */
+        --color-paper-white: rgba(252, 252, 252, 1);
+        --color-cardboard-gray: rgba(239, 240, 241, 1);
+        --color-icon-gray: rgba(77, 77, 77, 1);
+        --color-charcoal-gray: rgba(49, 54, 59, 1);
+        --color-shade-black: rgba(35, 38, 41, 1);
+        --color-plasma-blue: rgba(61, 174, 233, 1);
 
-    /* Secondary Breeze colours */
-    --color-icon-red: rgba(218, 68, 83, 1);
-    --color-danger-red: rgba(237, 21, 21, 1);
-    --color-beware-orange: rgba(246, 116, 0, 1);
-    --color-icon-yellow: rgba(253, 188, 75, 1);
-    --color-sunbeam-yellow: rgba(201, 206, 59, 1);
-    --color-verdant-green: rgba(17, 209, 22, 1);
-    --color-icon-blue: rgba(29, 153, 243, 1);
+        /* Secondary Breeze colours */
+        --color-icon-red: rgba(218, 68, 83, 1);
+        --color-danger-red: rgba(237, 21, 21, 1);
+        --color-beware-orange: rgba(246, 116, 0, 1);
+        --color-icon-yellow: rgba(253, 188, 75, 1);
+        --color-sunbeam-yellow: rgba(201, 206, 59, 1);
+        --color-verdant-green: rgba(17, 209, 22, 1);
+        --color-icon-blue: rgba(29, 153, 243, 1);
 
-    /* Other Breeze Colours */
-    --color-noble-fir: rgba(39, 174, 96, 1);
-    --color-abyss-blue: rgba(41, 128, 185, 1);
-    --color-coastal-fog: rgba(127, 140, 141, 1);
-    --color-alternate-gray: rgba(189, 195, 199, 1);
+        /* Other Breeze Colours */
+        --color-noble-fir: rgba(39, 174, 96, 1);
+        --color-abyss-blue: rgba(41, 128, 185, 1);
+        --color-coastal-fog: rgba(127, 140, 141, 1);
+        --color-alternate-gray: rgba(189, 195, 199, 1);
 
-    /* An approximation of the blue hover colour seen in breeze dark */
-    --color-hover-blue: rgba(61, 174, 233, 0.4);
-    /* An approximation of the grey border colour seen in breeze dark */
-    --color-border-grey: rgba(103, 107, 110, 1);
-    /*Grey translucent colour for dashboard */
-    --color-dashboard-grey: rgba(49, 54, 59, 0.8);
+        /* An approximation of the blue hover colour seen in breeze dark */
+        --color-hover-blue: rgba(61, 174, 233, 0.4);
+        /* An approximation of the grey border colour seen in breeze dark */
+        --color-border-grey: rgba(103, 107, 110, 1);
+        /*Grey translucent colour for dashboard */
+        --color-dashboard-grey: rgba(49, 54, 59, 0.8);
 
-    --color-main-text: var(--color-cardboard-gray) !important;
-    --color-main-background: var(--color-charcoal-gray) !important;
-    --color-main-background-translucent: var(--color-main-background) !important;
+        --color-main-text: var(--color-cardboard-gray) !important;
+        --color-main-background: var(--color-charcoal-gray) !important;
+        --color-main-background-translucent: var(--color-main-background) !important;
 
-    --color-background-hover: var(--color-hover-blue) !important;
-    --color-background-dark: var(--color-main-background) !important;
-    --color-background-darker: var(--color-shade-black) !important;
-    --color-background-translucent: var(--color-dashboard-grey) !important;
+        --color-background-hover: var(--color-hover-blue) !important;
+        --color-background-dark: var(--color-main-background) !important;
+        --color-background-darker: var(--color-shade-black) !important;
+        --color-background-translucent: var(--color-dashboard-grey) !important;
 
-    --color-primary: var(--color-plasma-blue) !important;
-    --color-primary-light: var(--color-primary) !important;
-    --color-primary-text: var(--color-paper-white) !important;
-    --color-primary-text-dark: var(--color-main-text) !important;
-    --color-primary-element: var(--color-primary) !important;
-    --color-primary-element-light: var(--color-primary) !important;
+        --color-primary: var(--color-plasma-blue) !important;
+        --color-primary-light: var(--color-primary) !important;
+        --color-primary-text: var(--color-paper-white) !important;
+        --color-primary-text-dark: var(--color-main-text) !important;
+        --color-primary-element: var(--color-primary) !important;
+        --color-primary-element-light: var(--color-primary) !important;
 
-    --color-error: var(--color-icon-red) !important;
-    --color-warning: var(--color-beware-orange) !important;
-    --color-neutral: var(--color-sunbeam-yellow) !important;
-    --color-success: var(--color-noble-fir) !important;
+        --color-error: var(--color-icon-red) !important;
+        --color-warning: var(--color-beware-orange) !important;
+        --color-neutral: var(--color-sunbeam-yellow) !important;
+        --color-success: var(--color-noble-fir) !important;
 
-    --color-text-maxcontrast: var(--color-alternate-gray) !important;
-    --color-text-light: var(--color-main-text) !important;
-    --color-text-lighter: var(--color-text-maxcontrast) !important;
-    --color-text-dark: rgba(0, 0, 0, 1) !important;
-    --color-text-selection: var(--color-hover-blue) !important;
-    --color-text-link: rgba(30, 168, 226, 1) !important;
+        --color-text-maxcontrast: var(--color-alternate-gray) !important;
+        --color-text-light: var(--color-main-text) !important;
+        --color-text-lighter: var(--color-text-maxcontrast) !important;
+        --color-text-dark: rgba(0, 0, 0, 1) !important;
+        --color-text-selection: var(--color-hover-blue) !important;
+        --color-text-link: rgba(30, 168, 226, 1) !important;
 
-    --color-loading-light: var(--color-alternate-gray) !important;
-    --color-loading-dark: var(--color-coastal-fog) !important;
+        --color-loading-light: var(--color-alternate-gray) !important;
+        --color-loading-dark: var(--color-coastal-fog) !important;
 
-    --color-box-shadow: rgba(0, 0, 0, 0) !important;
+        --color-box-shadow: rgba(0, 0, 0, 0) !important;
 
-    --color-border: var(--color-border-grey) !important;
-    --color-border-dark: var(--color-border) !important;
+        --color-border: var(--color-border-grey) !important;
+        --color-border-dark: var(--color-border) !important;
 
-    --color-icon: rgba(242, 242, 242, 1);
-}
+        --color-icon: rgba(242, 242, 242, 1);
+    }
 
-/* Login Screen ------------------------------------------------------------- */
+    /* Login Screen ------------------------------------------------------------- */
 
-#body-login {
-    background-color: var(--color-main-background) !important;
-    background-image: url("../../../apps/theming/image/background"),
-        url("../../../core/img/background.png") !important;
-}
+    #body-login {
+        background-color: var(--color-main-background) !important;
+        background-image: url("../../../apps/theming/image/background"),
+            url("../../../core/img/background.png") !important;
+    }
 
-#body-login a,
-#body-login p.info {
-    color: var(--color-main-text) !important;
-}
+    #body-login a,
+    #body-login p.info {
+        color: var(--color-main-text) !important;
+    }
 
-#body-login input[type="text"],
-#body-login input[type="tel"],
-#body-login input[type="password"],
-#body-login input[type="email"] {
-    background: var(--color-background-darker) !important;
-    color: var(--color-main-text) !important;
-}
+    #body-login input[type="text"],
+    #body-login input[type="tel"],
+    #body-login input[type="password"],
+    #body-login input[type="email"] {
+        background: var(--color-background-darker) !important;
+        color: var(--color-main-text) !important;
+    }
 
-#body-login input[type="tel"] {
-    border: 1px solid var(--color-border);
-}
+    #body-login input[type="tel"] {
+        border: 1px solid var(--color-border);
+    }
 
-#body-login .groupbottom input {
-    box-shadow: unset !important;
-}
+    #body-login .groupbottom input {
+        box-shadow: unset !important;
+    }
 
-#body-login .toggle-password,
-#body-login #email-icon {
-    filter: invert(95%);
-}
+    #body-login .toggle-password,
+    #body-login #email-icon {
+        filter: invert(95%);
+    }
 
-#body-login input[type="submit"],
-#body-login input[type="submit"].primary,
-#body-login input[type="button"],
-#body-login button.primary,
-#body-login .button {
-    background-color: var(--color-main-background) !important;
-    border: 1px solid var(--color-border) !important;
-    color: var(--color-main-text) !important;
-}
+    #body-login input[type="submit"],
+    #body-login input[type="submit"].primary,
+    #body-login input[type="button"],
+    #body-login button.primary,
+    #body-login .button {
+        background-color: var(--color-main-background) !important;
+        border: 1px solid var(--color-border) !important;
+        color: var(--color-main-text) !important;
+    }
 
-#body-login input[type="submit"]:hover,
-#body-login input[type="submit"].primary:hover,
-#body-login input[type="button"]:hover,
-#body-login button.primary:hover,
-#body-login .button:hover {
-    border-color: var(--color-primary-element) !important;
-    opacity: 1;
-}
+    #body-login input[type="submit"]:hover,
+    #body-login input[type="submit"].primary:hover,
+    #body-login input[type="button"]:hover,
+    #body-login button.primary:hover,
+    #body-login .button:hover {
+        border-color: var(--color-primary-element) !important;
+        opacity: 1;
+    }
 
-#body-login input[type="submit"]:active,
-#body-login input[type="submit"]:focus,
-#body-login input[type="submit"].primary:active,
-#body-login input[type="submit"].primary:focus,
-#body-login input[type="button"]:active,
-#body-login input[type="button"]:focus,
-#body-login button.primary:active,
-#body-login button.primary:focus,
-#body-login .button:active,
-#body-login .button:focus {
-    background-color: var(--color-primary) !important;
-    border-color: var(--color-primary-element) !important;
-}
+    #body-login input[type="submit"]:active,
+    #body-login input[type="submit"]:focus,
+    #body-login input[type="submit"].primary:active,
+    #body-login input[type="submit"].primary:focus,
+    #body-login input[type="button"]:active,
+    #body-login input[type="button"]:focus,
+    #body-login button.primary:active,
+    #body-login button.primary:focus,
+    #body-login .button:active,
+    #body-login .button:focus {
+        background-color: var(--color-primary) !important;
+        border-color: var(--color-primary-element) !important;
+    }
 
-#body-login .two-factor-provider:hover,
-#body-login .two-factor-provider:focus,
-#body-login .two-factor-provider:active {
-    background-color: var(--color-background-hover);
-    border-color: var(--color-primary-element) !important;
-}
+    #body-login .two-factor-provider:hover,
+    #body-login .two-factor-provider:focus,
+    #body-login .two-factor-provider:active {
+        background-color: var(--color-background-hover);
+        border-color: var(--color-primary-element) !important;
+    }
 
-#body-login .warning input[type="password"] {
-    border: 1px solid var(--color-border);
-}
+    #body-login .warning input[type="password"] {
+        border: 1px solid var(--color-border);
+    }
 
-#body-login .warning input[type="submit"] {
-    background-color: inherit !important;
-    border: unset !important;
-}
+    #body-login .warning input[type="submit"] {
+        background-color: inherit !important;
+        border: unset !important;
+    }
 
-/* SAML Login */
-#saml-select-user-back-end {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 260px;
-}
+    /* SAML Login */
+    #saml-select-user-back-end {
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 260px;
+    }
 
-#saml-select-user-back-end .login-option {
-    background-color: var(--color-main-background);
-    border-color: var(--color-border);
-    border-radius: 100px;
-    box-sizing: border-box;
-    height: 50px;
-    min-width: 260px;
-}
+    #saml-select-user-back-end .login-option {
+        background-color: var(--color-main-background);
+        border-color: var(--color-border);
+        border-radius: 100px;
+        box-sizing: border-box;
+        height: 50px;
+        min-width: 260px;
+    }
 
-#saml-select-user-back-end .login-option:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary-element);
-}
+    #saml-select-user-back-end .login-option:hover {
+        background-color: var(--color-primary);
+        border-color: var(--color-primary-element);
+    }
 
-#saml-select-user-back-end .login-option a {
-    line-height: 50px;
-}
+    #saml-select-user-back-end .login-option a {
+        line-height: 50px;
+    }
 
-#saml-select-user-back-end .login-option a:hover {
-    text-decoration: none;
-}
+    #saml-select-user-back-end .login-option a:hover {
+        text-decoration: none;
+    }
 }

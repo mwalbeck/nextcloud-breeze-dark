@@ -22,9 +22,14 @@
  *
  */
 
-const cssMediaDark = window.matchMedia('(prefers-color-scheme: dark)');
+const cssMediaDark = window.matchMedia("(prefers-color-scheme: dark)");
 function updateColorSheme() {
-    if (getComputedStyle(document.body).getPropertyValue("--breezedark-automatic-activation-enabled") != 1 || cssMediaDark.matches) {
+    if (
+        getComputedStyle(document.body).getPropertyValue(
+            "--breezedark-automatic-activation-enabled"
+        ) != 1 ||
+        cssMediaDark.matches
+    ) {
         document.body.classList.add("theme--dark", "theme--breezedark");
         document.body.classList.remove("theme--light");
     } else {
