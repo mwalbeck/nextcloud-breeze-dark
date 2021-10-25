@@ -24,13 +24,13 @@
 
 const cssMediaDark = window.matchMedia('(prefers-color-scheme: dark)');
 function updateColorSheme() {
-	if (getComputedStyle(document.body).getPropertyValue("--theme-automatic-activation-enabled") == 0 || cssMediaDark.matches) {
-		document.body.classList.add("theme--dark", "theme--breezedark");
-		document.body.classList.remove("theme--light");
-	} else {
-		document.body.classList.remove("theme--dark", "theme--breezedark");
-		document.body.classList.add("theme--light");
-	}
+    if (getComputedStyle(document.body).getPropertyValue("--breezedark-automatic-activation-enabled") != 1 || cssMediaDark.matches) {
+        document.body.classList.add("theme--dark", "theme--breezedark");
+        document.body.classList.remove("theme--light");
+    } else {
+        document.body.classList.remove("theme--dark", "theme--breezedark");
+        document.body.classList.add("theme--light");
+    }
 }
 
 cssMediaDark.addEventListener("change", updateColorSheme);

@@ -61,15 +61,15 @@ window.addEventListener("DOMContentLoaded", function () {
             "disabled",
             !$("#breezedark-theme-enabled").prop("checked")
         );
-		$("#breezedark-automatic-activation-enabled").prop(
+        $("#breezedark-automatic-activation-enabled").prop(
             "disabled",
             !$("#breezedark-theme-enabled").prop("checked")
         );
     });
-	
-	$("#breezedark-automatic-activation-enabled").change(function () {
+
+    $("#breezedark-automatic-activation-enabled").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
-			theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
+            theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
             theme_automatic_activation_enabled: this.checked ? 1 : 0,
             theme_login_page: $("#breezedark-theme-login-page").prop("checked") ? 1 : 0,
         })
@@ -88,7 +88,7 @@ window.addEventListener("DOMContentLoaded", function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
             theme_login_page: this.checked ? 1 : 0,
             theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
-			theme_automatic_activation_enabled: $("#breezedark-automatic-activation-enabled").prop("checked") ? 1 : 0,
+            theme_automatic_activation_enabled: $("#breezedark-automatic-activation-enabled").prop("checked") ? 1 : 0,
         })
             .done(function () {
                 postSuccess(

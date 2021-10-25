@@ -27,70 +27,8 @@
  */
 
 :root {
-	--theme-automatic-activation-enabled: 1;
+    --breezedark-automatic-activation-enabled: 1;
 }
 @media (prefers-color-scheme: dark) {
-// General and Nextcloud Core
-@import "variables/functions";
-@import "variables/color-variables";
-@import "variables/icon-variables";
-@import "base/elements";
-@import "server/server";
-@import "apps/apps";
-@import "server/icons";
-// Core Apps
-@import "apps/core/activity";
-@import "apps/core/dashboard";
-@import "apps/core/files";
-@import "apps/core/firstrunwizard";
-@import "apps/core/notifications";
-@import "apps/core/photos";
-@import "apps/core/text";
-// Official Apps
-@import "apps/official/announcement-center";
-@import "apps/official/calendar";
-@import "apps/official/circles";
-@import "apps/official/contacts";
-@import "apps/official/deck";
-@import "apps/official/external-sites";
-@import "apps/official/forms";
-@import "apps/official/group-folders";
-@import "apps/official/ldap";
-@import "apps/official/mail";
-@import "apps/official/maps";
-@import "apps/official/news";
-@import "apps/official/notes";
-@import "apps/official/retention";
-@import "apps/official/social";
-@import "apps/official/spreed";
-@import "apps/official/tasks";
-// Third party apps
-@import "apps/thirdparty/analytics";
-@import "apps/thirdparty/apporder";
-@import "apps/thirdparty/audio-player";
-@import "apps/thirdparty/bbb";
-@import "apps/thirdparty/bookmarks";
-@import "apps/thirdparty/collectives";
-@import "apps/thirdparty/cookbook";
-@import "apps/thirdparty/cospend";
-@import "apps/thirdparty/flow-upload";
-@import "apps/thirdparty/fulltextsearch";
-@import "apps/thirdparty/gpxmotion";
-@import "apps/thirdparty/gpxpod";
-@import "apps/thirdparty/files-markdown";
-@import "apps/thirdparty/files-markdown-syntax";
-@import "apps/thirdparty/music";
-@import "apps/thirdparty/ocdownloader";
-@import "apps/thirdparty/ojsxc";
-@import "apps/thirdparty/passman";
-@import "apps/thirdparty/passwords";
-@import "apps/thirdparty/phone-sync";
-@import "apps/thirdparty/phonetrack";
-@import "apps/thirdparty/polls";
-@import "apps/thirdparty/quicknotes";
-@import "apps/thirdparty/radio";
-@import "apps/thirdparty/terms-of-service";
-@import "apps/thirdparty/timemanager";
-@import "apps/thirdparty/user-account-deletion";
-@import "apps/thirdparty/weather";
+    @import "server";
 }
