@@ -9,6 +9,7 @@
 ### Fixed
 
 -   [#278](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/278) Fix header icons in public sharing view
+-   [#279](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/279) Invert collabora edit icon in Files right click menu
 
 ## 22.0.2 - 2021-10-03
 
