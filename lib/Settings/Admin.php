@@ -61,7 +61,7 @@ class Admin implements ISettings
     {
         $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
         $themeLoginPage = $this->config->getAppValue($this->appName, 'theme_login_page', "1");
-        $themeAutomaticActivation = $this->config->getAppValue($this->appName, 'theme_automatic_activation_enabled', "1");
+        $themeAutomaticActivation = $this->config->getAppValue($this->appName, 'theme_automatic_activation_enabled', "0");
         $themeCustomStyling = $this->config->getAppValue($this->appName, 'theme_custom_styling', "");
         return new TemplateResponse('breezedark', 'admin', [
             "themeEnabled" => $themeEnabled,
