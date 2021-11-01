@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   [#98](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/98) Added option to use Breeze Dark only if the client's dark mode is enabled
+
 ## 21.0.11 - 2021-10-03
 
 ### Added
