@@ -25,6 +25,11 @@
     background-image: var(--icon-spreed-clip-add-file-f2f2f2) !important;
 }
 
+.icon-menu-people,
+.icon-menu-people-white {
+    background-image: var(--icon-spreed-menu-people-f2f2f2) !important;
+}
+
 .app-talk {
     .icon-lobby {
         background-image: var(--icon-spreed-lobby-f2f2f2) !important;
@@ -32,10 +37,6 @@
 
     .icon-reply {
         background-image: var(--icon-spreed-reply-f2f2f2) !important;
-    }
-
-    .icon-menu-people {
-        background-image: var(--icon-spreed-menu-people-f2f2f2) !important;
     }
 }
 
