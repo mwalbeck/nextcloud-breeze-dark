@@ -466,6 +466,11 @@ div.select2-container a.select2-choice .select2-arrow b {
     filter: invert(95%);
 }
 
+// Collabora
+.collabora.action-edit img[src$="/core/img/actions/rename.svg"] {
+    filter: invert(95%);
+}
+
 /* CSS tricks to change icon color ------------------------------------------- */
 
 .icon-collapse {
