@@ -9,6 +9,8 @@ OC.L10N.register(
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Тъмна тема, базирана на Breeze Dark към проект KDE. Моля, опреснете страницата, за да влязат в сила промените.",
     "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Тази настройка ще активира темата по подразбиране за всички неудостоверени потребители и потребители, които не са задали предпочитание.",
     "Enable Breeze Dark theme by default" : "Активиране на Breeze Dark тема по подразбиране",
+    "This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who haven't set a preference." : "Тази настройка ще активира автоматичното активиране от системните настройки на клиента по подразбиране за всички неудостоверени потребители и потребители, които не са задали предпочитание.",
+    "Enable Breeze Dark automated activation by the clients system settings by default" : "Активиране на автоматичното активиране на Breeze Dark от системните настройки на клиента по подразбиране",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Тази настройка ще ви позволи да изберете дали да приложите темата на страницата за вход, когато темата е активирана по подразбиране.",
     "Theme the login page" : "Прилагане на тема на страницата за вход",
     "Custom Styling" : "Персонализирано Оформление",
@@ -16,6 +18,7 @@ OC.L10N.register(
     "Save" : "Запиши",
     "A Breeze Dark theme for Nextcloud." : "Breeze Dark Тема за Nextcloud",
     "Breeze Dark theme" : "Breeze Dark тема",
-    "Enable Breeze Dark theme" : "Активиране на Breeze Dark тема"
+    "Enable Breeze Dark theme" : "Активиране на Breeze Dark тема",
+    "Enable Breeze Dark automated activation by clients system settings" : "Активиране на автоматичното активиране на Breeze Dark от системните настройки на клиента"
 },
 "nplurals=2; plural=(n != 1);");
