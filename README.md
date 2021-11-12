@@ -76,7 +76,7 @@ You can use the custom styling functionality and add the following CSS rule
 
 ```
 body#body-login {
-	background-image: url('../../../index.php/apps/theming/image/background'), url('../../../core/img/background.png');
+	background-image: url('../../../index.php/apps/theming/image/background'), url('../../../core/img/background.png') !important;
 }
 ```
 
