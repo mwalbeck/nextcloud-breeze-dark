@@ -23,9 +23,9 @@ Previous unmaintained releases:
 -   Nextcloud 17
 -   Nextcloud 11-16
 
-## Version number
+## Version numbering
 
-The first number is the Nextcloud version. The second number is the Nextcloud major point release version. The third number is the theme version.
+This project follows semantic versioning. The major version number also follows the Nextcloud version the specific release is intended for to make it easier to know what Nextcloud version the release works with.
 
 ## Installation
 
