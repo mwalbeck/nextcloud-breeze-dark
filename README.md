@@ -39,7 +39,7 @@ After you install the theme, you need to enable it. There are two options for th
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
 
 ```
 Admin settings > Theming > Breeze Dark
@@ -49,7 +49,7 @@ Please note that you need the Theming app enabled in Nextcloud to access the glo
 
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:
+The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
 
 ```
 Personal settings > Accessibility > Breeze Dark
