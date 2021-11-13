@@ -9,6 +9,7 @@
 ### Fixed
 
 -   [#278](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/278) Fix header icons in public sharing view
+-   Improve styling for group folders admin settings and added deny icon used for group folders acl
 
 ## 21.0.11 - 2021-10-03
 
