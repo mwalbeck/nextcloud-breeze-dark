@@ -2,6 +2,22 @@
 
 ## [Unreleased]
 
+## 22.1.0 - 2021-11-14
+
+### Added
+
+-   [#98](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/98) Added option to use Breeze Dark only if the client's dark mode is enabled
+
+### Changed
+
+-   Switch to semantic versioning, as the old versioning scheme doesn't really make that much sense. This won't really change much other than the fact that the minor version number will now actually be used.
+
+### Fixed
+
+-   [#278](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/278) Fix header icons in public sharing view
+-   [#279](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/279) Invert collabora edit icon in Files right click menu
+-   Improve styling for group folders admin settings and added deny icon used for group folders acl
+
 ## 22.0.2 - 2021-10-03
 
 ### Added

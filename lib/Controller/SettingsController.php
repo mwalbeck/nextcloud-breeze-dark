@@ -74,6 +74,12 @@ class SettingsController extends Controller
         } else {
             $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
         }
+
+        if ($this->request->getParam("theme_automatic_activation_enabled")) {
+            $this->config->setUserValue($this->userId, $this->appName, "theme_automatic_activation_enabled", "1");
+        } else {
+            $this->config->setUserValue($this->userId, $this->appName, "theme_automatic_activation_enabled", "0");
+        }
     }
 
     /**
@@ -91,6 +97,12 @@ class SettingsController extends Controller
             $this->config->setAppValue($this->appName, "theme_login_page", "1");
         } else {
             $this->config->setAppValue($this->appName, "theme_login_page", "0");
+        }
+
+        if ($this->request->getParam("theme_automatic_activation_enabled")) {
+            $this->config->setAppValue($this->appName, "theme_automatic_activation_enabled", "1");
+        } else {
+            $this->config->setAppValue($this->appName, "theme_automatic_activation_enabled", "0");
         }
     }
 

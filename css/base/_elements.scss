@@ -103,8 +103,16 @@ select option {
 
 /* Table --------------------------------------------------------------------- */
 
-table tbody {
-    --color-background-dark: var(--color-background-hover) !important;
+tbody tr:hover,
+tbody tr:focus,
+tbody tr:active {
+    background-color: var(--color-background-hover) !important;
+
+    thead tr:hover,
+    thead tr:focus,
+    thead tr:active {
+        background-color: var(--color-main-background) !important;
+    }
 }
 
 /* Progress ------------------------------------------------------------------ */

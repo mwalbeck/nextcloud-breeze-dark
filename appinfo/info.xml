@@ -14,7 +14,7 @@ After you install the theme, you need to enable it. There a two options for this
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. There is also an option to exclude the login page from being themed. You can find the global options here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
 
 ```
 Admin settings > Theming > Breeze Dark
@@ -24,7 +24,7 @@ Please note that you need the Theming app enabled in Nextcloud to access the glo
 
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. You can find the personal option here:
+The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
 
 ```
 Personal settings > Accessibility > Breeze Dark
@@ -36,7 +36,7 @@ Please note that you need the Accessibility app enabled in Nextcloud to access t
 
 Under the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.
     ]]></description>
-    <version>22.0.2</version>
+    <version>22.1.0</version>
     <licence>agpl</licence>
     <author mail="mw@mwalbeck.org" homepage="https://github.com/mwalbeck/nextcloud-breeze-dark">Magnus Walbeck</author>
     <namespace>BreezeDark</namespace>
