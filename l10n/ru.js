@@ -9,6 +9,8 @@ OC.L10N.register(
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Тёмная тема, основанная на Breeze Dark от проекта KDE. Обновите страницу, чтобы изменения вступили в силу.",
     "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Этот параметр будет включать тему по умолчанию для всех пользователей, не прошедших проверку подлинности, и пользователей, которые не установили предпочтения.",
     "Enable Breeze Dark theme by default" : "Включить тему Breeze Dark по умолчанию",
+    "This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who haven't set a preference." : "Этот параметр по умолчанию включит автоматическую активацию с помощью системных настроек клиентов для всех пользователей, не прошедших аутентификацию, и пользователей, которые не установили предпочтения.",
+    "Enable Breeze Dark automated activation by the clients system settings by default" : "Включите автоматическую активацию Breeze Dark в системных настройках клиентов по умолчанию",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Этот параметр позволит вам выбрать, должна ли страница входа быть тематической, если тема включена по умолчанию.",
     "Theme the login page" : "Тема на странице входа",
     "Custom Styling" : "Индивидуальный стиль",
@@ -16,6 +18,7 @@ OC.L10N.register(
     "Save" : "Сохранить",
     "A Breeze Dark theme for Nextcloud." : "Тема Breeze Dark для Nextcloud.",
     "Breeze Dark theme" : "Тема Breeze Dark",
-    "Enable Breeze Dark theme" : "Включить тему Breeze Dark"
+    "Enable Breeze Dark theme" : "Включить тему Breeze Dark",
+    "Enable Breeze Dark automated activation by clients system settings" : "Включить автоматическую активацию Breeze Dark в настройках системы клиентов"
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");
