@@ -6,6 +6,10 @@
 
 -   [#98](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/98) Added option to use Breeze Dark only if the client's dark mode is enabled
 
+### Changed
+
+-   Switch to semantic versioning, as the old versioning scheme doesn't really make that much sense. This won't really change much other than the fact that the minor version number will now actually be used.
+
 ### Fixed
 
 -   [#278](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/278) Fix header icons in public sharing view
