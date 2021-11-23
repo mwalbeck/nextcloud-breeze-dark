@@ -24,7 +24,7 @@ Please note that you need the Theming app enabled in Nextcloud to access the glo
 
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
+The personal option allows each user to set their own preference independent of how you set the global option. If the user has not set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
 
 ```
 Personal settings > Accessibility > Breeze Dark
