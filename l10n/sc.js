@@ -6,7 +6,6 @@ OC.L10N.register(
     "Breeze Dark" : "Breeze Dark",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Tema Breeze Dark pro Nextcloud, basadu subra de su tema de KDE",
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Tema iscuru basadu subra de Breeze Dark dae su progetu KDE. Atualiza sa pàgina pro chi is modìficas tèngiant efetu.",
-    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Custa cunfiguratzione at a ativare su tema in manera predefinida pro cale si siat utente sena identificatzione e pro utentes chi no apant cunfiguradu una preferèntzia.",
     "Enable Breeze Dark theme by default" : "Ativa su tema Breeze Dark comente predefinidu",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Custa cunfiguratzione t'at a permìtere de seberare si sa pàgina de intrada depet èssere ammustrada cun su tema predefinidu ativu.",
     "Theme the login page" : "Imprea su tema pro sa pàgina de intrada",

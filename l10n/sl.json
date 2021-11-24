@@ -4,7 +4,6 @@
     "Breeze Dark" : "Temna tema Breeze",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Temna tema Breeze za Nextcloud, zasnovana po predlogi teme KDE.",
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Temna tema, zasnovana na temi Breeze Dark, projekta KDE. Za uveljavitev sprememb je treba stran osvežiti.",
-    "This setting will enable the theme by default, for any unauthenticated users and users who haven't set a preference." : "Nastavitev omogoči temo privzeto za vse neprijavljene uporabnike in uporabnike, ki si niso prilagodili svojih nastavitev.",
     "Enable Breeze Dark theme by default" : "Privzeto omogoči temno temo Breeze",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Nastavitev določa prilagoditev prijavne strani, če je tema omogočena privzeto.",
     "Theme the login page" : "Uporabi temo na prijavni strani",
