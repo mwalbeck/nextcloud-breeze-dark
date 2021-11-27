@@ -37,10 +37,6 @@
 .popover,
 .app-navigation-entry-menu {
     border: 1px solid var(--color-border);
-
-    li:hover {
-        background-color: var(--color-background-hover);
-    }
 }
 
 .bubble::after,
