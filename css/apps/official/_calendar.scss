@@ -69,6 +69,19 @@
     }
 }
 
+// New styling for vue
+
+#content-vue
+    .app-navigation-entry__counter-wrapper
+    .action-item.sharing
+    .material-design-icon.share {
+    opacity: 1;
+}
+
+.popover.open .action-link {
+    opacity: 1;
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .app-calendar,
