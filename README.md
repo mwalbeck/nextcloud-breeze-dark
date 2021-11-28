@@ -61,26 +61,6 @@ Please note that you need the Accessibility app enabled in Nextcloud to access t
 
 Under the Theming section in the admin settings you can add your own custom styling to the theme. Only standard CSS can be used. This custom styling will be applied whenever the theme is enabled and only affects the Breeze Dark theme.
 
-## Known issues
-
-### Login image not shown when theme is enabled
-
-This is caused by the way this theme accesses custom login images. There are 2 workarounds to fix the issue:
-
-#### First workaround (recommended)
-
-Switch to using pretty URLs. Pretty URLs are URLs where the index.php isn't present. For Apache, you can follow [these steps](https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html#pretty-urls) from the documentation and for Nginx I recommend having a look at the [example config](https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html) from the documentation
-
-#### Second workaround
-
-You can use the custom styling functionality and add the following CSS rule
-
-```
-body#body-login {
-	background-image: url('../../../index.php/apps/theming/image/background'), url('../../../core/img/background.png') !important;
-}
-```
-
 ## Contributions
 
 ### Issues
