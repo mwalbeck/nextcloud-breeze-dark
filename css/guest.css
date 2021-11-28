@@ -80,7 +80,7 @@
 
 #body-login {
     background-color: var(--color-main-background) !important;
-    background-image: url("../../../apps/theming/image/background"),
+    background-image: url("../../../index.php/apps/theming/image/background"),
         url("../../../core/img/background.png") !important;
 }
 
