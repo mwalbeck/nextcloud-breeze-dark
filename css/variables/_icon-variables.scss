@@ -197,6 +197,8 @@ $icon-success: #27ae60;
     @include icon-color-theming("lobby", "spreed", $icon-normal, 1, false);
     @include icon-color-theming("clip-add-file", "spreed", $icon-normal, 1, false);
     @include icon-color-theming("menu-people", "spreed", $icon-normal, 1, false);
+    @include icon-color-theming("grid-view", "spreed", $icon-normal, 1, false);
+    @include icon-color-theming("promoted-view", "spreed", $icon-normal, 1, false);
 
     @include icon-color-theming("star", "mail", $icon-normal, 1, false);
     @include icon-color-theming("drafts", "mail", $icon-normal, 1, false);
