@@ -69,6 +69,21 @@
     }
 }
 
+.modal--scheduler .fc .fc-button-primary {
+    color: var(--color-main-text);
+    background-color: var(--color-main-background);
+    border-color: var(--color-border);
+
+    &:hover {
+        background-color: var(--color-main-background);
+        border-color: var(--color-primary-element);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
 // New styling for vue
 
 #content-vue
@@ -83,6 +98,10 @@
 }
 
 /* Icons -------------------------------------------------------------------- */
+
+.icon-new-calendar {
+    background-image: var(--icon-calendar-new-calendar-f2f2f2) !important;
+}
 
 .app-calendar,
 .popover {
@@ -108,10 +127,6 @@
 
     .icon-view-list {
         background-image: var(--icon-calendar-view-list-f2f2f2) !important;
-    }
-
-    .icon-new-calendar {
-        background-image: var(--icon-calendar-new-calendar-f2f2f2) !important;
     }
 
     .icon-new-calendar-with-task-list {
