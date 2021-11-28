@@ -168,3 +168,14 @@
 .vue-treeselect--single .vue-treeselect__option--selected {
     background-color: var(--color-primary) !important;
 }
+
+/* vue-checkboxes ----------------------------------------------------------- */
+
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__input:hover
+    + .checkbox-radio-switch__label[data-v-5cec6b50],
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__input:focus
+    + .checkbox-radio-switch__label[data-v-5cec6b50] {
+    background-color: var(--color-background-hover) !important;
+}
