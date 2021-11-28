@@ -2,7 +2,7 @@
     "autoload-dev": {
         "psr-4": {
             "OCP\\": "vendor/christophwurst/nextcloud/OCP",
-            "OCA\\Talked\\": "lib/"
+            "OCA\\BreezeDark\\": "lib/"
         }
     },
     "require": {},
