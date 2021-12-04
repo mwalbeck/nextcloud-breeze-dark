@@ -70,6 +70,26 @@ table tr[data-has-preview="true"] .thumbnail {
     opacity: 1;
 }
 
+#filestable tbody tr.highlighted,
+#filestable tbody tr.highlighted .name:focus,
+#filestable tbody tr.selected,
+#filestable tbody tr.searchresult {
+    background-color: var(--color-selected-blue) !important;
+}
+
+#filestable tbody tr:hover,
+#filestable tbody tr:focus,
+#filestable tbody tr:active,
+table tr.mouseOver {
+    background-color: var(--color-background-hover) !important;
+}
+
+#filestable tbody .name:focus,
+#filestable tbody tr:hover .filename form,
+table tr.mouseOver td {
+    background-color: unset !important;
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .nav-icon-files {
