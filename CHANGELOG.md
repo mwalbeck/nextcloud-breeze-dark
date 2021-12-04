@@ -2,6 +2,29 @@
 
 ## [Unreleased]
 
+## 23.0.0 - 2021-12-04
+
+### Added
+
+-   [#285](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/285) Support for Nextcloud 23
+
+### Changed
+
+-   [#283](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/283) Add index.php to path for retrieving custom login screen background as the redirect is now handled properly when using pretty urls.
+-   [#290](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/290) Add opacity to the background-colour used for selected files in the files table to reduce the intensity of the colour
+
+### Fixed
+
+-   [#289](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/289) Use sass function to get start call icon instead of calling it directly. Fixes missing icon when not using pretty urls.
+-   [#288](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/288) Fix opacity being to low in the view description of Deck cards
+-   Fix double hover background colour in menues
+-   Fix opacities of some menu items in Calendar
+-   Fix opacity of hover blue being wrong in guest.css
+
+### Removed
+
+-   Support for Nextcloud 21
+
 ## 22.1.0 - 2021-11-14
 
 ### Added
