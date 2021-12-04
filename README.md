@@ -10,13 +10,14 @@ If you have any questions, problems or anything else you're welcome to come hang
 
 The currently supported and maintained Nextcloud releases are:
 
+-   Nextcloud 23
 -   Nextcloud 22
--   Nextcloud 21
 
 I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transitions, but for various reason I might decide to drop support for older releases early.
 
 Previous unmaintained releases:
 
+-   Nextcloud 21
 -   Nextcloud 20
 -   Nextcloud 19
 -   Nextcloud 18
