@@ -297,6 +297,6 @@ $icon-success: #27ae60;
 
     @include icon-color-theming("deny", "groupfolders", $icon-normal, 1, false);
 
-    // This rule being here fixes an issue with some styling imported right after this file with get removed during NC's sass compilation
+    // This rule being here fixes an issue with some styling imported right after this file will be removed during NC's sass compilation
     color: var(--color-main-text);
 }
