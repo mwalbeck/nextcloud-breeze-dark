@@ -6,6 +6,10 @@
 
 -   Support for Electronic Signatures app
 
+### Fixed
+
+-   [#291](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/291) Add border to profile card footer and invert user action icons on profile view.
+
 ## 23.0.0 - 2021-12-04
 
 ### Added

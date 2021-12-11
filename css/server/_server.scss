@@ -130,6 +130,19 @@
     }
 }
 
+// Profile
+.preview-card .preview-card__footer {
+    border: 1px solid var(--color-border);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-top: none;
+}
+
+.profile .user-actions .profile__primary-action-button img[src$="spreed/img/app-dark.svg"],
+.profile .user-actions .user-actions__other a {
+    filter: invert(95%);
+}
+
 // User administration
 #addgroup {
     // Remove icon spam in addgroup form under user section
