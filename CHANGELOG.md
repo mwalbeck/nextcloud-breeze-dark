@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Support for Electronic Signatures app
+
 ## 22.1.1 - 2021-12-04
 
 ### Changed

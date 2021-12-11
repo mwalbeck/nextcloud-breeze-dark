@@ -1,0 +1,17 @@
+/***
+ * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Electronic Signatures ---------------------------------------------------- */
+
+// Overlay colour when the modal use to sent a signing request is loading
+.modal-mask .loader {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Icons -------------------------------------------------------------------- */
+.custom-icon-signature {
+    color: var(--color-icon) !important;
+}
