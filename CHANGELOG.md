@@ -5,6 +5,7 @@
 ### Added
 
 -   Support for Electronic Signatures app
+-   Date and datetime icons for Forms
 
 ## 22.1.1 - 2021-12-04
 
