@@ -5,6 +5,7 @@
 ### Added
 
 -   Support for Electronic Signatures app
+-   Date and datetime icons for Forms
 
 ### Fixed
 

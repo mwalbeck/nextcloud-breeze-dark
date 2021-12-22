@@ -283,6 +283,8 @@ $icon-success: #27ae60;
     @include icon-color-theming("answer-dropdown", "forms", $icon-normal, 1, false);
     @include icon-color-theming("answer-short", "forms", $icon-normal, 1, false);
     @include icon-color-theming("answer-long", "forms", $icon-normal, 1, false);
+    @include icon-color-theming("answer-date", "forms", $icon-normal, 1, false);
+    @include icon-color-theming("answer-datetime", "forms", $icon-normal, 1, false);
     @include icon-color-theming("drag-handle", "forms", $icon-normal, 1, false);
 
     @include icon-color-theming("reply", "social", $icon-normal, 1, false);
