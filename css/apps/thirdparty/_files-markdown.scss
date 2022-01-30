@@ -8,6 +8,10 @@
 
 #app-content-texteditor #editor_container {
     #editor_controls #preview_editor_controls button:hover {
+        background-color: var(--color-main-background);
+    }
+
+    #editor_controls #preview_editor_controls button.active {
         background-color: var(--color-background-hover);
     }
 
@@ -41,6 +45,10 @@
                     border-bottom-color: var(--color-border);
                     color: var(--color-text-maxcontrast);
                 }
+            }
+
+            a {
+                color: var(--color-text-link);
             }
         }
     }

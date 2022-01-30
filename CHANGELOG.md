@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#295](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/295) Change colour of quotabar in groupfolders admin settings to --color-background-hover.
+-   [#294](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/294) Styling for Plain text editor and Files Markdown
 
 ## 23.1.0 - 2022-01-09
 
