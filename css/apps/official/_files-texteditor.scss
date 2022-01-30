@@ -1,69 +1,58 @@
 /* Text Editor -------------------------------------------------------------- */
 
-#editor_container {
-    background-color: $decoration-normal;
+#app-content-texteditor #editor_container {
+    background-color: var(--color-main-background);
 }
 
-#editor_controls {
-    background-color: $background-normal;
+#app-content-texteditor #editor_controls {
+    background-color: var(--color-main-background);
 
-    small {
-        &.filename {
-            color: $foreground-normal;
-        }
+    small.filename {
+        color: var(--color-main-text);
+    }
 
-        &.saving-message {
-            color: $foreground-inactive;
-        }
+    small.saving-message {
+        color: var(--color-text-maxcontrast);
     }
 
     #editor_close {
         opacity: 1;
 
         &:hover {
-            background-color: $background-active-hover;
+            background-color: var(--color-background-hover);
         }
 
         &:active,
         &:focus {
-            background-color: $background-active;
+            background-color: var(--color-primary);
         }
     }
 }
 
-#editor.ace_editor,
-#sidebar_editor.ace_editor {
-    background-color: $background-dark !important;
-    color: $foreground-normal !important;
+#filestexteditor.ace_editor {
+    background-color: var(--color-main-background);
+    color: var(--color-main-text);
 
     .ace_gutter {
-        color: $foreground-normal !important;
-        opacity: 1 !important;
-
-        .ace_gutter-cell {
-            opacity: 0.7;
-        }
+        color: var(--color-text-maxcontrast);
+        opacity: 1;
     }
 
     .ace_gutter-active-line {
-        background-color: $background-active-hover !important;
+        background-color: var(--color-background-darker);
     }
 
     .ace_marker-layer {
         .ace_active-line {
-            background: $background-dark !important;
+            background: var(--color-background-darker) !important;
         }
 
         .ace_selection {
-            background: $background-active-hover !important;
+            background: var(--color-primary);
         }
     }
 
     .ace_cursor {
-        color: $foreground-normal !important;
+        color: var(--color-main-text);
     }
-}
-
-#sidebar_editor.ace_editor .ace_cursor {
-    display: none;
 }
