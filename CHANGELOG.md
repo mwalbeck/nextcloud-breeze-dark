@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 23.2.0 - 2022-01-30
+
 ### Added
 
 -   [#167](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/167) Support for GpxEdit
