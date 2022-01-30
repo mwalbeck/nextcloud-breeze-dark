@@ -1,0 +1,181 @@
+/***
+ * @copyright Copyright (c) 2022, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* GpxEdit ------------------------------------------------------------------ */
+
+.app-gpxedit {
+    .sidebar.leaflet-touch {
+        border-color: var(--color-border);
+    }
+
+    .sidebar-tabs,
+    .sidebar-content {
+        background-color: var(--color-main-background);
+        color: var(--color-main-text);
+    }
+
+    .sidebar-tabs > li.active {
+        background-color: var(--color-background-darker);
+        color: var(--color-main-text);
+    }
+
+    .sidebar-tabs > li:hover {
+        color: var(--color-main-text);
+        background-color: var(--color-background-hover);
+    }
+
+    #metadatalabel {
+        background-color: var(--color-main-background);
+        border-color: var(--color-border);
+    }
+
+    #gpxeditsettings {
+        color: var(--color-main-text);
+    }
+
+    .toplink,
+    .toplink:link,
+    .toplink:visited,
+    .toplink:hover {
+        color: var(--color-text-link);
+    }
+
+    .marker-select {
+        background: var(--icon-triangle-s-000) no-repeat right 4px center;
+    }
+}
+
+.app-gpxedit .leaflet-container {
+    .leaflet-bar {
+        border-color: var(--color-border) !important;
+        box-shadow: none !important;
+        background-color: var(--color-main-background);
+
+        a {
+            background-color: var(--color-main-background);
+            color: var(--color-main-text);
+            border-bottom-color: var(--color-border);
+        }
+
+        a .fa {
+            color: var(--color-main-text);
+        }
+    }
+
+    .leaflet-control-geocoder {
+        background-color: var(--color-main-background);
+        border-color: var(--color-border);
+        box-shadow: none;
+
+        .leaflet-control-geocoder-icon {
+            filter: invert(95%);
+        }
+
+        .leaflet-control-geocoder-form input {
+            background: var(--color-main-background);
+            color: var(--color-main-text);
+        }
+
+        .leaflet-control-geocoder-alternatives li {
+            border-bottom-color: var(--color-border);
+        }
+
+        .leaflet-control-geocoder-alternatives a {
+            color: var(--color-main-text);
+        }
+
+        .leaflet-control-geocoder-alternatives a:hover,
+        .leaflet-control-geocoder-selected {
+            background-color: var(--color-background-hover);
+        }
+    }
+
+    .leaflet-control-geocoder-address-context {
+        color: var(--color-text-maxcontrast);
+    }
+
+    .leaflet-control-layers {
+        box-shadow: none;
+        background: var(--color-main-background);
+        border-color: var(--color-border);
+        color: var(--color-main-text);
+    }
+
+    .leaflet-popup-content-wrapper,
+    .leaflet-popup-tip {
+        background: var(--color-main-background);
+        color: var(--color-main-text);
+        border: 1px solid var(--color-border);
+        box-shadow: none;
+    }
+
+    .leaflet-control-minimap {
+        border: solid var(--color-main-background) 4px;
+        box-shadow: none;
+        background: var(--color-main-background);
+
+        a {
+            background-color: rgba(255, 255, 255, 0.73);
+        }
+    }
+
+    .leaflet-control-mouseposition {
+        background-color: var(--color-main-background);
+        border: 1px solid var(--color-border);
+        border-bottom: none;
+        box-shadow: none;
+        color: var(--color-text-maxcontrast);
+    }
+
+    .leaflet-control-attribution {
+        background-color: var(--color-main-background);
+        border: 1px solid var(--color-border);
+        border-bottom: none;
+        color: var(--color-text-maxcontrast);
+
+        a {
+            color: var(--color-text-link);
+        }
+    }
+
+    .leaflet-control-scale-line {
+        background-color: rgba(49, 54, 59, 0.75);
+        color: var(--color-main-text);
+    }
+
+    .leaflet-tooltip {
+        background-color: var(--color-main-background);
+        border-color: var(--color-border);
+        color: var(--color-main-text);
+        box-shadow: none;
+    }
+
+    .leaflet-tooltip-left::before {
+        border-left-color: var(--color-border);
+    }
+
+    .leaflet-tooltip-right::before {
+        border-right-color: var(--color-border);
+    }
+}
+
+/* Icons -------------------------------------------------------------------- */
+
+.app-gpxedit .leaflet-container {
+    a.icon-ruler,
+    a.leaflet-draw-draw-polyline,
+    a.leaflet-draw-draw-marker,
+    a.leaflet-draw-edit-edit,
+    a.leaflet-draw-edit-remove {
+        background-color: transparent;
+        filter: invert(1);
+    }
+}
+
+.oc-dialog .oc-dialog-content .ui-icon-alert,
+.leaflet-control-minimap-toggle-display {
+    filter: invert(1);
+}

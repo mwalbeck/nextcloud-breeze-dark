@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   [#167](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/167) Support for GpxEdit
+
 ### Fixed
 
 -   [#295](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/295) Change colour of quotabar in groupfolders admin settings to --color-background-hover.
