@@ -11,41 +11,39 @@
     border-left: unset;
     border-right-color: var(--color-border);
 
-    .city-list {
-        li {
-            a {
-                color: var(--color-main-text);
-            }
-
-            &:hover,
-            &:hover > a {
-                background-color: var(--color-background-hover);
-                box-shadow: inset 4px 0 var(--color-primary);
-            }
-
-            &.selected,
-            &.selected a {
-                background-color: var(--color-primary-element);
-                box-shadow: inset 4px 0 var(--color-primary);
-                color: var(--color-main-text);
-                font-weight: 600;
-            }
+    .city-list li {
+        a {
+            color: var(--color-main-text);
         }
 
-        #create-city {
-            background-color: var(--color-main-background);
-            border-bottom-color: var(--color-primary-element);
-            border-left: unset;
-            border-right: unset;
-            border-top-color: var(--color-primary-element);
+        &:hover,
+        &:hover > a {
+            background-color: var(--color-background-hover);
+            box-shadow: inset 4px 0 var(--color-primary);
+        }
 
-            h1 {
-                color: var(--color-main-text);
-            }
+        &.selected,
+        &.selected a {
+            background-color: var(--color-primary-element);
+            box-shadow: inset 4px 0 var(--color-primary);
+            color: var(--color-main-text);
+            font-weight: 600;
+        }
+    }
 
-            hr {
-                background: var(--color-border);
-            }
+    .city-list #create-city {
+        background-color: var(--color-main-background);
+        border-bottom-color: var(--color-primary-element);
+        border-left: unset;
+        border-right: unset;
+        border-top-color: var(--color-primary-element);
+
+        h1 {
+            color: var(--color-main-text);
+        }
+
+        hr {
+            background: var(--color-border);
         }
     }
 }

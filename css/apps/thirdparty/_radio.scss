@@ -17,14 +17,12 @@
         }
     }
 
-    #playbutton {
-        &:hover,
-        &:active,
-        &:focus {
-            &:not(:disabled):not(.primary):not(#quota) {
-                background-color: inherit;
-                border: unset;
-            }
+    #playbutton:hover,
+    #playbutton:active,
+    #playbutton:focus {
+        &:not(:disabled):not(.primary):not(#quota) {
+            background-color: inherit;
+            border: unset;
         }
     }
 }

@@ -50,35 +50,31 @@
         color: var(--color-text-link);
     }
 
-    .content-queue > table {
-        > thead > tr {
-            background-color: var(--color-background-darker);
+    .content-queue > table > thead > tr {
+        background-color: var(--color-background-darker);
 
-            > th {
-                border-bottom-color: var(--color-border);
-            }
-
-            > th.border {
-                border-left-color: var(--color-border);
-            }
+        > th {
+            border-bottom-color: var(--color-border);
         }
 
-        > tbody > tr {
-            > td {
-                border-bottom-color: var(--color-border);
+        > th.border {
+            border-left-color: var(--color-border);
+        }
+    }
 
-                &.border {
-                    border-left-color: var(--color-border);
-                }
+    .content-queue > table > tbody > tr > td {
+        border-bottom-color: var(--color-border);
 
-                .pb-value {
-                    background: var(--color-background-hover) top left no-repeat;
-                }
+        &.border {
+            border-left-color: var(--color-border);
+        }
 
-                > a {
-                    color: var(--color-text-link);
-                }
-            }
+        .pb-value {
+            background: var(--color-background-hover) top left no-repeat;
+        }
+
+        > a {
+            color: var(--color-text-link);
         }
     }
 }

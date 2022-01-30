@@ -31,10 +31,10 @@
 
         &.available {
             opacity: 0.7;
+        }
 
-            &:hover {
-                opacity: 1;
-            }
+        &.available:hover {
+            opacity: 1;
         }
     }
 
