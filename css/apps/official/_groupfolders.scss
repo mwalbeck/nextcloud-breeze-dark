@@ -11,6 +11,10 @@
         border-bottom-color: var(--color-border);
     }
 
+    #groupfolders-react-root td.quota .quotabar {
+        background-color: var(--color-background-hover);
+    }
+
     .groups .group-edit,
     .acl {
         div[class$="control"] {
