@@ -43,10 +43,10 @@
         &.disabled {
             background-color: var(--color-background-alternate);
             color: var(--color-text-maxcontrast) !important;
+        }
 
-            &:hover {
-                border-color: var(--color-border);
-            }
+        &.disabled:hover {
+            border-color: var(--color-border);
         }
     }
 }

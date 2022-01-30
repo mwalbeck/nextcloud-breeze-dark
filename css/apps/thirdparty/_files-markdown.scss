@@ -19,37 +19,37 @@
         background-color: var(--color-main-background);
         border-left: 1px solid var(--color-border);
         color: var(--color-main-text);
+    }
 
-        &.text-markdown {
-            blockquote {
-                border-left-color: var(--color-primary-element);
-                color: var(--color-text-maxcontrast);
-            }
+    #editor_wrap #preview_wrap #preview.text-markdown {
+        blockquote {
+            border-left-color: var(--color-primary-element);
+            color: var(--color-text-maxcontrast);
+        }
 
-            tt {
-                background-color: var(--color-main-background);
-                border-color: var(--color-border);
-            }
+        tt {
+            background-color: var(--color-main-background);
+            border-color: var(--color-border);
+        }
 
-            code,
-            pre {
-                background-color: var(--color-background-darker);
-                border-color: var(--color-border);
-            }
+        code,
+        pre {
+            background-color: var(--color-background-darker);
+            border-color: var(--color-border);
+        }
 
-            table tr {
-                background-color: var(--color-main-background);
-                border-top-color: var(--color-border);
+        table tr {
+            background-color: var(--color-main-background);
+            border-top-color: var(--color-border);
+        }
 
-                th {
-                    border-bottom-color: var(--color-border);
-                    color: var(--color-text-maxcontrast);
-                }
-            }
+        table tr th {
+            border-bottom-color: var(--color-border);
+            color: var(--color-text-maxcontrast);
+        }
 
-            a {
-                color: var(--color-text-link);
-            }
+        a {
+            color: var(--color-text-link);
         }
     }
 }

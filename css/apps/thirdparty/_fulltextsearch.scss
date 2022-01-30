@@ -50,33 +50,29 @@
     .files_result {
         border-bottom-color: var(--color-border);
 
-        .files_div_name .files_result_file {
-            .files_result_title {
-                color: var(--color-main-text);
-            }
-
-            .files_result_extract {
-                color: var(--color-text-maxcontrast);
-            }
-        }
-
         .files_result_item {
             background: var(--color-main-background);
+            color: var(--color-text-maxcontrast);
+        }
+    }
+
+    .files_result .files_div_name .files_result_file {
+        .files_result_title {
+            color: var(--color-main-text);
+        }
+
+        .files_result_extract {
             color: var(--color-text-maxcontrast);
         }
     }
 }
 
 // Settings
-.app-settings #app-content {
-    #fns,
-    #elastic_search,
-    #files {
-        .div-table .div-table-row .div-table-col {
-            select,
-            input {
-                background-color: var(--color-background-darker) !important;
-            }
-        }
+.app-settings #app-content #fns,
+.app-settings #app-content #elastic_search,
+.app-settings #app-content #files {
+    .div-table .div-table-row .div-table-col select,
+    .div-table .div-table-row .div-table-col input {
+        background-color: var(--color-background-darker) !important;
     }
 }

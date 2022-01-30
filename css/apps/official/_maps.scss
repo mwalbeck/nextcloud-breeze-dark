@@ -20,10 +20,10 @@
 
         > .app-navigation-entry-menu {
             opacity: 1 !important;
+        }
 
-            > * {
-                opacity: 0.57 !important;
-            }
+        > .app-navigation-entry-menu > * {
+            opacity: 0.57 !important;
         }
     }
 }
@@ -44,28 +44,28 @@
 
         .leaflet-routing-geocoders {
             border-bottom: unset;
+        }
 
-            input {
-                border-color: var(--color-border);
-            }
+        .leaflet-routing-geocoders input {
+            border-color: var(--color-border);
+        }
 
-            button {
-                background-color: var(--color-main-background);
-                border-color: var(--color-border);
-            }
+        .leaflet-routing-geocoders button {
+            background-color: var(--color-main-background);
+            border-color: var(--color-border);
+        }
 
-            .exportCurrentRoute {
-                border-bottom: 1px solid var(--color-border);
-            }
+        .leaflet-routing-geocoders .exportCurrentRoute {
+            border-bottom: 1px solid var(--color-border);
         }
 
         &.leaflet-bar button {
             background-color: var(--color-main-background) !important;
             color: var(--color-main-text) !important;
+        }
 
-            &:hover {
-                background-color: var(--color-background-hover) !important;
-            }
+        &.leaflet-bar button:hover {
+            background-color: var(--color-background-hover) !important;
         }
     }
 

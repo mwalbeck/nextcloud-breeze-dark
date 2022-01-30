@@ -70,9 +70,9 @@
 }
 
 .modal--scheduler .fc .fc-button-primary {
-    color: var(--color-main-text);
     background-color: var(--color-main-background);
     border-color: var(--color-border);
+    color: var(--color-main-text);
 
     &:hover {
         background-color: var(--color-main-background);

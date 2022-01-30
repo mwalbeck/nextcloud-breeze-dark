@@ -23,8 +23,8 @@
     }
 
     .sidebar-tabs > li:hover {
-        color: var(--color-main-text);
         background-color: var(--color-background-hover);
+        color: var(--color-main-text);
     }
 
     #metadatalabel {
@@ -50,14 +50,14 @@
 
 .app-gpxedit .leaflet-container {
     .leaflet-bar {
+        background-color: var(--color-main-background);
         border-color: var(--color-border) !important;
         box-shadow: none !important;
-        background-color: var(--color-main-background);
 
         a {
             background-color: var(--color-main-background);
-            color: var(--color-main-text);
             border-bottom-color: var(--color-border);
+            color: var(--color-main-text);
         }
 
         a .fa {
@@ -98,24 +98,24 @@
     }
 
     .leaflet-control-layers {
-        box-shadow: none;
         background: var(--color-main-background);
         border-color: var(--color-border);
+        box-shadow: none;
         color: var(--color-main-text);
     }
 
     .leaflet-popup-content-wrapper,
     .leaflet-popup-tip {
         background: var(--color-main-background);
-        color: var(--color-main-text);
         border: 1px solid var(--color-border);
         box-shadow: none;
+        color: var(--color-main-text);
     }
 
     .leaflet-control-minimap {
+        background: var(--color-main-background);
         border: solid var(--color-main-background) 4px;
         box-shadow: none;
-        background: var(--color-main-background);
 
         a {
             background-color: rgba(255, 255, 255, 0.73);
@@ -125,7 +125,7 @@
     .leaflet-control-mouseposition {
         background-color: var(--color-main-background);
         border: 1px solid var(--color-border);
-        border-bottom: none;
+        border-bottom: unset;
         box-shadow: none;
         color: var(--color-text-maxcontrast);
     }
@@ -133,7 +133,7 @@
     .leaflet-control-attribution {
         background-color: var(--color-main-background);
         border: 1px solid var(--color-border);
-        border-bottom: none;
+        border-bottom: unset;
         color: var(--color-text-maxcontrast);
 
         a {
@@ -149,8 +149,8 @@
     .leaflet-tooltip {
         background-color: var(--color-main-background);
         border-color: var(--color-border);
-        color: var(--color-main-text);
         box-shadow: none;
+        color: var(--color-main-text);
     }
 
     .leaflet-tooltip-left::before {
