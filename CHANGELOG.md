@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 23.2.1 - 2022-03-05
+
+### Fixed
+
+-   Improved styling for new Calendar release.
+
 ## 23.2.0 - 2022-01-30
 
 ### Added
