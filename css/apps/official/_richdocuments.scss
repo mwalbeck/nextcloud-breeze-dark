@@ -1,0 +1,18 @@
+/***
+ * @copyright Copyright (c) 2022, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Nextcloud Office --------------------------------------------------------- */
+
+#richdocuments-wrapper #cool-loading-overlay .empty-content__title {
+    color: var(--color-background-darker);
+
+    p {
+        color: var(--color-background-dark);
+    }
+}
+
+// TODO: Fix theming on popup for inserting images from Nextcloud;
+// TODO: Fix Nextcloud sidebar
