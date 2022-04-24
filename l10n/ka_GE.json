@@ -1,0 +1,6 @@
+{ "translations": {
+    "Saved" : "შენახულია",
+    "Error" : "შეცდომა",
+    "Save" : "შენახვა"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}

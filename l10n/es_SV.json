@@ -1,6 +1,6 @@
 { "translations": {
-    "Saved" : "Guardat",
+    "Saved" : "Guardado",
     "Error" : "Error",
-    "Save" : "Desar"
+    "Save" : "Guardar"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

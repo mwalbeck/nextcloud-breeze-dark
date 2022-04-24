@@ -1,8 +1,7 @@
 OC.L10N.register(
     "breezedark",
     {
-    "Saved" : "Guardat",
-    "Error" : "Error",
-    "Save" : "Desar"
+    "Error" : "ایرر",
+    "Save" : "حفظ"
 },
 "nplurals=2; plural=(n != 1);");
