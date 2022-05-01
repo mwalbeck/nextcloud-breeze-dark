@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 24.0.0 - 2022-05-01
+
+### Added
+
+-   Support for Nextcloud 24
+
 ## 23.2.1 - 2022-03-05
 
 ### Fixed
