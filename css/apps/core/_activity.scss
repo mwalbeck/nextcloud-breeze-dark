@@ -46,7 +46,8 @@
     img[src$="password.svg"],
     img[src$="star.svg"],
     img[src$="files.svg"],
-    img[src$="download.svg"] {
+    img[src$="download.svg"],
+    img[src$="contacts.svg"] {
         filter: invert(95%);
     }
 }
