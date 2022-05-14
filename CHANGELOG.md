@@ -2,10 +2,19 @@
 
 ## [Unreleased]
 
+### Added
+
+-   New icons for Text and Talk
+
 ### Fixed
 
 -   [#296](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/296) Fix text colour on document loading screen.
 -   Improve styling of material-vue favorites button
+-   [#304](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/304) Fix styling for Talk reactions
+-   Fix favorites button in some sidebars
+-   Change opacity of settings button in app navigation
+-   Improve styling for emoji auto-complete list in Text
+-   Fix styling for markdown tables in Text
 
 ## 24.0.0 - 2022-05-01
 
