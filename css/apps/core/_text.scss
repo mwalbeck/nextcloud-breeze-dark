@@ -42,6 +42,34 @@
     }
 }
 
+#editor-wrapper .menubar {
+    button {
+        opacity: 0.7;
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
+
+    button.icon-undo,
+    button.icon-redo {
+        opacity: 1;
+
+        &:disabled {
+            opacity: 0.4;
+        }
+    }
+}
+
+.emoji-list {
+    box-shadow: unset !important;
+    border: 1px solid var(--color-border);
+
+    .emoji-list__item {
+        opacity: 1 !important;
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .icon-undo {
@@ -114,4 +142,24 @@
 
 .icon-image {
     background-image: var(--icon-text-image-f2f2f2) !important;
+}
+
+.icon-underline {
+	background-image: var(--icon-text-underline-f2f2f2) !important;
+}
+
+.icon-table {
+	background-image: var(--icon-text-table-f2f2f2) !important;
+}
+
+.icon-tasklist {
+	background-image: var(--icon-text-tasklist-f2f2f2) !important;
+}
+
+.icon-emoji {
+	background-image: var(--icon-text-emoji-f2f2f2) !important;
+}
+
+.icon-help {
+	background-image: var(--icon-text-help-f2f2f2) !important;
 }
