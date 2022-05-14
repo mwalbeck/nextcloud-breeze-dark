@@ -22,6 +22,18 @@
     }
 }
 
+.messages .message {
+    .message-buttons-bar {
+        border: 1px solid var(--color-border);
+        box-shadow: unset;
+    }
+
+    .reaction-button__has-reacted,
+    .reaction-button:hover {
+        background-color: var(--color-background-hover);
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 // Used by other apps or just used globally, so it should be available globally
