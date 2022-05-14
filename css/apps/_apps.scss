@@ -70,6 +70,22 @@
     }
 }
 
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star {
+	color: var(--color-main-text);
+
+    &:hover {
+        color: var(--color-icon-yellow);
+    }
+}
+
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
+	color: var(--color-icon-yellow);
+
+    &:hover {
+        color: var(--color-main-text);
+    }
+}
+
 /* App Store ---------------------------------------------------------------- */
 
 .app-settings #app-sidebar-vue .app-sidebar-header__figure {

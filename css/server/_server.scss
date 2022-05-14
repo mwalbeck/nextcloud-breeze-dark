@@ -82,7 +82,8 @@
 .oc-dialog {
     border: 1px solid var(--color-border);
 
-    .filepicker_element_selected {
+    .filepicker_element_selected,
+    #oc-dialog-filepicker-content .filepicker_element_selected {
         background-color: var(--color-primary);
         color: var(--color-primary-text);
     }
