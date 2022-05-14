@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 24.0.1 - 2022-05-14
+
 ### Added
 
 -   New icons for Text and Talk
