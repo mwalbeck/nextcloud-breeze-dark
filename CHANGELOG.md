@@ -8,6 +8,8 @@
 
 -   New icons for Text and Talk
 
+## 23.2.2 - 2022-05-14
+
 ### Fixed
 
 -   [#296](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/296) Fix text colour on document loading screen.
