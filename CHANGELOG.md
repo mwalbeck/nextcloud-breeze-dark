@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#296](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/296) Fix text colour on document loading screen.
+-   Improve styling of material-vue favorites button
+
 ## 23.2.1 - 2022-03-05
 
 ### Fixed
