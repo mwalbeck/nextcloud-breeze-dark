@@ -70,7 +70,8 @@
     }
 }
 
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star {
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star,
+#app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star {
 	color: var(--color-main-text);
 
     &:hover {
@@ -78,7 +79,8 @@
     }
 }
 
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred
+#app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
 	color: var(--color-icon-yellow);
 
     &:hover {
