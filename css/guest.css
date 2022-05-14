@@ -76,6 +76,14 @@
     --color-border-dark: var(--color-border) !important;
 
     --color-icon: rgba(242, 242, 242, 1);
+
+    /* Colour variables for markdown tables */
+    --table-color-border: var(--color-border) !important;
+    --table-color-heading: var(--color-primary-text) !important;
+    --table-color-heading-border: var(--color-border) !important;
+    --table-color-background: var(--color-main-background) !important;
+    --table-color-background-hover: var(--color-background-hover) !important;
+    --table-border-radius: var(--border-radius) !important;
 }
 
 /* Login Screen ------------------------------------------------------------- */

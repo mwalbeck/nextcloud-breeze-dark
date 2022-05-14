@@ -170,6 +170,11 @@ $icon-success: #27ae60;
     @include icon-color-theming("table", "text", $icon-normal, 1, false);
     @include icon-color-theming("emoji", "text", $icon-normal, 1, false);
     @include icon-color-theming("help", "text", $icon-normal, 1, false);
+    @include icon-color-theming("table_settings", "text", $icon-normal, 1, false);
+    @include icon-color-theming("add_col_before", "text", $icon-normal, 1, false);
+    @include icon-color-theming("add_col_after", "text", $icon-normal, 1, false);
+    @include icon-color-theming("add_row_before", "text", $icon-normal, 1, false);
+    @include icon-color-theming("add_row_after", "text", $icon-normal, 1, false);
 
     @include icon-color-theming("rss", "news", $icon-normal, 1, false);
 
