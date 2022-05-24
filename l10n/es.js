@@ -18,4 +18,4 @@ OC.L10N.register(
     "Enable Breeze Dark theme" : "Activar tema Breeze Dark",
     "Enable Breeze Dark automated activation by clients system settings" : "Habilitar la activación automática de Breeze Dark en función de los ajustes del sistema del cliente"
 },
-"nplurals=2; plural=(n != 1);");
+"nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
