@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 24.0.2 - 2022-07-26
+
 ### Fixed
 
 -   [#307](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/307) Fix unreadable project name in Cospend
