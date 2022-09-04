@@ -41,7 +41,7 @@ After you install the theme, you need to enable it. There are two options for th
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages won't be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
+The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages will not be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
 
 ```
 Settings > Administration > Theming > Breeze Dark
@@ -51,7 +51,7 @@ Please note that you need the Theming app enabled in Nextcloud to access the glo
 
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user hasn't set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
+The personal option allows each user to set their own preference independent of how you set the global option. If the user has not set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
 
 ```
 Settings > Personal > Accessibility > Breeze Dark
@@ -77,7 +77,7 @@ A full list of supported apps can be found on the [wiki](https://github.com/mwal
 
 If you would like to contribute to the theme, all you need is a working Nextcloud setup and a text editor. Nextcloud is going to handle all the Sass compilation on its own. When you have Nextcloud setup, you can simply clone this repo into the app folder.
 
-As Nextcloud caches all sass, your changes won't show up immediately. To have your changes show up an easy trick is to disable the theme, refresh the page and then enable it again. This isn't perfect, but works most of the time. If your changes don't show up, you can either wait a couple of minutes and then try again, or you can try running an **occ maintenance:repair**.
+As Nextcloud caches all sass, your changes will not show up immediately. To have your changes show up an easy trick is to disable the theme, refresh the page and then enable it again. This is not perfect, but works most of the time. If your changes do not show up, you can either wait a couple of minutes and then try again, or you can try running an **occ maintenance:repair**.
 
 You're always welcome to open an issue and talk about the changes, you would like to make, before starting.
 
