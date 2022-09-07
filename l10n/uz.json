@@ -1,6 +1,6 @@
 { "translations": {
-    "Saved" : "Saqlangan",
-    "Error" : "Xato",
-    "Save" : "Saqlash"
+    "Saved" : "Saved",
+    "Error" : "Error",
+    "Save" : "Save"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
