@@ -96,3 +96,10 @@
     border: 1px solid var(--color-border) !important;
     box-shadow: none !important;
 }
+
+.app-settings .app-settings__content .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) {
+    .checkbox-radio-switch__input:hover + .checkbox-radio-switch__label,
+    .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label {
+        background-color: var(--color-background-hover);
+    }
+}

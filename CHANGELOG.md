@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixed
+
+-   [#309](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/309) Fix background colour for toggle switch in Polls settings
+
 ## 24.0.2 - 2022-07-26
 
 ### Fixed
