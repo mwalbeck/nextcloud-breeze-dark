@@ -39,6 +39,7 @@
     }
 
     #controls {
+        background-color: var(--color-main-background);
         border-bottom: 1px solid var(--color-border);
 
         .progress,
@@ -82,7 +83,7 @@
 
     .buffer-bar {
         background-color: var(--color-background-hover) !important;
-        opacity: 1;
+        opacity: 1 !important;
     }
 
     .play-bar {
@@ -108,8 +109,22 @@
         filter: invert(95%);
     }
 
-    // play-pause button on hover in nav sidebar
+    #app-content .play-pause {
+        filter: invert(95%);
+    }
+
     #app-navigation .play-pause {
+        filter: unset;
+    }
+
+    .icon-album,
+    .icon-folder-nav,
+    .icon-audiotrack,
+    .icon-library-music,
+    .icon-radio,
+    .icon-podcast,
+    .icon-play-big,
+    .icon-pause-big {
         filter: invert(95%);
     }
 }
