@@ -5,6 +5,8 @@
 ### Fixed
 
 -   [#309](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/309) Fix background colour for toggle switch in Polls settings
+-   [#308](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/308) Fix dark icons in navigation sidebar in Music
+-   [#310](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/310) Fix styling for music controls in Music
 
 ## 24.0.2 - 2022-07-26
 
