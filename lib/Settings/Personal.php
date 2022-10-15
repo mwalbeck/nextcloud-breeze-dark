@@ -88,7 +88,7 @@ class Personal implements ISettings
      */
     public function getSection(): string
     {
-        return 'accessibility';
+        return 'theming';
     }
 
     /**
