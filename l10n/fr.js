@@ -8,6 +8,7 @@ OC.L10N.register(
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Un thème sombre basé sur Breeze Dark du projet KDE. Veuillez rafraîchir la page pour que les changements prennent effet.",
     "This setting will enable the theme by default, for any unauthenticated users and users who have not set a preference." : "Ce paramètre permet d'activer le thème par défaut, pour tous les utilisateurs non authentifiés et les utilisateurs qui n'ont pas défini de préférence.",
     "Enable Breeze Dark theme by default" : "Activez le thème Breeze Dark par défaut",
+    "This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who have not set a preference." : "Ce paramètre activera l'activation automatique par les réglages systèmes des clients par défaut, pour chaque utilisateur identifié ou non qui n'aurait pas exprimé de préférence.",
     "Enable Breeze Dark automated activation by the clients system settings by default" : "Activer l'activation automatique de Breeze Dark via les paramètres du client par défaut",
     "This setting will allow you to choose if the login page should be themed when the theme is enabled by default." : "Ce paramètre vous permet de choisir si la page de connexion doit être thématisée lorsque le thème est activé par défaut.",
     "Theme the login page" : "Thème de la page de connexion",
