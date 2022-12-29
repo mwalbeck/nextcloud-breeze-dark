@@ -34,6 +34,22 @@
     }
 }
 
+/* Tasks */
+.center-button .button-vue--vue-secondary {
+    color: var(--color-main-text) !important;
+    background-color: var(--color-background-darker) !important;
+
+    &:hover {
+        background-color: var(--color-background-hover) !important;
+    }
+
+    &:active,
+    &:focus {
+        background-color: var(--color-primary-element) !important;
+        color: var(--color-primary-text) !important;
+    }
+}
+
 /* Icons -------------------------------------------------------------------- */
 
 .icon-github,
