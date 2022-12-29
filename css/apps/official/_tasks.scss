@@ -39,7 +39,8 @@
         }
     }
 
-    .task-list .loadmore span {
+    .task-list .loadmore span,
+    .task-list .loadmore button {
         background-color: var(--color-background-darker) !important;
         color: var(--color-text-maxcontrast) !important;
     }
