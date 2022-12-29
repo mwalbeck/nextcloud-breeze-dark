@@ -2,11 +2,16 @@
 
 ## [Unreleased]
 
+## 24.0.3 - 2022-12-29
+
 ### Fixed
 
 -   [#309](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/309) Fix background colour for toggle switch in Polls settings
 -   [#308](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/308) Fix dark icons in navigation sidebar in Music
 -   [#310](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/310) Fix styling for music controls in Music
+-   [#319](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/319) Improve compatibility with Unsplash. Thanks @relisiuol
+-   [#321](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/321) Fix load completed tasks button being cut off in Tasks
+-   [#322](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/322) Fix styling for create new task button in tasks dashboard widget
 
 ## 24.0.2 - 2022-07-26
 
