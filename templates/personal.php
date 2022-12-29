@@ -25,6 +25,7 @@
 
 
 script('breezedark', 'settings-personal');
+style('breezedark', 'settings');
 ?>
 
 <div id="breezedark" class="breezedark-personal section">

@@ -1,0 +1,27 @@
+.preview-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.preview {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3em;
+    position: relative;
+}
+
+.preview .preview-image {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    margin-right: 1em;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
+}
+
+.preview .preview-description {
+    display: flex;
+    flex-direction: column;
+}

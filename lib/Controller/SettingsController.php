@@ -71,8 +71,10 @@ class SettingsController extends Controller
     {
         if ($this->request->getParam("theme_enabled")) {
             $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
+            $this->toggleTheme("on");
         } else {
             $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
+            $this->toggleTheme("off");
         }
 
         if ($this->request->getParam("theme_automatic_activation_enabled")) {
@@ -119,6 +121,21 @@ class SettingsController extends Controller
             // set cachebuster to 0 to indicate that no custom styling is available
             $this->config->setAppValue($this->appName, "theme_custom_styling", "");
             $this->config->setAppValue($this->appName, "theme_cachebuster", 0);
+        }
+    }
+
+    public function toggleTheme($state): void
+    {
+        $enabledThemes = json_decode($this->config->getUserValue($this->userId, "theming", "enabled-themes", "[]"));
+
+        if ($state === "on") {
+            $enabledThemes = array_merge(["breezedark"], $enabledThemes);
+            $this->config->setUserValue($this->userId, "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
+        }
+
+        if ($state === "off") {
+            $enabledThemes = array_diff($enabledThemes, ["breezedark"]);
+            $this->config->setUserValue($this->userId, "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
         }
     }
 }
