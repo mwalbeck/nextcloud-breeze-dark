@@ -8,7 +8,7 @@
 
 #app-dashboard {
     --color-background-translucent: var(--color-dashboard-grey) !important;
-    background-color: var(--color-background-darker) !important;
+    --color-main-background: var(--color-background-darker) !important;
 }
 
 .background-selector .background.color {
