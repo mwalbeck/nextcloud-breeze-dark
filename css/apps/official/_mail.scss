@@ -22,18 +22,28 @@
     }
 }
 
-.app-mail #mail-content {
-    border-radius: 3px;
+.app-mail .html-message-body #message-container {
+    padding: 1rem;
+}
 
-    #mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title {
+.app-mail #mail-message .mail-message-body-html {
+
+    #mail-message-has-blocked-content {
         background-color: var(--color-main-background) !important;
-    }
+        margin: unset;
+        padding: 5px 1rem;
 
-    #mail-message-has-blocked-content
-        .action-item--open
-        button.action-item__menutoggle--with-title {
-        background-color: var(--color-primary) !important;
-        border-color: var(--color-primary-element) !important;
+        .button-vue {
+            border: 1px solid var(--color-border) !important;
+            padding: unset;
+            margin-left: 1rem;
+        }
+
+        .button-vue__text {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            text-decoration: none !important;
+        }
     }
 }
 

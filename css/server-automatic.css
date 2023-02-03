@@ -437,7 +437,11 @@ tbody tr:active thead tr:active {
   .app-navigation .app-navigation-caption__title {
     opacity: 1 !important;
   }
-  #app-settings-header .settings-button {
+  #app-settings-header .settings-button,
+#app-settings__header .settings-button,
+.contacts-settings .contacts-settings-button {
+    background-color: transparent !important;
+    border: unset !important;
     opacity: 1;
   }
   /* App Sidebar -------------------------------------------------------------- */
@@ -1396,15 +1400,23 @@ table tr.mouseOver td {
 .app-mail .app-content-list .list-item__wrapper.active .line-two__counter {
     color: var(--color-main-text);
   }
-  .app-mail #mail-content {
-    border-radius: 3px;
+  .app-mail .html-message-body #message-container {
+    padding: 1rem;
   }
-  .app-mail #mail-content #mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title {
+  .app-mail #mail-message .mail-message-body-html #mail-message-has-blocked-content {
     background-color: var(--color-main-background) !important;
+    margin: unset;
+    padding: 5px 1rem;
   }
-  .app-mail #mail-content #mail-message-has-blocked-content .action-item--open button.action-item__menutoggle--with-title {
-    background-color: var(--color-primary) !important;
-    border-color: var(--color-primary-element) !important;
+  .app-mail #mail-message .mail-message-body-html #mail-message-has-blocked-content .button-vue {
+    border: 1px solid var(--color-border) !important;
+    padding: unset;
+    margin-left: 1rem;
+  }
+  .app-mail #mail-message .mail-message-body-html #mail-message-has-blocked-content .button-vue__text {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-decoration: none !important;
   }
   .app-mail .attachment-popover button.action-item--single.icon-attachment:hover, .app-mail .attachment-popover button.action-item--single.icon-attachment:focus, .app-mail .attachment-popover button.action-item--single.icon-attachment:active {
     background-color: var(--color-background-hover) !important;

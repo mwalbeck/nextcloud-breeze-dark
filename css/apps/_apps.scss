@@ -33,7 +33,11 @@
     }
 }
 
-#app-settings-header .settings-button {
+#app-settings-header .settings-button,
+#app-settings__header .settings-button,
+.contacts-settings .contacts-settings-button {
+    background-color: transparent !important;
+    border: unset !important;
 	opacity: 1;
 }
 
