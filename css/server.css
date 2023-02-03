@@ -82,6 +82,7 @@
   --color-background-dark: var(--color-main-background) !important;
   --color-background-darker: var(--color-shade-black) !important;
   --color-background-translucent: var(--color-dashboard-grey) !important;
+  --color-background-plain: var(--color-shade-black) !important;
   --color-primary: var(--color-plasma-blue) !important;
   --color-primary-light: var(--color-primary) !important;
   --color-primary-text: var(--color-paper-white) !important;
@@ -149,6 +150,19 @@ input[type=submit].primary:active {
   border-color: var(--color-primary-element) !important;
 }
 
+.button-vue.button-vue--vue-secondary {
+  color: var(--color-main-text) !important;
+  background-color: var(--color-main-background) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.button-vue.button-vue--vue-secondary:hover {
+  border-color: var(--color-primary-element) !important;
+}
+.button-vue.button-vue--vue-secondary:focus, .button-vue.button-vue--vue-secondary:active {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary-element) !important;
+}
+
 /* Input Fields -------------------------------------------------------------- */
 input:not([type=range]):not([type=button]):not([type=submit]) {
   background-color: var(--color-background-darker);
@@ -167,14 +181,10 @@ textarea:not(:disabled):active {
 .multiselect .multiselect__input {
   background-color: inherit !important;
 }
-.multiselect.multiselect--active .multiselect__input {
-  background-color: var(--color-background-darker) !important;
-}
 
-input[type=text] + .icon-confirm,
-input[type=password] + .icon-confirm,
-input[type=email] + .icon-confirm {
-  background-color: var(--color-background-darker) !important;
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:hover,
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:focus-within {
+  background-color: var(--color-background-hover) !important;
 }
 
 /* Action items -------------------------------------------------------------- */
@@ -254,7 +264,8 @@ progress:not(.vue) {
 .popovermenu,
 .bubble,
 .popover,
-.app-navigation-entry-menu {
+.app-navigation-entry-menu,
+.v-popper__popper .v-popper__inner {
   border: 1px solid var(--color-border);
 }
 
@@ -740,6 +751,22 @@ body.dashboard--inverted.dashboard--dark .header-right > div:not(#settings) > :f
 }
 .modal__content li label:hover {
   border-color: var(--color-primary-element) !important;
+}
+
+#app-dashboard .footer .button-vue {
+  border: unset !important;
+}
+
+#app-dashboard .user-status-menu-item__toggle--inline {
+  box-shadow: none !important;
+}
+
+#status-weather .button-vue {
+  background-color: var(--color-main-background-blur) !important;
+  border: unset !important;
+}
+#status-weather .button-vue:hover {
+  background-color: var(--color-background-hover) !important;
 }
 
 /* Deck */

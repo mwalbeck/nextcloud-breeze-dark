@@ -24,6 +24,23 @@
     }
 }
 
+#app-dashboard .footer .button-vue {
+    border: unset !important;
+}
+
+#app-dashboard .user-status-menu-item__toggle--inline {
+    box-shadow: none !important;
+}
+
+#status-weather .button-vue {
+    background-color: var(--color-main-background-blur) !important;
+    border: unset !important;
+
+    &:hover {
+        background-color: var(--color-background-hover) !important;
+    }
+}
+
 /* Deck */
 .app-dashboard .card {
     background-color: inherit !important;
