@@ -43,7 +43,7 @@ function postError(selector, id) {
 window.addEventListener("DOMContentLoaded", function () {
     $("#breezedark-theme-enabled").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
-            theme_enabled: this.checked ? 1 : 0,
+            theme_enforced: this.checked ? 1 : 0,
             theme_automatic_activation_enabled: $("#breezedark-automatic-activation-enabled").prop(
                 "checked"
             )
@@ -61,10 +61,6 @@ window.addEventListener("DOMContentLoaded", function () {
                 postError("label[for='breezedark-theme-enabled']", "breezedark-theme-enabled-msg");
             });
 
-        $("#breezedark-theme-login-page").prop(
-            "disabled",
-            !$("#breezedark-theme-enabled").prop("checked")
-        );
         $("#breezedark-automatic-activation-enabled").prop(
             "disabled",
             !$("#breezedark-theme-enabled").prop("checked")
@@ -73,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     $("#breezedark-automatic-activation-enabled").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
-            theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
+            theme_enforced: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
             theme_automatic_activation_enabled: this.checked ? 1 : 0,
             theme_login_page: $("#breezedark-theme-login-page").prop("checked") ? 1 : 0,
         })
@@ -94,7 +90,7 @@ window.addEventListener("DOMContentLoaded", function () {
     $("#breezedark-theme-login-page").change(function () {
         $.post(OC.generateUrl("apps/breezedark/settings/admin"), {
             theme_login_page: this.checked ? 1 : 0,
-            theme_enabled: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
+            theme_enforced: $("#breezedark-theme-enabled").prop("checked") ? 1 : 0,
             theme_automatic_activation_enabled: $("#breezedark-automatic-activation-enabled").prop(
                 "checked"
             )

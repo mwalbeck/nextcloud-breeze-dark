@@ -89,10 +89,10 @@ class SettingsController extends Controller
      */
     public function admin(): void
     {
-        if ($this->request->getParam("theme_enabled")) {
-            $this->config->setAppValue($this->appName, "theme_enabled", "1");
+        if ($this->request->getParam("theme_enforced")) {
+            $this->config->setAppValue($this->appName, "theme_enforced", "1");
         } else {
-            $this->config->setAppValue($this->appName, "theme_enabled", "0");
+            $this->config->setAppValue($this->appName, "theme_enforced", "0");
         }
 
         if ($this->request->getParam("theme_login_page")) {

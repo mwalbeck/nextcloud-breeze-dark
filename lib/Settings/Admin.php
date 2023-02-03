@@ -59,12 +59,12 @@ class Admin implements ISettings
      */
     public function getForm(): TemplateResponse
     {
-        $themeEnabled = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+        $themeEnforced = $this->config->getAppValue($this->appName, 'theme_enforced', "0");
         $themeLoginPage = $this->config->getAppValue($this->appName, 'theme_login_page', "1");
         $themeAutomaticActivation = $this->config->getAppValue($this->appName, 'theme_automatic_activation_enabled', "0");
         $themeCustomStyling = $this->config->getAppValue($this->appName, 'theme_custom_styling', "");
         return new TemplateResponse('breezedark', 'admin', [
-            "themeEnabled" => $themeEnabled,
+            "themeEnforced" => $themeEnforced,
             "themeLoginPage" => $themeLoginPage,
             "themeAutomaticActivation" => $themeAutomaticActivation,
             "themeCustomStyling" => $themeCustomStyling

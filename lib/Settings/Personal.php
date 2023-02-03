@@ -47,7 +47,7 @@ class Personal implements ISettings
     private $userId;
 
     /** @var string */
-    private $appPath;
+    private $appWebPath;
 
     /**
      * @param string $appName
