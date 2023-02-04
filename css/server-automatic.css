@@ -540,16 +540,6 @@ tbody tr:active thead tr:active {
    *
    * @license GNU AGPL version 3 or any later version, see COPYING file for more.
    */
-  /* Federated file sharing --------------------------------------------------- */
-  .icon-social-diaspora {
-    filter: invert(95%);
-  }
-  .icon-social-facebook {
-    filter: invert(95%);
-  }
-  .icon-social-twitter {
-    filter: invert(95%);
-  }
   /* Apps that haven't moved to variables for icons ---------------------------- */
   .icon-onlyoffice-open,
 .icon-onlyoffice-convert,
@@ -563,22 +553,9 @@ tbody tr:active thead tr:active {
   .icon-collapse {
     color: var(--color-icon) !important;
   }
-  .app-settings #app-navigation li a img {
-    filter: invert(95%) !important;
-  }
-  .app-settings #apps-list .section .app-image .app-icon,
-.app-settings #apps-list-search .section .app-image .app-icon,
-.app-settings #app-sidebar #app-details-view image.app-icon {
-    filter: invert(5%);
-  }
   .app-settings #apps-list .section .app-image .app-icon[*|href$="circles.svg"],
-.app-settings #app-sidebar #app-details-view image.app-icon[*|href$="circles.svg"],
-.app-settings #apps-list .section .app-image .app-icon[*|href$="contacts.svg"],
-.app-settings #app-sidebar #app-details-view image.app-icon[*|href$="contacts.svg"] {
+.app-settings #app-sidebar #app-details-view image.app-icon[*|href$="circles.svg"] {
     filter: invert(1);
-  }
-  .app-settings .system-information div img[src$="/apps/support/img/system-info.svg"] {
-    filter: invert(95%);
   }
   .app-settings .infoicon {
     filter: invert(95%);
@@ -586,18 +563,8 @@ tbody tr:active thead tr:active {
   #settings #expanddiv li a img {
     filter: invert(95%);
   }
-  .notification-icon {
-    filter: invert(95%);
-  }
-  .clientslinks img.appsmall {
-    filter: invert(95%);
-  }
   img.two-factor-provider-settings-icon,
 .icon-u2f-device {
-    filter: invert(95%);
-  }
-  .downloadVersion img[src$="download.svg"],
-.revertVersion img[src$="history.svg"] {
     filter: invert(95%);
   }
   #navigation .app-icon {
