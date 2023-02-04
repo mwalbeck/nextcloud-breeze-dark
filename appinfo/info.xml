@@ -10,27 +10,29 @@ This is a breeze dark theme for Nextcloud, based on the Breeze Dark theme made b
 
 ## Usage
 
-After you install the theme, you need to enable it. There a two options for this, a global and a personal one.
+After you install the theme, you need to enable it. There are two options for this, a global and a personal one.
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages will not be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
+With the global options you can enforce the use of the theme for all users as well as unauthenticated visits. Please note that when the theme is enforced for all users it isn't possible for them to disable the theme or choose a different theme.
+
+There is also an option to let the theme be enabled / disabled based on the theming preferences reported by browser. When the theme is deactivated using this method, Nextcloud will revert to using the default light theme. This setting only sets the default for when the theme is globally enforced and can be overridden by the user.
+
+You can also choose whether the login page should be themed. Though this only has an effect if the theme is enforced globally, or during the login phase of a user that has the theme enabled.
+
+You can find the global options here:
 
 ```
 Settings > Administration > Theming > Breeze Dark
 ```
 
-Please note that you need the Theming app enabled in Nextcloud to access the global settings.
-
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user has not set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
+The personal option allows each user to enable / disable the theme unless it's being enforced by the global options. They can though choose whether the theme should follow the theming choice reported by the browser. This option is also available when the theme is being enforced globally. If the user hasn't set a prefernece they will follow the global default. You can find the personal option here:
 
 ```
-Settings > Personal > Accessibility > Breeze Dark
+Settings > Personal > Appearance and accessibility > Breeze Dark
 ```
-
-Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
 
 ### Custom styling
 
