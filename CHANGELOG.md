@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## 25.0.0 - 2023-02-04
+
+### Added
+
+-   [#317](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/317) Add Support for Nextcloud 25
+-   Option to enforce theme globally
+
+### Removed
+
+-   Enable theme globally by default
+
 ## 24.0.3 - 2022-12-29
 
 ### Fixed
