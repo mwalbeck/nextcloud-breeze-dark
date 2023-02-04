@@ -6,16 +6,6 @@
 
 /* Header -------------------------------------------------------------------- */
 
-#header {
-    background-color: var(--color-background-darker) !important;
-    background-image: unset !important;
-}
-
-#header .header-left > nav > .menu::after,
-#header .header-right > div > .menu::after {
-    border-bottom-color: var(--color-border);
-}
-
 #settings #expand:hover #expandDisplayName,
 #settings #expand:focus #expandDisplayName,
 #settings #expand:active #expandDisplayName,
@@ -35,7 +25,8 @@
 .popovermenu,
 .bubble,
 .popover,
-.app-navigation-entry-menu {
+.app-navigation-entry-menu,
+.v-popper__popper .v-popper__inner {
     border: 1px solid var(--color-border);
 }
 
@@ -201,11 +192,6 @@
 
 .toastify.dialogs {
     border: 1px solid var(--color-border);
-
-    .toast-close,
-    .toast-undo-button.toast-close {
-        background-image: var(--icon-close-f2f2f2) !important;
-    }
 }
 
 /* App Store ---------------------------------------------------------------- */

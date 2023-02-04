@@ -48,19 +48,3 @@
         opacity: 1;
     }
 }
-
-/* Icons -------------------------------------------------------------------- */
-
-.app-cookbook {
-    .app-navigation-new button {
-        background-image: var(--icon-add-f2f2f2) !important;
-    }
-
-    .icon-arrow-up {
-        background-image: var(--icon-triangle-n-f2f2f2) !important;
-    }
-
-    .icon-arrow-down {
-        background-image: var(--icon-triangle-s-f2f2f2) !important;
-    }
-}

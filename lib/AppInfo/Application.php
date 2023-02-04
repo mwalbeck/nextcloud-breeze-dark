@@ -71,17 +71,20 @@ class Application extends App implements IBootstrap
     public function doTheming(IConfig $config, IUserSession $userSession, IURLGenerator $urlGenerator): void
     {
         $user = $userSession->getUser();
-        $default = $config->getAppValue($this->appName, "theme_enabled", "0");
+        $enforced = $config->getAppValue($this->appName, "theme_enforced", "0");
         $loginPage = $config->getAppValue($this->appName, "theme_login_page", "1");
         $cachebuster = $config->getAppValue($this->appName, "theme_cachebuster", "0");
         $automaticActivation = $config->getAppValue($this->appName, "theme_automatic_activation_enabled", "0");
-        
-        if (!is_null($user) and $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", $default)) {
+
+        if ($enforced) {
+            if (!is_null($user)) {
+                $automaticActivation = $config->getUserValue($user->getUID(), $this->appName, "theme_automatic_activation_enabled", $automaticActivation);
+            }
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivation);
+        } elseif (!is_null($user) and $config->getUserValue($user->getUID(), $this->appName, "theme_enabled", "0")) {
             // When shown the 2FA login page you are logged in while also being on a login page,
             // so a logged in user still needs the guests.css stylesheet
-            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $config->getUserValue($user->getUID(), $this->appName, "theme_automatic_activation_enabled", $automaticActivation));
-        } elseif (is_null($user) and $default) {
-            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $automaticActivation);
+            $this->addStyling($urlGenerator, $loginPage, $cachebuster, $config->getUserValue($user->getUID(), $this->appName, "theme_automatic_activation_enabled", "0"));
         }
     }
 

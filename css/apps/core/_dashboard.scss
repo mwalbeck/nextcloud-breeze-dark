@@ -24,6 +24,23 @@
     }
 }
 
+#app-dashboard .footer .button-vue {
+    border: unset !important;
+}
+
+#app-dashboard .user-status-menu-item__toggle--inline {
+    box-shadow: none !important;
+}
+
+#status-weather .button-vue {
+    background-color: var(--color-main-background-blur) !important;
+    border: unset !important;
+
+    &:hover {
+        background-color: var(--color-background-hover) !important;
+    }
+}
+
 /* Deck */
 .app-dashboard .card {
     background-color: inherit !important;
@@ -36,8 +53,8 @@
 
 /* Tasks */
 .center-button .button-vue--vue-secondary {
-    color: var(--color-main-text) !important;
     background-color: var(--color-background-darker) !important;
+    color: var(--color-main-text) !important;
 
     &:hover {
         background-color: var(--color-background-hover) !important;
@@ -48,39 +65,4 @@
         background-color: var(--color-primary-element) !important;
         color: var(--color-primary-text) !important;
     }
-}
-
-/* Icons -------------------------------------------------------------------- */
-
-.icon-github,
-.icon-github-settings {
-    background-image: var(--icon-integration_github-app-f2f2f2) !important;
-}
-
-.icon-reddit {
-    background-image: var(--icon-integration_reddit-app-f2f2f2) !important;
-}
-
-.icon-discourse {
-    background-image: var(--icon-integration_discourse-app-f2f2f2) !important;
-}
-
-.icon-gitlab {
-    background-image: var(--icon-integration_gitlab-app-f2f2f2) !important;
-}
-
-.icon-mastodon {
-    background-image: var(--icon-integration_mastodon-app-f2f2f2) !important;
-}
-
-.icon-moodle {
-    background-image: var(--icon-integration_moodle-app-f2f2f2) !important;
-}
-
-.icon-twitter {
-    background-image: var(--icon-integration_twitter-app-f2f2f2) !important;
-}
-
-.icon-zammad {
-    background-image: var(--icon-integration_zammad-app-f2f2f2) !important;
 }

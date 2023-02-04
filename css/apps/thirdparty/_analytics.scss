@@ -52,10 +52,6 @@
 }
 
 .app-analytics {
-    .filterVisualizationItem {
-        background-image: var(--icon-close-f2f2f2);
-    }
-
     .analyticsWidgetItem {
         background-color: var(--color-background-darker) !important;
 
@@ -73,18 +69,4 @@
             border-bottom-color: var(--color-primary-element);
         }
     }
-}
-
-/* Icons -------------------------------------------------------------------- */
-
-.icon-analytics-filter-add {
-    background-image: var(--icon-analytics-filteradd-f2f2f2) !important;
-}
-
-.icon-analytics-options {
-    background-image: var(--icon-analytics-options-f2f2f2) !important;
-}
-
-.icon-analytics-drilldown {
-    background-image: var(--icon-analytics-column-f2f2f2) !important;
 }

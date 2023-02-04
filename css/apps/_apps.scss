@@ -33,8 +33,12 @@
     }
 }
 
-#app-settings-header .settings-button {
-	opacity: 1;
+#app-settings-header .settings-button,
+#app-settings__header .settings-button,
+.contacts-settings .contacts-settings-button {
+    background-color: transparent !important;
+    border: unset !important;
+    opacity: 1;
 }
 
 /* App Sidebar -------------------------------------------------------------- */
@@ -76,16 +80,16 @@
 
 #app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star,
 #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star {
-	color: var(--color-main-text);
+    color: var(--color-main-text);
 
     &:hover {
         color: var(--color-icon-yellow);
     }
 }
 
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred,
 #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
-	color: var(--color-icon-yellow);
+    color: var(--color-icon-yellow);
 
     &:hover {
         color: var(--color-main-text);
@@ -200,4 +204,9 @@
     .checkbox-radio-switch__input:focus
     + .checkbox-radio-switch__label[data-v-5cec6b50] {
     background-color: var(--color-background-hover) !important;
+}
+
+/* Template picker ---------------------------------------------------------- */
+.templates-picker__buttons {
+    background-image: unset !important;
 }

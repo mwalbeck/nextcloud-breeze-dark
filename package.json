@@ -8,9 +8,12 @@
         "stylelint": "^13.13.1",
         "stylelint-config-prettier": "^8.0.2",
         "stylelint-config-sass-guidelines": "^7.1.0",
-        "stylelint-prettier": "^1.2.0"
+        "stylelint-prettier": "^1.2.0",
+        "sass": "^1.54.9"
     },
     "scripts": {
+        "watch": "sass --poll --watch css/server.scss:css/server.css css/server-automatic.scss:css/server-automatic.css",
+        "build": "sass css/server.scss:css/server.css css/server-automatic.scss:css/server-automatic.css",
         "prettier": "prettier --check css js",
         "prettier:fix": "prettier --write css js",
         "stylelint": "stylelint css",

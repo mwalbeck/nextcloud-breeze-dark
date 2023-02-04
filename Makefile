@@ -25,6 +25,12 @@ stylelint:
 stylelint-fix:
 	npm run stylelint:fix
 
+watch:
+	npm run watch
+
+build:
+	npm run build
+
 appstore:
 	rm -rf $(build_directory)
 	mkdir -p $(sign_directory)

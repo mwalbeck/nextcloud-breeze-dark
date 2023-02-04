@@ -10,20 +10,14 @@ If you have any questions, problems or anything else you're welcome to come hang
 
 The currently supported and maintained Nextcloud releases are:
 
--   Nextcloud 24
--   Nextcloud 23
+-   Nextcloud 25
 
 I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transitions, but for various reason I might decide to drop support for older releases early.
 
 Previous unmaintained releases:
 
--   Nextcloud 22
--   Nextcloud 21
--   Nextcloud 20
--   Nextcloud 19
--   Nextcloud 18
--   Nextcloud 17
--   Nextcloud 11-16
+-   Nextcloud 17-24 (App)
+-   Nextcloud 11-16 (Theme folder)
 
 ## Version numbering
 
@@ -41,23 +35,25 @@ After you install the theme, you need to enable it. There are two options for th
 
 ### Global
 
-The global option enables the theme by default for all users and unauthenticated visits. Without this option items like the login and sharing pages will not be styled. You can also decide to automatically enable or disable the theme based on the theming choice reported by the browser. In the global options you will also find an option to exclude the login page from being themed. You can find the global options here:
+With the global options you can enforce the use of the theme for all users as well as unauthenticated visits. Please note that when the theme is enforced for all users it isn't possible for them to disable the theme or choose a different theme.
+
+There is also an option to let the theme be enabled / disabled based on the theming preferences reported by browser. When the theme is deactivated using this method, Nextcloud will revert to using the default light theme. This setting only sets the default for when the theme is globally enforced and can be overridden by the user.
+
+You can also choose whether the login page should be themed. Though this only has an effect if the theme is enforced globally, or during the login phase of a user that has the theme enabled.
+
+You can find the global options here:
 
 ```
 Settings > Administration > Theming > Breeze Dark
 ```
 
-Please note that you need the Theming app enabled in Nextcloud to access the global settings.
-
 ### Personal
 
-The personal option allows each user to set their own preference independent of how you set the global option. If the user has not set an option yet, they will follow the global option. They can also choose, independently, if they want the theme to match the theming choice reported by the browser. You can find the personal option here:
+The personal option allows each user to enable / disable the theme unless it's being enforced by the global options. They can though choose whether the theme should follow the theming choice reported by the browser. This option is also available when the theme is being enforced globally. If the user hasn't set a prefernece they will follow the global default. You can find the personal option here:
 
 ```
-Settings > Personal > Accessibility > Breeze Dark
+Settings > Personal > Appearance and accessibility > Breeze Dark
 ```
-
-Please note that you need the Accessibility app enabled in Nextcloud to access the personal setting.
 
 ### Custom styling
 
@@ -72,14 +68,6 @@ If you find an issue with the theme I would greatly appreciate it if you opened 
 You're also very welcome to open a styling request, if there is an app you would like to see supported by this theme.
 
 A full list of supported apps can be found on the [wiki](https://github.com/mwalbeck/nextcloud-breeze-dark/wiki/Styled-apps).
-
-### Pull requests
-
-If you would like to contribute to the theme, all you need is a working Nextcloud setup and a text editor. Nextcloud is going to handle all the Sass compilation on its own. When you have Nextcloud setup, you can simply clone this repo into the app folder.
-
-As Nextcloud caches all sass, your changes will not show up immediately. To have your changes show up an easy trick is to disable the theme, refresh the page and then enable it again. This is not perfect, but works most of the time. If your changes do not show up, you can either wait a couple of minutes and then try again, or you can try running an **occ maintenance:repair**.
-
-You're always welcome to open an issue and talk about the changes, you would like to make, before starting.
 
 ## Donations
 

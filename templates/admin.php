@@ -30,14 +30,17 @@ script('breezedark', 'settings-admin');
 <div id="breezedark" class="breezedark-admin section">
     <h2><?php p($l->t("Breeze Dark")); ?></h2>
     <p><?php p($l->t("A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect.")); ?></p>
-    <p><?php p($l->t("This setting will enable the theme by default, for any unauthenticated users and users who have not set a preference.")); ?></p>
-    <input type="checkbox" class="checkbox" id="breezedark-theme-enabled" <?php p($themeEnabled ? "checked" : ""); ?>>
-    <label for="breezedark-theme-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
+
+    <p><?php p($l->t("This setting will enforce the usage of this theme. Please note, this will prevent users from disabling or choosing a different theme.")); ?></p>
+    <input type="checkbox" class="checkbox" id="breezedark-theme-enabled" <?php p($themeEnforced ? "checked" : ""); ?>>
+    <label for="breezedark-theme-enabled"><?php p($l->t("Enforce use of the Breeze Dark theme")); ?></label>
+
     <p><?php p($l->t("This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who have not set a preference.")); ?></p>
-    <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
+    <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeEnforced ? "" : "disabled");?> <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
     <label for="breezedark-automatic-activation-enabled"><?php p($l->t("Enable Breeze Dark automated activation by the clients system settings by default")); ?></label>
-    <p><?php p($l->t("This setting will allow you to choose if the login page should be themed when the theme is enabled by default.")); ?></p>
-    <input type="checkbox" class="checkbox" id="breezedark-theme-login-page" <?php p($themeEnabled ? "" : "disabled");?> <?php p($themeLoginPage ? "checked" : "");?>>
+
+    <p><?php p($l->t("This setting will allow you to choose if the login page should be themed. This only has an effect if the theme is enforced or during the login process for a user that has the theme enabled.")); ?></p>
+    <input type="checkbox" class="checkbox" id="breezedark-theme-login-page" <?php p($themeLoginPage ? "checked" : ""); ?>>
     <label for="breezedark-theme-login-page"><?php p($l->t("Theme the login page")); ?></label>
 
     <h3><?php p($l->t("Custom Styling")); ?></h3>

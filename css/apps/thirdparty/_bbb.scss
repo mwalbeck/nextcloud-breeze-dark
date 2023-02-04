@@ -20,15 +20,6 @@
 
 /* Icons -------------------------------------------------------------------- */
 
-#bbb-react-root td .action-rename::after,
-#bbb-react-root th .action-rename::after {
-    background-image: var(--icon-bbb-rename-f2f2f2) !important;
-}
-
-.icon-add-shortcut {
-    background-image: var(--icon-bbb-chain-plus-f2f2f2) !important;
-}
-
 .fileActionsMenu img[src$="/bbb/img/app-dark.svg"] {
     filter: invert(95%);
 }

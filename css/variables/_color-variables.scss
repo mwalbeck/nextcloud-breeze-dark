@@ -4,7 +4,7 @@
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 
-:root {
+[data-themes*="breezedark"] {
     // Primary Breeze colours
     --color-paper-white: rgba(252, 252, 252, 1);
     --color-cardboard-gray: rgba(239, 240, 241, 1);
@@ -45,6 +45,7 @@
     --color-background-dark: var(--color-main-background) !important;
     --color-background-darker: var(--color-shade-black) !important;
     --color-background-translucent: var(--color-dashboard-grey) !important;
+    --color-background-plain: var(--color-shade-black) !important;
 
     --color-primary: var(--color-plasma-blue) !important;
     --color-primary-light: var(--color-primary) !important;

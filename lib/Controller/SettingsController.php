@@ -69,10 +69,16 @@ class SettingsController extends Controller
      */
     public function personal(): void
     {
-        if ($this->request->getParam("theme_enabled")) {
-            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
-        } else {
-            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
+        $themeEnforced = $this->config->getAppValue($this->appName, 'theme_enforced', "0");
+
+        if (!$themeEnforced) {
+            if ($this->request->getParam("theme_enabled")) {
+                $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
+                $this->toggleTheme("on");
+            } else {
+                $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
+                $this->toggleTheme("off");
+            }
         }
 
         if ($this->request->getParam("theme_automatic_activation_enabled")) {
@@ -87,10 +93,12 @@ class SettingsController extends Controller
      */
     public function admin(): void
     {
-        if ($this->request->getParam("theme_enabled")) {
-            $this->config->setAppValue($this->appName, "theme_enabled", "1");
+        if ($this->request->getParam("theme_enforced")) {
+            $this->config->setAppValue($this->appName, "theme_enforced", "1");
+            $this->enforceTheme("on");
         } else {
-            $this->config->setAppValue($this->appName, "theme_enabled", "0");
+            $this->config->setAppValue($this->appName, "theme_enforced", "0");
+            $this->enforceTheme("off");
         }
 
         if ($this->request->getParam("theme_login_page")) {
@@ -120,5 +128,32 @@ class SettingsController extends Controller
             $this->config->setAppValue($this->appName, "theme_custom_styling", "");
             $this->config->setAppValue($this->appName, "theme_cachebuster", 0);
         }
+    }
+
+    public function toggleTheme($state): void
+    {
+        $enabledThemes = json_decode($this->config->getUserValue($this->userId, "theming", "enabled-themes", "[]"));
+
+        if ($state === "on") {
+            $enabledThemes = array_merge(["breezedark"], $enabledThemes);
+            $this->config->setUserValue($this->userId, "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
+        }
+
+        if ($state === "off") {
+            $enabledThemes = array_diff($enabledThemes, ["breezedark"]);
+            $this->config->setUserValue($this->userId, "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
+        }
+    }
+
+    public function enforceTheme($state): void 
+    {
+        if ($state === "on") {
+            $this->config->setSystemValue("enforce_theme", "breezedark");
+        }
+
+        if ($state === "off") {
+            $this->config->setSystemValue("enforce_theme", "");
+        }
+        
     }
 }

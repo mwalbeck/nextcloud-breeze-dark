@@ -21,10 +21,3 @@
         background-color: var(--color-background-hover);
     }
 }
-
-/* Manual icon variable definitions for icons to prevent black icons -------- */
-
-.icon-notifications-dark,
-.icon-notifications {
-    background-image: var(--icon-notifications-notifications-dark-f2f2f2) !important;
-}

@@ -268,43 +268,6 @@
     }
 }
 
-.jsxc-icon--more-dark {
-    background-image: var(--icon-more-f2f2f2);
-    transform: rotate(0.25turn);
-}
-
-.jsxc-icon--delete {
-    background-image: var(--icon-delete-f2f2f2);
-
-    &:hover {
-        background-image: var(--icon-delete-da4453);
-    }
-}
-
-.jsxc-icon--edit {
-    background-image: var(--icon-rename-f2f2f2);
-}
-
-.jsxc-icon--info {
-    background-image: var(--icon-info-f2f2f2);
-}
-
-.jsxc-icon--help {
-    background-image: var(--icon-ojsxc-help-f2f2f2);
-}
-
-.jsxc-icon--contact {
-    background-image: var(--icon-ojsxc-contact-f2f2f2);
-}
-
-.jsxc-icon--groupcontact {
-    background-image: var(--icon-ojsxc-groupcontact-f2f2f2);
-}
-
-.jsxc-icon--setting {
-    background-image: var(--icon-ojsxc-gear-f2f2f2);
-}
-
 .jsxc-icon--menu-dark,
 .jsxc-waiting::before,
 .jsxc-icon--emoticon,

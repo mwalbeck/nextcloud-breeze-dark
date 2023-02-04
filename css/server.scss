@@ -27,9 +27,7 @@
  */
 
 // General and Nextcloud Core
-@import "variables/functions";
 @import "variables/color-variables";
-@import "variables/icon-variables";
 @import "base/elements";
 @import "server/server";
 @import "apps/apps";
@@ -40,7 +38,6 @@
 @import "apps/core/files";
 @import "apps/core/firstrunwizard";
 @import "apps/core/notifications";
-@import "apps/core/photos";
 @import "apps/core/text";
 // Official Apps
 @import "apps/official/announcement-center";
@@ -59,7 +56,6 @@
 @import "apps/official/notes";
 @import "apps/official/retention";
 @import "apps/official/richdocuments";
-@import "apps/official/social";
 @import "apps/official/spreed";
 @import "apps/official/tasks";
 // Third party apps

@@ -22,18 +22,27 @@
     }
 }
 
-.app-mail #mail-content {
-    border-radius: 3px;
+.app-mail .html-message-body #message-container {
+    padding: 1rem;
+}
 
-    #mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title {
+.app-mail #mail-message .mail-message-body-html {
+    #mail-message-has-blocked-content {
         background-color: var(--color-main-background) !important;
-    }
+        margin: unset;
+        padding: 5px 1rem;
 
-    #mail-message-has-blocked-content
-        .action-item--open
-        button.action-item__menutoggle--with-title {
-        background-color: var(--color-primary) !important;
-        border-color: var(--color-primary-element) !important;
+        .button-vue {
+            border: 1px solid var(--color-border) !important;
+            margin-left: 1rem;
+            padding: unset;
+        }
+
+        .button-vue__text {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            text-decoration: none !important;
+        }
     }
 }
 
@@ -71,59 +80,4 @@
 
 .popover.open button.action-button {
     opacity: 1;
-}
-
-/* Icons -------------------------------------------------------------------- */
-
-.app-mail {
-    .icon-inbox {
-        background-image: var(--icon-mail-inbox-f2f2f2) !important;
-    }
-
-    .icon-flagged {
-        background-image: var(--icon-mail-star-f2f2f2) !important;
-    }
-
-    .icon-drafts {
-        background-image: var(--icon-mail-drafts-f2f2f2) !important;
-    }
-
-    .icon-sent {
-        background-image: var(--icon-mail-sent-f2f2f2) !important;
-    }
-
-    .icon-archive {
-        background-image: var(--icon-mail-archive-f2f2f2) !important;
-    }
-
-    .icon-trash {
-        background-image: var(--icon-mail-trash-f2f2f2) !important;
-    }
-
-    .icon-starred[data-starred="false"]:not(:hover) {
-        background-image: var(--icon-star-dark-f2f2f2) !important;
-    }
-}
-
-// Icons used by Mail inside and outside the .app-mail class
-
-.icon-forward {
-    background-image: var(--icon-mail-forward-f2f2f2) !important;
-}
-
-.icon-junk {
-    background-image: var(--icon-mail-junk-f2f2f2) !important;
-}
-
-// Specify which places to exactly to use the white mail-important icon.
-// This is to prevent the important icon, on the avatar of emails
-// marked as important, having a white background.
-.popover .icon-important,
-#mailbox-priority .icon-important {
-    background-image: var(--icon-mail-important-f2f2f2) !important;
-}
-
-#mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title,
-.popover.open .action-button .action-button__icon.icon-toggle {
-    background-image: var(--icon-toggle-f2f2f2) !important;
 }
