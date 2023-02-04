@@ -558,6 +558,16 @@ progress:not(.vue) {
   background-color: var(--color-background-hover) !important;
 }
 
+/* Template picker ---------------------------------------------------------- */
+.templates-picker__buttons {
+  background-image: unset !important;
+}
+
+.template-picker__label::before {
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *

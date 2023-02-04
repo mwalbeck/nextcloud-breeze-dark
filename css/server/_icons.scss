@@ -35,47 +35,6 @@
     }
 }
 
-#settings #expanddiv li a img {
-    filter: invert(95%);
-}
-
-// Two Factor Icons in Personal Settings
-img.two-factor-provider-settings-icon,
-.icon-u2f-device {
-    filter: invert(95%);
-}
-
-// Change the app icons in the navigation menu to white
-#navigation .app-icon {
-    filter: none;
-}
-
-// Arrow in advanved ldap settings and
-// Little help icon
-#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
-#ldapSettings img[src$="info.svg"] {
-    filter: invert(95%);
-}
-
-// Icons in contacts menu
-#contactsmenu-menu #contactsmenu-contacts .contact > a > img {
-    filter: invert(95%);
-}
-
-// Audio player: Play option in right click menu in files
-.menuitem.action.action-audio img[src$="sound.svg"] {
-    filter: invert(95%);
-}
-
-// Fix icon colors for workflow page
-#workflowengine .actions__item:not(.colored) .icon:not(.icon-invert) {
-    filter: invert(5%) !important;
-}
-
-#workflowengine .section.rule .trigger .event .option__icon {
-    filter: invert(95%);
-}
-
 /* Random CSS fixes for icons ----------------------------------------------- */
 
 // Fix avatars with dot menu being covered in dots. The dot icon is being handled

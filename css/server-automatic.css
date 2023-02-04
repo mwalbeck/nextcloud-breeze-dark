@@ -535,6 +535,14 @@ tbody tr:active thead tr:active {
 .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label[data-v-5cec6b50] {
     background-color: var(--color-background-hover) !important;
   }
+  /* Template picker ---------------------------------------------------------- */
+  .templates-picker__buttons {
+    background-image: unset !important;
+  }
+  .template-picker__label::before {
+    border: unset !important;
+    box-shadow: unset !important;
+  }
   /***
    * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
    *
