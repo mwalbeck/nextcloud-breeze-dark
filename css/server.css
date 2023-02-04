@@ -563,11 +563,6 @@ progress:not(.vue) {
   background-image: unset !important;
 }
 
-.template-picker__label::before {
-  border: unset !important;
-  box-shadow: unset !important;
-}
-
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -594,40 +589,6 @@ progress:not(.vue) {
   filter: invert(1);
 }
 .app-settings .infoicon {
-  filter: invert(95%);
-}
-
-#settings #expanddiv li a img {
-  filter: invert(95%);
-}
-
-img.two-factor-provider-settings-icon,
-.icon-u2f-device {
-  filter: invert(95%);
-}
-
-#navigation .app-icon {
-  filter: none;
-}
-
-#ldapSettings .ui-accordion .ui-accordion-header .ui-accordion-header-icon,
-#ldapSettings img[src$="info.svg"] {
-  filter: invert(95%);
-}
-
-#contactsmenu-menu #contactsmenu-contacts .contact > a > img {
-  filter: invert(95%);
-}
-
-.menuitem.action.action-audio img[src$="sound.svg"] {
-  filter: invert(95%);
-}
-
-#workflowengine .actions__item:not(.colored) .icon:not(.icon-invert) {
-  filter: invert(5%) !important;
-}
-
-#workflowengine .section.rule .trigger .event .option__icon {
   filter: invert(95%);
 }
 
@@ -681,6 +642,11 @@ body.dashboard--inverted.dashboard--dark .header-right > div:not(#settings) > :f
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 /* Dashboard ---------------------------------------------------------------- */
+#app-dashboard {
+  --color-background-translucent: var(--color-dashboard-grey) !important;
+  --color-main-background: var(--color-background-darker) !important;
+}
+
 .background-selector .background.color {
   background-color: var(--color-background-darker) !important;
 }
@@ -716,6 +682,19 @@ body.dashboard--inverted.dashboard--dark .header-right > div:not(#settings) > :f
 }
 .app-dashboard .card:hover {
   background-color: var(--color-background-hover) !important;
+}
+
+/* Tasks */
+.center-button .button-vue--vue-secondary {
+  color: var(--color-main-text) !important;
+  background-color: var(--color-background-darker) !important;
+}
+.center-button .button-vue--vue-secondary:hover {
+  background-color: var(--color-background-hover) !important;
+}
+.center-button .button-vue--vue-secondary:active, .center-button .button-vue--vue-secondary:focus {
+  background-color: var(--color-primary-element) !important;
+  color: var(--color-primary-text) !important;
 }
 
 /***
@@ -1579,7 +1558,8 @@ table tr.mouseOver td {
 .app-tasks .app-content .task-body .percentdone {
   background-color: var(--color-primary) !important;
 }
-.app-tasks .app-content .task-list .loadmore span {
+.app-tasks .app-content .task-list .loadmore span,
+.app-tasks .app-content .task-list .loadmore button {
   background-color: var(--color-background-darker) !important;
   color: var(--color-text-maxcontrast) !important;
 }
@@ -2297,24 +2277,24 @@ table tr.mouseOver td {
 
 @media screen and (-ms-high-contrast: active) {
   .hljs-addition,
-.hljs-attribute,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-bullet,
-.hljs-comment,
-.hljs-link,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-params,
-.hljs-string,
-.hljs-symbol,
-.hljs-type,
-.hljs-quote {
+  .hljs-attribute,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-bullet,
+  .hljs-comment,
+  .hljs-link,
+  .hljs-literal,
+  .hljs-meta,
+  .hljs-number,
+  .hljs-params,
+  .hljs-string,
+  .hljs-symbol,
+  .hljs-type,
+  .hljs-quote {
     color: highlight !important;
   }
   .hljs-keyword,
-.hljs-selector-tag {
+  .hljs-selector-tag {
     font-weight: bold !important;
   }
 }
