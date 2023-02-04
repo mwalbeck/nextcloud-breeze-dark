@@ -111,37 +111,3 @@
 #audios_import .ui-progressbar .ui-progressbar-value {
     background-color: var(--color-primary);
 }
-
-/* Icons -------------------------------------------------------------------- */
-
-.app-audioplayer {
-    .sm2-inline-button.previous {
-        background-image: var(--icon-audioplayer-previous-f2f2f2) !important;
-    }
-
-    .play-pause,
-    .play-pause:hover,
-    .paused .play-pause:hover {
-        background-image: var(--icon-audioplayer-play-f2f2f2) !important;
-    }
-
-    .playing .play-pause {
-        background-image: var(--icon-audioplayer-pause-f2f2f2) !important;
-    }
-
-    .sm2-inline-button.next {
-        background-image: var(--icon-audioplayer-next-f2f2f2) !important;
-    }
-
-    .sm2-volume-control {
-        background-image: var(--icon-audioplayer-volume-f2f2f2) !important;
-    }
-
-    .sm2-inline-button.repeat {
-        background-image: var(--icon-audioplayer-repeat-f2f2f2) !important;
-    }
-
-    .sm2-inline-button.shuffle {
-        background-image: var(--icon-audioplayer-shuffle-f2f2f2) !important;
-    }
-}

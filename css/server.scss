@@ -27,7 +27,6 @@
  */
 
 // General and Nextcloud Core
-@import "variables/functions";
 @import "variables/color-variables";
 @import "base/elements";
 @import "server/server";
@@ -57,7 +56,6 @@
 @import "apps/official/notes";
 @import "apps/official/retention";
 @import "apps/official/richdocuments";
-@import "apps/official/social";
 @import "apps/official/spreed";
 @import "apps/official/tasks";
 // Third party apps

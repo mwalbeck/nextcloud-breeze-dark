@@ -26,22 +26,3 @@
         box-shadow: none;
     }
 }
-
-/* Icons -------------------------------------------------------------------- */
-
-// Change icons to black as the contrast with white is really bad
-.app-quicknotes {
-    .icon-checkmark {
-        background-image: var(--icon-checkmark-000) !important;
-    }
-
-    .quicknote .icon-delete {
-        background-image: var(--icon-delete-000) !important;
-
-        &:hover,
-        &:focus {
-            background-image: var(--icon-delete-da4453) !important;
-            opacity: 1 !important;
-        }
-    }
-}

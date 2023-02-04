@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * =============================================================================
  * Breeze Dark for Nextcloud
@@ -25,28 +24,6 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * 
- */
-/**
- * @copyright Copyright (c) 2018, John Molakvoæ (skjnldsv@protonmail.com)
- * @copyright Copyright (c) 2019, Magnus Walbeck (mw@mwalbeck.org)
- *
- * @author John Molakvoæ (skjnldsv) <skjnldsv@protonmail.com>
- *
- * @license GNU AGPL version 3 or any later version
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
  */
 /***
  * @copyright Copyright (c) 2019, Magnus Walbeck <mw@mwalbeck.org>
@@ -407,10 +384,6 @@ progress:not(.vue) {
 .toastify.dialogs {
   border: 1px solid var(--color-border);
 }
-.toastify.dialogs .toast-close,
-.toastify.dialogs .toast-undo-button.toast-close {
-  background-image: var(--icon-close-f2f2f2) !important;
-}
 
 /* App Store ---------------------------------------------------------------- */
 .app-level .official {
@@ -604,10 +577,6 @@ progress:not(.vue) {
 }
 
 /* Apps that haven't moved to variables for icons ---------------------------- */
-.icon-social-email {
-  background-image: var(--icon-mail-000) !important;
-}
-
 .icon-onlyoffice-open,
 .icon-onlyoffice-convert,
 .icon-onlyoffice-download {
@@ -689,10 +658,6 @@ img.two-factor-provider-settings-icon,
 
 #workflowengine .section.rule .trigger .event .option__icon {
   filter: invert(95%);
-}
-
-.app-settings .icon-folder {
-  background-image: var(--icon-folder-0082c9) !important;
 }
 
 /* Random CSS fixes for icons ----------------------------------------------- */
@@ -952,16 +917,6 @@ table tr.mouseOver td {
   color: var(--color-text-maxcontrast);
 }
 
-/* Icons -------------------------------------------------------------------- */
-.icon-announcementcenter,
-.icon-announcementcenter-dark {
-  background-image: var(--icon-announcementcenter-announcementcenter-f2f2f2) !important;
-}
-
-.app-announcementcenter .icon-notifications-off {
-  background-image: var(--icon-announcementcenter-notifications-off-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -1056,68 +1011,6 @@ table tr.mouseOver td {
   opacity: 1;
 }
 
-/* Icons -------------------------------------------------------------------- */
-.icon-new-calendar {
-  background-image: var(--icon-calendar-new-calendar-f2f2f2) !important;
-}
-
-.app-calendar .icon-rightarrow,
-.popover .icon-rightarrow {
-  background-image: var(--icon-calendar-rightarrow-f2f2f2) !important;
-}
-.app-calendar .icon-leftarrow,
-.popover .icon-leftarrow {
-  background-image: var(--icon-calendar-leftarrow-f2f2f2) !important;
-}
-.app-calendar .icon-view-module,
-.popover .icon-view-module {
-  background-image: var(--icon-calendar-view-module-f2f2f2) !important;
-}
-.app-calendar .icon-view-week,
-.popover .icon-view-week {
-  background-image: var(--icon-calendar-view-week-f2f2f2) !important;
-}
-.app-calendar .icon-view-day,
-.popover .icon-view-day {
-  background-image: var(--icon-calendar-view-day-f2f2f2) !important;
-}
-.app-calendar .icon-view-list,
-.popover .icon-view-list {
-  background-image: var(--icon-calendar-view-list-f2f2f2) !important;
-}
-.app-calendar .icon-new-calendar-with-task-list,
-.popover .icon-new-calendar-with-task-list {
-  background-image: var(--icon-calendar-new-calendar-with-task-list-f2f2f2) !important;
-}
-.app-calendar .icon-timezone,
-.popover .icon-timezone {
-  background-image: var(--icon-calendar-timezone-f2f2f2) !important;
-}
-.app-calendar .icon-eye,
-.popover .icon-eye {
-  background-image: var(--icon-calendar-eye-f2f2f2) !important;
-}
-.app-calendar .icon-briefcase,
-.popover .icon-briefcase {
-  background-image: var(--icon-calendar-briefcase-f2f2f2) !important;
-}
-.app-calendar .icon-reminder,
-.popover .icon-reminder {
-  background-image: var(--icon-calendar-reminder-f2f2f2) !important;
-}
-.app-calendar .icon-repeat,
-.popover .icon-repeat {
-  background-image: var(--icon-calendar-repeat-f2f2f2) !important;
-}
-.app-calendar .icon-embed,
-.popover .icon-embed {
-  background-image: var(--icon-calendar-embed-f2f2f2) !important;
-}
-.app-calendar .icon-color-picker,
-.popover .icon-color-picker {
-  background-image: var(--icon-calendar-color-picker-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -1133,11 +1026,6 @@ table tr.mouseOver td {
 .app-contacts .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:hover + .checkbox-radio-switch__label,
 .app-contacts .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label {
   background-color: var(--color-background-hover) !important;
-}
-
-/* Icons -------------------------------------------------------------------- */
-.icon-circles {
-  background-image: var(--icon-circles-circles-f2f2f2) !important;
 }
 
 /***
@@ -1159,36 +1047,6 @@ table tr.mouseOver td {
 }
 .app-contacts .contact-header__infos input:active, .app-contacts .contact-header__infos input:focus {
   background-color: var(--color-background-darker) !important;
-}
-
-/* Icons -------------------------------------------------------------------- */
-.app-contacts .icon-phone {
-  background-image: var(--icon-contacts-phone-f2f2f2) !important;
-}
-.app-contacts .icon-address-book {
-  background-image: var(--icon-contacts-address-book-f2f2f2) !important;
-}
-.app-contacts .icon-social {
-  background-image: var(--icon-contacts-social-f2f2f2) !important;
-}
-.app-contacts .icon-language {
-  background-image: var(--icon-contacts-language-f2f2f2) !important;
-}
-.app-contacts .icon-up {
-  background-image: var(--icon-contacts-up-f2f2f2) !important;
-}
-.app-contacts .sort-contacts .multiselect .multiselect__single {
-  background-image: var(--icon-triangle-s-f2f2f2) !important;
-}
-.app-contacts .icon-eye {
-  background-image: var(--icon-contacts-eye-f2f2f2) !important;
-}
-.app-contacts .icon-recent-actors {
-  background-image: var(--icon-contacts-recent-actors-f2f2f2) !important;
-}
-
-.icon-qrcode {
-  background-image: var(--icon-contacts-qrcode-f2f2f2) !important;
 }
 
 /***
@@ -1231,47 +1089,6 @@ table tr.mouseOver td {
 }
 
 /* Icons -------------------------------------------------------------------- */
-.icon-deck {
-  background-image: var(--icon-deck-deck-f2f2f2) !important;
-}
-
-.icon-archive {
-  background-image: var(--icon-deck-archive-f2f2f2) !important;
-}
-
-.icon-toggle-compact-expanded {
-  background-image: var(--icon-deck-toggle-view-collapse-f2f2f2) !important;
-}
-
-.icon-toggle-compact-collapsed {
-  background-image: var(--icon-deck-toggle-view-expand-f2f2f2) !important;
-}
-
-.icon-clone {
-  background-image: var(--icon-deck-clone-f2f2f2) !important;
-}
-
-.icon-filter {
-  background-image: var(--icon-deck-filter-f2f2f2) !important;
-}
-
-.icon-attach {
-  background-image: var(--icon-deck-attach-f2f2f2) !important;
-}
-
-.icon-calendar-dark.now,
-.icon-calendar-dark.next {
-  background-image: var(--icon-calendar-000) !important;
-}
-
-.icon-filter_set {
-  background-image: var(--icon-deck-filter_set-f2f2f2) !important;
-}
-
-.icon-reply {
-  background-image: var(--icon-deck-reply-f2f2f2) !important;
-}
-
 .resource-type-deck img[src$="deck-dark.svg"] {
   filter: invert(95%);
   opacity: 0.7 !important;
@@ -1366,43 +1183,6 @@ table tr.mouseOver td {
   border-color: var(--color-primary-element) !important;
 }
 
-/* Icons -------------------------------------------------------------------- */
-.icon-forms {
-  background-image: var(--icon-forms-forms-f2f2f2) !important;
-}
-
-.icon-answer-checkbox {
-  background-image: var(--icon-forms-answer-checkbox-f2f2f2) !important;
-}
-
-.icon-answer-multiple {
-  background-image: var(--icon-forms-answer-multiple-f2f2f2) !important;
-}
-
-.icon-answer-dropdown {
-  background-image: var(--icon-forms-answer-dropdown-f2f2f2) !important;
-}
-
-.icon-answer-short {
-  background-image: var(--icon-forms-answer-short-f2f2f2) !important;
-}
-
-.icon-answer-long {
-  background-image: var(--icon-forms-answer-long-f2f2f2) !important;
-}
-
-.icon-drag-handle {
-  background-image: var(--icon-forms-drag-handle-f2f2f2) !important;
-}
-
-.icon-answer-date {
-  background-image: var(--icon-forms-answer-date-f2f2f2) !important;
-}
-
-.icon-answer-datetime {
-  background-image: var(--icon-forms-answer-datetime-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -1461,10 +1241,6 @@ table tr.mouseOver td {
 }
 #groupfolders-wrapper #groupfolders-root .groups .group-edit a > img[src$="/core/img/actions/close.svg"] {
   filter: invert(95%);
-}
-
-.icon-deny {
-  background-image: var(--icon-groupfolders-deny-f2f2f2) !important;
 }
 
 /***
@@ -1573,47 +1349,6 @@ table tr.mouseOver td {
 
 .popover.open button.action-button {
   opacity: 1;
-}
-
-/* Icons -------------------------------------------------------------------- */
-.app-mail .icon-inbox {
-  background-image: var(--icon-mail-inbox-f2f2f2) !important;
-}
-.app-mail .icon-flagged {
-  background-image: var(--icon-mail-star-f2f2f2) !important;
-}
-.app-mail .icon-drafts {
-  background-image: var(--icon-mail-drafts-f2f2f2) !important;
-}
-.app-mail .icon-sent {
-  background-image: var(--icon-mail-sent-f2f2f2) !important;
-}
-.app-mail .icon-archive {
-  background-image: var(--icon-mail-archive-f2f2f2) !important;
-}
-.app-mail .icon-trash {
-  background-image: var(--icon-mail-trash-f2f2f2) !important;
-}
-.app-mail .icon-starred[data-starred=false]:not(:hover) {
-  background-image: var(--icon-star-dark-f2f2f2) !important;
-}
-
-.icon-forward {
-  background-image: var(--icon-mail-forward-f2f2f2) !important;
-}
-
-.icon-junk {
-  background-image: var(--icon-mail-junk-f2f2f2) !important;
-}
-
-.popover .icon-important,
-#mailbox-priority .icon-important {
-  background-image: var(--icon-mail-important-f2f2f2) !important;
-}
-
-#mail-message-has-blocked-content .action-item button.action-item__menutoggle--with-title,
-.popover.open .action-button .action-button__icon.icon-toggle {
-  background-image: var(--icon-toggle-f2f2f2) !important;
 }
 
 /***
@@ -1779,29 +1514,6 @@ table tr.mouseOver td {
   color: var(--color-text-link);
 }
 
-/* Icons -------------------------------------------------------------------- */
-.app-news .icon-rss {
-  background-image: var(--icon-news-rss-f2f2f2) !important;
-}
-.app-news .icon-unpinned {
-  background-image: var(--icon-news-unpinned-f2f2f2) !important;
-}
-.app-news .icon-pinned {
-  background-image: var(--icon-news-pinned-f2f2f2) !important;
-}
-.app-news .icon-full-text-disabled {
-  background-image: var(--icon-news-nonfulltext-f2f2f2) !important;
-}
-.app-news .icon-full-text-enabled {
-  background-image: var(--icon-news-fulltext-f2f2f2) !important;
-}
-.app-news .icon-updatemode-default {
-  background-image: var(--icon-news-updatemodedefault-f2f2f2) !important;
-}
-.app-news .icon-updatemode-unread {
-  background-image: var(--icon-news-updatemodeunread-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -1811,25 +1523,6 @@ table tr.mouseOver td {
 .app-notes .app-navigation button.icon-confirm,
 .app-notes .app-navigation button.icon-close {
   background-image: none !important;
-}
-
-/* Icons -------------------------------------------------------------------- */
-.icon-notes {
-  background-image: var(--icon-notes-notes-f2f2f2) !important;
-}
-
-.icon-notes-trans {
-  background-image: var(--icon-notes-notes-trans-f2f2f2) !important;
-}
-
-.app-notes .icon-recent {
-  background-image: var(--icon-notes-recent-f2f2f2) !important;
-}
-.app-notes .icon-emptyfolder {
-  background-image: var(--icon-notes-folder-empty-f2f2f2) !important;
-}
-.app-notes .icon-files {
-  background-image: var(--icon-notes-folder-f2f2f2) !important;
 }
 
 /***
@@ -1860,20 +1553,6 @@ table tr.mouseOver td {
  *
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
-/* Social ------------------------------------------------------------------- */
-/* Icons -------------------------------------------------------------------- */
-.app-social .icon-reply {
-  background-image: var(--icon-social-reply-f2f2f2) !important;
-}
-.app-social .emoji-invoker {
-  background-image: var(--icon-social-emoji-f2f2f2) !important;
-}
-
-/***
- * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
- *
- * @license GNU AGPL version 3 or any later version, see COPYING file for more.
- */
 /* Spreed ------------------------------------------------------------------- */
 .app-talk .file-preview:hover,
 .app-talk .file-preview:focus,
@@ -1896,48 +1575,6 @@ table tr.mouseOver td {
 .messages .message .reaction-button__has-reacted,
 .messages .message .reaction-button:hover {
   background-color: var(--color-background-hover);
-}
-
-/* Icons -------------------------------------------------------------------- */
-.icon-talk {
-  background-image: var(--icon-spreed-app-dark-f2f2f2) !important;
-}
-
-.icon-clip-add-file {
-  background-image: var(--icon-spreed-clip-add-file-f2f2f2) !important;
-}
-
-.icon-menu-people,
-.icon-menu-people-white {
-  background-image: var(--icon-spreed-menu-people-f2f2f2) !important;
-}
-
-.icon-grid-view {
-  background-image: var(--icon-spreed-grid-view-f2f2f2) !important;
-}
-
-.icon-promoted-view {
-  background-image: var(--icon-spreed-promoted-view-f2f2f2) !important;
-}
-
-.icon-folder-multiple-image {
-  background-image: var(--icon-spreed-folder-multiple-image-f2f2f2) !important;
-}
-
-.app-talk .icon-lobby {
-  background-image: var(--icon-spreed-lobby-f2f2f2) !important;
-}
-.app-talk .icon-reply {
-  background-image: var(--icon-spreed-reply-f2f2f2) !important;
-}
-
-.app-talk .icon-start-call,
-.talk-modal .icon-start-call,
-#talk-panel .icon-start-call,
-#talk-sidebar .icon-start-call,
-#call-container .icon-start-call,
-.talkChatTab .icon-start-call {
-  background-image: var(--icon-video-f2f2f2) !important;
 }
 
 /***
@@ -2023,39 +1660,6 @@ table tr.mouseOver td {
 .app-tasks .sprt-subtasks-hidden {
   filter: invert(95%);
 }
-.app-tasks .icon-list {
-  background-image: var(--icon-tasks-icon-list-f2f2f2) !important;
-}
-.app-tasks .icon-start {
-  background-image: var(--icon-tasks-icon-start-f2f2f2) !important;
-}
-.app-tasks .icon-due {
-  background-image: var(--icon-tasks-icon-due-f2f2f2) !important;
-}
-.app-tasks .icon-task-star {
-  background-image: var(--icon-tasks-icon-task-star-f2f2f2) !important;
-}
-.app-tasks .icon-alphabetically {
-  background-image: var(--icon-tasks-icon-alphabetically-f2f2f2) !important;
-}
-.app-tasks input[type=checkbox].checkbox:checked + label::before {
-  background-image: var(--icon-checkmark-f2f2f2) !important;
-}
-.app-tasks .app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons .icon-subtasks-visible {
-  background-image: var(--icon-tasks-icon-subtasks-visible-f2f2f2) !important;
-}
-.app-tasks .app-content > div .task-list .grouped-tasks .task-item .task-body .task-body-icons .icon-subtasks-hidden {
-  background-image: var(--icon-tasks-icon-subtasks-hidden-f2f2f2) !important;
-}
-.app-tasks .app-content .header .sortorder .icon-list__up {
-  background-image: var(--icon-tasks-icon-list-up-f2f2f2) !important;
-}
-.app-tasks .app-content .header .sortorder .icon-list__down {
-  background-image: var(--icon-tasks-icon-list-down-f2f2f2) !important;
-}
-.app-tasks .app-content .header .sortorder .icon-manual {
-  background-image: var(--icon-tasks-icon-manual-f2f2f2) !important;
-}
 
 /***
  * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
@@ -2097,9 +1701,6 @@ table tr.mouseOver td {
   border-color: var(--color-border);
 }
 
-.app-analytics .filterVisualizationItem {
-  background-image: var(--icon-close-f2f2f2);
-}
 .app-analytics .analyticsWidgetItem {
   background-color: var(--color-background-darker) !important;
 }
@@ -2108,19 +1709,6 @@ table tr.mouseOver td {
 }
 .app-analytics #app-sidebar .tabHeaders .tabHeader.selected, .app-analytics #app-sidebar .tabHeaders .tabHeader:hover, .app-analytics #app-sidebar .tabHeaders .tabHeader:focus, .app-analytics #app-sidebar .tabHeaders .tabHeader:active {
   border-bottom-color: var(--color-primary-element);
-}
-
-/* Icons -------------------------------------------------------------------- */
-.icon-analytics-filter-add {
-  background-image: var(--icon-analytics-filteradd-f2f2f2) !important;
-}
-
-.icon-analytics-options {
-  background-image: var(--icon-analytics-options-f2f2f2) !important;
-}
-
-.icon-analytics-drilldown {
-  background-image: var(--icon-analytics-column-f2f2f2) !important;
 }
 
 /***
@@ -2216,31 +1804,6 @@ table tr.mouseOver td {
   background-color: var(--color-primary);
 }
 
-/* Icons -------------------------------------------------------------------- */
-.app-audioplayer .sm2-inline-button.previous {
-  background-image: var(--icon-audioplayer-previous-f2f2f2) !important;
-}
-.app-audioplayer .play-pause,
-.app-audioplayer .play-pause:hover,
-.app-audioplayer .paused .play-pause:hover {
-  background-image: var(--icon-audioplayer-play-f2f2f2) !important;
-}
-.app-audioplayer .playing .play-pause {
-  background-image: var(--icon-audioplayer-pause-f2f2f2) !important;
-}
-.app-audioplayer .sm2-inline-button.next {
-  background-image: var(--icon-audioplayer-next-f2f2f2) !important;
-}
-.app-audioplayer .sm2-volume-control {
-  background-image: var(--icon-audioplayer-volume-f2f2f2) !important;
-}
-.app-audioplayer .sm2-inline-button.repeat {
-  background-image: var(--icon-audioplayer-repeat-f2f2f2) !important;
-}
-.app-audioplayer .sm2-inline-button.shuffle {
-  background-image: var(--icon-audioplayer-shuffle-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2020, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -2260,15 +1823,6 @@ table tr.mouseOver td {
 }
 
 /* Icons -------------------------------------------------------------------- */
-#bbb-react-root td .action-rename::after,
-#bbb-react-root th .action-rename::after {
-  background-image: var(--icon-bbb-rename-f2f2f2) !important;
-}
-
-.icon-add-shortcut {
-  background-image: var(--icon-bbb-chain-plus-f2f2f2) !important;
-}
-
 .fileActionsMenu img[src$="/bbb/img/app-dark.svg"] {
   filter: invert(95%);
 }
@@ -2352,25 +1906,6 @@ table tr.mouseOver td {
 }
 
 /* Icons -------------------------------------------------------------------- */
-.icon-collectives {
-  background-image: var(--icon-collectives-app-f2f2f2) !important;
-}
-
-.icon-access-time {
-  background-image: var(--icon-collectives-access-time-f2f2f2) !important;
-}
-
-.icon-sort-by-alpha {
-  background-image: var(--icon-collectives-sort-by-alpha-f2f2f2) !important;
-}
-
-.icon-pages-template,
-.icon-pages-template-grey,
-.icon-pages-template-dark-grey {
-  background-image: var(--icon-collectives-pages-template-000) !important;
-  filter: invert(95%);
-}
-
 .icon-pages-template-dark-grey {
   opacity: 1 !important;
 }
@@ -2412,17 +1947,6 @@ table tr.mouseOver td {
   opacity: 1;
 }
 
-/* Icons -------------------------------------------------------------------- */
-.app-cookbook .app-navigation-new button {
-  background-image: var(--icon-add-f2f2f2) !important;
-}
-.app-cookbook .icon-arrow-up {
-  background-image: var(--icon-triangle-n-f2f2f2) !important;
-}
-.app-cookbook .icon-arrow-down {
-  background-image: var(--icon-triangle-s-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2021, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -2450,11 +1974,6 @@ table tr.mouseOver td {
 .app-flowupload hr {
   border-bottom-color: var(--color-border);
   border-top-color: var(--color-border);
-}
-
-/* Icons -------------------------------------------------------------------- */
-.app-flowupload .icon-file.select-file-icon {
-  background-image: var(--icon-text-f2f2f2) !important;
 }
 
 /***
@@ -2547,9 +2066,6 @@ table tr.mouseOver td {
 .app-gpxedit .toplink:visited,
 .app-gpxedit .toplink:hover {
   color: var(--color-text-link);
-}
-.app-gpxedit .marker-select {
-  background: var(--icon-triangle-s-000) no-repeat right 4px center;
 }
 
 .app-gpxedit .leaflet-container .leaflet-bar {
@@ -3229,42 +2745,6 @@ table tr.mouseOver td {
   opacity: 1 !important;
 }
 
-.jsxc-icon--more-dark {
-  background-image: var(--icon-more-f2f2f2);
-  transform: rotate(0.25turn);
-}
-
-.jsxc-icon--delete {
-  background-image: var(--icon-delete-f2f2f2);
-}
-.jsxc-icon--delete:hover {
-  background-image: var(--icon-delete-da4453);
-}
-
-.jsxc-icon--edit {
-  background-image: var(--icon-rename-f2f2f2);
-}
-
-.jsxc-icon--info {
-  background-image: var(--icon-info-f2f2f2);
-}
-
-.jsxc-icon--help {
-  background-image: var(--icon-ojsxc-help-f2f2f2);
-}
-
-.jsxc-icon--contact {
-  background-image: var(--icon-ojsxc-contact-f2f2f2);
-}
-
-.jsxc-icon--groupcontact {
-  background-image: var(--icon-ojsxc-groupcontact-f2f2f2);
-}
-
-.jsxc-icon--setting {
-  background-image: var(--icon-ojsxc-gear-f2f2f2);
-}
-
 .jsxc-icon--menu-dark,
 .jsxc-waiting::before,
 .jsxc-icon--emoticon,
@@ -3632,11 +3112,6 @@ tags-input .autocomplete .suggestion-item.selected {
   border-color: var(--color-primary-element);
 }
 
-/* Icons -------------------------------------------------------------------- */
-.app-passwords #controls .breadcrumb .crumb .home {
-  background-image: var(--icon-home-f2f2f2) !important;
-}
-
 /***
  * @copyright Copyright (c) 2017, Magnus Walbeck <mw@mwalbeck.org>
  *
@@ -3798,18 +3273,6 @@ tags-input .autocomplete .suggestion-item.selected {
 }
 .app-quicknotes .quicknote:hover {
   box-shadow: none;
-}
-
-/* Icons -------------------------------------------------------------------- */
-.app-quicknotes .icon-checkmark {
-  background-image: var(--icon-checkmark-000) !important;
-}
-.app-quicknotes .quicknote .icon-delete {
-  background-image: var(--icon-delete-000) !important;
-}
-.app-quicknotes .quicknote .icon-delete:hover, .app-quicknotes .quicknote .icon-delete:focus {
-  background-image: var(--icon-delete-da4453) !important;
-  opacity: 1 !important;
 }
 
 /***
