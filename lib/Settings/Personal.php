@@ -72,11 +72,12 @@ class Personal implements ISettings
      */
     public function getForm(): TemplateResponse
     {
-        $default = $this->config->getAppValue($this->appName, 'theme_enabled', "0");
+        $themeEnforced = $this->config->getAppValue($this->appName, 'theme_enforced', "0");
         $defaultAutomaticActivation = $this->config->getAppValue($this->appName, 'theme_automatic_activation_enabled', "0");
-        $themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', $default);
+        $themeEnabled = $this->config->getUserValue($this->userId, $this->appName, 'theme_enabled', "0");
         $themeAutomaticActivation = $this->config->getUserValue($this->userId, $this->appName, 'theme_automatic_activation_enabled', $defaultAutomaticActivation);
         return new TemplateResponse('breezedark', 'personal', [
+            "themeEnforced" => $themeEnforced,
             "themeEnabled" => $themeEnabled,
             "themeAutomaticActivation" => $themeAutomaticActivation,
             "appWebPath" => $this->appWebPath

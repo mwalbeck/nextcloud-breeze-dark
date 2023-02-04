@@ -69,12 +69,16 @@ class SettingsController extends Controller
      */
     public function personal(): void
     {
-        if ($this->request->getParam("theme_enabled")) {
-            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
-            $this->toggleTheme("on");
-        } else {
-            $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
-            $this->toggleTheme("off");
+        $themeEnforced = $this->config->getAppValue($this->appName, 'theme_enforced', "0");
+
+        if (!$themeEnforced) {
+            if ($this->request->getParam("theme_enabled")) {
+                $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "1");
+                $this->toggleTheme("on");
+            } else {
+                $this->config->setUserValue($this->userId, $this->appName, "theme_enabled", "0");
+                $this->toggleTheme("off");
+            }
         }
 
         if ($this->request->getParam("theme_automatic_activation_enabled")) {
