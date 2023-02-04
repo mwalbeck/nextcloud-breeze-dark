@@ -95,8 +95,10 @@ class SettingsController extends Controller
     {
         if ($this->request->getParam("theme_enforced")) {
             $this->config->setAppValue($this->appName, "theme_enforced", "1");
+            $this->enforceTheme("on");
         } else {
             $this->config->setAppValue($this->appName, "theme_enforced", "0");
+            $this->enforceTheme("off");
         }
 
         if ($this->request->getParam("theme_login_page")) {
@@ -141,5 +143,17 @@ class SettingsController extends Controller
             $enabledThemes = array_diff($enabledThemes, ["breezedark"]);
             $this->config->setUserValue($this->userId, "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
         }
+    }
+
+    public function enforceTheme($state): void 
+    {
+        if ($state === "on") {
+            $this->config->setSystemValue("enforce_theme", "breezedark");
+        }
+
+        if ($state === "off") {
+            $this->config->setSystemValue("enforce_theme", "");
+        }
+        
     }
 }

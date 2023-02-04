@@ -33,7 +33,7 @@ script('breezedark', 'settings-admin');
 
     <p><?php p($l->t("This setting will enforce the usage of this theme. Please note, this will prevent users from disabling or choosing a different theme.")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-theme-enabled" <?php p($themeEnforced ? "checked" : ""); ?>>
-    <label for="breezedark-theme-enabled"><?php p($l->t("Enable Breeze Dark theme by default")); ?></label>
+    <label for="breezedark-theme-enabled"><?php p($l->t("Enforce use of the Breeze Dark theme")); ?></label>
 
     <p><?php p($l->t("This setting will enable the automated activation by the clients system settings by default, for any unauthenticated users and users who have not set a preference.")); ?></p>
     <input type="checkbox" class="checkbox" id="breezedark-automatic-activation-enabled" <?php p($themeEnforced ? "" : "disabled");?> <?php p($themeAutomaticActivation ? "checked" : ""); ?>>
