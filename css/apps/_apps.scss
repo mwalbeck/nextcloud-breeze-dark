@@ -38,7 +38,7 @@
 .contacts-settings .contacts-settings-button {
     background-color: transparent !important;
     border: unset !important;
-	opacity: 1;
+    opacity: 1;
 }
 
 /* App Sidebar -------------------------------------------------------------- */
@@ -80,16 +80,16 @@
 
 #app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star,
 #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--star {
-	color: var(--color-main-text);
+    color: var(--color-main-text);
 
     &:hover {
         color: var(--color-icon-yellow);
     }
 }
 
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred,
 #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
-	color: var(--color-icon-yellow);
+    color: var(--color-icon-yellow);
 
     &:hover {
         color: var(--color-main-text);

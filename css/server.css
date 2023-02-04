@@ -128,9 +128,9 @@ input[type=submit].primary:active {
 }
 
 .button-vue.button-vue--vue-secondary {
-  color: var(--color-main-text) !important;
   background-color: var(--color-main-background) !important;
   border: 1px solid var(--color-border) !important;
+  color: var(--color-main-text) !important;
 }
 .button-vue.button-vue--vue-secondary:hover {
   border-color: var(--color-primary-element) !important;
@@ -461,10 +461,12 @@ progress:not(.vue) {
   color: var(--color-icon-yellow);
 }
 
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred,
+#app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred {
   color: var(--color-icon-yellow);
 }
-#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred #app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred:hover {
+#app-sidebar-vue.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred:hover,
+#app-sidebar.app-sidebar .app-sidebar-header__desc .app-sidebar-header__star .star--starred:hover {
   color: var(--color-main-text);
 }
 
@@ -686,8 +688,8 @@ body.dashboard--inverted.dashboard--dark .header-right > div:not(#settings) > :f
 
 /* Tasks */
 .center-button .button-vue--vue-secondary {
-  color: var(--color-main-text) !important;
   background-color: var(--color-background-darker) !important;
+  color: var(--color-main-text) !important;
 }
 .center-button .button-vue--vue-secondary:hover {
   background-color: var(--color-background-hover) !important;
@@ -847,8 +849,8 @@ table tr.mouseOver td {
 }
 
 .emoji-list {
-  box-shadow: unset !important;
   border: 1px solid var(--color-border);
+  box-shadow: unset !important;
 }
 .emoji-list .emoji-list__item {
   opacity: 1 !important;
@@ -1265,8 +1267,8 @@ table tr.mouseOver td {
 }
 .app-mail #mail-message .mail-message-body-html #mail-message-has-blocked-content .button-vue {
   border: 1px solid var(--color-border) !important;
-  padding: unset;
   margin-left: 1rem;
+  padding: unset;
 }
 .app-mail #mail-message .mail-message-body-html #mail-message-has-blocked-content .button-vue__text {
   padding-left: 1rem !important;

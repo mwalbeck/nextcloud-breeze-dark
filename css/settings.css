@@ -12,13 +12,13 @@
 }
 
 .preview .preview-image {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
     flex-basis: 200px;
     flex-shrink: 0;
     margin-right: 1em;
-    background-position: top left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: var(--border-radius);
 }
 
 .preview .preview-description {
