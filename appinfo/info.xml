@@ -28,7 +28,7 @@ Settings > Administration > Theming > Breeze Dark
 
 ### Personal
 
-The personal option allows each user to enable / disable the theme unless it's being enforced by the global options. They can though choose whether the theme should follow the theming choice reported by the browser. This option is also available when the theme is being enforced globally. If the user hasn't set a prefernece they will follow the global default. You can find the personal option here:
+The personal option allows each user to enable / disable the theme unless it's being enforced by the global options. They can though choose whether the theme should follow the theming choice reported by the browser. This option is also available when the theme is being enforced globally. If the user hasn't set a preference they will follow the global default. You can find the personal option here:
 
 ```
 Settings > Personal > Appearance and accessibility > Breeze Dark
