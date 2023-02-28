@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 25.0.1 - 2023-02-28
+
+### Fixed
+
+-   [#327](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/327) Navigation sidebar is light when the default light theme is active along with the Breeze Dark Theme
+
 ## 25.0.0 - 2023-02-04
 
 ### Added
