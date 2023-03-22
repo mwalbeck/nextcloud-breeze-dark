@@ -4,7 +4,6 @@ OC.L10N.register(
     "Saved" : "Enregistrat",
     "Error" : "Error",
     "Breeze Dark" : "Breeze Dark",
-    "Theme the login page" : "Tèma per la pagina de connexion",
     "Custom Styling" : "Estil personalizat",
     "Save" : "Enregistrar",
     "A Breeze Dark theme for Nextcloud." : "Un tèma Breeze Dark per Nextcloud.",

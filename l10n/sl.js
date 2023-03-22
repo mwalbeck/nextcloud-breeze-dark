@@ -6,7 +6,6 @@ OC.L10N.register(
     "Breeze Dark" : "Temna tema Breeze",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Temna tema Breeze za Nextcloud, zasnovana po predlogi teme KDE.",
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Temna tema, zasnovana na temi Breeze Dark, projekta KDE. Za uveljavitev sprememb je treba stran osvežiti.",
-    "Theme the login page" : "Uporabi temo na prijavni strani",
     "Custom Styling" : "Slog po meri",
     "Insert custom styling here …" : "Vpišite slog po meri ...",
     "Save" : "Shrani",

@@ -6,7 +6,6 @@ OC.L10N.register(
     "Breeze Dark" : "Σκούρο Breeze",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Θέμα Σκούρο Breeze για το Nextcloud, βασισμένο στο θέμα του KDE",
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Ένα σκοτεινό θέμα βασισμένο στο Σκούρο Breeze από το έργο KDE. Παρακαλούμε ανανεώστε τη σελίδα για να ισχύσουν οι αλλαγές.",
-    "Theme the login page" : "Θέμα για την σελίδα σύνδεσης",
     "Custom Styling" : "Προσαρμοσμένο στυλ",
     "Insert custom styling here …" : "Εισαγάγετε προσαρμοσμένο στυλ εδώ …",
     "Save" : "Αποθήκευση",
