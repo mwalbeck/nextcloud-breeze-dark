@@ -1,7 +1,7 @@
 OC.L10N.register(
     "breezedark",
     {
-    "Saved" : "Sauvegardé",
+    "Saved" : "Enregistré",
     "Error" : "Erreur",
     "Breeze Dark" : "Breeze Dark",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Thème Breeze Dark pour Nextcloud, basé sur le thème de KDE",
