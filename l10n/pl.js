@@ -10,6 +10,8 @@ OC.L10N.register(
     "This setting enforces the usage of this theme for all users. Please note, this prevents users from disabling it or choosing a different theme." : "To ustawienie wymusza użycie tego motywu dla wszystkich użytkowników. Pamiętaj, że uniemożliwi to użytkownikom wyłączenie go lub wybranie innego motywu.",
     "Enforce Breeze Dark theme use globally" : "Wymuś używanie motywu Breeze Dark globalnie",
     "This setting enables the automated activation by the clients' system settings by default, for unauthenticated users and users who have not set a preference." : "To ustawienie umożliwia domyślną automatyczną aktywację przez ustawienia systemowe klientów dla użytkowników nieuwierzytelnionych i użytkowników, którzy nie ustawili preferencji.",
+    "Enable Breeze Dark theme automated activation by the clients' system settings by default" : "Włącz domyślnie automatyczną aktywację motywu Breeze Dark w ustawieniach systemowych klientów",
+    "This setting enables use of the theme for the login page. This only takes effect on the login page itself if the theme is globally enforced, or during login for a user who has the theme enabled." : "Ustawienie umożliwia korzystanie z motywu strony logowania. Ma to wpływ tylko na samą stronę logowania, jeśli motyw jest wymuszony globalnie lub podczas logowania użytkownika, który ma włączony motyw.",
     "Enable Breeze Dark theme for the login page" : "Włacz motyw Breeze Dark na stronie logowania",
     "Custom Styling" : "Niestandardowa stylizacja",
     "Insert custom styling here …" : "Tutaj wstaw własny styl…",
