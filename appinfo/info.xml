@@ -53,6 +53,12 @@ Under the Theming section in the admin settings you can add your own custom styl
 		<post-migration>
 			<step>OCA\BreezeDark\Migration\MigrateUserThemeSettings</step>
 		</post-migration>
+        <install>
+            <step>OCA\BreezeDark\Migration\InstallRestoreSettings</step>
+        </install>
+        <uninstall>
+            <step>OCA\BreezeDark\Migration\UninstallCleanup</step>
+        </uninstall>
 	</repair-steps>
     <settings>
         <personal>OCA\BreezeDark\Settings\Personal</personal>
