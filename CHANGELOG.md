@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 25.0.2 - 2023-04-07
+
 ### Fixed
 
 -   [#330](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/330) Cleanup enabled-themes and enforce_theme settings during uninstall / disable of app to allow for uninstalling / disabling the app without first having to disable the theme. Settings will be restored when installing / enabling the app.
