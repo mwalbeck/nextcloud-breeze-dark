@@ -89,15 +89,15 @@
   --table-color-background: var(--color-main-background) !important;
   --table-color-background-hover: var(--color-background-hover) !important;
   --table-border-radius: var(--border-radius) !important;
-  --color-main-background-rgb: rgb(23,23,23);
-  --color-main-background-blur: rgba(var(--color-main-background-rgb), .8);
+  --color-main-background-rgb: rgb(23, 23, 23);
+  --color-main-background-blur: rgba(var(--color-main-background-rgb), 0.8);
   --background-invert-if-dark: invert(100%);
   --background-invert-if-bright: no;
-  --color-success-rgb: 70,186,97;
+  --color-success-rgb: 70, 186, 97;
   --color-success-hover: #6ac780;
-  --color-warning-rgb: 236,167,0;
+  --color-warning-rgb: 236, 167, 0;
   --color-warning-hover: #efb832;
-  --color-error-rgb: 233,50,45;
+  --color-error-rgb: 233, 50, 45;
   --color-error-hover: #ed5a56;
   --color-scrollbar: #3d3d3d;
   --color-text-maxcontrast-background-blur: #919191;
@@ -270,6 +270,10 @@ progress:not(.vue) {
 .app-navigation-entry-menu,
 .v-popper__popper .v-popper__inner {
   border: 1px solid var(--color-border);
+}
+
+.menu.notification-container {
+  border: unset;
 }
 
 .bubble::after,
@@ -448,6 +452,10 @@ progress:not(.vue) {
   background-color: transparent !important;
   border: unset !important;
   opacity: 1;
+}
+
+.counter-bubble__counter {
+  color: var(--color-primary-text) !important;
 }
 
 /* App Sidebar -------------------------------------------------------------- */

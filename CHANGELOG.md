@@ -5,6 +5,7 @@
 ### Fixed
 
 -   [#330](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/330) Cleanup enabled-themes and enforce_theme settings during uninstall / disable of app to allow for uninstalling / disabling the app without first having to disable the theme. Settings will be restored when installing / enabling the app.
+-   Remove extra border in notifications menu and fix text colour in bobble counters
 
 ## 25.0.1 - 2023-02-28
 

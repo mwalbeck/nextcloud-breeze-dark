@@ -30,6 +30,10 @@
     border: 1px solid var(--color-border);
 }
 
+.menu.notification-container {
+    border: unset;
+}
+
 .bubble::after,
 .app-navigation-entry-menu::after,
 .menu::after,

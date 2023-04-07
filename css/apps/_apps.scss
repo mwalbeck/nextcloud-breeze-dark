@@ -41,6 +41,12 @@
     opacity: 1;
 }
 
+// Bobble counter
+
+.counter-bubble__counter {
+    color: var(--color-primary-text) !important;
+}
+
 /* App Sidebar -------------------------------------------------------------- */
 
 .app-sidebar-tabs__tab a {
