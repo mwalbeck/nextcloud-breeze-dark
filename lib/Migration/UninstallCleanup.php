@@ -70,7 +70,7 @@ class UninstallCleanup implements IRepairStep
 
             $key = array_search("breezedark", $enabledThemes);
 
-            if ($key) {
+            if ($key !== false) {
                 unset($enabledThemes[$key]);
             }
 
@@ -83,6 +83,10 @@ class UninstallCleanup implements IRepairStep
         // Disable enforcement of the theme if the current enforced theme is breezedark
         if ($themeEnforced && $currentEnforcedTheme === "breezedark") {
             $this->config->setSystemValue("enforce_theme", "");
+        } elseif ($themeEnforced && $currentEnforcedTheme !== "breezedark") {
+            // Disable theme enforcement of breezedark if a theme other than
+            // breezedark is currently being enforced
+            $this->config->setAppValue("breezedark", "theme_enforced", "0");
         }
     }
 }
