@@ -82,6 +82,7 @@
   --color-box-shadow-rgb: rgba(0, 0, 0, 0) !important;
   --color-border: var(--color-border-grey) !important;
   --color-border-dark: var(--color-border) !important;
+  --color-border-maxcontrast: var(--color-border) !important;
   --color-icon: rgba(242, 242, 242, 1);
   --table-color-border: var(--color-border) !important;
   --table-color-heading: var(--color-primary-text) !important;
@@ -89,31 +90,31 @@
   --table-color-background: var(--color-main-background) !important;
   --table-color-background-hover: var(--color-background-hover) !important;
   --table-border-radius: var(--border-radius) !important;
-  --color-main-background-rgb: rgb(23, 23, 23);
-  --color-main-background-blur: rgba(var(--color-main-background-rgb), 0.8);
-  --background-invert-if-dark: invert(100%);
-  --background-invert-if-bright: no;
-  --color-success-rgb: 70, 186, 97;
-  --color-success-hover: #6ac780;
-  --color-warning-rgb: 236, 167, 0;
-  --color-warning-hover: #efb832;
-  --color-error-rgb: 233, 50, 45;
-  --color-error-hover: #ed5a56;
-  --color-scrollbar: #3d3d3d;
-  --color-text-maxcontrast-background-blur: #919191;
-  --color-text-maxcontrast-default: #8c8c8c;
-  --color-placeholder-light: #313131;
-  --color-placeholder-dark: #4a4a4a;
-  --color-primary-default: #0082c9;
-  --color-primary-hover: #04537f;
-  --color-primary-light-text: #99c0d6;
-  --color-primary-light-hover: #1d272d;
-  --color-primary-element-default-hover: #046ca5;
-  --color-primary-element-text: #fff;
-  --color-primary-element-hover: #04537f;
-  --color-primary-element-light-text: #99c0d6;
-  --color-primary-element-light-hover: #1d272d;
-  --color-primary-element-text-dark: #ededed;
+  --color-main-background-rgb: rgb(23, 23, 23) !important;
+  --color-main-background-blur: rgba(23, 23, 23, 0.8) !important;
+  --background-invert-if-dark: invert(100%) !important;
+  --background-invert-if-bright: no !important;
+  --color-success-rgb: 70, 186, 97 !important;
+  --color-success-hover: #6ac780 !important;
+  --color-warning-rgb: 236, 167, 0 !important;
+  --color-warning-hover: #efb832 !important;
+  --color-error-rgb: 233, 50, 45 !important;
+  --color-error-hover: #ed5a56 !important;
+  --color-scrollbar: #3d3d3d !important;
+  --color-text-maxcontrast-background-blur: #919191 !important;
+  --color-text-maxcontrast-default: #8c8c8c !important;
+  --color-placeholder-light: #313131 !important;
+  --color-placeholder-dark: #4a4a4a !important;
+  --color-primary-default: #0082c9 !important;
+  --color-primary-hover: #04537f !important;
+  --color-primary-light-text: #99c0d6 !important;
+  --color-primary-light-hover: #1d272d !important;
+  --color-primary-element-default-hover: #046ca5 !important;
+  --color-primary-element-text: #fff !important;
+  --color-primary-element-hover: #04537f !important;
+  --color-primary-element-light-text: #99c0d6 !important;
+  --color-primary-element-light-hover: #1d272d !important;
+  --color-primary-element-text-dark: #ededed !important;
 }
 
 /***
@@ -122,7 +123,7 @@
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
  */
 /* Buttons ------------------------------------------------------------------- */
-button.primary,
+button:not(.color-picker__simple-color-circle):not(.property-color__color-preview).primary,
 .button.primary,
 input[type=button].primary,
 input[type=submit].primary {
@@ -130,13 +131,13 @@ input[type=submit].primary {
   border-color: var(--color-border) !important;
   color: var(--color-main-text) !important;
 }
-button.primary:hover,
+button:not(.color-picker__simple-color-circle):not(.property-color__color-preview).primary:hover,
 .button.primary:hover,
 input[type=button].primary:hover,
 input[type=submit].primary:hover {
   border-color: var(--color-primary-element) !important;
 }
-button:focus, button:active, button.primary:focus, button.primary:active,
+button:not(.color-picker__simple-color-circle):not(.property-color__color-preview):focus, button:not(.color-picker__simple-color-circle):not(.property-color__color-preview):active, button:not(.color-picker__simple-color-circle):not(.property-color__color-preview).primary:focus, button:not(.color-picker__simple-color-circle):not(.property-color__color-preview).primary:active,
 .button:focus,
 .button:active,
 .button.primary:focus,
@@ -153,17 +154,26 @@ input[type=submit].primary:active {
   border-color: var(--color-primary-element) !important;
 }
 
-.button-vue.button-vue--vue-secondary {
+.button-vue.button-vue--vue-secondary:not(.property-color__color-preview) {
   background-color: var(--color-main-background) !important;
   border: 1px solid var(--color-border) !important;
   color: var(--color-main-text) !important;
 }
-.button-vue.button-vue--vue-secondary:hover {
+.button-vue.button-vue--vue-secondary:not(.property-color__color-preview):hover {
   border-color: var(--color-primary-element) !important;
 }
-.button-vue.button-vue--vue-secondary:focus, .button-vue.button-vue--vue-secondary:active {
+.button-vue.button-vue--vue-secondary:not(.property-color__color-preview):focus, .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):active {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary-element) !important;
+}
+.button-vue.button-vue--vue-secondary:not(.property-color__color-preview).close-button {
+  border: none !important;
+}
+
+input[type=text] + .icon-confirm,
+input[type=password] + .icon-confirm,
+input[type=email] + .icon-confirm {
+  background-color: var(--color-background-darker) !important;
 }
 
 /* Input Fields -------------------------------------------------------------- */
@@ -185,9 +195,15 @@ textarea:not(:disabled):active {
   background-color: inherit !important;
 }
 
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:hover + .checkbox-radio-switch__label,
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label,
 .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:hover,
 .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:focus-within {
   background-color: var(--color-background-hover) !important;
+}
+
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label {
+  box-shadow: unset !important;
 }
 
 /* Action items -------------------------------------------------------------- */
@@ -218,6 +234,11 @@ select option {
 
 .multiselect .multiselect__content-wrapper .multiselect__option--highlight {
   background-color: var(--color-background-hover) !important;
+}
+
+/* vs__search ---------------------------------------------------------------- */
+.vs__search {
+  background-color: unset !important;
 }
 
 /* Table --------------------------------------------------------------------- */
@@ -279,7 +300,8 @@ progress:not(.vue) {
 .bubble::after,
 .app-navigation-entry-menu::after,
 .menu::after,
-.popovermenu::after {
+.popovermenu::after,
+.v-popper--theme-dropdown.v-popper__popper[data-popper-placement^=bottom] .v-popper__arrow-container {
   border-bottom-color: var(--color-border) !important;
 }
 
@@ -292,6 +314,10 @@ progress:not(.vue) {
 }
 .action-item__menu .action-item__menu_arrow {
   border-bottom-color: var(--color-border) !important;
+}
+
+.v-popper__popper button.action-button {
+  border-radius: 6px !important;
 }
 
 /* Search ------------------------------------------------------------------- */
@@ -323,6 +349,10 @@ progress:not(.vue) {
 .oc-dialog .fileexists label,
 .oc-dialog .fileexists .conflict .filename {
   color: var(--color-main-text) !important;
+}
+
+.reference-picker .oc-dialog {
+  border: none;
 }
 
 /* Settings ------------------------------------------------------------------ */
@@ -418,6 +448,12 @@ progress:not(.vue) {
 /* App Store ---------------------------------------------------------------- */
 .app-level .official {
   border-color: var(--color-success);
+}
+
+/* Smart picker ------------------------------------------------------------- */
+.tribute-container-link {
+  border: 1px solid var(--color-border);
+  border-radius: 6px !important;
 }
 
 /***
@@ -828,6 +864,22 @@ table tr.mouseOver td {
 }
 
 /***
+ * @copyright Copyright (c) 2023, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+/* Notifications ------------------------------------------------------------ */
+.app-photos#content-vue .files-list-viewer__placeholder {
+  background: var(--color-background-hover) !important;
+}
+.app-photos#content-vue .file-container {
+  background: var(--color-background-hover) !important;
+}
+.app-photos#content-vue .file-container .selection-checkbox .checkbox-radio-switch__label::after {
+  background: var(--color-background-darker);
+}
+
+/***
  * @copyright Copyright (c) 2019, Magnus Walbeck <mw@mwalbeck.org>
  *
  * @license GNU AGPL version 3 or any later version, see COPYING file for more.
@@ -961,19 +1013,6 @@ table tr.mouseOver td {
 }
 .app-calendar .app-sidebar .repeat-option-set-section-grid-item.primary:hover {
   background-color: var(--color-background-hover) !important;
-}
-
-.color-picker .vc-chrome {
-  background-color: var(--color-main-background);
-}
-.color-picker .vc-chrome .vc-chrome-saturation-wrap {
-  border: 1px solid var(--color-border);
-}
-.color-picker .vc-chrome .vc-chrome-body {
-  background-color: var(--color-main-background);
-}
-.color-picker .vc-chrome .vc-chrome-body .vc-chrome-controls .vc-chrome-color-wrap .vc-chrome-active-color {
-  border: 1px solid var(--color-border);
 }
 
 .modal--scheduler .fc .fc-button-primary {
@@ -3293,6 +3332,17 @@ tags-input .autocomplete .suggestion-item.selected {
 }
 .app-radio #app-content #app-content-files #filestable tbody tr:hover {
   background-color: var(--color-background-hover) !important;
+}
+
+/***
+ * @copyright Copyright (c) 2023, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+/* Radio -------------------------------------------------------------------- */
+#rl-app input {
+  background-color: var(--input-bg-clr, #fff);
+  color: var(--input-clr, #555);
 }
 
 /***

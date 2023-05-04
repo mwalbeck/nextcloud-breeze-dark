@@ -74,6 +74,7 @@
 
     --color-border: var(--color-border-grey) !important;
     --color-border-dark: var(--color-border) !important;
+    --color-border-maxcontrast: var(--color-border) !important;
 
     --color-icon: rgba(242, 242, 242, 1);
 
@@ -87,29 +88,29 @@
 
     // Variables from the official dark theme that needs to be set incase Nextcloud thinks the light theme is preferred.
     // The variables should be adapted to better suit the Breeze Dark theme, but for the moment this will ensure a usable experience.
-    --color-main-background-rgb: rgb(23, 23, 23);
-    --color-main-background-blur: rgba(var(--color-main-background-rgb), 0.8);
-    --background-invert-if-dark: invert(100%);
-    --background-invert-if-bright: no;
-    --color-success-rgb: 70, 186, 97;
-    --color-success-hover: #6ac780;
-    --color-warning-rgb: 236, 167, 0;
-    --color-warning-hover: #efb832;
-    --color-error-rgb: 233, 50, 45;
-    --color-error-hover: #ed5a56;
-    --color-scrollbar: #3d3d3d;
-    --color-text-maxcontrast-background-blur: #919191;
-    --color-text-maxcontrast-default: #8c8c8c;
-    --color-placeholder-light: #313131;
-    --color-placeholder-dark: #4a4a4a;
-    --color-primary-default: #0082c9;
-    --color-primary-hover: #04537f;
-    --color-primary-light-text: #99c0d6;
-    --color-primary-light-hover: #1d272d;
-    --color-primary-element-default-hover: #046ca5;
-    --color-primary-element-text: #fff;
-    --color-primary-element-hover: #04537f;
-    --color-primary-element-light-text: #99c0d6;
-    --color-primary-element-light-hover: #1d272d;
-    --color-primary-element-text-dark: #ededed;
+    --color-main-background-rgb: rgb(23, 23, 23) !important;
+    --color-main-background-blur: rgba(23, 23, 23, 0.8) !important;
+    --background-invert-if-dark: invert(100%) !important;
+    --background-invert-if-bright: no !important;
+    --color-success-rgb: 70, 186, 97 !important;
+    --color-success-hover: #6ac780 !important;
+    --color-warning-rgb: 236, 167, 0 !important;
+    --color-warning-hover: #efb832 !important;
+    --color-error-rgb: 233, 50, 45 !important;
+    --color-error-hover: #ed5a56 !important;
+    --color-scrollbar: #3d3d3d !important;
+    --color-text-maxcontrast-background-blur: #919191 !important;
+    --color-text-maxcontrast-default: #8c8c8c !important;
+    --color-placeholder-light: #313131 !important;
+    --color-placeholder-dark: #4a4a4a !important;
+    --color-primary-default: #0082c9 !important;
+    --color-primary-hover: #04537f !important;
+    --color-primary-light-text: #99c0d6 !important;
+    --color-primary-light-hover: #1d272d !important;
+    --color-primary-element-default-hover: #046ca5 !important;
+    --color-primary-element-text: #fff !important;
+    --color-primary-element-hover: #04537f !important;
+    --color-primary-element-light-text: #99c0d6 !important;
+    --color-primary-element-light-hover: #1d272d !important;
+    --color-primary-element-text-dark: #ededed !important;
 }

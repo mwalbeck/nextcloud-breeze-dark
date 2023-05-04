@@ -37,7 +37,8 @@
 .bubble::after,
 .app-navigation-entry-menu::after,
 .menu::after,
-.popovermenu::after {
+.popovermenu::after,
+.v-popper--theme-dropdown.v-popper__popper[data-popper-placement^="bottom"] .v-popper__arrow-container {
     border-bottom-color: var(--color-border) !important;
 }
 
@@ -52,6 +53,10 @@
     .action-item__menu_arrow {
         border-bottom-color: var(--color-border) !important;
     }
+}
+
+.v-popper__popper button.action-button {
+    border-radius: 6px !important;
 }
 
 /* Search ------------------------------------------------------------------- */
@@ -87,6 +92,10 @@
     .fileexists .conflict .filename {
         color: var(--color-main-text) !important;
     }
+}
+
+.reference-picker .oc-dialog {
+    border: none;
 }
 
 /* Settings ------------------------------------------------------------------ */
@@ -202,4 +211,11 @@
 
 .app-level .official {
     border-color: var(--color-success);
+}
+
+/* Smart picker ------------------------------------------------------------- */
+
+.tribute-container-link {
+    border: 1px solid var(--color-border);
+    border-radius: 6px !important;
 }

@@ -77,22 +77,6 @@
     }
 }
 
-.color-picker .vc-chrome {
-    background-color: var(--color-main-background);
-
-    .vc-chrome-saturation-wrap {
-        border: 1px solid var(--color-border);
-    }
-
-    .vc-chrome-body {
-        background-color: var(--color-main-background);
-
-        .vc-chrome-controls .vc-chrome-color-wrap .vc-chrome-active-color {
-            border: 1px solid var(--color-border);
-        }
-    }
-}
-
 .modal--scheduler .fc .fc-button-primary {
     background-color: var(--color-main-background);
     border-color: var(--color-border);

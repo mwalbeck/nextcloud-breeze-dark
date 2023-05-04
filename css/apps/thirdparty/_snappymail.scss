@@ -1,0 +1,12 @@
+/***
+ * @copyright Copyright (c) 2023, Magnus Walbeck <mw@mwalbeck.org>
+ *
+ * @license GNU AGPL version 3 or any later version, see COPYING file for more.
+ */
+
+/* Radio -------------------------------------------------------------------- */
+
+#rl-app input {
+    background-color: var(--input-bg-clr,#fff);
+    color: var(--input-clr,#555);
+}
