@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## 26.0.0 - 2023-05-04
+
 ### Added
 
 -   [#334](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/334) Add Support for Nextcloud 26
