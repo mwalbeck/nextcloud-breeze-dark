@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+### Added
+
+-   [#334](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/334) Add Support for Nextcloud 26
+
+### Fixed
+
+-   [#333](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/333) Let SnappyMail handle input styling on its own to not interfere with its themes.
+
+### Removed
+
+-   Styling for unmaintained apps (AppOrder, Flow Upload, GpxEdit, GpxMotion, ocDownloader, JSXC, Radio)
+
 ## 25.0.2 - 2023-04-07
 
 ### Fixed
