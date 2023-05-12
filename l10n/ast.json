@@ -1,6 +1,4 @@
 { "translations": {
-    "Saved" : "Guardáu",
-    "Error" : "Fallu",
-    "Save" : "Guardar"
+    "Error" : "Error"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
