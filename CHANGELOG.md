@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 26.0.1 - 2023-09-17
+
+### Fixed
+
+-   [#336](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/336) Toolbar in text app: Icon of button of the applied text style invisible
+
 ## 26.0.0 - 2023-05-04
 
 ### Added
