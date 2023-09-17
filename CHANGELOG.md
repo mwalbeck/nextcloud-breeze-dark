@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## 27.0.0 - 2023-09-17
+
+### Added
+
+-   [#337](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/337) Add Support for Nextcloud 27
+
 ## 26.0.1 - 2023-09-17
 
 ### Fixed
