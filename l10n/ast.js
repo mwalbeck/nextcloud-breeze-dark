@@ -1,6 +1,7 @@
 OC.L10N.register(
     "breezedark",
     {
-    "Error" : "Error"
+    "Error" : "Error",
+    "Save" : "Guardar"
 },
 "nplurals=2; plural=(n != 1);");
