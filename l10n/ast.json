@@ -1,4 +1,5 @@
 { "translations": {
+    "Saved" : "Guardóse",
     "Error" : "Error",
     "Save" : "Guardar"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

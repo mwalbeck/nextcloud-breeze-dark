@@ -1,6 +1,7 @@
 OC.L10N.register(
     "breezedark",
     {
+    "Saved" : "Guardóse",
     "Error" : "Error",
     "Save" : "Guardar"
 },
