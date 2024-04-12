@@ -184,20 +184,23 @@
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary-element) !important;
   }
-  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview) {
+  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):not(.unified-search__button) {
     background-color: var(--color-main-background) !important;
     border: 1px solid var(--color-border) !important;
     color: var(--color-main-text) !important;
   }
-  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):hover {
+  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):not(.unified-search__button):hover {
     border-color: var(--color-primary-element) !important;
   }
-  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):focus, .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):active {
+  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):not(.unified-search__button):focus, .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):not(.unified-search__button):active {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary-element) !important;
   }
-  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview).close-button {
+  .button-vue.button-vue--vue-secondary:not(.property-color__color-preview):not(.unified-search__button).close-button {
     border: none !important;
+  }
+  .button-vue.unified-search__button:hover {
+    opacity: 1 !important;
   }
   input[type=text] + .icon-confirm,
   input[type=password] + .icon-confirm,
