@@ -38,7 +38,8 @@
 .app-navigation-entry-menu::after,
 .menu::after,
 .popovermenu::after,
-.v-popper--theme-dropdown.v-popper__popper[data-popper-placement^="bottom"] .v-popper__arrow-container {
+.v-popper--theme-dropdown.v-popper__popper[data-popper-placement^="bottom"]
+    .v-popper__arrow-container {
     border-bottom-color: var(--color-border) !important;
 }
 

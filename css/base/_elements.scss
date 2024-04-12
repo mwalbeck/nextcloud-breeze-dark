@@ -52,7 +52,7 @@ input[type="submit"] {
 input[type="text"] + .icon-confirm,
 input[type="password"] + .icon-confirm,
 input[type="email"] + .icon-confirm {
-	background-color: var(--color-background-darker) !important;
+    background-color: var(--color-background-darker) !important;
 }
 
 /* Input Fields -------------------------------------------------------------- */
@@ -84,15 +84,22 @@ textarea:not(:disabled) {
     }
 }
 
-.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:hover + .checkbox-radio-switch__label,
-.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label,
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__input:hover
+    + .checkbox-radio-switch__label,
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__input:focus
+    + .checkbox-radio-switch__label,
 .checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:hover,
-.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__label:focus-within {
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__label:focus-within {
     background-color: var(--color-background-hover) !important;
 }
 
-.checkbox-radio-switch:not(.checkbox-radio-switch--disabled) .checkbox-radio-switch__input:focus + .checkbox-radio-switch__label {
-	box-shadow: unset !important;
+.checkbox-radio-switch:not(.checkbox-radio-switch--disabled)
+    .checkbox-radio-switch__input:focus
+    + .checkbox-radio-switch__label {
+    box-shadow: unset !important;
 }
 
 /* Action items -------------------------------------------------------------- */
