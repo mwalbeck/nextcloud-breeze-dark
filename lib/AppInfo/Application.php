@@ -36,6 +36,8 @@ use OCP\IConfig;
 use OCP\IUserSession;
 use OCP\Util;
 use OCP\IURLGenerator;
+use OCP\AppFramework\Http\Events\BeforeTemplateRenderedEvent;
+use OCA\BreezeDark\Listener\BeforeTemplateRenderedListener;
 
 class Application extends App implements IBootstrap
 {
@@ -54,6 +56,7 @@ class Application extends App implements IBootstrap
 
     public function register(IRegistrationContext $context): void
     {
+        $context->registerEventListener(BeforeTemplateRenderedEvent::class, BeforeTemplateRenderedListener::class);
     }
 
     public function boot(IBootContext $context): void

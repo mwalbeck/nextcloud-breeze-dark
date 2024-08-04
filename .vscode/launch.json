@@ -10,7 +10,7 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
-                "/var/www/html/lib/public": "${workspaceFolder}/vendor/christophwurst/nextcloud/OCP",
+                "/var/www/html/lib/public": "${workspaceFolder}/vendor/nextcloud/ocp/OCP",
                 "/var/www/html/custom_apps/breezedark": "${workspaceFolder}/../breezedark"
             }
         }
