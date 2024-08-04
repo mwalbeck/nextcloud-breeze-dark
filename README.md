@@ -10,14 +10,14 @@ If you have any questions, problems or anything else you're welcome to come hang
 
 The currently supported and maintained Nextcloud releases are:
 
+-   Nextcloud 29
 -   Nextcloud 28
--   Nextcloud 27
 
 I try my best to maintain 2 Nextcloud releases at once, to allow for smoother transitions, but for various reason I might decide to drop support for older releases early.
 
 Previous unmaintained releases:
 
--   Nextcloud 17-26 (App)
+-   Nextcloud 17-27 (App)
 -   Nextcloud 11-16 (Theme folder)
 
 ## Version numbering

@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## 29.0.0 - 2024-08-04
+
+### Added 
+
+-   [#343](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/343) Add Support for Nextcloud 29
+
+### Fixed
+
+-   [#344](https://github.com/mwalbeck/nextcloud-breeze-dark/issues/344) Error "Enforced theme not found" while it works correctly
+
 ## 28.0.0 - 2024-04-12
 
 ### Added
