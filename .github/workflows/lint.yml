@@ -12,7 +12,7 @@ jobs:
       - name: Run prettier
         if: ${{ always() }}
         run: npm run prettier
-      - name: Run stylelint
-        continue-on-error: true
-        if: ${{ always() }}
-        run: npm run stylelint
+      # - name: Run stylelint
+      #   continue-on-error: true
+      #   if: ${{ always() }}
+      #   run: npm run stylelint

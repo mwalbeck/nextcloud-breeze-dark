@@ -30,7 +30,6 @@ namespace OCA\BreezeDark\Migration;
 
 use OCP\IConfig;
 use OCP\IDBConnection;
-use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\Migration\IOutput;
 use OCP\Migration\IRepairStep;
 
@@ -55,31 +54,15 @@ class InstallRestoreSettings implements IRepairStep
 
     public function run(IOutput $output): void
     {
-        $userQb = $this->db->getQueryBuilder();
-        $userQb->select('userid')->from('preferences')->where(
-            $userQb->expr()->eq('appid', $userQb->createNamedParameter('breezedark'), IQueryBuilder::PARAM_STR),
-            $userQb->expr()->eq('configkey', $userQb->createNamedParameter('theme_enabled')),
-            $userQb->expr()->eq('configvalue', $userQb->createNamedParameter('1'))
-        );
-        $result = $userQb->executeQuery();
-
-        $users = $result->fetchAll();
-
-        foreach($users as $user) {
-            $enabledThemes = json_decode($this->config->getUserValue($user["userid"], "theming", "enabled-themes", "[]"));
-            $enabledThemes = array_merge(["breezedark"], $enabledThemes);
-            $this->config->setUserValue($user["userid"], "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
-        }
-
         $themeEnforced = $this->config->getAppValue("breezedark", "theme_enforced", "0");
         $currentEnforcedTheme = $this->config->getSystemValue("enforce_theme", "");
 
         if ($themeEnforced && $currentEnforcedTheme === "") {
             // Re-enable enforcement of the theme if no enforced theme is currently set
-            $this->config->setSystemValue("enforce_theme", "breezedark");
-        } elseif ($themeEnforced && $currentEnforcedTheme !== "breezedark") {
+            $this->config->setSystemValue("enforce_theme", "dark");
+        } elseif ($themeEnforced && $currentEnforcedTheme !== "dark") {
             // Disable theme enforcement of breezedark if a theme other than
-            // breezedark is currently being enforced
+            // the one breezedark set is currently being enforced
             $this->config->setAppValue("breezedark", "theme_enforced", "0");
         }
     }

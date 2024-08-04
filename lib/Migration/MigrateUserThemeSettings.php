@@ -57,7 +57,7 @@ class MigrateUserThemeSettings implements IRepairStep
     {
         $settingsVersion = $this->config->getAppValue("breezedark", "theme_settings_version", "0");
 
-        if ($settingsVersion >= "2") {
+        if ($settingsVersion >= "3") {
             return;
         }
 
@@ -73,10 +73,16 @@ class MigrateUserThemeSettings implements IRepairStep
 
         foreach($users as $user) {
             $enabledThemes = json_decode($this->config->getUserValue($user["userid"], "theming", "enabled-themes", "[]"));
-            $enabledThemes = array_merge(["breezedark"], $enabledThemes);
+
+            $key = array_search("breezedark", $enabledThemes);
+
+            if ($key !== false) {
+                unset($enabledThemes[$key]);
+            }
+
             $this->config->setUserValue($user["userid"], "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
         }
 
-        $this->config->setAppValue("breezedark", "theme_settings_version", "2");
+        $this->config->setAppValue("breezedark", "theme_settings_version", "3");
     }
 }
