@@ -83,6 +83,12 @@ class MigrateUserThemeSettings implements IRepairStep
             $this->config->setUserValue($user["userid"], "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
         }
 
+        $currentEnforcedTheme = $this->config->getSystemValue("enforce_theme", "");
+
+        if ($currentEnforcedTheme === "breezedark") {
+            $this->config->setSystemValue("enforce_theme", "dark");
+        }
+
         $this->config->setAppValue("breezedark", "theme_settings_version", "3");
     }
 }
