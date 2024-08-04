@@ -30,7 +30,6 @@ namespace OCA\BreezeDark\Migration;
 
 use OCP\IConfig;
 use OCP\IDBConnection;
-use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCP\Migration\IOutput;
 use OCP\Migration\IRepairStep;
 
@@ -55,37 +54,16 @@ class UninstallCleanup implements IRepairStep
 
     public function run(IOutput $output): void
     {
-        $userQb = $this->db->getQueryBuilder();
-        $userQb->select('userid')->from('preferences')->where(
-            $userQb->expr()->eq('appid', $userQb->createNamedParameter('breezedark'), IQueryBuilder::PARAM_STR),
-            $userQb->expr()->eq('configkey', $userQb->createNamedParameter('theme_enabled')),
-            $userQb->expr()->eq('configvalue', $userQb->createNamedParameter('1'))
-        );
-        $result = $userQb->executeQuery();
-
-        $users = $result->fetchAll();
-
-        foreach($users as $user) {
-            $enabledThemes = json_decode($this->config->getUserValue($user["userid"], "theming", "enabled-themes", "[]"));
-
-            $key = array_search("breezedark", $enabledThemes);
-
-            if ($key !== false) {
-                unset($enabledThemes[$key]);
-            }
-
-            $this->config->setUserValue($user["userid"], "theming", "enabled-themes", json_encode(array_values(array_unique($enabledThemes))));
-        }
-
         $themeEnforced = $this->config->getAppValue("breezedark", "theme_enforced", "0");
         $currentEnforcedTheme = $this->config->getSystemValue("enforce_theme", "");
 
-        // Disable enforcement of the theme if the current enforced theme is breezedark
-        if ($themeEnforced && $currentEnforcedTheme === "breezedark") {
+        // Disable enforcement of the theme if the current enforced theme
+        // is the one set by breezedark
+        if ($themeEnforced && $currentEnforcedTheme === "dark") {
             $this->config->setSystemValue("enforce_theme", "");
-        } elseif ($themeEnforced && $currentEnforcedTheme !== "breezedark") {
+        } elseif ($themeEnforced && $currentEnforcedTheme !== "dark") {
             // Disable theme enforcement of breezedark if a theme other than
-            // breezedark is currently being enforced
+            // the one breezedark set is currently being enforced
             $this->config->setAppValue("breezedark", "theme_enforced", "0");
         }
     }
