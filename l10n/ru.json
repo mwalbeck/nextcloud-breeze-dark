@@ -4,6 +4,7 @@
     "Breeze Dark" : "Breeze Dark",
     "Breeze Dark theme for Nextcloud, based on the theme by KDE" : "Тема Breeze Dark для Nextcloud, основанная на теме KDE",
     "A Dark theme based on Breeze Dark by the KDE project. Please refresh the page for changes to take effect." : "Тёмная тема, основанная на Breeze Dark от проекта KDE. Обновите страницу, чтобы изменения вступили в силу.",
+    "This setting enforces the usage of this theme for all users. Please note, this prevents users from disabling it or choosing a different theme." : "Этот параметр обязывает всех пользователей использовать данную тему. Пожалуйста, обратите внимание, что это не позволяет пользователям отключить ее или выбрать другую тему.",
     "This setting enables the automated activation by the clients' system settings by default, for unauthenticated users and users who have not set a preference." : "Этот параметр по умолчанию включает автоматическую активацию с помощью системных настроек клиентов для неаутентифицированных пользователей и пользователей, которые не установили предпочтения.",
     "Custom Styling" : "Индивидуальный стиль",
     "Insert custom styling here …" : "Вставьте здесь собственный стиль…",
