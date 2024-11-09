@@ -13,7 +13,7 @@ OC.L10N.register(
     "Enable Breeze Dark theme automated activation by the clients' system settings by default" : "تمكين التنشيط التلقائي لثيمة الوضع المظلم \"بريز دارك\" Breeze Dark بواسطة إعدادات نظام العملاء بشكل تلقائي.",
     "This setting enables use of the theme for the login page. This only takes effect on the login page itself if the theme is globally enforced, or during login for a user who has the theme enabled." : "هذا الإعداد يُمكّن من استخدام الثيمة في صفحة تسجيل الدخول. هذا يؤثر في صفحة تسجيل الدخول فقط في حالة كان التمكين الشامل للثيمة مفروضاً أو في حالة كان المستخدم قد اختار تمكين الثيمة في إعداداته الشخصية. ",
     "Enable Breeze Dark theme for the login page" : "تمكين ثيمة الوضع المظلم \"بريز دارك\" لصفحة تسجيل الدخول",
-    "Custom Styling" : "تصميم مُخصّص",
+    "Custom Styling" : "تصميم مخصص",
     "Insert custom styling here …" : "أدخل التصميم المُخصّص هنا ...",
     "Save" : "حفظ",
     "A Breeze Dark theme for Nextcloud." : "ثيمة الوضع المظلم \"بريز دارك\" Breeze Dark لنكست كلاود",
