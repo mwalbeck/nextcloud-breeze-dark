@@ -1,6 +1,7 @@
 OC.L10N.register(
     "breezedark",
     {
+    "Saved" : "Захавана",
     "Error" : "Памылка",
     "Save" : "Захаваць"
 },
